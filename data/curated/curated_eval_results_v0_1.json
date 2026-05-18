@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-05-05T02:40:48.352183+00:00",
+  "read_only": true,
+  "live_network_used": false,
+  "query_count": 3,
+  "object_count": 1,
+  "result_count": 3,
+  "average_score": 26.9,
+  "warnings": [
+    "Curated dataset currently contains placeholder objects; public beta scope may be empty."
+  ],
+  "results": [
+    {
+      "query": "AI API with pricing docs",
+      "result_count": 1,
+      "results": [
+        {
+          "object_id": "curated-placeholder-image-api",
+          "name": "Curated Placeholder Image API",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 29.12,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: refund_policy, data_retention_policy.",
+            "Object confidence is low or ambiguous."
+          ]
+        }
+      ]
+    },
+    {
+      "query": "MCP server with source traces",
+      "result_count": 1,
+      "results": [
+        {
+          "object_id": "curated-placeholder-image-api",
+          "name": "Curated Placeholder Image API",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 22.45,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: refund_policy, data_retention_policy.",
+            "Object confidence is low or ambiguous."
+          ]
+        }
+      ]
+    },
+    {
+      "query": "commercial use AI tool",
+      "result_count": 1,
+      "results": [
+        {
+          "object_id": "curated-placeholder-image-api",
+          "name": "Curated Placeholder Image API",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 29.12,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: refund_policy, data_retention_policy.",
+            "Object confidence is low or ambiguous."
+          ]
+        }
+      ]
+    }
+  ]
+}

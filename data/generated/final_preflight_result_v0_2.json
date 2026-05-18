@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-05-18T10:25:34.217231+00:00",
+  "overall_token": "PASS",
+  "checks": {
+    "required_artifacts": {
+      "token": "PASS",
+      "missing": []
+    },
+    "real_registry_data": {
+      "token": "PASS",
+      "raw_payload_mode": "manual_raw",
+      "mcp_registry_object_count": 50,
+      "public_beta_mcp_count": 50,
+      "fixture_leak_detected": false,
+      "real_payload_available": true
+    },
+    "safety": {
+      "token": "PASS",
+      "forbidden_actions_exposed": false,
+      "live_crawling_used": false,
+      "scraping_used": false,
+      "link_following_used": false,
+      "actual_publish_performed": false
+    },
+    "claim_boundary": {
+      "token": "PASS",
+      "risky_phrase_count": 0,
+      "claim_audit_path": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\generated\\realdata_claim_audit_v0_2.json"
+    },
+    "smoke_all": {
+      "token": "PASS",
+      "output_path": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\generated\\smoke_all_result_v0_1.json"
+    },
+    "release_readiness": {
+      "token": "PASS",
+      "output_path": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\generated\\release_readiness_v0_1.json"
+    },
+    "beta_readiness": {
+      "token": "PASS",
+      "output_path": "data/generated/beta_readiness_report_v0_2.md"
+    },
+    "release_candidate_matrix": {
+      "token": "PASS",
+      "output_path": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\generated\\release_candidate_matrix_v0_2.json"
+    }
+  },
+  "counts": {
+    "mcp_registry_object_count": 50,
+    "source_trace_count": 191,
+    "public_beta_mcp_count": 50
+  },
+  "warnings": [
+    "public_beta_mcp contains registry metadata candidates, not verified MCP servers."
+  ],
+  "recommended_next_action": "Manual public beta packaging may proceed; no publish was performed.",
+  "actual_publish_performed": false,
+  "live_network_used_in_preflight": false,
+  "read_only": true,
+  "not_asserted": [
+    "supplier_verification",
+    "security_certification",
+    "quality_guarantee",
+    "action_permission",
+    "purchasing_advice"
+  ]
+}

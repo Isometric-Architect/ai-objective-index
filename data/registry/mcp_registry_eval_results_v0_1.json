@@ -1,0 +1,318 @@
+{
+  "generated_at": "2026-05-18T10:25:43.784528+00:00",
+  "read_only": true,
+  "live_network_used": false,
+  "fixture_only": false,
+  "query_count": 5,
+  "object_count": 50,
+  "result_count": 25,
+  "average_score": 19.5,
+  "results": [
+    {
+      "query": "browser automation MCP server",
+      "result_count": 5,
+      "results": [
+        {
+          "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-0",
+          "name": "ac.inference.sh/mcp",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 13.66,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        },
+        {
+          "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-1",
+          "name": "ac.inference.sh/mcp",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 13.66,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        },
+        {
+          "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-0",
+          "name": "ac.tandem/docs-mcp",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 18.52,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        },
+        {
+          "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-1",
+          "name": "ac.tandem/docs-mcp",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 18.52,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        },
+        {
+          "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-2",
+          "name": "ac.tandem/docs-mcp",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 18.52,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        }
+      ]
+    },
+    {
+      "query": "web search MCP server",
+      "result_count": 5,
+      "results": [
+        {
+          "object_id": "mcp-registry-ai-agentic-news-mcp-1-0-0",
+          "name": "ai.agentic-news/mcp",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 36.02,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        },
+        {
+          "object_id": "mcp-registry-ai-bezal-local-commerce-1-0-0",
+          "name": "ai.bezal/local-commerce",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 31.16,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        },
+        {
+          "object_id": "mcp-registry-ai-appdeploy-deploy-app-1-0-0",
+          "name": "ai.appdeploy/deploy-app",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 18.66,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        },
+        {
+          "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-0",
+          "name": "ac.inference.sh/mcp",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 13.66,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        },
+        {
+          "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-1",
+          "name": "ac.inference.sh/mcp",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 13.66,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        }
+      ]
+    },
+    {
+      "query": "document extraction MCP server",
+      "result_count": 5,
+      "results": [
+        {
+          "object_id": "mcp-registry-ai-auteng-docs-1-1-0",
+          "name": "ai.auteng/docs",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 31.16,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        },
+        {
+          "object_id": "mcp-registry-ai-auteng-mcp-1-0-0",
+          "name": "ai.auteng/mcp",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 36.02,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        },
+        {
+          "object_id": "mcp-registry-ai-auteng-mcp-1-0-1",
+          "name": "ai.auteng/mcp",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 31.16,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        },
+        {
+          "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-0",
+          "name": "ac.inference.sh/mcp",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 13.66,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        },
+        {
+          "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-1",
+          "name": "ac.inference.sh/mcp",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 13.66,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        }
+      ]
+    },
+    {
+      "query": "vector database MCP server",
+      "result_count": 5,
+      "results": [
+        {
+          "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-0",
+          "name": "ac.inference.sh/mcp",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 13.66,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        },
+        {
+          "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-1",
+          "name": "ac.inference.sh/mcp",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 13.66,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        },
+        {
+          "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-0",
+          "name": "ac.tandem/docs-mcp",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 18.52,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        },
+        {
+          "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-1",
+          "name": "ac.tandem/docs-mcp",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 18.52,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        },
+        {
+          "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-2",
+          "name": "ac.tandem/docs-mcp",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 18.52,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        }
+      ]
+    },
+    {
+      "query": "code execution MCP server",
+      "result_count": 5,
+      "results": [
+        {
+          "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-0",
+          "name": "ac.inference.sh/mcp",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 13.66,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        },
+        {
+          "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-1",
+          "name": "ac.inference.sh/mcp",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 13.66,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        },
+        {
+          "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-0",
+          "name": "ac.tandem/docs-mcp",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 18.52,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        },
+        {
+          "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-1",
+          "name": "ac.tandem/docs-mcp",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 18.52,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        },
+        {
+          "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-2",
+          "name": "ac.tandem/docs-mcp",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 18.52,
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+            "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

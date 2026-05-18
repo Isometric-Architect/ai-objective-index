@@ -1,0 +1,116 @@
+{
+  "generated_at": "2026-05-18T10:25:35.364870+00:00",
+  "overall_token": "PASS",
+  "surfaces": [
+    {
+      "surface": "Core Engine",
+      "status": "PASS",
+      "evidence_file": "src/ai_objective_index/scoring.py",
+      "evidence_exists": true,
+      "command_to_verify": "python -m pytest",
+      "known_limits": "Heuristic objective score, not a quality guarantee."
+    },
+    {
+      "surface": "MCP tools",
+      "status": "PASS",
+      "evidence_file": "src/ai_objective_index/mcp_tools.py",
+      "evidence_exists": true,
+      "command_to_verify": "python -m ai_objective_index.mcp_manifest",
+      "known_limits": "Read-only tools only."
+    },
+    {
+      "surface": "MCP compat search/fetch",
+      "status": "PASS",
+      "evidence_file": "src/ai_objective_index/mcp_compat.py",
+      "evidence_exists": true,
+      "command_to_verify": "python -m ai_objective_index.mcp_smoke",
+      "known_limits": "No write/action tools."
+    },
+    {
+      "surface": "REST API",
+      "status": "PASS",
+      "evidence_file": "src/ai_objective_index/api.py",
+      "evidence_exists": true,
+      "command_to_verify": "python -m pytest tests/test_api.py",
+      "known_limits": "Local read-only API."
+    },
+    {
+      "surface": "OpenAPI",
+      "status": "PASS",
+      "evidence_file": "api/openapi.json",
+      "evidence_exists": true,
+      "command_to_verify": "python -m ai_objective_index.openapi_export",
+      "known_limits": "Schema export only; no hosted service assertion."
+    },
+    {
+      "surface": "HF demo assets",
+      "status": "PASS",
+      "evidence_file": "hf_demo/app.py",
+      "evidence_exists": true,
+      "command_to_verify": "python hf_demo/app.py",
+      "known_limits": "Local/import-safe demo; no automatic publish."
+    },
+    {
+      "surface": "HF dataset draft",
+      "status": "PASS",
+      "evidence_file": "hf_dataset/README.md",
+      "evidence_exists": true,
+      "command_to_verify": "python -m ai_objective_index.public_beta_realdata_packager",
+      "known_limits": "Dataset card draft; no upload."
+    },
+    {
+      "surface": "Benchmark reports",
+      "status": "PASS",
+      "evidence_file": "reports/mcp_server_objective_index_v0_2.md",
+      "evidence_exists": true,
+      "command_to_verify": "python -m ai_objective_index.public_beta_realdata_packager",
+      "known_limits": "Registry metadata candidates, not certification."
+    },
+    {
+      "surface": "Registry intake",
+      "status": "PASS",
+      "evidence_file": "data/registry/registry_payload_audit_v0_1.json",
+      "evidence_exists": true,
+      "command_to_verify": "python -m ai_objective_index.registry_intake.registry_payload_audit",
+      "known_limits": "Manual/raw registry payload, no scraping."
+    },
+    {
+      "surface": "public_beta_mcp dataset",
+      "status": "PASS",
+      "evidence_file": "data/registry/mcp_registry_public_beta_mcp_dataset_v0_1.json",
+      "evidence_exists": true,
+      "command_to_verify": "python -m ai_objective_index.registry_intake.registry_beta_dataset_builder",
+      "known_limits": "Candidates are not verified or security certified."
+    },
+    {
+      "surface": "Release pack",
+      "status": "PASS",
+      "evidence_file": "release/public_beta_v0_2/README_PUBLIC_BETA_v0_2.md",
+      "evidence_exists": true,
+      "command_to_verify": "python -m ai_objective_index.public_beta_realdata_packager",
+      "known_limits": "Manual publish only."
+    },
+    {
+      "surface": "Claim audit",
+      "status": "PASS",
+      "evidence_file": "data/generated/realdata_claim_audit_v0_2.json",
+      "evidence_exists": true,
+      "command_to_verify": "python -m ai_objective_index.realdata_claim_audit",
+      "known_limits": "Static phrase audit, not legal review."
+    },
+    {
+      "surface": "Manual publish checklist",
+      "status": "PASS",
+      "evidence_file": "docs/manual_publish_checklist.md",
+      "evidence_exists": true,
+      "command_to_verify": "python -m ai_objective_index.release_candidate_matrix",
+      "known_limits": "Checklist only; no publish."
+    }
+  ],
+  "status_counts": {
+    "PASS": 13
+  },
+  "read_only": true,
+  "live_network_used": false,
+  "actual_publish_performed": false
+}

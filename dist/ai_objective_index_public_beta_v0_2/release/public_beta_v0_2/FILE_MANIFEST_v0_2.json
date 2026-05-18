@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-05-18T10:25:34.290322+00:00",
+  "release_dir": "release\\public_beta_v0_2",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "release\\public_beta_v0_2\\CHECKSUMS_v0_2.json",
+      "bytes": 2235,
+      "sha256": "e2b5d7cbd35ac07855af7af11fdc14a2562ce8223c38b7a896ae2af9b1869287"
+    },
+    {
+      "path": "release\\public_beta_v0_2\\CLAIM_BOUNDARY_SUMMARY_v0_2.md",
+      "bytes": 669,
+      "sha256": "d7995cd825c39da7a5a7582e3bb06ea518fe34e8b82f3243ae0886377793d1d0"
+    },
+    {
+      "path": "release\\public_beta_v0_2\\FILE_MANIFEST_v0_2.json",
+      "bytes": 2104,
+      "sha256": "53684ccd40cb34e638aa041ac5cfa3394976671d730515eb3ba8257e6ed3220f"
+    },
+    {
+      "path": "release\\public_beta_v0_2\\final_preflight_result_v0_2.json",
+      "bytes": 2215,
+      "sha256": "ce051478c0b4a2a130011fe5d41cc39bbe0031ea95cc2839eb828f1b6e5d658c"
+    },
+    {
+      "path": "release\\public_beta_v0_2\\KNOWN_LIMITS_v0_2.md",
+      "bytes": 578,
+      "sha256": "392f793b19617dae0af4e464fc9a7ef625a0e876baaa67f04c33da8384c2e7dd"
+    },
+    {
+      "path": "release\\public_beta_v0_2\\MANUAL_PUBLISH_CHECKLIST_v0_2.md",
+      "bytes": 912,
+      "sha256": "d31cca0ec8cc2a27cd6403903fbe7e2611c38c52d9a5fbac3266c8b73f1557ad"
+    },
+    {
+      "path": "release\\public_beta_v0_2\\README_PUBLIC_BETA_v0_2.md",
+      "bytes": 1481,
+      "sha256": "d6917e5d664d2e7cdeb71fb2a04204f0b9ea4bd8c3e631235b85c46d73bb5d71"
+    },
+    {
+      "path": "release\\public_beta_v0_2\\REAL_DATA_SUMMARY_v0_2.md",
+      "bytes": 488,
+      "sha256": "5d6f0c77cff01dbfbf828840f9d64aea9acfa19431f5ca3b4ba04c040ac21aa1"
+    },
+    {
+      "path": "release\\public_beta_v0_2\\RELEASE_NOTES_v0_2.md",
+      "bytes": 469,
+      "sha256": "97e68c9bad1ceb53ce965ed79445590c409cfd57d2f606b1bf1b77f334a04fb1"
+    },
+    {
+      "path": "release\\public_beta_v0_2\\SMOKE_TEST_COMMANDS_v0_2.md",
+      "bytes": 441,
+      "sha256": "0d4171784c0dddba1ada06725993e6af2d736c623298f34d8f4978d629863d10"
+    }
+  ],
+  "actual_publish_performed": false
+}

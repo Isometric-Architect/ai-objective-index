@@ -1,0 +1,246 @@
+{
+  "version": "0.1.0-package-4",
+  "generated_at": "2026-05-18T10:25:35.504384+00:00",
+  "records": [
+    {
+      "query_id": "golden-001",
+      "query": "Find a cheap image generation API with commercial-use terms.",
+      "domain": "ai_tools",
+      "expected_focus": [
+        "image_generation",
+        "pricing",
+        "commercial_use"
+      ]
+    },
+    {
+      "query_id": "golden-002",
+      "query": "Compare MCP servers for browser automation.",
+      "domain": "mcp_servers",
+      "expected_focus": [
+        "browser_automation",
+        "mcp_server",
+        "docs"
+      ]
+    },
+    {
+      "query_id": "golden-003",
+      "query": "Find AI coding tools with clear pricing and docs.",
+      "domain": "ai_saas",
+      "expected_focus": [
+        "ai_coding_assistant",
+        "pricing",
+        "documentation_quality"
+      ]
+    },
+    {
+      "query_id": "golden-004",
+      "query": "Find open-source agent frameworks with active repos.",
+      "domain": "mixed_ai_tools",
+      "expected_focus": [
+        "open_source_agent_framework",
+        "trust_signal",
+        "repository_activity"
+      ]
+    },
+    {
+      "query_id": "golden-005",
+      "query": "Find AI APIs with free tiers and clear rate limits.",
+      "domain": "ai_apis",
+      "expected_focus": [
+        "free_tier",
+        "rate_limits",
+        "api_reference"
+      ]
+    },
+    {
+      "query_id": "golden-006",
+      "query": "Rank OCR APIs for scanned PDF table extraction under a low monthly budget.",
+      "domain": "ai_apis",
+      "expected_focus": [
+        "ocr",
+        "table_extraction",
+        "cost_fit"
+      ]
+    },
+    {
+      "query_id": "golden-007",
+      "query": "Compare meeting transcription tools that provide speaker labels and action items.",
+      "domain": "ai_saas",
+      "expected_focus": [
+        "meeting_transcription",
+        "speaker_labels",
+        "action_items"
+      ]
+    },
+    {
+      "query_id": "golden-008",
+      "query": "Find an LLM gateway with budget controls and provider fallback routing.",
+      "domain": "ai_tools",
+      "expected_focus": [
+        "llm_gateway",
+        "budget_controls",
+        "fallbacks"
+      ]
+    },
+    {
+      "query_id": "golden-009",
+      "query": "Find a speech synthesis API with commercial audio usage terms.",
+      "domain": "ai_apis",
+      "expected_focus": [
+        "speech_synthesis",
+        "commercial_use",
+        "voice_rights"
+      ]
+    },
+    {
+      "query_id": "golden-010",
+      "query": "Compare workflow automation tools that include AI steps and human approvals.",
+      "domain": "ai_saas",
+      "expected_focus": [
+        "workflow_automation",
+        "ai_steps",
+        "human_approval"
+      ]
+    },
+    {
+      "query_id": "golden-011",
+      "query": "Find a vector database with free development tier and hybrid search.",
+      "domain": "ai_tools",
+      "expected_focus": [
+        "vector_database",
+        "free_tier",
+        "hybrid_search"
+      ]
+    },
+    {
+      "query_id": "golden-012",
+      "query": "Find a document extraction API with JSON output and retention controls.",
+      "domain": "ai_apis",
+      "expected_focus": [
+        "document_extraction",
+        "json_output",
+        "data_retention"
+      ]
+    },
+    {
+      "query_id": "golden-013",
+      "query": "Compare AI video generation tools for commercial social media exports.",
+      "domain": "ai_saas",
+      "expected_focus": [
+        "video_generation",
+        "commercial_use",
+        "pricing"
+      ]
+    },
+    {
+      "query_id": "golden-014",
+      "query": "Find an AI search API that returns citations and supports freshness filters.",
+      "domain": "ai_apis",
+      "expected_focus": [
+        "ai_search",
+        "citations",
+        "freshness_filters"
+      ]
+    },
+    {
+      "query_id": "golden-015",
+      "query": "Find a low-cost embedding API for multilingual RAG.",
+      "domain": "ai_apis",
+      "expected_focus": [
+        "embedding_api",
+        "multilingual_embeddings",
+        "cost_fit"
+      ]
+    },
+    {
+      "query_id": "golden-016",
+      "query": "Find a local LLM app that keeps documents on device by default.",
+      "domain": "ai_tools",
+      "expected_focus": [
+        "local_llm_app",
+        "offline_chat",
+        "data_retention"
+      ]
+    },
+    {
+      "query_id": "golden-017",
+      "query": "Compare prompt management tools with versioning and eval runs.",
+      "domain": "ai_saas",
+      "expected_focus": [
+        "prompt_management",
+        "prompt_versioning",
+        "eval_runs"
+      ]
+    },
+    {
+      "query_id": "golden-018",
+      "query": "Find open-source RAG frameworks with ingestion and retrieval evaluation.",
+      "domain": "mixed_ai_tools",
+      "expected_focus": [
+        "rag_framework",
+        "document_ingestion",
+        "retrieval_eval"
+      ]
+    },
+    {
+      "query_id": "golden-019",
+      "query": "Find a data labeling platform for RLHF preference tasks.",
+      "domain": "ai_saas",
+      "expected_focus": [
+        "data_labeling",
+        "rlhf_preferences",
+        "review_queues"
+      ]
+    },
+    {
+      "query_id": "golden-020",
+      "query": "Find an AI monitoring tool for LLM traces, cost dashboards, and drift alerts.",
+      "domain": "ai_saas",
+      "expected_focus": [
+        "ai_monitoring",
+        "llm_tracing",
+        "cost_dashboards"
+      ]
+    },
+    {
+      "query_id": "golden-021",
+      "query": "List options with missing policy fields for commercial deployment review.",
+      "domain": "mixed_ai_tools",
+      "expected_focus": [
+        "missing_fields",
+        "policy_clarity",
+        "commercial_use"
+      ]
+    },
+    {
+      "query_id": "golden-022",
+      "query": "Explain why a cheap embedding option ranks above a broader LLM gateway for RAG.",
+      "domain": "mixed_ai_tools",
+      "expected_focus": [
+        "explain_score",
+        "objective_fit",
+        "source_trace_coverage"
+      ]
+    },
+    {
+      "query_id": "golden-023",
+      "query": "Generate a read-only decision receipt for choosing an OCR API.",
+      "domain": "ai_apis",
+      "expected_focus": [
+        "decision_receipt",
+        "constraints_checked",
+        "source_trace_ids"
+      ]
+    },
+    {
+      "query_id": "golden-024",
+      "query": "Compare web search MCP and browser automation MCP tools without triggering login or form submission.",
+      "domain": "mcp_servers",
+      "expected_focus": [
+        "mcp_server",
+        "read_only_boundary",
+        "forbidden_actions"
+      ]
+    }
+  ]
+}

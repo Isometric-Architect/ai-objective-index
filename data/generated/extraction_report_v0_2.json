@@ -1,0 +1,285 @@
+{
+  "version": "0.2-fixture-skeleton",
+  "read_only": true,
+  "network_fetch": false,
+  "object_count": 3,
+  "source_trace_count": 26,
+  "status_counts": {
+    "EXTRACTED_UNVERIFIED": 3
+  },
+  "objective_scores": [
+    {
+      "object_id": "image_api_fixture",
+      "objective_score": 64.12,
+      "score_components": {
+        "relevance": 50.0,
+        "cost_fit": 90.0,
+        "policy_clarity": 72.0,
+        "documentation_quality": 61.33,
+        "trust_signal": 88.25,
+        "source_trace_coverage": 75.0,
+        "freshness": 100.0,
+        "capability_fit": 0.0,
+        "structuredness": 100.0
+      },
+      "penalties": {
+        "missing_field_penalty": 2.5,
+        "stale_penalty": 0.0,
+        "unsafe_claim_penalty": 0.0,
+        "ambiguity_penalty": 0.0
+      },
+      "rank_reason": [
+        "Partial relevance to the stated objective.",
+        "Pricing information appears compatible with the requested constraints.",
+        "At least one important field is backed by source traces."
+      ],
+      "warnings": [
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+        "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+        "Missing or weak fields detected: data_retention_policy."
+      ],
+      "missing_fields": [
+        "data_retention_policy"
+      ],
+      "confidence": 0.997,
+      "status": "EXTRACTED_UNVERIFIED",
+      "claim_ceiling": "EXTRACTED_UNVERIFIED",
+      "obstructions": [
+        {
+          "object_id": "image_api_fixture",
+          "token": "HOLD_POLICY",
+          "reason": "Policy or commercial-use evidence is missing or weak.",
+          "missing_evidence": [
+            "data_retention_policy"
+          ],
+          "next_action": "Find official terms, privacy, retention, license, or commercial-use pages before promoting policy claims.",
+          "severity": "high",
+          "source_trace_ids": [
+            "trace-6d2f88fe9677",
+            "trace-beedd6dc2683",
+            "trace-9960ce6b8fa6",
+            "trace-c7783dea8980",
+            "trace-4fe4a2dc491b",
+            "trace-11236964c5e4",
+            "trace-fbdcd6c16563",
+            "trace-c88946c37c81",
+            "trace-6a9a8a104114",
+            "trace-50a96400c85e",
+            "trace-a25f7797f5e9",
+            "trace-b082c388e014",
+            "trace-c2f59b3db5ce"
+          ]
+        },
+        {
+          "object_id": "image_api_fixture",
+          "token": "HOLD_VALIDATOR",
+          "reason": "The claim ceiling prevents verified-object promotion.",
+          "missing_evidence": [
+            "validator_review"
+          ],
+          "next_action": "Keep as sample/extracted readout or add an explicit future validator workflow.",
+          "severity": "medium",
+          "source_trace_ids": [
+            "trace-6d2f88fe9677",
+            "trace-beedd6dc2683",
+            "trace-9960ce6b8fa6",
+            "trace-c7783dea8980",
+            "trace-4fe4a2dc491b",
+            "trace-11236964c5e4",
+            "trace-fbdcd6c16563",
+            "trace-c88946c37c81",
+            "trace-6a9a8a104114",
+            "trace-50a96400c85e",
+            "trace-a25f7797f5e9",
+            "trace-b082c388e014",
+            "trace-c2f59b3db5ce"
+          ]
+        }
+      ],
+      "not_asserted": [
+        "not a quality guarantee",
+        "not legal, financial, medical, purchasing, procurement, compliance, or professional advice",
+        "not permission to buy, book, pay, log in, submit forms, email, connect accounts, purchase, or sign contracts",
+        "not supplier-verified data",
+        "extracted price or policy fields are not legal guarantees"
+      ],
+      "trace_fields": [
+        "capabilities",
+        "docs.api_reference_url",
+        "docs.docs_url",
+        "docs.github_url",
+        "policies.commercial_use",
+        "policies.rate_limits",
+        "pricing"
+      ]
+    },
+    {
+      "object_id": "mcp_server_fixture",
+      "objective_score": 37.91,
+      "score_components": {
+        "relevance": 37.5,
+        "cost_fit": 55.0,
+        "policy_clarity": 36.0,
+        "documentation_quality": 16.0,
+        "trust_signal": 98.25,
+        "source_trace_coverage": 37.5,
+        "freshness": 100.0,
+        "capability_fit": 12.5,
+        "structuredness": 100.0
+      },
+      "penalties": {
+        "missing_field_penalty": 10.0,
+        "stale_penalty": 0.0,
+        "unsafe_claim_penalty": 0.0,
+        "ambiguity_penalty": 0.0
+      },
+      "rank_reason": [
+        "Partial relevance to the stated objective.",
+        "At least one important field is backed by source traces."
+      ],
+      "warnings": [
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+        "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+        "Missing or weak fields detected: commercial_use_terms, docs_url, refund_policy, data_retention_policy."
+      ],
+      "missing_fields": [
+        "commercial_use_terms",
+        "docs_url",
+        "refund_policy",
+        "data_retention_policy"
+      ],
+      "confidence": 0.885,
+      "status": "EXTRACTED_UNVERIFIED",
+      "claim_ceiling": "EXTRACTED_UNVERIFIED",
+      "obstructions": [
+        {
+          "object_id": "mcp_server_fixture",
+          "token": "HOLD_POLICY",
+          "reason": "Policy or commercial-use evidence is missing or weak.",
+          "missing_evidence": [
+            "commercial_use_terms",
+            "data_retention_policy"
+          ],
+          "next_action": "Find official terms, privacy, retention, license, or commercial-use pages before promoting policy claims.",
+          "severity": "high",
+          "source_trace_ids": [
+            "trace-3b43f57e1c99",
+            "trace-c0fb70df2a6c",
+            "trace-74967ef2225b",
+            "trace-67a5307f6a1f"
+          ]
+        },
+        {
+          "object_id": "mcp_server_fixture",
+          "token": "HOLD_VALIDATOR",
+          "reason": "The claim ceiling prevents verified-object promotion.",
+          "missing_evidence": [
+            "validator_review"
+          ],
+          "next_action": "Keep as sample/extracted readout or add an explicit future validator workflow.",
+          "severity": "medium",
+          "source_trace_ids": [
+            "trace-3b43f57e1c99",
+            "trace-c0fb70df2a6c",
+            "trace-74967ef2225b",
+            "trace-67a5307f6a1f"
+          ]
+        }
+      ],
+      "not_asserted": [
+        "not a quality guarantee",
+        "not legal, financial, medical, purchasing, procurement, compliance, or professional advice",
+        "not permission to buy, book, pay, log in, submit forms, email, connect accounts, purchase, or sign contracts",
+        "not supplier-verified data",
+        "extracted price or policy fields are not legal guarantees"
+      ],
+      "trace_fields": [
+        "capabilities",
+        "docs.docs_url",
+        "docs.github_url",
+        "policies.rate_limits"
+      ]
+    },
+    {
+      "object_id": "ocr_api_fixture",
+      "objective_score": 55.34,
+      "score_components": {
+        "relevance": 25.0,
+        "cost_fit": 90.0,
+        "policy_clarity": 88.0,
+        "documentation_quality": 34.67,
+        "trust_signal": 88.25,
+        "source_trace_coverage": 75.0,
+        "freshness": 100.0,
+        "capability_fit": 0.0,
+        "structuredness": 100.0
+      },
+      "penalties": {
+        "missing_field_penalty": 5.0,
+        "stale_penalty": 0.0,
+        "unsafe_claim_penalty": 0.0,
+        "ambiguity_penalty": 0.0
+      },
+      "rank_reason": [
+        "Limited keyword relevance to the stated objective.",
+        "Pricing information appears compatible with the requested constraints.",
+        "At least one important field is backed by source traces."
+      ],
+      "warnings": [
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+        "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+        "Missing or weak fields detected: api_access, refund_policy."
+      ],
+      "missing_fields": [
+        "api_access",
+        "refund_policy"
+      ],
+      "confidence": 0.996,
+      "status": "EXTRACTED_UNVERIFIED",
+      "claim_ceiling": "EXTRACTED_UNVERIFIED",
+      "obstructions": [
+        {
+          "object_id": "ocr_api_fixture",
+          "token": "HOLD_VALIDATOR",
+          "reason": "The claim ceiling prevents verified-object promotion.",
+          "missing_evidence": [
+            "validator_review"
+          ],
+          "next_action": "Keep as sample/extracted readout or add an explicit future validator workflow.",
+          "severity": "medium",
+          "source_trace_ids": [
+            "trace-632da49d14ff",
+            "trace-39941fc14898",
+            "trace-541576ae7492",
+            "trace-16645ed186bc",
+            "trace-d5aab9d4d395",
+            "trace-3b7fa0cb26dd",
+            "trace-eb5d0c9ec0ab",
+            "trace-9ab52046290c",
+            "trace-14d448784627"
+          ]
+        }
+      ],
+      "not_asserted": [
+        "not a quality guarantee",
+        "not legal, financial, medical, purchasing, procurement, compliance, or professional advice",
+        "not permission to buy, book, pay, log in, submit forms, email, connect accounts, purchase, or sign contracts",
+        "not supplier-verified data",
+        "extracted price or policy fields are not legal guarantees"
+      ],
+      "trace_fields": [
+        "capabilities",
+        "docs.api_reference_url",
+        "docs.docs_url",
+        "policies.commercial_use",
+        "policies.rate_limits",
+        "pricing"
+      ]
+    }
+  ],
+  "known_limits": [
+    "Fixture pipeline only; no broad live crawling.",
+    "Extracted fields are EXTRACTED_UNVERIFIED.",
+    "Source traces support fields but do not guarantee correctness."
+  ]
+}

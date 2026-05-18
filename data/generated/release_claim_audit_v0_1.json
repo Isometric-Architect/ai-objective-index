@@ -1,0 +1,289 @@
+{
+  "generated_at": "2026-05-18T10:25:35.373375+00:00",
+  "risky_phrase_count": 0,
+  "findings": [],
+  "contextual_mentions": [
+    {
+      "file": "README.md",
+      "line": 113,
+      "phrase": "sends email",
+      "text": "MCP v0.1 never buys, books, pays, logs in, sends email, submits forms, modifies accounts, claims suppliers, verifies suppliers, or signs contracts.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 113,
+      "phrase": "logs in",
+      "text": "MCP v0.1 never buys, books, pays, logs in, sends email, submits forms, modifies accounts, claims suppliers, verifies suppliers, or signs contracts.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 113,
+      "phrase": "signs contracts",
+      "text": "MCP v0.1 never buys, books, pays, logs in, sends email, submits forms, modifies accounts, claims suppliers, verifies suppliers, or signs contracts.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 137,
+      "phrase": "sends email",
+      "text": "The REST API is read-only. It never buys, books, pays, logs in, sends email, submits forms, modifies accounts, claims suppliers, verifies suppliers, or signs contracts.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 137,
+      "phrase": "logs in",
+      "text": "The REST API is read-only. It never buys, books, pays, logs in, sends email, submits forms, modifies accounts, claims suppliers, verifies suppliers, or signs contracts.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 137,
+      "phrase": "signs contracts",
+      "text": "The REST API is read-only. It never buys, books, pays, logs in, sends email, submits forms, modifies accounts, claims suppliers, verifies suppliers, or signs contracts.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 161,
+      "phrase": "legal advice",
+      "text": "Package 4 remains read-only. Reports are sample/extracted benchmark artifacts, not quality guarantees, official rankings, legal advice, purchasing advice, or safety certifications.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 161,
+      "phrase": "purchasing advice",
+      "text": "Package 4 remains read-only. Reports are sample/extracted benchmark artifacts, not quality guarantees, official rankings, legal advice, purchasing advice, or safety certifications.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 378,
+      "phrase": "purchasing advice",
+      "text": "Package 7F builds a calibrated `public_beta_mcp` candidate dataset from saved MCP Registry metadata. Candidates are registry metadata candidates only; they are not verified, security certified, quality guaranteed, action-ready, or purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 378,
+      "phrase": "security certified",
+      "text": "Package 7F builds a calibrated `public_beta_mcp` candidate dataset from saved MCP Registry metadata. Candidates are registry metadata candidates only; they are not verified, security certified, quality guaranteed, action-ready, or purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 452,
+      "phrase": "purchasing advice",
+      "text": "`public_beta_mcp` contains source-traced Official MCP Registry metadata candidates. They are not verified, not security certified, not quality guaranteed, not action-ready, and not purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 452,
+      "phrase": "security certified",
+      "text": "`public_beta_mcp` contains source-traced Official MCP Registry metadata candidates. They are not verified, not security certified, not quality guaranteed, not action-ready, and not purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 503,
+      "phrase": "official standard",
+      "text": "Forbidden claims: AOI is an official standard, a guarantee of quality, a comprehensive market index, a paid placement system, or a system that automatically purchases, books, pays, emails, logs in, submits forms, or signs contracts.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 503,
+      "phrase": "logs in",
+      "text": "Forbidden claims: AOI is an official standard, a guarantee of quality, a comprehensive market index, a paid placement system, or a system that automatically purchases, books, pays, emails, logs in, submits forms, or signs contracts.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 503,
+      "phrase": "signs contracts",
+      "text": "Forbidden claims: AOI is an official standard, a guarantee of quality, a comprehensive market index, a paid placement system, or a system that automatically purchases, books, pays, emails, logs in, submits forms, or signs contracts.",
+      "counted": false
+    },
+    {
+      "file": "docs\\community_launch.md",
+      "line": 54,
+      "phrase": "security certified",
+      "text": "- Official MCP Registry metadata candidates are not verified, not security certified, and not quality guaranteed.",
+      "counted": false
+    },
+    {
+      "file": "docs\\community_launch.md",
+      "line": 56,
+      "phrase": "legal advice",
+      "text": "- Not a quality guarantee, official ranking, legal advice, financial advice, medical advice, purchasing advice, or safety certification.",
+      "counted": false
+    },
+    {
+      "file": "docs\\community_launch.md",
+      "line": 56,
+      "phrase": "financial advice",
+      "text": "- Not a quality guarantee, official ranking, legal advice, financial advice, medical advice, purchasing advice, or safety certification.",
+      "counted": false
+    },
+    {
+      "file": "docs\\community_launch.md",
+      "line": 56,
+      "phrase": "medical advice",
+      "text": "- Not a quality guarantee, official ranking, legal advice, financial advice, medical advice, purchasing advice, or safety certification.",
+      "counted": false
+    },
+    {
+      "file": "docs\\community_launch.md",
+      "line": 56,
+      "phrase": "purchasing advice",
+      "text": "- Not a quality guarantee, official ranking, legal advice, financial advice, medical advice, purchasing advice, or safety certification.",
+      "counted": false
+    },
+    {
+      "file": "docs\\launch_notes.md",
+      "line": 37,
+      "phrase": "legal advice",
+      "text": "All Package 4 reports must preserve the claim boundary: benchmark outputs are not quality guarantees, official rankings, legal advice, purchasing advice, or safety certifications.",
+      "counted": false
+    },
+    {
+      "file": "docs\\launch_notes.md",
+      "line": 37,
+      "phrase": "purchasing advice",
+      "text": "All Package 4 reports must preserve the claim boundary: benchmark outputs are not quality guarantees, official rankings, legal advice, purchasing advice, or safety certifications.",
+      "counted": false
+    },
+    {
+      "file": "docs\\launch_notes.md",
+      "line": 71,
+      "phrase": "official standard",
+      "text": "Public launch copy should use Product Claim Mode: describe implemented read-only behavior, benchmark scope, source traces, missing fields, and limitations. Do not claim product readiness, certification, official standard status, purchasing advice, or action execution without product evidence.",
+      "counted": false
+    },
+    {
+      "file": "docs\\launch_notes.md",
+      "line": 71,
+      "phrase": "purchasing advice",
+      "text": "Public launch copy should use Product Claim Mode: describe implemented read-only behavior, benchmark scope, source traces, missing fields, and limitations. Do not claim product readiness, certification, official standard status, purchasing advice, or action execution without product evidence.",
+      "counted": false
+    },
+    {
+      "file": "docs\\launch_notes.md",
+      "line": 109,
+      "phrase": "purchasing advice",
+      "text": "The launch posture remains careful: `REGISTRY_METADATA_CANDIDATE` is not `VERIFIED`, not `ACTION_READY`, not supplier verification, not security certification, not a quality guarantee, not purchasing advice, and not action permission. Package 7F does not run live network, crawl, scrape, follow links, publish, or execute external actions.",
+      "counted": false
+    },
+    {
+      "file": "docs\\public_claim_policy.md",
+      "line": 17,
+      "phrase": "all ai will use",
+      "text": "- All AI will use AOI.",
+      "counted": false
+    },
+    {
+      "file": "docs\\public_claim_policy.md",
+      "line": 18,
+      "phrase": "official standard",
+      "text": "- AOI is an official standard.",
+      "counted": false
+    },
+    {
+      "file": "docs\\public_claim_policy.md",
+      "line": 19,
+      "phrase": "guarantees quality",
+      "text": "- ActionRank, ObjectiveRank, or ObjectiveScore guarantees quality.",
+      "counted": false
+    },
+    {
+      "file": "docs\\public_claim_policy.md",
+      "line": 21,
+      "phrase": "purchasing advice",
+      "text": "- AOI is purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "release\\public_beta_v0_1\\CLAIM_BOUNDARY_SUMMARY.md",
+      "line": 13,
+      "phrase": "official standard",
+      "text": "- AOI is an official standard.",
+      "counted": false
+    },
+    {
+      "file": "release\\public_beta_v0_1\\CLAIM_BOUNDARY_SUMMARY.md",
+      "line": 14,
+      "phrase": "all ai will use",
+      "text": "- All AI will use AOI.",
+      "counted": false
+    },
+    {
+      "file": "release\\public_beta_v0_1\\MANUAL_PUBLISH_CHECKLIST.md",
+      "line": 23,
+      "phrase": "official standard",
+      "text": "- Do not claim official standard status.",
+      "counted": false
+    },
+    {
+      "file": "release\\public_beta_v0_1\\MANUAL_PUBLISH_CHECKLIST.md",
+      "line": 25,
+      "phrase": "purchasing advice",
+      "text": "- Do not claim product quality guarantees, legal/security/compliance certification, or purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "release\\public_beta_v0_1\\README_PUBLIC_BETA.md",
+      "line": 22,
+      "phrase": "security certified",
+      "text": "- `public_beta_mcp`: calibrated registry metadata candidates; not verified or security certified; may be empty in fixture mode",
+      "counted": false
+    },
+    {
+      "file": "release\\public_beta_v0_1\\README_PUBLIC_BETA.md",
+      "line": 51,
+      "phrase": "official standard",
+      "text": "AOI is read-only. It is not a quality guarantee, official standard, legal advice, financial advice, medical advice, purchasing advice, procurement advice, compliance certification, or safety certification.",
+      "counted": false
+    },
+    {
+      "file": "release\\public_beta_v0_1\\README_PUBLIC_BETA.md",
+      "line": 51,
+      "phrase": "legal advice",
+      "text": "AOI is read-only. It is not a quality guarantee, official standard, legal advice, financial advice, medical advice, purchasing advice, procurement advice, compliance certification, or safety certification.",
+      "counted": false
+    },
+    {
+      "file": "release\\public_beta_v0_1\\README_PUBLIC_BETA.md",
+      "line": 51,
+      "phrase": "financial advice",
+      "text": "AOI is read-only. It is not a quality guarantee, official standard, legal advice, financial advice, medical advice, purchasing advice, procurement advice, compliance certification, or safety certification.",
+      "counted": false
+    },
+    {
+      "file": "release\\public_beta_v0_1\\README_PUBLIC_BETA.md",
+      "line": 51,
+      "phrase": "medical advice",
+      "text": "AOI is read-only. It is not a quality guarantee, official standard, legal advice, financial advice, medical advice, purchasing advice, procurement advice, compliance certification, or safety certification.",
+      "counted": false
+    },
+    {
+      "file": "release\\public_beta_v0_1\\README_PUBLIC_BETA.md",
+      "line": 51,
+      "phrase": "purchasing advice",
+      "text": "AOI is read-only. It is not a quality guarantee, official standard, legal advice, financial advice, medical advice, purchasing advice, procurement advice, compliance certification, or safety certification.",
+      "counted": false
+    }
+  ],
+  "overall_token": "PASS",
+  "suggested_rewrites": [
+    "Use: AOI is an experimental read-only MCP/API benchmark tool.",
+    "Use: AOI outputs are not quality guarantees or purchasing advice.",
+    "Use: Manual publishing and registry submission are not performed by this repository."
+  ],
+  "read_only": true,
+  "live_network_used": false,
+  "actual_publish_performed": false
+}

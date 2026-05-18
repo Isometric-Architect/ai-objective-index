@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-objective-index.example/schemas/objective_request.schema.json",
+  "title": "ObjectiveRequest",
+  "description": "A read-only AOI request for ranking objects against an explicit objective and constraints.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "query",
+    "domain",
+    "objective",
+    "constraints",
+    "scoring_profile",
+    "limit"
+  ],
+  "properties": {
+    "query": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Natural-language request from the user or agent."
+    },
+    "domain": {
+      "type": "string",
+      "enum": [
+        "ai_tools",
+        "ai_apis",
+        "ai_saas",
+        "mcp_servers",
+        "mixed_ai_tools"
+      ],
+      "description": "The vertical or corpus to search."
+    },
+    "objective": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "goal"
+      ],
+      "properties": {
+        "goal": {
+          "type": "string",
+          "minLength": 1
+        },
+        "must_have": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "default": []
+        },
+        "nice_to_have": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "default": []
+        }
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Budget, policy, deployment, licensing, compliance, or documentation constraints to check."
+    },
+    "scoring_profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "weights"
+      ],
+      "properties": {
+        "weights": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "relevance": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "cost_fit": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "policy_clarity": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "documentation_quality": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "trust_signal": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "source_trace_coverage": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "freshness": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        }
+      }
+    },
+    "limit": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 100,
+      "description": "Maximum number of ranked objects to return."
+    }
+  }
+}
+

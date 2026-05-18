@@ -1,0 +1,79 @@
+{
+  "generated_at": "2026-05-18T10:25:33.054904+00:00",
+  "pass": false,
+  "checks": [
+    {
+      "name": "package_importable",
+      "pass": true,
+      "detail": "ai_objective_index import path is available."
+    },
+    {
+      "name": "openapi_exists",
+      "pass": true,
+      "detail": "api/openapi.json"
+    },
+    {
+      "name": "mcp_manifest_exists",
+      "pass": true,
+      "detail": "MCP manifest"
+    },
+    {
+      "name": "public_beta_mcp_count",
+      "pass": false,
+      "detail": "count=0"
+    },
+    {
+      "name": "final_preflight_pass",
+      "pass": true,
+      "detail": "PASS"
+    },
+    {
+      "name": "realdata_claim_audit_pass",
+      "pass": true,
+      "detail": "PASS"
+    },
+    {
+      "name": "release_pack_exists",
+      "pass": true,
+      "detail": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\release\\public_beta_v0_2"
+    },
+    {
+      "name": "launch_pack_exists",
+      "pass": true,
+      "detail": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\launch\\manual_public_beta_v0_2"
+    },
+    {
+      "name": "hf_demo_exists",
+      "pass": true,
+      "detail": "hf_demo/app.py"
+    },
+    {
+      "name": "hf_dataset_readme_exists",
+      "pass": true,
+      "detail": "hf_dataset/README.md"
+    },
+    {
+      "name": "reports_v0_2_exist",
+      "pass": true,
+      "detail": "v0.2 reports"
+    },
+    {
+      "name": "no_actual_publish",
+      "pass": true,
+      "detail": "actual_publish_performed=false"
+    }
+  ],
+  "warnings": [
+    "One or more local launch dry-run checks failed."
+  ],
+  "errors": [
+    {
+      "name": "public_beta_mcp_count",
+      "pass": false,
+      "detail": "count=0"
+    }
+  ],
+  "actual_publish_performed": false,
+  "live_network_used": false,
+  "read_only": true
+}

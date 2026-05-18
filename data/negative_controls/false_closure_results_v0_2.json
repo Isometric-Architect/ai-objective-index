@@ -1,0 +1,149 @@
+{
+  "control_count": 10,
+  "false_BOX": 0,
+  "forbidden_promotions": 0,
+  "blocked_actions_blocked": true,
+  "every_hold_has_next_action": true,
+  "pass": true,
+  "results": [
+    {
+      "control_id": "fc-001",
+      "control_type": "missing_pricing",
+      "passed": true,
+      "false_BOX": 0,
+      "forbidden_promotion": 0,
+      "blocked_actions_blocked": true,
+      "hold_next_action": true,
+      "notes": [
+        "HOLD_PRICE",
+        "HOLD_POLICY",
+        "HOLD_SOURCE",
+        "HOLD_VALIDATOR"
+      ]
+    },
+    {
+      "control_id": "fc-002",
+      "control_type": "missing_commercial_terms",
+      "passed": true,
+      "false_BOX": 0,
+      "forbidden_promotion": 0,
+      "blocked_actions_blocked": true,
+      "hold_next_action": true,
+      "notes": [
+        "HOLD_POLICY",
+        "HOLD_SOURCE",
+        "HOLD_VALIDATOR"
+      ]
+    },
+    {
+      "control_id": "fc-003",
+      "control_type": "source_url_presence",
+      "passed": true,
+      "false_BOX": 0,
+      "forbidden_promotion": 0,
+      "blocked_actions_blocked": true,
+      "hold_next_action": true,
+      "notes": [
+        "HOLD_VALIDATOR"
+      ]
+    },
+    {
+      "control_id": "fc-004",
+      "control_type": "generated_verified",
+      "passed": true,
+      "false_BOX": 0,
+      "forbidden_promotion": 0,
+      "blocked_actions_blocked": true,
+      "hold_next_action": true,
+      "notes": [
+        "HOLD_VALIDATOR"
+      ]
+    },
+    {
+      "control_id": "fc-005",
+      "control_type": "read_to_train_share_action",
+      "passed": true,
+      "false_BOX": 0,
+      "forbidden_promotion": 0,
+      "blocked_actions_blocked": true,
+      "hold_next_action": true,
+      "notes": [
+        "TRAIN=BLOCK",
+        "SHARE=BLOCK",
+        "ACTION=BLOCK"
+      ]
+    },
+    {
+      "control_id": "fc-006",
+      "control_type": "stale_current_truth",
+      "passed": true,
+      "false_BOX": 0,
+      "forbidden_promotion": 0,
+      "blocked_actions_blocked": true,
+      "hold_next_action": true,
+      "notes": [
+        "HOLD_RECONFIRMATION"
+      ]
+    },
+    {
+      "control_id": "fc-007",
+      "control_type": "sample_live_crawl",
+      "passed": true,
+      "false_BOX": 0,
+      "forbidden_promotion": 0,
+      "blocked_actions_blocked": true,
+      "hold_next_action": true,
+      "notes": [
+        "EXTRACTED_UNVERIFIED"
+      ]
+    },
+    {
+      "control_id": "fc-008",
+      "control_type": "score_quality_guarantee",
+      "passed": true,
+      "false_BOX": 0,
+      "forbidden_promotion": 0,
+      "blocked_actions_blocked": true,
+      "hold_next_action": true,
+      "notes": [
+        "not a quality guarantee",
+        "not legal, financial, medical, purchasing, procurement, compliance, or professional advice",
+        "not permission to buy, book, pay, log in, submit forms, email, connect accounts, purchase, or sign contracts",
+        "source traces support fields but do not prove completeness or current truth"
+      ]
+    },
+    {
+      "control_id": "fc-009",
+      "control_type": "mcp_write_actions",
+      "passed": true,
+      "false_BOX": 0,
+      "forbidden_promotion": 0,
+      "blocked_actions_blocked": true,
+      "hold_next_action": true,
+      "notes": [
+        "PAY=BLOCK",
+        "BOOK=BLOCK",
+        "LOGIN=BLOCK",
+        "EMAIL=BLOCK",
+        "PURCHASE=BLOCK",
+        "SIGN_CONTRACT=BLOCK"
+      ]
+    },
+    {
+      "control_id": "fc-010",
+      "control_type": "hold_next_action",
+      "passed": true,
+      "false_BOX": 0,
+      "forbidden_promotion": 0,
+      "blocked_actions_blocked": true,
+      "hold_next_action": true,
+      "notes": [
+        "Find an official pricing or billing limits source before making price-clear claims.",
+        "Find official terms, privacy, retention, license, or commercial-use pages before promoting policy claims.",
+        "Attach field-level source traces before treating extracted fields as source-traced readouts.",
+        "Keep as sample/extracted readout or add an explicit future validator workflow.",
+        "Use only AOI read-only actions: read, rank, compare, explain, quote snippet, or decision receipt."
+      ]
+    }
+  ]
+}

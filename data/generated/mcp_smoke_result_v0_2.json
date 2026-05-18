@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-05-18T10:25:33.664351+00:00",
+  "read_only": true,
+  "live_network_used": false,
+  "data_scope": "sample",
+  "query": "cheap image generation API",
+  "search_result_count": 5,
+  "top_object_id": "aoi-pixelforge-api",
+  "top_name": "PixelForge API",
+  "fetch_status": "active",
+  "source_trace_count": 1,
+  "missing_fields_count": 2,
+  "forbidden_actions_exposed_as_tools": [],
+  "pass": true,
+  "limitations": [
+    "v0.1 read-only benchmark output",
+    "not a quality guarantee",
+    "verify source traces before production use",
+    "no purchase, booking, payment, login, email, or contract execution"
+  ],
+  "forbidden_actions": [
+    "payment",
+    "booking",
+    "login",
+    "email_sending",
+    "form_submission",
+    "purchase",
+    "contract_signing",
+    "account_connection"
+  ]
+}

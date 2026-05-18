@@ -1,0 +1,39 @@
+{
+  "object_count": 1,
+  "trace_count": 1,
+  "pass_count": 0,
+  "hold_count": 1,
+  "block_count": 0,
+  "token_counts": {
+    "HOLD_PLACEHOLDER": 1
+  },
+  "warnings": [
+    "placeholder object is not a public beta candidate",
+    "pricing fields are present but lack matching source traces",
+    "policies fields are present but lack matching source traces"
+  ],
+  "object_results": [
+    {
+      "object_id": "curated-placeholder-image-api",
+      "token": "HOLD_PLACEHOLDER",
+      "status": "HOLD",
+      "warnings": [
+        "placeholder object is not a public beta candidate",
+        "pricing fields are present but lack matching source traces",
+        "policies fields are present but lack matching source traces"
+      ],
+      "trace_count": 1,
+      "public_beta_ready": false,
+      "evidence_gate": {
+        "object_id": "curated-placeholder-image-api",
+        "token": "HOLD_PLACEHOLDER",
+        "public_beta_ready": false,
+        "reasons": [
+          "Placeholder records are not public beta candidates."
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "public_beta_ready_count": 0
+}

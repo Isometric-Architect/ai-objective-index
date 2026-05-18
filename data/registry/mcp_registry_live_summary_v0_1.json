@@ -1,0 +1,19 @@
+{
+  "mode": "manual_raw",
+  "payload_shape": "object.servers",
+  "object_count": 30,
+  "trace_count": 112,
+  "public_beta_ready_count": 0,
+  "live_network_used": false,
+  "arbitrary_scraping_used": false,
+  "link_following_used": false,
+  "credentials_used": false,
+  "errors": [],
+  "warnings": [
+    "Processed existing local registry raw payload without network."
+  ],
+  "success": true,
+  "fixture_mode": false,
+  "receipt_path": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\registry\\mcp_registry_live_run_receipt_v0_1.json",
+  "report_path": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\registry\\mcp_registry_report_v0_1.md"
+}

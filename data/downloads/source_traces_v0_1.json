@@ -1,0 +1,226 @@
+{
+  "version": "0.1.0-package-4",
+  "generated_at": "2026-05-18T10:25:35.504384+00:00",
+  "records": [
+    {
+      "trace_id": "trace-pixelforge-pricing",
+      "object_id": "aoi-pixelforge-api",
+      "field": "pricing",
+      "source_url": "https://pixelforge.example.com/pricing",
+      "source_title": "PixelForge Pricing",
+      "source_snippet": "Starter plan includes monthly generation credits, API access, and paid usage tiers for additional images.",
+      "retrieved_at": "2026-04-28T00:05:00Z",
+      "confidence": 0.9,
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "trace_id": "trace-clearscan-docs",
+      "object_id": "aoi-clearscan-ocr-api",
+      "field": "capabilities",
+      "source_url": "https://clearscan.example.com/docs",
+      "source_title": "ClearScan API Documentation",
+      "source_snippet": "The OCR endpoint extracts text, tables, layout coordinates, and structured fields from scanned PDFs and images.",
+      "retrieved_at": "2026-04-28T00:06:00Z",
+      "confidence": 0.91,
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "trace_id": "trace-meetscribe-features",
+      "object_id": "aoi-meetscribe-ai",
+      "field": "capabilities",
+      "source_url": "https://meetscribe.example.com/features",
+      "source_title": "MeetScribe Features",
+      "source_snippet": "MeetScribe records meetings, creates speaker-labeled transcripts, summarizes decisions, and extracts action items.",
+      "retrieved_at": "2026-04-28T00:07:00Z",
+      "confidence": 0.86,
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "trace_id": "trace-codepilot-pricing",
+      "object_id": "aoi-codepilot-studio",
+      "field": "pricing",
+      "source_url": "https://codepilot.example.com/pricing",
+      "source_title": "CodePilot Plans",
+      "source_snippet": "Individual developers can start free, while teams add shared policy controls, codebase chat, and review workflows.",
+      "retrieved_at": "2026-04-28T00:08:00Z",
+      "confidence": 0.84,
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "trace_id": "trace-searchmcp-tools",
+      "object_id": "aoi-searchmcp-relay",
+      "field": "docs.api_reference_url",
+      "source_url": "https://searchmcp.example.com/docs/tools",
+      "source_title": "SearchMCP Tool Reference",
+      "source_snippet": "The MCP server exposes search, result fetch, and snippet tools for read-only web result retrieval.",
+      "retrieved_at": "2026-04-28T00:09:00Z",
+      "confidence": 0.88,
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "trace_id": "trace-openagent-repo",
+      "object_id": "aoi-openagent-kit",
+      "field": "trust_signal",
+      "source_url": "https://github.example.com/openagentkit/openagentkit",
+      "source_title": "OpenAgent Kit Repository",
+      "source_snippet": "The repository shows recent commits, issue activity, examples, and tagged releases for the agent framework.",
+      "retrieved_at": "2026-04-28T00:10:00Z",
+      "confidence": 0.78,
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "trace_id": "trace-modelbridge-docs",
+      "object_id": "aoi-modelbridge-gateway",
+      "field": "capabilities",
+      "source_url": "https://modelbridge.example.com/docs",
+      "source_title": "ModelBridge Documentation",
+      "source_snippet": "ModelBridge routes requests across model providers, applies fallback rules, logs usage, and supports budget controls.",
+      "retrieved_at": "2026-04-28T00:11:00Z",
+      "confidence": 0.89,
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "trace_id": "trace-voiceweave-rights",
+      "object_id": "aoi-voiceweave-speech-api",
+      "field": "policies.commercial_use",
+      "source_url": "https://voiceweave.example.com/voice-rights",
+      "source_title": "Voice Rights and Usage",
+      "source_snippet": "Licensed voices may be used in commercial audio outputs subject to consent, attribution, and content restrictions.",
+      "retrieved_at": "2026-04-28T00:12:00Z",
+      "confidence": 0.82,
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "trace_id": "trace-flowpilot-docs",
+      "object_id": "aoi-flowpilot-automations",
+      "field": "capabilities",
+      "source_url": "https://flowpilot.example.com/docs",
+      "source_title": "FlowPilot Documentation",
+      "source_snippet": "Flows can combine SaaS connectors, webhooks, AI steps, conditional branches, and human approval gates.",
+      "retrieved_at": "2026-04-28T00:13:00Z",
+      "confidence": 0.86,
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "trace_id": "trace-vectornest-pricing",
+      "object_id": "aoi-vectornest-db",
+      "field": "pricing",
+      "source_url": "https://vectornest.example.com/pricing",
+      "source_title": "VectorNest Pricing",
+      "source_snippet": "A free sandbox index is available for development, with paid tiers based on storage, writes, and query volume.",
+      "retrieved_at": "2026-04-28T00:14:00Z",
+      "confidence": 0.9,
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "trace_id": "trace-browserpilot-tools",
+      "object_id": "aoi-browserpilot-mcp",
+      "field": "capabilities",
+      "source_url": "https://browserpilot.example.com/docs/tools",
+      "source_title": "BrowserPilot MCP Tools",
+      "source_snippet": "The server provides navigation, screenshot, DOM query, click, type, and page-state inspection tools.",
+      "retrieved_at": "2026-04-28T00:15:00Z",
+      "confidence": 0.88,
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "trace_id": "trace-doculift-retention",
+      "object_id": "aoi-doculift-extraction-api",
+      "field": "policies.data_retention",
+      "source_url": "https://doculift.example.com/compliance",
+      "source_title": "DocuLift Compliance",
+      "source_snippet": "Default document retention is 30 days, and customers can request zero-retention processing on eligible plans.",
+      "retrieved_at": "2026-04-28T00:16:00Z",
+      "confidence": 0.84,
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "trace_id": "trace-motioncanvas-terms",
+      "object_id": "aoi-motioncanvas-ai",
+      "field": "policies.commercial_use",
+      "source_url": "https://motioncanvas.example.com/terms",
+      "source_title": "MotionCanvas Terms",
+      "source_snippet": "Paid plans include commercial export rights, while free exports may include watermark and usage restrictions.",
+      "retrieved_at": "2026-04-28T00:17:00Z",
+      "confidence": 0.79,
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "trace_id": "trace-findwise-citations",
+      "object_id": "aoi-findwise-search-api",
+      "field": "capabilities",
+      "source_url": "https://findwise.example.com/citations",
+      "source_title": "Findwise Citations",
+      "source_snippet": "Answers include cited result URLs, source snippets, and optional freshness filters for recent pages.",
+      "retrieved_at": "2026-04-28T00:18:00Z",
+      "confidence": 0.87,
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "trace_id": "trace-embedlite-models",
+      "object_id": "aoi-embedlite-api",
+      "field": "capabilities",
+      "source_url": "https://embedlite.example.com/models",
+      "source_title": "EmbedLite Models",
+      "source_snippet": "Available embedding models include small English, multilingual, and retrieval-optimized options with batch support.",
+      "retrieved_at": "2026-04-28T00:19:00Z",
+      "confidence": 0.92,
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "trace_id": "trace-localmind-privacy",
+      "object_id": "aoi-localmind-desktop",
+      "field": "policies.data_retention",
+      "source_url": "https://localmind.example.com/privacy",
+      "source_title": "LocalMind Privacy",
+      "source_snippet": "Documents and chats remain on the local device by default, while optional sync stores selected workspace data.",
+      "retrieved_at": "2026-04-28T00:20:00Z",
+      "confidence": 0.81,
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "trace_id": "trace-promptledger-docs",
+      "object_id": "aoi-promptledger",
+      "field": "capabilities",
+      "source_url": "https://promptledger.example.com/docs",
+      "source_title": "PromptLedger Docs",
+      "source_snippet": "Teams can version prompts, run evals, review changes, and promote approved prompt versions to production.",
+      "retrieved_at": "2026-04-28T00:21:00Z",
+      "confidence": 0.87,
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "trace_id": "trace-retrievalforge-repo",
+      "object_id": "aoi-retrievalforge",
+      "field": "trust_signal",
+      "source_url": "https://github.example.com/retrievalforge/retrievalforge",
+      "source_title": "RetrievalForge Repository",
+      "source_snippet": "The repository includes retriever examples, chunking recipes, recent releases, and answer-evaluation utilities.",
+      "retrieved_at": "2026-04-28T00:22:00Z",
+      "confidence": 0.8,
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "trace_id": "trace-labelloop-docs",
+      "object_id": "aoi-labelloop",
+      "field": "capabilities",
+      "source_url": "https://labelloop.example.com/docs",
+      "source_title": "LabelLoop Documentation",
+      "source_snippet": "Projects support classification, extraction, preference labeling, review queues, and quality agreement metrics.",
+      "retrieved_at": "2026-04-28T00:23:00Z",
+      "confidence": 0.85,
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "trace_id": "trace-signallens-docs",
+      "object_id": "aoi-signallens-monitor",
+      "field": "capabilities",
+      "source_url": "https://signallens.example.com/docs",
+      "source_title": "SignalLens Documentation",
+      "source_snippet": "SignalLens captures LLM traces, monitors cost, runs quality checks, and alerts on drift or regression events.",
+      "retrieved_at": "2026-04-28T00:24:00Z",
+      "confidence": 0.89,
+      "source_rank": "UNKNOWN"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "generated_at": "2026-05-18T10:25:44.281610+00:00",
+  "overall_token": "PASS",
+  "checks": {
+    "core_commands_to_run_manually": [
+      {
+        "command": "python -m pytest",
+        "token": "NOT_RUN"
+      },
+      {
+        "command": "python -m ai_objective_index.mcp_smoke",
+        "token": "NOT_RUN"
+      },
+      {
+        "command": "python -m ai_objective_index.datascope_qa",
+        "token": "NOT_RUN"
+      },
+      {
+        "command": "python -m ai_objective_index.beta_readiness",
+        "token": "NOT_RUN"
+      },
+      {
+        "command": "python -m ai_objective_index.openapi_export",
+        "token": "NOT_RUN"
+      },
+      {
+        "command": "python -m ai_objective_index.mcp_manifest",
+        "token": "NOT_RUN"
+      }
+    ],
+    "required_files": {
+      "token": "PASS",
+      "checked": [
+        "README.md",
+        "AGENTS.md",
+        "SECURITY.md",
+        "CONTRIBUTING.md",
+        "CHANGELOG.md",
+        "docs/claim_boundaries.md",
+        "docs/productization_mode.md",
+        "docs/research_to_product_bridge.md",
+        "docs/public_claim_policy.md",
+        "api/openapi.json",
+        "data/generated_mcp_tools_manifest.json",
+        "reports/mcp_server_objective_index_v0_1.md",
+        "reports/ai_tool_pricing_index_v0_1.md",
+        "reports/source_trace_quality_report_v0_1.md",
+        "hf_demo/app.py",
+        "hf_dataset/README.md",
+        "examples/python_client.py",
+        "examples/claude_desktop_config_real_mcp_example.json"
+      ]
+    },
+    "generated_outputs": {
+      "token": "PASS",
+      "checked": [
+        "data/generated/datascope_qa_results_v0_2.json",
+        "data/generated/beta_readiness_report_v0_2.md",
+        "data/generated/integrated_index_v0_2.json",
+        "data/generated/integrated_source_traces_v0_2.json"
+      ]
+    },
+    "safety_boundary": {
+      "read_only_documented": true,
+      "forbidden_actions_documented": true,
+      "forbidden_actions_exposed_as_tools": [],
+      "no_automatic_publish_flag": true,
+      "no_network_required_workflow_documented": true,
+      "token": "PASS"
+    },
+    "productization_boundary": {
+      "research_ceiling_not_productization_prohibition": true,
+      "product_claims_require_product_evidence": true,
+      "token": "PASS"
+    }
+  },
+  "missing_files": [],
+  "missing_generated_outputs": [],
+  "warnings": [],
+  "recommended_next_action": "Manual release checklist may proceed; no publish was performed.",
+  "read_only": true,
+  "live_network_used": false,
+  "actual_publish_performed": false
+}

@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-05-18T10:25:35.331250+00:00",
+  "algorithm": "sha256",
+  "files": {
+    "README.md": {
+      "sha256": "38429ea7fa1345106708cb6de230f87f189b2627ec21558973ac47a77a6f30dd",
+      "bytes": 20642,
+      "status": "present"
+    },
+    "api/openapi.json": {
+      "sha256": "32f674c4a52d2a24b0692f9e472cb5b6f3655bdd5e10b5646440117f66248a3e",
+      "bytes": 19718,
+      "status": "present"
+    },
+    "data/generated_mcp_tools_manifest.json": {
+      "sha256": "ee8a7cff062870e3f965b899ba866962ab80c0bb5a59a2e6606f81280e088005",
+      "bytes": 15208,
+      "status": "present"
+    },
+    "data/generated/datascope_qa_results_v0_2.json": {
+      "sha256": "012063f8062e8be28a772bba9636350d414645d6b947c43710abd8acd3b6afb7",
+      "bytes": 7685,
+      "status": "present"
+    },
+    "data/generated/beta_readiness_report_v0_2.md": {
+      "sha256": "e049fc4761e0954fd02123ebfd2dd221986664377865fde9d7bd4959f26369c8",
+      "bytes": 2844,
+      "status": "present"
+    },
+    "data/registry/mcp_registry_public_beta_index_v0_1.json": {
+      "sha256": "e8ac1be78fed00975908d169d4dcdb3429571471c0ce74a5be5e30f22eb28dc0",
+      "bytes": 2782,
+      "status": "present"
+    },
+    "data/registry/mcp_registry_public_beta_mcp_dataset_v0_1.json": {
+      "sha256": "2b84dbf84cebfb6713b4084b4adbf2010abb35e56749251284d7c4be6685504c",
+      "bytes": 622,
+      "status": "present"
+    },
+    "data/registry/mcp_registry_beta_report_v0_1.md": {
+      "sha256": "2093a164a2350214b5fceeee1fc200d5105bc2e0479472ca2473e6d82b5d2f27",
+      "bytes": 4127,
+      "status": "present"
+    },
+    "data/registry/mcp_registry_report_v0_1.md": {
+      "sha256": "92371fb9b2ea2f31cb3d9063b8b28a376b1b98623bc054742bf762992cd677d7",
+      "bytes": 2103,
+      "status": "present"
+    },
+    "reports/mcp_server_objective_index_v0_1.md": {
+      "sha256": "91c391f3ba1c7a80c43364aec897b5d8a18e33dcdd124f6266aa59bd19e7c7ca",
+      "bytes": 3699,
+      "status": "present"
+    },
+    "reports/ai_tool_pricing_index_v0_1.md": {
+      "sha256": "e54645e5b34983f60dd29eaaa96bb704b74b2c13d35f32621531229fcf239bfe",
+      "bytes": 2486,
+      "status": "present"
+    },
+    "reports/source_trace_quality_report_v0_1.md": {
+      "sha256": "a44c15240815ad2ff4cdb8580494faaeb720a14799f17f502151bfcf0c23f44b",
+      "bytes": 1885,
+      "status": "present"
+    }
+  }
+}

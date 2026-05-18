@@ -1,0 +1,360 @@
+{
+  "version": "0.2-package-6c",
+  "generated_at": "2026-05-18T10:25:31.690875+00:00",
+  "scope": "integrated",
+  "query_count": 4,
+  "result_count": 20,
+  "average_score": 55.66,
+  "status_counts": {
+    "active": 19,
+    "beta": 1,
+    "EXTRACTED_UNVERIFIED": 3
+  },
+  "generated_object_count": 3,
+  "sample_object_count": 20,
+  "source_trace_coverage": 1.0,
+  "top_result_names": [
+    "PixelForge API",
+    "BrowserPilot MCP",
+    "ClearRead OCR API",
+    "PixelForge API"
+  ],
+  "results": [
+    {
+      "query": "cheap image generation API with commercial use terms",
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "image_api_fixture",
+          "name": "PixelForge API",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 74.12,
+          "rank_reason": [
+            "Strong keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "data_retention_policy"
+          ]
+        },
+        {
+          "object_id": "aoi-pixelforge-api",
+          "name": "PixelForge API",
+          "status": "active",
+          "objective_score": 61.0,
+          "rank_reason": [
+            "Partial relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "enterprise_sla"
+          ]
+        },
+        {
+          "object_id": "ocr_api_fixture",
+          "name": "ClearRead OCR API",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 60.34,
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "api_access",
+            "refund_policy"
+          ]
+        },
+        {
+          "object_id": "aoi-motioncanvas-ai",
+          "name": "MotionCanvas AI",
+          "status": "beta",
+          "objective_score": 54.58,
+          "rank_reason": [
+            "Partial relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "api_reference_url",
+            "commercial_rights_edge_cases"
+          ]
+        },
+        {
+          "object_id": "aoi-codepilot-studio",
+          "name": "CodePilot Studio",
+          "status": "active",
+          "objective_score": 51.0,
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "model_training_opt_out_scope"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "browser automation MCP server with source traces",
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "aoi-browserpilot-mcp",
+          "name": "BrowserPilot MCP",
+          "status": "active",
+          "objective_score": 68.16,
+          "rank_reason": [
+            "Strong keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "hosted_pool_security_review"
+          ]
+        },
+        {
+          "object_id": "aoi-searchmcp-relay",
+          "name": "SearchMCP Relay",
+          "status": "active",
+          "objective_score": 61.96,
+          "rank_reason": [
+            "Partial relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "ranking_source_partners"
+          ]
+        },
+        {
+          "object_id": "mcp_server_fixture",
+          "name": "BrowserPilot MCP Server",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 52.5,
+          "rank_reason": [
+            "Strong keyword relevance to the stated objective.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "commercial_use_terms",
+            "docs_url",
+            "refund_policy",
+            "data_retention_policy"
+          ]
+        },
+        {
+          "object_id": "aoi-flowpilot-automations",
+          "name": "FlowPilot Automations",
+          "status": "active",
+          "objective_score": 51.0,
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "connector_data_subprocessor_list"
+          ]
+        },
+        {
+          "object_id": "aoi-openagent-kit",
+          "name": "OpenAgent Kit",
+          "status": "active",
+          "objective_score": 45.57,
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete."
+          ],
+          "missing_fields": [
+            "privacy_policy",
+            "refund_policy",
+            "security_policy_url"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "OCR API with free tier and rate limits",
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "ocr_api_fixture",
+          "name": "ClearRead OCR API",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 68.34,
+          "rank_reason": [
+            "Partial relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "api_access",
+            "refund_policy"
+          ]
+        },
+        {
+          "object_id": "image_api_fixture",
+          "name": "PixelForge API",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 66.12,
+          "rank_reason": [
+            "Partial relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "data_retention_policy"
+          ]
+        },
+        {
+          "object_id": "aoi-clearscan-ocr-api",
+          "name": "ClearScan OCR API",
+          "status": "active",
+          "objective_score": 54.5,
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy"
+          ]
+        },
+        {
+          "object_id": "aoi-pixelforge-api",
+          "name": "PixelForge API",
+          "status": "active",
+          "objective_score": 46.0,
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "enterprise_sla"
+          ]
+        },
+        {
+          "object_id": "mcp_server_fixture",
+          "name": "BrowserPilot MCP Server",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 41.16,
+          "rank_reason": [
+            "Partial relevance to the stated objective.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "commercial_use_terms",
+            "docs_url",
+            "refund_policy",
+            "data_retention_policy"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "developer-friendly API docs and pricing clarity",
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "image_api_fixture",
+          "name": "PixelForge API",
+          "status": "EXTRACTED_UNVERIFIED",
+          "objective_score": 62.12,
+          "rank_reason": [
+            "Partial relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "data_retention_policy"
+          ]
+        },
+        {
+          "object_id": "aoi-modelbridge-gateway",
+          "name": "ModelBridge Gateway",
+          "status": "active",
+          "objective_score": 52.5,
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy"
+          ]
+        },
+        {
+          "object_id": "aoi-codepilot-studio",
+          "name": "CodePilot Studio",
+          "status": "active",
+          "objective_score": 50.0,
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "model_training_opt_out_scope"
+          ]
+        },
+        {
+          "object_id": "aoi-openagent-kit",
+          "name": "OpenAgent Kit",
+          "status": "active",
+          "objective_score": 46.24,
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete."
+          ],
+          "missing_fields": [
+            "privacy_policy",
+            "refund_policy",
+            "security_policy_url"
+          ]
+        },
+        {
+          "object_id": "aoi-pixelforge-api",
+          "name": "PixelForge API",
+          "status": "active",
+          "objective_score": 46.0,
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "enterprise_sla"
+          ]
+        }
+      ]
+    }
+  ],
+  "read_only": true,
+  "network_fetch": false
+}

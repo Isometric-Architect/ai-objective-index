@@ -1,0 +1,62 @@
+{
+  "fixture_only": true,
+  "source": "local_fixture_resembling_official_mcp_registry_payload",
+  "note": "Fixture/sample records only; not real registry data.",
+  "servers": [
+    {
+      "name": "io.github.example/browser-automation",
+      "version": "0.1.0",
+      "description": "Fixture MCP server for browser automation workflows, page navigation, and local testing.",
+      "repository": {"url": "https://github.com/example/browser-automation-mcp"},
+      "documentation": "https://github.com/example/browser-automation-mcp#readme",
+      "packages": [{"registry": "npm", "name": "@example/browser-automation-mcp"}],
+      "capabilities": ["browser", "automation", "navigation"],
+      "tags": ["browser", "automation"],
+      "fixture_only": true
+    },
+    {
+      "name": "io.github.example/web-search",
+      "version": "0.1.0",
+      "description": "Fixture MCP server for read-only web search metadata lookup.",
+      "repository": {"url": "https://github.com/example/web-search-mcp"},
+      "documentation": "https://github.com/example/web-search-mcp#readme",
+      "packages": [{"registry": "npm", "name": "@example/web-search-mcp"}],
+      "capabilities": ["search", "web_search"],
+      "tags": ["search", "web"],
+      "fixture_only": true
+    },
+    {
+      "name": "io.github.example/document-extract",
+      "version": "0.1.0",
+      "description": "Fixture MCP server for document extraction and OCR-style processing.",
+      "repository": {"url": "https://github.com/example/document-extract-mcp"},
+      "documentation": "https://github.com/example/document-extract-mcp#readme",
+      "packages": [{"registry": "pypi", "name": "example-document-extract-mcp"}],
+      "capabilities": ["document", "ocr", "extraction"],
+      "tags": ["document", "ocr"],
+      "fixture_only": true
+    },
+    {
+      "name": "io.github.example/vector-db",
+      "version": "0.1.0",
+      "description": "Fixture MCP server for vector database lookup and embedding index inspection.",
+      "repository": {"url": "https://github.com/example/vector-db-mcp"},
+      "documentation": "https://github.com/example/vector-db-mcp#readme",
+      "packages": [{"registry": "docker", "name": "example/vector-db-mcp"}],
+      "capabilities": ["vector", "database", "embedding"],
+      "tags": ["vector", "database"],
+      "fixture_only": true
+    },
+    {
+      "name": "io.github.example/code-runner",
+      "version": "0.1.0",
+      "description": "Fixture MCP server for sandboxed code execution metadata examples.",
+      "repository": {"url": "https://github.com/example/code-runner-mcp"},
+      "documentation": "https://github.com/example/code-runner-mcp#readme",
+      "packages": [{"registry": "npm", "name": "@example/code-runner-mcp"}],
+      "capabilities": ["code", "runner", "execution"],
+      "tags": ["code", "runner"],
+      "fixture_only": true
+    }
+  ]
+}

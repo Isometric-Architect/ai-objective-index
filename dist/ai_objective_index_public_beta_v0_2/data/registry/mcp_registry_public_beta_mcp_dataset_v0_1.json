@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-05-18T10:25:34.517094+00:00",
+  "read_only": true,
+  "live_network_used": false,
+  "source_mode": "fixture",
+  "object_count": 5,
+  "trace_count": 25,
+  "beta_candidate_count": 0,
+  "objects": [],
+  "source_traces": [],
+  "supplier_verified": false,
+  "verified": false,
+  "action_ready": false,
+  "not_security_certified": true,
+  "not_quality_guarantee": true,
+  "not_purchasing_advice": true,
+  "warnings": [
+    "No public_beta_mcp candidates passed the calibrated registry candidate gate.",
+    "Fixture-only registry records are not promoted to public_beta_mcp."
+  ]
+}

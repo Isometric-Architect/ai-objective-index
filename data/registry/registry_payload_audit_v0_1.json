@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-05-18T10:25:43.926039+00:00",
+  "read_only": true,
+  "live_network_used": false,
+  "raw_payload_mode": "manual_raw",
+  "root_raw_payload_mode": "manual_raw",
+  "raw_server_count": 50,
+  "object_count": 50,
+  "trace_count": 191,
+  "beta_candidate_count": 50,
+  "public_beta_mcp_count": 50,
+  "fixture_leak_detected": false,
+  "real_payload_available": true,
+  "root_manual_raw_available": true,
+  "default_scope_sample_unchanged": true,
+  "warnings": [],
+  "recommended_next_action": "Run registry_reprocess_all."
+}

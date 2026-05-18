@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-05-18T10:25:35.357689+00:00",
+  "release_dir": "release\\public_beta_v0_1",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "release\\public_beta_v0_1\\CHECKSUMS.json",
+      "bytes": 2418,
+      "sha256": "b6cf8c89d7d66d325251d04f714f042b2637c19001d14ad9826d5c79d74bdb88"
+    },
+    {
+      "path": "release\\public_beta_v0_1\\CLAIM_BOUNDARY_SUMMARY.md",
+      "bytes": 894,
+      "sha256": "db5be068d4f186a377bfa44c4cd3b160f9ee44ae944055163627ceacf8b93d9b"
+    },
+    {
+      "path": "release\\public_beta_v0_1\\FILE_MANIFEST.json",
+      "bytes": 1875,
+      "sha256": "6cc72878fab086c1351990d81cca36ff75e5bedc63c764e5764315ecb8a7ea5a"
+    },
+    {
+      "path": "release\\public_beta_v0_1\\KNOWN_LIMITS.md",
+      "bytes": 847,
+      "sha256": "1fcf9cd75f790930efd8e629e277ab152393a9e99e2beee99ba7f7ec7cec65ad"
+    },
+    {
+      "path": "release\\public_beta_v0_1\\MANUAL_PUBLISH_CHECKLIST.md",
+      "bytes": 1367,
+      "sha256": "a800a8f66c67b3003bd3e17e586addb3bccc82596bd4a9737964f94ca68df40c"
+    },
+    {
+      "path": "release\\public_beta_v0_1\\README_PUBLIC_BETA.md",
+      "bytes": 1833,
+      "sha256": "514b6d1418257fd93357e942852695150aa98c5e9dff6d656eade81a278656b5"
+    },
+    {
+      "path": "release\\public_beta_v0_1\\RELEASE_NOTES_v0_1.md",
+      "bytes": 624,
+      "sha256": "77146e6ce13877f915261ba4611cece9133de8d659307ec05609db275ab9256c"
+    },
+    {
+      "path": "release\\public_beta_v0_1\\release_readiness_result.json",
+      "bytes": 2634,
+      "sha256": "60d0f84b14307ee8daa8bf2c52bb4d6604d53e5d815400d0a0c3b834aa71d13e"
+    },
+    {
+      "path": "release\\public_beta_v0_1\\SMOKE_TEST_COMMANDS.md",
+      "bytes": 929,
+      "sha256": "136447634c64ab89fb9393a8c4640863ad82fddc6775c2bf18c12c35ce702319"
+    }
+  ],
+  "actual_publish_performed": false
+}

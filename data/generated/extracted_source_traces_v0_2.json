@@ -1,0 +1,290 @@
+{
+  "traces": [
+    {
+      "trace_id": "trace-6d2f88fe9677",
+      "object_id": "image_api_fixture",
+      "field": "capabilities",
+      "source_url": "https://example.com/pixelforge",
+      "source_title": "PixelForge API - Image generation for developers",
+      "source_snippet": "PixelForge API - Image generation for developers PixelForge API PixelForge API is a developer-friendly image generation API for creating product mockups, ads, a",
+      "retrieved_at": "2026-05-18T10:25:31.473093+00:00",
+      "confidence": 1.0,
+      "source_rank": "S"
+    },
+    {
+      "trace_id": "trace-beedd6dc2683",
+      "object_id": "image_api_fixture",
+      "field": "policies.commercial_use",
+      "source_url": "https://example.com/pixelforge",
+      "source_title": "PixelForge API - Image generation for developers",
+      "source_snippet": "rvice offers text to image generation, API access, SDK examples, and documented commercial use for paid and free developer workflows. Pricing API docs Terms of service Privac",
+      "retrieved_at": "2026-05-18T10:25:31.473163+00:00",
+      "confidence": 1.0,
+      "source_rank": "S"
+    },
+    {
+      "trace_id": "trace-9960ce6b8fa6",
+      "object_id": "image_api_fixture",
+      "field": "docs.docs_url",
+      "source_url": "https://example.com/pixelforge",
+      "source_title": "PixelForge API - Image generation for developers",
+      "source_snippet": "nd documented commercial use for paid and free developer workflows. Pricing API docs Terms of service Privacy policy",
+      "retrieved_at": "2026-05-18T10:25:31.473193+00:00",
+      "confidence": 1.0,
+      "source_rank": "S"
+    },
+    {
+      "trace_id": "trace-c7783dea8980",
+      "object_id": "image_api_fixture",
+      "field": "docs.api_reference_url",
+      "source_url": "https://example.com/pixelforge",
+      "source_title": "PixelForge API - Image generation for developers",
+      "source_snippet": "PixelForge API - Image generation for developers PixelForge API PixelForge API is a developer-",
+      "retrieved_at": "2026-05-18T10:25:31.473217+00:00",
+      "confidence": 1.0,
+      "source_rank": "S"
+    },
+    {
+      "trace_id": "trace-4fe4a2dc491b",
+      "object_id": "image_api_fixture",
+      "field": "capabilities",
+      "source_url": "https://example.com/pixelforge/pricing",
+      "source_title": "PixelForge Pricing",
+      "source_snippet": "PixelForge Pricing Pricing PixelForge includes a free plan with 100 image generations per month for evaluation. Usage based pricing starts at $12 per month. Rat",
+      "retrieved_at": "2026-05-18T10:25:31.473255+00:00",
+      "confidence": 0.96,
+      "source_rank": "S"
+    },
+    {
+      "trace_id": "trace-11236964c5e4",
+      "object_id": "image_api_fixture",
+      "field": "pricing",
+      "source_url": "https://example.com/pixelforge/pricing",
+      "source_title": "PixelForge Pricing",
+      "source_snippet": "PixelForge Pricing Pricing PixelForge includes a free plan with 100 image generations per month for evaluation. Usage based pricing starts at $12 per month. Rat",
+      "retrieved_at": "2026-05-18T10:25:31.473281+00:00",
+      "confidence": 1.0,
+      "source_rank": "S"
+    },
+    {
+      "trace_id": "trace-fbdcd6c16563",
+      "object_id": "image_api_fixture",
+      "field": "policies.commercial_use",
+      "source_url": "https://example.com/pixelforge/pricing",
+      "source_title": "PixelForge Pricing",
+      "source_snippet": "at $12 per month. Rate limits are 60 requests per minute on the developer plan. Commercial use is allowed for generated images under the current terms of service. Refund poli",
+      "retrieved_at": "2026-05-18T10:25:31.473308+00:00",
+      "confidence": 1.0,
+      "source_rank": "S"
+    },
+    {
+      "trace_id": "trace-c88946c37c81",
+      "object_id": "image_api_fixture",
+      "field": "policies.rate_limits",
+      "source_url": "https://example.com/pixelforge/pricing",
+      "source_title": "PixelForge Pricing",
+      "source_snippet": "erations per month for evaluation. Usage based pricing starts at $12 per month. Rate limits are 60 requests per minute on the developer plan. Commercial use is allowed fo",
+      "retrieved_at": "2026-05-18T10:25:31.473333+00:00",
+      "confidence": 1.0,
+      "source_rank": "S"
+    },
+    {
+      "trace_id": "trace-6a9a8a104114",
+      "object_id": "image_api_fixture",
+      "field": "capabilities",
+      "source_url": "https://example.com/pixelforge/docs",
+      "source_title": "PixelForge API Docs",
+      "source_snippet": "PixelForge API Docs API reference The PixelForge documentation includes a quickstart, REST API endpoints, SDK snippets, authentication examples, and rate limit",
+      "retrieved_at": "2026-05-18T10:25:31.473360+00:00",
+      "confidence": 1.0,
+      "source_rank": "S"
+    },
+    {
+      "trace_id": "trace-50a96400c85e",
+      "object_id": "image_api_fixture",
+      "field": "policies.rate_limits",
+      "source_url": "https://example.com/pixelforge/docs",
+      "source_title": "PixelForge API Docs",
+      "source_snippet": "es a quickstart, REST API endpoints, SDK snippets, authentication examples, and rate limit guidance. Developers can call the image generation endpoint with a prompt and r",
+      "retrieved_at": "2026-05-18T10:25:31.473383+00:00",
+      "confidence": 1.0,
+      "source_rank": "S"
+    },
+    {
+      "trace_id": "trace-a25f7797f5e9",
+      "object_id": "image_api_fixture",
+      "field": "docs.docs_url",
+      "source_url": "https://example.com/pixelforge/docs",
+      "source_title": "PixelForge API Docs",
+      "source_snippet": "PixelForge API Docs API reference The PixelForge documentation includes a quickstart, REST API endp",
+      "retrieved_at": "2026-05-18T10:25:31.473401+00:00",
+      "confidence": 1.0,
+      "source_rank": "S"
+    },
+    {
+      "trace_id": "trace-b082c388e014",
+      "object_id": "image_api_fixture",
+      "field": "docs.api_reference_url",
+      "source_url": "https://example.com/pixelforge/docs",
+      "source_title": "PixelForge API Docs",
+      "source_snippet": "PixelForge API Docs API reference The PixelForge documentation includes a quickstart, REST API",
+      "retrieved_at": "2026-05-18T10:25:31.473418+00:00",
+      "confidence": 1.0,
+      "source_rank": "S"
+    },
+    {
+      "trace_id": "trace-c2f59b3db5ce",
+      "object_id": "image_api_fixture",
+      "field": "docs.github_url",
+      "source_url": "https://example.com/pixelforge/docs",
+      "source_title": "PixelForge API Docs",
+      "source_snippet": "neration endpoint with a prompt and receive generated image URLs. API reference GitHub SDK",
+      "retrieved_at": "2026-05-18T10:25:31.473434+00:00",
+      "confidence": 1.0,
+      "source_rank": "S"
+    },
+    {
+      "trace_id": "trace-3b43f57e1c99",
+      "object_id": "mcp_server_fixture",
+      "field": "capabilities",
+      "source_url": "https://github.com/example/browser-mcp-server/blob/main/README.md",
+      "source_title": "BrowserPilot MCP Server",
+      "source_snippet": "# BrowserPilot MCP Server\n\nBrowserPilot MCP Server is an open source Model Context Protocol (MCP) server for browser automation research and local testing.\n\nIt",
+      "retrieved_at": "2026-05-18T10:25:31.485638+00:00",
+      "confidence": 0.865,
+      "source_rank": "A"
+    },
+    {
+      "trace_id": "trace-c0fb70df2a6c",
+      "object_id": "mcp_server_fixture",
+      "field": "policies.rate_limits",
+      "source_url": "https://github.com/example/browser-mcp-server/blob/main/README.md",
+      "source_title": "BrowserPilot MCP Server",
+      "source_snippet": "MIT License.\n\nThe README documents setup instructions, MCP configuration, and a rate limit recommendation of 30 requests per minute for polite use. This fixture does not",
+      "retrieved_at": "2026-05-18T10:25:31.485692+00:00",
+      "confidence": 0.905,
+      "source_rank": "A"
+    },
+    {
+      "trace_id": "trace-74967ef2225b",
+      "object_id": "mcp_server_fixture",
+      "field": "docs.docs_url",
+      "source_url": "https://github.com/example/browser-mcp-server/blob/main/README.md",
+      "source_title": "BrowserPilot MCP Server",
+      "source_snippet": "# BrowserPilot MCP Server\n\nBrowserPilot MCP Server is an open source Model Context Protocol (MCP) server for browser automation research and local testing.\n\nIt",
+      "retrieved_at": "2026-05-18T10:25:31.485715+00:00",
+      "confidence": 0.865,
+      "source_rank": "A"
+    },
+    {
+      "trace_id": "trace-67a5307f6a1f",
+      "object_id": "mcp_server_fixture",
+      "field": "docs.github_url",
+      "source_url": "https://github.com/example/browser-mcp-server/blob/main/README.md",
+      "source_title": "BrowserPilot MCP Server",
+      "source_snippet": "DOM inspection, and controlled browser automation. The project is published on GitHub under the MIT License.\n\nThe README documents setup instructions, MCP configurat",
+      "retrieved_at": "2026-05-18T10:25:31.485730+00:00",
+      "confidence": 0.905,
+      "source_rank": "A"
+    },
+    {
+      "trace_id": "trace-632da49d14ff",
+      "object_id": "ocr_api_fixture",
+      "field": "capabilities",
+      "source_url": "https://example.com/clearread-ocr",
+      "source_title": "ClearRead OCR API - Document extraction",
+      "source_snippet": "ClearRead OCR API - Document extraction ClearRead OCR API ClearRead OCR API extracts text from receipts, invoices, PDFs, screenshots, and scanned documents. The",
+      "retrieved_at": "2026-05-18T10:25:31.510815+00:00",
+      "confidence": 1.0,
+      "source_rank": "S"
+    },
+    {
+      "trace_id": "trace-39941fc14898",
+      "object_id": "ocr_api_fixture",
+      "field": "docs.docs_url",
+      "source_url": "https://example.com/clearread-ocr",
+      "source_title": "ClearRead OCR API - Document extraction",
+      "source_snippet": "cal character recognition, document text extraction, JSON output, and developer docs for REST API access. Pricing Docs Privacy policy",
+      "retrieved_at": "2026-05-18T10:25:31.511000+00:00",
+      "confidence": 1.0,
+      "source_rank": "S"
+    },
+    {
+      "trace_id": "trace-541576ae7492",
+      "object_id": "ocr_api_fixture",
+      "field": "docs.api_reference_url",
+      "source_url": "https://example.com/clearread-ocr",
+      "source_title": "ClearRead OCR API - Document extraction",
+      "source_snippet": "ClearRead OCR API - Document extraction ClearRead OCR API ClearRead OCR API extracts text from re",
+      "retrieved_at": "2026-05-18T10:25:31.511043+00:00",
+      "confidence": 1.0,
+      "source_rank": "S"
+    },
+    {
+      "trace_id": "trace-16645ed186bc",
+      "object_id": "ocr_api_fixture",
+      "field": "capabilities",
+      "source_url": "https://example.com/clearread-ocr/pricing",
+      "source_title": "ClearRead OCR Pricing",
+      "source_snippet": "ClearRead OCR Pricing OCR API pricing A free tier includes 500 pages per month. Paid usage starts at $19 per month for higher document extraction volume. Commer",
+      "retrieved_at": "2026-05-18T10:25:31.511079+00:00",
+      "confidence": 1.0,
+      "source_rank": "S"
+    },
+    {
+      "trace_id": "trace-d5aab9d4d395",
+      "object_id": "ocr_api_fixture",
+      "field": "pricing",
+      "source_url": "https://example.com/clearread-ocr/pricing",
+      "source_title": "ClearRead OCR Pricing",
+      "source_snippet": "ClearRead OCR Pricing OCR API pricing A free tier includes 500 pages per month. Paid usage starts at $19 per month for higher document extraction volume. Commer",
+      "retrieved_at": "2026-05-18T10:25:31.511221+00:00",
+      "confidence": 1.0,
+      "source_rank": "S"
+    },
+    {
+      "trace_id": "trace-3b7fa0cb26dd",
+      "object_id": "ocr_api_fixture",
+      "field": "policies.commercial_use",
+      "source_url": "https://example.com/clearread-ocr/pricing",
+      "source_title": "ClearRead OCR Pricing",
+      "source_snippet": "onth. Paid usage starts at $19 per month for higher document extraction volume. Commercial use is available for business document workflows. Rate limits are documented as 120",
+      "retrieved_at": "2026-05-18T10:25:31.511273+00:00",
+      "confidence": 1.0,
+      "source_rank": "S"
+    },
+    {
+      "trace_id": "trace-eb5d0c9ec0ab",
+      "object_id": "ocr_api_fixture",
+      "field": "policies.rate_limits",
+      "source_url": "https://example.com/clearread-ocr/pricing",
+      "source_title": "ClearRead OCR Pricing",
+      "source_snippet": "extraction volume. Commercial use is available for business document workflows. Rate limits are documented as 120 requests per minute. Data retention is 30 days by defaul",
+      "retrieved_at": "2026-05-18T10:25:31.511301+00:00",
+      "confidence": 1.0,
+      "source_rank": "S"
+    },
+    {
+      "trace_id": "trace-9ab52046290c",
+      "object_id": "ocr_api_fixture",
+      "field": "docs.docs_url",
+      "source_url": "https://example.com/clearread-ocr/pricing",
+      "source_title": "ClearRead OCR Pricing",
+      "source_snippet": "ClearRead OCR Pricing OCR API pricing A free tier includes 500 pages per month. Paid usage starts at $19 per month for higher document extraction volume. Commer",
+      "retrieved_at": "2026-05-18T10:25:31.511325+00:00",
+      "confidence": 0.96,
+      "source_rank": "S"
+    },
+    {
+      "trace_id": "trace-14d448784627",
+      "object_id": "ocr_api_fixture",
+      "field": "docs.api_reference_url",
+      "source_url": "https://example.com/clearread-ocr/pricing",
+      "source_title": "ClearRead OCR Pricing",
+      "source_snippet": "ClearRead OCR Pricing OCR API pricing A free tier includes 500 pages per month. Paid usage starts at $19 per",
+      "retrieved_at": "2026-05-18T10:25:31.511348+00:00",
+      "confidence": 1.0,
+      "source_rank": "S"
+    }
+  ]
+}

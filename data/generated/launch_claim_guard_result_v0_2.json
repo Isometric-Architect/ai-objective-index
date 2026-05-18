@@ -1,0 +1,115 @@
+{
+  "generated_at": "2026-05-18T10:25:54.799586+00:00",
+  "overall_token": "PASS",
+  "risky_phrase_count": 0,
+  "findings": [],
+  "contextual_mentions": [
+    {
+      "file": "launch\\manual_public_beta_v0_2\\GITHUB_RELEASE_DRAFT.md",
+      "line": 33,
+      "phrase": "purchasing advice",
+      "text": "AOI is read-only. It is not a quality guarantee, not security certification, not purchasing advice, and not an official standard.",
+      "counted": false
+    },
+    {
+      "file": "launch\\manual_public_beta_v0_2\\GITHUB_RELEASE_DRAFT.md",
+      "line": 33,
+      "phrase": "official standard",
+      "text": "AOI is read-only. It is not a quality guarantee, not security certification, not purchasing advice, and not an official standard.",
+      "counted": false
+    },
+    {
+      "file": "launch\\manual_public_beta_v0_2\\HUGGINGFACE_SPACE_UPLOAD_GUIDE.md",
+      "line": 11,
+      "phrase": "purchasing advice",
+      "text": "The demo is read-only and not a quality guarantee, not security certification, and not purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "launch\\manual_public_beta_v0_2\\HUGGINGFACE_DATASET_UPLOAD_GUIDE.md",
+      "line": 10,
+      "phrase": "security certified",
+      "text": "Registry metadata candidates are not verified, not security certified, not quality guaranteed, and not action-ready.",
+      "counted": false
+    },
+    {
+      "file": "launch\\manual_public_beta_v0_2\\HUGGINGFACE_DATASET_UPLOAD_GUIDE.md",
+      "line": 10,
+      "phrase": "quality guaranteed",
+      "text": "Registry metadata candidates are not verified, not security certified, not quality guaranteed, and not action-ready.",
+      "counted": false
+    },
+    {
+      "file": "launch\\manual_public_beta_v0_2\\COMMUNITY_POST_DRAFTS.md",
+      "line": 9,
+      "phrase": "security certified",
+      "text": "The candidates are not verified, not security certified, and not a quality guarantee.",
+      "counted": false
+    },
+    {
+      "file": "launch\\manual_public_beta_v0_2\\COMMUNITY_POST_DRAFTS.md",
+      "line": 21,
+      "phrase": "purchasing advice",
+      "text": "Local demo and dataset drafts are prepared for manual upload. They are read-only and intended for benchmark feedback, not purchasing advice or action execution.",
+      "counted": false
+    },
+    {
+      "file": "launch\\manual_public_beta_v0_2\\MCP_REGISTRY_SUBMISSION_DRAFT.md",
+      "line": 31,
+      "phrase": "purchasing advice",
+      "text": "AOI is not a quality guarantee, not security certification, not supplier verification, and not purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "launch\\manual_public_beta_v0_2\\FINAL_CLAIM_BOUNDARY.md",
+      "line": 11,
+      "phrase": "verified mcp servers",
+      "text": "- Verified MCP servers.",
+      "counted": false
+    },
+    {
+      "file": "launch\\manual_public_beta_v0_2\\FINAL_CLAIM_BOUNDARY.md",
+      "line": 12,
+      "phrase": "safe mcp servers",
+      "text": "- Safe MCP servers.",
+      "counted": false
+    },
+    {
+      "file": "launch\\manual_public_beta_v0_2\\FINAL_CLAIM_BOUNDARY.md",
+      "line": 15,
+      "phrase": "purchasing advice",
+      "text": "- Purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "launch\\manual_public_beta_v0_2\\FINAL_CLAIM_BOUNDARY.md",
+      "line": 16,
+      "phrase": "official standard",
+      "text": "- Official standard.",
+      "counted": false
+    }
+  ],
+  "suggested_rewrites": [
+    "Use: source-traced registry metadata candidates, not verified MCP servers.",
+    "Use: read-only benchmark, not security certification or quality guarantee.",
+    "Use: manual publish only; no automatic external actions."
+  ],
+  "risky_phrases": [
+    "verified mcp servers",
+    "safe mcp servers",
+    "security certified",
+    "quality guaranteed",
+    "official best ranking",
+    "production-ready",
+    "purchasing advice",
+    "legal advice",
+    "all ai will use",
+    "official standard",
+    "automatically buys",
+    "signs contracts",
+    "sends email"
+  ],
+  "read_only": true,
+  "live_network_used": false,
+  "actual_publish_performed": false
+}

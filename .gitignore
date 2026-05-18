@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+pytest-cache-files-*/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local environment and credentials
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.*
+secrets.*
+token.*
+
+# Logs and local editor files
+*.log
+.DS_Store
+.idea/
+.vscode/
+
+# Local caches and transient generated folders
+data/source_cache/
+data/generated/tmp*/
+data/generated/test_*/
+
+# Local manual raw copy at repository root; canonical processed files live under data/registry/
+/mcp_registry_raw_v0_1.json
+
+# Internal source packs used as research input, not public release payload
+/SOURCE_0513_REPACK_FINAL_v1/
+
+# OS/browser/download scratch
+*.tmp
+*.bak
+Thumbs.db

@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-05-18T10:25:34.266284+00:00",
+  "algorithm": "sha256",
+  "files": {
+    "README.md": {
+      "sha256": "38429ea7fa1345106708cb6de230f87f189b2627ec21558973ac47a77a6f30dd",
+      "bytes": 20642,
+      "status": "present"
+    },
+    "api/openapi.json": {
+      "sha256": "32f674c4a52d2a24b0692f9e472cb5b6f3655bdd5e10b5646440117f66248a3e",
+      "bytes": 19718,
+      "status": "present"
+    },
+    "data/generated_mcp_tools_manifest.json": {
+      "sha256": "ee8a7cff062870e3f965b899ba866962ab80c0bb5a59a2e6606f81280e088005",
+      "bytes": 15208,
+      "status": "present"
+    },
+    "data/registry/mcp_registry_public_beta_mcp_dataset_v0_1.json": {
+      "sha256": "274eb201b3b244a1855cc5c3468fc27ef2b16c7f9bd19e7839accaad3ee6f14e",
+      "bytes": 622,
+      "status": "present"
+    },
+    "data/registry/mcp_registry_beta_candidates_v0_1.jsonl": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "status": "present"
+    },
+    "data/generated/final_preflight_result_v0_2.json": {
+      "sha256": "ce051478c0b4a2a130011fe5d41cc39bbe0031ea95cc2839eb828f1b6e5d658c",
+      "bytes": 2215,
+      "status": "present"
+    },
+    "data/generated/realdata_claim_audit_v0_2.json": {
+      "sha256": "c1072e1d96b130f89710cc18cd08a9aef59dc3db930c872e7449bd86d4f12df6",
+      "bytes": 17441,
+      "status": "present"
+    },
+    "data/generated/release_candidate_matrix_v0_2.json": {
+      "sha256": "42df8a0df9b0fb557c772ed26bbc8be6b3bcb376fe75f1ebc3f61bb0ecb17a27",
+      "bytes": 4305,
+      "status": "present"
+    },
+    "data/registry/mcp_registry_beta_report_v0_1.md": {
+      "sha256": "a495cec10b91df539968d5b492eff6b3c23a75e67b6de6a02a52adbfba3c07f5",
+      "bytes": 18525,
+      "status": "present"
+    },
+    "reports/mcp_server_objective_index_v0_2.md": {
+      "sha256": "153c0ed867db86594bfaa941a5a0e500a1bf7928799fb3058af7fb9ef0bd1205",
+      "bytes": 434,
+      "status": "present"
+    },
+    "reports/source_trace_quality_report_v0_2.md": {
+      "sha256": "6918a9166ef7789ea5ae549fec8272143646bc88fa1521cc38e700f509740e66",
+      "bytes": 452,
+      "status": "present"
+    }
+  }
+}

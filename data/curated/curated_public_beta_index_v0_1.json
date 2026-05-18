@@ -1,0 +1,116 @@
+{
+  "generated_at": "2026-05-18T10:25:30.680722+00:00",
+  "read_only": true,
+  "live_network_used": false,
+  "supplier_verified": false,
+  "object_count": 1,
+  "trace_count": 1,
+  "public_beta_ready_count": 0,
+  "validation_summary": {
+    "object_count": 1,
+    "trace_count": 1,
+    "pass_count": 0,
+    "hold_count": 1,
+    "block_count": 0,
+    "token_counts": {
+      "HOLD_PLACEHOLDER": 1
+    },
+    "warnings": [
+      "placeholder object is not a public beta candidate",
+      "pricing fields are present but lack matching source traces",
+      "policies fields are present but lack matching source traces"
+    ],
+    "object_results": [
+      {
+        "object_id": "curated-placeholder-image-api",
+        "token": "HOLD_PLACEHOLDER",
+        "status": "HOLD",
+        "warnings": [
+          "placeholder object is not a public beta candidate",
+          "pricing fields are present but lack matching source traces",
+          "policies fields are present but lack matching source traces"
+        ],
+        "trace_count": 1,
+        "public_beta_ready": false,
+        "evidence_gate": {
+          "object_id": "curated-placeholder-image-api",
+          "token": "HOLD_PLACEHOLDER",
+          "public_beta_ready": false,
+          "reasons": [
+            "Placeholder records are not public beta candidates."
+          ],
+          "warnings": []
+        }
+      }
+    ],
+    "public_beta_ready_count": 0
+  },
+  "objects": [
+    {
+      "object_id": "curated-placeholder-image-api",
+      "name": "Curated Placeholder Image API",
+      "object_type": "APIObject",
+      "summary": "Placeholder curated object showing the manual data shape; not a public beta candidate.",
+      "official_url": "https://example.com/curated-placeholder-image-api",
+      "source_urls": [
+        "https://example.com/curated-placeholder-image-api",
+        "https://example.com/curated-placeholder-image-api/docs",
+        "https://example.com/curated-placeholder-image-api/pricing",
+        "https://example.com/curated-placeholder-image-api/terms",
+        "https://example.com/curated-placeholder-image-api/privacy"
+      ],
+      "capabilities": [
+        "image_generation",
+        "api_access"
+      ],
+      "categories": [
+        "curated_placeholder",
+        "ai_api"
+      ],
+      "pricing": {
+        "model": "usage",
+        "free_tier": true
+      },
+      "policies": {
+        "commercial_use": "found",
+        "rate_limits": "found",
+        "terms_url": "https://example.com/curated-placeholder-image-api/terms",
+        "privacy_url": "https://example.com/curated-placeholder-image-api/privacy",
+        "license": ""
+      },
+      "docs": {
+        "docs_url": "https://example.com/curated-placeholder-image-api/docs",
+        "api_reference_url": "https://example.com/curated-placeholder-image-api/docs"
+      },
+      "status": "EXTRACTED_UNVERIFIED",
+      "confidence": 0.4,
+      "missing_fields": [
+        "refund_policy"
+      ],
+      "last_checked_at": null,
+      "source_rank": "UNKNOWN",
+      "notes": "placeholder example, not public beta candidate",
+      "curated": true,
+      "supplier_verified": false
+    }
+  ],
+  "source_traces": [
+    {
+      "trace_id": "trace-curated-placeholder-image-api-docs",
+      "object_id": "curated-placeholder-image-api",
+      "field": "docs.docs_url",
+      "source_url": "https://example.com/curated-placeholder-image-api/docs",
+      "source_title": "Curated Placeholder Image API Docs",
+      "source_snippet": "Placeholder trace for manual curated dataset shape only.",
+      "retrieved_at": "2026-05-05T00:00:00+00:00",
+      "confidence": 0.4,
+      "source_rank": "UNKNOWN",
+      "curator_note": "placeholder example trace, not public beta evidence"
+    }
+  ],
+  "known_limits": [
+    "curated objects are not supplier verified",
+    "manual curation only; no live crawling",
+    "public_beta excludes placeholder/fake sample records by default"
+  ]
+}

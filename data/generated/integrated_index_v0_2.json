@@ -1,0 +1,1103 @@
+{
+  "version": "0.2-package-6c",
+  "generated_at": "2026-04-29T09:39:29.685343+00:00",
+  "scope": "integrated",
+  "object_count": 23,
+  "trace_count": 46,
+  "status_counts": {
+    "active": 19,
+    "beta": 1,
+    "EXTRACTED_UNVERIFIED": 3
+  },
+  "objects": [
+    {
+      "object_id": "aoi-pixelforge-api",
+      "name": "PixelForge API",
+      "object_type": "api",
+      "summary": "Image generation API for product mockups, marketing assets, and creative variants.",
+      "official_url": "https://pixelforge.example.com",
+      "source_urls": [
+        "https://pixelforge.example.com/docs",
+        "https://pixelforge.example.com/pricing",
+        "https://pixelforge.example.com/terms"
+      ],
+      "capabilities": [
+        "text_to_image",
+        "image_variation",
+        "commercial_asset_generation",
+        "api_access"
+      ],
+      "categories": [
+        "image_generation",
+        "creative_api"
+      ],
+      "pricing": {
+        "model": "usage_based",
+        "free_tier": true,
+        "starting_price_usd": 19,
+        "currency": "USD",
+        "notes": "Starter credits with paid usage tiers."
+      },
+      "policies": {
+        "commercial_use": "Commercial use described for paid outputs subject to content policy.",
+        "data_retention": "Prompts retained for abuse monitoring for a limited period.",
+        "rate_limits": "Published per-minute request limits by plan.",
+        "terms_url": "https://pixelforge.example.com/terms",
+        "privacy_url": "https://pixelforge.example.com/privacy"
+      },
+      "docs": {
+        "docs_url": "https://pixelforge.example.com/docs",
+        "api_reference_url": "https://pixelforge.example.com/docs/api",
+        "quickstart_url": "https://pixelforge.example.com/docs/quickstart"
+      },
+      "status": "active",
+      "confidence": 0.86,
+      "missing_fields": [
+        "enterprise_sla"
+      ],
+      "last_checked_at": "2026-04-28T00:00:00Z",
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "object_id": "aoi-clearscan-ocr-api",
+      "name": "ClearScan OCR API",
+      "object_type": "api",
+      "summary": "OCR API for invoices, receipts, identity documents, and scanned PDFs.",
+      "official_url": "https://clearscan.example.com",
+      "source_urls": [
+        "https://clearscan.example.com/docs",
+        "https://clearscan.example.com/pricing",
+        "https://clearscan.example.com/security"
+      ],
+      "capabilities": [
+        "ocr",
+        "layout_detection",
+        "table_extraction",
+        "pdf_processing"
+      ],
+      "categories": [
+        "ocr",
+        "document_ai"
+      ],
+      "pricing": {
+        "model": "usage_based",
+        "free_tier": true,
+        "starting_price_usd": 29,
+        "currency": "USD",
+        "notes": "Free monthly pages and per-page overage."
+      },
+      "policies": {
+        "commercial_use": "Commercial processing permitted under standard API terms.",
+        "data_retention": "Documents deleted after processing unless retention is enabled.",
+        "rate_limits": "Batch and synchronous limits documented by plan.",
+        "terms_url": "https://clearscan.example.com/terms",
+        "privacy_url": "https://clearscan.example.com/privacy"
+      },
+      "docs": {
+        "docs_url": "https://clearscan.example.com/docs",
+        "api_reference_url": "https://clearscan.example.com/docs/reference",
+        "quickstart_url": "https://clearscan.example.com/docs/start"
+      },
+      "status": "active",
+      "confidence": 0.88,
+      "missing_fields": [],
+      "last_checked_at": "2026-04-28T00:00:00Z",
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "object_id": "aoi-meetscribe-ai",
+      "name": "MeetScribe AI",
+      "object_type": "saas",
+      "summary": "Meeting transcription and summary tool with calendar integrations and action-item extraction.",
+      "official_url": "https://meetscribe.example.com",
+      "source_urls": [
+        "https://meetscribe.example.com/features",
+        "https://meetscribe.example.com/pricing",
+        "https://meetscribe.example.com/security"
+      ],
+      "capabilities": [
+        "meeting_transcription",
+        "speaker_labels",
+        "summaries",
+        "action_items"
+      ],
+      "categories": [
+        "meeting_transcription",
+        "productivity_saas"
+      ],
+      "pricing": {
+        "model": "seat_based",
+        "free_tier": true,
+        "starting_price_usd": 12,
+        "currency": "USD",
+        "notes": "Free limited transcription hours; paid per user per month."
+      },
+      "policies": {
+        "commercial_use": "Business use permitted under team plans.",
+        "data_retention": "Retention configurable on business plans.",
+        "rate_limits": "Transcription-hour limits by plan.",
+        "terms_url": "https://meetscribe.example.com/terms",
+        "privacy_url": "https://meetscribe.example.com/privacy"
+      },
+      "docs": {
+        "docs_url": "https://meetscribe.example.com/help",
+        "api_reference_url": null,
+        "quickstart_url": "https://meetscribe.example.com/help/getting-started"
+      },
+      "status": "active",
+      "confidence": 0.8,
+      "missing_fields": [
+        "api_reference_url"
+      ],
+      "last_checked_at": "2026-04-28T00:00:00Z",
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "object_id": "aoi-codepilot-studio",
+      "name": "CodePilot Studio",
+      "object_type": "saas",
+      "summary": "AI coding assistant with IDE integration, codebase chat, review hints, and test generation.",
+      "official_url": "https://codepilot.example.com",
+      "source_urls": [
+        "https://codepilot.example.com/docs",
+        "https://codepilot.example.com/pricing",
+        "https://codepilot.example.com/security"
+      ],
+      "capabilities": [
+        "code_completion",
+        "codebase_chat",
+        "test_generation",
+        "pull_request_review"
+      ],
+      "categories": [
+        "ai_coding_assistant",
+        "developer_tools"
+      ],
+      "pricing": {
+        "model": "seat_based",
+        "free_tier": true,
+        "starting_price_usd": 10,
+        "currency": "USD",
+        "notes": "Individual free plan and paid team seats."
+      },
+      "policies": {
+        "commercial_use": "Commercial development use permitted on paid plans.",
+        "data_retention": "Code snippets may be retained depending on telemetry settings.",
+        "rate_limits": "Usage limits documented for free and team plans.",
+        "terms_url": "https://codepilot.example.com/terms",
+        "privacy_url": "https://codepilot.example.com/privacy"
+      },
+      "docs": {
+        "docs_url": "https://codepilot.example.com/docs",
+        "api_reference_url": "https://codepilot.example.com/docs/extensions",
+        "quickstart_url": "https://codepilot.example.com/docs/install"
+      },
+      "status": "active",
+      "confidence": 0.84,
+      "missing_fields": [
+        "model_training_opt_out_scope"
+      ],
+      "last_checked_at": "2026-04-28T00:00:00Z",
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "object_id": "aoi-searchmcp-relay",
+      "name": "SearchMCP Relay",
+      "object_type": "mcp_server",
+      "summary": "MCP web search server that returns search results, snippets, and source URLs to AI agents.",
+      "official_url": "https://searchmcp.example.com",
+      "source_urls": [
+        "https://searchmcp.example.com/docs",
+        "https://searchmcp.example.com/pricing",
+        "https://searchmcp.example.com/policies"
+      ],
+      "capabilities": [
+        "mcp_server",
+        "web_search",
+        "source_snippets",
+        "result_filtering"
+      ],
+      "categories": [
+        "mcp_server",
+        "web_search"
+      ],
+      "pricing": {
+        "model": "usage_based",
+        "free_tier": true,
+        "starting_price_usd": 9,
+        "currency": "USD",
+        "notes": "Free trial quota and paid query bundles."
+      },
+      "policies": {
+        "commercial_use": "Commercial agent use allowed within query quotas.",
+        "data_retention": "Search logs retained for diagnostics.",
+        "rate_limits": "Published requests per minute and daily quota.",
+        "terms_url": "https://searchmcp.example.com/terms",
+        "privacy_url": "https://searchmcp.example.com/privacy"
+      },
+      "docs": {
+        "docs_url": "https://searchmcp.example.com/docs",
+        "api_reference_url": "https://searchmcp.example.com/docs/tools",
+        "quickstart_url": "https://searchmcp.example.com/docs/mcp-quickstart"
+      },
+      "status": "active",
+      "confidence": 0.82,
+      "missing_fields": [
+        "ranking_source_partners"
+      ],
+      "last_checked_at": "2026-04-28T00:00:00Z",
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "object_id": "aoi-openagent-kit",
+      "name": "OpenAgent Kit",
+      "object_type": "open_source_framework",
+      "summary": "Open-source framework for building tool-using agents, planners, memory modules, and eval loops.",
+      "official_url": "https://openagentkit.example.com",
+      "source_urls": [
+        "https://openagentkit.example.com/docs",
+        "https://github.example.com/openagentkit/openagentkit",
+        "https://openagentkit.example.com/license"
+      ],
+      "capabilities": [
+        "agent_framework",
+        "tool_calling",
+        "planner",
+        "eval_hooks"
+      ],
+      "categories": [
+        "open_source_agent_framework",
+        "developer_tools"
+      ],
+      "pricing": {
+        "model": "open_source",
+        "free_tier": true,
+        "starting_price_usd": 0,
+        "currency": "USD",
+        "notes": "Open-source framework with optional hosted support."
+      },
+      "policies": {
+        "commercial_use": "Permissive license allows commercial use subject to license terms.",
+        "data_retention": "Self-hosted; retention depends on deployment.",
+        "rate_limits": "No framework-level limits.",
+        "terms_url": "https://openagentkit.example.com/license",
+        "privacy_url": null
+      },
+      "docs": {
+        "docs_url": "https://openagentkit.example.com/docs",
+        "api_reference_url": "https://openagentkit.example.com/docs/api",
+        "quickstart_url": "https://openagentkit.example.com/docs/quickstart"
+      },
+      "status": "active",
+      "confidence": 0.83,
+      "missing_fields": [
+        "security_policy_url"
+      ],
+      "last_checked_at": "2026-04-28T00:00:00Z",
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "object_id": "aoi-modelbridge-gateway",
+      "name": "ModelBridge Gateway",
+      "object_type": "gateway",
+      "summary": "LLM gateway for routing requests across providers with logging, budget controls, and fallback rules.",
+      "official_url": "https://modelbridge.example.com",
+      "source_urls": [
+        "https://modelbridge.example.com/docs",
+        "https://modelbridge.example.com/pricing",
+        "https://modelbridge.example.com/security"
+      ],
+      "capabilities": [
+        "llm_gateway",
+        "provider_routing",
+        "usage_logging",
+        "fallbacks"
+      ],
+      "categories": [
+        "llm_gateway",
+        "developer_infrastructure"
+      ],
+      "pricing": {
+        "model": "usage_based",
+        "free_tier": true,
+        "starting_price_usd": 25,
+        "currency": "USD",
+        "notes": "Gateway fee plus underlying model provider costs."
+      },
+      "policies": {
+        "commercial_use": "Commercial use allowed under standard platform terms.",
+        "data_retention": "Configurable request logging and redaction controls.",
+        "rate_limits": "Gateway throughput limits by plan.",
+        "terms_url": "https://modelbridge.example.com/terms",
+        "privacy_url": "https://modelbridge.example.com/privacy"
+      },
+      "docs": {
+        "docs_url": "https://modelbridge.example.com/docs",
+        "api_reference_url": "https://modelbridge.example.com/docs/api",
+        "quickstart_url": "https://modelbridge.example.com/docs/quickstart"
+      },
+      "status": "active",
+      "confidence": 0.87,
+      "missing_fields": [],
+      "last_checked_at": "2026-04-28T00:00:00Z",
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "object_id": "aoi-voiceweave-speech-api",
+      "name": "VoiceWeave Speech API",
+      "object_type": "api",
+      "summary": "Speech synthesis API with multilingual voices, SSML support, and streaming output.",
+      "official_url": "https://voiceweave.example.com",
+      "source_urls": [
+        "https://voiceweave.example.com/docs",
+        "https://voiceweave.example.com/pricing",
+        "https://voiceweave.example.com/voice-rights"
+      ],
+      "capabilities": [
+        "text_to_speech",
+        "voice_cloning",
+        "ssml",
+        "streaming_audio"
+      ],
+      "categories": [
+        "speech_synthesis",
+        "audio_api"
+      ],
+      "pricing": {
+        "model": "usage_based",
+        "free_tier": true,
+        "starting_price_usd": 15,
+        "currency": "USD",
+        "notes": "Free characters each month and paid character bundles."
+      },
+      "policies": {
+        "commercial_use": "Commercial audio use allowed for licensed voices.",
+        "data_retention": "Audio inputs retained temporarily for quality and abuse checks.",
+        "rate_limits": "Concurrent stream limits by plan.",
+        "terms_url": "https://voiceweave.example.com/terms",
+        "privacy_url": "https://voiceweave.example.com/privacy"
+      },
+      "docs": {
+        "docs_url": "https://voiceweave.example.com/docs",
+        "api_reference_url": "https://voiceweave.example.com/docs/reference",
+        "quickstart_url": "https://voiceweave.example.com/docs/quickstart"
+      },
+      "status": "active",
+      "confidence": 0.81,
+      "missing_fields": [
+        "voice_consent_audit_details"
+      ],
+      "last_checked_at": "2026-04-28T00:00:00Z",
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "object_id": "aoi-flowpilot-automations",
+      "name": "FlowPilot Automations",
+      "object_type": "workflow_tool",
+      "summary": "Automation workflow tool with AI steps, webhooks, approvals, and SaaS connectors.",
+      "official_url": "https://flowpilot.example.com",
+      "source_urls": [
+        "https://flowpilot.example.com/docs",
+        "https://flowpilot.example.com/pricing",
+        "https://flowpilot.example.com/security"
+      ],
+      "capabilities": [
+        "workflow_automation",
+        "ai_steps",
+        "webhooks",
+        "human_approval"
+      ],
+      "categories": [
+        "automation",
+        "workflow_saas"
+      ],
+      "pricing": {
+        "model": "seat_based",
+        "free_tier": true,
+        "starting_price_usd": 20,
+        "currency": "USD",
+        "notes": "Free task quota and paid team workspaces."
+      },
+      "policies": {
+        "commercial_use": "Business automation use allowed under platform terms.",
+        "data_retention": "Run history retained by workspace settings.",
+        "rate_limits": "Task and webhook limits by plan.",
+        "terms_url": "https://flowpilot.example.com/terms",
+        "privacy_url": "https://flowpilot.example.com/privacy"
+      },
+      "docs": {
+        "docs_url": "https://flowpilot.example.com/docs",
+        "api_reference_url": "https://flowpilot.example.com/docs/api",
+        "quickstart_url": "https://flowpilot.example.com/docs/build-first-flow"
+      },
+      "status": "active",
+      "confidence": 0.82,
+      "missing_fields": [
+        "connector_data_subprocessor_list"
+      ],
+      "last_checked_at": "2026-04-28T00:00:00Z",
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "object_id": "aoi-vectornest-db",
+      "name": "VectorNest DB",
+      "object_type": "database",
+      "summary": "Managed vector database for semantic search, hybrid retrieval, and metadata filtering.",
+      "official_url": "https://vectornest.example.com",
+      "source_urls": [
+        "https://vectornest.example.com/docs",
+        "https://vectornest.example.com/pricing",
+        "https://vectornest.example.com/security"
+      ],
+      "capabilities": [
+        "vector_database",
+        "hybrid_search",
+        "metadata_filters",
+        "managed_indexes"
+      ],
+      "categories": [
+        "vector_database",
+        "rag_infrastructure"
+      ],
+      "pricing": {
+        "model": "usage_based",
+        "free_tier": true,
+        "starting_price_usd": 25,
+        "currency": "USD",
+        "notes": "Free sandbox index and paid storage/query tiers."
+      },
+      "policies": {
+        "commercial_use": "Commercial workloads supported on paid clusters.",
+        "data_retention": "Vectors retained until deleted by workspace owner.",
+        "rate_limits": "Query and write throughput limits by cluster size.",
+        "terms_url": "https://vectornest.example.com/terms",
+        "privacy_url": "https://vectornest.example.com/privacy"
+      },
+      "docs": {
+        "docs_url": "https://vectornest.example.com/docs",
+        "api_reference_url": "https://vectornest.example.com/docs/api",
+        "quickstart_url": "https://vectornest.example.com/docs/quickstart"
+      },
+      "status": "active",
+      "confidence": 0.85,
+      "missing_fields": [],
+      "last_checked_at": "2026-04-28T00:00:00Z",
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "object_id": "aoi-browserpilot-mcp",
+      "name": "BrowserPilot MCP",
+      "object_type": "mcp_server",
+      "summary": "Browser automation MCP server for navigation, screenshots, DOM inspection, and scripted interactions.",
+      "official_url": "https://browserpilot.example.com",
+      "source_urls": [
+        "https://browserpilot.example.com/docs",
+        "https://github.example.com/browserpilot/mcp",
+        "https://browserpilot.example.com/safety"
+      ],
+      "capabilities": [
+        "mcp_server",
+        "browser_automation",
+        "screenshots",
+        "dom_inspection"
+      ],
+      "categories": [
+        "mcp_server",
+        "browser_automation"
+      ],
+      "pricing": {
+        "model": "open_source",
+        "free_tier": true,
+        "starting_price_usd": 0,
+        "currency": "USD",
+        "notes": "Open-source server with optional hosted browser pool."
+      },
+      "policies": {
+        "commercial_use": "Permissive license allows commercial use subject to browser target terms.",
+        "data_retention": "Self-hosted logs by default; hosted pool retention documented separately.",
+        "rate_limits": "No local server limit; hosted pool has concurrency limits.",
+        "terms_url": "https://browserpilot.example.com/license",
+        "privacy_url": "https://browserpilot.example.com/privacy"
+      },
+      "docs": {
+        "docs_url": "https://browserpilot.example.com/docs",
+        "api_reference_url": "https://browserpilot.example.com/docs/tools",
+        "quickstart_url": "https://browserpilot.example.com/docs/quickstart"
+      },
+      "status": "active",
+      "confidence": 0.84,
+      "missing_fields": [
+        "hosted_pool_security_review"
+      ],
+      "last_checked_at": "2026-04-28T00:00:00Z",
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "object_id": "aoi-doculift-extraction-api",
+      "name": "DocuLift Extraction API",
+      "object_type": "api",
+      "summary": "Document extraction API for contracts, forms, tables, and structured JSON outputs.",
+      "official_url": "https://doculift.example.com",
+      "source_urls": [
+        "https://doculift.example.com/docs",
+        "https://doculift.example.com/pricing",
+        "https://doculift.example.com/compliance"
+      ],
+      "capabilities": [
+        "document_extraction",
+        "schema_mapping",
+        "table_extraction",
+        "json_output"
+      ],
+      "categories": [
+        "document_ai",
+        "extraction_api"
+      ],
+      "pricing": {
+        "model": "usage_based",
+        "free_tier": false,
+        "starting_price_usd": 49,
+        "currency": "USD",
+        "notes": "Paid page bundles with enterprise volume pricing."
+      },
+      "policies": {
+        "commercial_use": "Commercial document processing supported.",
+        "data_retention": "Default 30-day retention with zero-retention option.",
+        "rate_limits": "Batch upload and extraction limits by plan.",
+        "terms_url": "https://doculift.example.com/terms",
+        "privacy_url": "https://doculift.example.com/privacy"
+      },
+      "docs": {
+        "docs_url": "https://doculift.example.com/docs",
+        "api_reference_url": "https://doculift.example.com/docs/reference",
+        "quickstart_url": "https://doculift.example.com/docs/quickstart"
+      },
+      "status": "active",
+      "confidence": 0.86,
+      "missing_fields": [
+        "model_accuracy_by_document_type"
+      ],
+      "last_checked_at": "2026-04-28T00:00:00Z",
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "object_id": "aoi-motioncanvas-ai",
+      "name": "MotionCanvas AI",
+      "object_type": "saas",
+      "summary": "AI video generation tool for short promotional clips, storyboards, and social video variants.",
+      "official_url": "https://motioncanvas.example.com",
+      "source_urls": [
+        "https://motioncanvas.example.com/features",
+        "https://motioncanvas.example.com/pricing",
+        "https://motioncanvas.example.com/terms"
+      ],
+      "capabilities": [
+        "text_to_video",
+        "image_to_video",
+        "storyboard_generation",
+        "commercial_video_exports"
+      ],
+      "categories": [
+        "video_generation",
+        "creative_saas"
+      ],
+      "pricing": {
+        "model": "freemium",
+        "free_tier": true,
+        "starting_price_usd": 24,
+        "currency": "USD",
+        "notes": "Watermarked free exports and paid commercial export tiers."
+      },
+      "policies": {
+        "commercial_use": "Commercial exports allowed on paid plans subject to content policy.",
+        "data_retention": "Project assets retained until deleted by user.",
+        "rate_limits": "Generation credits and queue priority by plan.",
+        "terms_url": "https://motioncanvas.example.com/terms",
+        "privacy_url": "https://motioncanvas.example.com/privacy"
+      },
+      "docs": {
+        "docs_url": "https://motioncanvas.example.com/help",
+        "api_reference_url": null,
+        "quickstart_url": "https://motioncanvas.example.com/help/quickstart"
+      },
+      "status": "beta",
+      "confidence": 0.76,
+      "missing_fields": [
+        "api_reference_url",
+        "commercial_rights_edge_cases"
+      ],
+      "last_checked_at": "2026-04-28T00:00:00Z",
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "object_id": "aoi-findwise-search-api",
+      "name": "Findwise Search API",
+      "object_type": "api",
+      "summary": "AI search API for semantic web answers, citations, result clustering, and freshness filters.",
+      "official_url": "https://findwise.example.com",
+      "source_urls": [
+        "https://findwise.example.com/docs",
+        "https://findwise.example.com/pricing",
+        "https://findwise.example.com/citations"
+      ],
+      "capabilities": [
+        "ai_search",
+        "web_answers",
+        "citations",
+        "freshness_filters"
+      ],
+      "categories": [
+        "ai_search_api",
+        "web_search"
+      ],
+      "pricing": {
+        "model": "usage_based",
+        "free_tier": true,
+        "starting_price_usd": 15,
+        "currency": "USD",
+        "notes": "Free developer quota and paid answer/query tiers."
+      },
+      "policies": {
+        "commercial_use": "Commercial search use allowed under API terms.",
+        "data_retention": "Queries retained for abuse detection and product analytics.",
+        "rate_limits": "Requests per minute and monthly query caps documented.",
+        "terms_url": "https://findwise.example.com/terms",
+        "privacy_url": "https://findwise.example.com/privacy"
+      },
+      "docs": {
+        "docs_url": "https://findwise.example.com/docs",
+        "api_reference_url": "https://findwise.example.com/docs/reference",
+        "quickstart_url": "https://findwise.example.com/docs/quickstart"
+      },
+      "status": "active",
+      "confidence": 0.85,
+      "missing_fields": [
+        "source_index_scope"
+      ],
+      "last_checked_at": "2026-04-28T00:00:00Z",
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "object_id": "aoi-embedlite-api",
+      "name": "EmbedLite API",
+      "object_type": "api",
+      "summary": "Embedding API with small, multilingual, and retrieval-optimized models.",
+      "official_url": "https://embedlite.example.com",
+      "source_urls": [
+        "https://embedlite.example.com/docs",
+        "https://embedlite.example.com/pricing",
+        "https://embedlite.example.com/models"
+      ],
+      "capabilities": [
+        "embeddings",
+        "multilingual_embeddings",
+        "batch_embedding",
+        "semantic_similarity"
+      ],
+      "categories": [
+        "embedding_api",
+        "rag_infrastructure"
+      ],
+      "pricing": {
+        "model": "usage_based",
+        "free_tier": true,
+        "starting_price_usd": 5,
+        "currency": "USD",
+        "notes": "Free token quota and low-cost per-token pricing."
+      },
+      "policies": {
+        "commercial_use": "Commercial use allowed under API terms.",
+        "data_retention": "Inputs not stored by default according to docs.",
+        "rate_limits": "Token and request limits by plan.",
+        "terms_url": "https://embedlite.example.com/terms",
+        "privacy_url": "https://embedlite.example.com/privacy"
+      },
+      "docs": {
+        "docs_url": "https://embedlite.example.com/docs",
+        "api_reference_url": "https://embedlite.example.com/docs/api",
+        "quickstart_url": "https://embedlite.example.com/docs/quickstart"
+      },
+      "status": "active",
+      "confidence": 0.89,
+      "missing_fields": [],
+      "last_checked_at": "2026-04-28T00:00:00Z",
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "object_id": "aoi-localmind-desktop",
+      "name": "LocalMind Desktop",
+      "object_type": "desktop_app",
+      "summary": "Local LLM desktop app for running models on-device with document chat and offline mode.",
+      "official_url": "https://localmind.example.com",
+      "source_urls": [
+        "https://localmind.example.com/docs",
+        "https://localmind.example.com/download",
+        "https://localmind.example.com/privacy"
+      ],
+      "capabilities": [
+        "local_llm",
+        "offline_chat",
+        "document_chat",
+        "model_management"
+      ],
+      "categories": [
+        "local_llm_app",
+        "desktop_ai"
+      ],
+      "pricing": {
+        "model": "freemium",
+        "free_tier": true,
+        "starting_price_usd": 0,
+        "currency": "USD",
+        "notes": "Free local app with paid team management features."
+      },
+      "policies": {
+        "commercial_use": "Commercial desktop use allowed; model licenses vary by chosen model.",
+        "data_retention": "Local data remains on device unless sync is enabled.",
+        "rate_limits": "No hosted API limits for local inference.",
+        "terms_url": "https://localmind.example.com/terms",
+        "privacy_url": "https://localmind.example.com/privacy"
+      },
+      "docs": {
+        "docs_url": "https://localmind.example.com/docs",
+        "api_reference_url": null,
+        "quickstart_url": "https://localmind.example.com/docs/start"
+      },
+      "status": "active",
+      "confidence": 0.79,
+      "missing_fields": [
+        "api_reference_url",
+        "model_license_matrix"
+      ],
+      "last_checked_at": "2026-04-28T00:00:00Z",
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "object_id": "aoi-promptledger",
+      "name": "PromptLedger",
+      "object_type": "saas",
+      "summary": "Prompt management tool for versioning prompts, reviewing changes, and running prompt evals.",
+      "official_url": "https://promptledger.example.com",
+      "source_urls": [
+        "https://promptledger.example.com/docs",
+        "https://promptledger.example.com/pricing",
+        "https://promptledger.example.com/security"
+      ],
+      "capabilities": [
+        "prompt_management",
+        "prompt_versioning",
+        "eval_runs",
+        "approval_workflows"
+      ],
+      "categories": [
+        "prompt_management",
+        "llmops"
+      ],
+      "pricing": {
+        "model": "seat_based",
+        "free_tier": true,
+        "starting_price_usd": 18,
+        "currency": "USD",
+        "notes": "Free solo workspace and paid team seats."
+      },
+      "policies": {
+        "commercial_use": "Commercial team use allowed.",
+        "data_retention": "Prompt history retained by workspace policy.",
+        "rate_limits": "Eval run limits by plan.",
+        "terms_url": "https://promptledger.example.com/terms",
+        "privacy_url": "https://promptledger.example.com/privacy"
+      },
+      "docs": {
+        "docs_url": "https://promptledger.example.com/docs",
+        "api_reference_url": "https://promptledger.example.com/docs/api",
+        "quickstart_url": "https://promptledger.example.com/docs/quickstart"
+      },
+      "status": "active",
+      "confidence": 0.83,
+      "missing_fields": [
+        "supported_model_provider_matrix"
+      ],
+      "last_checked_at": "2026-04-28T00:00:00Z",
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "object_id": "aoi-retrievalforge",
+      "name": "RetrievalForge",
+      "object_type": "open_source_framework",
+      "summary": "RAG framework for ingestion pipelines, retrievers, chunking strategies, and answer evaluation.",
+      "official_url": "https://retrievalforge.example.com",
+      "source_urls": [
+        "https://retrievalforge.example.com/docs",
+        "https://github.example.com/retrievalforge/retrievalforge",
+        "https://retrievalforge.example.com/license"
+      ],
+      "capabilities": [
+        "rag_framework",
+        "document_ingestion",
+        "retrieval_eval",
+        "chunking"
+      ],
+      "categories": [
+        "rag_framework",
+        "open_source"
+      ],
+      "pricing": {
+        "model": "open_source",
+        "free_tier": true,
+        "starting_price_usd": 0,
+        "currency": "USD",
+        "notes": "Open-source library with optional managed examples."
+      },
+      "policies": {
+        "commercial_use": "Permissive license allows commercial use.",
+        "data_retention": "Self-hosted; retention depends on implementation.",
+        "rate_limits": "No framework-level limits.",
+        "terms_url": "https://retrievalforge.example.com/license",
+        "privacy_url": null
+      },
+      "docs": {
+        "docs_url": "https://retrievalforge.example.com/docs",
+        "api_reference_url": "https://retrievalforge.example.com/docs/api",
+        "quickstart_url": "https://retrievalforge.example.com/docs/quickstart"
+      },
+      "status": "active",
+      "confidence": 0.84,
+      "missing_fields": [
+        "maintainer_security_contact"
+      ],
+      "last_checked_at": "2026-04-28T00:00:00Z",
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "object_id": "aoi-labelloop",
+      "name": "LabelLoop",
+      "object_type": "data_tool",
+      "summary": "Data labeling platform for classification, extraction, RLHF preference tasks, and review queues.",
+      "official_url": "https://labelloop.example.com",
+      "source_urls": [
+        "https://labelloop.example.com/docs",
+        "https://labelloop.example.com/pricing",
+        "https://labelloop.example.com/security"
+      ],
+      "capabilities": [
+        "data_labeling",
+        "rlhf_preferences",
+        "review_queues",
+        "quality_agreement_metrics"
+      ],
+      "categories": [
+        "data_labeling",
+        "ai_data_ops"
+      ],
+      "pricing": {
+        "model": "seat_based",
+        "free_tier": false,
+        "starting_price_usd": 99,
+        "currency": "USD",
+        "notes": "Team workspace pricing plus optional managed workforce."
+      },
+      "policies": {
+        "commercial_use": "Commercial labeling workflows supported.",
+        "data_retention": "Dataset retention configurable by workspace.",
+        "rate_limits": "API and import limits by plan.",
+        "terms_url": "https://labelloop.example.com/terms",
+        "privacy_url": "https://labelloop.example.com/privacy"
+      },
+      "docs": {
+        "docs_url": "https://labelloop.example.com/docs",
+        "api_reference_url": "https://labelloop.example.com/docs/api",
+        "quickstart_url": "https://labelloop.example.com/docs/quickstart"
+      },
+      "status": "active",
+      "confidence": 0.82,
+      "missing_fields": [
+        "workforce_location_details"
+      ],
+      "last_checked_at": "2026-04-28T00:00:00Z",
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "object_id": "aoi-signallens-monitor",
+      "name": "SignalLens Monitor",
+      "object_type": "monitoring_tool",
+      "summary": "AI monitoring platform for LLM traces, hallucination checks, cost dashboards, and drift alerts.",
+      "official_url": "https://signallens.example.com",
+      "source_urls": [
+        "https://signallens.example.com/docs",
+        "https://signallens.example.com/pricing",
+        "https://signallens.example.com/security"
+      ],
+      "capabilities": [
+        "ai_monitoring",
+        "llm_tracing",
+        "quality_evals",
+        "cost_dashboards"
+      ],
+      "categories": [
+        "ai_monitoring",
+        "llmops"
+      ],
+      "pricing": {
+        "model": "usage_based",
+        "free_tier": true,
+        "starting_price_usd": 30,
+        "currency": "USD",
+        "notes": "Free trace volume and paid observability tiers."
+      },
+      "policies": {
+        "commercial_use": "Commercial monitoring use allowed.",
+        "data_retention": "Trace retention configurable by plan.",
+        "rate_limits": "Ingestion event limits by plan.",
+        "terms_url": "https://signallens.example.com/terms",
+        "privacy_url": "https://signallens.example.com/privacy"
+      },
+      "docs": {
+        "docs_url": "https://signallens.example.com/docs",
+        "api_reference_url": "https://signallens.example.com/docs/api",
+        "quickstart_url": "https://signallens.example.com/docs/quickstart"
+      },
+      "status": "active",
+      "confidence": 0.86,
+      "missing_fields": [
+        "pii_redaction_default_behavior"
+      ],
+      "last_checked_at": "2026-04-28T00:00:00Z",
+      "source_rank": "UNKNOWN"
+    },
+    {
+      "object_id": "image_api_fixture",
+      "name": "PixelForge API",
+      "object_type": "APIObject",
+      "summary": "PixelForge API - Image generation for developers PixelForge API PixelForge API is a developer-friendly image generation API for creating product mockups, ads, and app images.",
+      "official_url": "https://example.com/pixelforge",
+      "source_urls": [
+        "https://example.com/pixelforge",
+        "https://example.com/pixelforge/pricing",
+        "https://example.com/pixelforge/docs"
+      ],
+      "capabilities": [
+        "image_generation",
+        "api_access",
+        "commercial_use",
+        "rate_limits"
+      ],
+      "categories": [
+        "ai_tools",
+        "extracted_fixture",
+        "api"
+      ],
+      "pricing": {
+        "model": "subscription",
+        "free_tier": true,
+        "starting_price_usd": 12.0
+      },
+      "policies": {
+        "commercial_use": "Commercial-use language found in extracted public text.",
+        "rate_limits": "Rate-limit language found in extracted public text.",
+        "terms_url": "https://example.com/pixelforge",
+        "privacy_url": "https://example.com/pixelforge",
+        "refund_policy": "Refund or billing terms language found in extracted public text."
+      },
+      "docs": {
+        "docs_url": "https://example.com/pixelforge/docs",
+        "api_reference_url": "https://example.com/pixelforge/docs/api-reference",
+        "github_url": "https://github.com/example/pixelforge-sdk"
+      },
+      "status": "EXTRACTED_UNVERIFIED",
+      "confidence": 0.997,
+      "missing_fields": [
+        "data_retention_policy"
+      ],
+      "last_checked_at": "2026-04-29T09:39:23.992204+00:00",
+      "source_rank": "B"
+    },
+    {
+      "object_id": "mcp_server_fixture",
+      "name": "BrowserPilot MCP Server",
+      "object_type": "MCPServer",
+      "summary": "# BrowserPilot MCP Server BrowserPilot MCP Server is an open source Model Context Protocol (MCP) server for browser automation research and local testing.",
+      "official_url": "https://github.com/example/browser-mcp-server/blob/main/README.md",
+      "source_urls": [
+        "https://github.com/example/browser-mcp-server/blob/main/README.md"
+      ],
+      "capabilities": [
+        "mcp_support",
+        "browser_automation",
+        "open_source",
+        "rate_limits"
+      ],
+      "categories": [
+        "ai_tools",
+        "extracted_fixture",
+        "mcp_servers"
+      ],
+      "pricing": {
+        "model": "subscription",
+        "free_tier": false
+      },
+      "policies": {
+        "rate_limits": "Rate-limit language found in extracted public text.",
+        "privacy_url": "https://github.com/example/browser-mcp-server/blob/main/README.md",
+        "license": "License language found in extracted public text."
+      },
+      "docs": {
+        "github_url": "https://github.com/example/browser-mcp-server"
+      },
+      "status": "EXTRACTED_UNVERIFIED",
+      "confidence": 0.885,
+      "missing_fields": [
+        "commercial_use_terms",
+        "docs_url",
+        "refund_policy",
+        "data_retention_policy"
+      ],
+      "last_checked_at": "2026-04-29T09:39:23.992925+00:00",
+      "source_rank": "B"
+    },
+    {
+      "object_id": "ocr_api_fixture",
+      "name": "ClearRead OCR API",
+      "object_type": "APIObject",
+      "summary": "ClearRead OCR API - Document extraction ClearRead OCR API ClearRead OCR API extracts text from receipts, invoices, PDFs, screenshots, and scanned documents.",
+      "official_url": "https://example.com/clearread-ocr",
+      "source_urls": [
+        "https://example.com/clearread-ocr",
+        "https://example.com/clearread-ocr/pricing"
+      ],
+      "capabilities": [
+        "ocr",
+        "api_access",
+        "commercial_use",
+        "rate_limits"
+      ],
+      "categories": [
+        "ai_tools",
+        "extracted_fixture",
+        "api"
+      ],
+      "pricing": {
+        "model": "subscription",
+        "free_tier": true,
+        "starting_price_usd": 19.0
+      },
+      "policies": {
+        "commercial_use": "Commercial-use language found in extracted public text.",
+        "rate_limits": "Rate-limit language found in extracted public text.",
+        "terms_url": "https://example.com/clearread-ocr",
+        "privacy_url": "https://example.com/clearread-ocr",
+        "data_retention": "Data-retention language found in extracted public text."
+      },
+      "docs": {
+        "docs_url": "https://example.com/clearread-ocr/docs"
+      },
+      "status": "EXTRACTED_UNVERIFIED",
+      "confidence": 0.996,
+      "missing_fields": [
+        "api_access",
+        "refund_policy"
+      ],
+      "last_checked_at": "2026-04-29T09:39:23.994484+00:00",
+      "source_rank": "B"
+    }
+  ]
+}

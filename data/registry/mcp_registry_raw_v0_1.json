@@ -1,0 +1,1623 @@
+{
+  "generated_at": "2026-05-18T10:25:43.728249+00:00",
+  "fixture_mode": false,
+  "live_network_used": false,
+  "source": "official_mcp_registry_api",
+  "payload": {
+    "generated_at": "2026-05-13T13:25:38.203330+00:00",
+    "fixture_mode": false,
+    "live_network_used": false,
+    "source": "official_mcp_registry_api",
+    "payload": {
+      "generated_at": "2026-05-13T13:10:45.468865+00:00",
+      "fixture_mode": false,
+      "live_network_used": false,
+      "source": "official_mcp_registry_api",
+      "payload": {
+        "generated_at": "2026-05-13T12:47:33.936467+00:00",
+        "fixture_mode": false,
+        "live_network_used": false,
+        "source": "official_mcp_registry_api",
+        "payload": {
+          "generated_at": "2026-05-13T12:47:28.370764+00:00",
+          "fixture_mode": false,
+          "live_network_used": false,
+          "source": "official_mcp_registry_api",
+          "payload": {
+            "servers": [
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ac.inference.sh/mcp",
+                  "description": "Run 150+ AI apps — image, video, audio, LLMs, 3D and more. Browse, execute, stream results.",
+                  "title": "inference.sh",
+                  "version": "1.0.0",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://sh.inference.ac"
+                    },
+                    {
+                      "type": "streamable-http",
+                      "url": "https://api.inference.sh/mcp"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-04-13T17:32:20.852269Z",
+                    "publishedAt": "2026-04-13T17:32:20.852269Z",
+                    "updatedAt": "2026-04-13T17:32:20.852269Z",
+                    "isLatest": false
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ac.inference.sh/mcp",
+                  "description": "Run 150+ AI apps — image, video, audio, LLMs, 3D and more. Browse, execute, stream results.",
+                  "title": "inference.sh",
+                  "version": "1.0.1",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://sh.inference.ac"
+                    },
+                    {
+                      "type": "streamable-http",
+                      "url": "https://api.inference.sh/mcp"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-04-13T17:33:26.613537Z",
+                    "publishedAt": "2026-04-13T17:33:26.613537Z",
+                    "updatedAt": "2026-04-13T17:33:26.613537Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ac.tandem/docs-mcp",
+                  "description": "Remote MCP server for Tandem docs, install guides, SDKs, workflows, and agent setup help.",
+                  "repository": {
+                    "url": "https://github.com/frumu-ai/tandem",
+                    "source": "github"
+                  },
+                  "version": "0.3.0",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://tandem.ac/mcp"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-04-02T11:22:40.005172Z",
+                    "publishedAt": "2026-04-02T11:22:40.005172Z",
+                    "updatedAt": "2026-04-02T11:22:40.005172Z",
+                    "isLatest": false
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ac.tandem/docs-mcp",
+                  "description": "Remote MCP server for Tandem docs, install guides, SDKs, workflows, and agent setup help.",
+                  "repository": {
+                    "url": "https://github.com/frumu-ai/tandem",
+                    "source": "github"
+                  },
+                  "version": "0.3.1",
+                  "websiteUrl": "https://tandem.ac/docs-mcp",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://tandem.ac/mcp"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-04-02T11:40:41.429277Z",
+                    "publishedAt": "2026-04-02T11:40:41.429277Z",
+                    "updatedAt": "2026-04-02T11:40:41.429277Z",
+                    "isLatest": false
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ac.tandem/docs-mcp",
+                  "description": "Remote MCP server for Tandem docs, install guides, SDKs, workflows, and agent setup help.",
+                  "repository": {
+                    "url": "https://github.com/frumu-ai/tandem",
+                    "source": "github"
+                  },
+                  "version": "0.3.2",
+                  "websiteUrl": "https://tandem.ac/docs-mcp",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://tandem.ac/mcp"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-04-22T21:06:34.500049Z",
+                    "publishedAt": "2026-04-22T21:06:34.500049Z",
+                    "updatedAt": "2026-04-22T21:06:34.500049Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "agency.lona/trading",
+                  "description": "AI-powered trading strategy development: backtesting, market data, and portfolio analysis",
+                  "repository": {
+                    "url": "https://github.com/mindsightventures/lona",
+                    "source": "github",
+                    "id": "891584339",
+                    "subfolder": "packages/lona-mcp-server"
+                  },
+                  "version": "2.0.0",
+                  "websiteUrl": "https://lona.agency",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://mcp.lona.agency/mcp"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-02-24T00:07:27.525636Z",
+                    "publishedAt": "2026-02-24T00:07:27.525636Z",
+                    "updatedAt": "2026-02-24T00:07:27.525636Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.aarna/atars-mcp",
+                  "description": "Crypto market signals, technical indicators, and sentiment analysis for AI agents.",
+                  "title": "aTars MCP",
+                  "version": "0.1.0",
+                  "websiteUrl": "https://mcp.aarna.ai/mcp",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://mcp.aarna.ai/mcp"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-03-10T11:09:59.15927Z",
+                    "publishedAt": "2026-03-10T11:09:59.15927Z",
+                    "updatedAt": "2026-03-10T11:09:59.15927Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.abmeter/abmeter",
+                  "description": "Feature flagging and A/B testing platform with AI-first experimentation workflows.",
+                  "title": "ABMeter",
+                  "repository": {
+                    "url": "https://github.com/abmeter/abmeter",
+                    "source": "github"
+                  },
+                  "version": "0.1.0",
+                  "websiteUrl": "https://abmeter.ai",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://mcp.abmeter.ai"
+                    }
+                  ],
+                  "_meta": {
+                    "io.modelcontextprotocol.registry/publisher-provided": {
+                      "connect": "https://abmeter.ai/lab/connect-mcp",
+                      "docs": "https://abmeter.ai/docs"
+                    }
+                  }
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-04-19T18:11:04.905549Z",
+                    "publishedAt": "2026-04-19T18:11:04.905549Z",
+                    "updatedAt": "2026-04-19T18:11:04.905549Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.adadvisor/mcp-server",
+                  "description": "Query Meta Ads performance data — accounts, campaigns, ad sets, ads, metrics & settings.",
+                  "title": "AdAdvisor MCP Server",
+                  "version": "1.0.0",
+                  "websiteUrl": "https://www.adadvisor.ai?utm_source=mcp-registry",
+                  "icons": [
+                    {
+                      "src": "https://app.adadvisor.ai/adadvisor-logo.png",
+                      "mimeType": "image/png"
+                    }
+                  ],
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://api.adadvisor.ai/mcp",
+                      "headers": [
+                        {
+                          "description": "Bearer token (adv_sk_...). Get key: https://www.adadvisor.ai/docs/user-guide/managing-api-keys?utm_source=mcp-registry",
+                          "isRequired": true,
+                          "isSecret": true,
+                          "name": "Authorization"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-02-28T12:39:22.82128Z",
+                    "publishedAt": "2026-02-28T12:39:22.82128Z",
+                    "updatedAt": "2026-02-28T12:39:22.82128Z",
+                    "isLatest": false
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.adadvisor/mcp-server",
+                  "description": "Query Meta Ads performance data — accounts, campaigns, ad sets, ads, metrics & settings.",
+                  "title": "AdAdvisor MCP Server",
+                  "version": "1.0.1",
+                  "websiteUrl": "https://www.adadvisor.ai/docs/user-guide/getting-started-with-mcp?utm_source=mcp-registry",
+                  "icons": [
+                    {
+                      "src": "https://app.adadvisor.ai/adadvisor-logo.png",
+                      "mimeType": "image/png"
+                    }
+                  ],
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://api.adadvisor.ai/mcp",
+                      "headers": [
+                        {
+                          "description": "Bearer token (adv_sk_...). Get key: https://www.adadvisor.ai/docs/user-guide/getting-started-with-mcp?utm_source=mcp-registry",
+                          "isRequired": true,
+                          "isSecret": true,
+                          "name": "Authorization"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-02-28T13:09:52.236521Z",
+                    "publishedAt": "2026-02-28T13:09:52.236521Z",
+                    "updatedAt": "2026-02-28T13:09:52.236521Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.adeu/adeu",
+                  "description": "Automated DOCX Redlining Engine",
+                  "repository": {
+                    "url": "https://github.com/dealfluence/adeu",
+                    "source": "github"
+                  },
+                  "version": "1.5.2",
+                  "packages": [
+                    {
+                      "registryType": "pypi",
+                      "identifier": "adeu",
+                      "version": "1.5.2",
+                      "transport": {
+                        "type": "stdio"
+                      }
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-05-05T14:01:01.659721Z",
+                    "publishedAt": "2026-05-05T14:01:01.659721Z",
+                    "updatedAt": "2026-05-05T14:01:01.659721Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.adramp/google-ads",
+                  "description": "Google Ads MCP server — manage campaigns, keywords, and metrics.",
+                  "repository": {
+                    "url": "https://github.com/stylemi-co/adramp",
+                    "source": "github"
+                  },
+                  "version": "1.0.0",
+                  "remotes": [
+                    {
+                      "type": "sse",
+                      "url": "https://mcp.adramp.ai/sse"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-03-20T10:48:50.293302Z",
+                    "publishedAt": "2026-03-20T10:48:50.293302Z",
+                    "updatedAt": "2026-03-20T10:48:50.293302Z",
+                    "isLatest": false
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.adramp/google-ads",
+                  "description": "Google Ads MCP server — manage campaigns, keywords, and metrics.",
+                  "repository": {
+                    "url": "https://github.com/stylemi-co/adramp",
+                    "source": "github"
+                  },
+                  "version": "1.0.1",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://mcp.adramp.ai"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-03-20T10:50:44.749808Z",
+                    "publishedAt": "2026-03-20T10:50:44.749808Z",
+                    "updatedAt": "2026-03-20T10:50:44.749808Z",
+                    "isLatest": false
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.adramp/google-ads",
+                  "description": "Google Ads MCP server — manage campaigns, keywords, and metrics.",
+                  "version": "1.0.2",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://mcp.adramp.ai"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-03-20T11:06:29.964194Z",
+                    "publishedAt": "2026-03-20T11:06:29.964194Z",
+                    "updatedAt": "2026-03-20T11:06:29.964194Z",
+                    "isLatest": false
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.adramp/google-ads",
+                  "description": "Google Ads MCP server — manage campaigns, keywords, and metrics.",
+                  "version": "1.0.3",
+                  "websiteUrl": "https://adramp.ai",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://mcp.adramp.ai"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-03-20T11:16:36.853329Z",
+                    "publishedAt": "2026-03-20T11:16:36.853329Z",
+                    "updatedAt": "2026-03-20T11:16:36.853329Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.adweave/meta-ads-mcp",
+                  "description": "Meta Ads MCP server with 47 tools for campaigns, creatives, audiences, and insights.",
+                  "title": "AdWeave — Meta Ads MCP Server",
+                  "version": "1.0.0",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://mcp.adweave.ai/meta-ads-mcp",
+                      "headers": [
+                        {
+                          "description": "Bearer token using your AdWeave API key (aw_ prefix)",
+                          "isRequired": true,
+                          "isSecret": true,
+                          "name": "Authorization"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-04-10T16:46:57.731179Z",
+                    "publishedAt": "2026-04-10T16:46:57.731179Z",
+                    "updatedAt": "2026-04-10T16:46:57.731179Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.agentdm/agentdm",
+                  "description": "Agent-to-agent messaging platform using MCP for cross-model communication.",
+                  "title": "AgentDM",
+                  "version": "1.0.0",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://api.agentdm.ai/api/v1/grid",
+                      "headers": [
+                        {
+                          "description": "Bearer token for authentication (e.g., 'Bearer agentdm_...'). Get your token at https://app.agentdm.ai",
+                          "isRequired": true,
+                          "isSecret": true,
+                          "name": "Authorization"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-03-21T03:25:57.564566Z",
+                    "publishedAt": "2026-03-21T03:25:57.564566Z",
+                    "updatedAt": "2026-03-21T03:25:57.564566Z",
+                    "isLatest": false
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.agentdm/agentdm",
+                  "description": "Agent communication platform for agent to agent messaging via MCP. Messages, channels, skills.",
+                  "title": "AgentDM: Agent to Agent Communication Platform",
+                  "repository": {
+                    "url": "https://github.com/agentdmai/agentdm",
+                    "source": "github"
+                  },
+                  "version": "2.0.0",
+                  "websiteUrl": "https://agentdm.ai",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://api.agentdm.ai/mcp/v1/grid",
+                      "headers": [
+                        {
+                          "description": "Optional. Recommended: OAuth 2.0. Omit this header and your MCP client will discover /.well-known/oauth-protected-resource and run browser-based authorization (tokens auto-refresh for 30 days, no keys to copy). Alternative: API key. Send 'Bearer agentdm_<token>' from https://app.agentdm.ai for server-to-server use.",
+                          "isSecret": true,
+                          "name": "Authorization"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-05-10T02:12:16.907792Z",
+                    "publishedAt": "2026-05-10T02:12:16.907792Z",
+                    "updatedAt": "2026-05-10T02:12:16.907792Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.agentic-news/mcp",
+                  "description": "AI-powered news intelligence — 21 tools for personalized monitoring, briefings, and semantic search",
+                  "title": "Agentic News",
+                  "repository": {
+                    "url": "https://github.com/u00dxk2/agentic-news",
+                    "source": "github"
+                  },
+                  "version": "1.0.0",
+                  "websiteUrl": "https://agentic-news.ai/mcp",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://api.agentic-news.ai/mcp"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-04-06T18:34:53.583541Z",
+                    "publishedAt": "2026-04-06T18:34:53.583541Z",
+                    "updatedAt": "2026-04-06T18:34:53.583541Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.agenticshelf/graffeo",
+                  "description": "Live MCP catalog for Graffeo Coffee Roasting — North Beach SF specialty coffee since 1935.",
+                  "title": "Graffeo Coffee Roasting",
+                  "version": "1.0.0",
+                  "websiteUrl": "https://www.graffeo.com",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://api.agenticshelf.ai/m/graffeo/mcp"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "deprecated",
+                    "statusChangedAt": "2026-05-07T16:29:51.153646Z",
+                    "statusMessage": "Pilot integration in progress; will re-activate when /m/graffeo/mcp is wired up.",
+                    "publishedAt": "2026-05-06T16:11:54.5608Z",
+                    "updatedAt": "2026-05-07T16:29:51.153646Z",
+                    "isLatest": false
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.agenticshelf/graffeo",
+                  "description": "Live MCP catalog for Graffeo Coffee Roasting - Simply the World's Finest Coffee since 1935.",
+                  "title": "Graffeo Coffee Roasting",
+                  "version": "1.0.1",
+                  "websiteUrl": "https://www.graffeo.com",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://api.agenticshelf.ai/m/graffeo/mcp"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "deprecated",
+                    "statusChangedAt": "2026-05-07T16:29:51.153646Z",
+                    "statusMessage": "Pilot integration in progress; will re-activate when /m/graffeo/mcp is wired up.",
+                    "publishedAt": "2026-05-07T15:29:26.296543Z",
+                    "updatedAt": "2026-05-07T16:29:51.153646Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.agenticshelf/mcp",
+                  "description": "Hosted MCP for e-commerce: live product catalog, stock, and pricing for AI agents.",
+                  "title": "Agentic Shelf",
+                  "repository": {
+                    "url": "https://github.com/vboykoCTO/agentic-shelf",
+                    "source": "github"
+                  },
+                  "version": "1.0.0",
+                  "websiteUrl": "https://www.agenticshelf.ai",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://api.agenticshelf.ai/mcp"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-05-06T16:24:16.952518Z",
+                    "publishedAt": "2026-05-06T16:24:16.952518Z",
+                    "updatedAt": "2026-05-06T16:24:16.952518Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+                  "name": "ai.agentrapay/agentra",
+                  "description": "Identity oracle and trust layer for autonomous AI agents. Bidirectional KYA and trust scoring.",
+                  "repository": {},
+                  "version": "1.0.0",
+                  "remotes": [
+                    {
+                      "type": "sse",
+                      "url": "https://api.agentrapay.ai/mcp"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-03-22T18:16:07.628131Z",
+                    "publishedAt": "2026-03-22T18:16:07.628131Z",
+                    "updatedAt": "2026-03-22T18:16:07.628131Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.agenttrust/mcp-server",
+                  "description": "Identity, trust, and A2A orchestration for autonomous AI agents. Official A2A partner.",
+                  "title": "AgentTrust — Identity & Trust for A2A Agents",
+                  "repository": {
+                    "url": "https://github.com/agenttrust/mcp-server",
+                    "source": "github"
+                  },
+                  "version": "1.1.1",
+                  "websiteUrl": "https://agenttrust.ai",
+                  "icons": [
+                    {
+                      "src": "https://agenttrust.ai/icon.png",
+                      "sizes": [
+                        "96x96"
+                      ]
+                    }
+                  ],
+                  "packages": [
+                    {
+                      "registryType": "npm",
+                      "identifier": "@agenttrust/mcp-server",
+                      "version": "1.1.1",
+                      "transport": {
+                        "type": "stdio"
+                      },
+                      "environmentVariables": [
+                        {
+                          "description": "Your AgentTrust API key from https://agenttrust.ai",
+                          "isRequired": true,
+                          "isSecret": true,
+                          "name": "AGENTTRUST_API_KEY"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-03-06T11:23:10.721165Z",
+                    "publishedAt": "2026-03-06T11:23:10.721165Z",
+                    "updatedAt": "2026-03-06T11:23:10.721165Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+                  "name": "ai.aliengiraffe/spotdb",
+                  "description": "Ephemeral data sandbox for AI workflows with guardrails and security",
+                  "repository": {
+                    "url": "https://github.com/aliengiraffe/spotdb",
+                    "source": "github"
+                  },
+                  "version": "0.1.0",
+                  "packages": [
+                    {
+                      "registryType": "oci",
+                      "identifier": "docker.io/aliengiraffe/spotdb:0.1.0",
+                      "transport": {
+                        "type": "stdio"
+                      },
+                      "environmentVariables": [
+                        {
+                          "description": "Optional API key for request authentication",
+                          "format": "string",
+                          "isSecret": true,
+                          "name": "X-API-Key"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2025-10-09T17:05:17.793149Z",
+                    "publishedAt": "2025-10-09T17:05:17.793149Z",
+                    "updatedAt": "2025-10-09T17:05:17.793149Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.alpic.mcp/alpic-mcp",
+                  "description": "Manage your projects, debug deployment, and check analytics for any MCP server you host with Alpic",
+                  "title": "Alpic",
+                  "version": "0.0.1",
+                  "websiteUrl": "https://alpic.ai",
+                  "icons": [
+                    {
+                      "src": "https://raw.githubusercontent.com/alpic-ai/public-assets/refs/heads/main/alpic%20logo%20light%20200x200.png",
+                      "mimeType": "image/png",
+                      "sizes": [
+                        "200x200"
+                      ]
+                    }
+                  ],
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://mcp.alpic.ai"
+                    },
+                    {
+                      "type": "sse",
+                      "url": "https://mcp.alpic.ai"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-02-18T15:32:32.672631Z",
+                    "publishedAt": "2026-02-18T15:32:32.672631Z",
+                    "updatedAt": "2026-02-18T15:32:32.672631Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+                  "name": "ai.alpic.test/test-mcp-server",
+                  "description": "Alpic Test MCP Server - great server!",
+                  "repository": {},
+                  "version": "0.0.1",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://test.alpic.ai/"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2025-09-10T13:57:43.256739Z",
+                    "publishedAt": "2025-09-10T13:57:43.256739Z",
+                    "updatedAt": "2025-09-10T13:57:43.256739Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.ankimcp/anki-mcp-server",
+                  "description": "MCP server for Anki flashcards: adaptive review, notes, media, and deck management via AnkiConnect.",
+                  "title": "Anki MCP Server",
+                  "repository": {
+                    "url": "https://github.com/ankimcp/anki-mcp-server",
+                    "source": "github"
+                  },
+                  "version": "0.18.4",
+                  "websiteUrl": "https://ankimcp.ai",
+                  "packages": [
+                    {
+                      "registryType": "npm",
+                      "registryBaseUrl": "https://registry.npmjs.org",
+                      "identifier": "@ankimcp/anki-mcp-server",
+                      "version": "0.18.4",
+                      "transport": {
+                        "type": "stdio"
+                      }
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-04-23T19:01:04.63097Z",
+                    "publishedAt": "2026-04-23T19:01:04.63097Z",
+                    "updatedAt": "2026-04-23T19:01:04.63097Z",
+                    "isLatest": false
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.ankimcp/anki-mcp-server",
+                  "description": "MCP server for Anki flashcards: adaptive review, notes, media, and deck management via AnkiConnect.",
+                  "title": "Anki MCP Server",
+                  "repository": {
+                    "url": "https://github.com/ankimcp/anki-mcp-server",
+                    "source": "github"
+                  },
+                  "version": "0.18.4-tunnel",
+                  "websiteUrl": "https://ankimcp.ai",
+                  "packages": [
+                    {
+                      "registryType": "npm",
+                      "registryBaseUrl": "https://registry.npmjs.org",
+                      "identifier": "@ankimcp/anki-mcp-server",
+                      "version": "0.18.4-tunnel",
+                      "transport": {
+                        "type": "stdio"
+                      }
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-04-24T07:54:33.87158Z",
+                    "publishedAt": "2026-04-24T07:54:33.87158Z",
+                    "updatedAt": "2026-04-24T07:54:33.87158Z",
+                    "isLatest": false
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.ankimcp/anki-mcp-server",
+                  "description": "MCP server for Anki flashcards: adaptive review, notes, media, and deck management via AnkiConnect.",
+                  "title": "Anki MCP Server",
+                  "repository": {
+                    "url": "https://github.com/ankimcp/anki-mcp-server",
+                    "source": "github"
+                  },
+                  "version": "0.18.5",
+                  "websiteUrl": "https://ankimcp.ai",
+                  "packages": [
+                    {
+                      "registryType": "npm",
+                      "registryBaseUrl": "https://registry.npmjs.org",
+                      "identifier": "@ankimcp/anki-mcp-server",
+                      "version": "0.18.5",
+                      "transport": {
+                        "type": "stdio"
+                      }
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-04-24T08:37:54.056077Z",
+                    "publishedAt": "2026-04-24T08:37:54.056077Z",
+                    "updatedAt": "2026-04-24T08:37:54.056077Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.ankimcp/anki-mcp-server-addon",
+                  "description": "Anki addon that exposes your flashcard collection to AI assistants via a local MCP server.",
+                  "title": "AnkiMCP Server",
+                  "repository": {
+                    "url": "https://github.com/ankimcp/anki-mcp-server-addon",
+                    "source": "github"
+                  },
+                  "version": "0.15.0",
+                  "websiteUrl": "https://ankimcp.ai"
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-04-23T12:59:15.983084Z",
+                    "publishedAt": "2026-04-23T12:59:15.983084Z",
+                    "updatedAt": "2026-04-23T12:59:15.983084Z",
+                    "isLatest": false
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.ankimcp/anki-mcp-server-addon",
+                  "description": "Anki addon that exposes your flashcard collection to AI assistants via a local MCP server.",
+                  "title": "AnkiMCP Server",
+                  "repository": {
+                    "url": "https://github.com/ankimcp/anki-mcp-server-addon",
+                    "source": "github"
+                  },
+                  "version": "0.15.1",
+                  "websiteUrl": "https://ankimcp.ai"
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-05-13T11:58:07.559701Z",
+                    "publishedAt": "2026-05-13T11:58:07.559701Z",
+                    "updatedAt": "2026-05-13T11:58:07.559701Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.anomalyarmor/armor-mcp",
+                  "description": "Data observability tools for engineering teams: alerts, freshness, schema drift, lineage, quality.",
+                  "title": "AnomalyArmor",
+                  "repository": {
+                    "url": "https://github.com/anomalyarmor/agents",
+                    "source": "github",
+                    "subfolder": "armor-mcp"
+                  },
+                  "version": "0.6.1",
+                  "websiteUrl": "https://www.anomalyarmor.ai",
+                  "packages": [
+                    {
+                      "registryType": "pypi",
+                      "identifier": "armor-mcp",
+                      "version": "0.6.1",
+                      "transport": {
+                        "type": "stdio"
+                      },
+                      "environmentVariables": [
+                        {
+                          "description": "AnomalyArmor API key (aa_live_*). Generate at https://app.anomalyarmor.ai/settings/api-keys.",
+                          "isRequired": true,
+                          "isSecret": true,
+                          "name": "ARMOR_API_KEY"
+                        }
+                      ]
+                    }
+                  ],
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://mcp.anomalyarmor.ai/mcp"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-04-18T00:51:37.350253Z",
+                    "publishedAt": "2026-04-18T00:51:37.350253Z",
+                    "updatedAt": "2026-04-18T00:51:37.350253Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+                  "name": "ai.anzenna/anzenna",
+                  "description": "MCP server for Anzenna",
+                  "repository": {},
+                  "version": "0.1",
+                  "remotes": [
+                    {
+                      "type": "sse",
+                      "url": "https://mcp.anzenna.ai/sse"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-02-21T23:53:55.798606Z",
+                    "publishedAt": "2026-02-21T23:53:55.798606Z",
+                    "updatedAt": "2026-02-21T23:53:55.798606Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.appdeploy/deploy-app",
+                  "description": "AppDeploy turns app ideas described in AI chat into live full-stack web applications",
+                  "title": "AppDeploy",
+                  "version": "1.0.0",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://api-v2.appdeploy.ai/mcp"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-02-09T15:16:30.60739Z",
+                    "publishedAt": "2026-02-09T15:16:30.60739Z",
+                    "updatedAt": "2026-02-09T15:16:30.60739Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+                  "name": "ai.artidrop/artidrop",
+                  "description": "The publishing layer for AI agents. Turn HTML and Markdown into shareable URLs instantly via MCP.",
+                  "version": "1.0.0",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://artidrop.ai/mcp"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-04-03T15:06:01.506001Z",
+                    "publishedAt": "2026-04-03T15:06:01.506001Z",
+                    "updatedAt": "2026-04-03T15:06:01.506001Z",
+                    "isLatest": false
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.artidrop/artidrop",
+                  "description": "Publish HTML, Markdown, and multi-file sites as shareable URLs instantly via MCP.",
+                  "version": "1.1.0",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://artidrop.ai/mcp"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-04-17T04:01:26.724763Z",
+                    "publishedAt": "2026-04-17T04:01:26.724763Z",
+                    "updatedAt": "2026-04-17T04:01:26.724763Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.auteng/docs",
+                  "description": "Publish markdown documents as public share links with mermaid diagram support. Built by AutEng.ai",
+                  "title": "AutEng MCP - Markdown Publishing & Document Share Links",
+                  "version": "1.1.0",
+                  "websiteUrl": "https://auteng.ai",
+                  "icons": [
+                    {
+                      "src": "https://auteng.ai/auteng-sqr.jpg",
+                      "mimeType": "image/jpeg",
+                      "sizes": [
+                        "755x755"
+                      ]
+                    }
+                  ],
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://auteng.ai/mcp/docs"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-02-06T20:56:39.150934Z",
+                    "publishedAt": "2026-02-06T20:56:39.150934Z",
+                    "updatedAt": "2026-02-06T20:56:39.150934Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.auteng/mcp",
+                  "description": "Publish markdown as a publicly shareable AutEng document",
+                  "title": "AutEng Document Publisher",
+                  "repository": {
+                    "url": "https://github.com/auteng/auteng",
+                    "source": "github"
+                  },
+                  "version": "1.0.0",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://auteng.ai/mcp"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-02-06T16:52:00.816324Z",
+                    "publishedAt": "2026-02-06T16:52:00.816324Z",
+                    "updatedAt": "2026-02-06T16:52:00.816324Z",
+                    "isLatest": false
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.auteng/mcp",
+                  "description": "Publish markdown documents as public share links with mermaid diagrams. Built by AutEng.ai",
+                  "title": "AutEng MCP - Markdown Publishing & Document Share Links",
+                  "version": "1.0.1",
+                  "websiteUrl": "https://auteng.ai",
+                  "icons": [
+                    {
+                      "src": "https://auteng.ai/auteng-sqr.jpg",
+                      "mimeType": "image/jpeg",
+                      "sizes": [
+                        "755x755"
+                      ]
+                    }
+                  ],
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://auteng.ai/mcp"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-02-06T17:18:22.957864Z",
+                    "publishedAt": "2026-02-06T17:18:22.957864Z",
+                    "updatedAt": "2026-02-06T17:18:22.957864Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.autoblocks/contextlayer-mcp",
+                  "description": "Personal context management for AI assistants",
+                  "repository": {
+                    "url": "https://github.com/autoblocksai/ctxl",
+                    "source": "github"
+                  },
+                  "version": "0.0.3",
+                  "packages": [
+                    {
+                      "registryType": "npm",
+                      "identifier": "@contextlayer/mcp",
+                      "version": "0.0.3",
+                      "transport": {
+                        "type": "stdio"
+                      }
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-01-12T03:52:52.134106Z",
+                    "publishedAt": "2026-01-12T03:52:52.134106Z",
+                    "updatedAt": "2026-01-12T03:52:52.134106Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.autoblocks/ctxl",
+                  "description": "Personal context management for AI assistants",
+                  "repository": {
+                    "url": "https://github.com/autoblocksai/ctxl",
+                    "source": "github"
+                  },
+                  "version": "0.0.2",
+                  "packages": [
+                    {
+                      "registryType": "npm",
+                      "identifier": "ctxl",
+                      "version": "0.0.2",
+                      "transport": {
+                        "type": "stdio"
+                      }
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-01-12T03:52:12.746584Z",
+                    "publishedAt": "2026-01-12T03:52:12.746584Z",
+                    "updatedAt": "2026-01-12T03:52:12.746584Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.autoblocks/ctxl-mcp",
+                  "description": "Personal context management for AI assistants",
+                  "repository": {
+                    "url": "https://github.com/autoblocksai/ctxl",
+                    "source": "github"
+                  },
+                  "version": "0.0.2",
+                  "packages": [
+                    {
+                      "registryType": "npm",
+                      "identifier": "ctxl-mcp",
+                      "version": "0.0.2",
+                      "transport": {
+                        "type": "stdio"
+                      }
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-01-12T03:52:19.009876Z",
+                    "publishedAt": "2026-01-12T03:52:19.009876Z",
+                    "updatedAt": "2026-01-12T03:52:19.009876Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.autonomad/computeback",
+                  "description": "Agent marketplace: earn $NOMD on B2B work, spend on compute/voice/memory capabilities.",
+                  "repository": {
+                    "url": "https://github.com/Autonomad1/computeback-mcp",
+                    "source": "github"
+                  },
+                  "version": "1.1.2",
+                  "websiteUrl": "https://computeback.com",
+                  "packages": [
+                    {
+                      "registryType": "npm",
+                      "registryBaseUrl": "https://registry.npmjs.org",
+                      "identifier": "@autonomad1/computeback-mcp",
+                      "version": "1.1.2",
+                      "transport": {
+                        "type": "stdio"
+                      },
+                      "environmentVariables": [
+                        {
+                          "description": "Computeback API base URL. Defaults to production.",
+                          "default": "https://www.computeback.com/api",
+                          "name": "COMPUTEBACK_API_URL"
+                        },
+                        {
+                          "description": "Base L2 RPC endpoint for on-chain reads (balance, settlement tx). Defaults to public mainnet endpoint.",
+                          "default": "https://mainnet.base.org",
+                          "name": "BASE_RPC_URL"
+                        },
+                        {
+                          "description": "Optional. Decentralized identifier of the calling agent (e.g. did:nomd:agt_...). Required for CB Hire B2B tools (list_my_inbox, place_bid, dispatch_*, etc.). Get one from https://www.computeback.com/agents/start.",
+                          "name": "AGENT_DID"
+                        },
+                        {
+                          "description": "Optional. HMAC secret returned at agent registration time. Required together with AGENT_DID for CB Hire B2B tools.",
+                          "isSecret": true,
+                          "name": "AGENT_HMAC_SECRET"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-05-11T22:50:28.635248Z",
+                    "publishedAt": "2026-05-11T22:50:28.635248Z",
+                    "updatedAt": "2026-05-11T22:50:28.635248Z",
+                    "isLatest": false
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.autonomad/computeback",
+                  "description": "Agent Rewards Marketplace: earn $NOMD on B2B work, spend on agent capabilities.",
+                  "repository": {
+                    "url": "https://github.com/Autonomad1/computeback-mcp",
+                    "source": "github"
+                  },
+                  "version": "1.1.3",
+                  "websiteUrl": "https://www.computeback.com",
+                  "packages": [
+                    {
+                      "registryType": "npm",
+                      "registryBaseUrl": "https://registry.npmjs.org",
+                      "identifier": "@autonomad1/computeback-mcp",
+                      "version": "1.1.3",
+                      "transport": {
+                        "type": "stdio"
+                      },
+                      "environmentVariables": [
+                        {
+                          "description": "Computeback API base URL. Defaults to production.",
+                          "default": "https://www.computeback.com/api",
+                          "name": "COMPUTEBACK_API_URL"
+                        },
+                        {
+                          "description": "Base L2 RPC endpoint for on-chain reads (balance, settlement tx). Defaults to public mainnet endpoint.",
+                          "default": "https://mainnet.base.org",
+                          "name": "BASE_RPC_URL"
+                        },
+                        {
+                          "description": "Optional. Decentralized identifier of the calling agent (e.g. did:nomd:agt_...). Required for CB Hire B2B tools (list_my_inbox, place_bid, dispatch_*, etc.). Get one from https://www.computeback.com/agents/start.",
+                          "name": "AGENT_DID"
+                        },
+                        {
+                          "description": "Optional. HMAC secret returned at agent registration time. Required together with AGENT_DID for CB Hire B2B tools.",
+                          "isSecret": true,
+                          "name": "AGENT_HMAC_SECRET"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-05-11T23:17:51.160439Z",
+                    "publishedAt": "2026-05-11T23:17:51.160439Z",
+                    "updatedAt": "2026-05-11T23:17:51.160439Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.autonomad/travel",
+                  "description": "AI travel agent — book flights, hotels, activities, and events worldwide via autonomad.ai.",
+                  "repository": {
+                    "url": "https://github.com/Autonomad1/autonomad1",
+                    "source": "github",
+                    "subfolder": "packages/mcp-hotel-tools"
+                  },
+                  "version": "1.4.0",
+                  "websiteUrl": "https://autonomad.ai",
+                  "packages": [
+                    {
+                      "registryType": "npm",
+                      "registryBaseUrl": "https://registry.npmjs.org",
+                      "identifier": "autonomad-travel",
+                      "version": "1.4.0",
+                      "transport": {
+                        "type": "stdio"
+                      },
+                      "environmentVariables": [
+                        {
+                          "description": "Autonomad API base URL. Defaults to production.",
+                          "format": "string",
+                          "default": "https://api.autonomad.ai",
+                          "name": "AUTONOMAD_API_URL"
+                        },
+                        {
+                          "description": "Set to 'true' to expose autonomous-agent tools (register_agent, DID-based booking). Default human mode is for Claude/ChatGPT users.",
+                          "format": "string",
+                          "default": "false",
+                          "name": "AUTONOMAD_AGENT_MODE"
+                        }
+                      ]
+                    }
+                  ],
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://mcp.autonomad.ai/mcp"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-05-11T09:19:18.416611Z",
+                    "publishedAt": "2026-05-11T09:19:18.416611Z",
+                    "updatedAt": "2026-05-11T09:19:18.416611Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.auxen/auxen",
+                  "description": "Provision private AI model endpoints on dedicated GPUs (Llama, Qwen, Mistral). Pay per minute.",
+                  "repository": {
+                    "url": "https://github.com/Samp2Alex/auxen-mcp",
+                    "source": "github"
+                  },
+                  "version": "1.0.0",
+                  "websiteUrl": "https://auxen.ai",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://api.auxen.ai/mcp"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-05-11T04:31:42.219913Z",
+                    "publishedAt": "2026-05-11T04:31:42.219913Z",
+                    "updatedAt": "2026-05-11T04:31:42.219913Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.bankee/inferventis-mcp",
+                  "description": "Loan & mortgage calculator, compound interest, ROI, crypto prices, FX conversion for AI agents.",
+                  "title": "Inferventis MCP Server",
+                  "repository": {
+                    "url": "https://github.com/Bankee-ai/inferventis",
+                    "source": "github"
+                  },
+                  "version": "1.0.2",
+                  "websiteUrl": "https://mcp-server-295985738387.europe-west1.run.app",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://mcp-server-295985738387.europe-west1.run.app/mcp",
+                      "headers": [
+                        {
+                          "description": "Inferventis API key — obtain at inferventis.ai",
+                          "isRequired": true,
+                          "isSecret": true,
+                          "name": "x-api-key"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-04-28T09:24:20.898632Z",
+                    "publishedAt": "2026-04-28T09:24:20.898632Z",
+                    "updatedAt": "2026-04-28T09:24:20.898632Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+                  "name": "ai.baselight/baselight",
+                  "description": "Query Baselight's public catalog of 70,000+ datasets — finance, demographics, sports, and more.",
+                  "version": "1.0.0",
+                  "websiteUrl": "https://baselight.ai",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://api.baselight.app/mcp",
+                      "headers": [
+                        {
+                          "description": "Baselight API key. Generate one at https://baselight.app under account settings.",
+                          "isRequired": true,
+                          "format": "string",
+                          "isSecret": true,
+                          "name": "x-api-key"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-04-30T15:33:16.859356Z",
+                    "publishedAt": "2026-04-30T15:33:16.859356Z",
+                    "updatedAt": "2026-04-30T15:33:16.859356Z",
+                    "isLatest": true
+                  }
+                }
+              },
+              {
+                "server": {
+                  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+                  "name": "ai.bezal/local-commerce",
+                  "description": "Search 7,000+ local service businesses across America by category, location, or keyword.",
+                  "title": "Bezal — Local Business Intelligence for AI Agents",
+                  "version": "1.0.0",
+                  "remotes": [
+                    {
+                      "type": "streamable-http",
+                      "url": "https://app.bezal.ai/api/mcp"
+                    }
+                  ]
+                },
+                "_meta": {
+                  "io.modelcontextprotocol.registry/official": {
+                    "status": "active",
+                    "statusChangedAt": "2026-03-03T01:28:17.439049Z",
+                    "publishedAt": "2026-03-03T01:28:17.439049Z",
+                    "updatedAt": "2026-03-03T01:28:17.439049Z",
+                    "isLatest": true
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "nextCursor": "ai.bezal/local-commerce:1.0.0",
+              "count": 50
+            }
+          }
+        }
+      }
+    }
+  }
+}

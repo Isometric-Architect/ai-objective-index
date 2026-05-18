@@ -1,0 +1,139 @@
+{
+  "objects": [
+    {
+      "object_id": "image_api_fixture",
+      "name": "PixelForge API",
+      "object_type": "APIObject",
+      "summary": "PixelForge API - Image generation for developers PixelForge API PixelForge API is a developer-friendly image generation API for creating product mockups, ads, and app images.",
+      "official_url": "https://example.com/pixelforge",
+      "source_urls": [
+        "https://example.com/pixelforge",
+        "https://example.com/pixelforge/pricing",
+        "https://example.com/pixelforge/docs"
+      ],
+      "capabilities": [
+        "image_generation",
+        "api_access",
+        "commercial_use",
+        "rate_limits"
+      ],
+      "categories": [
+        "ai_tools",
+        "extracted_fixture",
+        "api"
+      ],
+      "pricing": {
+        "model": "subscription",
+        "free_tier": true,
+        "starting_price_usd": 12.0
+      },
+      "policies": {
+        "commercial_use": "Commercial-use language found in extracted public text.",
+        "rate_limits": "Rate-limit language found in extracted public text.",
+        "terms_url": "https://example.com/pixelforge",
+        "privacy_url": "https://example.com/pixelforge",
+        "refund_policy": "Refund or billing terms language found in extracted public text."
+      },
+      "docs": {
+        "docs_url": "https://example.com/pixelforge/docs",
+        "api_reference_url": "https://example.com/pixelforge/docs/api-reference",
+        "github_url": "https://github.com/example/pixelforge-sdk"
+      },
+      "status": "EXTRACTED_UNVERIFIED",
+      "confidence": 0.997,
+      "missing_fields": [
+        "data_retention_policy"
+      ],
+      "last_checked_at": "2026-05-18T10:25:31.473511+00:00",
+      "source_rank": "B"
+    },
+    {
+      "object_id": "mcp_server_fixture",
+      "name": "BrowserPilot MCP Server",
+      "object_type": "MCPServer",
+      "summary": "# BrowserPilot MCP Server BrowserPilot MCP Server is an open source Model Context Protocol (MCP) server for browser automation research and local testing.",
+      "official_url": "https://github.com/example/browser-mcp-server/blob/main/README.md",
+      "source_urls": [
+        "https://github.com/example/browser-mcp-server/blob/main/README.md"
+      ],
+      "capabilities": [
+        "mcp_support",
+        "browser_automation",
+        "open_source",
+        "rate_limits"
+      ],
+      "categories": [
+        "ai_tools",
+        "extracted_fixture",
+        "mcp_servers"
+      ],
+      "pricing": {
+        "model": "subscription",
+        "free_tier": false
+      },
+      "policies": {
+        "rate_limits": "Rate-limit language found in extracted public text.",
+        "privacy_url": "https://github.com/example/browser-mcp-server/blob/main/README.md",
+        "license": "License language found in extracted public text."
+      },
+      "docs": {
+        "github_url": "https://github.com/example/browser-mcp-server"
+      },
+      "status": "EXTRACTED_UNVERIFIED",
+      "confidence": 0.885,
+      "missing_fields": [
+        "commercial_use_terms",
+        "docs_url",
+        "refund_policy",
+        "data_retention_policy"
+      ],
+      "last_checked_at": "2026-05-18T10:25:31.485766+00:00",
+      "source_rank": "B"
+    },
+    {
+      "object_id": "ocr_api_fixture",
+      "name": "ClearRead OCR API",
+      "object_type": "APIObject",
+      "summary": "ClearRead OCR API - Document extraction ClearRead OCR API ClearRead OCR API extracts text from receipts, invoices, PDFs, screenshots, and scanned documents.",
+      "official_url": "https://example.com/clearread-ocr",
+      "source_urls": [
+        "https://example.com/clearread-ocr",
+        "https://example.com/clearread-ocr/pricing"
+      ],
+      "capabilities": [
+        "ocr",
+        "api_access",
+        "commercial_use",
+        "rate_limits"
+      ],
+      "categories": [
+        "ai_tools",
+        "extracted_fixture",
+        "api"
+      ],
+      "pricing": {
+        "model": "subscription",
+        "free_tier": true,
+        "starting_price_usd": 19.0
+      },
+      "policies": {
+        "commercial_use": "Commercial-use language found in extracted public text.",
+        "rate_limits": "Rate-limit language found in extracted public text.",
+        "terms_url": "https://example.com/clearread-ocr",
+        "privacy_url": "https://example.com/clearread-ocr",
+        "data_retention": "Data-retention language found in extracted public text."
+      },
+      "docs": {
+        "docs_url": "https://example.com/clearread-ocr/docs"
+      },
+      "status": "EXTRACTED_UNVERIFIED",
+      "confidence": 0.996,
+      "missing_fields": [
+        "api_access",
+        "refund_policy"
+      ],
+      "last_checked_at": "2026-05-18T10:25:31.511423+00:00",
+      "source_rank": "B"
+    }
+  ]
+}

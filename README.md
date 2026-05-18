@@ -1,0 +1,540 @@
+# AI Objective Index
+
+AI Objective Index (AOI) is a read-only MCP/API data contract for ranking and comparing AI tools, APIs, SaaS products, and MCP servers against explicit objectives, constraints, source traces, missing fields, and decision receipts.
+
+## Why This Exists
+
+AI agents increasingly need to choose between tools. A generic web search result, sponsored directory, or untraced recommendation is not enough when the agent must explain why one option fits an objective better than another. AOI exists to make those comparisons explicit, auditable, and bounded.
+
+AOI is not a generic web search engine. It is not a supplier-submitted directory. It is not a paid ranking system. It is not a payment, booking, email, login, form submission, purchase, or contract execution platform.
+
+AOI is a productization prototype built from internal research concepts. Internal research claim ceilings do not prohibit implementation; they prevent unsupported external claims about readiness, guarantees, certification, or authority.
+
+## Current Scope
+
+Package 0 defines the v0.1 project identity, schemas, documentation, sample data contract, and claim boundaries for the first vertical: AI tools, APIs, SaaS products, and MCP servers.
+
+v0.1 is read-only. Package 1 adds the local core engine, Package 2 adds read-only MCP tool functions, and Package 3 adds a read-only FastAPI REST API. Package 6A adds a crawler/extractor skeleton and fixture pipeline, but it does not run broad live crawling. This repository still does not implement a production ingestion pipeline, payment flow, booking flow, account login, email sender, form submitter, purchasing system, supplier claim/verify flow, profile modification, or contract workflow.
+
+## Quick Example
+
+Example objective request:
+
+```json
+{
+  "query": "Find a cheap image generation API with commercial-use terms.",
+  "domain": "ai_tools",
+  "objective": {
+    "goal": "select_image_generation_api",
+    "must_have": ["commercial_use_terms", "api_access"],
+    "nice_to_have": ["free_tier", "clear_rate_limits"]
+  },
+  "constraints": {
+    "max_monthly_budget_usd": 50,
+    "requires_documented_terms": true
+  },
+  "scoring_profile": {
+    "weights": {
+      "relevance": 0.3,
+      "cost_fit": 0.2,
+      "policy_clarity": 0.2,
+      "documentation_quality": 0.15,
+      "source_trace_coverage": 0.15
+    }
+  },
+  "limit": 3
+}
+```
+
+## Expected Output
+
+An AOI-compatible service should return ranked objects, objective scores, missing fields, warnings, and source trace identifiers. A later read-only MCP tool might produce:
+
+```json
+{
+  "results": [
+    {
+      "object_id": "aoi-pixelforge-api",
+      "objective_score": 86,
+      "rank_reason": "Strong image API relevance, clear commercial-use policy, and low-cost starter tier.",
+      "warnings": ["Rate limit details are partially missing."]
+    }
+  ],
+  "source_trace_ids": ["trace-pixelforge-pricing", "trace-pixelforge-terms"]
+}
+```
+
+## Limitations
+
+- Sample data in this repository is fake but realistic and is intended for contract design, docs, and future evals.
+- AOI scores are objective-fit scores, not universal product quality scores.
+- Missing fields must be surfaced instead of silently treated as negative or positive proof.
+- Source traces can support a field, but they do not guarantee that the source is complete, current, or legally sufficient.
+- Freshness is limited by `last_checked_at`, trace retrieval timestamps, and the future ingestion process.
+
+## Package 1 Core Engine Demo
+
+Package 1 adds a local Python core engine over the Package 0 schemas and sample data. It does not add an MCP server, crawler, REST API, supplier verification flow, or any write-capable external action.
+
+After installing the package or running with `src` on `PYTHONPATH`, try:
+
+```powershell
+python -m ai_objective_index.cli_demo "cheap image generation API with commercial use terms"
+```
+
+The demo loads `data/sample_index.json` and `data/sample_source_traces.json`, searches local sample objects, scores candidates, and prints the top five read-only objective-fit results.
+
+## Package 2 Read-Only MCP Tools
+
+Package 2 exposes the Package 1 core engine as read-only MCP tool functions. If the Python MCP SDK is installed, `ai_objective_index.mcp_server` can register a simple MCP server. If the SDK is missing, the project still works: tool functions and the generated manifest remain available for local tests and integration planning.
+
+Read-only tools:
+
+- `search_objectives`
+- `rank_options`
+- `compare_tools`
+- `explain_score`
+- `get_source_trace`
+- `list_missing_fields`
+- `generate_decision_receipt`
+
+Generate the local manifest:
+
+```powershell
+python -m ai_objective_index.mcp_manifest
+```
+
+Run the optional server entrypoint:
+
+```powershell
+python -m ai_objective_index.mcp_server
+```
+
+MCP v0.1 never buys, books, pays, logs in, sends email, submits forms, modifies accounts, claims suppliers, verifies suppliers, or signs contracts.
+
+## Package 3 REST API
+
+Package 3 exposes the same read-only AOI functionality through FastAPI and an OpenAPI spec.
+
+Run locally:
+
+```powershell
+python -m ai_objective_index.api
+```
+
+Export OpenAPI:
+
+```powershell
+python -m ai_objective_index.openapi_export
+```
+
+Example search:
+
+```text
+GET /search?query=cheap+image+generation+API&objective=low+cost+commercial+use
+```
+
+The REST API is read-only. It never buys, books, pays, logs in, sends email, submits forms, modifies accounts, claims suppliers, verifies suppliers, or signs contracts.
+
+## Package 4 Benchmark Reports
+
+Package 4 adds golden query evaluation, benchmark metrics, downloadable JSON files, and Markdown reports.
+
+Run golden query evals:
+
+```powershell
+python -m ai_objective_index.eval_runner
+```
+
+Generate reports and downloads:
+
+```powershell
+python -m ai_objective_index.report_generator
+```
+
+Generated report examples:
+
+- `reports/mcp_server_objective_index_v0_1.md`
+- `reports/ai_tool_pricing_index_v0_1.md`
+- `reports/source_trace_quality_report_v0_1.md`
+
+Package 4 remains read-only. Reports are sample/extracted benchmark artifacts, not quality guarantees, official rankings, legal advice, purchasing advice, or safety certifications.
+
+## Package 5 Hugging Face Demo And Community Testing
+
+Package 5 adds a local Hugging Face demo draft, dataset package, example clients, issue templates, and community launch materials.
+
+Run the local demo:
+
+```powershell
+python hf_demo/app.py
+```
+
+Publishing to Hugging Face is manual and is not done by this repository automatically. No Hugging Face tokens or external credentials are required.
+
+Feedback loop summary:
+
+- failed queries become golden query candidates;
+- wrong fields require official source evidence;
+- scoring disputes should name the score component and evidence;
+- source trace improvements are prioritized for ranking-relevant fields.
+
+Package 5 remains read-only and does not crawl, buy, book, pay, log in, send email, submit forms, modify accounts, claim suppliers, verify suppliers, or sign contracts.
+
+## Package 6A Crawler / Extractor Skeleton
+
+Package 6A adds a safe crawler/extractor skeleton and a local fixture pipeline. It prepares public-data acquisition mechanics without running broad live crawling.
+
+Preview a crawl plan:
+
+```powershell
+python -m ai_objective_index.crawler.crawl_plan
+```
+
+Run the local fixture extraction pipeline:
+
+```powershell
+python -m ai_objective_index.extractor.fixture_pipeline
+```
+
+Package 6A keeps network fetch disabled by default. Tests and demos use local fixtures only. Automatically extracted objects default to `EXTRACTED_UNVERIFIED`, and source traces support fields without becoming quality guarantees.
+
+## Package 6C Generated Extraction Integration
+
+Package 6C integrates the Package 6A generated fixture outputs into explicit local helper flows. Existing API/MCP defaults remain sample-only, while callers can opt into `generated` or `integrated` data scope.
+
+Export integrated index JSON:
+
+```powershell
+python -m ai_objective_index.integrated_index_export
+```
+
+Run integrated eval:
+
+```powershell
+python -m ai_objective_index.integrated_eval
+```
+
+Generate integrated report:
+
+```powershell
+python -m ai_objective_index.integrated_report_generator
+```
+
+Package 6C remains read-only, local-data-only, and no-live-crawling. Generated extracted objects remain `EXTRACTED_UNVERIFIED` and are not verified supplier claims.
+
+## Package 6D-S Source-Governed AOI
+
+Package 6D-S upgrades AOI with source-governance checks before claim promotion. It adds source status, use-right separation, claim ceilings, action-boundary guards, obstruction certificates, AOI decision packets, and false-closure negative controls.
+
+Run false-closure controls:
+
+```powershell
+python -m ai_objective_index.negative_control_runner
+```
+
+Package 6D-S keeps AOI read-only and local-data-only. A recommendation is not action permission, generated/sample data cannot become verified supplier data, and HOLD/BLOCK certificates must include the next evidence step.
+
+## Package 6D DataScope QA And Beta Readiness
+
+Package 6D hardens `data_scope` behavior across local Core, MCP, REST API, OpenAPI, Hugging Face demo, examples, evals, reports, and docs.
+
+Run data-scope QA:
+
+```powershell
+python -m ai_objective_index.datascope_qa
+```
+
+Generate beta-readiness report:
+
+```powershell
+python -m ai_objective_index.beta_readiness
+```
+
+Default scope remains `sample`. Supported scopes are `sample`, `generated`, and `integrated`. Generated records remain `EXTRACTED_UNVERIFIED`. Package 6D performs local readiness checks only; it does not publish, crawl, or execute external actions.
+
+## Package 7A Real MCP SDK Integration And Compatibility Prep
+
+Package 7A adds real MCP runtime hooks and generic read-only `search` / `fetch` wrappers for MCP clients, while reusing the existing AOI MCP/core functions.
+
+Run local MCP smoke:
+
+```powershell
+python -m ai_objective_index.mcp_smoke
+```
+
+Run the stdio entrypoint:
+
+```powershell
+python -m ai_objective_index.mcp_stdio_entrypoint
+```
+
+If the optional MCP SDK is missing, the entrypoint prints a safe fallback message. Optional install:
+
+```powershell
+pip install "ai-objective-index[mcp]"
+```
+
+Package 7A does not submit to an MCP registry automatically and does not enable crawling or external actions.
+
+## Package 7B Public Beta Release Candidate Pack
+
+Package 7B creates a local public beta release candidate pack and readiness audit. It prepares files for manual external release, but it does not publish anything.
+
+Run release readiness:
+
+```powershell
+python -m ai_objective_index.release_readiness
+```
+
+Run claim audit:
+
+```powershell
+python -m ai_objective_index.release_claim_audit
+```
+
+Create local release pack:
+
+```powershell
+python -m ai_objective_index.public_beta_packager
+```
+
+Run all local smoke checks:
+
+```powershell
+python -m ai_objective_index.smoke_all
+```
+
+The release pack is written to `release/public_beta_v0_1/`. Publishing to GitHub, Hugging Face, MCP Registry, or communities remains manual.
+
+## Package 7C Curated Real-Object Seed Expansion
+
+Package 7C adds a manual curated data path for real-object candidates and an evidence gate for public beta data. Curated objects are not supplier verified and default to `EXTRACTED_UNVERIFIED`.
+
+Run curated export:
+
+```powershell
+python -m ai_objective_index.curated_index_export
+```
+
+Run curated eval:
+
+```powershell
+python -m ai_objective_index.curated_eval
+```
+
+Generate curated report:
+
+```powershell
+python -m ai_objective_index.curated_report_generator
+```
+
+Supported scopes are now `sample`, `generated`, `integrated`, `curated`, and `public_beta`. Default scope remains `sample`. The `public_beta` scope is curated-only by default and returns a warning if no curated object passes the evidence gate. Package 7C does not crawl, scrape, fetch network data, verify suppliers, publish, or execute external actions.
+
+## Package 7D Official MCP Registry Intake Pilot
+
+Package 7D adds an Official MCP Registry intake pilot. Default mode is offline fixture mode; optional live intake requires `--allow-network` and is limited to read-only registry API GET requests.
+
+Run offline fixture export:
+
+```powershell
+python -m ai_objective_index.registry_intake.mcp_registry_export --use-fixture
+```
+
+Run registry eval:
+
+```powershell
+python -m ai_objective_index.registry_intake.mcp_registry_eval
+```
+
+Generate registry report:
+
+```powershell
+python -m ai_objective_index.registry_intake.mcp_registry_report_generator
+```
+
+Package 7D adds `mcp_registry` and `public_beta_mcp` data scopes. Registry objects remain `EXTRACTED_UNVERIFIED`; fixture records do not promote to `public_beta_mcp`. AOI does not scrape arbitrary websites, follow links, certify security, verify suppliers, publish, or execute external actions.
+
+## Package 7E Live Official MCP Registry Intake
+
+Package 7E adds a controlled live registry run wrapper. Default execution uses no network and processes local manual raw data if present.
+
+Run offline/default mode:
+
+```powershell
+python -m ai_objective_index.registry_intake.live_registry_run
+```
+
+Explicit live mode:
+
+```powershell
+python -m ai_objective_index.registry_intake.live_registry_run --allow-network --max-servers 50
+```
+
+Live mode is limited to read-only Official MCP Registry API GET requests. It does not scrape arbitrary pages, follow links, fetch GitHub/package/docs pages, use credentials, publish, or certify security. Objects remain `EXTRACTED_UNVERIFIED`.
+
+## Package 7F Registry Candidate Gate
+
+Package 7F builds a calibrated `public_beta_mcp` candidate dataset from saved MCP Registry metadata. Candidates are registry metadata candidates only; they are not verified, security certified, quality guaranteed, action-ready, or purchasing advice.
+
+Build the beta candidate dataset:
+
+```powershell
+python -m ai_objective_index.registry_intake.registry_beta_dataset_builder
+```
+
+Run the registry quality audit:
+
+```powershell
+python -m ai_objective_index.registry_intake.registry_quality_audit
+```
+
+Generate the beta report:
+
+```powershell
+python -m ai_objective_index.registry_intake.registry_beta_report_generator
+```
+
+Package 7F uses local saved registry files only. It does not run live network, scrape websites, follow links, call external LLM APIs, publish, or execute external actions. `public_beta_mcp` remains `EXTRACTED_UNVERIFIED` registry metadata.
+
+## Package 7G Real Registry Payload Activation
+
+Package 7G protects real/manual MCP Registry raw payloads from fixture overwrite and reprocesses saved registry JSON into `mcp_registry` and `public_beta_mcp` outputs.
+
+Activate an existing raw payload:
+
+```powershell
+python -m ai_objective_index.registry_intake.real_payload_activation --use-existing-raw
+```
+
+Audit payload mode:
+
+```powershell
+python -m ai_objective_index.registry_intake.registry_payload_audit
+```
+
+Reprocess all registry outputs:
+
+```powershell
+python -m ai_objective_index.registry_intake.registry_reprocess_all
+```
+
+If a user places `mcp_registry_raw_v0_1.json` at the repository root, activation can copy it into `data/registry/`. No live network is required.
+
+## Package 8A Real-Data Public Beta Final Preflight
+
+Package 8A regenerates public-beta-facing assets from the activated real/manual Official MCP Registry metadata. It prepares a local v0.2 release candidate pack, but it does not publish anything.
+
+Run the real-data claim audit:
+
+```powershell
+python -m ai_objective_index.realdata_claim_audit
+```
+
+Build the release candidate matrix:
+
+```powershell
+python -m ai_objective_index.release_candidate_matrix
+```
+
+Run final preflight:
+
+```powershell
+python -m ai_objective_index.final_preflight
+```
+
+Create the v0.2 local release pack:
+
+```powershell
+python -m ai_objective_index.public_beta_realdata_packager
+```
+
+`public_beta_mcp` contains source-traced Official MCP Registry metadata candidates. They are not verified, not security certified, not quality guaranteed, not action-ready, and not purchasing advice.
+
+## Package 8B Manual Public Beta Launch Execution Pack
+
+Package 8B creates a local manual launch workspace and archive for public beta v0.2. It prepares drafts and checks, but does not publish anything.
+
+Create launch materials:
+
+```powershell
+python -m ai_objective_index.manual_launch_packager
+```
+
+Run launch dry-run:
+
+```powershell
+python -m ai_objective_index.launch_dry_run
+```
+
+Run no-secrets and claim guards:
+
+```powershell
+python -m ai_objective_index.no_secrets_audit
+python -m ai_objective_index.launch_claim_guard
+```
+
+Build the local archive:
+
+```powershell
+python -m ai_objective_index.release_archive_builder
+```
+
+Outputs are written to `launch/manual_public_beta_v0_2/` and `dist/ai_objective_index_public_beta_v0_2/`. Publishing to GitHub, Hugging Face, MCP Registry, or communities remains manual.
+
+## Package 8C GitHub Staging Upload
+
+Package 8C prepares a private-by-default GitHub staging upload.
+
+Run local upload preparation:
+
+```powershell
+python -m ai_objective_index.github_staging
+```
+
+If GitHub CLI is installed and authenticated, the helper can create/push `Isometric-Architect/ai-objective-index` as a private staging repository. If GitHub CLI is missing or not authenticated, it does not push and writes manual instructions under `github_upload/`.
+
+No tokens are requested or stored. No force push, remote deletion, Hugging Face upload, community post, MCP Registry submission, crawling, scraping, or external action is performed.
+
+## Claim Boundary
+
+Allowed claim: AOI is a read-only MCP/API objective ranking and comparison tool with explicit schemas, sample source traces, missing-field reporting, and decision receipt contracts.
+
+Forbidden claims: AOI is an official standard, a guarantee of quality, a comprehensive market index, a paid placement system, or a system that automatically purchases, books, pays, emails, logs in, submits forms, or signs contracts.
+
+AOI output is not a quality guarantee. It is not legal, financial, medical, purchasing, compliance, procurement, or professional advice. Humans and downstream agents must verify important decisions against primary sources and current requirements.
+
+## Repository Map
+
+- `schemas/`: JSON Schemas for objective requests, action objects, objective scores, source traces, decision receipts, and read-only MCP tool descriptions.
+- `docs/scoring_methodology.md`: v0.1 scoring method and penalties.
+- `docs/claim_boundaries.md`: allowed and forbidden claims.
+- `docs/productization_mode.md`: how Codex should separate research claim ceilings from productization permission.
+- `docs/public_claim_policy.md`: allowed and forbidden public claims.
+- `docs/datascope_usage.md`: how to use local AOI data scopes.
+- `docs/curated_data_policy.md`: manual curated data policy and public beta scope boundary.
+- `docs/curated_evidence_gate.md`: PASS/HOLD/BLOCK evidence gate for curated objects.
+- `docs/mcp_registry_intake.md`: Official MCP Registry intake pilot and fallback path.
+- `docs/registry_candidate_gate.md`: calibrated `public_beta_mcp` candidate gate.
+- `docs/public_beta_mcp_policy.md`: public beta MCP candidate claim boundary.
+- `docs/real_registry_payload_activation.md`: manual registry payload activation.
+- `docs/anti_fixture_regression_policy.md`: fixture overwrite and promotion guardrails.
+- `docs/realdata_public_beta_policy.md`: real-data public beta candidate boundary.
+- `docs/package_8a_realdata_public_beta_preflight.md`: final preflight and v0.2 pack commands.
+- `docs/package_8b_manual_public_beta_launch.md`: manual public beta launch workspace commands.
+- `docs/no_secrets_policy.md`: local no-secrets audit policy.
+- `docs/launch_claim_guard.md`: launch claim guard policy.
+- `docs/github_staging_upload.md`: private-by-default GitHub staging upload notes.
+- `docs/github_post_upload_checklist.md`: manual post-upload review checklist.
+- `docs/public_data_intake_policy.md`: public-data intake limits.
+- `docs/real_mcp_integration.md`: real MCP SDK integration and fallback behavior.
+- `docs/public_beta_release_plan.md`: public beta release-candidate plan and manual boundary.
+- `data/`: sample index objects, mock source traces, and golden queries.
+- `data/curated/`: manual curated object templates, seed rows, validation, eval, and public beta index outputs.
+- `data/registry/`: MCP Registry fixture/raw payloads, mapped objects, traces, validation, eval, and reports.
+- `data/fixtures/`: local Package 6A extraction fixtures.
+- `data/generated/`: generated fixture extraction outputs.
+- `data/negative_controls/`: Package 6D-S false-closure controls and results.
+- `evals/`: placeholder for future evaluation harnesses.
+- `reports/`: placeholder for future reports.
+- `examples/`: placeholder for future client examples.

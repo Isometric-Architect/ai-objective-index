@@ -1,0 +1,25 @@
+version: "0.2-fixture-skeleton"
+read_only: true
+network_fetch_default: false
+seed_source_categories:
+  mcp_registry:
+    description: "Public registries or lists of MCP servers for future review."
+  github_awesome_lists:
+    description: "Public GitHub awesome lists and README indexes."
+  ai_tool_directories:
+    description: "Public AI tool directories used only as seed hints, not ranking authority."
+  official_docs_pages:
+    description: "Official product documentation and quickstarts."
+  pricing_pages:
+    description: "Official pricing pages for pricing and free-plan extraction."
+  api_reference_pages:
+    description: "Official API references and developer docs."
+forbidden_actions:
+  - payment
+  - booking
+  - login
+  - email_sending
+  - form_submission
+  - purchase
+  - contract_signing
+

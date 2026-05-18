@@ -1,0 +1,284 @@
+{
+  "generated_at": "2026-05-18T10:25:44.047718+00:00",
+  "read_only": true,
+  "live_network_used": false,
+  "productization_mode": true,
+  "product_claims_require_evidence": true,
+  "default_data_scope": "sample",
+  "scopes": {
+    "sample": {
+      "object_count": 20,
+      "trace_count": 20,
+      "searchable_object_count": 15,
+      "average_score": 51.17,
+      "status_counts": {
+        "active": 19,
+        "beta": 1
+      },
+      "object_types": {
+        "api": 6,
+        "saas": 4,
+        "mcp_server": 2,
+        "open_source_framework": 2,
+        "gateway": 1,
+        "workflow_tool": 1,
+        "database": 1,
+        "desktop_app": 1,
+        "data_tool": 1,
+        "monitoring_tool": 1
+      },
+      "missing_fields_count": 40,
+      "source_trace_coverage": 1.0,
+      "top_result_names": {
+        "AI API docs pricing": [
+          "FlowPilot Automations",
+          "Findwise Search API",
+          "ClearScan OCR API",
+          "SearchMCP Relay",
+          "CodePilot Studio"
+        ],
+        "MCP server browser automation": [
+          "BrowserPilot MCP",
+          "SearchMCP Relay",
+          "FlowPilot Automations",
+          "ClearScan OCR API",
+          "ModelBridge Gateway"
+        ],
+        "image generation commercial use": [
+          "PixelForge API",
+          "MotionCanvas AI",
+          "CodePilot Studio",
+          "ClearScan OCR API",
+          "ModelBridge Gateway"
+        ]
+      },
+      "generated_unverified_status_ok": true,
+      "errors": []
+    },
+    "generated": {
+      "object_count": 3,
+      "trace_count": 26,
+      "searchable_object_count": 3,
+      "average_score": 54.82,
+      "status_counts": {
+        "EXTRACTED_UNVERIFIED": 3
+      },
+      "object_types": {
+        "APIObject": 2,
+        "MCPServer": 1
+      },
+      "missing_fields_count": 7,
+      "source_trace_coverage": 1.0,
+      "top_result_names": {
+        "AI API docs pricing": [
+          "PixelForge API",
+          "ClearRead OCR API",
+          "BrowserPilot MCP Server"
+        ],
+        "MCP server browser automation": [
+          "BrowserPilot MCP Server",
+          "PixelForge API",
+          "ClearRead OCR API"
+        ],
+        "image generation commercial use": [
+          "PixelForge API",
+          "ClearRead OCR API",
+          "BrowserPilot MCP Server"
+        ]
+      },
+      "generated_unverified_status_ok": true,
+      "errors": []
+    },
+    "integrated": {
+      "object_count": 23,
+      "trace_count": 46,
+      "searchable_object_count": 17,
+      "average_score": 53.4,
+      "status_counts": {
+        "active": 19,
+        "beta": 1,
+        "EXTRACTED_UNVERIFIED": 3
+      },
+      "object_types": {
+        "api": 6,
+        "saas": 4,
+        "mcp_server": 2,
+        "open_source_framework": 2,
+        "gateway": 1,
+        "workflow_tool": 1,
+        "database": 1,
+        "desktop_app": 1,
+        "data_tool": 1,
+        "monitoring_tool": 1,
+        "APIObject": 2,
+        "MCPServer": 1
+      },
+      "missing_fields_count": 47,
+      "source_trace_coverage": 1.0,
+      "top_result_names": {
+        "AI API docs pricing": [
+          "FlowPilot Automations",
+          "Findwise Search API",
+          "ClearScan OCR API",
+          "SearchMCP Relay",
+          "CodePilot Studio"
+        ],
+        "MCP server browser automation": [
+          "BrowserPilot MCP",
+          "SearchMCP Relay",
+          "BrowserPilot MCP Server",
+          "FlowPilot Automations",
+          "ClearScan OCR API"
+        ],
+        "image generation commercial use": [
+          "PixelForge API",
+          "PixelForge API",
+          "ClearRead OCR API",
+          "MotionCanvas AI",
+          "CodePilot Studio"
+        ]
+      },
+      "generated_unverified_status_ok": true,
+      "errors": []
+    },
+    "curated": {
+      "object_count": 1,
+      "trace_count": 1,
+      "searchable_object_count": 1,
+      "average_score": 29.67,
+      "status_counts": {
+        "EXTRACTED_UNVERIFIED": 1
+      },
+      "object_types": {
+        "APIObject": 1
+      },
+      "missing_fields_count": 2,
+      "source_trace_coverage": 1.0,
+      "top_result_names": {
+        "AI API docs pricing": [
+          "Curated Placeholder Image API"
+        ],
+        "MCP server browser automation": [
+          "Curated Placeholder Image API"
+        ],
+        "image generation commercial use": [
+          "Curated Placeholder Image API"
+        ]
+      },
+      "generated_unverified_status_ok": true,
+      "errors": []
+    },
+    "public_beta": {
+      "object_count": 0,
+      "trace_count": 0,
+      "searchable_object_count": 0,
+      "average_score": 0.0,
+      "status_counts": {},
+      "object_types": {},
+      "missing_fields_count": 0,
+      "source_trace_coverage": 0.0,
+      "top_result_names": {
+        "AI API docs pricing": [],
+        "MCP server browser automation": [],
+        "image generation commercial use": []
+      },
+      "generated_unverified_status_ok": true,
+      "errors": []
+    },
+    "mcp_registry": {
+      "object_count": 50,
+      "trace_count": 191,
+      "searchable_object_count": 12,
+      "average_score": 9.47,
+      "status_counts": {
+        "EXTRACTED_UNVERIFIED": 50
+      },
+      "object_types": {
+        "MCPServer": 50
+      },
+      "missing_fields_count": 467,
+      "source_trace_coverage": 1.0,
+      "top_result_names": {
+        "AI API docs pricing": [
+          "ai.agenticshelf/mcp",
+          "ai.auteng/docs",
+          "ac.tandem/docs-mcp",
+          "ac.tandem/docs-mcp",
+          "ac.tandem/docs-mcp"
+        ],
+        "MCP server browser automation": [
+          "ac.tandem/docs-mcp",
+          "ac.tandem/docs-mcp",
+          "ac.tandem/docs-mcp",
+          "agency.lona/trading",
+          "ai.abmeter/abmeter"
+        ],
+        "image generation commercial use": [
+          "ac.inference.sh/mcp",
+          "ac.inference.sh/mcp",
+          "ac.tandem/docs-mcp",
+          "ac.tandem/docs-mcp",
+          "ac.tandem/docs-mcp"
+        ]
+      },
+      "generated_unverified_status_ok": true,
+      "errors": []
+    },
+    "public_beta_mcp": {
+      "object_count": 50,
+      "trace_count": 191,
+      "searchable_object_count": 12,
+      "average_score": 9.47,
+      "status_counts": {
+        "EXTRACTED_UNVERIFIED": 50
+      },
+      "object_types": {
+        "MCPServer": 50
+      },
+      "missing_fields_count": 467,
+      "source_trace_coverage": 1.0,
+      "top_result_names": {
+        "AI API docs pricing": [
+          "ai.agenticshelf/mcp",
+          "ai.auteng/docs",
+          "ac.tandem/docs-mcp",
+          "ac.tandem/docs-mcp",
+          "ac.tandem/docs-mcp"
+        ],
+        "MCP server browser automation": [
+          "ac.tandem/docs-mcp",
+          "ac.tandem/docs-mcp",
+          "ac.tandem/docs-mcp",
+          "agency.lona/trading",
+          "ai.abmeter/abmeter"
+        ],
+        "image generation commercial use": [
+          "ac.inference.sh/mcp",
+          "ac.inference.sh/mcp",
+          "ac.tandem/docs-mcp",
+          "ac.tandem/docs-mcp",
+          "ac.tandem/docs-mcp"
+        ]
+      },
+      "generated_unverified_status_ok": true,
+      "errors": []
+    }
+  },
+  "summary": {
+    "scope_count": 7,
+    "sample_object_count": 20,
+    "generated_object_count": 3,
+    "integrated_object_count": 23,
+    "curated_object_count": 1,
+    "public_beta_object_count": 0,
+    "mcp_registry_object_count": 50,
+    "public_beta_mcp_object_count": 50,
+    "integrated_count_at_least_sample_plus_generated": true,
+    "generated_objects_remain_extracted_unverified": true
+  },
+  "warnings": [
+    "Generated data remains EXTRACTED_UNVERIFIED and is not supplier-verified.",
+    "Productization Mode allows implementation, but product claims require product evidence.",
+    "No live crawling or network fetch is performed by data_scope QA."
+  ]
+}

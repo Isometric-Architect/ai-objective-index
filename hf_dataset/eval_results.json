@@ -1,0 +1,3963 @@
+{
+  "version": "0.1.0-package-4",
+  "generated_at": "2026-04-28T09:36:20.505026+00:00",
+  "query_count": 24,
+  "structural_pass_count": 24,
+  "structural_pass_rate": 1.0,
+  "relevance_evaluated_count": 24,
+  "relevance_pass_count": 24,
+  "relevance_pass_rate": 1.0,
+  "average_objective_score": 50.32,
+  "average_confidence": 0.8354,
+  "average_source_trace_coverage": 1.0,
+  "results": [
+    {
+      "query_id": "golden-001",
+      "query": "Find a cheap image generation API with commercial-use terms.",
+      "objective": null,
+      "domain": "ai_tools",
+      "top_k": 5,
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "aoi-pixelforge-api",
+          "name": "PixelForge API",
+          "object_type": "api",
+          "summary": "Image generation API for product mockups, marketing assets, and creative variants.",
+          "objective_score": 61.0,
+          "confidence": 0.86,
+          "status": "active",
+          "rank_reason": [
+            "Partial relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "enterprise_sla"
+          ],
+          "source_urls": [
+            "https://pixelforge.example.com/docs",
+            "https://pixelforge.example.com/pricing",
+            "https://pixelforge.example.com/terms"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, enterprise_sla."
+          ]
+        },
+        {
+          "object_id": "aoi-motioncanvas-ai",
+          "name": "MotionCanvas AI",
+          "object_type": "saas",
+          "summary": "AI video generation tool for short promotional clips, storyboards, and social video variants.",
+          "objective_score": 54.58,
+          "confidence": 0.76,
+          "status": "beta",
+          "rank_reason": [
+            "Partial relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "api_reference_url",
+            "commercial_rights_edge_cases"
+          ],
+          "source_urls": [
+            "https://motioncanvas.example.com/features",
+            "https://motioncanvas.example.com/pricing",
+            "https://motioncanvas.example.com/terms"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, api_reference_url, commercial_rights_edge_cases."
+          ]
+        },
+        {
+          "object_id": "aoi-codepilot-studio",
+          "name": "CodePilot Studio",
+          "object_type": "saas",
+          "summary": "AI coding assistant with IDE integration, codebase chat, review hints, and test generation.",
+          "objective_score": 51.0,
+          "confidence": 0.84,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "model_training_opt_out_scope"
+          ],
+          "source_urls": [
+            "https://codepilot.example.com/docs",
+            "https://codepilot.example.com/pricing",
+            "https://codepilot.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, model_training_opt_out_scope."
+          ]
+        },
+        {
+          "object_id": "aoi-clearscan-ocr-api",
+          "name": "ClearScan OCR API",
+          "object_type": "api",
+          "summary": "OCR API for invoices, receipts, identity documents, and scanned PDFs.",
+          "objective_score": 48.5,
+          "confidence": 0.88,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy"
+          ],
+          "source_urls": [
+            "https://clearscan.example.com/docs",
+            "https://clearscan.example.com/pricing",
+            "https://clearscan.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy."
+          ]
+        },
+        {
+          "object_id": "aoi-meetscribe-ai",
+          "name": "MeetScribe AI",
+          "object_type": "saas",
+          "summary": "Meeting transcription and summary tool with calendar integrations and action-item extraction.",
+          "objective_score": 42.8,
+          "confidence": 0.8,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "api_reference_url"
+          ],
+          "source_urls": [
+            "https://meetscribe.example.com/features",
+            "https://meetscribe.example.com/pricing",
+            "https://meetscribe.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, api_reference_url."
+          ]
+        }
+      ],
+      "average_objective_score": 51.58,
+      "average_confidence": 0.828,
+      "source_trace_coverage": 1.0,
+      "missing_fields_count": 10,
+      "status_counts": {
+        "active": 4,
+        "beta": 1
+      },
+      "warnings": [
+        "Missing or weak fields detected: refund_policy, api_reference_url, commercial_rights_edge_cases.",
+        "Missing or weak fields detected: refund_policy, api_reference_url.",
+        "Missing or weak fields detected: refund_policy, enterprise_sla.",
+        "Missing or weak fields detected: refund_policy, model_training_opt_out_scope.",
+        "Missing or weak fields detected: refund_policy.",
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee."
+      ],
+      "structural_pass": true,
+      "relevance_pass": true,
+      "relevance_overlap": [
+        "commercial",
+        "generation",
+        "image",
+        "pricing"
+      ],
+      "scored_result_count": 5
+    },
+    {
+      "query_id": "golden-002",
+      "query": "Compare MCP servers for browser automation.",
+      "objective": null,
+      "domain": "mcp_servers",
+      "top_k": 5,
+      "result_count": 2,
+      "top_results": [
+        {
+          "object_id": "aoi-browserpilot-mcp",
+          "name": "BrowserPilot MCP",
+          "object_type": "mcp_server",
+          "summary": "Browser automation MCP server for navigation, screenshots, DOM inspection, and scripted interactions.",
+          "objective_score": 66.16,
+          "confidence": 0.84,
+          "status": "active",
+          "rank_reason": [
+            "Partial relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "hosted_pool_security_review"
+          ],
+          "source_urls": [
+            "https://browserpilot.example.com/docs",
+            "https://github.example.com/browserpilot/mcp",
+            "https://browserpilot.example.com/safety"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, hosted_pool_security_review."
+          ]
+        },
+        {
+          "object_id": "aoi-searchmcp-relay",
+          "name": "SearchMCP Relay",
+          "object_type": "mcp_server",
+          "summary": "MCP web search server that returns search results, snippets, and source URLs to AI agents.",
+          "objective_score": 52.96,
+          "confidence": 0.82,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "ranking_source_partners"
+          ],
+          "source_urls": [
+            "https://searchmcp.example.com/docs",
+            "https://searchmcp.example.com/pricing",
+            "https://searchmcp.example.com/policies"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, ranking_source_partners."
+          ]
+        }
+      ],
+      "average_objective_score": 59.56,
+      "average_confidence": 0.83,
+      "source_trace_coverage": 1.0,
+      "missing_fields_count": 4,
+      "status_counts": {
+        "active": 2
+      },
+      "warnings": [
+        "Missing or weak fields detected: refund_policy, hosted_pool_security_review.",
+        "Missing or weak fields detected: refund_policy, ranking_source_partners.",
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee."
+      ],
+      "structural_pass": true,
+      "relevance_pass": true,
+      "relevance_overlap": [
+        "automation",
+        "browser",
+        "mcp",
+        "server"
+      ],
+      "scored_result_count": 2
+    },
+    {
+      "query_id": "golden-003",
+      "query": "Find AI coding tools with clear pricing and docs.",
+      "objective": null,
+      "domain": "ai_saas",
+      "top_k": 5,
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "aoi-codepilot-studio",
+          "name": "CodePilot Studio",
+          "object_type": "saas",
+          "summary": "AI coding assistant with IDE integration, codebase chat, review hints, and test generation.",
+          "objective_score": 54.0,
+          "confidence": 0.84,
+          "status": "active",
+          "rank_reason": [
+            "Partial relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "model_training_opt_out_scope"
+          ],
+          "source_urls": [
+            "https://codepilot.example.com/docs",
+            "https://codepilot.example.com/pricing",
+            "https://codepilot.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, model_training_opt_out_scope."
+          ]
+        },
+        {
+          "object_id": "aoi-flowpilot-automations",
+          "name": "FlowPilot Automations",
+          "object_type": "workflow_tool",
+          "summary": "Automation workflow tool with AI steps, webhooks, approvals, and SaaS connectors.",
+          "objective_score": 52.0,
+          "confidence": 0.82,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "connector_data_subprocessor_list"
+          ],
+          "source_urls": [
+            "https://flowpilot.example.com/docs",
+            "https://flowpilot.example.com/pricing",
+            "https://flowpilot.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, connector_data_subprocessor_list."
+          ]
+        },
+        {
+          "object_id": "aoi-meetscribe-ai",
+          "name": "MeetScribe AI",
+          "object_type": "saas",
+          "summary": "Meeting transcription and summary tool with calendar integrations and action-item extraction.",
+          "objective_score": 46.8,
+          "confidence": 0.8,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "api_reference_url"
+          ],
+          "source_urls": [
+            "https://meetscribe.example.com/features",
+            "https://meetscribe.example.com/pricing",
+            "https://meetscribe.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, api_reference_url."
+          ]
+        },
+        {
+          "object_id": "aoi-promptledger",
+          "name": "PromptLedger",
+          "object_type": "saas",
+          "summary": "Prompt management tool for versioning prompts, reviewing changes, and running prompt evals.",
+          "objective_score": 46.0,
+          "confidence": 0.83,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "supported_model_provider_matrix"
+          ],
+          "source_urls": [
+            "https://promptledger.example.com/docs",
+            "https://promptledger.example.com/pricing",
+            "https://promptledger.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, supported_model_provider_matrix."
+          ]
+        },
+        {
+          "object_id": "aoi-motioncanvas-ai",
+          "name": "MotionCanvas AI",
+          "object_type": "saas",
+          "summary": "AI video generation tool for short promotional clips, storyboards, and social video variants.",
+          "objective_score": 43.58,
+          "confidence": 0.76,
+          "status": "beta",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "api_reference_url",
+            "commercial_rights_edge_cases"
+          ],
+          "source_urls": [
+            "https://motioncanvas.example.com/features",
+            "https://motioncanvas.example.com/pricing",
+            "https://motioncanvas.example.com/terms"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, api_reference_url, commercial_rights_edge_cases."
+          ]
+        }
+      ],
+      "average_objective_score": 48.48,
+      "average_confidence": 0.81,
+      "source_trace_coverage": 1.0,
+      "missing_fields_count": 11,
+      "status_counts": {
+        "active": 4,
+        "beta": 1
+      },
+      "warnings": [
+        "Missing or weak fields detected: refund_policy, api_reference_url, commercial_rights_edge_cases.",
+        "Missing or weak fields detected: refund_policy, api_reference_url.",
+        "Missing or weak fields detected: refund_policy, connector_data_subprocessor_list.",
+        "Missing or weak fields detected: refund_policy, model_training_opt_out_scope.",
+        "Missing or weak fields detected: refund_policy, supported_model_provider_matrix.",
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee."
+      ],
+      "structural_pass": true,
+      "relevance_pass": true,
+      "relevance_overlap": [
+        "ai",
+        "assistant",
+        "coding",
+        "documentation",
+        "pricing"
+      ],
+      "scored_result_count": 5
+    },
+    {
+      "query_id": "golden-004",
+      "query": "Find open-source agent frameworks with active repos.",
+      "objective": null,
+      "domain": "mixed_ai_tools",
+      "top_k": 5,
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "aoi-openagent-kit",
+          "name": "OpenAgent Kit",
+          "object_type": "open_source_framework",
+          "summary": "Open-source framework for building tool-using agents, planners, memory modules, and eval loops.",
+          "objective_score": 53.91,
+          "confidence": 0.83,
+          "status": "active",
+          "rank_reason": [
+            "Partial relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete."
+          ],
+          "missing_fields": [
+            "privacy_policy",
+            "refund_policy",
+            "security_policy_url"
+          ],
+          "source_urls": [
+            "https://openagentkit.example.com/docs",
+            "https://github.example.com/openagentkit/openagentkit",
+            "https://openagentkit.example.com/license"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: privacy_policy, refund_policy, security_policy_url."
+          ]
+        },
+        {
+          "object_id": "aoi-searchmcp-relay",
+          "name": "SearchMCP Relay",
+          "object_type": "mcp_server",
+          "summary": "MCP web search server that returns search results, snippets, and source URLs to AI agents.",
+          "objective_score": 51.96,
+          "confidence": 0.82,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "ranking_source_partners"
+          ],
+          "source_urls": [
+            "https://searchmcp.example.com/docs",
+            "https://searchmcp.example.com/pricing",
+            "https://searchmcp.example.com/policies"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, ranking_source_partners."
+          ]
+        },
+        {
+          "object_id": "aoi-retrievalforge",
+          "name": "RetrievalForge",
+          "object_type": "open_source_framework",
+          "summary": "RAG framework for ingestion pipelines, retrievers, chunking strategies, and answer evaluation.",
+          "objective_score": 48.91,
+          "confidence": 0.84,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete."
+          ],
+          "missing_fields": [
+            "privacy_policy",
+            "refund_policy",
+            "maintainer_security_contact"
+          ],
+          "source_urls": [
+            "https://retrievalforge.example.com/docs",
+            "https://github.example.com/retrievalforge/retrievalforge",
+            "https://retrievalforge.example.com/license"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: privacy_policy, refund_policy, maintainer_security_contact."
+          ]
+        },
+        {
+          "object_id": "aoi-clearscan-ocr-api",
+          "name": "ClearScan OCR API",
+          "object_type": "api",
+          "summary": "OCR API for invoices, receipts, identity documents, and scanned PDFs.",
+          "objective_score": 48.5,
+          "confidence": 0.88,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy"
+          ],
+          "source_urls": [
+            "https://clearscan.example.com/docs",
+            "https://clearscan.example.com/pricing",
+            "https://clearscan.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy."
+          ]
+        },
+        {
+          "object_id": "aoi-pixelforge-api",
+          "name": "PixelForge API",
+          "object_type": "api",
+          "summary": "Image generation API for product mockups, marketing assets, and creative variants.",
+          "objective_score": 46.0,
+          "confidence": 0.86,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "enterprise_sla"
+          ],
+          "source_urls": [
+            "https://pixelforge.example.com/docs",
+            "https://pixelforge.example.com/pricing",
+            "https://pixelforge.example.com/terms"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, enterprise_sla."
+          ]
+        }
+      ],
+      "average_objective_score": 49.86,
+      "average_confidence": 0.846,
+      "source_trace_coverage": 1.0,
+      "missing_fields_count": 11,
+      "status_counts": {
+        "active": 5
+      },
+      "warnings": [
+        "Missing or weak fields detected: privacy_policy, refund_policy, maintainer_security_contact.",
+        "Missing or weak fields detected: privacy_policy, refund_policy, security_policy_url.",
+        "Missing or weak fields detected: refund_policy, enterprise_sla.",
+        "Missing or weak fields detected: refund_policy, ranking_source_partners.",
+        "Missing or weak fields detected: refund_policy.",
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee."
+      ],
+      "structural_pass": true,
+      "relevance_pass": true,
+      "relevance_overlap": [
+        "framework",
+        "open",
+        "source"
+      ],
+      "scored_result_count": 5
+    },
+    {
+      "query_id": "golden-005",
+      "query": "Find AI APIs with free tiers and clear rate limits.",
+      "objective": null,
+      "domain": "ai_apis",
+      "top_k": 5,
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "aoi-clearscan-ocr-api",
+          "name": "ClearScan OCR API",
+          "object_type": "api",
+          "summary": "OCR API for invoices, receipts, identity documents, and scanned PDFs.",
+          "objective_score": 51.83,
+          "confidence": 0.88,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy"
+          ],
+          "source_urls": [
+            "https://clearscan.example.com/docs",
+            "https://clearscan.example.com/pricing",
+            "https://clearscan.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy."
+          ]
+        },
+        {
+          "object_id": "aoi-findwise-search-api",
+          "name": "Findwise Search API",
+          "object_type": "api",
+          "summary": "AI search API for semantic web answers, citations, result clustering, and freshness filters.",
+          "objective_score": 51.0,
+          "confidence": 0.85,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "source_index_scope"
+          ],
+          "source_urls": [
+            "https://findwise.example.com/docs",
+            "https://findwise.example.com/pricing",
+            "https://findwise.example.com/citations"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, source_index_scope."
+          ]
+        },
+        {
+          "object_id": "aoi-doculift-extraction-api",
+          "name": "DocuLift Extraction API",
+          "object_type": "api",
+          "summary": "Document extraction API for contracts, forms, tables, and structured JSON outputs.",
+          "objective_score": 46.81,
+          "confidence": 0.86,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "model_accuracy_by_document_type"
+          ],
+          "source_urls": [
+            "https://doculift.example.com/docs",
+            "https://doculift.example.com/pricing",
+            "https://doculift.example.com/compliance"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, model_accuracy_by_document_type."
+          ]
+        },
+        {
+          "object_id": "aoi-voiceweave-speech-api",
+          "name": "VoiceWeave Speech API",
+          "object_type": "api",
+          "summary": "Speech synthesis API with multilingual voices, SSML support, and streaming output.",
+          "objective_score": 46.48,
+          "confidence": 0.81,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "voice_consent_audit_details"
+          ],
+          "source_urls": [
+            "https://voiceweave.example.com/docs",
+            "https://voiceweave.example.com/pricing",
+            "https://voiceweave.example.com/voice-rights"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, voice_consent_audit_details."
+          ]
+        },
+        {
+          "object_id": "aoi-pixelforge-api",
+          "name": "PixelForge API",
+          "object_type": "api",
+          "summary": "Image generation API for product mockups, marketing assets, and creative variants.",
+          "objective_score": 46.0,
+          "confidence": 0.86,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "enterprise_sla"
+          ],
+          "source_urls": [
+            "https://pixelforge.example.com/docs",
+            "https://pixelforge.example.com/pricing",
+            "https://pixelforge.example.com/terms"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, enterprise_sla."
+          ]
+        }
+      ],
+      "average_objective_score": 48.42,
+      "average_confidence": 0.852,
+      "source_trace_coverage": 1.0,
+      "missing_fields_count": 9,
+      "status_counts": {
+        "active": 5
+      },
+      "warnings": [
+        "Missing or weak fields detected: refund_policy, enterprise_sla.",
+        "Missing or weak fields detected: refund_policy, model_accuracy_by_document_type.",
+        "Missing or weak fields detected: refund_policy, source_index_scope.",
+        "Missing or weak fields detected: refund_policy, voice_consent_audit_details.",
+        "Missing or weak fields detected: refund_policy.",
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee."
+      ],
+      "structural_pass": true,
+      "relevance_pass": true,
+      "relevance_overlap": [
+        "api"
+      ],
+      "scored_result_count": 5
+    },
+    {
+      "query_id": "golden-006",
+      "query": "Rank OCR APIs for scanned PDF table extraction under a low monthly budget.",
+      "objective": null,
+      "domain": "ai_apis",
+      "top_k": 5,
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "aoi-clearscan-ocr-api",
+          "name": "ClearScan OCR API",
+          "object_type": "api",
+          "summary": "OCR API for invoices, receipts, identity documents, and scanned PDFs.",
+          "objective_score": 62.5,
+          "confidence": 0.88,
+          "status": "active",
+          "rank_reason": [
+            "Partial relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy"
+          ],
+          "source_urls": [
+            "https://clearscan.example.com/docs",
+            "https://clearscan.example.com/pricing",
+            "https://clearscan.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy."
+          ]
+        },
+        {
+          "object_id": "aoi-doculift-extraction-api",
+          "name": "DocuLift Extraction API",
+          "object_type": "api",
+          "summary": "Document extraction API for contracts, forms, tables, and structured JSON outputs.",
+          "objective_score": 49.48,
+          "confidence": 0.86,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "model_accuracy_by_document_type"
+          ],
+          "source_urls": [
+            "https://doculift.example.com/docs",
+            "https://doculift.example.com/pricing",
+            "https://doculift.example.com/compliance"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, model_accuracy_by_document_type."
+          ]
+        },
+        {
+          "object_id": "aoi-voiceweave-speech-api",
+          "name": "VoiceWeave Speech API",
+          "object_type": "api",
+          "summary": "Speech synthesis API with multilingual voices, SSML support, and streaming output.",
+          "objective_score": 46.48,
+          "confidence": 0.81,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "voice_consent_audit_details"
+          ],
+          "source_urls": [
+            "https://voiceweave.example.com/docs",
+            "https://voiceweave.example.com/pricing",
+            "https://voiceweave.example.com/voice-rights"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, voice_consent_audit_details."
+          ]
+        },
+        {
+          "object_id": "aoi-pixelforge-api",
+          "name": "PixelForge API",
+          "object_type": "api",
+          "summary": "Image generation API for product mockups, marketing assets, and creative variants.",
+          "objective_score": 46.0,
+          "confidence": 0.86,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "enterprise_sla"
+          ],
+          "source_urls": [
+            "https://pixelforge.example.com/docs",
+            "https://pixelforge.example.com/pricing",
+            "https://pixelforge.example.com/terms"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, enterprise_sla."
+          ]
+        },
+        {
+          "object_id": "aoi-findwise-search-api",
+          "name": "Findwise Search API",
+          "object_type": "api",
+          "summary": "AI search API for semantic web answers, citations, result clustering, and freshness filters.",
+          "objective_score": 46.0,
+          "confidence": 0.85,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "source_index_scope"
+          ],
+          "source_urls": [
+            "https://findwise.example.com/docs",
+            "https://findwise.example.com/pricing",
+            "https://findwise.example.com/citations"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, source_index_scope."
+          ]
+        }
+      ],
+      "average_objective_score": 50.09,
+      "average_confidence": 0.852,
+      "source_trace_coverage": 1.0,
+      "missing_fields_count": 9,
+      "status_counts": {
+        "active": 5
+      },
+      "warnings": [
+        "Missing or weak fields detected: refund_policy, enterprise_sla.",
+        "Missing or weak fields detected: refund_policy, model_accuracy_by_document_type.",
+        "Missing or weak fields detected: refund_policy, source_index_scope.",
+        "Missing or weak fields detected: refund_policy, voice_consent_audit_details.",
+        "Missing or weak fields detected: refund_policy.",
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee."
+      ],
+      "structural_pass": true,
+      "relevance_pass": true,
+      "relevance_overlap": [
+        "extraction",
+        "ocr"
+      ],
+      "scored_result_count": 5
+    },
+    {
+      "query_id": "golden-007",
+      "query": "Compare meeting transcription tools that provide speaker labels and action items.",
+      "objective": null,
+      "domain": "ai_saas",
+      "top_k": 5,
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "aoi-meetscribe-ai",
+          "name": "MeetScribe AI",
+          "object_type": "saas",
+          "summary": "Meeting transcription and summary tool with calendar integrations and action-item extraction.",
+          "objective_score": 62.8,
+          "confidence": 0.8,
+          "status": "active",
+          "rank_reason": [
+            "Strong keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "api_reference_url"
+          ],
+          "source_urls": [
+            "https://meetscribe.example.com/features",
+            "https://meetscribe.example.com/pricing",
+            "https://meetscribe.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, api_reference_url."
+          ]
+        },
+        {
+          "object_id": "aoi-codepilot-studio",
+          "name": "CodePilot Studio",
+          "object_type": "saas",
+          "summary": "AI coding assistant with IDE integration, codebase chat, review hints, and test generation.",
+          "objective_score": 46.0,
+          "confidence": 0.84,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "model_training_opt_out_scope"
+          ],
+          "source_urls": [
+            "https://codepilot.example.com/docs",
+            "https://codepilot.example.com/pricing",
+            "https://codepilot.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, model_training_opt_out_scope."
+          ]
+        },
+        {
+          "object_id": "aoi-flowpilot-automations",
+          "name": "FlowPilot Automations",
+          "object_type": "workflow_tool",
+          "summary": "Automation workflow tool with AI steps, webhooks, approvals, and SaaS connectors.",
+          "objective_score": 46.0,
+          "confidence": 0.82,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "connector_data_subprocessor_list"
+          ],
+          "source_urls": [
+            "https://flowpilot.example.com/docs",
+            "https://flowpilot.example.com/pricing",
+            "https://flowpilot.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, connector_data_subprocessor_list."
+          ]
+        },
+        {
+          "object_id": "aoi-promptledger",
+          "name": "PromptLedger",
+          "object_type": "saas",
+          "summary": "Prompt management tool for versioning prompts, reviewing changes, and running prompt evals.",
+          "objective_score": 46.0,
+          "confidence": 0.83,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "supported_model_provider_matrix"
+          ],
+          "source_urls": [
+            "https://promptledger.example.com/docs",
+            "https://promptledger.example.com/pricing",
+            "https://promptledger.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, supported_model_provider_matrix."
+          ]
+        },
+        {
+          "object_id": "aoi-motioncanvas-ai",
+          "name": "MotionCanvas AI",
+          "object_type": "saas",
+          "summary": "AI video generation tool for short promotional clips, storyboards, and social video variants.",
+          "objective_score": 39.58,
+          "confidence": 0.76,
+          "status": "beta",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "api_reference_url",
+            "commercial_rights_edge_cases"
+          ],
+          "source_urls": [
+            "https://motioncanvas.example.com/features",
+            "https://motioncanvas.example.com/pricing",
+            "https://motioncanvas.example.com/terms"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, api_reference_url, commercial_rights_edge_cases."
+          ]
+        }
+      ],
+      "average_objective_score": 48.08,
+      "average_confidence": 0.81,
+      "source_trace_coverage": 1.0,
+      "missing_fields_count": 11,
+      "status_counts": {
+        "active": 4,
+        "beta": 1
+      },
+      "warnings": [
+        "Missing or weak fields detected: refund_policy, api_reference_url, commercial_rights_edge_cases.",
+        "Missing or weak fields detected: refund_policy, api_reference_url.",
+        "Missing or weak fields detected: refund_policy, connector_data_subprocessor_list.",
+        "Missing or weak fields detected: refund_policy, model_training_opt_out_scope.",
+        "Missing or weak fields detected: refund_policy, supported_model_provider_matrix.",
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee."
+      ],
+      "structural_pass": true,
+      "relevance_pass": true,
+      "relevance_overlap": [
+        "action",
+        "meeting",
+        "transcription"
+      ],
+      "scored_result_count": 5
+    },
+    {
+      "query_id": "golden-008",
+      "query": "Find an LLM gateway with budget controls and provider fallback routing.",
+      "objective": null,
+      "domain": "ai_tools",
+      "top_k": 5,
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "aoi-modelbridge-gateway",
+          "name": "ModelBridge Gateway",
+          "object_type": "gateway",
+          "summary": "LLM gateway for routing requests across providers with logging, budget controls, and fallback rules.",
+          "objective_score": 74.21,
+          "confidence": 0.87,
+          "status": "active",
+          "rank_reason": [
+            "Strong keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy"
+          ],
+          "source_urls": [
+            "https://modelbridge.example.com/docs",
+            "https://modelbridge.example.com/pricing",
+            "https://modelbridge.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy."
+          ]
+        },
+        {
+          "object_id": "aoi-signallens-monitor",
+          "name": "SignalLens Monitor",
+          "object_type": "monitoring_tool",
+          "summary": "AI monitoring platform for LLM traces, hallucination checks, cost dashboards, and drift alerts.",
+          "objective_score": 50.29,
+          "confidence": 0.86,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "pii_redaction_default_behavior"
+          ],
+          "source_urls": [
+            "https://signallens.example.com/docs",
+            "https://signallens.example.com/pricing",
+            "https://signallens.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, pii_redaction_default_behavior."
+          ]
+        },
+        {
+          "object_id": "aoi-clearscan-ocr-api",
+          "name": "ClearScan OCR API",
+          "object_type": "api",
+          "summary": "OCR API for invoices, receipts, identity documents, and scanned PDFs.",
+          "objective_score": 48.5,
+          "confidence": 0.88,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy"
+          ],
+          "source_urls": [
+            "https://clearscan.example.com/docs",
+            "https://clearscan.example.com/pricing",
+            "https://clearscan.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy."
+          ]
+        },
+        {
+          "object_id": "aoi-pixelforge-api",
+          "name": "PixelForge API",
+          "object_type": "api",
+          "summary": "Image generation API for product mockups, marketing assets, and creative variants.",
+          "objective_score": 46.0,
+          "confidence": 0.86,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "enterprise_sla"
+          ],
+          "source_urls": [
+            "https://pixelforge.example.com/docs",
+            "https://pixelforge.example.com/pricing",
+            "https://pixelforge.example.com/terms"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, enterprise_sla."
+          ]
+        },
+        {
+          "object_id": "aoi-localmind-desktop",
+          "name": "LocalMind Desktop",
+          "object_type": "desktop_app",
+          "summary": "Local LLM desktop app for running models on-device with document chat and offline mode.",
+          "objective_score": 43.87,
+          "confidence": 0.79,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "api_reference_url",
+            "model_license_matrix"
+          ],
+          "source_urls": [
+            "https://localmind.example.com/docs",
+            "https://localmind.example.com/download",
+            "https://localmind.example.com/privacy"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, api_reference_url, model_license_matrix."
+          ]
+        }
+      ],
+      "average_objective_score": 52.57,
+      "average_confidence": 0.852,
+      "source_trace_coverage": 1.0,
+      "missing_fields_count": 9,
+      "status_counts": {
+        "active": 5
+      },
+      "warnings": [
+        "Missing or weak fields detected: refund_policy, api_reference_url, model_license_matrix.",
+        "Missing or weak fields detected: refund_policy, enterprise_sla.",
+        "Missing or weak fields detected: refund_policy, pii_redaction_default_behavior.",
+        "Missing or weak fields detected: refund_policy.",
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee."
+      ],
+      "structural_pass": true,
+      "relevance_pass": true,
+      "relevance_overlap": [
+        "budget",
+        "controls",
+        "gateway",
+        "llm"
+      ],
+      "scored_result_count": 5
+    },
+    {
+      "query_id": "golden-009",
+      "query": "Find a speech synthesis API with commercial audio usage terms.",
+      "objective": null,
+      "domain": "ai_apis",
+      "top_k": 5,
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "aoi-voiceweave-speech-api",
+          "name": "VoiceWeave Speech API",
+          "object_type": "api",
+          "summary": "Speech synthesis API with multilingual voices, SSML support, and streaming output.",
+          "objective_score": 59.81,
+          "confidence": 0.81,
+          "status": "active",
+          "rank_reason": [
+            "Partial relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "voice_consent_audit_details"
+          ],
+          "source_urls": [
+            "https://voiceweave.example.com/docs",
+            "https://voiceweave.example.com/pricing",
+            "https://voiceweave.example.com/voice-rights"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, voice_consent_audit_details."
+          ]
+        },
+        {
+          "object_id": "aoi-pixelforge-api",
+          "name": "PixelForge API",
+          "object_type": "api",
+          "summary": "Image generation API for product mockups, marketing assets, and creative variants.",
+          "objective_score": 51.0,
+          "confidence": 0.86,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "enterprise_sla"
+          ],
+          "source_urls": [
+            "https://pixelforge.example.com/docs",
+            "https://pixelforge.example.com/pricing",
+            "https://pixelforge.example.com/terms"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, enterprise_sla."
+          ]
+        },
+        {
+          "object_id": "aoi-clearscan-ocr-api",
+          "name": "ClearScan OCR API",
+          "object_type": "api",
+          "summary": "OCR API for invoices, receipts, identity documents, and scanned PDFs.",
+          "objective_score": 48.5,
+          "confidence": 0.88,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy"
+          ],
+          "source_urls": [
+            "https://clearscan.example.com/docs",
+            "https://clearscan.example.com/pricing",
+            "https://clearscan.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy."
+          ]
+        },
+        {
+          "object_id": "aoi-findwise-search-api",
+          "name": "Findwise Search API",
+          "object_type": "api",
+          "summary": "AI search API for semantic web answers, citations, result clustering, and freshness filters.",
+          "objective_score": 46.0,
+          "confidence": 0.85,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "source_index_scope"
+          ],
+          "source_urls": [
+            "https://findwise.example.com/docs",
+            "https://findwise.example.com/pricing",
+            "https://findwise.example.com/citations"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, source_index_scope."
+          ]
+        },
+        {
+          "object_id": "aoi-doculift-extraction-api",
+          "name": "DocuLift Extraction API",
+          "object_type": "api",
+          "summary": "Document extraction API for contracts, forms, tables, and structured JSON outputs.",
+          "objective_score": 43.48,
+          "confidence": 0.86,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "model_accuracy_by_document_type"
+          ],
+          "source_urls": [
+            "https://doculift.example.com/docs",
+            "https://doculift.example.com/pricing",
+            "https://doculift.example.com/compliance"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, model_accuracy_by_document_type."
+          ]
+        }
+      ],
+      "average_objective_score": 49.76,
+      "average_confidence": 0.852,
+      "source_trace_coverage": 1.0,
+      "missing_fields_count": 9,
+      "status_counts": {
+        "active": 5
+      },
+      "warnings": [
+        "Missing or weak fields detected: refund_policy, enterprise_sla.",
+        "Missing or weak fields detected: refund_policy, model_accuracy_by_document_type.",
+        "Missing or weak fields detected: refund_policy, source_index_scope.",
+        "Missing or weak fields detected: refund_policy, voice_consent_audit_details.",
+        "Missing or weak fields detected: refund_policy.",
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee."
+      ],
+      "structural_pass": true,
+      "relevance_pass": true,
+      "relevance_overlap": [
+        "speech",
+        "synthesis",
+        "voice"
+      ],
+      "scored_result_count": 5
+    },
+    {
+      "query_id": "golden-010",
+      "query": "Compare workflow automation tools that include AI steps and human approvals.",
+      "objective": null,
+      "domain": "ai_saas",
+      "top_k": 5,
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "aoi-flowpilot-automations",
+          "name": "FlowPilot Automations",
+          "object_type": "workflow_tool",
+          "summary": "Automation workflow tool with AI steps, webhooks, approvals, and SaaS connectors.",
+          "objective_score": 64.89,
+          "confidence": 0.82,
+          "status": "active",
+          "rank_reason": [
+            "Strong keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "connector_data_subprocessor_list"
+          ],
+          "source_urls": [
+            "https://flowpilot.example.com/docs",
+            "https://flowpilot.example.com/pricing",
+            "https://flowpilot.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, connector_data_subprocessor_list."
+          ]
+        },
+        {
+          "object_id": "aoi-codepilot-studio",
+          "name": "CodePilot Studio",
+          "object_type": "saas",
+          "summary": "AI coding assistant with IDE integration, codebase chat, review hints, and test generation.",
+          "objective_score": 48.22,
+          "confidence": 0.84,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "model_training_opt_out_scope"
+          ],
+          "source_urls": [
+            "https://codepilot.example.com/docs",
+            "https://codepilot.example.com/pricing",
+            "https://codepilot.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, model_training_opt_out_scope."
+          ]
+        },
+        {
+          "object_id": "aoi-promptledger",
+          "name": "PromptLedger",
+          "object_type": "saas",
+          "summary": "Prompt management tool for versioning prompts, reviewing changes, and running prompt evals.",
+          "objective_score": 46.0,
+          "confidence": 0.83,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "supported_model_provider_matrix"
+          ],
+          "source_urls": [
+            "https://promptledger.example.com/docs",
+            "https://promptledger.example.com/pricing",
+            "https://promptledger.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, supported_model_provider_matrix."
+          ]
+        },
+        {
+          "object_id": "aoi-meetscribe-ai",
+          "name": "MeetScribe AI",
+          "object_type": "saas",
+          "summary": "Meeting transcription and summary tool with calendar integrations and action-item extraction.",
+          "objective_score": 45.02,
+          "confidence": 0.8,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "api_reference_url"
+          ],
+          "source_urls": [
+            "https://meetscribe.example.com/features",
+            "https://meetscribe.example.com/pricing",
+            "https://meetscribe.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, api_reference_url."
+          ]
+        },
+        {
+          "object_id": "aoi-motioncanvas-ai",
+          "name": "MotionCanvas AI",
+          "object_type": "saas",
+          "summary": "AI video generation tool for short promotional clips, storyboards, and social video variants.",
+          "objective_score": 41.8,
+          "confidence": 0.76,
+          "status": "beta",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "api_reference_url",
+            "commercial_rights_edge_cases"
+          ],
+          "source_urls": [
+            "https://motioncanvas.example.com/features",
+            "https://motioncanvas.example.com/pricing",
+            "https://motioncanvas.example.com/terms"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, api_reference_url, commercial_rights_edge_cases."
+          ]
+        }
+      ],
+      "average_objective_score": 49.19,
+      "average_confidence": 0.81,
+      "source_trace_coverage": 1.0,
+      "missing_fields_count": 11,
+      "status_counts": {
+        "active": 4,
+        "beta": 1
+      },
+      "warnings": [
+        "Missing or weak fields detected: refund_policy, api_reference_url, commercial_rights_edge_cases.",
+        "Missing or weak fields detected: refund_policy, api_reference_url.",
+        "Missing or weak fields detected: refund_policy, connector_data_subprocessor_list.",
+        "Missing or weak fields detected: refund_policy, model_training_opt_out_scope.",
+        "Missing or weak fields detected: refund_policy, supported_model_provider_matrix.",
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee."
+      ],
+      "structural_pass": true,
+      "relevance_pass": true,
+      "relevance_overlap": [
+        "ai",
+        "automation",
+        "steps",
+        "workflow"
+      ],
+      "scored_result_count": 5
+    },
+    {
+      "query_id": "golden-011",
+      "query": "Find a vector database with free development tier and hybrid search.",
+      "objective": null,
+      "domain": "ai_tools",
+      "top_k": 5,
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "aoi-vectornest-db",
+          "name": "VectorNest DB",
+          "object_type": "database",
+          "summary": "Managed vector database for semantic search, hybrid retrieval, and metadata filtering.",
+          "objective_score": 65.64,
+          "confidence": 0.85,
+          "status": "active",
+          "rank_reason": [
+            "Partial relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy"
+          ],
+          "source_urls": [
+            "https://vectornest.example.com/docs",
+            "https://vectornest.example.com/pricing",
+            "https://vectornest.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy."
+          ]
+        },
+        {
+          "object_id": "aoi-searchmcp-relay",
+          "name": "SearchMCP Relay",
+          "object_type": "mcp_server",
+          "summary": "MCP web search server that returns search results, snippets, and source URLs to AI agents.",
+          "objective_score": 51.25,
+          "confidence": 0.82,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "ranking_source_partners"
+          ],
+          "source_urls": [
+            "https://searchmcp.example.com/docs",
+            "https://searchmcp.example.com/pricing",
+            "https://searchmcp.example.com/policies"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, ranking_source_partners."
+          ]
+        },
+        {
+          "object_id": "aoi-findwise-search-api",
+          "name": "Findwise Search API",
+          "object_type": "api",
+          "summary": "AI search API for semantic web answers, citations, result clustering, and freshness filters.",
+          "objective_score": 50.29,
+          "confidence": 0.85,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "source_index_scope"
+          ],
+          "source_urls": [
+            "https://findwise.example.com/docs",
+            "https://findwise.example.com/pricing",
+            "https://findwise.example.com/citations"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, source_index_scope."
+          ]
+        },
+        {
+          "object_id": "aoi-clearscan-ocr-api",
+          "name": "ClearScan OCR API",
+          "object_type": "api",
+          "summary": "OCR API for invoices, receipts, identity documents, and scanned PDFs.",
+          "objective_score": 48.5,
+          "confidence": 0.88,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy"
+          ],
+          "source_urls": [
+            "https://clearscan.example.com/docs",
+            "https://clearscan.example.com/pricing",
+            "https://clearscan.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy."
+          ]
+        },
+        {
+          "object_id": "aoi-pixelforge-api",
+          "name": "PixelForge API",
+          "object_type": "api",
+          "summary": "Image generation API for product mockups, marketing assets, and creative variants.",
+          "objective_score": 46.0,
+          "confidence": 0.86,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "enterprise_sla"
+          ],
+          "source_urls": [
+            "https://pixelforge.example.com/docs",
+            "https://pixelforge.example.com/pricing",
+            "https://pixelforge.example.com/terms"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, enterprise_sla."
+          ]
+        }
+      ],
+      "average_objective_score": 52.34,
+      "average_confidence": 0.852,
+      "source_trace_coverage": 1.0,
+      "missing_fields_count": 8,
+      "status_counts": {
+        "active": 5
+      },
+      "warnings": [
+        "Missing or weak fields detected: refund_policy, enterprise_sla.",
+        "Missing or weak fields detected: refund_policy, ranking_source_partners.",
+        "Missing or weak fields detected: refund_policy, source_index_scope.",
+        "Missing or weak fields detected: refund_policy.",
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee."
+      ],
+      "structural_pass": true,
+      "relevance_pass": true,
+      "relevance_overlap": [
+        "database",
+        "hybrid",
+        "search",
+        "vector"
+      ],
+      "scored_result_count": 5
+    },
+    {
+      "query_id": "golden-012",
+      "query": "Find a document extraction API with JSON output and retention controls.",
+      "objective": null,
+      "domain": "ai_apis",
+      "top_k": 5,
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "aoi-doculift-extraction-api",
+          "name": "DocuLift Extraction API",
+          "object_type": "api",
+          "summary": "Document extraction API for contracts, forms, tables, and structured JSON outputs.",
+          "objective_score": 63.48,
+          "confidence": 0.86,
+          "status": "active",
+          "rank_reason": [
+            "Strong keyword relevance to the stated objective.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "model_accuracy_by_document_type"
+          ],
+          "source_urls": [
+            "https://doculift.example.com/docs",
+            "https://doculift.example.com/pricing",
+            "https://doculift.example.com/compliance"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, model_accuracy_by_document_type."
+          ]
+        },
+        {
+          "object_id": "aoi-clearscan-ocr-api",
+          "name": "ClearScan OCR API",
+          "object_type": "api",
+          "summary": "OCR API for invoices, receipts, identity documents, and scanned PDFs.",
+          "objective_score": 56.83,
+          "confidence": 0.88,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy"
+          ],
+          "source_urls": [
+            "https://clearscan.example.com/docs",
+            "https://clearscan.example.com/pricing",
+            "https://clearscan.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy."
+          ]
+        },
+        {
+          "object_id": "aoi-voiceweave-speech-api",
+          "name": "VoiceWeave Speech API",
+          "object_type": "api",
+          "summary": "Speech synthesis API with multilingual voices, SSML support, and streaming output.",
+          "objective_score": 49.81,
+          "confidence": 0.81,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "voice_consent_audit_details"
+          ],
+          "source_urls": [
+            "https://voiceweave.example.com/docs",
+            "https://voiceweave.example.com/pricing",
+            "https://voiceweave.example.com/voice-rights"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, voice_consent_audit_details."
+          ]
+        },
+        {
+          "object_id": "aoi-pixelforge-api",
+          "name": "PixelForge API",
+          "object_type": "api",
+          "summary": "Image generation API for product mockups, marketing assets, and creative variants.",
+          "objective_score": 46.0,
+          "confidence": 0.86,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "enterprise_sla"
+          ],
+          "source_urls": [
+            "https://pixelforge.example.com/docs",
+            "https://pixelforge.example.com/pricing",
+            "https://pixelforge.example.com/terms"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, enterprise_sla."
+          ]
+        },
+        {
+          "object_id": "aoi-findwise-search-api",
+          "name": "Findwise Search API",
+          "object_type": "api",
+          "summary": "AI search API for semantic web answers, citations, result clustering, and freshness filters.",
+          "objective_score": 46.0,
+          "confidence": 0.85,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "source_index_scope"
+          ],
+          "source_urls": [
+            "https://findwise.example.com/docs",
+            "https://findwise.example.com/pricing",
+            "https://findwise.example.com/citations"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, source_index_scope."
+          ]
+        }
+      ],
+      "average_objective_score": 52.42,
+      "average_confidence": 0.852,
+      "source_trace_coverage": 1.0,
+      "missing_fields_count": 9,
+      "status_counts": {
+        "active": 5
+      },
+      "warnings": [
+        "Missing or weak fields detected: refund_policy, enterprise_sla.",
+        "Missing or weak fields detected: refund_policy, model_accuracy_by_document_type.",
+        "Missing or weak fields detected: refund_policy, source_index_scope.",
+        "Missing or weak fields detected: refund_policy, voice_consent_audit_details.",
+        "Missing or weak fields detected: refund_policy.",
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee."
+      ],
+      "structural_pass": true,
+      "relevance_pass": true,
+      "relevance_overlap": [
+        "document",
+        "extraction",
+        "json",
+        "output"
+      ],
+      "scored_result_count": 5
+    },
+    {
+      "query_id": "golden-013",
+      "query": "Compare AI video generation tools for commercial social media exports.",
+      "objective": null,
+      "domain": "ai_saas",
+      "top_k": 5,
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "aoi-motioncanvas-ai",
+          "name": "MotionCanvas AI",
+          "object_type": "saas",
+          "summary": "AI video generation tool for short promotional clips, storyboards, and social video variants.",
+          "objective_score": 59.58,
+          "confidence": 0.76,
+          "status": "beta",
+          "rank_reason": [
+            "Strong keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "api_reference_url",
+            "commercial_rights_edge_cases"
+          ],
+          "source_urls": [
+            "https://motioncanvas.example.com/features",
+            "https://motioncanvas.example.com/pricing",
+            "https://motioncanvas.example.com/terms"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, api_reference_url, commercial_rights_edge_cases."
+          ]
+        },
+        {
+          "object_id": "aoi-codepilot-studio",
+          "name": "CodePilot Studio",
+          "object_type": "saas",
+          "summary": "AI coding assistant with IDE integration, codebase chat, review hints, and test generation.",
+          "objective_score": 52.25,
+          "confidence": 0.84,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "model_training_opt_out_scope"
+          ],
+          "source_urls": [
+            "https://codepilot.example.com/docs",
+            "https://codepilot.example.com/pricing",
+            "https://codepilot.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, model_training_opt_out_scope."
+          ]
+        },
+        {
+          "object_id": "aoi-flowpilot-automations",
+          "name": "FlowPilot Automations",
+          "object_type": "workflow_tool",
+          "summary": "Automation workflow tool with AI steps, webhooks, approvals, and SaaS connectors.",
+          "objective_score": 49.75,
+          "confidence": 0.82,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "connector_data_subprocessor_list"
+          ],
+          "source_urls": [
+            "https://flowpilot.example.com/docs",
+            "https://flowpilot.example.com/pricing",
+            "https://flowpilot.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, connector_data_subprocessor_list."
+          ]
+        },
+        {
+          "object_id": "aoi-promptledger",
+          "name": "PromptLedger",
+          "object_type": "saas",
+          "summary": "Prompt management tool for versioning prompts, reviewing changes, and running prompt evals.",
+          "objective_score": 46.0,
+          "confidence": 0.83,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "supported_model_provider_matrix"
+          ],
+          "source_urls": [
+            "https://promptledger.example.com/docs",
+            "https://promptledger.example.com/pricing",
+            "https://promptledger.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, supported_model_provider_matrix."
+          ]
+        },
+        {
+          "object_id": "aoi-meetscribe-ai",
+          "name": "MeetScribe AI",
+          "object_type": "saas",
+          "summary": "Meeting transcription and summary tool with calendar integrations and action-item extraction.",
+          "objective_score": 45.3,
+          "confidence": 0.8,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "api_reference_url"
+          ],
+          "source_urls": [
+            "https://meetscribe.example.com/features",
+            "https://meetscribe.example.com/pricing",
+            "https://meetscribe.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, api_reference_url."
+          ]
+        }
+      ],
+      "average_objective_score": 50.58,
+      "average_confidence": 0.81,
+      "source_trace_coverage": 1.0,
+      "missing_fields_count": 11,
+      "status_counts": {
+        "beta": 1,
+        "active": 4
+      },
+      "warnings": [
+        "Missing or weak fields detected: refund_policy, api_reference_url, commercial_rights_edge_cases.",
+        "Missing or weak fields detected: refund_policy, api_reference_url.",
+        "Missing or weak fields detected: refund_policy, connector_data_subprocessor_list.",
+        "Missing or weak fields detected: refund_policy, model_training_opt_out_scope.",
+        "Missing or weak fields detected: refund_policy, supported_model_provider_matrix.",
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee."
+      ],
+      "structural_pass": true,
+      "relevance_pass": true,
+      "relevance_overlap": [
+        "commercial",
+        "generation",
+        "pricing",
+        "video"
+      ],
+      "scored_result_count": 5
+    },
+    {
+      "query_id": "golden-014",
+      "query": "Find an AI search API that returns citations and supports freshness filters.",
+      "objective": null,
+      "domain": "ai_apis",
+      "top_k": 5,
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "aoi-findwise-search-api",
+          "name": "Findwise Search API",
+          "object_type": "api",
+          "summary": "AI search API for semantic web answers, citations, result clustering, and freshness filters.",
+          "objective_score": 64.75,
+          "confidence": 0.85,
+          "status": "active",
+          "rank_reason": [
+            "Partial relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "source_index_scope"
+          ],
+          "source_urls": [
+            "https://findwise.example.com/docs",
+            "https://findwise.example.com/pricing",
+            "https://findwise.example.com/citations"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, source_index_scope."
+          ]
+        },
+        {
+          "object_id": "aoi-clearscan-ocr-api",
+          "name": "ClearScan OCR API",
+          "object_type": "api",
+          "summary": "OCR API for invoices, receipts, identity documents, and scanned PDFs.",
+          "objective_score": 51.0,
+          "confidence": 0.88,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy"
+          ],
+          "source_urls": [
+            "https://clearscan.example.com/docs",
+            "https://clearscan.example.com/pricing",
+            "https://clearscan.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy."
+          ]
+        },
+        {
+          "object_id": "aoi-voiceweave-speech-api",
+          "name": "VoiceWeave Speech API",
+          "object_type": "api",
+          "summary": "Speech synthesis API with multilingual voices, SSML support, and streaming output.",
+          "objective_score": 46.48,
+          "confidence": 0.81,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "voice_consent_audit_details"
+          ],
+          "source_urls": [
+            "https://voiceweave.example.com/docs",
+            "https://voiceweave.example.com/pricing",
+            "https://voiceweave.example.com/voice-rights"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, voice_consent_audit_details."
+          ]
+        },
+        {
+          "object_id": "aoi-pixelforge-api",
+          "name": "PixelForge API",
+          "object_type": "api",
+          "summary": "Image generation API for product mockups, marketing assets, and creative variants.",
+          "objective_score": 46.0,
+          "confidence": 0.86,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "enterprise_sla"
+          ],
+          "source_urls": [
+            "https://pixelforge.example.com/docs",
+            "https://pixelforge.example.com/pricing",
+            "https://pixelforge.example.com/terms"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, enterprise_sla."
+          ]
+        },
+        {
+          "object_id": "aoi-doculift-extraction-api",
+          "name": "DocuLift Extraction API",
+          "object_type": "api",
+          "summary": "Document extraction API for contracts, forms, tables, and structured JSON outputs.",
+          "objective_score": 45.98,
+          "confidence": 0.86,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "model_accuracy_by_document_type"
+          ],
+          "source_urls": [
+            "https://doculift.example.com/docs",
+            "https://doculift.example.com/pricing",
+            "https://doculift.example.com/compliance"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, model_accuracy_by_document_type."
+          ]
+        }
+      ],
+      "average_objective_score": 50.84,
+      "average_confidence": 0.852,
+      "source_trace_coverage": 1.0,
+      "missing_fields_count": 9,
+      "status_counts": {
+        "active": 5
+      },
+      "warnings": [
+        "Missing or weak fields detected: refund_policy, enterprise_sla.",
+        "Missing or weak fields detected: refund_policy, model_accuracy_by_document_type.",
+        "Missing or weak fields detected: refund_policy, source_index_scope.",
+        "Missing or weak fields detected: refund_policy, voice_consent_audit_details.",
+        "Missing or weak fields detected: refund_policy.",
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee."
+      ],
+      "structural_pass": true,
+      "relevance_pass": true,
+      "relevance_overlap": [
+        "ai",
+        "citations",
+        "filters",
+        "freshness",
+        "search"
+      ],
+      "scored_result_count": 5
+    },
+    {
+      "query_id": "golden-015",
+      "query": "Find a low-cost embedding API for multilingual RAG.",
+      "objective": null,
+      "domain": "ai_apis",
+      "top_k": 5,
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "aoi-embedlite-api",
+          "name": "EmbedLite API",
+          "object_type": "api",
+          "summary": "Embedding API with small, multilingual, and retrieval-optimized models.",
+          "objective_score": 64.5,
+          "confidence": 0.89,
+          "status": "active",
+          "rank_reason": [
+            "Partial relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy"
+          ],
+          "source_urls": [
+            "https://embedlite.example.com/docs",
+            "https://embedlite.example.com/pricing",
+            "https://embedlite.example.com/models"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy."
+          ]
+        },
+        {
+          "object_id": "aoi-voiceweave-speech-api",
+          "name": "VoiceWeave Speech API",
+          "object_type": "api",
+          "summary": "Speech synthesis API with multilingual voices, SSML support, and streaming output.",
+          "objective_score": 50.48,
+          "confidence": 0.81,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "voice_consent_audit_details"
+          ],
+          "source_urls": [
+            "https://voiceweave.example.com/docs",
+            "https://voiceweave.example.com/pricing",
+            "https://voiceweave.example.com/voice-rights"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, voice_consent_audit_details."
+          ]
+        },
+        {
+          "object_id": "aoi-clearscan-ocr-api",
+          "name": "ClearScan OCR API",
+          "object_type": "api",
+          "summary": "OCR API for invoices, receipts, identity documents, and scanned PDFs.",
+          "objective_score": 48.5,
+          "confidence": 0.88,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy"
+          ],
+          "source_urls": [
+            "https://clearscan.example.com/docs",
+            "https://clearscan.example.com/pricing",
+            "https://clearscan.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy."
+          ]
+        },
+        {
+          "object_id": "aoi-pixelforge-api",
+          "name": "PixelForge API",
+          "object_type": "api",
+          "summary": "Image generation API for product mockups, marketing assets, and creative variants.",
+          "objective_score": 46.0,
+          "confidence": 0.86,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "enterprise_sla"
+          ],
+          "source_urls": [
+            "https://pixelforge.example.com/docs",
+            "https://pixelforge.example.com/pricing",
+            "https://pixelforge.example.com/terms"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, enterprise_sla."
+          ]
+        },
+        {
+          "object_id": "aoi-doculift-extraction-api",
+          "name": "DocuLift Extraction API",
+          "object_type": "api",
+          "summary": "Document extraction API for contracts, forms, tables, and structured JSON outputs.",
+          "objective_score": 43.48,
+          "confidence": 0.86,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "model_accuracy_by_document_type"
+          ],
+          "source_urls": [
+            "https://doculift.example.com/docs",
+            "https://doculift.example.com/pricing",
+            "https://doculift.example.com/compliance"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, model_accuracy_by_document_type."
+          ]
+        }
+      ],
+      "average_objective_score": 50.59,
+      "average_confidence": 0.86,
+      "source_trace_coverage": 1.0,
+      "missing_fields_count": 8,
+      "status_counts": {
+        "active": 5
+      },
+      "warnings": [
+        "Missing or weak fields detected: refund_policy, enterprise_sla.",
+        "Missing or weak fields detected: refund_policy, model_accuracy_by_document_type.",
+        "Missing or weak fields detected: refund_policy, voice_consent_audit_details.",
+        "Missing or weak fields detected: refund_policy.",
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee."
+      ],
+      "structural_pass": true,
+      "relevance_pass": true,
+      "relevance_overlap": [
+        "api",
+        "embedding",
+        "multilingual"
+      ],
+      "scored_result_count": 5
+    },
+    {
+      "query_id": "golden-016",
+      "query": "Find a local LLM app that keeps documents on device by default.",
+      "objective": null,
+      "domain": "ai_tools",
+      "top_k": 5,
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "aoi-localmind-desktop",
+          "name": "LocalMind Desktop",
+          "object_type": "desktop_app",
+          "summary": "Local LLM desktop app for running models on-device with document chat and offline mode.",
+          "objective_score": 51.58,
+          "confidence": 0.79,
+          "status": "active",
+          "rank_reason": [
+            "Partial relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "api_reference_url",
+            "model_license_matrix"
+          ],
+          "source_urls": [
+            "https://localmind.example.com/docs",
+            "https://localmind.example.com/download",
+            "https://localmind.example.com/privacy"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, api_reference_url, model_license_matrix."
+          ]
+        },
+        {
+          "object_id": "aoi-modelbridge-gateway",
+          "name": "ModelBridge Gateway",
+          "object_type": "gateway",
+          "summary": "LLM gateway for routing requests across providers with logging, budget controls, and fallback rules.",
+          "objective_score": 51.5,
+          "confidence": 0.87,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy"
+          ],
+          "source_urls": [
+            "https://modelbridge.example.com/docs",
+            "https://modelbridge.example.com/pricing",
+            "https://modelbridge.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy."
+          ]
+        },
+        {
+          "object_id": "aoi-clearscan-ocr-api",
+          "name": "ClearScan OCR API",
+          "object_type": "api",
+          "summary": "OCR API for invoices, receipts, identity documents, and scanned PDFs.",
+          "objective_score": 50.5,
+          "confidence": 0.88,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy"
+          ],
+          "source_urls": [
+            "https://clearscan.example.com/docs",
+            "https://clearscan.example.com/pricing",
+            "https://clearscan.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy."
+          ]
+        },
+        {
+          "object_id": "aoi-signallens-monitor",
+          "name": "SignalLens Monitor",
+          "object_type": "monitoring_tool",
+          "summary": "AI monitoring platform for LLM traces, hallucination checks, cost dashboards, and drift alerts.",
+          "objective_score": 49.0,
+          "confidence": 0.86,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "pii_redaction_default_behavior"
+          ],
+          "source_urls": [
+            "https://signallens.example.com/docs",
+            "https://signallens.example.com/pricing",
+            "https://signallens.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, pii_redaction_default_behavior."
+          ]
+        },
+        {
+          "object_id": "aoi-searchmcp-relay",
+          "name": "SearchMCP Relay",
+          "object_type": "mcp_server",
+          "summary": "MCP web search server that returns search results, snippets, and source URLs to AI agents.",
+          "objective_score": 48.96,
+          "confidence": 0.82,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "ranking_source_partners"
+          ],
+          "source_urls": [
+            "https://searchmcp.example.com/docs",
+            "https://searchmcp.example.com/pricing",
+            "https://searchmcp.example.com/policies"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, ranking_source_partners."
+          ]
+        }
+      ],
+      "average_objective_score": 50.31,
+      "average_confidence": 0.844,
+      "source_trace_coverage": 1.0,
+      "missing_fields_count": 9,
+      "status_counts": {
+        "active": 5
+      },
+      "warnings": [
+        "Missing or weak fields detected: refund_policy, api_reference_url, model_license_matrix.",
+        "Missing or weak fields detected: refund_policy, pii_redaction_default_behavior.",
+        "Missing or weak fields detected: refund_policy, ranking_source_partners.",
+        "Missing or weak fields detected: refund_policy.",
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee."
+      ],
+      "structural_pass": true,
+      "relevance_pass": true,
+      "relevance_overlap": [
+        "app",
+        "chat",
+        "llm",
+        "local",
+        "offline"
+      ],
+      "scored_result_count": 5
+    },
+    {
+      "query_id": "golden-017",
+      "query": "Compare prompt management tools with versioning and eval runs.",
+      "objective": null,
+      "domain": "ai_saas",
+      "top_k": 5,
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "aoi-promptledger",
+          "name": "PromptLedger",
+          "object_type": "saas",
+          "summary": "Prompt management tool for versioning prompts, reviewing changes, and running prompt evals.",
+          "objective_score": 71.0,
+          "confidence": 0.83,
+          "status": "active",
+          "rank_reason": [
+            "Strong keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "supported_model_provider_matrix"
+          ],
+          "source_urls": [
+            "https://promptledger.example.com/docs",
+            "https://promptledger.example.com/pricing",
+            "https://promptledger.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, supported_model_provider_matrix."
+          ]
+        },
+        {
+          "object_id": "aoi-codepilot-studio",
+          "name": "CodePilot Studio",
+          "object_type": "saas",
+          "summary": "AI coding assistant with IDE integration, codebase chat, review hints, and test generation.",
+          "objective_score": 46.0,
+          "confidence": 0.84,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "model_training_opt_out_scope"
+          ],
+          "source_urls": [
+            "https://codepilot.example.com/docs",
+            "https://codepilot.example.com/pricing",
+            "https://codepilot.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, model_training_opt_out_scope."
+          ]
+        },
+        {
+          "object_id": "aoi-flowpilot-automations",
+          "name": "FlowPilot Automations",
+          "object_type": "workflow_tool",
+          "summary": "Automation workflow tool with AI steps, webhooks, approvals, and SaaS connectors.",
+          "objective_score": 46.0,
+          "confidence": 0.82,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "connector_data_subprocessor_list"
+          ],
+          "source_urls": [
+            "https://flowpilot.example.com/docs",
+            "https://flowpilot.example.com/pricing",
+            "https://flowpilot.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, connector_data_subprocessor_list."
+          ]
+        },
+        {
+          "object_id": "aoi-meetscribe-ai",
+          "name": "MeetScribe AI",
+          "object_type": "saas",
+          "summary": "Meeting transcription and summary tool with calendar integrations and action-item extraction.",
+          "objective_score": 42.8,
+          "confidence": 0.8,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "api_reference_url"
+          ],
+          "source_urls": [
+            "https://meetscribe.example.com/features",
+            "https://meetscribe.example.com/pricing",
+            "https://meetscribe.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, api_reference_url."
+          ]
+        },
+        {
+          "object_id": "aoi-motioncanvas-ai",
+          "name": "MotionCanvas AI",
+          "object_type": "saas",
+          "summary": "AI video generation tool for short promotional clips, storyboards, and social video variants.",
+          "objective_score": 39.58,
+          "confidence": 0.76,
+          "status": "beta",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "api_reference_url",
+            "commercial_rights_edge_cases"
+          ],
+          "source_urls": [
+            "https://motioncanvas.example.com/features",
+            "https://motioncanvas.example.com/pricing",
+            "https://motioncanvas.example.com/terms"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, api_reference_url, commercial_rights_edge_cases."
+          ]
+        }
+      ],
+      "average_objective_score": 49.08,
+      "average_confidence": 0.81,
+      "source_trace_coverage": 1.0,
+      "missing_fields_count": 11,
+      "status_counts": {
+        "active": 4,
+        "beta": 1
+      },
+      "warnings": [
+        "Missing or weak fields detected: refund_policy, api_reference_url, commercial_rights_edge_cases.",
+        "Missing or weak fields detected: refund_policy, api_reference_url.",
+        "Missing or weak fields detected: refund_policy, connector_data_subprocessor_list.",
+        "Missing or weak fields detected: refund_policy, model_training_opt_out_scope.",
+        "Missing or weak fields detected: refund_policy, supported_model_provider_matrix.",
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee."
+      ],
+      "structural_pass": true,
+      "relevance_pass": true,
+      "relevance_overlap": [
+        "management",
+        "prompt",
+        "versioning"
+      ],
+      "scored_result_count": 5
+    },
+    {
+      "query_id": "golden-018",
+      "query": "Find open-source RAG frameworks with ingestion and retrieval evaluation.",
+      "objective": null,
+      "domain": "mixed_ai_tools",
+      "top_k": 5,
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "aoi-retrievalforge",
+          "name": "RetrievalForge",
+          "object_type": "open_source_framework",
+          "summary": "RAG framework for ingestion pipelines, retrievers, chunking strategies, and answer evaluation.",
+          "objective_score": 63.67,
+          "confidence": 0.84,
+          "status": "active",
+          "rank_reason": [
+            "Strong keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete."
+          ],
+          "missing_fields": [
+            "privacy_policy",
+            "refund_policy",
+            "maintainer_security_contact"
+          ],
+          "source_urls": [
+            "https://retrievalforge.example.com/docs",
+            "https://github.example.com/retrievalforge/retrievalforge",
+            "https://retrievalforge.example.com/license"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: privacy_policy, refund_policy, maintainer_security_contact."
+          ]
+        },
+        {
+          "object_id": "aoi-vectornest-db",
+          "name": "VectorNest DB",
+          "object_type": "database",
+          "summary": "Managed vector database for semantic search, hybrid retrieval, and metadata filtering.",
+          "objective_score": 54.21,
+          "confidence": 0.85,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy"
+          ],
+          "source_urls": [
+            "https://vectornest.example.com/docs",
+            "https://vectornest.example.com/pricing",
+            "https://vectornest.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy."
+          ]
+        },
+        {
+          "object_id": "aoi-embedlite-api",
+          "name": "EmbedLite API",
+          "object_type": "api",
+          "summary": "Embedding API with small, multilingual, and retrieval-optimized models.",
+          "objective_score": 54.21,
+          "confidence": 0.89,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy"
+          ],
+          "source_urls": [
+            "https://embedlite.example.com/docs",
+            "https://embedlite.example.com/pricing",
+            "https://embedlite.example.com/models"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy."
+          ]
+        },
+        {
+          "object_id": "aoi-searchmcp-relay",
+          "name": "SearchMCP Relay",
+          "object_type": "mcp_server",
+          "summary": "MCP web search server that returns search results, snippets, and source URLs to AI agents.",
+          "objective_score": 51.25,
+          "confidence": 0.82,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "ranking_source_partners"
+          ],
+          "source_urls": [
+            "https://searchmcp.example.com/docs",
+            "https://searchmcp.example.com/pricing",
+            "https://searchmcp.example.com/policies"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, ranking_source_partners."
+          ]
+        },
+        {
+          "object_id": "aoi-openagent-kit",
+          "name": "OpenAgent Kit",
+          "object_type": "open_source_framework",
+          "summary": "Open-source framework for building tool-using agents, planners, memory modules, and eval loops.",
+          "objective_score": 47.95,
+          "confidence": 0.83,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete."
+          ],
+          "missing_fields": [
+            "privacy_policy",
+            "refund_policy",
+            "security_policy_url"
+          ],
+          "source_urls": [
+            "https://openagentkit.example.com/docs",
+            "https://github.example.com/openagentkit/openagentkit",
+            "https://openagentkit.example.com/license"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: privacy_policy, refund_policy, security_policy_url."
+          ]
+        }
+      ],
+      "average_objective_score": 54.26,
+      "average_confidence": 0.846,
+      "source_trace_coverage": 1.0,
+      "missing_fields_count": 10,
+      "status_counts": {
+        "active": 5
+      },
+      "warnings": [
+        "Missing or weak fields detected: privacy_policy, refund_policy, maintainer_security_contact.",
+        "Missing or weak fields detected: privacy_policy, refund_policy, security_policy_url.",
+        "Missing or weak fields detected: refund_policy, ranking_source_partners.",
+        "Missing or weak fields detected: refund_policy.",
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee."
+      ],
+      "structural_pass": true,
+      "relevance_pass": true,
+      "relevance_overlap": [
+        "eval",
+        "framework",
+        "ingestion",
+        "rag",
+        "retrieval"
+      ],
+      "scored_result_count": 5
+    },
+    {
+      "query_id": "golden-019",
+      "query": "Find a data labeling platform for RLHF preference tasks.",
+      "objective": null,
+      "domain": "ai_saas",
+      "top_k": 5,
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "aoi-codepilot-studio",
+          "name": "CodePilot Studio",
+          "object_type": "saas",
+          "summary": "AI coding assistant with IDE integration, codebase chat, review hints, and test generation.",
+          "objective_score": 46.0,
+          "confidence": 0.84,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "model_training_opt_out_scope"
+          ],
+          "source_urls": [
+            "https://codepilot.example.com/docs",
+            "https://codepilot.example.com/pricing",
+            "https://codepilot.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, model_training_opt_out_scope."
+          ]
+        },
+        {
+          "object_id": "aoi-flowpilot-automations",
+          "name": "FlowPilot Automations",
+          "object_type": "workflow_tool",
+          "summary": "Automation workflow tool with AI steps, webhooks, approvals, and SaaS connectors.",
+          "objective_score": 46.0,
+          "confidence": 0.82,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "connector_data_subprocessor_list"
+          ],
+          "source_urls": [
+            "https://flowpilot.example.com/docs",
+            "https://flowpilot.example.com/pricing",
+            "https://flowpilot.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, connector_data_subprocessor_list."
+          ]
+        },
+        {
+          "object_id": "aoi-promptledger",
+          "name": "PromptLedger",
+          "object_type": "saas",
+          "summary": "Prompt management tool for versioning prompts, reviewing changes, and running prompt evals.",
+          "objective_score": 46.0,
+          "confidence": 0.83,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "supported_model_provider_matrix"
+          ],
+          "source_urls": [
+            "https://promptledger.example.com/docs",
+            "https://promptledger.example.com/pricing",
+            "https://promptledger.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, supported_model_provider_matrix."
+          ]
+        },
+        {
+          "object_id": "aoi-meetscribe-ai",
+          "name": "MeetScribe AI",
+          "object_type": "saas",
+          "summary": "Meeting transcription and summary tool with calendar integrations and action-item extraction.",
+          "objective_score": 42.8,
+          "confidence": 0.8,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "api_reference_url"
+          ],
+          "source_urls": [
+            "https://meetscribe.example.com/features",
+            "https://meetscribe.example.com/pricing",
+            "https://meetscribe.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, api_reference_url."
+          ]
+        },
+        {
+          "object_id": "aoi-motioncanvas-ai",
+          "name": "MotionCanvas AI",
+          "object_type": "saas",
+          "summary": "AI video generation tool for short promotional clips, storyboards, and social video variants.",
+          "objective_score": 39.58,
+          "confidence": 0.76,
+          "status": "beta",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "api_reference_url",
+            "commercial_rights_edge_cases"
+          ],
+          "source_urls": [
+            "https://motioncanvas.example.com/features",
+            "https://motioncanvas.example.com/pricing",
+            "https://motioncanvas.example.com/terms"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, api_reference_url, commercial_rights_edge_cases."
+          ]
+        }
+      ],
+      "average_objective_score": 44.08,
+      "average_confidence": 0.81,
+      "source_trace_coverage": 1.0,
+      "missing_fields_count": 11,
+      "status_counts": {
+        "active": 4,
+        "beta": 1
+      },
+      "warnings": [
+        "Missing or weak fields detected: refund_policy, api_reference_url, commercial_rights_edge_cases.",
+        "Missing or weak fields detected: refund_policy, api_reference_url.",
+        "Missing or weak fields detected: refund_policy, connector_data_subprocessor_list.",
+        "Missing or weak fields detected: refund_policy, model_training_opt_out_scope.",
+        "Missing or weak fields detected: refund_policy, supported_model_provider_matrix.",
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee."
+      ],
+      "structural_pass": true,
+      "relevance_pass": true,
+      "relevance_overlap": [
+        "data",
+        "review"
+      ],
+      "scored_result_count": 5
+    },
+    {
+      "query_id": "golden-020",
+      "query": "Find an AI monitoring tool for LLM traces, cost dashboards, and drift alerts.",
+      "objective": null,
+      "domain": "ai_saas",
+      "top_k": 5,
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "aoi-flowpilot-automations",
+          "name": "FlowPilot Automations",
+          "object_type": "workflow_tool",
+          "summary": "Automation workflow tool with AI steps, webhooks, approvals, and SaaS connectors.",
+          "objective_score": 49.75,
+          "confidence": 0.82,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "connector_data_subprocessor_list"
+          ],
+          "source_urls": [
+            "https://flowpilot.example.com/docs",
+            "https://flowpilot.example.com/pricing",
+            "https://flowpilot.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, connector_data_subprocessor_list."
+          ]
+        },
+        {
+          "object_id": "aoi-codepilot-studio",
+          "name": "CodePilot Studio",
+          "object_type": "saas",
+          "summary": "AI coding assistant with IDE integration, codebase chat, review hints, and test generation.",
+          "objective_score": 48.5,
+          "confidence": 0.84,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "model_training_opt_out_scope"
+          ],
+          "source_urls": [
+            "https://codepilot.example.com/docs",
+            "https://codepilot.example.com/pricing",
+            "https://codepilot.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, model_training_opt_out_scope."
+          ]
+        },
+        {
+          "object_id": "aoi-promptledger",
+          "name": "PromptLedger",
+          "object_type": "saas",
+          "summary": "Prompt management tool for versioning prompts, reviewing changes, and running prompt evals.",
+          "objective_score": 46.0,
+          "confidence": 0.83,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "supported_model_provider_matrix"
+          ],
+          "source_urls": [
+            "https://promptledger.example.com/docs",
+            "https://promptledger.example.com/pricing",
+            "https://promptledger.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, supported_model_provider_matrix."
+          ]
+        },
+        {
+          "object_id": "aoi-meetscribe-ai",
+          "name": "MeetScribe AI",
+          "object_type": "saas",
+          "summary": "Meeting transcription and summary tool with calendar integrations and action-item extraction.",
+          "objective_score": 45.3,
+          "confidence": 0.8,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "api_reference_url"
+          ],
+          "source_urls": [
+            "https://meetscribe.example.com/features",
+            "https://meetscribe.example.com/pricing",
+            "https://meetscribe.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, api_reference_url."
+          ]
+        },
+        {
+          "object_id": "aoi-motioncanvas-ai",
+          "name": "MotionCanvas AI",
+          "object_type": "saas",
+          "summary": "AI video generation tool for short promotional clips, storyboards, and social video variants.",
+          "objective_score": 42.08,
+          "confidence": 0.76,
+          "status": "beta",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "api_reference_url",
+            "commercial_rights_edge_cases"
+          ],
+          "source_urls": [
+            "https://motioncanvas.example.com/features",
+            "https://motioncanvas.example.com/pricing",
+            "https://motioncanvas.example.com/terms"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, api_reference_url, commercial_rights_edge_cases."
+          ]
+        }
+      ],
+      "average_objective_score": 46.33,
+      "average_confidence": 0.81,
+      "source_trace_coverage": 1.0,
+      "missing_fields_count": 11,
+      "status_counts": {
+        "active": 4,
+        "beta": 1
+      },
+      "warnings": [
+        "Missing or weak fields detected: refund_policy, api_reference_url, commercial_rights_edge_cases.",
+        "Missing or weak fields detected: refund_policy, api_reference_url.",
+        "Missing or weak fields detected: refund_policy, connector_data_subprocessor_list.",
+        "Missing or weak fields detected: refund_policy, model_training_opt_out_scope.",
+        "Missing or weak fields detected: refund_policy, supported_model_provider_matrix.",
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee."
+      ],
+      "structural_pass": true,
+      "relevance_pass": true,
+      "relevance_overlap": [
+        "ai"
+      ],
+      "scored_result_count": 5
+    },
+    {
+      "query_id": "golden-021",
+      "query": "List options with missing policy fields for commercial deployment review.",
+      "objective": null,
+      "domain": "mixed_ai_tools",
+      "top_k": 5,
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "aoi-pixelforge-api",
+          "name": "PixelForge API",
+          "object_type": "api",
+          "summary": "Image generation API for product mockups, marketing assets, and creative variants.",
+          "objective_score": 49.75,
+          "confidence": 0.86,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "enterprise_sla"
+          ],
+          "source_urls": [
+            "https://pixelforge.example.com/docs",
+            "https://pixelforge.example.com/pricing",
+            "https://pixelforge.example.com/terms"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, enterprise_sla."
+          ]
+        },
+        {
+          "object_id": "aoi-codepilot-studio",
+          "name": "CodePilot Studio",
+          "object_type": "saas",
+          "summary": "AI coding assistant with IDE integration, codebase chat, review hints, and test generation.",
+          "objective_score": 49.75,
+          "confidence": 0.84,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "model_training_opt_out_scope"
+          ],
+          "source_urls": [
+            "https://codepilot.example.com/docs",
+            "https://codepilot.example.com/pricing",
+            "https://codepilot.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, model_training_opt_out_scope."
+          ]
+        },
+        {
+          "object_id": "aoi-clearscan-ocr-api",
+          "name": "ClearScan OCR API",
+          "object_type": "api",
+          "summary": "OCR API for invoices, receipts, identity documents, and scanned PDFs.",
+          "objective_score": 48.5,
+          "confidence": 0.88,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy"
+          ],
+          "source_urls": [
+            "https://clearscan.example.com/docs",
+            "https://clearscan.example.com/pricing",
+            "https://clearscan.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy."
+          ]
+        },
+        {
+          "object_id": "aoi-labelloop",
+          "name": "LabelLoop",
+          "object_type": "data_tool",
+          "summary": "Data labeling platform for classification, extraction, RLHF preference tasks, and review queues.",
+          "objective_score": 46.75,
+          "confidence": 0.82,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "workforce_location_details"
+          ],
+          "source_urls": [
+            "https://labelloop.example.com/docs",
+            "https://labelloop.example.com/pricing",
+            "https://labelloop.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, workforce_location_details."
+          ]
+        },
+        {
+          "object_id": "aoi-motioncanvas-ai",
+          "name": "MotionCanvas AI",
+          "object_type": "saas",
+          "summary": "AI video generation tool for short promotional clips, storyboards, and social video variants.",
+          "objective_score": 43.33,
+          "confidence": 0.76,
+          "status": "beta",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "api_reference_url",
+            "commercial_rights_edge_cases"
+          ],
+          "source_urls": [
+            "https://motioncanvas.example.com/features",
+            "https://motioncanvas.example.com/pricing",
+            "https://motioncanvas.example.com/terms"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, api_reference_url, commercial_rights_edge_cases."
+          ]
+        }
+      ],
+      "average_objective_score": 47.62,
+      "average_confidence": 0.832,
+      "source_trace_coverage": 1.0,
+      "missing_fields_count": 10,
+      "status_counts": {
+        "active": 4,
+        "beta": 1
+      },
+      "warnings": [
+        "Missing or weak fields detected: refund_policy, api_reference_url, commercial_rights_edge_cases.",
+        "Missing or weak fields detected: refund_policy, enterprise_sla.",
+        "Missing or weak fields detected: refund_policy, model_training_opt_out_scope.",
+        "Missing or weak fields detected: refund_policy, workforce_location_details.",
+        "Missing or weak fields detected: refund_policy.",
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee."
+      ],
+      "structural_pass": true,
+      "relevance_pass": true,
+      "relevance_overlap": [
+        "commercial",
+        "fields",
+        "policy"
+      ],
+      "scored_result_count": 5
+    },
+    {
+      "query_id": "golden-022",
+      "query": "Explain why a cheap embedding option ranks above a broader LLM gateway for RAG.",
+      "objective": null,
+      "domain": "mixed_ai_tools",
+      "top_k": 5,
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "aoi-modelbridge-gateway",
+          "name": "ModelBridge Gateway",
+          "object_type": "gateway",
+          "summary": "LLM gateway for routing requests across providers with logging, budget controls, and fallback rules.",
+          "objective_score": 53.95,
+          "confidence": 0.87,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy"
+          ],
+          "source_urls": [
+            "https://modelbridge.example.com/docs",
+            "https://modelbridge.example.com/pricing",
+            "https://modelbridge.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy."
+          ]
+        },
+        {
+          "object_id": "aoi-embedlite-api",
+          "name": "EmbedLite API",
+          "object_type": "api",
+          "summary": "Embedding API with small, multilingual, and retrieval-optimized models.",
+          "objective_score": 53.05,
+          "confidence": 0.89,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy"
+          ],
+          "source_urls": [
+            "https://embedlite.example.com/docs",
+            "https://embedlite.example.com/pricing",
+            "https://embedlite.example.com/models"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy."
+          ]
+        },
+        {
+          "object_id": "aoi-vectornest-db",
+          "name": "VectorNest DB",
+          "object_type": "database",
+          "summary": "Managed vector database for semantic search, hybrid retrieval, and metadata filtering.",
+          "objective_score": 50.32,
+          "confidence": 0.85,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy"
+          ],
+          "source_urls": [
+            "https://vectornest.example.com/docs",
+            "https://vectornest.example.com/pricing",
+            "https://vectornest.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy."
+          ]
+        },
+        {
+          "object_id": "aoi-retrievalforge",
+          "name": "RetrievalForge",
+          "object_type": "open_source_framework",
+          "summary": "RAG framework for ingestion pipelines, retrievers, chunking strategies, and answer evaluation.",
+          "objective_score": 44.97,
+          "confidence": 0.84,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete."
+          ],
+          "missing_fields": [
+            "privacy_policy",
+            "refund_policy",
+            "maintainer_security_contact"
+          ],
+          "source_urls": [
+            "https://retrievalforge.example.com/docs",
+            "https://github.example.com/retrievalforge/retrievalforge",
+            "https://retrievalforge.example.com/license"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: privacy_policy, refund_policy, maintainer_security_contact."
+          ]
+        },
+        {
+          "object_id": "aoi-localmind-desktop",
+          "name": "LocalMind Desktop",
+          "object_type": "desktop_app",
+          "summary": "Local LLM desktop app for running models on-device with document chat and offline mode.",
+          "objective_score": 42.31,
+          "confidence": 0.79,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "api_reference_url",
+            "model_license_matrix"
+          ],
+          "source_urls": [
+            "https://localmind.example.com/docs",
+            "https://localmind.example.com/download",
+            "https://localmind.example.com/privacy"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, api_reference_url, model_license_matrix."
+          ]
+        }
+      ],
+      "average_objective_score": 48.92,
+      "average_confidence": 0.848,
+      "source_trace_coverage": 1.0,
+      "missing_fields_count": 9,
+      "status_counts": {
+        "active": 5
+      },
+      "warnings": [
+        "Missing or weak fields detected: privacy_policy, refund_policy, maintainer_security_contact.",
+        "Missing or weak fields detected: refund_policy, api_reference_url, model_license_matrix.",
+        "Missing or weak fields detected: refund_policy.",
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee."
+      ],
+      "structural_pass": true,
+      "relevance_pass": true,
+      "relevance_overlap": [
+        "objective",
+        "source"
+      ],
+      "scored_result_count": 5
+    },
+    {
+      "query_id": "golden-023",
+      "query": "Generate a read-only decision receipt for choosing an OCR API.",
+      "objective": null,
+      "domain": "ai_apis",
+      "top_k": 5,
+      "result_count": 5,
+      "top_results": [
+        {
+          "object_id": "aoi-clearscan-ocr-api",
+          "name": "ClearScan OCR API",
+          "object_type": "api",
+          "summary": "OCR API for invoices, receipts, identity documents, and scanned PDFs.",
+          "objective_score": 52.79,
+          "confidence": 0.88,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy"
+          ],
+          "source_urls": [
+            "https://clearscan.example.com/docs",
+            "https://clearscan.example.com/pricing",
+            "https://clearscan.example.com/security"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy."
+          ]
+        },
+        {
+          "object_id": "aoi-voiceweave-speech-api",
+          "name": "VoiceWeave Speech API",
+          "object_type": "api",
+          "summary": "Speech synthesis API with multilingual voices, SSML support, and streaming output.",
+          "objective_score": 46.48,
+          "confidence": 0.81,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "voice_consent_audit_details"
+          ],
+          "source_urls": [
+            "https://voiceweave.example.com/docs",
+            "https://voiceweave.example.com/pricing",
+            "https://voiceweave.example.com/voice-rights"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, voice_consent_audit_details."
+          ]
+        },
+        {
+          "object_id": "aoi-pixelforge-api",
+          "name": "PixelForge API",
+          "object_type": "api",
+          "summary": "Image generation API for product mockups, marketing assets, and creative variants.",
+          "objective_score": 46.0,
+          "confidence": 0.86,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "enterprise_sla"
+          ],
+          "source_urls": [
+            "https://pixelforge.example.com/docs",
+            "https://pixelforge.example.com/pricing",
+            "https://pixelforge.example.com/terms"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, enterprise_sla."
+          ]
+        },
+        {
+          "object_id": "aoi-findwise-search-api",
+          "name": "Findwise Search API",
+          "object_type": "api",
+          "summary": "AI search API for semantic web answers, citations, result clustering, and freshness filters.",
+          "objective_score": 46.0,
+          "confidence": 0.85,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "source_index_scope"
+          ],
+          "source_urls": [
+            "https://findwise.example.com/docs",
+            "https://findwise.example.com/pricing",
+            "https://findwise.example.com/citations"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, source_index_scope."
+          ]
+        },
+        {
+          "object_id": "aoi-doculift-extraction-api",
+          "name": "DocuLift Extraction API",
+          "object_type": "api",
+          "summary": "Document extraction API for contracts, forms, tables, and structured JSON outputs.",
+          "objective_score": 43.48,
+          "confidence": 0.86,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "model_accuracy_by_document_type"
+          ],
+          "source_urls": [
+            "https://doculift.example.com/docs",
+            "https://doculift.example.com/pricing",
+            "https://doculift.example.com/compliance"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, model_accuracy_by_document_type."
+          ]
+        }
+      ],
+      "average_objective_score": 46.95,
+      "average_confidence": 0.852,
+      "source_trace_coverage": 1.0,
+      "missing_fields_count": 9,
+      "status_counts": {
+        "active": 5
+      },
+      "warnings": [
+        "Missing or weak fields detected: refund_policy, enterprise_sla.",
+        "Missing or weak fields detected: refund_policy, model_accuracy_by_document_type.",
+        "Missing or weak fields detected: refund_policy, source_index_scope.",
+        "Missing or weak fields detected: refund_policy, voice_consent_audit_details.",
+        "Missing or weak fields detected: refund_policy.",
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee."
+      ],
+      "structural_pass": true,
+      "relevance_pass": true,
+      "relevance_overlap": [
+        "constraints",
+        "source"
+      ],
+      "scored_result_count": 5
+    },
+    {
+      "query_id": "golden-024",
+      "query": "Compare web search MCP and browser automation MCP tools without triggering login or form submission.",
+      "objective": null,
+      "domain": "mcp_servers",
+      "top_k": 5,
+      "result_count": 2,
+      "top_results": [
+        {
+          "object_id": "aoi-browserpilot-mcp",
+          "name": "BrowserPilot MCP",
+          "object_type": "mcp_server",
+          "summary": "Browser automation MCP server for navigation, screenshots, DOM inspection, and scripted interactions.",
+          "objective_score": 56.34,
+          "confidence": 0.84,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "hosted_pool_security_review"
+          ],
+          "source_urls": [
+            "https://browserpilot.example.com/docs",
+            "https://github.example.com/browserpilot/mcp",
+            "https://browserpilot.example.com/safety"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, hosted_pool_security_review."
+          ]
+        },
+        {
+          "object_id": "aoi-searchmcp-relay",
+          "name": "SearchMCP Relay",
+          "object_type": "mcp_server",
+          "summary": "MCP web search server that returns search results, snippets, and source URLs to AI agents.",
+          "objective_score": 55.14,
+          "confidence": 0.82,
+          "status": "active",
+          "rank_reason": [
+            "Limited keyword relevance to the stated objective.",
+            "Pricing information appears compatible with the requested constraints.",
+            "Documentation fields are relatively complete.",
+            "At least one important field is backed by source traces."
+          ],
+          "missing_fields": [
+            "refund_policy",
+            "ranking_source_partners"
+          ],
+          "source_urls": [
+            "https://searchmcp.example.com/docs",
+            "https://searchmcp.example.com/pricing",
+            "https://searchmcp.example.com/policies"
+          ],
+          "warnings": [
+            "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+            "Missing or weak fields detected: refund_policy, ranking_source_partners."
+          ]
+        }
+      ],
+      "average_objective_score": 55.74,
+      "average_confidence": 0.83,
+      "source_trace_coverage": 1.0,
+      "missing_fields_count": 4,
+      "status_counts": {
+        "active": 2
+      },
+      "warnings": [
+        "Missing or weak fields detected: refund_policy, hosted_pool_security_review.",
+        "Missing or weak fields detected: refund_policy, ranking_source_partners.",
+        "Objective score is a v0.1 fit heuristic, not a quality guarantee."
+      ],
+      "structural_pass": true,
+      "relevance_pass": true,
+      "relevance_overlap": [
+        "mcp",
+        "server"
+      ],
+      "scored_result_count": 2
+    }
+  ]
+}

@@ -1,0 +1,588 @@
+{
+  "server_name": "ai-objective-index",
+  "purpose": "Expose the AI Objective Index core engine through read-only MCP tools over local sample, generated, integrated, curated, public_beta, mcp_registry, or public_beta_mcp data scopes.",
+  "read_only": true,
+  "default_data_scope": "sample",
+  "data_scopes": [
+    "sample",
+    "generated",
+    "integrated",
+    "curated",
+    "public_beta",
+    "mcp_registry",
+    "public_beta_mcp"
+  ],
+  "tools": [
+    {
+      "name": "search",
+      "description": "Generic read-only MCP compatibility search wrapper over local AOI data scopes.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "query"
+        ],
+        "properties": {
+          "query": {
+            "type": "string"
+          },
+          "data_scope": {
+            "type": "string",
+            "enum": [
+              "sample",
+              "generated",
+              "integrated",
+              "curated",
+              "public_beta",
+              "mcp_registry",
+              "public_beta_mcp"
+            ],
+            "default": "sample",
+            "description": "Local AOI data scope. Default remains sample."
+          },
+          "limit": {
+            "type": "integer",
+            "default": 10,
+            "minimum": 1
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "results": {
+            "type": "array"
+          },
+          "read_only": {
+            "const": true
+          },
+          "data_scope": {
+            "type": "string"
+          },
+          "limitations": {
+            "type": "array"
+          }
+        }
+      }
+    },
+    {
+      "name": "fetch",
+      "description": "Generic read-only MCP compatibility fetch wrapper returning one AOI object with score, traces, and missing fields.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "object_id"
+        ],
+        "properties": {
+          "object_id": {
+            "type": "string"
+          },
+          "data_scope": {
+            "type": "string",
+            "enum": [
+              "sample",
+              "generated",
+              "integrated",
+              "curated",
+              "public_beta",
+              "mcp_registry",
+              "public_beta_mcp"
+            ],
+            "default": "sample",
+            "description": "Local AOI data scope. Default remains sample."
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "object": {
+            "type": "object"
+          },
+          "score": {
+            "type": "object"
+          },
+          "source_traces": {
+            "type": "array"
+          },
+          "read_only": {
+            "const": true
+          },
+          "data_scope": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "name": "search_objectives",
+      "description": "Search the local read-only AOI data scope and return scored objective-fit candidates.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "query"
+        ],
+        "properties": {
+          "query": {
+            "type": "string"
+          },
+          "domain": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "objective": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "constraints": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "limit": {
+            "type": "integer",
+            "default": 10,
+            "minimum": 1
+          },
+          "data_scope": {
+            "type": "string",
+            "enum": [
+              "sample",
+              "generated",
+              "integrated",
+              "curated",
+              "public_beta",
+              "mcp_registry",
+              "public_beta_mcp"
+            ],
+            "default": "sample",
+            "description": "Local AOI data scope. Default remains sample."
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "results": {
+            "type": "array"
+          },
+          "read_only": {
+            "const": true
+          },
+          "data_scope": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "name": "rank_options",
+      "description": "Rank provided option names against an objective using local AOI data-scope matches or conservative placeholders.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "options",
+          "objective"
+        ],
+        "properties": {
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": true,
+              "required": [
+                "name"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "description": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
+          },
+          "objective": {
+            "type": "string"
+          },
+          "constraints": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "scoring_profile": {
+            "type": "string",
+            "enum": [
+              "default",
+              "cost_sensitive",
+              "privacy_sensitive",
+              "developer_friendly",
+              "commercial_use"
+            ],
+            "default": "default"
+          },
+          "data_scope": {
+            "type": "string",
+            "enum": [
+              "sample",
+              "generated",
+              "integrated",
+              "curated",
+              "public_beta",
+              "mcp_registry",
+              "public_beta_mcp"
+            ],
+            "default": "sample",
+            "description": "Local AOI data scope. Default remains sample."
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "results": {
+            "type": "array"
+          },
+          "read_only": {
+            "const": true
+          },
+          "data_scope": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "name": "compare_tools",
+      "description": "Compare local AOI objects side by side using Package 1 comparison and scoring.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "tool_ids"
+        ],
+        "properties": {
+          "tool_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "compare_fields": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "query": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "objective": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "constraints": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "data_scope": {
+            "type": "string",
+            "enum": [
+              "sample",
+              "generated",
+              "integrated",
+              "curated",
+              "public_beta",
+              "mcp_registry",
+              "public_beta_mcp"
+            ],
+            "default": "sample",
+            "description": "Local AOI data scope. Default remains sample."
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "comparison_table": {
+            "type": "array"
+          },
+          "score_summary": {
+            "type": "array"
+          },
+          "read_only": {
+            "const": true
+          },
+          "data_scope": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "name": "explain_score",
+      "description": "Explain one local object's objective-fit score, components, penalties, warnings, and trace ids.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "object_id"
+        ],
+        "properties": {
+          "object_id": {
+            "type": "string"
+          },
+          "data_scope": {
+            "type": "string",
+            "enum": [
+              "sample",
+              "generated",
+              "integrated",
+              "curated",
+              "public_beta",
+              "mcp_registry",
+              "public_beta_mcp"
+            ],
+            "default": "sample",
+            "description": "Local AOI data scope. Default remains sample."
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "object_id": {
+            "type": "string"
+          },
+          "objective_score": {
+            "type": "number"
+          },
+          "rank_reason": {
+            "type": "array"
+          },
+          "read_only": {
+            "const": true
+          },
+          "data_scope": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "name": "get_source_trace",
+      "description": "Return source traces for an object id and optional field filter.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "object_id"
+        ],
+        "properties": {
+          "object_id": {
+            "type": "string"
+          },
+          "field": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "data_scope": {
+            "type": "string",
+            "enum": [
+              "sample",
+              "generated",
+              "integrated",
+              "curated",
+              "public_beta",
+              "mcp_registry",
+              "public_beta_mcp"
+            ],
+            "default": "sample",
+            "description": "Local AOI data scope. Default remains sample."
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "traces": {
+            "type": "array"
+          },
+          "read_only": {
+            "const": true
+          },
+          "data_scope": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "name": "list_missing_fields",
+      "description": "Return missing or weak fields with why-it-matters guidance.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "object_id"
+        ],
+        "properties": {
+          "object_id": {
+            "type": "string"
+          },
+          "data_scope": {
+            "type": "string",
+            "enum": [
+              "sample",
+              "generated",
+              "integrated",
+              "curated",
+              "public_beta",
+              "mcp_registry",
+              "public_beta_mcp"
+            ],
+            "default": "sample",
+            "description": "Local AOI data scope. Default remains sample."
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "missing_fields": {
+            "type": "array"
+          },
+          "read_only": {
+            "const": true
+          },
+          "data_scope": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "name": "generate_decision_receipt",
+      "description": "Generate a read-only decision receipt without external action execution.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "query",
+          "selected_object_id"
+        ],
+        "properties": {
+          "query": {
+            "type": "string"
+          },
+          "selected_object_id": {
+            "type": "string"
+          },
+          "alternatives": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "objective": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "constraints": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "data_scope": {
+            "type": "string",
+            "enum": [
+              "sample",
+              "generated",
+              "integrated",
+              "curated",
+              "public_beta",
+              "mcp_registry",
+              "public_beta_mcp"
+            ],
+            "default": "sample",
+            "description": "Local AOI data scope. Default remains sample."
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "decision_receipt": {
+            "type": "object"
+          },
+          "read_only": {
+            "const": true
+          },
+          "data_scope": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  ],
+  "forbidden_actions": [
+    "payment",
+    "booking",
+    "login",
+    "email_sending",
+    "form_submission",
+    "purchase",
+    "contract_signing",
+    "account_connection"
+  ]
+}

@@ -1,0 +1,58 @@
+# Manual Publish Checklist
+
+Package 7B does not publish automatically. Use this checklist if a human decides to publish a public beta.
+
+1. Review `README.md`.
+2. Run `python -m pytest`.
+3. Run `python -m ai_objective_index.mcp_smoke`.
+4. Run `python -m ai_objective_index.datascope_qa`.
+5. Run `python -m ai_objective_index.beta_readiness`.
+6. Run `python -m ai_objective_index.release_readiness`.
+7. Run `python -m ai_objective_index.release_claim_audit`.
+8. Run `python -m ai_objective_index.public_beta_packager`.
+9. Run `python -m ai_objective_index.smoke_all`.
+10. Run `python -m ai_objective_index.curated_index_export`.
+11. Run `python -m ai_objective_index.curated_eval`.
+12. Run `python -m ai_objective_index.curated_report_generator`.
+13. Run `python -m ai_objective_index.registry_intake.mcp_registry_export --use-fixture`.
+14. Run `python -m ai_objective_index.registry_intake.mcp_registry_eval`.
+15. Run `python -m ai_objective_index.registry_intake.mcp_registry_report_generator`.
+16. Run `python -m ai_objective_index.registry_intake.live_registry_run` or use the manual raw fallback.
+17. If explicitly approved, run `python -m ai_objective_index.registry_intake.live_registry_run --allow-network --max-servers 50`.
+18. Run `python -m ai_objective_index.registry_intake.registry_beta_dataset_builder`.
+19. Run `python -m ai_objective_index.registry_intake.registry_quality_audit`.
+20. Run `python -m ai_objective_index.registry_intake.registry_beta_report_generator`.
+21. Run `python -m ai_objective_index.registry_intake.real_payload_activation --use-existing-raw`.
+22. Run `python -m ai_objective_index.registry_intake.registry_payload_audit`.
+23. Run `python -m ai_objective_index.registry_intake.registry_reprocess_all`.
+24. Ensure `registry_payload_audit` says `real_payload_available=true`.
+25. Ensure `fixture_leak_detected=false`.
+26. If claiming MCP public beta data, ensure `public_beta_mcp_count > 0`.
+27. Review curated validation results and ensure no placeholder objects appear in `public_beta`.
+28. Review registry validation results and verify `public_beta_mcp` count.
+29. Confirm `public_beta_mcp` says not verified and not security certified.
+30. Run `python -m ai_objective_index.release_readiness`.
+31. Run `python -m ai_objective_index.release_claim_audit`.
+32. Confirm no security certification or supplier verification claims are made.
+33. Run `python -m ai_objective_index.realdata_claim_audit`.
+34. Run `python -m ai_objective_index.release_candidate_matrix`.
+35. Run `python -m ai_objective_index.final_preflight`.
+36. Run `python -m ai_objective_index.public_beta_realdata_packager`.
+37. Run `python -m ai_objective_index.smoke_all`.
+38. Run `python -m ai_objective_index.manual_launch_packager`.
+39. Run `python -m ai_objective_index.launch_dry_run`.
+40. Run `python -m ai_objective_index.no_secrets_audit`.
+41. Run `python -m ai_objective_index.launch_claim_guard`.
+42. Run `python -m ai_objective_index.release_archive_builder`.
+43. Run `python -m ai_objective_index.github_staging` if GitHub staging upload is desired.
+44. Review `github_upload/`.
+45. Review `release/public_beta_v0_1/`, `release/public_beta_v0_2/`, and `launch/manual_public_beta_v0_2/`.
+46. Create a GitHub release manually if desired.
+47. Create a Hugging Face Space manually if desired.
+48. Create a Hugging Face Dataset manually if desired.
+49. Submit to MCP Registry manually if desired.
+50. Post a community feedback request manually if desired.
+
+Do not claim AOI is an official standard, universally adopted, a quality guarantee, legal/security/compliance certification, purchasing advice, or an external action executor.
+
+For v0.2 real-data public beta, also do not claim verified MCP servers, safe MCP servers, security certification, or quality guaranteed tools.

@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-05-18T10:25:59.882111+00:00",
+  "pass": true,
+  "checks": [
+    {
+      "name": "import_ai_objective_index",
+      "pass": true,
+      "details": {
+        "module": "ai_objective_index"
+      }
+    },
+    {
+      "name": "load_sample_index",
+      "pass": true,
+      "details": {
+        "count": 20
+      }
+    },
+    {
+      "name": "mcp_compat_search",
+      "pass": true,
+      "details": {
+        "count": 3
+      }
+    },
+    {
+      "name": "mcp_compat_fetch",
+      "pass": true,
+      "details": {
+        "status": "active"
+      }
+    },
+    {
+      "name": "mcp_tools_search_objectives",
+      "pass": true,
+      "details": {
+        "count": 3
+      }
+    },
+    {
+      "name": "api_status_search",
+      "pass": true,
+      "details": {
+        "status_code": 200,
+        "search_code": 200
+      }
+    },
+    {
+      "name": "manifest_exists",
+      "pass": true,
+      "details": {
+        "exists": true
+      }
+    },
+    {
+      "name": "openapi_exists",
+      "pass": true,
+      "details": {
+        "exists": true
+      }
+    },
+    {
+      "name": "hf_demo_import_safe",
+      "pass": true,
+      "details": {
+        "summary_contains_aoi": true,
+        "rows": 5,
+        "read_only": true
+      }
+    },
+    {
+      "name": "release_docs_if_generated",
+      "pass": true,
+      "details": {
+        "release_dir_exists": true,
+        "readme_exists": true
+      }
+    }
+  ],
+  "errors": [],
+  "live_network_used": false,
+  "forbidden_actions_exposed": false,
+  "read_only": true,
+  "actual_publish_performed": false
+}

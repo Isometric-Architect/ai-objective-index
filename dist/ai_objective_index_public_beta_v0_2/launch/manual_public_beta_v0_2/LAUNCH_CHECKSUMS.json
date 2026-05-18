@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-05-18T10:25:33.281835+00:00",
+  "algorithm": "sha256",
+  "files": {
+    "launch\\manual_public_beta_v0_2\\COMMUNITY_POST_DRAFTS.md": {
+      "sha256": "813724b3317392b4b80644e9b1149ec3ba6f8ae9b1e96b4e55025a0640e50cdd",
+      "bytes": 1403
+    },
+    "launch\\manual_public_beta_v0_2\\FINAL_CLAIM_BOUNDARY.md": {
+      "sha256": "24406ac372ddef5de49330e5832adb8c404304f59a851da75931f567048a4982",
+      "bytes": 543
+    },
+    "launch\\manual_public_beta_v0_2\\FINAL_KNOWN_LIMITS.md": {
+      "sha256": "fdc39caf2f580e96a4645fdc9ef0c72b519fca0273ac992ab7bebd862c73d19d",
+      "bytes": 289
+    },
+    "launch\\manual_public_beta_v0_2\\FINAL_LINKS_PLACEHOLDER.md": {
+      "sha256": "0a8ba5d35d2a605461f39391606fc895d5c35b8c13d7801817436d00484fd0cf",
+      "bytes": 139
+    },
+    "launch\\manual_public_beta_v0_2\\FINAL_SAFETY_CHECKLIST.md": {
+      "sha256": "b53a1c81114ae25983a2abb79a32cf718dc597fe4f49a948bc0a42a58249b71f",
+      "bytes": 408
+    },
+    "launch\\manual_public_beta_v0_2\\GITHUB_RELEASE_DRAFT.md": {
+      "sha256": "c25adfcf6092ca6662a3f4a49f8576a89feef914eee139a686fcaf6a60033c7b",
+      "bytes": 1169
+    },
+    "launch\\manual_public_beta_v0_2\\HUGGINGFACE_DATASET_UPLOAD_GUIDE.md": {
+      "sha256": "c9ced8d3ba37e99e5b961b756ae8d9a3f396828be3c4f3feb107b84354a23011",
+      "bytes": 418
+    },
+    "launch\\manual_public_beta_v0_2\\HUGGINGFACE_SPACE_UPLOAD_GUIDE.md": {
+      "sha256": "ed29f9f784e4c88b070ab4e7152cf1db13d9245fa94821d292cba79c8798ef08",
+      "bytes": 479
+    },
+    "launch\\manual_public_beta_v0_2\\LAUNCH_CHECKSUMS.json": {
+      "sha256": "aae4f8ddf64b7001f32e843800085b16f3804814560cb17f1d4b87389c517bc6",
+      "bytes": 2860
+    },
+    "launch\\manual_public_beta_v0_2\\LAUNCH_CLAIM_GUARD_RESULT.json": {
+      "sha256": "653b1c4e4b83f5ead43055a4a334b65e9396850cd5cba1ecff2998ea5f385d40",
+      "bytes": 4244
+    },
+    "launch\\manual_public_beta_v0_2\\LAUNCH_FILE_MANIFEST.json": {
+      "sha256": "fe34c3b6be243d1faa07189f1ecd20463038c67c2d26d9cccc88acf1982a0ea8",
+      "bytes": 3170
+    },
+    "launch\\manual_public_beta_v0_2\\LOCAL_DRY_RUN_RESULT.json": {
+      "sha256": "178c0a7f3db534603a9a8d2eb58da95f77e32c5a0b12da1e1e643c8ed3b46d71",
+      "bytes": 1860
+    },
+    "launch\\manual_public_beta_v0_2\\MCP_REGISTRY_SUBMISSION_DRAFT.md": {
+      "sha256": "c9a2a6acff2ebe8687d2d9b46e31dbcf799c606212cd55244072343e1f379ee7",
+      "bytes": 941
+    },
+    "launch\\manual_public_beta_v0_2\\NO_SECRETS_AUDIT_RESULT.json": {
+      "sha256": "15067ac15d3e5cb0d4c8d37ccf33a5399db3ec8c642031c8b5d2371f36ef1540",
+      "bytes": 6137
+    },
+    "launch\\manual_public_beta_v0_2\\README_LAUNCH_STEPS.md": {
+      "sha256": "5303e5aa5365bc5dd264a6c6a009d642a27fa27d17c6be508f26aec76ed3b15e",
+      "bytes": 725
+    }
+  }
+}

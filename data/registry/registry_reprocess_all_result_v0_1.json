@@ -1,0 +1,620 @@
+{
+  "generated_at": "2026-05-18T10:25:44.304368+00:00",
+  "read_only": true,
+  "live_network_used": false,
+  "payload_mode": "manual_raw",
+  "success": true,
+  "manual_raw_needed": false,
+  "export_summary": {
+    "generated_at": "2026-05-18T10:25:43.746175+00:00",
+    "read_only": true,
+    "live_network_used": false,
+    "fixture_mode": false,
+    "object_count": 50,
+    "trace_count": 191,
+    "public_beta_ready_count": 0,
+    "validation_summary": {
+      "object_count": 50,
+      "trace_count": 191,
+      "pass_count": 0,
+      "hold_count": 50,
+      "block_count": 0,
+      "token_counts": {
+        "HOLD_MISSING_REPO": 22,
+        "HOLD_MISSING_DOCS": 28
+      },
+      "warnings": [
+        "repository or homepage is missing",
+        "repository or homepage is missing",
+        "documentation URL is missing",
+        "documentation URL is missing",
+        "documentation URL is missing",
+        "documentation URL is missing",
+        "repository or homepage is missing",
+        "documentation URL is missing",
+        "repository or homepage is missing",
+        "repository or homepage is missing",
+        "documentation URL is missing",
+        "documentation URL is missing",
+        "documentation URL is missing",
+        "repository or homepage is missing",
+        "repository or homepage is missing",
+        "repository or homepage is missing",
+        "repository or homepage is missing",
+        "documentation URL is missing",
+        "documentation URL is missing",
+        "repository or homepage is missing",
+        "repository or homepage is missing",
+        "documentation URL is missing",
+        "repository or homepage is missing",
+        "documentation URL is missing",
+        "documentation URL is missing",
+        "repository or homepage is missing",
+        "repository or homepage is missing",
+        "documentation URL is missing",
+        "documentation URL is missing",
+        "documentation URL is missing",
+        "documentation URL is missing",
+        "documentation URL is missing",
+        "documentation URL is missing",
+        "repository or homepage is missing",
+        "repository or homepage is missing",
+        "repository or homepage is missing",
+        "repository or homepage is missing",
+        "repository or homepage is missing",
+        "documentation URL is missing",
+        "repository or homepage is missing",
+        "documentation URL is missing",
+        "documentation URL is missing",
+        "documentation URL is missing",
+        "documentation URL is missing",
+        "documentation URL is missing",
+        "documentation URL is missing",
+        "documentation URL is missing",
+        "documentation URL is missing",
+        "repository or homepage is missing",
+        "repository or homepage is missing"
+      ],
+      "object_results": [
+        {
+          "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-0",
+          "token": "HOLD_MISSING_REPO",
+          "status": "HOLD",
+          "warnings": [
+            "repository or homepage is missing"
+          ],
+          "trace_count": 3,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-1",
+          "token": "HOLD_MISSING_REPO",
+          "status": "HOLD",
+          "warnings": [
+            "repository or homepage is missing"
+          ],
+          "trace_count": 3,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-0",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 4,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-1",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 4,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-2",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 4,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-agency-lona-trading-2-0-0",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 4,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-aarna-atars-mcp-0-1-0",
+          "token": "HOLD_MISSING_REPO",
+          "status": "HOLD",
+          "warnings": [
+            "repository or homepage is missing"
+          ],
+          "trace_count": 3,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-abmeter-abmeter-0-1-0",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 4,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-adadvisor-mcp-server-1-0-0",
+          "token": "HOLD_MISSING_REPO",
+          "status": "HOLD",
+          "warnings": [
+            "repository or homepage is missing"
+          ],
+          "trace_count": 3,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-adadvisor-mcp-server-1-0-1",
+          "token": "HOLD_MISSING_REPO",
+          "status": "HOLD",
+          "warnings": [
+            "repository or homepage is missing"
+          ],
+          "trace_count": 3,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-adeu-adeu-1-5-2",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 5,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-adramp-google-ads-1-0-0",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 4,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-adramp-google-ads-1-0-1",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 4,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-adramp-google-ads-1-0-2",
+          "token": "HOLD_MISSING_REPO",
+          "status": "HOLD",
+          "warnings": [
+            "repository or homepage is missing"
+          ],
+          "trace_count": 3,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-adramp-google-ads-1-0-3",
+          "token": "HOLD_MISSING_REPO",
+          "status": "HOLD",
+          "warnings": [
+            "repository or homepage is missing"
+          ],
+          "trace_count": 3,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-adweave-meta-ads-mcp-1-0-0",
+          "token": "HOLD_MISSING_REPO",
+          "status": "HOLD",
+          "warnings": [
+            "repository or homepage is missing"
+          ],
+          "trace_count": 3,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-agentdm-agentdm-1-0-0",
+          "token": "HOLD_MISSING_REPO",
+          "status": "HOLD",
+          "warnings": [
+            "repository or homepage is missing"
+          ],
+          "trace_count": 3,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-agentdm-agentdm-2-0-0",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 4,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-agentic-news-mcp-1-0-0",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 4,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-agenticshelf-graffeo-1-0-0",
+          "token": "HOLD_MISSING_REPO",
+          "status": "HOLD",
+          "warnings": [
+            "repository or homepage is missing"
+          ],
+          "trace_count": 3,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-agenticshelf-graffeo-1-0-1",
+          "token": "HOLD_MISSING_REPO",
+          "status": "HOLD",
+          "warnings": [
+            "repository or homepage is missing"
+          ],
+          "trace_count": 3,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-agenticshelf-mcp-1-0-0",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 4,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-agentrapay-agentra-1-0-0",
+          "token": "HOLD_MISSING_REPO",
+          "status": "HOLD",
+          "warnings": [
+            "repository or homepage is missing"
+          ],
+          "trace_count": 3,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-agenttrust-mcp-server-1-1-1",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 5,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-aliengiraffe-spotdb-0-1-0",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 5,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-alpic-mcp-alpic-mcp-0-0-1",
+          "token": "HOLD_MISSING_REPO",
+          "status": "HOLD",
+          "warnings": [
+            "repository or homepage is missing"
+          ],
+          "trace_count": 3,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-alpic-test-test-mcp-server-0-0-1",
+          "token": "HOLD_MISSING_REPO",
+          "status": "HOLD",
+          "warnings": [
+            "repository or homepage is missing"
+          ],
+          "trace_count": 3,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-ankimcp-anki-mcp-server-0-18-4",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 5,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-ankimcp-anki-mcp-server-0-18-4-tunnel",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 5,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-ankimcp-anki-mcp-server-0-18-5",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 5,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-ankimcp-anki-mcp-server-addon-0-15-0",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 4,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-ankimcp-anki-mcp-server-addon-0-15-1",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 4,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-anomalyarmor-armor-mcp-0-6-1",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 5,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-anzenna-anzenna-0-1",
+          "token": "HOLD_MISSING_REPO",
+          "status": "HOLD",
+          "warnings": [
+            "repository or homepage is missing"
+          ],
+          "trace_count": 3,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-appdeploy-deploy-app-1-0-0",
+          "token": "HOLD_MISSING_REPO",
+          "status": "HOLD",
+          "warnings": [
+            "repository or homepage is missing"
+          ],
+          "trace_count": 3,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-artidrop-artidrop-1-0-0",
+          "token": "HOLD_MISSING_REPO",
+          "status": "HOLD",
+          "warnings": [
+            "repository or homepage is missing"
+          ],
+          "trace_count": 3,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-artidrop-artidrop-1-1-0",
+          "token": "HOLD_MISSING_REPO",
+          "status": "HOLD",
+          "warnings": [
+            "repository or homepage is missing"
+          ],
+          "trace_count": 3,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-auteng-docs-1-1-0",
+          "token": "HOLD_MISSING_REPO",
+          "status": "HOLD",
+          "warnings": [
+            "repository or homepage is missing"
+          ],
+          "trace_count": 3,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-auteng-mcp-1-0-0",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 4,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-auteng-mcp-1-0-1",
+          "token": "HOLD_MISSING_REPO",
+          "status": "HOLD",
+          "warnings": [
+            "repository or homepage is missing"
+          ],
+          "trace_count": 3,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-autoblocks-contextlayer-mcp-0-0-3",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 5,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-autoblocks-ctxl-0-0-2",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 5,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-autoblocks-ctxl-mcp-0-0-2",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 5,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-autonomad-computeback-1-1-2",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 5,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-autonomad-computeback-1-1-3",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 5,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-autonomad-travel-1-4-0",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 5,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-auxen-auxen-1-0-0",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 4,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-bankee-inferventis-mcp-1-0-2",
+          "token": "HOLD_MISSING_DOCS",
+          "status": "HOLD",
+          "warnings": [
+            "documentation URL is missing"
+          ],
+          "trace_count": 4,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-baselight-baselight-1-0-0",
+          "token": "HOLD_MISSING_REPO",
+          "status": "HOLD",
+          "warnings": [
+            "repository or homepage is missing"
+          ],
+          "trace_count": 3,
+          "public_beta_ready": false
+        },
+        {
+          "object_id": "mcp-registry-ai-bezal-local-commerce-1-0-0",
+          "token": "HOLD_MISSING_REPO",
+          "status": "HOLD",
+          "warnings": [
+            "repository or homepage is missing"
+          ],
+          "trace_count": 3,
+          "public_beta_ready": false
+        }
+      ],
+      "public_beta_ready_count": 0
+    },
+    "warnings": [],
+    "output_dir": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\registry",
+    "raw_payload_preserved": false
+  },
+  "eval_summary": {
+    "query_count": 5,
+    "result_count": 25,
+    "fixture_only": false
+  },
+  "beta_candidate_count": 50,
+  "public_beta_mcp_count": 50,
+  "quality_summary": {
+    "source_trace_coverage": 1.0,
+    "object_count": 50,
+    "trace_count": 191
+  },
+  "warnings": [],
+  "errors": [],
+  "generated_files": [
+    "data/registry/mcp_registry_objects_v0_1.jsonl",
+    "data/registry/mcp_registry_source_traces_v0_1.jsonl",
+    "data/registry/mcp_registry_validation_results_v0_1.json",
+    "data/registry/mcp_registry_public_beta_index_v0_1.json",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\registry\\mcp_registry_eval_results_v0_1.json",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\registry\\mcp_registry_report_v0_1.md",
+    "data/registry/mcp_registry_beta_candidates_v0_1.jsonl",
+    "data/registry/mcp_registry_beta_candidate_gate_results_v0_1.json",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\registry\\mcp_registry_quality_audit_v0_1.json",
+    "data/registry/mcp_registry_public_beta_mcp_dataset_v0_1.json",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\registry\\mcp_registry_beta_report_v0_1.md",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\registry\\registry_payload_audit_v0_1.json",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\generated\\datascope_qa_results_v0_2.json",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\generated\\beta_readiness_report_v0_2.md",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\generated\\release_readiness_v0_1.json",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\api\\openapi.json",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\generated_mcp_tools_manifest.json"
+  ],
+  "next_action": "Review public_beta_mcp candidates."
+}

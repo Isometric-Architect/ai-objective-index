@@ -1,0 +1,10 @@
+{"control_id":"fc-001","control_type":"missing_pricing","description":"Missing pricing must not produce price_clear."}
+{"control_id":"fc-002","control_type":"missing_commercial_terms","description":"Missing commercial terms must not produce commercial_use_allowed."}
+{"control_id":"fc-003","control_type":"source_url_presence","description":"Source URL presence alone must not become source_supported_field."}
+{"control_id":"fc-004","control_type":"generated_verified","description":"Generated data must not become VERIFIED."}
+{"control_id":"fc-005","control_type":"read_to_train_share_action","description":"Read permission must not become train/share/action permission."}
+{"control_id":"fc-006","control_type":"stale_current_truth","description":"Stale data must not become current truth."}
+{"control_id":"fc-007","control_type":"sample_live_crawl","description":"Sample data must not be presented as live crawl data."}
+{"control_id":"fc-008","control_type":"score_quality_guarantee","description":"Objective score must not become quality guarantee."}
+{"control_id":"fc-009","control_type":"mcp_write_actions","description":"MCP read-only must not expose write/action tools."}
+{"control_id":"fc-010","control_type":"hold_next_action","description":"Every HOLD must include next_action."}

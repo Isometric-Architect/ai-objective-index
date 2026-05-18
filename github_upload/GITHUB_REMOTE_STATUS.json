@@ -1,0 +1,98 @@
+{
+  "generated_at": "2026-05-18T10:26:05.961280+00:00",
+  "owner": "Isometric-Architect",
+  "repo": "ai-objective-index",
+  "visibility": "private",
+  "branch": "main",
+  "release_audit": {
+    "generated_at": "2026-05-18T10:26:05.858162+00:00",
+    "required_release_assets": {
+      "README.md": true,
+      "docs": true,
+      "schemas": true,
+      "src": true,
+      "tests": true,
+      "api/openapi.json": true,
+      "data/generated_mcp_tools_manifest.json": true,
+      "data/registry/mcp_registry_public_beta_mcp_dataset_v0_1.json": true,
+      "data/registry/mcp_registry_beta_candidates_v0_1.jsonl": true,
+      "release/public_beta_v0_2": true,
+      "launch/manual_public_beta_v0_2": true
+    },
+    "missing_required_assets": [],
+    "ignored_examples": {
+      "__pycache__/module.pyc": true,
+      ".pytest_cache/v/cache/nodeids": true,
+      "pytest-cache-files-abc123": true,
+      ".env": true,
+      ".env.local": true,
+      "data/source_cache/source.html": true,
+      "data/generated/tmpabc123/file.txt": true,
+      "data/generated/test_example/file.txt": true,
+      "mcp_registry_raw_v0_1.json": true,
+      "SOURCE_0513_REPACK_FINAL_v1/03_CORE.md": true
+    },
+    "all_ignore_examples_covered": true,
+    "secret_pattern_names": [
+      "openai_key",
+      "github_token",
+      "huggingface_token",
+      "slack_token",
+      "api_key_assignment",
+      "password_assignment",
+      "bearer_token",
+      "private_key",
+      "aws_access_key",
+      "aws_secret_key"
+    ],
+    "zip_path": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\dist\\ai_objective_index_public_beta_v0_2.zip",
+    "zip_reasonable": true,
+    "read_only": true,
+    "live_network_used": false,
+    "actual_publish_performed": false
+  },
+  "pre_upload_audits": {
+    "checks": {
+      "no_secrets": {
+        "exists": true,
+        "ok": true
+      },
+      "launch_claim_guard": {
+        "exists": true,
+        "ok": true
+      },
+      "final_preflight": {
+        "exists": true,
+        "ok": true
+      },
+      "smoke_all": {
+        "exists": true,
+        "ok": true
+      }
+    },
+    "ok": true
+  },
+  "gh_status": {
+    "gh_available": false,
+    "gh_authenticated": false,
+    "message": "GitHub CLI is not installed or not on PATH."
+  },
+  "git_status_before": {
+    "git_repository": false,
+    "branch": "",
+    "remote_v": "",
+    "status": ""
+  },
+  "repo_created": false,
+  "actual_push_performed": false,
+  "actual_publish_performed": false,
+  "remote_url": null,
+  "commit_hash": null,
+  "errors": [],
+  "warnings": [
+    "GitHub CLI is unavailable; no push attempted."
+  ],
+  "next_action": "Install GitHub CLI or create a repository in the browser, then use GITHUB_UPLOAD_COMMANDS.md.",
+  "read_only": true,
+  "live_network_used": false
+}

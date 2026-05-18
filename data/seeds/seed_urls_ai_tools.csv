@@ -1,0 +1,22 @@
+url,category,expected_page_type,notes
+https://example.com/pixelforge,official_docs_pages,homepage,Seed example only; no fetch in Package 6A
+https://example.com/pixelforge/pricing,pricing_pages,pricing,Seed example only; no fetch in Package 6A
+https://example.com/pixelforge/docs,api_reference_pages,docs,Seed example only; no fetch in Package 6A
+https://example.com/clearread-ocr,official_docs_pages,homepage,Seed example only; no fetch in Package 6A
+https://example.com/clearread-ocr/pricing,pricing_pages,pricing,Seed example only; no fetch in Package 6A
+https://github.com/example/browser-mcp-server,github_awesome_lists,github_readme,Seed example only; no fetch in Package 6A
+https://example.com/speechforge/docs,api_reference_pages,docs,Seed example only; no fetch in Package 6A
+https://example.com/vectorlake/pricing,pricing_pages,pricing,Seed example only; no fetch in Package 6A
+https://example.com/agentkit,official_docs_pages,homepage,Seed example only; no fetch in Package 6A
+https://example.com/agentkit/docs,api_reference_pages,docs,Seed example only; no fetch in Package 6A
+https://example.com/llm-gateway/pricing,pricing_pages,pricing,Seed example only; no fetch in Package 6A
+https://example.com/transcriptly,official_docs_pages,homepage,Seed example only; no fetch in Package 6A
+https://example.com/videoai/pricing,pricing_pages,pricing,Seed example only; no fetch in Package 6A
+https://example.com/searchapi/docs,api_reference_pages,api_reference,Seed example only; no fetch in Package 6A
+https://example.com/embedding-api/docs,api_reference_pages,api_reference,Seed example only; no fetch in Package 6A
+https://example.com/local-llm-app,official_docs_pages,homepage,Seed example only; no fetch in Package 6A
+https://example.com/promptops/docs,official_docs_pages,docs,Seed example only; no fetch in Package 6A
+https://example.com/ragframe,github_awesome_lists,github_readme,Seed example only; no fetch in Package 6A
+https://example.com/labelbench/pricing,pricing_pages,pricing,Seed example only; no fetch in Package 6A
+https://example.com/monitorai/docs,api_reference_pages,docs,Seed example only; no fetch in Package 6A
+

@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "ai-objective-index": {
+      "command": "python",
+      "args": [
+        "-m",
+        "ai_objective_index.mcp_stdio_entrypoint"
+      ],
+      "env": {
+        "AOI_READ_ONLY": "true"
+      },
+      "note": "Illustrative local stdio config. AOI is read-only and does not crawl, buy, book, log in, email, submit forms, purchase, connect accounts, verify suppliers, or sign contracts."
+    }
+  }
+}

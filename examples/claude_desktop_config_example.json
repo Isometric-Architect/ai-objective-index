@@ -1,0 +1,14 @@
+{
+  "read_only_warning": "Illustrative only. AOI v0.1 tools are read-only and never buy, book, pay, log in, send email, submit forms, or sign contracts.",
+  "mcpServers": {
+    "ai-objective-index": {
+      "command": "python",
+      "args": [
+        "-m",
+        "ai_objective_index.mcp_server"
+      ],
+      "env": {}
+    }
+  }
+}
+

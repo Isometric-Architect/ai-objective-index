@@ -1,0 +1,1173 @@
+{
+  "generated_at": "2026-05-18T10:25:43.853482+00:00",
+  "read_only": true,
+  "live_network_used": false,
+  "source_mode": "live_or_manual_raw",
+  "object_count": 50,
+  "trace_count": 191,
+  "beta_candidate_count": 50,
+  "decision_counts": {
+    "PASS_PUBLIC_BETA_CANDIDATE": 50
+  },
+  "hold_counts": {
+    "HOLD_MISSING_REPOSITORY": 22,
+    "HOLD_MISSING_PACKAGE": 2
+  },
+  "block_counts": {},
+  "object_results": [
+    {
+      "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [
+        "HOLD_MISSING_REPOSITORY"
+      ],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [
+        "Repository metadata is missing."
+      ],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 3,
+      "confidence": 0.6,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-1",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [
+        "HOLD_MISSING_REPOSITORY"
+      ],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [
+        "Repository metadata is missing."
+      ],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 3,
+      "confidence": 0.6,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 4,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-1",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 4,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-2",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 4,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-agency-lona-trading-2-0-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 4,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-aarna-atars-mcp-0-1-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [
+        "HOLD_MISSING_REPOSITORY"
+      ],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [
+        "Repository metadata is missing."
+      ],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 3,
+      "confidence": 0.6,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-abmeter-abmeter-0-1-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 4,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-adadvisor-mcp-server-1-0-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [
+        "HOLD_MISSING_REPOSITORY"
+      ],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [
+        "Repository metadata is missing."
+      ],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 3,
+      "confidence": 0.6,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-adadvisor-mcp-server-1-0-1",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [
+        "HOLD_MISSING_REPOSITORY"
+      ],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [
+        "Repository metadata is missing."
+      ],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 3,
+      "confidence": 0.6,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-adeu-adeu-1-5-2",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 5,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-adramp-google-ads-1-0-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 4,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-adramp-google-ads-1-0-1",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 4,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-adramp-google-ads-1-0-2",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [
+        "HOLD_MISSING_REPOSITORY"
+      ],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [
+        "Repository metadata is missing."
+      ],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 3,
+      "confidence": 0.6,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-adramp-google-ads-1-0-3",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [
+        "HOLD_MISSING_REPOSITORY"
+      ],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [
+        "Repository metadata is missing."
+      ],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 3,
+      "confidence": 0.6,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-adweave-meta-ads-mcp-1-0-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [
+        "HOLD_MISSING_REPOSITORY"
+      ],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [
+        "Repository metadata is missing."
+      ],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 3,
+      "confidence": 0.6,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-agentdm-agentdm-1-0-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [
+        "HOLD_MISSING_REPOSITORY"
+      ],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [
+        "Repository metadata is missing."
+      ],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 3,
+      "confidence": 0.6,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-agentdm-agentdm-2-0-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 4,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-agentic-news-mcp-1-0-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 4,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-agenticshelf-graffeo-1-0-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [
+        "HOLD_MISSING_REPOSITORY"
+      ],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [
+        "Repository metadata is missing."
+      ],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 3,
+      "confidence": 0.6,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-agenticshelf-graffeo-1-0-1",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [
+        "HOLD_MISSING_REPOSITORY"
+      ],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [
+        "Repository metadata is missing."
+      ],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 3,
+      "confidence": 0.6,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-agenticshelf-mcp-1-0-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 4,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-agentrapay-agentra-1-0-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [
+        "HOLD_MISSING_REPOSITORY"
+      ],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [
+        "Repository metadata is missing."
+      ],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 3,
+      "confidence": 0.6,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-agenttrust-mcp-server-1-1-1",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 5,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-aliengiraffe-spotdb-0-1-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 5,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-alpic-mcp-alpic-mcp-0-0-1",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [
+        "HOLD_MISSING_REPOSITORY"
+      ],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [
+        "Repository metadata is missing."
+      ],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 3,
+      "confidence": 0.6,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-alpic-test-test-mcp-server-0-0-1",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [
+        "HOLD_MISSING_REPOSITORY"
+      ],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [
+        "Repository metadata is missing."
+      ],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 3,
+      "confidence": 0.6,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-ankimcp-anki-mcp-server-0-18-4",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 5,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-ankimcp-anki-mcp-server-0-18-4-tunnel",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 5,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-ankimcp-anki-mcp-server-0-18-5",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 5,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-ankimcp-anki-mcp-server-addon-0-15-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [
+        "HOLD_MISSING_PACKAGE"
+      ],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [
+        "Package, remote, or install metadata is missing."
+      ],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 4,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-ankimcp-anki-mcp-server-addon-0-15-1",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [
+        "HOLD_MISSING_PACKAGE"
+      ],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [
+        "Package, remote, or install metadata is missing."
+      ],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 4,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-anomalyarmor-armor-mcp-0-6-1",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 5,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-anzenna-anzenna-0-1",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [
+        "HOLD_MISSING_REPOSITORY"
+      ],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [
+        "Repository metadata is missing."
+      ],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 3,
+      "confidence": 0.6,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-appdeploy-deploy-app-1-0-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [
+        "HOLD_MISSING_REPOSITORY"
+      ],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [
+        "Repository metadata is missing."
+      ],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 3,
+      "confidence": 0.6,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-artidrop-artidrop-1-0-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [
+        "HOLD_MISSING_REPOSITORY"
+      ],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [
+        "Repository metadata is missing."
+      ],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 3,
+      "confidence": 0.6,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-artidrop-artidrop-1-1-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [
+        "HOLD_MISSING_REPOSITORY"
+      ],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [
+        "Repository metadata is missing."
+      ],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 3,
+      "confidence": 0.6,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-auteng-docs-1-1-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [
+        "HOLD_MISSING_REPOSITORY"
+      ],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [
+        "Repository metadata is missing."
+      ],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 3,
+      "confidence": 0.6,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-auteng-mcp-1-0-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 4,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-auteng-mcp-1-0-1",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [
+        "HOLD_MISSING_REPOSITORY"
+      ],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [
+        "Repository metadata is missing."
+      ],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 3,
+      "confidence": 0.6,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-autoblocks-contextlayer-mcp-0-0-3",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 5,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-autoblocks-ctxl-0-0-2",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 5,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-autoblocks-ctxl-mcp-0-0-2",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 5,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-autonomad-computeback-1-1-2",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 5,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-autonomad-computeback-1-1-3",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 5,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-autonomad-travel-1-4-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 5,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-auxen-auxen-1-0-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 4,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-bankee-inferventis-mcp-1-0-2",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 4,
+      "confidence": 0.7,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-baselight-baselight-1-0-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [
+        "HOLD_MISSING_REPOSITORY"
+      ],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [
+        "Repository metadata is missing."
+      ],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 3,
+      "confidence": 0.6,
+      "source_mode": "live_or_manual_raw"
+    },
+    {
+      "object_id": "mcp-registry-ai-bezal-local-commerce-1-0-0",
+      "decision": "PASS_PUBLIC_BETA_CANDIDATE",
+      "holds": [
+        "HOLD_MISSING_REPOSITORY"
+      ],
+      "blocks": [],
+      "beta_candidate": true,
+      "verified": false,
+      "action_ready": false,
+      "status_to_display": "REGISTRY_METADATA_CANDIDATE",
+      "warnings": [
+        "Repository metadata is missing."
+      ],
+      "not_asserted": [
+        "security_certification",
+        "supplier_verification",
+        "quality_guarantee",
+        "action_permission",
+        "purchasing_advice"
+      ],
+      "trace_count": 3,
+      "confidence": 0.6,
+      "source_mode": "live_or_manual_raw"
+    }
+  ],
+  "warnings": [],
+  "not_asserted": [
+    "security_certification",
+    "supplier_verification",
+    "quality_guarantee",
+    "action_permission",
+    "purchasing_advice"
+  ]
+}

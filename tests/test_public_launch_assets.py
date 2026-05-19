@@ -16,3 +16,18 @@ def test_public_launch_assets_exist():
     assert Path("docs/token_revocation_after_upload.md").exists()
     assert Path("public_launch/GO_NO_GO_DECISION.md").exists()
     assert Path("public_launch/PUBLIC_ANNOUNCEMENT_DRAFTS.md").exists()
+
+
+def test_package_8k_public_launch_assets_exist():
+    from ai_objective_index.public_launch_execute import write_post_public_assets
+
+    write_post_public_assets()
+
+    assert Path("docs/package_8k_public_visibility_switch.md").exists()
+    assert Path("docs/post_public_review.md").exists()
+    assert Path("public_launch/POST_PUBLIC_REVIEW_CHECKLIST.md").exists()
+    assert Path("public_launch/COMMUNITY_POST_HOLD_NOTE.md").exists()
+    assert Path("public_launch/TOKEN_REVOKE_AFTER_PUBLIC_NOTE.md").exists()
+
+    token_note = Path("public_launch/TOKEN_REVOKE_AFTER_PUBLIC_NOTE.md").read_text(encoding="utf-8").lower()
+    assert "do not paste tokens into chat" in token_note

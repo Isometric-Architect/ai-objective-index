@@ -133,6 +133,20 @@ python -m ai_objective_index.prepublic_sync --execute
 
 Package 8J still does not change visibility. Public switching remains a later manual decision guarded by `AOI_PUBLIC_LAUNCH_CONFIRM=YES`.
 
+## Package 8K Public Visibility Switch
+
+When the owner explicitly approves public visibility:
+
+```powershell
+python -m ai_objective_index.public_launch_execute --dry-run
+$env:AOI_PUBLIC_LAUNCH_CONFIRM="YES"
+python -m ai_objective_index.public_launch_execute --execute
+python -m ai_objective_index.public_url_qa
+python -m ai_objective_index.post_public_state_report
+```
+
+Package 8K changes visibility only. It does not create a GitHub Release, post to communities, submit to MCP Registry, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
+
 
 ## GitHub Private Staging
 

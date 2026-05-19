@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-05-19T21:12:11.032850+00:00",
+  "github_url": "https://github.com/Isometric-Architect/ai-objective-index",
+  "hf_space_url": "https://huggingface.co/spaces/edict-lab/ai-objective-index-demo",
+  "hf_dataset_url": "https://huggingface.co/datasets/edict-lab/ai-objective-index-sample",
+  "public_beta_mcp_count": 50,
+  "visibility_status": {
+    "github": "public",
+    "hf_space": "public",
+    "hf_dataset": "public",
+    "url_qa_token": "PASS"
+  },
+  "community_post_performed": false,
+  "mcp_registry_submission_performed": false,
+  "github_release_created": false,
+  "token_revocation_recommended": true,
+  "next_options": {
+    "A": "wait and observe",
+    "B": "create GitHub Release",
+    "C": "post conservative community feedback request",
+    "D": "submit MCP Registry later"
+  },
+  "warnings": [
+    "Public visibility is not a community launch.",
+    "Do not claim verification, security certification, quality guarantee, production readiness, or purchasing advice."
+  ],
+  "read_only": true,
+  "actual_publish_performed": true
+}

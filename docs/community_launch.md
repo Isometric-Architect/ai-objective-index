@@ -29,6 +29,8 @@ Package 8I-R adds a no-contact public beta path under `public_launch/PUBLIC_BETA
 
 Package 8J adds final pre-public dry-run outputs under `public_launch/FINAL_PUBLIC_DRY_RUN_RESULT.json` and `public_launch/PREPUBLIC_STATE_REPORT.json`. These files help decide whether to keep private, pause, or explicitly switch public later. They do not post anything and do not change visibility.
 
+Package 8K may make the GitHub repository and Hugging Face Space/Dataset public after explicit confirmation. That is still not a community launch. Review `public_launch/COMMUNITY_POST_HOLD_NOTE.md` and check public URLs before posting anywhere.
+
 ## Short Public Message
 
 AI Objective Index is a read-only MCP/API benchmark for comparing AI tools, APIs, SaaS products, and MCP servers by explicit objectives, constraints, source traces, missing fields, and decision receipts.

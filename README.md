@@ -612,6 +612,20 @@ python -m ai_objective_index.prepublic_sync --execute
 
 Package 8J does not make GitHub or Hugging Face public, create a GitHub Release, post to communities, submit to MCP Registry, print/store tokens, force push, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
 
+## Package 8K Public Visibility Switch
+
+Package 8K performs the public visibility switch only after explicit confirmation:
+
+```powershell
+python -m ai_objective_index.public_launch_execute --dry-run
+$env:AOI_PUBLIC_LAUNCH_CONFIRM="YES"
+python -m ai_objective_index.public_launch_execute --execute
+python -m ai_objective_index.public_url_qa
+python -m ai_objective_index.post_public_state_report
+```
+
+Package 8K may make the prepared GitHub repo, Hugging Face Space, and Hugging Face Dataset public. It does not create a GitHub Release, post to communities, submit to MCP Registry, crawl, scrape, call external LLM APIs, print/store tokens, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
+
 ## Claim Boundary
 
 Allowed claim: AOI is a read-only MCP/API objective ranking and comparison tool with explicit schemas, sample source traces, missing-field reporting, and decision receipt contracts.
@@ -659,6 +673,8 @@ AOI output is not a quality guarantee. It is not legal, financial, medical, purc
 - `docs/issue_based_feedback_loop.md`: GitHub Issues feedback workflow.
 - `docs/package_8j_prepublic_sync.md`: pre-public private sync and dry-run commands.
 - `docs/final_public_dry_run.md`: final dry-run and public switch gating.
+- `docs/package_8k_public_visibility_switch.md`: explicit public visibility switch gate.
+- `docs/post_public_review.md`: post-public URL and claim-boundary review.
 - `docs/token_revocation_after_upload.md`: token revocation guidance after HF uploads.
 - `docs/public_data_intake_policy.md`: public-data intake limits.
 - `docs/real_mcp_integration.md`: real MCP SDK integration and fallback behavior.

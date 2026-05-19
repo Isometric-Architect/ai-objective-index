@@ -169,3 +169,9 @@ It does not make anything public by default, post to communities, submit to MCP 
 Package 8J syncs no-contact launch materials to private staging when explicitly run with `--execute`, then writes a final public dry-run and pre-public state report.
 
 It does not make GitHub public, make Hugging Face public, create a GitHub Release, post to communities, submit to MCP Registry, crawl, scrape, follow links, print/store tokens, force push, or perform external actions.
+
+## Package 8K Public Visibility Switch
+
+Package 8K performs the public visibility switch after explicit confirmation through `AOI_PUBLIC_LAUNCH_CONFIRM=YES`.
+
+It may make the prepared GitHub repository, Hugging Face Space, and Hugging Face Dataset public. It does not post to communities, create a GitHub Release, submit to MCP Registry, crawl, scrape, follow links, print/store tokens, force push, or perform external actions.

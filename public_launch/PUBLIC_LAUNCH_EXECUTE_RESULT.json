@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-05-19T21:09:57.958148+00:00",
+  "dry_run": false,
+  "execute": true,
+  "env_confirm_present": true,
+  "github_visibility_changed": true,
+  "hf_space_visibility_changed": true,
+  "hf_dataset_visibility_changed": true,
+  "public_switch_performed": true,
+  "github_url": "https://github.com/Isometric-Architect/ai-objective-index",
+  "hf_space_url": "https://huggingface.co/spaces/edict-lab/ai-objective-index-demo",
+  "hf_dataset_url": "https://huggingface.co/datasets/edict-lab/ai-objective-index-sample",
+  "token_printed": false,
+  "errors": [],
+  "warnings": [],
+  "checks": {
+    "final_public_dry_run": "PASS",
+    "no_contact_launch_gate": "PASS",
+    "public_beta_message_guard": "PASS",
+    "no_secrets_audit": "HOLD",
+    "no_secret_findings": 0,
+    "launch_claim_guard": "PASS",
+    "smoke_all": true
+  },
+  "community_post_performed": false,
+  "github_release_created": false,
+  "mcp_registry_submission_performed": false,
+  "force_push_used": false,
+  "read_only": true,
+  "written_assets": [
+    "public_launch\\POST_PUBLIC_REVIEW_CHECKLIST.md",
+    "public_launch\\COMMUNITY_POST_HOLD_NOTE.md",
+    "public_launch\\TOKEN_REVOKE_AFTER_PUBLIC_NOTE.md"
+  ],
+  "huggingface_authenticated": true,
+  "next_action": "Public visibility switch completed. Run public_url_qa and post_public_state_report."
+}

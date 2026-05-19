@@ -150,7 +150,14 @@ Only after the user explicitly says to proceed:
 2. Run:
 
 ```powershell
-python -m ai_objective_index.public_visibility_switch --execute
+python -m ai_objective_index.public_launch_execute --execute
+```
+
+Then run:
+
+```powershell
+python -m ai_objective_index.public_url_qa
+python -m ai_objective_index.post_public_state_report
 ```
 
 ## B. Manual Public Switch

@@ -219,3 +219,10 @@
 - Added final public visibility dry-run and pre-public state report.
 - Added final public switch instructions and pre-public review checklist.
 - Preserved Package 8J exclusions: no public visibility change, community posting, MCP Registry submission, GitHub Release creation, crawling, scraping, link following, external LLM API calls, token printing/storage, force push, payment, booking, login automation, email, form submission, purchase, contract signing, account connection, supplier claim/verify, profile modification, or claims of verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
+
+## 0.1.0-package-8k
+
+- Added explicit public visibility switch executor requiring `AOI_PUBLIC_LAUNCH_CONFIRM=YES`.
+- Added public URL QA and post-public state reporting.
+- Added post-public review checklist, community post HOLD note, and token revocation reminder.
+- Preserved Package 8K exclusions: no community posting, GitHub Release creation, MCP Registry submission, crawling, scraping, link following, external LLM API calls, token printing/storage, force push, payment, booking, login automation, email, form submission, purchase, contract signing, account connection, supplier claim/verify, profile modification, or claims of verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.

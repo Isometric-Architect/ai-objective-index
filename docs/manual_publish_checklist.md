@@ -80,10 +80,15 @@ Package 7B does not publish automatically. Use this checklist if a human decides
 76. If private sync is desired and dry-run is clean, run `python -m ai_objective_index.prepublic_sync --execute`.
 77. Review `public_launch/FINAL_PUBLIC_SWITCH_INSTRUCTIONS.md`.
 78. Review `public_launch/PREPUBLIC_REVIEW_CHECKLIST.md`.
-79. If CLI/API upload is unavailable, create a Hugging Face Space manually if desired and upload `hf_upload/space/`.
-80. If CLI/API upload is unavailable, create a Hugging Face Dataset manually if desired and upload `hf_upload/dataset/`.
-81. Submit to MCP Registry manually if desired.
-82. Post a community feedback request manually if desired.
+79. Run `python -m ai_objective_index.public_launch_execute --dry-run`.
+80. If the owner explicitly approves public switch, set `$env:AOI_PUBLIC_LAUNCH_CONFIRM="YES"` and run `python -m ai_objective_index.public_launch_execute --execute`.
+81. Run `python -m ai_objective_index.public_url_qa`.
+82. Run `python -m ai_objective_index.post_public_state_report`.
+83. Review `public_launch/POST_PUBLIC_REVIEW_CHECKLIST.md`.
+84. If CLI/API upload is unavailable, create a Hugging Face Space manually if desired and upload `hf_upload/space/`.
+85. If CLI/API upload is unavailable, create a Hugging Face Dataset manually if desired and upload `hf_upload/dataset/`.
+86. Submit to MCP Registry manually if desired.
+87. Post a community feedback request manually if desired.
 
 Do not claim AOI is an official standard, universally adopted, a quality guarantee, legal/security/compliance certification, purchasing advice, or an external action executor.
 

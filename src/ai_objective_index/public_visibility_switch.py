@@ -151,9 +151,15 @@ def run_public_visibility_switch(
 
     try:
         api = api or _api()
-        api.update_repo_visibility(repo_id="edict-lab/ai-objective-index-demo", repo_type="space", private=False)
+        if hasattr(api, "update_repo_visibility"):
+            api.update_repo_visibility(repo_id="edict-lab/ai-objective-index-demo", repo_type="space", private=False)
+        else:
+            api.update_repo_settings(repo_id="edict-lab/ai-objective-index-demo", repo_type="space", private=False)
         result["hf_space_visibility_changed"] = True
-        api.update_repo_visibility(repo_id="edict-lab/ai-objective-index-sample", repo_type="dataset", private=False)
+        if hasattr(api, "update_repo_visibility"):
+            api.update_repo_visibility(repo_id="edict-lab/ai-objective-index-sample", repo_type="dataset", private=False)
+        else:
+            api.update_repo_settings(repo_id="edict-lab/ai-objective-index-sample", repo_type="dataset", private=False)
         result["hf_dataset_visibility_changed"] = True
     except Exception as exc:
         result["errors"].append(f"Hugging Face visibility change failed or unavailable: {str(exc)[:300]}")

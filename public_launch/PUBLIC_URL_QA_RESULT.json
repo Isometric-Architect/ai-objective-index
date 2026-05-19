@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-05-19T21:11:59.731699+00:00",
+  "overall_token": "PASS",
+  "github_public_checked": {
+    "checked": true,
+    "reachable": true,
+    "status": 200,
+    "error": null
+  },
+  "hf_space_public_checked": {
+    "checked": true,
+    "reachable": true,
+    "status": 200,
+    "error": null
+  },
+  "hf_dataset_public_checked": {
+    "checked": true,
+    "reachable": true,
+    "status": 200,
+    "error": null
+  },
+  "links": {
+    "github_url": "https://github.com/Isometric-Architect/ai-objective-index",
+    "hf_space_url": "https://huggingface.co/spaces/edict-lab/ai-objective-index-demo",
+    "hf_dataset_url": "https://huggingface.co/datasets/edict-lab/ai-objective-index-sample",
+    "recorded": {
+      "github": true,
+      "hf_space": true,
+      "hf_dataset": true
+    }
+  },
+  "forbidden_claim_findings": [],
+  "community_post_performed": false,
+  "github_release_created": false,
+  "mcp_registry_submission_performed": false,
+  "warnings": [
+    "If URL checks are NOT_CHECKED, manually open the public URLs in a private browser.",
+    "URL reachability is not a product-readiness, safety, security, or quality guarantee."
+  ],
+  "next_action": "Open public URLs manually and run post_public_state_report.",
+  "read_only": true,
+  "live_network_used": true,
+  "actual_publish_performed": false
+}

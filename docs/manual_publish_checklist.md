@@ -46,13 +46,38 @@ Package 7B does not publish automatically. Use this checklist if a human decides
 42. Run `python -m ai_objective_index.release_archive_builder`.
 43. Run `python -m ai_objective_index.github_staging` if GitHub staging upload is desired.
 44. Review `github_upload/`.
-45. Review `release/public_beta_v0_1/`, `release/public_beta_v0_2/`, and `launch/manual_public_beta_v0_2/`.
-46. Create a GitHub release manually if desired.
-47. Create a Hugging Face Space manually if desired.
-48. Create a Hugging Face Dataset manually if desired.
-49. Submit to MCP Registry manually if desired.
-50. Post a community feedback request manually if desired.
+45. Run `python -m ai_objective_index.github_post_upload_qa`.
+46. Run `python -m ai_objective_index.github_link_binder`.
+47. Run `python -m ai_objective_index.public_switch_preflight`.
+48. Review `github_upload/GITHUB_WEB_REVIEW_CHECKLIST.md`.
+49. Review `github_upload/PUBLIC_VISIBILITY_DECISION_CHECKLIST.md`.
+50. Review `release/public_beta_v0_1/`, `release/public_beta_v0_2/`, and `launch/manual_public_beta_v0_2/`.
+51. Create a GitHub release manually if desired.
+52. Run `python -m ai_objective_index.hf_upload_packager` if Hugging Face upload prep is desired.
+53. Run `python -m ai_objective_index.hf_upload_audit`.
+54. Run `python -m ai_objective_index.hf_auth_check`.
+55. Run `python -m ai_objective_index.hf_private_upload --dry-run`.
+56. If local Hugging Face authentication is present and private upload is desired, run `python -m ai_objective_index.hf_private_upload --execute`.
+57. Run `python -m ai_objective_index.hf_post_upload_qa`.
+58. Run `python -m ai_objective_index.deployment_link_sync`.
+59. Run `python -m ai_objective_index.private_deployment_qa`.
+60. Run `python -m ai_objective_index.hf_github_crosslink_audit`.
+61. Run `python -m ai_objective_index.deployment_push_sync --dry-run`.
+62. If all private deployment checks pass, run `python -m ai_objective_index.deployment_push_sync --execute`.
+63. If CLI/API upload is unavailable, create a Hugging Face Space manually if desired and upload `hf_upload/space/`.
+64. If CLI/API upload is unavailable, create a Hugging Face Dataset manually if desired and upload `hf_upload/dataset/`.
+65. Submit to MCP Registry manually if desired.
+66. Post a community feedback request manually if desired.
 
 Do not claim AOI is an official standard, universally adopted, a quality guarantee, legal/security/compliance certification, purchasing advice, or an external action executor.
 
 For v0.2 real-data public beta, also do not claim verified MCP servers, safe MCP servers, security certification, or quality guaranteed tools.
+
+## Private Deployment Links
+
+- GitHub private staging repo: https://github.com/Isometric-Architect/ai-objective-index
+- Hugging Face Space, private: https://huggingface.co/spaces/edict-lab/ai-objective-index-demo
+- Hugging Face Dataset, private: https://huggingface.co/datasets/edict-lab/ai-objective-index-sample
+- MCP Registry submission: HOLD, manual only.
+
+These links are private deployment links unless the owner manually changes visibility. They are not a public release claim. `public_beta_mcp` records are source-traced registry metadata candidates; they are not verified, not safe/certified, not security certified, not a quality guarantee, and not purchasing advice.

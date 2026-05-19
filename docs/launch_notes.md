@@ -125,3 +125,27 @@ No publishing, additional live network, crawling, scraping, link following, regi
 Package 8B prepares local launch execution assets, no-secrets checks, claim guards, dry-run output, and a local archive.
 
 It does not publish, upload, post, submit to MCP Registry, run live network, crawl, scrape, follow links, or execute external actions.
+
+## Package 8D GitHub Private Staging QA
+
+Package 8D verifies the GitHub private staging repository and binds the real GitHub URL into local materials.
+
+It does not make the repository public, create a release, upload to Hugging Face, post to communities, submit to MCP Registry, crawl, scrape, or perform external actions.
+
+## Package 8F Hugging Face Manual Upload Bundle
+
+Package 8F prepares `hf_upload/space/` and `hf_upload/dataset/` for manual Hugging Face web upload.
+
+It does not upload, use tokens, store secrets, make GitHub public, post to communities, submit to MCP Registry, crawl, scrape, fetch network data, or perform external actions.
+
+## Package 8G Hugging Face Private Upload
+
+Package 8G adds token-safe Hugging Face authentication checks, private-only Space/Dataset upload helpers, fallback browser instructions, and post-upload QA.
+
+The default is dry-run. Execute mode requires existing local Hugging Face authentication and keeps both repos private. Package 8G does not print or store tokens, make Hugging Face repos public, post to communities, submit to MCP Registry, crawl, scrape, or perform external actions.
+
+## Package 8H Private Deployment Sync
+
+Package 8H binds the private GitHub and Hugging Face URLs into local docs and release materials, verifies private deployment status, audits crosslinks, and can push the private sync to GitHub.
+
+It does not make GitHub or Hugging Face public, create a GitHub release, post to communities, submit to MCP Registry, crawl, scrape, follow links, print/store tokens, force push, or perform external actions.

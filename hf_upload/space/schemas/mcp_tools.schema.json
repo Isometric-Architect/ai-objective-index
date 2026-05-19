@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-objective-index.example/schemas/mcp_tools.schema.json",
+  "title": "AOIReadOnlyMcpManifest",
+  "description": "Schema for the Package 2 read-only AOI MCP tool manifest. The manifest can be generated without a live MCP runtime.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "server_name",
+    "purpose",
+    "read_only",
+    "tools",
+    "forbidden_actions"
+  ],
+  "properties": {
+    "server_name": {
+      "const": "ai-objective-index"
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1
+    },
+    "read_only": {
+      "const": true
+    },
+    "default_data_scope": {
+      "type": "string",
+      "enum": [
+        "sample",
+        "generated",
+        "integrated",
+        "curated",
+        "public_beta",
+        "mcp_registry",
+        "public_beta_mcp"
+      ]
+    },
+    "data_scopes": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "sample",
+          "generated",
+          "integrated",
+          "curated",
+          "public_beta",
+          "mcp_registry",
+          "public_beta_mcp"
+        ]
+      }
+    },
+    "tools": {
+      "type": "array",
+      "minItems": 9,
+      "items": {
+        "$ref": "#/$defs/tool"
+      }
+    },
+    "forbidden_actions": {
+      "$ref": "#/$defs/forbidden_actions"
+    }
+  },
+  "$defs": {
+    "forbidden_actions": {
+      "type": "array",
+      "minItems": 8,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "payment",
+          "booking",
+          "login",
+          "email_sending",
+          "form_submission",
+          "purchase",
+          "contract_signing",
+          "account_connection"
+        ]
+      },
+      "contains": {
+        "const": "payment"
+      }
+    },
+    "tool": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "description",
+        "read_only",
+        "input_schema",
+        "output_schema"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "enum": [
+            "search",
+            "fetch",
+            "search_objectives",
+            "rank_options",
+            "compare_tools",
+            "explain_score",
+            "get_source_trace",
+            "list_missing_fields",
+            "generate_decision_receipt"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "read_only": {
+          "const": true
+        },
+        "input_schema": {
+          "type": "object"
+        },
+        "output_schema": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

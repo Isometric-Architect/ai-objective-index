@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-05-19T19:46:34.282851+00:00",
+  "space_url": "https://huggingface.co/spaces/edict-lab/ai-objective-index-demo",
+  "dataset_url": "https://huggingface.co/datasets/edict-lab/ai-objective-index-sample",
+  "space_exists_if_checked": true,
+  "dataset_exists_if_checked": true,
+  "visibility_if_known": {
+    "space": "private",
+    "dataset": "private"
+  },
+  "build_status_if_available": "RUNNING",
+  "authenticated": true,
+  "qa_token": "PASS",
+  "errors": [],
+  "warnings": [],
+  "next_action": "Open the private Space/Dataset URLs and test the demo query.",
+  "token_printed": false,
+  "actual_upload_performed": false,
+  "visibility_changed": false
+}

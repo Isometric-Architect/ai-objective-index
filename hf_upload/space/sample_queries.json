@@ -1,0 +1,18 @@
+[
+  {
+    "query": "Find a cheap image generation API with commercial-use terms.",
+    "objective": "low cost commercial use",
+    "limit": 5
+  },
+  {
+    "query": "Compare MCP servers for browser automation.",
+    "objective": "browser automation MCP server with clear docs",
+    "limit": 5
+  },
+  {
+    "query": "Find AI coding tools with clear pricing and docs.",
+    "objective": "developer-friendly AI coding assistant",
+    "limit": 5
+  }
+]
+

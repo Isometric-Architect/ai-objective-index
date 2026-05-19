@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-objective-index.example/schemas/decision_receipt.schema.json",
+  "title": "DecisionReceipt",
+  "description": "A read-only explanation of why an object was selected for an objective.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "selected_object_id",
+    "objective",
+    "constraints_checked",
+    "why_selected",
+    "alternatives",
+    "known_limits",
+    "source_trace_ids",
+    "timestamp"
+  ],
+  "properties": {
+    "selected_object_id": {
+      "type": "string",
+      "pattern": "^aoi-[a-z0-9][a-z0-9-]*$"
+    },
+    "objective": {
+      "type": "string",
+      "minLength": 1
+    },
+    "constraints_checked": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "constraint",
+          "status",
+          "note"
+        ],
+        "properties": {
+          "constraint": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "met",
+              "not_met",
+              "unknown",
+              "partial"
+            ]
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "why_selected": {
+      "type": "string",
+      "minLength": 1
+    },
+    "alternatives": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "object_id",
+          "reason_not_selected"
+        ],
+        "properties": {
+          "object_id": {
+            "type": "string",
+            "pattern": "^aoi-[a-z0-9][a-z0-9-]*$"
+          },
+          "reason_not_selected": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "known_limits": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "source_trace_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^trace-[a-z0-9][a-z0-9-]*$"
+      }
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
+

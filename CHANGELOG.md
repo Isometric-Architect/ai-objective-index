@@ -168,3 +168,33 @@
 - Added GitHub staging and post-upload checklist docs.
 - Added `github_upload/` summary/manual-command output path.
 - Preserved Package 8C exclusions: no token/password capture, force push, remote deletion, public publish unless explicitly configured, Hugging Face upload, community posting, MCP Registry submission, crawling, scraping, link following, external LLM API, payment, booking, login, email, form submission, purchase, contract signing, account connection, supplier claim/verify, or profile modification.
+
+## 0.1.0-package-8d
+
+- Added GitHub private staging QA command and output.
+- Added GitHub link binder for README, release, launch, and community docs.
+- Added public switch preflight with required manual confirmation.
+- Added GitHub web review checklist, public visibility checklist, and Hugging Face HOLD note.
+- Preserved Package 8D exclusions: no visibility change, GitHub release creation, Hugging Face upload, community posting, MCP Registry submission, live crawling, arbitrary scraping, link following, external LLM API, payment, booking, login, email, form submission, purchase, contract signing, account connection, supplier claim/verify, or profile modification.
+
+## 0.1.0-package-8f
+
+- Added Hugging Face manual upload packager for `hf_upload/space/` and `hf_upload/dataset/`.
+- Added Hugging Face upload audit for required files, no-secrets checks, claim boundaries, cache exclusions, and no network-fetch snippets in the Space app.
+- Added beginner-friendly Space, Dataset, and final checklist upload instructions.
+- Preserved Package 8F exclusions: no Hugging Face upload, token usage, secret storage, GitHub public switch, community posting, MCP Registry submission, live crawling, network fetch, arbitrary scraping, link following, external LLM API, payment, booking, login, email, form submission, purchase, contract signing, account connection, supplier claim/verify, or profile modification.
+
+## 0.1.0-package-8g
+
+- Added Hugging Face authentication check with token-safe output.
+- Added private-only Hugging Face Space/Dataset upload helper with dry-run default and browser fallback instructions.
+- Added Hugging Face post-upload QA for private Space/Dataset URLs.
+- Added Package 8G Hugging Face CLI/API upload docs and tests.
+- Preserved Package 8G exclusions: no token capture or printing, public Hugging Face visibility, community posting, MCP Registry submission, GitHub public switch, live crawling, scraping, link following, external data fetch beyond HF upload operations, external LLM API, payment, booking, login automation, email, form submission, purchase, contract signing, account connection, supplier claim/verify, or profile modification.
+
+## 0.1.0-package-8h
+
+- Added private deployment link sync for GitHub, Hugging Face Space, and Hugging Face Dataset URLs.
+- Added private deployment QA, HF/GitHub crosslink audit, and private GitHub push sync helper.
+- Added private deployment review, link policy, token revocation reminder, and post-deployment checklist assets.
+- Preserved Package 8H exclusions: no public visibility switch, GitHub release creation, Hugging Face public switch, community posting, MCP Registry submission, crawling, scraping, link following, external LLM API, token printing/storage, force push, payment, booking, login automation, email, form submission, purchase, contract signing, account connection, supplier claim/verify, or profile modification.

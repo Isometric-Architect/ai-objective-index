@@ -496,6 +496,77 @@ If GitHub CLI is installed and authenticated, the helper can create/push `Isomet
 
 No tokens are requested or stored. No force push, remote deletion, Hugging Face upload, community post, MCP Registry submission, crawling, scraping, or external action is performed.
 
+## Package 8D GitHub Private Staging QA
+
+Package 8D verifies the private GitHub staging repository and binds the real GitHub repo URL into local release and launch materials.
+
+```powershell
+python -m ai_objective_index.github_post_upload_qa
+python -m ai_objective_index.github_link_binder
+python -m ai_objective_index.public_switch_preflight
+```
+
+The GitHub repository is private staging at `https://github.com/Isometric-Architect/ai-objective-index` unless the owner manually changes visibility. Package 8D does not make the repo public, create a release, upload to Hugging Face, post to communities, submit to MCP Registry, crawl, scrape, or perform external actions.
+
+## Package 8F Hugging Face Manual Upload Bundle
+
+Package 8F creates self-contained manual-upload folders for Hugging Face:
+
+```powershell
+python -m ai_objective_index.hf_upload_packager
+python -m ai_objective_index.hf_upload_audit
+```
+
+Outputs:
+
+- `hf_upload/space/`: Gradio Space bundle with `app.py`, local AOI source, data, reports, and schemas.
+- `hf_upload/dataset/`: Dataset bundle with JSONL/JSON data and a Dataset Card.
+- `hf_upload/HF_SPACE_UPLOAD_STEPS.md`
+- `hf_upload/HF_DATASET_UPLOAD_STEPS.md`
+- `hf_upload/HF_FINAL_CHECKLIST.md`
+
+This package does not upload to Hugging Face, use tokens, store secrets, make GitHub public, post to communities, submit to MCP Registry, crawl, scrape, or perform external actions.
+
+## Package 8G Hugging Face Private Upload
+
+Package 8G can prepare and, only when the local Hugging Face CLI/API is already authenticated, upload the Space and Dataset bundles privately:
+
+```powershell
+python -m ai_objective_index.hf_auth_check
+python -m ai_objective_index.hf_private_upload --dry-run
+python -m ai_objective_index.hf_private_upload --execute
+python -m ai_objective_index.hf_post_upload_qa
+```
+
+Targets:
+
+- Space: `edict-lab/ai-objective-index-demo`
+- Dataset: `edict-lab/ai-objective-index-sample`
+- Visibility: private
+- Space SDK: Gradio
+
+Package 8G never asks for tokens in chat, prints tokens, stores tokens, commits secrets, makes Hugging Face repos public, posts to communities, submits to MCP Registry, crawls, scrapes, or performs external actions. If local HF authentication is missing, it writes safe login and browser-upload fallback instructions.
+
+## Package 8H Private Deployment Sync
+
+Package 8H binds the private GitHub and Hugging Face deployment links into local docs, verifies private deployment status, audits crosslinks, and can push the sync back to the existing private GitHub repo: https://github.com/Isometric-Architect/ai-objective-index
+
+```powershell
+python -m ai_objective_index.deployment_link_sync
+python -m ai_objective_index.private_deployment_qa
+python -m ai_objective_index.hf_github_crosslink_audit
+python -m ai_objective_index.deployment_push_sync --dry-run
+python -m ai_objective_index.deployment_push_sync --execute
+```
+
+Private deployment links:
+
+- GitHub private repo: https://github.com/Isometric-Architect/ai-objective-index
+- Hugging Face Space, private: https://huggingface.co/spaces/edict-lab/ai-objective-index-demo
+- Hugging Face Dataset, private: https://huggingface.co/datasets/edict-lab/ai-objective-index-sample
+
+Package 8H does not make GitHub or Hugging Face public, create a GitHub release, post to communities, submit to MCP Registry, print/store tokens, force push, crawl, scrape, or execute external actions.
+
 ## Claim Boundary
 
 Allowed claim: AOI is a read-only MCP/API objective ranking and comparison tool with explicit schemas, sample source traces, missing-field reporting, and decision receipt contracts.
@@ -526,6 +597,15 @@ AOI output is not a quality guarantee. It is not legal, financial, medical, purc
 - `docs/launch_claim_guard.md`: launch claim guard policy.
 - `docs/github_staging_upload.md`: private-by-default GitHub staging upload notes.
 - `docs/github_post_upload_checklist.md`: manual post-upload review checklist.
+- `docs/github_private_staging_review.md`: GitHub private staging review workflow.
+- `docs/public_visibility_switch_policy.md`: manual private-to-public switch policy.
+- `docs/package_8d_github_private_staging_qa.md`: Package 8D QA and link-binding commands.
+- `docs/package_8g_huggingface_private_upload.md`: private Hugging Face CLI/API upload commands and fallback behavior.
+- `docs/huggingface_cli_upload.md`: Hugging Face authentication and private upload notes.
+- `docs/huggingface_post_upload_checklist.md`: private HF post-upload review checklist.
+- `docs/package_8h_private_deployment_sync.md`: private deployment link sync and push commands.
+- `docs/private_deployment_review.md`: private GitHub/HF deployment review checklist.
+- `docs/hf_github_link_policy.md`: private link wording and claim policy.
 - `docs/public_data_intake_policy.md`: public-data intake limits.
 - `docs/real_mcp_integration.md`: real MCP SDK integration and fallback behavior.
 - `docs/public_beta_release_plan.md`: public beta release-candidate plan and manual boundary.
@@ -538,3 +618,10 @@ AOI output is not a quality guarantee. It is not legal, financial, medical, purc
 - `evals/`: placeholder for future evaluation harnesses.
 - `reports/`: placeholder for future reports.
 - `examples/`: placeholder for future client examples.
+
+
+## GitHub Private Staging
+
+- GitHub private staging repository: https://github.com/Isometric-Architect/ai-objective-index
+- Current visibility: private staging unless the user manually switches it.
+- Public visibility is not claimed by Package 8D.

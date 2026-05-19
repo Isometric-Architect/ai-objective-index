@@ -36,3 +36,12 @@ python -m ai_objective_index.datascope_qa
 AOI is read-only. `public_beta_mcp` candidates are not verified MCP servers, not security certified, not quality guaranteed, not purchasing advice, and not action-ready.
 
 AOI does not buy, book, pay, log in, send email, submit forms, purchase, connect accounts, verify suppliers, or sign contracts. Publishing to GitHub, Hugging Face, MCP Registry, or communities is manual and not performed by this packager.
+
+## Private Deployment Links
+
+- GitHub private staging repo: https://github.com/Isometric-Architect/ai-objective-index
+- Hugging Face Space, private: https://huggingface.co/spaces/edict-lab/ai-objective-index-demo
+- Hugging Face Dataset, private: https://huggingface.co/datasets/edict-lab/ai-objective-index-sample
+- MCP Registry submission: HOLD, manual only.
+
+These links are private deployment links unless the owner manually changes visibility. They are not a public release claim. `public_beta_mcp` records are source-traced registry metadata candidates; they are not verified, not safe/certified, not security certified, not a quality guarantee, and not purchasing advice.

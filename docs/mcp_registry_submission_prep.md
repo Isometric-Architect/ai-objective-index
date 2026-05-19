@@ -28,3 +28,5 @@ Package 8A may prepare a release pack with `public_beta_mcp` candidates from Off
 This repository does not automatically publish, post, submit, authenticate, or connect accounts for registry submission.
 
 Package 8B adds `launch/manual_public_beta_v0_2/MCP_REGISTRY_SUBMISSION_DRAFT.md`. It is a draft only and does not submit anything.
+
+Package 8D verifies GitHub private staging only. It does not submit to MCP Registry; registry submission remains a future manual step.

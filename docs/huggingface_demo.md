@@ -62,6 +62,42 @@ Package 7B may create release-candidate files that reference the demo. It still 
 
 Package 8B adds manual upload guides under `launch/manual_public_beta_v0_2/`. They are instructions only and do not upload files.
 
+Package 8D leaves Hugging Face publishing on HOLD. The GitHub staging repository may be linked, but HF Space and Dataset links must remain TODO/HOLD until the user manually creates them. No HF token should be stored in the repository.
+
+## Package 8F Manual Upload Bundle
+
+Package 8F creates self-contained folders for manual Hugging Face upload:
+
+```bash
+python -m ai_objective_index.hf_upload_packager
+python -m ai_objective_index.hf_upload_audit
+```
+
+Upload `hf_upload/space/` to a Gradio Space and `hf_upload/dataset/` to a Dataset through the Hugging Face web UI. Start both as private. Do not add tokens or secrets.
+
+The Space defaults to `public_beta_mcp` when local registry metadata candidates are bundled. Those candidates are not verified, not security certified, not a quality guarantee, not purchasing advice, and not action-ready.
+
+## Package 8G Private Upload Assist
+
+Package 8G can check local Hugging Face authentication and upload the already-generated `hf_upload/space/` and `hf_upload/dataset/` bundles to private Hugging Face repos:
+
+```bash
+python -m ai_objective_index.hf_auth_check
+python -m ai_objective_index.hf_private_upload --dry-run
+python -m ai_objective_index.hf_private_upload --execute
+python -m ai_objective_index.hf_post_upload_qa
+```
+
+Targets are `edict-lab/ai-objective-index-demo` for the Gradio Space and `edict-lab/ai-objective-index-sample` for the Dataset. Package 8G does not request tokens in chat, print tokens, store tokens, make repos public, or post launch announcements. If local CLI/API authentication is missing, use `huggingface_upload/HF_UPLOAD_COMMANDS.md` or `huggingface_upload/HF_BROWSER_FALLBACK_STEPS.md`.
+
+Current private deployment links:
+
+- Hugging Face Space, private: https://huggingface.co/spaces/edict-lab/ai-objective-index-demo
+- Hugging Face Dataset, private: https://huggingface.co/datasets/edict-lab/ai-objective-index-sample
+- GitHub private repo: https://github.com/Isometric-Architect/ai-objective-index
+
+These are private review links unless the owner manually changes visibility. They are not a public release claim.
+
 ## Read-Only Boundary
 
 The demo and dataset are read-only. They do not crawl, buy, book, pay, log in, send email, submit forms, modify accounts, claim suppliers, verify suppliers, or sign contracts.

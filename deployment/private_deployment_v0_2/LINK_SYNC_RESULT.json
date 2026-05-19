@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-05-19T19:47:18.326880+00:00",
+  "updated_files": [
+    "launch\\manual_public_beta_v0_2\\FINAL_LINKS_PLACEHOLDER.md",
+    "launch\\manual_public_beta_v0_2\\README_LAUNCH_STEPS.md",
+    "launch\\manual_public_beta_v0_2\\GITHUB_RELEASE_DRAFT.md",
+    "release\\public_beta_v0_2\\README_PUBLIC_BETA_v0_2.md",
+    "hf_dataset\\README.md"
+  ],
+  "skipped_files": [],
+  "static_assets": [
+    "deployment\\private_deployment_v0_2\\PRIVATE_DEPLOYMENT_SUMMARY.md",
+    "deployment\\private_deployment_v0_2\\POST_DEPLOYMENT_REVIEW_CHECKLIST.md",
+    "deployment\\private_deployment_v0_2\\TOKEN_REVOCATION_REMINDER.md"
+  ],
+  "github_url": "https://github.com/Isometric-Architect/ai-objective-index",
+  "hf_space_url": "https://huggingface.co/spaces/edict-lab/ai-objective-index-demo",
+  "hf_dataset_url": "https://huggingface.co/datasets/edict-lab/ai-objective-index-sample",
+  "public_claim_added": false,
+  "hf_links_private": true,
+  "mcp_registry_submission": "HOLD",
+  "warnings": [
+    "All deployment URLs are private unless the owner manually changes visibility.",
+    "No public release, community post, or MCP Registry submission is claimed."
+  ],
+  "actual_publish_performed": false,
+  "read_only": true,
+  "live_network_used": false
+}

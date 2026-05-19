@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-objective-index.example/schemas/objective_score.schema.json",
+  "title": "ObjectiveScore",
+  "description": "A bounded objective-fit score for an AOI object.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "object_id",
+    "objective_score",
+    "score_components",
+    "penalties",
+    "rank_reason",
+    "warnings"
+  ],
+  "properties": {
+    "object_id": {
+      "type": "string",
+      "pattern": "^aoi-[a-z0-9][a-z0-9-]*$"
+    },
+    "objective_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "score_components": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "relevance",
+        "cost_fit",
+        "policy_clarity",
+        "documentation_quality",
+        "trust_signal",
+        "source_trace_coverage",
+        "freshness"
+      ],
+      "properties": {
+        "relevance": {
+          "$ref": "#/$defs/component_score"
+        },
+        "cost_fit": {
+          "$ref": "#/$defs/component_score"
+        },
+        "policy_clarity": {
+          "$ref": "#/$defs/component_score"
+        },
+        "documentation_quality": {
+          "$ref": "#/$defs/component_score"
+        },
+        "trust_signal": {
+          "$ref": "#/$defs/component_score"
+        },
+        "source_trace_coverage": {
+          "$ref": "#/$defs/component_score"
+        },
+        "freshness": {
+          "$ref": "#/$defs/component_score"
+        }
+      }
+    },
+    "penalties": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "missing_field_penalty",
+        "unsafe_claim_penalty"
+      ],
+      "properties": {
+        "missing_field_penalty": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "unsafe_claim_penalty": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    },
+    "rank_reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "$defs": {
+    "component_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    }
+  }
+}
+

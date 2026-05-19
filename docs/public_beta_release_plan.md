@@ -64,4 +64,33 @@ python -m ai_objective_index.github_staging
 
 If GitHub CLI is unavailable or unauthenticated, it writes manual commands under `github_upload/` and does not push. No token storage, force push, remote deletion, public publish, Hugging Face upload, community posting, or MCP Registry submission is performed.
 
+## Package 8D GitHub Private Staging QA
+
+Package 8D verifies the private GitHub staging repository, binds `https://github.com/Isometric-Architect/ai-objective-index` into local release materials, and prepares a manual public-switch checklist.
+
+```powershell
+python -m ai_objective_index.github_post_upload_qa
+python -m ai_objective_index.github_link_binder
+python -m ai_objective_index.public_switch_preflight
+```
+
+It does not change repository visibility, create a GitHub release, upload to Hugging Face, post to communities, or submit to MCP Registry.
+
 No tokens, credentials, live crawling, network fetch, external LLM calls, payment, booking, login, email, form submission, purchase, account connection, registry submission, Hugging Face publishing, community posting, supplier verification, or contract signing are performed by Package 7B.
+
+## Package 8H Private Deployment Sync
+
+The current deployment links are private review links:
+
+- GitHub private repo: https://github.com/Isometric-Architect/ai-objective-index
+- Hugging Face Space, private: https://huggingface.co/spaces/edict-lab/ai-objective-index-demo
+- Hugging Face Dataset, private: https://huggingface.co/datasets/edict-lab/ai-objective-index-sample
+
+Run `python -m ai_objective_index.private_deployment_qa` and `python -m ai_objective_index.hf_github_crosslink_audit` before any manual public switch.
+
+
+## GitHub Private Staging
+
+- GitHub private staging repository: https://github.com/Isometric-Architect/ai-objective-index
+- Current visibility: private staging unless the user manually switches it.
+- Public visibility is not claimed by Package 8D.

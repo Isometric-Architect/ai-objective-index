@@ -12,6 +12,17 @@ Package 8A prepares a v0.2 real-data public beta pack from Official MCP Registry
 
 Package 8B writes manual launch drafts to `launch/manual_public_beta_v0_2/COMMUNITY_POST_DRAFTS.md`. Review them before posting anywhere.
 
+GitHub private staging repo: https://github.com/Isometric-Architect/ai-objective-index
+
+This link may point to a private staging repository until the owner manually switches visibility. Do not claim public availability until that manual switch is confirmed.
+
+Private Hugging Face review links:
+
+- Space, private: https://huggingface.co/spaces/edict-lab/ai-objective-index-demo
+- Dataset, private: https://huggingface.co/datasets/edict-lab/ai-objective-index-sample
+
+These links are not a public launch announcement until the owner manually changes visibility and posts externally.
+
 ## Short Public Message
 
 AI Objective Index is a read-only MCP/API benchmark for comparing AI tools, APIs, SaaS products, and MCP servers by explicit objectives, constraints, source traces, missing fields, and decision receipts.
@@ -54,3 +65,10 @@ I am looking for feedback on failed queries, wrong extracted fields, missing sou
 - Official MCP Registry metadata candidates are not verified, not security certified, and not quality guaranteed.
 - No payment, booking, login, email, form submission, purchase, contract execution, account connection, supplier claim/verify, or profile modification.
 - Not a quality guarantee, official ranking, legal advice, financial advice, medical advice, purchasing advice, or safety certification.
+
+
+## GitHub Private Staging
+
+- GitHub private staging repository: https://github.com/Isometric-Architect/ai-objective-index
+- Current visibility: private staging unless the user manually switches it.
+- Public visibility is not claimed by Package 8D.

@@ -1,0 +1,401 @@
+{
+  "generated_at": "2026-05-19T19:46:33.784648+00:00",
+  "risky_phrase_count": 0,
+  "findings": [],
+  "contextual_mentions": [
+    {
+      "file": "README.md",
+      "line": 113,
+      "phrase": "signs contracts",
+      "text": "MCP v0.1 never buys, books, pays, logs in, sends email, submits forms, modifies accounts, claims suppliers, verifies suppliers, or signs contracts.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 113,
+      "phrase": "sends email",
+      "text": "MCP v0.1 never buys, books, pays, logs in, sends email, submits forms, modifies accounts, claims suppliers, verifies suppliers, or signs contracts.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 137,
+      "phrase": "signs contracts",
+      "text": "The REST API is read-only. It never buys, books, pays, logs in, sends email, submits forms, modifies accounts, claims suppliers, verifies suppliers, or signs contracts.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 137,
+      "phrase": "sends email",
+      "text": "The REST API is read-only. It never buys, books, pays, logs in, sends email, submits forms, modifies accounts, claims suppliers, verifies suppliers, or signs contracts.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 161,
+      "phrase": "purchasing advice",
+      "text": "Package 4 remains read-only. Reports are sample/extracted benchmark artifacts, not quality guarantees, official rankings, legal advice, purchasing advice, or safety certifications.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 161,
+      "phrase": "legal advice",
+      "text": "Package 4 remains read-only. Reports are sample/extracted benchmark artifacts, not quality guarantees, official rankings, legal advice, purchasing advice, or safety certifications.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 378,
+      "phrase": "security certified",
+      "text": "Package 7F builds a calibrated `public_beta_mcp` candidate dataset from saved MCP Registry metadata. Candidates are registry metadata candidates only; they are not verified, security certified, quality guaranteed, action-ready, or purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 378,
+      "phrase": "quality guaranteed",
+      "text": "Package 7F builds a calibrated `public_beta_mcp` candidate dataset from saved MCP Registry metadata. Candidates are registry metadata candidates only; they are not verified, security certified, quality guaranteed, action-ready, or purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 378,
+      "phrase": "purchasing advice",
+      "text": "Package 7F builds a calibrated `public_beta_mcp` candidate dataset from saved MCP Registry metadata. Candidates are registry metadata candidates only; they are not verified, security certified, quality guaranteed, action-ready, or purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 452,
+      "phrase": "security certified",
+      "text": "`public_beta_mcp` contains source-traced Official MCP Registry metadata candidates. They are not verified, not security certified, not quality guaranteed, not action-ready, and not purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 452,
+      "phrase": "quality guaranteed",
+      "text": "`public_beta_mcp` contains source-traced Official MCP Registry metadata candidates. They are not verified, not security certified, not quality guaranteed, not action-ready, and not purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 452,
+      "phrase": "purchasing advice",
+      "text": "`public_beta_mcp` contains source-traced Official MCP Registry metadata candidates. They are not verified, not security certified, not quality guaranteed, not action-ready, and not purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 574,
+      "phrase": "official standard",
+      "text": "Forbidden claims: AOI is an official standard, a guarantee of quality, a comprehensive market index, a paid placement system, or a system that automatically purchases, books, pays, emails, logs in, submits forms, or signs contracts.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 574,
+      "phrase": "signs contracts",
+      "text": "Forbidden claims: AOI is an official standard, a guarantee of quality, a comprehensive market index, a paid placement system, or a system that automatically purchases, books, pays, emails, logs in, submits forms, or signs contracts.",
+      "counted": false
+    },
+    {
+      "file": "docs\\community_launch.md",
+      "line": 65,
+      "phrase": "security certified",
+      "text": "- Official MCP Registry metadata candidates are not verified, not security certified, and not quality guaranteed.",
+      "counted": false
+    },
+    {
+      "file": "docs\\community_launch.md",
+      "line": 65,
+      "phrase": "quality guaranteed",
+      "text": "- Official MCP Registry metadata candidates are not verified, not security certified, and not quality guaranteed.",
+      "counted": false
+    },
+    {
+      "file": "docs\\community_launch.md",
+      "line": 67,
+      "phrase": "purchasing advice",
+      "text": "- Not a quality guarantee, official ranking, legal advice, financial advice, medical advice, purchasing advice, or safety certification.",
+      "counted": false
+    },
+    {
+      "file": "docs\\community_launch.md",
+      "line": 67,
+      "phrase": "legal advice",
+      "text": "- Not a quality guarantee, official ranking, legal advice, financial advice, medical advice, purchasing advice, or safety certification.",
+      "counted": false
+    },
+    {
+      "file": "docs\\public_beta_release_plan.md",
+      "line": 3,
+      "phrase": "official standard",
+      "text": "Public beta means AOI is packaged for external testers to run locally and review. It is not a general consumer release, certification, marketplace listing, or official standard.",
+      "counted": false
+    },
+    {
+      "file": "docs\\public_beta_release_plan.md",
+      "line": 18,
+      "phrase": "purchasing advice",
+      "text": "For MCP-specific beta candidates, `public_beta_mcp` can be used if Official MCP Registry intake succeeds and records pass the calibrated Package 7F candidate gate. In offline fixture mode, `public_beta_mcp` may be empty. Do not claim registry metadata is supplier verification, security certification, quality guarantee, purchasing advice, or action permission.",
+      "counted": false
+    },
+    {
+      "file": "docs\\public_beta_release_plan.md",
+      "line": 39,
+      "phrase": "verified mcp servers",
+      "text": "The v0.2 pack is still manual-publish only. It must describe `public_beta_mcp` as registry metadata candidates, not verified MCP servers, security certified tools, or quality guaranteed tools.",
+      "counted": false
+    },
+    {
+      "file": "docs\\public_beta_release_plan.md",
+      "line": 39,
+      "phrase": "security certified",
+      "text": "The v0.2 pack is still manual-publish only. It must describe `public_beta_mcp` as registry metadata candidates, not verified MCP servers, security certified tools, or quality guaranteed tools.",
+      "counted": false
+    },
+    {
+      "file": "docs\\public_beta_release_plan.md",
+      "line": 39,
+      "phrase": "quality guaranteed",
+      "text": "The v0.2 pack is still manual-publish only. It must describe `public_beta_mcp` as registry metadata candidates, not verified MCP servers, security certified tools, or quality guaranteed tools.",
+      "counted": false
+    },
+    {
+      "file": "docs\\mcp_registry_intake.md",
+      "line": 34,
+      "phrase": "security certified",
+      "text": "`public_beta_mcp` candidates are not verified, not security certified, not quality guaranteed, and not action-ready.",
+      "counted": false
+    },
+    {
+      "file": "docs\\mcp_registry_intake.md",
+      "line": 34,
+      "phrase": "quality guaranteed",
+      "text": "`public_beta_mcp` candidates are not verified, not security certified, not quality guaranteed, and not action-ready.",
+      "counted": false
+    },
+    {
+      "file": "docs\\manual_publish_checklist.md",
+      "line": 33,
+      "phrase": "security certified",
+      "text": "29. Confirm `public_beta_mcp` says not verified and not security certified.",
+      "counted": false
+    },
+    {
+      "file": "docs\\manual_publish_checklist.md",
+      "line": 72,
+      "phrase": "purchasing advice",
+      "text": "Do not claim AOI is an official standard, universally adopted, a quality guarantee, legal/security/compliance certification, purchasing advice, or an external action executor.",
+      "counted": false
+    },
+    {
+      "file": "docs\\manual_publish_checklist.md",
+      "line": 72,
+      "phrase": "official standard",
+      "text": "Do not claim AOI is an official standard, universally adopted, a quality guarantee, legal/security/compliance certification, purchasing advice, or an external action executor.",
+      "counted": false
+    },
+    {
+      "file": "docs\\manual_publish_checklist.md",
+      "line": 74,
+      "phrase": "verified mcp servers",
+      "text": "For v0.2 real-data public beta, also do not claim verified MCP servers, safe MCP servers, security certification, or quality guaranteed tools.",
+      "counted": false
+    },
+    {
+      "file": "docs\\manual_publish_checklist.md",
+      "line": 74,
+      "phrase": "safe mcp servers",
+      "text": "For v0.2 real-data public beta, also do not claim verified MCP servers, safe MCP servers, security certification, or quality guaranteed tools.",
+      "counted": false
+    },
+    {
+      "file": "docs\\manual_publish_checklist.md",
+      "line": 74,
+      "phrase": "quality guaranteed",
+      "text": "For v0.2 real-data public beta, also do not claim verified MCP servers, safe MCP servers, security certification, or quality guaranteed tools.",
+      "counted": false
+    },
+    {
+      "file": "docs\\manual_publish_checklist.md",
+      "line": 83,
+      "phrase": "security certified",
+      "text": "These links are private deployment links unless the owner manually changes visibility. They are not a public release claim. `public_beta_mcp` records are source-traced registry metadata candidates; they are not verified, not safe/certified, not security certified, not a quality guarantee, and not purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "docs\\manual_publish_checklist.md",
+      "line": 83,
+      "phrase": "purchasing advice",
+      "text": "These links are private deployment links unless the owner manually changes visibility. They are not a public release claim. `public_beta_mcp` records are source-traced registry metadata candidates; they are not verified, not safe/certified, not security certified, not a quality guarantee, and not purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "hf_dataset\\README.md",
+      "line": 36,
+      "phrase": "security certified",
+      "text": "Registry candidates are not verified, not security certified, not quality guaranteed, and not purchasing advice. This dataset is not a quality guarantee. This repository does not automatically publish to Hugging Face.",
+      "counted": false
+    },
+    {
+      "file": "hf_dataset\\README.md",
+      "line": 36,
+      "phrase": "quality guaranteed",
+      "text": "Registry candidates are not verified, not security certified, not quality guaranteed, and not purchasing advice. This dataset is not a quality guarantee. This repository does not automatically publish to Hugging Face.",
+      "counted": false
+    },
+    {
+      "file": "hf_dataset\\README.md",
+      "line": 36,
+      "phrase": "purchasing advice",
+      "text": "Registry candidates are not verified, not security certified, not quality guaranteed, and not purchasing advice. This dataset is not a quality guarantee. This repository does not automatically publish to Hugging Face.",
+      "counted": false
+    },
+    {
+      "file": "hf_dataset\\README.md",
+      "line": 45,
+      "phrase": "security certified",
+      "text": "These links are private deployment links unless the owner manually changes visibility. They are not a public release claim. `public_beta_mcp` records are source-traced registry metadata candidates; they are not verified, not safe/certified, not security certified, not a quality guarantee, and not purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "hf_dataset\\README.md",
+      "line": 45,
+      "phrase": "purchasing advice",
+      "text": "These links are private deployment links unless the owner manually changes visibility. They are not a public release claim. `public_beta_mcp` records are source-traced registry metadata candidates; they are not verified, not safe/certified, not security certified, not a quality guarantee, and not purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "hf_demo\\README.md",
+      "line": 39,
+      "phrase": "purchasing advice",
+      "text": "Generated, curated, and registry records remain `EXTRACTED_UNVERIFIED`. `public_beta_mcp` candidates are registry metadata candidates, not verified servers, security certification, quality guarantees, purchasing advice, or action permission. `public_beta` and `public_beta_mcp` may return warnings if no object is ready. The demo never runs live registry intake or network fetch. Productization Mode allows this demo to be built and tested, but public product claims require product evidence.",
+      "counted": false
+    },
+    {
+      "file": "hf_demo\\README.md",
+      "line": 41,
+      "phrase": "security certified",
+      "text": "For the v0.2 real-data public beta pack, `public_beta_mcp` may contain Official MCP Registry metadata candidates processed from local raw JSON. These candidates are still not verified, not security certified, not quality guaranteed, and not action-ready.",
+      "counted": false
+    },
+    {
+      "file": "hf_demo\\README.md",
+      "line": 41,
+      "phrase": "quality guaranteed",
+      "text": "For the v0.2 real-data public beta pack, `public_beta_mcp` may contain Official MCP Registry metadata candidates processed from local raw JSON. These candidates are still not verified, not security certified, not quality guaranteed, and not action-ready.",
+      "counted": false
+    },
+    {
+      "file": "release\\public_beta_v0_2\\KNOWN_LIMITS_v0_2.md",
+      "line": 5,
+      "phrase": "security certified",
+      "text": "- Candidates are not security certified.",
+      "counted": false
+    },
+    {
+      "file": "release\\public_beta_v0_2\\KNOWN_LIMITS_v0_2.md",
+      "line": 6,
+      "phrase": "quality guaranteed",
+      "text": "- Candidates are not quality guaranteed.",
+      "counted": false
+    },
+    {
+      "file": "release\\public_beta_v0_2\\MANUAL_PUBLISH_CHECKLIST_v0_2.md",
+      "line": 20,
+      "phrase": "verified mcp servers",
+      "text": "- Do not claim verified MCP servers, safe MCP servers, security certification, quality guarantee, purchasing advice, official standard status, or universal adoption.",
+      "counted": false
+    },
+    {
+      "file": "release\\public_beta_v0_2\\MANUAL_PUBLISH_CHECKLIST_v0_2.md",
+      "line": 20,
+      "phrase": "safe mcp servers",
+      "text": "- Do not claim verified MCP servers, safe MCP servers, security certification, quality guarantee, purchasing advice, official standard status, or universal adoption.",
+      "counted": false
+    },
+    {
+      "file": "release\\public_beta_v0_2\\MANUAL_PUBLISH_CHECKLIST_v0_2.md",
+      "line": 20,
+      "phrase": "purchasing advice",
+      "text": "- Do not claim verified MCP servers, safe MCP servers, security certification, quality guarantee, purchasing advice, official standard status, or universal adoption.",
+      "counted": false
+    },
+    {
+      "file": "release\\public_beta_v0_2\\MANUAL_PUBLISH_CHECKLIST_v0_2.md",
+      "line": 20,
+      "phrase": "official standard",
+      "text": "- Do not claim verified MCP servers, safe MCP servers, security certification, quality guarantee, purchasing advice, official standard status, or universal adoption.",
+      "counted": false
+    },
+    {
+      "file": "release\\public_beta_v0_2\\README_PUBLIC_BETA_v0_2.md",
+      "line": 36,
+      "phrase": "verified mcp servers",
+      "text": "AOI is read-only. `public_beta_mcp` candidates are not verified MCP servers, not security certified, not quality guaranteed, not purchasing advice, and not action-ready.",
+      "counted": false
+    },
+    {
+      "file": "release\\public_beta_v0_2\\README_PUBLIC_BETA_v0_2.md",
+      "line": 36,
+      "phrase": "security certified",
+      "text": "AOI is read-only. `public_beta_mcp` candidates are not verified MCP servers, not security certified, not quality guaranteed, not purchasing advice, and not action-ready.",
+      "counted": false
+    },
+    {
+      "file": "release\\public_beta_v0_2\\README_PUBLIC_BETA_v0_2.md",
+      "line": 36,
+      "phrase": "quality guaranteed",
+      "text": "AOI is read-only. `public_beta_mcp` candidates are not verified MCP servers, not security certified, not quality guaranteed, not purchasing advice, and not action-ready.",
+      "counted": false
+    },
+    {
+      "file": "release\\public_beta_v0_2\\README_PUBLIC_BETA_v0_2.md",
+      "line": 36,
+      "phrase": "purchasing advice",
+      "text": "AOI is read-only. `public_beta_mcp` candidates are not verified MCP servers, not security certified, not quality guaranteed, not purchasing advice, and not action-ready.",
+      "counted": false
+    },
+    {
+      "file": "release\\public_beta_v0_2\\README_PUBLIC_BETA_v0_2.md",
+      "line": 47,
+      "phrase": "security certified",
+      "text": "These links are private deployment links unless the owner manually changes visibility. They are not a public release claim. `public_beta_mcp` records are source-traced registry metadata candidates; they are not verified, not safe/certified, not security certified, not a quality guarantee, and not purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "release\\public_beta_v0_2\\README_PUBLIC_BETA_v0_2.md",
+      "line": 47,
+      "phrase": "purchasing advice",
+      "text": "These links are private deployment links unless the owner manually changes visibility. They are not a public release claim. `public_beta_mcp` records are source-traced registry metadata candidates; they are not verified, not safe/certified, not security certified, not a quality guarantee, and not purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "release\\public_beta_v0_2\\REAL_DATA_SUMMARY_v0_2.md",
+      "line": 12,
+      "phrase": "purchasing advice",
+      "text": "The data is not supplier verification, security certification, quality guarantee, purchasing advice, or action permission.",
+      "counted": false
+    },
+    {
+      "file": "release\\public_beta_v0_2\\RELEASE_NOTES_v0_2.md",
+      "line": 10,
+      "phrase": "purchasing advice",
+      "text": "All registry objects remain `EXTRACTED_UNVERIFIED` or registry metadata candidates. This is not supplier verification, security certification, quality guarantee, purchasing advice, or action permission.",
+      "counted": false
+    }
+  ],
+  "overall_token": "PASS",
+  "suggested_rewrites": [
+    "Use: public_beta_mcp contains Official MCP Registry metadata candidates.",
+    "Use: candidates are not verified, security certified, quality guaranteed, or action-ready.",
+    "Use: AOI is read-only and does not buy, book, log in, send email, purchase, or sign contracts."
+  ],
+  "read_only": true,
+  "live_network_used": false,
+  "actual_publish_performed": false
+}

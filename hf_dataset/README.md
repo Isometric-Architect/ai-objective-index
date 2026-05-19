@@ -34,3 +34,12 @@ This dataset is not intended for automated purchase, legal decisions, financial 
 ## Limitations
 
 Registry candidates are not verified, not security certified, not quality guaranteed, and not purchasing advice. This dataset is not a quality guarantee. This repository does not automatically publish to Hugging Face.
+
+## Private Deployment Links
+
+- GitHub private staging repo: https://github.com/Isometric-Architect/ai-objective-index
+- Hugging Face Space, private: https://huggingface.co/spaces/edict-lab/ai-objective-index-demo
+- Hugging Face Dataset, private: https://huggingface.co/datasets/edict-lab/ai-objective-index-sample
+- MCP Registry submission: HOLD, manual only.
+
+These links are private deployment links unless the owner manually changes visibility. They are not a public release claim. `public_beta_mcp` records are source-traced registry metadata candidates; they are not verified, not safe/certified, not security certified, not a quality guarantee, and not purchasing advice.

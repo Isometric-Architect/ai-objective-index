@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-05-19T19:46:39.644907+00:00",
+  "dry_run": false,
+  "execute": true,
+  "authenticated": true,
+  "space_repo_id": "edict-lab/ai-objective-index-demo",
+  "dataset_repo_id": "edict-lab/ai-objective-index-sample",
+  "space_created_or_exists": true,
+  "dataset_created_or_exists": true,
+  "space_upload_performed": true,
+  "dataset_upload_performed": true,
+  "visibility": "private",
+  "token_printed": false,
+  "errors": [],
+  "warnings": [],
+  "fallback_docs": {
+    "commands": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\huggingface_upload\\HF_UPLOAD_COMMANDS.md",
+    "browser_steps": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\huggingface_upload\\HF_BROWSER_FALLBACK_STEPS.md"
+  },
+  "next_action": "Run hf_post_upload_qa and review both private Hugging Face repos.",
+  "actual_upload_performed": true,
+  "live_network_used": true,
+  "read_only": true
+}

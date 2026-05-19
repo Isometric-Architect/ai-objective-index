@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-05-19T19:46:44.360531+00:00",
+  "hf_package_available": true,
+  "hf_cli_available": true,
+  "authenticated": true,
+  "username_if_known": "edict-lab",
+  "token_printed": false,
+  "checks": [
+    {
+      "method": "cli",
+      "command": [
+        "hf",
+        "auth"
+      ],
+      "ok": false,
+      "stdout_preview": "",
+      "stderr_preview": "Traceback (most recent call last):\n  File \"C:\\Users\\Isometric-Architect\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\httpx\\_transports\\default.py\", line 101, in map_httpcore_exceptions\n    yield\n  File \"C:\\Users\\Isometric-Architect\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\httpx\\_transports\\default.py\", line 250, in handle_request\n    resp = self._pool.handle_request(req)\n  File \"C:\\Users\\Isometric-Architect\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\h"
+    },
+    {
+      "method": "cli",
+      "command": [
+        "huggingface-cli",
+        "whoami"
+      ],
+      "ok": false,
+      "stdout_preview": "",
+      "stderr_preview": "Warning: `huggingface-cli` is deprecated and no longer works. Use `hf` instead.\n\nHint: `hf` is already installed! Use it directly.\n\nHint: Examples:\n  hf auth login\n  hf download unsloth/gemma-4-31B-it-GGUF\n  hf upload my-cool-model . .\n  hf models ls --search \"gemma\"\n  hf repos ls --format json\n  hf jobs run python:3.12 python -c 'print(\"Hello!\")'\n  hf --help\n\n"
+    },
+    {
+      "method": "HfApi.whoami",
+      "ok": true
+    }
+  ],
+  "recommended_next_action": "Hugging Face CLI/API authentication is available.",
+  "read_only": true,
+  "live_network_used": false
+}

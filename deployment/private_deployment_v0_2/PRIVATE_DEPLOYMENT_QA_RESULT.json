@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-05-19T19:47:57.278075+00:00",
+  "overall_token": "PASS",
+  "checks": {
+    "github_remote": {
+      "token": "PASS",
+      "remote_output_present": true
+    },
+    "hf_upload_success": {
+      "token": "PASS",
+      "space_upload_performed": true,
+      "dataset_upload_performed": true
+    },
+    "hf_post_upload_qa": {
+      "token": "PASS",
+      "qa_token": "PASS"
+    },
+    "hf_space_status": {
+      "token": "PASS",
+      "status": "RUNNING"
+    },
+    "public_beta_mcp": {
+      "token": "PASS",
+      "count": 50
+    },
+    "private_visibility": {
+      "token": "PASS",
+      "visibility_if_known": {
+        "space": "private",
+        "dataset": "private"
+      }
+    },
+    "no_public_switch": {
+      "token": "PASS",
+      "github_public_switch": false,
+      "hf_public_switch": false
+    }
+  },
+  "github_repo_url": "https://github.com/Isometric-Architect/ai-objective-index",
+  "hf_space_url": "https://huggingface.co/spaces/edict-lab/ai-objective-index-demo",
+  "hf_dataset_url": "https://huggingface.co/datasets/edict-lab/ai-objective-index-sample",
+  "hf_space_status": "RUNNING",
+  "hf_dataset_checked": true,
+  "visibility_if_known": {
+    "space": "private",
+    "dataset": "private"
+  },
+  "public_switch_performed": false,
+  "hf_public_switch_performed": false,
+  "actual_community_post_performed": false,
+  "actual_publish_performed": false,
+  "errors": [],
+  "warnings": [],
+  "next_action": "Open private GitHub and Hugging Face links and test the Space query.",
+  "read_only": true,
+  "live_network_used": false
+}

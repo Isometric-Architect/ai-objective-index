@@ -33,6 +33,8 @@ Package 8K may make the GitHub repository and Hugging Face Space/Dataset public 
 
 Package 8L keeps community launch on HOLD. Run `python -m ai_objective_index.post_public_stabilization`, `python -m ai_objective_index.public_issue_loop`, and `python -m ai_objective_index.public_observation_plan` first, then observe public URLs and GitHub Issues for 72 hours. Community launch should be a later Package 8M-style decision.
 
+Package 8M still keeps community launch on HOLD. It creates the public ops baseline, classifies the dirty worktree, prepares GitHub issue labels, and starts a 72-hour observation log. Community posting should wait for a later explicit decision after observation.
+
 ## Short Public Message
 
 AI Objective Index is a read-only MCP/API benchmark for comparing AI tools, APIs, SaaS products, and MCP servers by explicit objectives, constraints, source traces, missing fields, and decision receipts.

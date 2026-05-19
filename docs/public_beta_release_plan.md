@@ -160,6 +160,20 @@ python -m ai_objective_index.public_observation_plan
 
 Package 8L activates issue-based feedback and a 72-hour observation plan. It still does not post to communities, create a GitHub Release, submit to MCP Registry, revoke tokens automatically, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
 
+## Package 8M Public Ops Baseline
+
+After issue-loop activation, run:
+
+```powershell
+python -m ai_objective_index.public_ops_baseline
+python -m ai_objective_index.worktree_hygiene_audit
+python -m ai_objective_index.github_issue_labels --dry-run
+python -m ai_objective_index.observation_log
+python -m ai_objective_index.release_next_decision_gate
+```
+
+Package 8M classifies generated leftovers and prepares public issue labels. The default recommendation remains `observe_72h`. It does not post to communities, create a GitHub Release, submit to MCP Registry, delete generated files, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
+
 
 ## Public Deployment
 

@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-05-19T21:53:24.871774+00:00",
+  "github_url": "https://github.com/Isometric-Architect/ai-objective-index",
+  "hf_space_url": "https://huggingface.co/spaces/edict-lab/ai-objective-index-demo",
+  "hf_dataset_url": "https://huggingface.co/datasets/edict-lab/ai-objective-index-sample",
+  "public_beta_mcp_count": 50,
+  "issue_loop_ready": true,
+  "community_post_performed": false,
+  "github_release_created": false,
+  "mcp_registry_submission_performed": false,
+  "checks": {
+    "post_public_stabilization": {
+      "pass": true,
+      "token": "PASS"
+    },
+    "public_url_qa": {
+      "pass": true,
+      "token": "PASS",
+      "available": true
+    },
+    "issue_loop_ready": {
+      "pass": true,
+      "value": true
+    },
+    "public_beta_mcp_count": {
+      "pass": true,
+      "count": 50
+    },
+    "public_claim_audit": {
+      "pass": true,
+      "token": "PASS"
+    },
+    "launch_claim_guard": {
+      "pass": true,
+      "token": "PASS"
+    },
+    "no_external_launch_actions": {
+      "pass": true,
+      "community_post_performed": false,
+      "github_release_created": false,
+      "mcp_registry_submission_performed": false
+    }
+  },
+  "overall_token": "PASS",
+  "current_recommended_mode": "observe_72h",
+  "next_options": {
+    "A": "keep observing",
+    "B": "create GitHub Release draft",
+    "C": "community feedback post",
+    "D": "MCP Registry submission prep",
+    "E": "data expansion"
+  },
+  "read_only": true,
+  "live_network_used": false,
+  "actual_publish_performed": false
+}

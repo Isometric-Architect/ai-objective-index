@@ -23,6 +23,7 @@ token.*
 
 # Logs and local editor files
 *.log
+logs/
 .DS_Store
 .idea/
 .vscode/
@@ -31,6 +32,11 @@ token.*
 data/source_cache/
 data/generated/tmp*/
 data/generated/test_*/
+data/generated/test_pytest_tmp/
+temp/
+tmp/
+local_tokens/
+local_credentials/
 
 # Local manual raw copy at repository root; canonical processed files live under data/registry/
 /mcp_registry_raw_v0_1.json

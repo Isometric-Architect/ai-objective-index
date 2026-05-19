@@ -645,6 +645,26 @@ Public links:
 
 Package 8L does not post to communities, create a GitHub Release, submit to MCP Registry, crawl, scrape, call external LLM APIs, print/store tokens, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
 
+## Package 8M Public Ops Baseline
+
+Package 8M establishes the public operations baseline, classifies remaining working-tree changes, prepares GitHub issue labels, and creates a 72-hour observation log:
+
+```powershell
+python -m ai_objective_index.public_ops_baseline
+python -m ai_objective_index.worktree_hygiene_audit
+python -m ai_objective_index.github_issue_labels --dry-run
+python -m ai_objective_index.observation_log
+python -m ai_objective_index.release_next_decision_gate
+```
+
+If GitHub CLI is authenticated and the dry-run is clean, labels can be created or updated with:
+
+```powershell
+python -m ai_objective_index.github_issue_labels --execute
+```
+
+Package 8M does not post to communities, create a GitHub Release, submit to MCP Registry, delete generated leftovers, force push, print/store tokens, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
+
 ## Claim Boundary
 
 Allowed claim: AOI is a read-only MCP/API objective ranking and comparison tool with explicit schemas, sample source traces, missing-field reporting, and decision receipt contracts.
@@ -698,6 +718,10 @@ AOI output is not a quality guarantee. It is not legal, financial, medical, purc
 - `docs/post_public_observation.md`: 72-hour public observation plan.
 - `docs/issue_feedback_after_public.md`: GitHub Issues feedback loop.
 - `docs/token_revocation_public_stage.md`: post-public Hugging Face token revocation guidance.
+- `docs/package_8m_public_ops_baseline.md`: public operations baseline commands.
+- `docs/worktree_hygiene_policy.md`: generated-output and dirty-worktree classification policy.
+- `docs/github_issue_loop_operations.md`: public issue loop label and triage workflow.
+- `docs/public_metrics_baseline.md`: public beta metrics interpretation.
 - `docs/token_revocation_after_upload.md`: token revocation guidance after HF uploads.
 - `docs/public_data_intake_policy.md`: public-data intake limits.
 - `docs/real_mcp_integration.md`: real MCP SDK integration and fallback behavior.

@@ -181,3 +181,9 @@ It may make the prepared GitHub repository, Hugging Face Space, and Hugging Face
 Package 8L runs the first public-stage stabilization pass. It checks public records, activates GitHub issue templates and suggested labels, writes manual token revocation guidance, and creates a 72-hour observation plan.
 
 It does not post to communities, create a GitHub Release, submit to MCP Registry, revoke tokens automatically, crawl, scrape, follow links, print/store tokens, force push, or perform external actions.
+
+## Package 8M Public Ops Baseline
+
+Package 8M adds the public operations baseline, dirty-worktree hygiene classification, GitHub issue label plan, 72-hour observation log scaffold, and next decision gate.
+
+It does not post to communities, create a GitHub Release, submit to MCP Registry, delete generated files, crawl, scrape, follow links, print/store tokens, force push, or perform external actions.

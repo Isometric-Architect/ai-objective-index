@@ -89,11 +89,16 @@ Package 7B does not publish automatically. Use this checklist if a human decides
 85. Run `python -m ai_objective_index.public_issue_loop`.
 86. Run `python -m ai_objective_index.token_revocation_verify`.
 87. Run `python -m ai_objective_index.public_observation_plan`.
-88. Observe for 72 hours before broad community posting.
-89. If CLI/API upload is unavailable, create a Hugging Face Space manually if desired and upload `hf_upload/space/`.
-90. If CLI/API upload is unavailable, create a Hugging Face Dataset manually if desired and upload `hf_upload/dataset/`.
-91. Submit to MCP Registry manually if desired.
-92. Post a community feedback request manually if desired, after Package 8M or equivalent review.
+88. Run `python -m ai_objective_index.public_ops_baseline`.
+89. Run `python -m ai_objective_index.worktree_hygiene_audit`.
+90. Run `python -m ai_objective_index.github_issue_labels --dry-run`.
+91. Run `python -m ai_objective_index.observation_log`.
+92. Run `python -m ai_objective_index.release_next_decision_gate`.
+93. Observe for 72 hours before broad community posting.
+94. If CLI/API upload is unavailable, create a Hugging Face Space manually if desired and upload `hf_upload/space/`.
+95. If CLI/API upload is unavailable, create a Hugging Face Dataset manually if desired and upload `hf_upload/dataset/`.
+96. Submit to MCP Registry manually if desired.
+97. Post a community feedback request manually if desired, after Package 8M/8N or equivalent review.
 
 Do not claim AOI is an official standard, universally adopted, a quality guarantee, legal/security/compliance certification, purchasing advice, or an external action executor.
 

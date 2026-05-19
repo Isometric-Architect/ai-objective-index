@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-05-19T21:54:04.260875+00:00",
+  "dry_run": false,
+  "execute": true,
+  "labels_planned": [
+    "public-beta",
+    "failed-query",
+    "wrong-field",
+    "scoring-dispute",
+    "missing-source-trace",
+    "install-failure",
+    "docs-confusion",
+    "add-tool",
+    "good-first-feedback"
+  ],
+  "labels_created_or_existing": [
+    {
+      "label": "public-beta",
+      "status": "existing_updated",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "label": "failed-query",
+      "status": "existing_updated",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "label": "wrong-field",
+      "status": "existing_updated",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "label": "scoring-dispute",
+      "status": "existing_updated",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "label": "missing-source-trace",
+      "status": "existing_updated",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "label": "install-failure",
+      "status": "existing_updated",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "label": "docs-confusion",
+      "status": "existing_updated",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "label": "add-tool",
+      "status": "existing_updated",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "label": "good-first-feedback",
+      "status": "existing_updated",
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "plan_path": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\public_ops\\GITHUB_ISSUE_LABELS_PLAN.md",
+  "gh_available": true,
+  "gh_authenticated": true,
+  "token_printed": false,
+  "errors": [],
+  "warnings": [],
+  "read_only": true,
+  "live_network_used": true,
+  "actual_publish_performed": false,
+  "community_post_performed": false
+}

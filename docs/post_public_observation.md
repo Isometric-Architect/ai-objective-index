@@ -24,3 +24,12 @@ The first public hours should be quiet, measured, and evidence-driven.
 
 No immediate attention does not mean failure.
 
+## Package 8M Baseline Commands
+
+```powershell
+python -m ai_objective_index.public_ops_baseline
+python -m ai_objective_index.observation_log
+python -m ai_objective_index.release_next_decision_gate
+```
+
+The default next decision is `observe_72h` unless public URL QA, claim audits, or worktree hygiene indicate a fix is needed.

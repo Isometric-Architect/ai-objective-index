@@ -26,3 +26,18 @@ Workflow:
 
 The issue loop is not direct sales, supplier verification, certification, purchasing advice, or action permission.
 
+## Package 8M Operations
+
+Run the issue-label plan before broad community posting:
+
+```powershell
+python -m ai_objective_index.github_issue_labels --dry-run
+```
+
+If GitHub CLI is authenticated and label creation is desired:
+
+```powershell
+python -m ai_objective_index.github_issue_labels --execute
+```
+
+The helper creates or updates labels only. It does not delete labels, post issues, post community announcements, or print tokens.

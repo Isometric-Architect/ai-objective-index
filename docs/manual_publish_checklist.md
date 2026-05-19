@@ -64,10 +64,26 @@ Package 7B does not publish automatically. Use this checklist if a human decides
 60. Run `python -m ai_objective_index.hf_github_crosslink_audit`.
 61. Run `python -m ai_objective_index.deployment_push_sync --dry-run`.
 62. If all private deployment checks pass, run `python -m ai_objective_index.deployment_push_sync --execute`.
-63. If CLI/API upload is unavailable, create a Hugging Face Space manually if desired and upload `hf_upload/space/`.
-64. If CLI/API upload is unavailable, create a Hugging Face Dataset manually if desired and upload `hf_upload/dataset/`.
-65. Submit to MCP Registry manually if desired.
-66. Post a community feedback request manually if desired.
+63. Run `python -m ai_objective_index.public_launch_gate`.
+64. Run `python -m ai_objective_index.public_visibility_switch --dry-run`.
+65. Run `python -m ai_objective_index.public_launch_claim_audit`.
+66. Run `python -m ai_objective_index.private_reviewer_packager`.
+67. Run `python -m ai_objective_index.token_revocation_checklist`.
+68. If no private reviewers are available, run `python -m ai_objective_index.ai_reviewer_simulation`.
+69. Run `python -m ai_objective_index.issue_feedback_loop_packager`.
+70. Run `python -m ai_objective_index.public_beta_message_guard`.
+71. Run `python -m ai_objective_index.no_contact_launch_gate`.
+72. Review `public_launch/NO_CONTACT_GO_NO_GO_DECISION.md`.
+73. Run `python -m ai_objective_index.prepublic_sync --dry-run`.
+74. Run `python -m ai_objective_index.final_public_dry_run`.
+75. Run `python -m ai_objective_index.prepublic_state_report`.
+76. If private sync is desired and dry-run is clean, run `python -m ai_objective_index.prepublic_sync --execute`.
+77. Review `public_launch/FINAL_PUBLIC_SWITCH_INSTRUCTIONS.md`.
+78. Review `public_launch/PREPUBLIC_REVIEW_CHECKLIST.md`.
+79. If CLI/API upload is unavailable, create a Hugging Face Space manually if desired and upload `hf_upload/space/`.
+80. If CLI/API upload is unavailable, create a Hugging Face Dataset manually if desired and upload `hf_upload/dataset/`.
+81. Submit to MCP Registry manually if desired.
+82. Post a community feedback request manually if desired.
 
 Do not claim AOI is an official standard, universally adopted, a quality guarantee, legal/security/compliance certification, purchasing advice, or an external action executor.
 

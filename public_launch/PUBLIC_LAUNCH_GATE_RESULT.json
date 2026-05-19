@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-05-19T20:16:11.498792+00:00",
+  "overall_token": "PASS",
+  "checks": {
+    "private_deployment_qa": {
+      "token": "PASS",
+      "value": "PASS"
+    },
+    "crosslink_audit": {
+      "token": "PASS",
+      "value": "PASS"
+    },
+    "no_secrets_audit": {
+      "token": "PASS",
+      "finding_count": 0
+    },
+    "launch_claim_guard": {
+      "token": "PASS",
+      "value": "PASS"
+    },
+    "realdata_claim_audit": {
+      "token": "PASS",
+      "value": "PASS"
+    },
+    "smoke_all": {
+      "token": "PASS",
+      "pass": true
+    },
+    "final_preflight": {
+      "token": "PASS",
+      "value": "PASS"
+    },
+    "public_beta_mcp": {
+      "token": "PASS",
+      "count": 50
+    },
+    "readme_claim_boundary": {
+      "token": "PASS",
+      "contains_boundary": true
+    },
+    "no_public_actions": {
+      "token": "PASS",
+      "public_switch_performed": false,
+      "community_post_performed": false,
+      "mcp_registry_submission_performed": false
+    }
+  },
+  "github_url": "https://github.com/Isometric-Architect/ai-objective-index",
+  "hf_space_url": "https://huggingface.co/spaces/edict-lab/ai-objective-index-demo",
+  "hf_dataset_url": "https://huggingface.co/datasets/edict-lab/ai-objective-index-sample",
+  "public_switch_allowed_after_manual_confirmation": true,
+  "required_manual_confirmation": true,
+  "public_switch_performed": false,
+  "community_post_performed": false,
+  "mcp_registry_submission_performed": false,
+  "warnings": [
+    "PASS means the user may decide whether to switch public; it is not product readiness.",
+    "Public launch does not assert security certification, supplier verification, quality guarantee, or purchasing advice."
+  ],
+  "next_action": "Decide: keep private, invite private reviewers, or explicitly confirm a public switch.",
+  "written_assets": [
+    "public_launch\\PUBLIC_LAUNCH_README_CHECKLIST.md",
+    "public_launch\\GO_NO_GO_DECISION.md"
+  ],
+  "read_only": true,
+  "live_network_used": false,
+  "actual_publish_performed": false
+}

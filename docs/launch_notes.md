@@ -149,3 +149,23 @@ The default is dry-run. Execute mode requires existing local Hugging Face authen
 Package 8H binds the private GitHub and Hugging Face URLs into local docs and release materials, verifies private deployment status, audits crosslinks, and can push the private sync to GitHub.
 
 It does not make GitHub or Hugging Face public, create a GitHub release, post to communities, submit to MCP Registry, crawl, scrape, follow links, print/store tokens, force push, or perform external actions.
+
+## Package 8I Public Launch Decision Gate
+
+Package 8I adds a dry-run public launch gate, guarded visibility switch helper, public claim audit, private reviewer draft, announcement drafts, and token revocation checklist.
+
+It does not make anything public by default. Execute mode requires `AOI_PUBLIC_LAUNCH_CONFIRM=YES` and a passing launch gate. Package 8I does not post to communities, submit to MCP Registry, create a GitHub Release, crawl, scrape, follow links, print/store tokens, force push, or perform external actions.
+
+## Package 8I-R No-Contact Public Beta Gate
+
+Package 8I-R replaces private-reviewer dependency with deterministic local reviewer simulation and GitHub Issue feedback. It is useful when the owner has no private reviewers available.
+
+The no-contact path runs AI/self-review checks, packages issue labels and golden queries, guards public beta messages, and writes a no-contact GO/NO-GO decision file.
+
+It does not make anything public by default, post to communities, submit to MCP Registry, call external LLM APIs, crawl, scrape, follow links, print/store tokens, or claim verification, safety, security certification, quality guarantee, production readiness, purchasing advice, or action permission.
+
+## Package 8J Pre-Public Sync
+
+Package 8J syncs no-contact launch materials to private staging when explicitly run with `--execute`, then writes a final public dry-run and pre-public state report.
+
+It does not make GitHub public, make Hugging Face public, create a GitHub Release, post to communities, submit to MCP Registry, crawl, scrape, follow links, print/store tokens, force push, or perform external actions.

@@ -23,6 +23,12 @@ Private Hugging Face review links:
 
 These links are not a public launch announcement until the owner manually changes visibility and posts externally.
 
+Package 8I creates conservative announcement drafts under `public_launch/PUBLIC_ANNOUNCEMENT_DRAFTS.md`. They are drafts only. Do not post them automatically, and do not claim verified MCP servers, safe MCP servers, security certification, quality guarantee, official standard status, or purchasing advice.
+
+Package 8I-R adds a no-contact public beta path under `public_launch/PUBLIC_BETA_POST_DRAFT_NO_CONTACT.md`. If private reviewers are unavailable, use GitHub Issues for feedback instead of personal outreach. The no-contact draft is still a draft only; it does not post automatically and does not claim public visibility until the owner manually switches visibility.
+
+Package 8J adds final pre-public dry-run outputs under `public_launch/FINAL_PUBLIC_DRY_RUN_RESULT.json` and `public_launch/PREPUBLIC_STATE_REPORT.json`. These files help decide whether to keep private, pause, or explicitly switch public later. They do not post anything and do not change visibility.
+
 ## Short Public Message
 
 AI Objective Index is a read-only MCP/API benchmark for comparing AI tools, APIs, SaaS products, and MCP servers by explicit objectives, constraints, source traces, missing fields, and decision receipts.

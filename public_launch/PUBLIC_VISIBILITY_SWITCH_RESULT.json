@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-05-19T20:16:22.033456+00:00",
+  "dry_run": true,
+  "execute": false,
+  "github_url": "https://github.com/Isometric-Architect/ai-objective-index",
+  "hf_space_url": "https://huggingface.co/spaces/edict-lab/ai-objective-index-demo",
+  "hf_dataset_url": "https://huggingface.co/datasets/edict-lab/ai-objective-index-sample",
+  "planned_changes": [
+    "GitHub repo private -> public",
+    "Hugging Face Space private -> public",
+    "Hugging Face Dataset private -> public"
+  ],
+  "github_visibility_changed": false,
+  "hf_space_visibility_changed": false,
+  "hf_dataset_visibility_changed": false,
+  "public_switch_performed": false,
+  "token_printed": false,
+  "errors": [],
+  "warnings": [],
+  "read_only": true,
+  "community_post_performed": false,
+  "mcp_registry_submission_performed": false,
+  "gh_cli_available": true,
+  "hf_auth_available": true,
+  "next_action": "Dry run only. To switch public, rerun with --execute and AOI_PUBLIC_LAUNCH_CONFIRM=YES.",
+  "result_status": "not_executed_dry_run_only"
+}

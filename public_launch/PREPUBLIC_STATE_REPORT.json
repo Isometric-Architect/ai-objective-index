@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-05-19T20:42:10.989006+00:00",
+  "github_repo_url": "https://github.com/Isometric-Architect/ai-objective-index",
+  "hf_space_url": "https://huggingface.co/spaces/edict-lab/ai-objective-index-demo",
+  "hf_dataset_url": "https://huggingface.co/datasets/edict-lab/ai-objective-index-sample",
+  "tests_file_count": 124,
+  "last_known_pytest_result": "239 passed or newer, see latest terminal/test run",
+  "public_beta_mcp_count": 50,
+  "no_contact_gate_token": "PASS",
+  "message_guard_token": "PASS",
+  "final_public_dry_run_token": "PASS",
+  "public_visibility_status_if_known": "private_or_not_checked",
+  "token_revocation_reminder": "If no more Hugging Face upload is needed, revoke temporary upload tokens locally. Do not paste tokens into chat or commit them.",
+  "next_options": {
+    "A": "keep private",
+    "B": "public switch after explicit confirmation",
+    "C": "pause and improve docs"
+  },
+  "public_switch_performed": false,
+  "community_post_performed": false,
+  "mcp_registry_submission_performed": false,
+  "read_only": true,
+  "live_network_used": false
+}

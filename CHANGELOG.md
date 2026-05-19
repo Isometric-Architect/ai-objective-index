@@ -198,3 +198,24 @@
 - Added private deployment QA, HF/GitHub crosslink audit, and private GitHub push sync helper.
 - Added private deployment review, link policy, token revocation reminder, and post-deployment checklist assets.
 - Preserved Package 8H exclusions: no public visibility switch, GitHub release creation, Hugging Face public switch, community posting, MCP Registry submission, crawling, scraping, link following, external LLM API, token printing/storage, force push, payment, booking, login automation, email, form submission, purchase, contract signing, account connection, supplier claim/verify, or profile modification.
+
+## 0.1.0-package-8i
+
+- Added public launch decision gate with dry-run default and explicit confirmation requirement.
+- Added guarded public visibility switch helper requiring `AOI_PUBLIC_LAUNCH_CONFIRM=YES` for execute mode.
+- Added public launch claim audit, private reviewer invite/drafts, GO/NO-GO decision, and token revocation checklist.
+- Preserved Package 8I exclusions: no default public switch, community posting, MCP Registry submission, GitHub Release creation, crawling, scraping, link following, external LLM API, token printing/storage, force push, payment, booking, login automation, email, form submission, purchase, contract signing, account connection, supplier claim/verify, or profile modification.
+
+## 0.1.0-package-8i-r
+
+- Added no-contact public beta gate for cases where private reviewers are unavailable.
+- Added deterministic local AI reviewer simulation across skeptic, developer, agent-user, data-quality, and business-positioning roles.
+- Added issue-based feedback loop packaging, conservative public beta message guard, and no-contact GO/NO-GO drafts.
+- Preserved Package 8I-R exclusions: no default public switch, community posting, MCP Registry submission, external LLM API calls, crawling, scraping, link following, token printing/storage, payment, booking, login automation, email, form submission, purchase, contract signing, account connection, supplier claim/verify, profile modification, or claims of verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
+
+## 0.1.0-package-8j
+
+- Added pre-public private sync helper with dry-run default and selected safe staging paths.
+- Added final public visibility dry-run and pre-public state report.
+- Added final public switch instructions and pre-public review checklist.
+- Preserved Package 8J exclusions: no public visibility change, community posting, MCP Registry submission, GitHub Release creation, crawling, scraping, link following, external LLM API calls, token printing/storage, force push, payment, booking, login automation, email, form submission, purchase, contract signing, account connection, supplier claim/verify, profile modification, or claims of verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.

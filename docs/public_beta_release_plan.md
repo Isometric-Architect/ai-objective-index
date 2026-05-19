@@ -88,6 +88,51 @@ The current deployment links are private review links:
 
 Run `python -m ai_objective_index.private_deployment_qa` and `python -m ai_objective_index.hf_github_crosslink_audit` before any manual public switch.
 
+## Package 8I Public Launch Decision Gate
+
+Before a public switch, run:
+
+```powershell
+python -m ai_objective_index.public_launch_gate
+python -m ai_objective_index.public_visibility_switch --dry-run
+python -m ai_objective_index.public_launch_claim_audit
+python -m ai_objective_index.private_reviewer_packager
+python -m ai_objective_index.token_revocation_checklist
+```
+
+Actual execute mode requires `AOI_PUBLIC_LAUNCH_CONFIRM=YES`. A PASS result means the user may decide whether to switch public; it is not a product-readiness, security, certification, quality, legal, or purchasing claim.
+
+## Package 8I-R No-Contact Public Beta
+
+Private reviewers are optional, not mandatory. If no private reviewers are available, use:
+
+```powershell
+python -m ai_objective_index.ai_reviewer_simulation
+python -m ai_objective_index.issue_feedback_loop_packager
+python -m ai_objective_index.public_beta_message_guard
+python -m ai_objective_index.no_contact_launch_gate
+```
+
+This path uses deterministic local checks and GitHub Issues instead of personal outreach. It does not make anything public by default, post to communities, submit to MCP Registry, call external LLM APIs, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
+
+## Package 8J Pre-Public Sync
+
+Before any public switch, run the final sync and dry-run:
+
+```powershell
+python -m ai_objective_index.prepublic_sync --dry-run
+python -m ai_objective_index.final_public_dry_run
+python -m ai_objective_index.prepublic_state_report
+```
+
+If private staging needs the latest no-contact files, run:
+
+```powershell
+python -m ai_objective_index.prepublic_sync --execute
+```
+
+Package 8J still does not change visibility. Public switching remains a later manual decision guarded by `AOI_PUBLIC_LAUNCH_CONFIRM=YES`.
+
 
 ## GitHub Private Staging
 

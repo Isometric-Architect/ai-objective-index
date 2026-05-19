@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-05-19T20:42:18.884526+00:00",
+  "overall_token": "PASS",
+  "checks": {
+    "no_contact_launch_gate": {
+      "token": "PASS",
+      "value": "PASS"
+    },
+    "ai_reviewer_simulation": {
+      "token": "PASS",
+      "value": "PASS"
+    },
+    "public_beta_message_guard": {
+      "token": "PASS",
+      "value": "PASS"
+    },
+    "no_secrets_audit": {
+      "token": "PASS",
+      "finding_count": 0
+    },
+    "launch_claim_guard": {
+      "token": "PASS",
+      "value": "PASS"
+    },
+    "smoke_all": {
+      "token": "PASS",
+      "pass": true
+    },
+    "github_remote": {
+      "token": "PASS",
+      "remote": "https://github.com/Isometric-Architect/ai-objective-index.git"
+    },
+    "hf_space": {
+      "token": "PASS",
+      "status": "RUNNING"
+    },
+    "hf_dataset": {
+      "token": "PASS",
+      "value": true
+    },
+    "public_beta_mcp": {
+      "token": "PASS",
+      "count": 50
+    },
+    "actual_public_switch_not_performed": {
+      "token": "PASS",
+      "actual_switch_performed": false
+    }
+  },
+  "would_switch": {
+    "github_repo": true,
+    "hf_space": true,
+    "hf_dataset": true
+  },
+  "actual_switch_performed": false,
+  "required_user_confirmation": true,
+  "required_env_for_execute": "AOI_PUBLIC_LAUNCH_CONFIRM=YES",
+  "github_url": "https://github.com/Isometric-Architect/ai-objective-index",
+  "hf_space_url": "https://huggingface.co/spaces/edict-lab/ai-objective-index-demo",
+  "hf_dataset_url": "https://huggingface.co/datasets/edict-lab/ai-objective-index-sample",
+  "warnings": [
+    "This is a dry-run only. No public visibility change was performed.",
+    "A PASS token is not verification, security certification, quality guarantee, production readiness, or purchasing advice."
+  ],
+  "next_action": "Human decision required: keep private, pause, or explicitly authorize public visibility switch later.",
+  "read_only": true,
+  "live_network_used": false,
+  "actual_publish_performed": false,
+  "community_post_performed": false,
+  "mcp_registry_submission_performed": false
+}

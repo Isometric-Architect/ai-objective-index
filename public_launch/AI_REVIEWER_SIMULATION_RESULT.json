@@ -1,0 +1,99 @@
+{
+  "generated_at": "2026-05-19T20:42:57.528464+00:00",
+  "overall_token": "PASS",
+  "reviewer_count": 5,
+  "reviewers": {
+    "skeptic_reviewer": {
+      "role": "skeptic_reviewer",
+      "token": "PASS",
+      "findings": [
+        "public launch risky phrase count: 0",
+        "README does not describe public_beta_mcp as verified."
+      ],
+      "required_fixes": [],
+      "confidence": 0.9,
+      "evidence_files_checked": [
+        "README.md",
+        "docs/community_launch.md",
+        "docs/public_beta_release_plan.md",
+        "public_launch/*.md",
+        "release/public_beta_v0_2/*.md"
+      ]
+    },
+    "developer_reviewer": {
+      "role": "developer_reviewer",
+      "token": "PASS",
+      "findings": [
+        "README exists: True",
+        "installation/demo commands documented: True",
+        "smoke_all passed or documented: True"
+      ],
+      "required_fixes": [],
+      "confidence": 0.86,
+      "evidence_files_checked": [
+        "README.md",
+        "data/generated/smoke_all_result_v0_1.json"
+      ]
+    },
+    "agent_user_reviewer": {
+      "role": "agent_user_reviewer",
+      "token": "PASS",
+      "findings": [
+        "mcp_manifest: True",
+        "openapi: True",
+        "hf_space_link: True",
+        "source_trace_visible: True"
+      ],
+      "required_fixes": [],
+      "confidence": 0.88,
+      "evidence_files_checked": [
+        "data/generated_mcp_tools_manifest.json",
+        "api/openapi.json",
+        "docs/mcp_usage.md",
+        "docs/api_reference.md",
+        "docs/huggingface_demo.md"
+      ]
+    },
+    "data_quality_reviewer": {
+      "role": "data_quality_reviewer",
+      "token": "PASS",
+      "findings": [
+        "public_beta_mcp_count: 50",
+        "source_trace_count: 191",
+        "fixture_leak_detected: False",
+        "raw_payload_mode: manual_raw"
+      ],
+      "required_fixes": [],
+      "confidence": 0.9,
+      "evidence_files_checked": [
+        "data/registry/registry_payload_audit_v0_1.json",
+        "data/registry/mcp_registry_beta_candidates_v0_1.jsonl"
+      ]
+    },
+    "business_positioning_reviewer": {
+      "role": "business_positioning_reviewer",
+      "token": "PASS",
+      "findings": [
+        "one-line positioning exists: True",
+        "target users identified: True",
+        "no overclaim findings: True",
+        "GitHub: https://github.com/Isometric-Architect/ai-objective-index",
+        "HF Space: https://huggingface.co/spaces/edict-lab/ai-objective-index-demo",
+        "HF Dataset: https://huggingface.co/datasets/edict-lab/ai-objective-index-sample"
+      ],
+      "required_fixes": [],
+      "confidence": 0.84,
+      "evidence_files_checked": [
+        "README.md",
+        "docs/community_launch.md",
+        "public_launch/PUBLIC_LAUNCH_CLAIM_AUDIT_RESULT.json"
+      ]
+    }
+  },
+  "external_llm_used": false,
+  "live_network_used": false,
+  "private_reviewer_required": false,
+  "public_switch_performed": false,
+  "community_post_performed": false,
+  "next_action": "Run no_contact_launch_gate and decide whether to keep private or public-switch manually."
+}

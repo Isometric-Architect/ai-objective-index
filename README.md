@@ -567,6 +567,51 @@ Private deployment links:
 
 Package 8H does not make GitHub or Hugging Face public, create a GitHub release, post to communities, submit to MCP Registry, print/store tokens, force push, crawl, scrape, or execute external actions.
 
+## Package 8I Public Launch Decision Gate
+
+Package 8I prepares a dry-run public launch decision gate and private reviewer path:
+
+```powershell
+python -m ai_objective_index.public_launch_gate
+python -m ai_objective_index.public_visibility_switch --dry-run
+python -m ai_objective_index.public_launch_claim_audit
+python -m ai_objective_index.private_reviewer_packager
+python -m ai_objective_index.token_revocation_checklist
+```
+
+Actual public visibility switch is blocked unless the user later runs `python -m ai_objective_index.public_visibility_switch --execute` and explicitly sets `AOI_PUBLIC_LAUNCH_CONFIRM=YES`. Package 8I does not make anything public by default, post to communities, submit to MCP Registry, create a GitHub Release, print/store tokens, or claim verification, safety, certification, quality guarantee, or purchasing advice.
+
+## Package 8I-R No-Contact Public Beta Gate
+
+Package 8I-R removes any dependency on private reviewers. If no private reviewers are available, AOI can use deterministic local AI/self-review, conservative public wording, and GitHub Issues as the feedback loop:
+
+```powershell
+python -m ai_objective_index.ai_reviewer_simulation
+python -m ai_objective_index.issue_feedback_loop_packager
+python -m ai_objective_index.public_beta_message_guard
+python -m ai_objective_index.no_contact_launch_gate
+```
+
+This path still does not make anything public by default. It does not post to communities, submit to MCP Registry, call external LLM APIs, print/store tokens, or claim that `public_beta_mcp` candidates are verified, safe, security certified, quality guaranteed, production-ready, or purchasing advice.
+
+## Package 8J Pre-Public Sync And Final Public Dry-Run
+
+Package 8J syncs the latest no-contact beta gate materials to private staging and runs the final public visibility dry-run:
+
+```powershell
+python -m ai_objective_index.prepublic_sync --dry-run
+python -m ai_objective_index.final_public_dry_run
+python -m ai_objective_index.prepublic_state_report
+```
+
+If the dry-run is clean and the owner wants to push private staging updates:
+
+```powershell
+python -m ai_objective_index.prepublic_sync --execute
+```
+
+Package 8J does not make GitHub or Hugging Face public, create a GitHub Release, post to communities, submit to MCP Registry, print/store tokens, force push, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
+
 ## Claim Boundary
 
 Allowed claim: AOI is a read-only MCP/API objective ranking and comparison tool with explicit schemas, sample source traces, missing-field reporting, and decision receipt contracts.
@@ -606,6 +651,15 @@ AOI output is not a quality guarantee. It is not legal, financial, medical, purc
 - `docs/package_8h_private_deployment_sync.md`: private deployment link sync and push commands.
 - `docs/private_deployment_review.md`: private GitHub/HF deployment review checklist.
 - `docs/hf_github_link_policy.md`: private link wording and claim policy.
+- `docs/package_8i_public_launch_decision_gate.md`: public launch dry-run gate and confirmation rule.
+- `docs/public_launch_policy.md`: private-to-public policy and claim boundaries.
+- `docs/private_reviewer_workflow.md`: private reviewer workflow before public launch.
+- `docs/no_contact_public_beta_strategy.md`: no-contact public beta strategy when private reviewers are unavailable.
+- `docs/ai_reviewer_simulation.md`: deterministic local reviewer roles.
+- `docs/issue_based_feedback_loop.md`: GitHub Issues feedback workflow.
+- `docs/package_8j_prepublic_sync.md`: pre-public private sync and dry-run commands.
+- `docs/final_public_dry_run.md`: final dry-run and public switch gating.
+- `docs/token_revocation_after_upload.md`: token revocation guidance after HF uploads.
 - `docs/public_data_intake_policy.md`: public-data intake limits.
 - `docs/real_mcp_integration.md`: real MCP SDK integration and fallback behavior.
 - `docs/public_beta_release_plan.md`: public beta release-candidate plan and manual boundary.

@@ -1,0 +1,173 @@
+{
+  "generated_at": "2026-05-19T20:42:57.532762+00:00",
+  "overall_token": "PASS",
+  "risky_phrase_count": 0,
+  "findings": [],
+  "allowed_mentions": [
+    {
+      "file": "docs\\community_launch.md",
+      "phrase": "read-only"
+    },
+    {
+      "file": "docs\\community_launch.md",
+      "phrase": "source-traced"
+    },
+    {
+      "file": "docs\\community_launch.md",
+      "phrase": "registry metadata candidates"
+    },
+    {
+      "file": "docs\\community_launch.md",
+      "phrase": "please test"
+    },
+    {
+      "file": "docs\\community_launch.md",
+      "phrase": "not verified"
+    },
+    {
+      "file": "docs\\community_launch.md",
+      "phrase": "not security certified"
+    },
+    {
+      "file": "docs\\community_launch.md",
+      "phrase": "not quality guarantee"
+    },
+    {
+      "file": "docs\\community_launch.md",
+      "phrase": "not a quality guarantee"
+    },
+    {
+      "file": "launch\\manual_public_beta_v0_2\\COMMUNITY_POST_DRAFTS.md",
+      "phrase": "read-only"
+    },
+    {
+      "file": "launch\\manual_public_beta_v0_2\\COMMUNITY_POST_DRAFTS.md",
+      "phrase": "source-traced"
+    },
+    {
+      "file": "launch\\manual_public_beta_v0_2\\COMMUNITY_POST_DRAFTS.md",
+      "phrase": "registry metadata candidates"
+    },
+    {
+      "file": "launch\\manual_public_beta_v0_2\\COMMUNITY_POST_DRAFTS.md",
+      "phrase": "please test"
+    },
+    {
+      "file": "launch\\manual_public_beta_v0_2\\COMMUNITY_POST_DRAFTS.md",
+      "phrase": "break it"
+    },
+    {
+      "file": "launch\\manual_public_beta_v0_2\\COMMUNITY_POST_DRAFTS.md",
+      "phrase": "not verified"
+    },
+    {
+      "file": "launch\\manual_public_beta_v0_2\\COMMUNITY_POST_DRAFTS.md",
+      "phrase": "not security certified"
+    },
+    {
+      "file": "launch\\manual_public_beta_v0_2\\COMMUNITY_POST_DRAFTS.md",
+      "phrase": "not a quality guarantee"
+    },
+    {
+      "file": "public_launch\\PUBLIC_ANNOUNCEMENT_DRAFTS.md",
+      "phrase": "read-only"
+    },
+    {
+      "file": "public_launch\\PUBLIC_ANNOUNCEMENT_DRAFTS.md",
+      "phrase": "source-traced"
+    },
+    {
+      "file": "public_launch\\PUBLIC_ANNOUNCEMENT_DRAFTS.md",
+      "phrase": "registry metadata candidates"
+    },
+    {
+      "file": "public_launch\\PUBLIC_ANNOUNCEMENT_DRAFTS.md",
+      "phrase": "please test"
+    },
+    {
+      "file": "public_launch\\PUBLIC_ANNOUNCEMENT_DRAFTS.md",
+      "phrase": "break it"
+    },
+    {
+      "file": "public_launch\\PUBLIC_ANNOUNCEMENT_DRAFTS.md",
+      "phrase": "not verified"
+    },
+    {
+      "file": "public_launch\\PUBLIC_ANNOUNCEMENT_DRAFTS.md",
+      "phrase": "not security certified"
+    },
+    {
+      "file": "public_launch\\PUBLIC_ANNOUNCEMENT_DRAFTS.md",
+      "phrase": "not a quality guarantee"
+    },
+    {
+      "file": "public_launch\\PUBLIC_BETA_POST_DRAFT_NO_CONTACT.md",
+      "phrase": "read-only"
+    },
+    {
+      "file": "public_launch\\PUBLIC_BETA_POST_DRAFT_NO_CONTACT.md",
+      "phrase": "registry metadata candidates"
+    },
+    {
+      "file": "public_launch\\PUBLIC_BETA_POST_DRAFT_NO_CONTACT.md",
+      "phrase": "please test"
+    },
+    {
+      "file": "public_launch\\PUBLIC_BETA_POST_DRAFT_NO_CONTACT.md",
+      "phrase": "not verified"
+    },
+    {
+      "file": "public_launch\\PUBLIC_BETA_POST_DRAFT_NO_CONTACT.md",
+      "phrase": "not security certified"
+    },
+    {
+      "file": "public_launch\\PUBLIC_BETA_POST_DRAFT_NO_CONTACT.md",
+      "phrase": "not a quality guarantee"
+    }
+  ],
+  "contextual_mentions": [
+    {
+      "file": "docs\\community_launch.md",
+      "line": 26,
+      "phrase": "official standard",
+      "text": "Package 8I creates conservative announcement drafts under `public_launch/PUBLIC_ANNOUNCEMENT_DRAFTS.md`. They are drafts only. Do not post them automatically, and do not claim verified MCP servers, safe MCP servers, security certification, quality guarantee, official standard status, or purchasing advice.",
+      "counted": false
+    }
+  ],
+  "scanned_files": [
+    "docs\\community_launch.md",
+    "launch\\manual_public_beta_v0_2\\COMMUNITY_POST_DRAFTS.md",
+    "public_launch\\PUBLIC_ANNOUNCEMENT_DRAFTS.md",
+    "public_launch\\PUBLIC_BETA_POST_DRAFT_NO_CONTACT.md"
+  ],
+  "blocked_positive_claims": [
+    "ai google",
+    "best mcp servers",
+    "verified servers",
+    "safe servers",
+    "production-ready",
+    "official standard",
+    "all ai will use",
+    "guaranteed ranking"
+  ],
+  "allowed_phrases": [
+    "read-only",
+    "source-traced",
+    "objective-based ranking",
+    "registry metadata candidates",
+    "please test",
+    "break it",
+    "not verified",
+    "not security certified",
+    "not quality guarantee",
+    "not a quality guarantee"
+  ],
+  "suggested_rewrites": [
+    "Use: read-only source-traced objective-based ranking.",
+    "Use: registry metadata candidates, not verified or security certified.",
+    "Use: please test/break it and open issues."
+  ],
+  "actual_post_performed": false,
+  "public_switch_performed": false,
+  "live_network_used": false
+}

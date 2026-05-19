@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-05-19T20:42:57.559769+00:00",
+  "overall_token": "PASS",
+  "checks": {
+    "ai_reviewer_simulation": {
+      "token": "PASS",
+      "value": "PASS"
+    },
+    "no_secrets_audit": {
+      "token": "PASS",
+      "finding_count": 0
+    },
+    "launch_claim_guard": {
+      "token": "PASS",
+      "value": "PASS"
+    },
+    "public_launch_claim_audit": {
+      "token": "PASS",
+      "value": "PASS"
+    },
+    "final_preflight": {
+      "token": "PASS",
+      "value": "PASS"
+    },
+    "private_deployment_qa": {
+      "token": "PASS",
+      "value": "PASS"
+    },
+    "hf_space_running": {
+      "token": "PASS",
+      "value": true
+    },
+    "public_beta_mcp": {
+      "token": "PASS",
+      "count": 50
+    },
+    "issue_templates": {
+      "token": "PASS",
+      "exists": true
+    },
+    "community_drafts_conservative": {
+      "token": "PASS",
+      "contains_required_boundaries": true
+    },
+    "message_guard": {
+      "token": "PASS",
+      "value": "PASS"
+    },
+    "private_reviewer_not_required": {
+      "token": "PASS",
+      "private_reviewer_required": false
+    },
+    "no_public_actions": {
+      "token": "PASS",
+      "public_switch_performed": false,
+      "community_post_performed": false,
+      "mcp_registry_submission_performed": false
+    }
+  },
+  "private_reviewer_required": false,
+  "launch_mode": "no_contact_public_beta",
+  "public_switch_performed": false,
+  "community_post_performed": false,
+  "mcp_registry_submission_performed": false,
+  "github_url": "https://github.com/Isometric-Architect/ai-objective-index",
+  "hf_space_url": "https://huggingface.co/spaces/edict-lab/ai-objective-index-demo",
+  "hf_dataset_url": "https://huggingface.co/datasets/edict-lab/ai-objective-index-sample",
+  "issue_feedback_loop_plan": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\public_launch\\ISSUE_FEEDBACK_LOOP_PLAN.md",
+  "written_assets": [
+    "public_launch\\PUBLIC_BETA_POST_DRAFT_NO_CONTACT.md",
+    "public_launch\\NO_CONTACT_GO_NO_GO_DECISION.md",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\public_launch\\ISSUE_FEEDBACK_LOOP_PLAN.md"
+  ],
+  "warnings": [
+    "No-contact public beta replaces private reviewer dependency with deterministic local review and issue-based feedback.",
+    "A PASS result is not verification, security certification, quality guarantee, production readiness, or purchasing advice."
+  ],
+  "next_action": "Human decision required: keep private, switch public with no-contact beta, or pause.",
+  "read_only": true,
+  "live_network_used": false,
+  "actual_publish_performed": false
+}

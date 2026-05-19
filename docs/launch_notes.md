@@ -175,3 +175,9 @@ It does not make GitHub public, make Hugging Face public, create a GitHub Releas
 Package 8K performs the public visibility switch after explicit confirmation through `AOI_PUBLIC_LAUNCH_CONFIRM=YES`.
 
 It may make the prepared GitHub repository, Hugging Face Space, and Hugging Face Dataset public. It does not post to communities, create a GitHub Release, submit to MCP Registry, crawl, scrape, follow links, print/store tokens, force push, or perform external actions.
+
+## Package 8L Post-Public Stabilization
+
+Package 8L runs the first public-stage stabilization pass. It checks public records, activates GitHub issue templates and suggested labels, writes manual token revocation guidance, and creates a 72-hour observation plan.
+
+It does not post to communities, create a GitHub Release, submit to MCP Registry, revoke tokens automatically, crawl, scrape, follow links, print/store tokens, force push, or perform external actions.

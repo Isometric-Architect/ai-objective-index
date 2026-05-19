@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-05-19T21:31:05.029374+00:00",
+  "templates_present": [
+    ".github\\ISSUE_TEMPLATE\\add_new_tool.md",
+    ".github\\ISSUE_TEMPLATE\\failed_query.md",
+    ".github\\ISSUE_TEMPLATE\\install_failure.md",
+    ".github\\ISSUE_TEMPLATE\\missing_source_trace.md",
+    ".github\\ISSUE_TEMPLATE\\scoring_dispute.md",
+    ".github\\ISSUE_TEMPLATE\\wrong_extracted_field.md"
+  ],
+  "templates_created": [],
+  "labels_suggested": [
+    "failed-query",
+    "wrong-field",
+    "scoring-dispute",
+    "missing-source-trace",
+    "add-tool",
+    "install-failure",
+    "docs-confusion",
+    "good-first-feedback",
+    "public-beta"
+  ],
+  "labels_path": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\public_launch\\GITHUB_LABELS_SUGGESTED.md",
+  "golden_queries": [
+    "Find a cheap image generation API with commercial-use terms.",
+    "Compare MCP servers for browser automation.",
+    "Find AI coding tools with clear pricing and docs.",
+    "Find open-source agent frameworks with active repos.",
+    "Find AI APIs with free tiers and clear rate limits."
+  ],
+  "first_issue_templates_check_path": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\public_launch\\FIRST_ISSUE_TEMPLATES_CHECK.md",
+  "feedback_loop_ready": true,
+  "warnings": [
+    "GitHub labels are suggestions; create them manually in GitHub if desired.",
+    "Issue feedback is not supplier verification, security certification, or quality guarantee."
+  ],
+  "community_post_performed": false,
+  "github_release_created": false,
+  "mcp_registry_submission_performed": false,
+  "read_only": true,
+  "live_network_used": false
+}

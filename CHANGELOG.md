@@ -226,3 +226,10 @@
 - Added public URL QA and post-public state reporting.
 - Added post-public review checklist, community post HOLD note, and token revocation reminder.
 - Preserved Package 8K exclusions: no community posting, GitHub Release creation, MCP Registry submission, crawling, scraping, link following, external LLM API calls, token printing/storage, force push, payment, booking, login automation, email, form submission, purchase, contract signing, account connection, supplier claim/verify, profile modification, or claims of verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
+
+## 0.1.0-package-8l
+
+- Added post-public stabilization checks for public URLs, claim boundaries, no-secrets status, release HOLD status, and `public_beta_mcp` count.
+- Added public GitHub issue loop activation with missing source trace and install failure templates, suggested labels, and first golden query checklist.
+- Added Hugging Face token revocation verification guidance and a 72-hour public observation plan.
+- Preserved Package 8L exclusions: no community posting, GitHub Release creation, MCP Registry submission, crawling, scraping, link following, external LLM API calls, token printing/storage, force push, payment, booking, login automation, email, form submission, purchase, contract signing, account connection, supplier claim/verify, profile modification, or claims of verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.

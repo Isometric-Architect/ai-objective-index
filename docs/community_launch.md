@@ -31,6 +31,8 @@ Package 8J adds final pre-public dry-run outputs under `public_launch/FINAL_PUBL
 
 Package 8K may make the GitHub repository and Hugging Face Space/Dataset public after explicit confirmation. That is still not a community launch. Review `public_launch/COMMUNITY_POST_HOLD_NOTE.md` and check public URLs before posting anywhere.
 
+Package 8L keeps community launch on HOLD. Run `python -m ai_objective_index.post_public_stabilization`, `python -m ai_objective_index.public_issue_loop`, and `python -m ai_objective_index.public_observation_plan` first, then observe public URLs and GitHub Issues for 72 hours. Community launch should be a later Package 8M-style decision.
+
 ## Short Public Message
 
 AI Objective Index is a read-only MCP/API benchmark for comparing AI tools, APIs, SaaS products, and MCP servers by explicit objectives, constraints, source traces, missing fields, and decision receipts.
@@ -75,8 +77,9 @@ I am looking for feedback on failed queries, wrong extracted fields, missing sou
 - Not a quality guarantee, official ranking, legal advice, financial advice, medical advice, purchasing advice, or safety certification.
 
 
-## GitHub Private Staging
+## Public Deployment
 
-- GitHub private staging repository: https://github.com/Isometric-Architect/ai-objective-index
-- Current visibility: private staging unless the user manually switches it.
-- Public visibility is not claimed by Package 8D.
+- GitHub repository: https://github.com/Isometric-Architect/ai-objective-index
+- Hugging Face Space: https://huggingface.co/spaces/edict-lab/ai-objective-index-demo
+- Hugging Face Dataset: https://huggingface.co/datasets/edict-lab/ai-objective-index-sample
+- Community posting remains HOLD until post-public stabilization and observation are complete.

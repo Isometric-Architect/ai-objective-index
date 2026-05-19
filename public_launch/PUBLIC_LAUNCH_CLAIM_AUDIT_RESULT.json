@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T20:28:33.144166+00:00",
+  "generated_at": "2026-05-19T21:31:05.096775+00:00",
   "overall_token": "PASS",
   "risky_phrase_count": 0,
   "findings": [],
@@ -34,28 +34,28 @@
     },
     {
       "file": "docs\\community_launch.md",
-      "line": 69,
+      "line": 75,
       "phrase": "security certified",
       "text": "- Official MCP Registry metadata candidates are not verified, not security certified, and not quality guaranteed.",
       "counted": false
     },
     {
       "file": "docs\\community_launch.md",
-      "line": 69,
+      "line": 75,
       "phrase": "quality guaranteed",
       "text": "- Official MCP Registry metadata candidates are not verified, not security certified, and not quality guaranteed.",
       "counted": false
     },
     {
       "file": "docs\\community_launch.md",
-      "line": 71,
+      "line": 77,
       "phrase": "purchasing advice",
       "text": "- Not a quality guarantee, official ranking, legal advice, financial advice, medical advice, purchasing advice, or safety certification.",
       "counted": false
     },
     {
       "file": "docs\\community_launch.md",
-      "line": 71,
+      "line": 77,
       "phrase": "legal advice",
       "text": "- Not a quality guarantee, official ranking, legal advice, financial advice, medical advice, purchasing advice, or safety certification.",
       "counted": false
@@ -128,6 +128,20 @@
       "line": 116,
       "phrase": "purchasing advice",
       "text": "This path uses deterministic local checks and GitHub Issues instead of personal outreach. It does not make anything public by default, post to communities, submit to MCP Registry, call external LLM APIs, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "docs\\public_beta_release_plan.md",
+      "line": 148,
+      "phrase": "purchasing advice",
+      "text": "Package 8K changes visibility only. It does not create a GitHub Release, post to communities, submit to MCP Registry, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "docs\\public_beta_release_plan.md",
+      "line": 161,
+      "phrase": "purchasing advice",
+      "text": "Package 8L activates issue-based feedback and a 72-hour observation plan. It still does not post to communities, create a GitHub Release, submit to MCP Registry, revoke tokens automatically, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.",
       "counted": false
     },
     {
@@ -243,6 +257,62 @@
       "counted": false
     },
     {
+      "file": "public_launch\\COMMUNITY_POST_HOLD_NOTE.md",
+      "line": 5,
+      "phrase": "security certified",
+      "text": "Wait until URLs are checked. Community posting should be Package 8L or a separate explicit user decision. Use only the conservative no-contact draft, and do not claim verified, safe, security certified, quality guaranteed, production-ready, or purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "public_launch\\COMMUNITY_POST_HOLD_NOTE.md",
+      "line": 5,
+      "phrase": "quality guaranteed",
+      "text": "Wait until URLs are checked. Community posting should be Package 8L or a separate explicit user decision. Use only the conservative no-contact draft, and do not claim verified, safe, security certified, quality guaranteed, production-ready, or purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "public_launch\\COMMUNITY_POST_HOLD_NOTE.md",
+      "line": 5,
+      "phrase": "production-ready",
+      "text": "Wait until URLs are checked. Community posting should be Package 8L or a separate explicit user decision. Use only the conservative no-contact draft, and do not claim verified, safe, security certified, quality guaranteed, production-ready, or purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "public_launch\\COMMUNITY_POST_HOLD_NOTE.md",
+      "line": 5,
+      "phrase": "purchasing advice",
+      "text": "Wait until URLs are checked. Community posting should be Package 8L or a separate explicit user decision. Use only the conservative no-contact draft, and do not claim verified, safe, security certified, quality guaranteed, production-ready, or purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "public_launch\\COMMUNITY_POST_STILL_HOLD.md",
+      "line": 7,
+      "phrase": "security certified",
+      "text": "- Any later post must say AOI is read-only, source-traced, not verified, not security certified, not a quality guarantee, and not purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "public_launch\\COMMUNITY_POST_STILL_HOLD.md",
+      "line": 7,
+      "phrase": "purchasing advice",
+      "text": "- Any later post must say AOI is read-only, source-traced, not verified, not security certified, not a quality guarantee, and not purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "public_launch\\FINAL_PUBLIC_SWITCH_INSTRUCTIONS.md",
+      "line": 43,
+      "phrase": "verified mcp servers",
+      "text": "- Do not claim verified MCP servers.",
+      "counted": false
+    },
+    {
+      "file": "public_launch\\FIRST_ISSUE_TEMPLATES_CHECK.md",
+      "line": 23,
+      "phrase": "security certified",
+      "text": "- `public_beta_mcp` records are registry metadata candidates, not verified, not security certified, and not a quality guarantee.",
+      "counted": false
+    },
+    {
       "file": "public_launch\\ISSUE_FEEDBACK_LOOP_PLAN.md",
       "line": 37,
       "phrase": "security certified",
@@ -282,6 +352,13 @@
       "line": 22,
       "phrase": "purchasing advice",
       "text": "No-contact public beta does not mean verified, safe, security certified, quality guaranteed, production-ready, purchasing advice, or action permission.",
+      "counted": false
+    },
+    {
+      "file": "public_launch\\POST_PUBLIC_REVIEW_CHECKLIST.md",
+      "line": 8,
+      "phrase": "security certified",
+      "text": "- [ ] Confirm dataset card says not verified and not security certified.",
       "counted": false
     },
     {
@@ -352,6 +429,13 @@
       "line": 9,
       "phrase": "purchasing advice",
       "text": "- [ ] README says not purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "public_launch\\PUBLIC_OBSERVATION_PLAN_72H.md",
+      "line": 10,
+      "phrase": "security certified",
+      "text": "- Confirm the public pages still say not verified, not security certified, not a quality guarantee, and read-only.",
       "counted": false
     },
     {
@@ -475,14 +559,35 @@
     },
     {
       "file": "README.md",
-      "line": 601,
+      "line": 613,
+      "phrase": "purchasing advice",
+      "text": "Package 8J does not make GitHub or Hugging Face public, create a GitHub Release, post to communities, submit to MCP Registry, print/store tokens, force push, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 627,
+      "phrase": "purchasing advice",
+      "text": "Package 8K may make the prepared GitHub repo, Hugging Face Space, and Hugging Face Dataset public. It does not create a GitHub Release, post to communities, submit to MCP Registry, crawl, scrape, call external LLM APIs, print/store tokens, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 646,
+      "phrase": "purchasing advice",
+      "text": "Package 8L does not post to communities, create a GitHub Release, submit to MCP Registry, crawl, scrape, call external LLM APIs, print/store tokens, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.",
+      "counted": false
+    },
+    {
+      "file": "README.md",
+      "line": 652,
       "phrase": "official standard",
       "text": "Forbidden claims: AOI is an official standard, a guarantee of quality, a comprehensive market index, a paid placement system, or a system that automatically purchases, books, pays, emails, logs in, submits forms, or signs contracts.",
       "counted": false
     },
     {
       "file": "README.md",
-      "line": 601,
+      "line": 652,
       "phrase": "signs contracts",
       "text": "Forbidden claims: AOI is an official standard, a guarantee of quality, a comprehensive market index, a paid placement system, or a system that automatically purchases, books, pays, emails, logs in, submits forms, or signs contracts.",
       "counted": false
@@ -588,14 +693,24 @@
     "launch\\manual_public_beta_v0_2\\HUGGINGFACE_SPACE_UPLOAD_GUIDE.md",
     "launch\\manual_public_beta_v0_2\\MCP_REGISTRY_SUBMISSION_DRAFT.md",
     "launch\\manual_public_beta_v0_2\\README_LAUNCH_STEPS.md",
+    "public_launch\\COMMUNITY_POST_HOLD_NOTE.md",
+    "public_launch\\COMMUNITY_POST_STILL_HOLD.md",
+    "public_launch\\FINAL_PUBLIC_SWITCH_INSTRUCTIONS.md",
+    "public_launch\\FIRST_ISSUE_TEMPLATES_CHECK.md",
+    "public_launch\\GITHUB_LABELS_SUGGESTED.md",
     "public_launch\\GO_NO_GO_DECISION.md",
     "public_launch\\ISSUE_FEEDBACK_LOOP_PLAN.md",
     "public_launch\\NO_CONTACT_GO_NO_GO_DECISION.md",
+    "public_launch\\POST_PUBLIC_GO_NO_GO_NEXT.md",
+    "public_launch\\POST_PUBLIC_REVIEW_CHECKLIST.md",
+    "public_launch\\PREPUBLIC_REVIEW_CHECKLIST.md",
     "public_launch\\PRIVATE_REVIEWER_INVITE_DRAFT.md",
     "public_launch\\PUBLIC_ANNOUNCEMENT_DRAFTS.md",
     "public_launch\\PUBLIC_BETA_POST_DRAFT_NO_CONTACT.md",
     "public_launch\\PUBLIC_LAUNCH_README_CHECKLIST.md",
+    "public_launch\\PUBLIC_OBSERVATION_PLAN_72H.md",
     "public_launch\\TOKEN_REVOCATION_CHECKLIST.md",
+    "public_launch\\TOKEN_REVOKE_AFTER_PUBLIC_NOTE.md",
     "README.md",
     "release\\public_beta_v0_2\\CLAIM_BOUNDARY_SUMMARY_v0_2.md",
     "release\\public_beta_v0_2\\KNOWN_LIMITS_v0_2.md",

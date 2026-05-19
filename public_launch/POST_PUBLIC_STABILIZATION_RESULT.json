@@ -1,0 +1,86 @@
+{
+  "generated_at": "2026-05-19T21:31:12.533997+00:00",
+  "overall_token": "PASS",
+  "checks": {
+    "deployment_links_recorded": {
+      "token": "PASS",
+      "links": {
+        "github_url_in_docs": true,
+        "hf_space_url_in_docs": true,
+        "hf_dataset_url_in_docs": true
+      }
+    },
+    "public_url_qa": {
+      "token": "PASS",
+      "value": "PASS"
+    },
+    "post_public_state_report": {
+      "token": "PASS",
+      "exists": true
+    },
+    "public_beta_mcp_count": {
+      "token": "PASS",
+      "count": 50
+    },
+    "no_secrets_audit": {
+      "token": "PASS",
+      "finding_count": 0,
+      "overall_token": "HOLD"
+    },
+    "launch_claim_guard": {
+      "token": "PASS",
+      "value": "PASS"
+    },
+    "public_launch_claim_audit": {
+      "token": "PASS",
+      "value": "PASS",
+      "available": true
+    },
+    "no_community_post": {
+      "token": "PASS",
+      "performed": false
+    },
+    "no_github_release": {
+      "token": "PASS",
+      "created": false
+    },
+    "no_mcp_registry_submission": {
+      "token": "PASS",
+      "performed": false
+    },
+    "claim_boundaries": {
+      "token": "PASS",
+      "checks": {
+        "not_verified": true,
+        "not_security_certified": true,
+        "not_quality_guarantee": true,
+        "read_only": true
+      },
+      "scanned_files": [
+        "README.md",
+        "docs\\huggingface_demo.md",
+        "docs\\community_launch.md",
+        "docs\\public_beta_release_plan.md",
+        "release\\public_beta_v0_2\\README_PUBLIC_BETA_v0_2.md",
+        "hf_upload\\space\\README.md",
+        "hf_upload\\dataset\\README.md",
+        "hf_dataset\\README.md"
+      ]
+    }
+  },
+  "github_url": "https://github.com/Isometric-Architect/ai-objective-index",
+  "hf_space_url": "https://huggingface.co/spaces/edict-lab/ai-objective-index-demo",
+  "hf_dataset_url": "https://huggingface.co/datasets/edict-lab/ai-objective-index-sample",
+  "public_beta_mcp_count": 50,
+  "community_post_performed": false,
+  "github_release_created": false,
+  "mcp_registry_submission_performed": false,
+  "warnings": [
+    "Post-public stabilization is not a community launch.",
+    "Public visibility is not verification, security certification, quality guarantee, or purchasing advice."
+  ],
+  "next_action": "Activate the GitHub issue loop and observe for 72 hours.",
+  "read_only": true,
+  "live_network_used": false,
+  "actual_publish_performed": false
+}

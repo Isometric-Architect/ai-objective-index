@@ -85,20 +85,25 @@ Package 7B does not publish automatically. Use this checklist if a human decides
 81. Run `python -m ai_objective_index.public_url_qa`.
 82. Run `python -m ai_objective_index.post_public_state_report`.
 83. Review `public_launch/POST_PUBLIC_REVIEW_CHECKLIST.md`.
-84. If CLI/API upload is unavailable, create a Hugging Face Space manually if desired and upload `hf_upload/space/`.
-85. If CLI/API upload is unavailable, create a Hugging Face Dataset manually if desired and upload `hf_upload/dataset/`.
-86. Submit to MCP Registry manually if desired.
-87. Post a community feedback request manually if desired.
+84. Run `python -m ai_objective_index.post_public_stabilization`.
+85. Run `python -m ai_objective_index.public_issue_loop`.
+86. Run `python -m ai_objective_index.token_revocation_verify`.
+87. Run `python -m ai_objective_index.public_observation_plan`.
+88. Observe for 72 hours before broad community posting.
+89. If CLI/API upload is unavailable, create a Hugging Face Space manually if desired and upload `hf_upload/space/`.
+90. If CLI/API upload is unavailable, create a Hugging Face Dataset manually if desired and upload `hf_upload/dataset/`.
+91. Submit to MCP Registry manually if desired.
+92. Post a community feedback request manually if desired, after Package 8M or equivalent review.
 
 Do not claim AOI is an official standard, universally adopted, a quality guarantee, legal/security/compliance certification, purchasing advice, or an external action executor.
 
 For v0.2 real-data public beta, also do not claim verified MCP servers, safe MCP servers, security certification, or quality guaranteed tools.
 
-## Private Deployment Links
+## Public Deployment Links
 
-- GitHub private staging repo: https://github.com/Isometric-Architect/ai-objective-index
-- Hugging Face Space, private: https://huggingface.co/spaces/edict-lab/ai-objective-index-demo
-- Hugging Face Dataset, private: https://huggingface.co/datasets/edict-lab/ai-objective-index-sample
+- GitHub repository: https://github.com/Isometric-Architect/ai-objective-index
+- Hugging Face Space: https://huggingface.co/spaces/edict-lab/ai-objective-index-demo
+- Hugging Face Dataset: https://huggingface.co/datasets/edict-lab/ai-objective-index-sample
 - MCP Registry submission: HOLD, manual only.
 
-These links are private deployment links unless the owner manually changes visibility. They are not a public release claim. `public_beta_mcp` records are source-traced registry metadata candidates; they are not verified, not safe/certified, not security certified, not a quality guarantee, and not purchasing advice.
+These links are public after Package 8K. Community posting, GitHub Release creation, and MCP Registry submission remain HOLD. `public_beta_mcp` records are source-traced registry metadata candidates; they are not verified, not safe/certified, not security certified, not a quality guarantee, and not purchasing advice.

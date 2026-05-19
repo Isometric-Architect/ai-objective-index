@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-05-19T21:31:21.502942+00:00",
+  "hf_auth_available": false,
+  "token_printed": false,
+  "token_committed": false,
+  "revoke_recommended": true,
+  "manual_steps": [
+    "Open Hugging Face Settings.",
+    "Open Access Tokens.",
+    "Delete/Revoke aoi-private-upload.",
+    "Do not paste token into chat.",
+    "If later update is needed, create a new temporary token."
+  ],
+  "verification_note": "HF token/auth no longer active in this environment.",
+  "next_action": "Revoke the temporary Hugging Face token if no further upload is needed.",
+  "auth_check": {
+    "hf_package_available": true,
+    "hf_cli_available": true,
+    "authenticated": false,
+    "username_if_known": null,
+    "token_printed": false
+  },
+  "read_only": true,
+  "live_network_used": false,
+  "actual_revocation_performed": false,
+  "actual_publish_performed": false
+}

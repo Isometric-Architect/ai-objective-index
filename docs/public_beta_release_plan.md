@@ -147,9 +147,23 @@ python -m ai_objective_index.post_public_state_report
 
 Package 8K changes visibility only. It does not create a GitHub Release, post to communities, submit to MCP Registry, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
 
+## Package 8L Post-Public Stabilization
 
-## GitHub Private Staging
+After public visibility is on, run:
 
-- GitHub private staging repository: https://github.com/Isometric-Architect/ai-objective-index
-- Current visibility: private staging unless the user manually switches it.
-- Public visibility is not claimed by Package 8D.
+```powershell
+python -m ai_objective_index.post_public_stabilization
+python -m ai_objective_index.public_issue_loop
+python -m ai_objective_index.token_revocation_verify
+python -m ai_objective_index.public_observation_plan
+```
+
+Package 8L activates issue-based feedback and a 72-hour observation plan. It still does not post to communities, create a GitHub Release, submit to MCP Registry, revoke tokens automatically, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
+
+
+## Public Deployment
+
+- GitHub repository: https://github.com/Isometric-Architect/ai-objective-index
+- Hugging Face Space: https://huggingface.co/spaces/edict-lab/ai-objective-index-demo
+- Hugging Face Dataset: https://huggingface.co/datasets/edict-lab/ai-objective-index-sample
+- Community posting, GitHub Release creation, and MCP Registry submission remain HOLD.

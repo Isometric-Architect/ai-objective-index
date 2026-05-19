@@ -626,6 +626,25 @@ python -m ai_objective_index.post_public_state_report
 
 Package 8K may make the prepared GitHub repo, Hugging Face Space, and Hugging Face Dataset public. It does not create a GitHub Release, post to communities, submit to MCP Registry, crawl, scrape, call external LLM APIs, print/store tokens, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
 
+## Package 8L Post-Public Stabilization
+
+Package 8L stabilizes the public deployment after the visibility switch. It verifies public-stage records, activates the GitHub issue feedback loop, writes token revocation guidance, and creates a 72-hour observation plan:
+
+```powershell
+python -m ai_objective_index.post_public_stabilization
+python -m ai_objective_index.public_issue_loop
+python -m ai_objective_index.token_revocation_verify
+python -m ai_objective_index.public_observation_plan
+```
+
+Public links:
+
+- GitHub: https://github.com/Isometric-Architect/ai-objective-index
+- Hugging Face Space: https://huggingface.co/spaces/edict-lab/ai-objective-index-demo
+- Hugging Face Dataset: https://huggingface.co/datasets/edict-lab/ai-objective-index-sample
+
+Package 8L does not post to communities, create a GitHub Release, submit to MCP Registry, crawl, scrape, call external LLM APIs, print/store tokens, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
+
 ## Claim Boundary
 
 Allowed claim: AOI is a read-only MCP/API objective ranking and comparison tool with explicit schemas, sample source traces, missing-field reporting, and decision receipt contracts.
@@ -675,6 +694,10 @@ AOI output is not a quality guarantee. It is not legal, financial, medical, purc
 - `docs/final_public_dry_run.md`: final dry-run and public switch gating.
 - `docs/package_8k_public_visibility_switch.md`: explicit public visibility switch gate.
 - `docs/post_public_review.md`: post-public URL and claim-boundary review.
+- `docs/package_8l_post_public_stabilization.md`: post-public stabilization commands.
+- `docs/post_public_observation.md`: 72-hour public observation plan.
+- `docs/issue_feedback_after_public.md`: GitHub Issues feedback loop.
+- `docs/token_revocation_public_stage.md`: post-public Hugging Face token revocation guidance.
 - `docs/token_revocation_after_upload.md`: token revocation guidance after HF uploads.
 - `docs/public_data_intake_policy.md`: public-data intake limits.
 - `docs/real_mcp_integration.md`: real MCP SDK integration and fallback behavior.
@@ -690,8 +713,9 @@ AOI output is not a quality guarantee. It is not legal, financial, medical, purc
 - `examples/`: placeholder for future client examples.
 
 
-## GitHub Private Staging
+## Public Deployment
 
-- GitHub private staging repository: https://github.com/Isometric-Architect/ai-objective-index
-- Current visibility: private staging unless the user manually switches it.
-- Public visibility is not claimed by Package 8D.
+- GitHub repository: https://github.com/Isometric-Architect/ai-objective-index
+- Hugging Face Space: https://huggingface.co/spaces/edict-lab/ai-objective-index-demo
+- Hugging Face Dataset: https://huggingface.co/datasets/edict-lab/ai-objective-index-sample
+- Current status: public visibility is switched on; community posting, GitHub Release creation, and MCP Registry submission are still HOLD.

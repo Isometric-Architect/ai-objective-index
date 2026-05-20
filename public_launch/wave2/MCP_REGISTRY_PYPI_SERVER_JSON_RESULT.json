@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-05-20T02:53:41.788458+00:00",
+  "server_json_path": ".mcp\\server.json",
+  "server_json_status": "READY_BUT_PYPI_UPLOAD_REQUIRED",
+  "name": "io.github.isometric-architect/ai-objective-index",
+  "registry_type": "pypi",
+  "identifier": "ai-objective-index",
+  "version": "0.2.0",
+  "pypi_upload_required": true,
+  "token_printed": false,
+  "pypi_upload_performed": false,
+  "mcp_registry_submission_performed": false
+}

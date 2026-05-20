@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-05-20T02:53:52.759613+00:00",
+  "decision": "HOLD_BUILD_NOT_READY",
+  "server_json_exists": true,
+  "server_name": "io.github.isometric-architect/ai-objective-index",
+  "readme_marker": true,
+  "package_metadata_token": "PASS",
+  "pypi_build_decision": "HOLD_BUILD_TOOL_MISSING",
+  "pypi_uploaded": false,
+  "mcp_publisher_available": false,
+  "registry_auth_available": false,
+  "errors": [],
+  "holds": [
+    "Build readiness is not complete or dist files are missing."
+  ],
+  "submission_performed": false,
+  "token_printed": false
+}

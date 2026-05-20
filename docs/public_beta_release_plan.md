@@ -184,4 +184,6 @@ Package 8M classifies generated leftovers and prepares public issue labels. The 
 ## Package 8O Wave 1 Launch
 
 Package 8O can create the `v0.2.0-public-beta` GitHub prerelease and conservative feedback drafts. MCP Registry submission remains gated and should HOLD unless server JSON, package/remote endpoint, publisher tooling, authentication, and explicit confirmation are all present.
+
+Package 8P prepares the PyPI-based MCP Registry path. It can build local package artifacts and write upload instructions, but it does not upload to PyPI or submit to MCP Registry.
 - Community posting, GitHub Release creation, and MCP Registry submission remain HOLD.

@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-05-20T02:53:52.732082+00:00",
+  "overall_token": "PASS",
+  "checks": {
+    "pyproject_exists": true,
+    "project_name": true,
+    "package_import_name": true,
+    "version_pep440": true,
+    "version_recommended": true,
+    "license_exists": true,
+    "readme_exists": true,
+    "readme_mcp_marker": true,
+    "console_script_mcp": true,
+    "console_script_smoke": true,
+    "optional_mcp_dependency": true,
+    "claim_boundaries": true,
+    "no_token_like_strings": true
+  },
+  "project_name": "ai-objective-index",
+  "package_import_name": "ai_objective_index",
+  "version": "0.2.0",
+  "recommended_version": "0.2.0",
+  "mcp_name_marker": "<!-- mcp-name: io.github.isometric-architect/ai-objective-index -->",
+  "claim_boundaries": {
+    "not_verified": true,
+    "not_security_certified": true,
+    "not_quality_guarantee": true
+  },
+  "token_like_findings": [],
+  "errors": [],
+  "warnings": [],
+  "upload_performed": false,
+  "mcp_registry_submission_performed": false,
+  "token_printed": false
+}

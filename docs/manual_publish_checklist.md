@@ -119,6 +119,17 @@ For v0.2 real-data public beta, also do not claim verified MCP servers, safe MCP
 100. Run `python -m ai_objective_index.launch_wave1_report`.
 101. If the release dry-run passes, run `python -m ai_objective_index.github_release_manager --execute`.
 102. Do not submit MCP Registry unless eligibility is `PASS_SUBMIT_READY` and `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES` is set.
+
+## Package 8P PyPI / Registry Readiness
+
+103. Run `python -m ai_objective_index.package_metadata_audit`.
+104. Run `python -m ai_objective_index.pypi_publish_readiness`.
+105. Run `python -m ai_objective_index.mcp_registry_pypi_builder`.
+106. Run `python -m ai_objective_index.mcp_registry_publish_readiness`.
+107. Run `python -m ai_objective_index.pypi_upload_instructions`.
+108. Run `python -m ai_objective_index.community_manual_queue`.
+109. Do not upload to PyPI/TestPyPI in Package 8P.
+110. Do not submit to MCP Registry until PyPI upload and registry readiness both pass.
 - MCP Registry submission: HOLD, manual only.
 
 These links are public after Package 8K. Community posting, GitHub Release creation, and MCP Registry submission remain HOLD. `public_beta_mcp` records are source-traced registry metadata candidates; they are not verified, not safe/certified, not security certified, not a quality guarantee, and not purchasing advice.

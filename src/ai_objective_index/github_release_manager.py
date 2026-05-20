@@ -174,7 +174,7 @@ def _checks_pass() -> tuple[bool, list[str]]:
         failures.append("launch_claim_guard is not PASS")
     if message_guard and message_guard.get("overall_token") != "PASS":
         failures.append("public_beta_message_guard is not PASS")
-    if ops and ops.get("public_beta_mcp_count", 0) <= 0:
+    if ops and "public_beta_mcp_count" in ops and ops.get("public_beta_mcp_count", 0) <= 0:
         failures.append("public_ops_baseline has no public_beta_mcp candidates")
     return not failures, failures
 

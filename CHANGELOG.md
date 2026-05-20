@@ -256,3 +256,12 @@
 - Added MCP Registry server JSON draft builder and submission eligibility gate.
 - Added launch wave 1 report and post-launch monitoring checklist.
 - Preserved Package 8O exclusions: no exaggerated claims, no HN/Reddit/OpenAI/Product Hunt/MCP community auto-posting, no MCP Registry submission unless gated and explicitly confirmed, no crawling, scraping, link following, arbitrary external data fetch, external LLM API calls, token printing/storage, force push, release deletion, payment, booking, login automation, email, form submission, purchase, contract signing, account connection, supplier claim/verify, profile modification, or claims of verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
+
+## 0.1.0-package-8p
+
+- Added package metadata audit for PyPI/MCP Registry readiness.
+- Added local PyPI build readiness helper with no upload behavior.
+- Added PyPI-based `.mcp/server.json` builder and MCP Registry publish readiness gate.
+- Added TestPyPI/PyPI/MCP Registry manual upload instructions and community manual post queue.
+- Updated package version to `0.2.0` for public beta packaging readiness.
+- Preserved Package 8P exclusions: no PyPI/TestPyPI upload, no MCP Registry submission, no HN/Reddit/OpenAI/Product Hunt auto-posting, no Hugging Face permission expansion, no token printing/storage, no crawling, scraping, link following, arbitrary external data fetch, external LLM API calls, force push, GitHub Release deletion, payment, booking, login automation, email, form submission, purchase, contract signing, account connection, supplier claim/verify, profile modification, or claims of verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.

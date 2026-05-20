@@ -1,4 +1,5 @@
 # AI Objective Index
+<!-- mcp-name: io.github.isometric-architect/ai-objective-index -->
 
 AI Objective Index (AOI) is a read-only MCP/API data contract for ranking and comparing AI tools, APIs, SaaS products, and MCP servers against explicit objectives, constraints, source traces, missing fields, and decision receipts.
 
@@ -694,6 +695,21 @@ The GitHub release manager targets prerelease tag `v0.2.0-public-beta`. MCP Regi
 
 Package 8O does not post to HN, Reddit, OpenAI Developer Community, Product Hunt, or MCP communities automatically. It does not claim verified, safe, security-certified, quality-guaranteed, production-ready, or purchasing-advice status.
 
+## Package 8P PyPI / MCP Registry Readiness
+
+Package 8P prepares a PyPI-based MCP Registry path without uploading or submitting:
+
+```powershell
+python -m ai_objective_index.package_metadata_audit
+python -m ai_objective_index.pypi_publish_readiness
+python -m ai_objective_index.mcp_registry_pypi_builder
+python -m ai_objective_index.mcp_registry_publish_readiness
+python -m ai_objective_index.pypi_upload_instructions
+python -m ai_objective_index.community_manual_queue
+```
+
+It adds the MCP Registry README marker, prepares `.mcp/server.json` for a future `registryType: pypi` path, and creates manual TestPyPI/PyPI/MCP Registry instructions. Package 8P does not upload to PyPI, submit to MCP Registry, auto-post to communities, broaden token scopes, print/store tokens, or claim verified/safe/security-certified/quality-guaranteed status.
+
 ## Claim Boundary
 
 Allowed claim: AOI is a read-only MCP/API objective ranking and comparison tool with explicit schemas, sample source traces, missing-field reporting, and decision receipt contracts.
@@ -758,6 +774,10 @@ AOI output is not a quality guarantee. It is not legal, financial, medical, purc
 - `docs/github_release_public_beta.md`: GitHub prerelease policy.
 - `docs/conservative_community_feedback_launch.md`: conservative feedback launch wording.
 - `docs/mcp_registry_submission_gate.md`: MCP Registry eligibility and submission gate.
+- `docs/package_8p_mcp_registry_pypi_readiness.md`: PyPI/MCP Registry readiness commands.
+- `docs/pypi_publish_readiness.md`: local build and token-safe PyPI readiness.
+- `docs/mcp_registry_pypi_path.md`: `registryType: pypi` path and README marker.
+- `docs/community_manual_post_queue.md`: manual community feedback queue.
 - `docs/token_revocation_after_upload.md`: token revocation guidance after HF uploads.
 - `docs/public_data_intake_policy.md`: public-data intake limits.
 - `docs/real_mcp_integration.md`: real MCP SDK integration and fallback behavior.

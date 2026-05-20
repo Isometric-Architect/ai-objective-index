@@ -1,38 +1,44 @@
 {
   "name": "io.github.isometric-architect/ai-objective-index",
-  "version": "0.2.0-public-beta",
-  "description": "AI Objective Index read-only MCP server for objective-based ranking and comparison of AI tools and MCP servers with source traces.",
+  "title": "AI Objective Index",
+  "version": "0.2.0",
+  "description": "Read-only MCP/API benchmark engine for objective-based ranking and comparison of AI tools, APIs, SaaS products, and MCP servers with source traces.",
   "repository": {
     "url": "https://github.com/Isometric-Architect/ai-objective-index",
     "source": "github"
   },
-  "read_only": true,
-  "tools_summary": [
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "ai-objective-index",
+      "version": "0.2.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ],
+  "tools": [
     "search",
     "fetch",
     "search_objectives",
+    "rank_options",
     "compare_tools",
     "explain_score",
     "get_source_trace",
     "list_missing_fields",
     "generate_decision_receipt"
   ],
-  "entrypoints": {
-    "python_module": "ai_objective_index.mcp_stdio_entrypoint",
-    "console_script": "ai-objective-index-mcp",
-    "stdio_entrypoint_exists": true
-  },
-  "artifacts": {
-    "manifest_exists": true,
-    "python_package_artifact_exists": false,
-    "remote_mcp_endpoint_exists": false
-  },
+  "read_only": true,
   "limitations": [
-    "Draft server metadata only unless a publishable package artifact or remote MCP endpoint is available.",
-    "Registry metadata candidates are not verified, not security certified, and not a quality guarantee.",
-    "AOI is read-only and does not perform payment, booking, login, email, form submission, purchase, contract signing, account connection, supplier claim, or supplier verification."
+    "not verified",
+    "not security certified",
+    "not a quality guarantee",
+    "no purchasing advice",
+    "no payment, booking, login, email, purchase, or contract actions",
+    "read-only local/package-based MCP stdio server"
   ],
-  "draft_not_submittable": true,
-  "draft_reason": "No package artifact or remote MCP endpoint was found.",
-  "generated_at": "2026-05-20T01:55:11.156935+00:00"
+  "server_json_status": "READY_BUT_PYPI_UPLOAD_REQUIRED",
+  "pypi_upload_required": true,
+  "mcp_registry_submission_performed": false,
+  "generated_at": "2026-05-20T02:53:41.787374+00:00"
 }

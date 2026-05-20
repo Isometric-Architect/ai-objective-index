@@ -205,3 +205,9 @@ It does not post to communities, create a GitHub Release, submit to MCP Registry
 Package 8O prepares the first conservative public beta wave: GitHub prerelease notes, feedback drafts, optional safe discussion handling, MCP Registry server JSON draft, submission gate, and launch report.
 
 It does not auto-post to HN, Reddit, OpenAI Developer Community, Product Hunt, or MCP community sites. It does not submit to MCP Registry unless eligibility passes and explicit confirmation is present.
+
+## Package 8P MCP Registry PyPI Readiness
+
+Package 8P prepares PyPI package readiness, a `registryType: pypi` server JSON candidate, MCP Registry publish readiness checks, upload instructions, and a manual community post queue.
+
+It does not upload to PyPI/TestPyPI, submit to MCP Registry, auto-post to communities, broaden Hugging Face token scopes, print/store tokens, crawl, scrape, follow links, or perform external actions.

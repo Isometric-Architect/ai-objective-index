@@ -33,3 +33,14 @@ python -m ai_objective_index.release_next_decision_gate
 ```
 
 The default next decision is `observe_72h` unless public URL QA, claim audits, or worktree hygiene indicate a fix is needed.
+
+## Package 8N Active Observation Commands
+
+```powershell
+python -m ai_objective_index.public_metrics_snapshot
+python -m ai_objective_index.public_observation_runner --phase 0h
+python -m ai_objective_index.residual_worktree_review
+python -m ai_objective_index.observation_decision_gate --phase 0h
+```
+
+Package 8N creates `public_ops/observation/OBSERVATION_LOG_72H_ACTIVE.md` and a residual worktree review pack. Community launch remains HOLD unless the owner explicitly chooses it later.

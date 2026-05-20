@@ -187,3 +187,15 @@ It does not post to communities, create a GitHub Release, submit to MCP Registry
 Package 8M adds the public operations baseline, dirty-worktree hygiene classification, GitHub issue label plan, 72-hour observation log scaffold, and next decision gate.
 
 It does not post to communities, create a GitHub Release, submit to MCP Registry, delete generated files, crawl, scrape, follow links, print/store tokens, force push, or perform external actions.
+
+## Hugging Face Parquet Converter Notification
+
+Hugging Face created `refs/convert/parquet` for `edict-lab/ai-objective-index-sample` through the `parquet-converter` bot. This records that Dataset Viewer and Parquet access are available.
+
+No action is required. This event does not imply dataset quality, verification, security certification, supplier verification, a quality guarantee, or purchasing advice.
+
+## Package 8N Public Observation Runner
+
+Package 8N starts the active 72-hour public observation workflow, records a 0-hour public metrics snapshot, writes 24/48/72-hour templates, reviews residual worktree changes, and gates the next decision.
+
+It does not post to communities, create a GitHub Release, submit to MCP Registry, delete residual files, stage all changes, force push, crawl, scrape, follow links, print/store tokens, or perform external actions.

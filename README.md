@@ -665,6 +665,19 @@ python -m ai_objective_index.github_issue_labels --execute
 
 Package 8M does not post to communities, create a GitHub Release, submit to MCP Registry, delete generated leftovers, force push, print/store tokens, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
 
+## Package 8N Public Observation Runner
+
+Package 8N starts the active 72-hour observation workflow and reviews residual worktree changes:
+
+```powershell
+python -m ai_objective_index.public_metrics_snapshot
+python -m ai_objective_index.public_observation_runner --phase 0h
+python -m ai_objective_index.residual_worktree_review
+python -m ai_objective_index.observation_decision_gate --phase 0h
+```
+
+Outputs are written to `public_ops/observation/` and `public_ops/residual_review/`. Package 8N does not post to communities, create a GitHub Release, submit to MCP Registry, delete residual files, stage all changes, force push, print/store tokens, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
+
 ## Claim Boundary
 
 Allowed claim: AOI is a read-only MCP/API objective ranking and comparison tool with explicit schemas, sample source traces, missing-field reporting, and decision receipt contracts.
@@ -722,6 +735,9 @@ AOI output is not a quality guarantee. It is not legal, financial, medical, purc
 - `docs/worktree_hygiene_policy.md`: generated-output and dirty-worktree classification policy.
 - `docs/github_issue_loop_operations.md`: public issue loop label and triage workflow.
 - `docs/public_metrics_baseline.md`: public beta metrics interpretation.
+- `docs/package_8n_public_observation_runner.md`: active 72-hour observation runner commands.
+- `docs/public_observation_runner.md`: phase-based public observation workflow.
+- `docs/residual_worktree_review_policy.md`: residual working-tree review policy.
 - `docs/token_revocation_after_upload.md`: token revocation guidance after HF uploads.
 - `docs/public_data_intake_policy.md`: public-data intake limits.
 - `docs/real_mcp_integration.md`: real MCP SDK integration and fallback behavior.

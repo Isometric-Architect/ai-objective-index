@@ -241,3 +241,10 @@
 - Added GitHub issue label dry-run/execute helper with token-safe output and no label deletion.
 - Added 72-hour observation log scaffold and next decision gate.
 - Preserved Package 8M exclusions: no community posting, GitHub Release creation, MCP Registry submission, crawling, scraping, link following, external LLM API calls, token printing/storage, force push, file deletion, payment, booking, login automation, email, form submission, purchase, contract signing, account connection, supplier claim/verify, profile modification, or claims of verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
+
+## 0.1.0-package-8n
+
+- Added public metrics snapshot and active 72-hour observation runner.
+- Added residual worktree review with commit, ignore, and user-review plans.
+- Added observation decision gate for `observe_72h`, public URL fixes, claim fixes, and residual worktree cleanup decisions.
+- Preserved Package 8N exclusions: no community posting, GitHub Release creation, MCP Registry submission, crawling, scraping, link following, arbitrary external data fetch, external LLM API calls, token printing/storage, force push, generated-leftover deletion, broad staging, payment, booking, login automation, email, form submission, purchase, contract signing, account connection, supplier claim/verify, profile modification, or claims of verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.

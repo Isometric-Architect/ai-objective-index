@@ -1,0 +1,1116 @@
+{
+  "generated_at": "2026-05-20T01:13:27.788282+00:00",
+  "overall_token": "HOLD_REVIEW",
+  "changed_entry_count": 216,
+  "summary": {
+    "safe_to_ignore": 0,
+    "candidate_for_future_commit": 46,
+    "requires_user_review": 1,
+    "likely_generated_noise": 88,
+    "possible_large_artifact": 56,
+    "possible_sensitive": 0,
+    "unknown": 25
+  },
+  "classifications": {
+    "safe_to_ignore": [],
+    "candidate_for_future_commit": [
+      {
+        "status": "M",
+        "path": "CHANGELOG.md",
+        "size_bytes": 22719
+      },
+      {
+        "status": "M",
+        "path": "README.md",
+        "size_bytes": 33628
+      },
+      {
+        "status": "M",
+        "path": "docs/community_launch.md",
+        "size_bytes": 5491
+      },
+      {
+        "status": "M",
+        "path": "docs/huggingface_demo.md",
+        "size_bytes": 5439
+      },
+      {
+        "status": "M",
+        "path": "docs/launch_notes.md",
+        "size_bytes": 13782
+      },
+      {
+        "status": "M",
+        "path": "docs/post_public_observation.md",
+        "size_bytes": 1669
+      },
+      {
+        "status": "M",
+        "path": "docs/public_metrics_baseline.md",
+        "size_bytes": 812
+      },
+      {
+        "status": "M",
+        "path": "docs/worktree_hygiene_policy.md",
+        "size_bytes": 1209
+      },
+      {
+        "status": "M",
+        "path": "public_launch/AI_REVIEWER_SIMULATION_RESULT.json",
+        "size_bytes": 3181
+      },
+      {
+        "status": "M",
+        "path": "public_launch/FINAL_PUBLIC_DRY_RUN_RESULT.json",
+        "size_bytes": 2120
+      },
+      {
+        "status": "M",
+        "path": "public_launch/NO_CONTACT_LAUNCH_GATE_RESULT.json",
+        "size_bytes": 2692
+      },
+      {
+        "status": "M",
+        "path": "public_launch/POST_PUBLIC_STABILIZATION_RESULT.json",
+        "size_bytes": 2513
+      },
+      {
+        "status": "M",
+        "path": "public_launch/PREPUBLIC_STATE_REPORT.json",
+        "size_bytes": 1123
+      },
+      {
+        "status": "M",
+        "path": "public_launch/PREPUBLIC_SYNC_RESULT.json",
+        "size_bytes": 972
+      },
+      {
+        "status": "M",
+        "path": "public_launch/PUBLIC_BETA_MESSAGE_GUARD_RESULT.json",
+        "size_bytes": 1777
+      },
+      {
+        "status": "M",
+        "path": "public_launch/PUBLIC_ISSUE_LOOP_RESULT.json",
+        "size_bytes": 1682
+      },
+      {
+        "status": "M",
+        "path": "public_launch/PUBLIC_LAUNCH_CLAIM_AUDIT_RESULT.json",
+        "size_bytes": 38904
+      },
+      {
+        "status": "M",
+        "path": "public_launch/PUBLIC_URL_QA_RESULT.json",
+        "size_bytes": 1722
+      },
+      {
+        "status": "M",
+        "path": "public_launch/PUBLIC_VISIBILITY_SWITCH_DRY_RUN.json",
+        "size_bytes": 1015
+      },
+      {
+        "status": "M",
+        "path": "public_launch/PUBLIC_VISIBILITY_SWITCH_RESULT.json",
+        "size_bytes": 1064
+      },
+      {
+        "status": "??",
+        "path": "docs/package_8n_public_observation_runner.md",
+        "size_bytes": 1074
+      },
+      {
+        "status": "??",
+        "path": "docs/public_observation_runner.md",
+        "size_bytes": 974
+      },
+      {
+        "status": "??",
+        "path": "docs/residual_worktree_review_policy.md",
+        "size_bytes": 954
+      },
+      {
+        "status": "??",
+        "path": "public_ops/HF_PARQUET_CONVERTER_NOTIFICATION.md",
+        "size_bytes": 799
+      },
+      {
+        "status": "??",
+        "path": "public_ops/HF_PARQUET_CONVERTER_NOTIFICATION_v0_1.json",
+        "size_bytes": 725
+      },
+      {
+        "status": "??",
+        "path": "public_ops/observation/",
+        "size_bytes": null
+      },
+      {
+        "status": "??",
+        "path": "public_ops/residual_review/",
+        "size_bytes": null
+      },
+      {
+        "status": "??",
+        "path": "src/ai_objective_index/github_link_binder.py",
+        "size_bytes": 4965
+      },
+      {
+        "status": "??",
+        "path": "src/ai_objective_index/github_post_upload_qa.py",
+        "size_bytes": 9439
+      },
+      {
+        "status": "??",
+        "path": "src/ai_objective_index/observation_decision_gate.py",
+        "size_bytes": 5002
+      },
+      {
+        "status": "??",
+        "path": "src/ai_objective_index/public_metrics_snapshot.py",
+        "size_bytes": 8186
+      },
+      {
+        "status": "??",
+        "path": "src/ai_objective_index/public_observation_runner.py",
+        "size_bytes": 5389
+      },
+      {
+        "status": "??",
+        "path": "src/ai_objective_index/public_switch_preflight.py",
+        "size_bytes": 6062
+      },
+      {
+        "status": "??",
+        "path": "src/ai_objective_index/residual_worktree_review.py",
+        "size_bytes": 10680
+      },
+      {
+        "status": "??",
+        "path": "tests/test_github_link_binder.py",
+        "size_bytes": 795
+      },
+      {
+        "status": "??",
+        "path": "tests/test_github_post_upload_qa.py",
+        "size_bytes": 745
+      },
+      {
+        "status": "??",
+        "path": "tests/test_github_upload_assets.py",
+        "size_bytes": 632
+      },
+      {
+        "status": "??",
+        "path": "tests/test_hf_upload_assets.py",
+        "size_bytes": 861
+      },
+      {
+        "status": "??",
+        "path": "tests/test_hf_upload_audit.py",
+        "size_bytes": 525
+      },
+      {
+        "status": "??",
+        "path": "tests/test_hf_upload_packager.py",
+        "size_bytes": 629
+      },
+      {
+        "status": "??",
+        "path": "tests/test_observation_decision_gate.py",
+        "size_bytes": 2081
+      },
+      {
+        "status": "??",
+        "path": "tests/test_package_8n_assets.py",
+        "size_bytes": 671
+      },
+      {
+        "status": "??",
+        "path": "tests/test_public_metrics_snapshot.py",
+        "size_bytes": 776
+      },
+      {
+        "status": "??",
+        "path": "tests/test_public_observation_runner.py",
+        "size_bytes": 781
+      },
+      {
+        "status": "??",
+        "path": "tests/test_public_switch_preflight.py",
+        "size_bytes": 1009
+      },
+      {
+        "status": "??",
+        "path": "tests/test_residual_worktree_review.py",
+        "size_bytes": 1237
+      }
+    ],
+    "requires_user_review": [
+      {
+        "status": "M",
+        "path": "data/registry/mcp_registry_raw_v0_1.json",
+        "size_bytes": 678761
+      }
+    ],
+    "likely_generated_noise": [
+      {
+        "status": "M",
+        "path": "data/generated/beta_readiness_report_v0_2.md",
+        "size_bytes": 2846
+      },
+      {
+        "status": "M",
+        "path": "data/generated/datascope_qa_results_v0_2.json",
+        "size_bytes": 8106
+      },
+      {
+        "status": "M",
+        "path": "data/generated/extracted_objects_v0_2.json",
+        "size_bytes": 4914
+      },
+      {
+        "status": "M",
+        "path": "data/generated/extracted_source_traces_v0_2.json",
+        "size_bytes": 14023
+      },
+      {
+        "status": "M",
+        "path": "data/generated/final_preflight_result_v0_2.json",
+        "size_bytes": 2215
+      },
+      {
+        "status": "M",
+        "path": "data/generated/integrated_eval_results_v0_2.json",
+        "size_bytes": 12748
+      },
+      {
+        "status": "M",
+        "path": "data/generated/launch_archive_manifest_v0_2.json",
+        "size_bytes": 28490
+      },
+      {
+        "status": "M",
+        "path": "data/generated/launch_claim_guard_result_v0_2.json",
+        "size_bytes": 4244
+      },
+      {
+        "status": "M",
+        "path": "data/generated/launch_dry_run_result_v0_2.json",
+        "size_bytes": 1693
+      },
+      {
+        "status": "M",
+        "path": "data/generated/mcp_smoke_result_v0_2.json",
+        "size_bytes": 850
+      },
+      {
+        "status": "M",
+        "path": "data/generated/no_secrets_audit_result_v0_2.json",
+        "size_bytes": 7562
+      },
+      {
+        "status": "M",
+        "path": "data/generated/realdata_claim_audit_v0_2.json",
+        "size_bytes": 26759
+      },
+      {
+        "status": "M",
+        "path": "data/generated/release_candidate_matrix_v0_2.json",
+        "size_bytes": 4305
+      },
+      {
+        "status": "M",
+        "path": "data/generated/release_claim_audit_v0_1.json",
+        "size_bytes": 18415
+      },
+      {
+        "status": "M",
+        "path": "data/generated/release_readiness_v0_1.json",
+        "size_bytes": 2634
+      },
+      {
+        "status": "M",
+        "path": "data/generated/smoke_all_result_v0_1.json",
+        "size_bytes": 1664
+      },
+      {
+        "status": "M",
+        "path": "data/registry/mcp_registry_beta_candidate_gate_results_v0_1.json",
+        "size_bytes": 34175
+      },
+      {
+        "status": "M",
+        "path": "data/registry/mcp_registry_beta_candidates_v0_1.jsonl",
+        "size_bytes": 87204
+      },
+      {
+        "status": "M",
+        "path": "data/registry/mcp_registry_beta_report_v0_1.md",
+        "size_bytes": 18525
+      },
+      {
+        "status": "M",
+        "path": "data/registry/mcp_registry_eval_results_v0_1.json",
+        "size_bytes": 14837
+      },
+      {
+        "status": "M",
+        "path": "data/registry/mcp_registry_objects_v0_1.jsonl",
+        "size_bytes": 69578
+      },
+      {
+        "status": "M",
+        "path": "data/registry/mcp_registry_public_beta_index_v0_1.json",
+        "size_bytes": 17382
+      },
+      {
+        "status": "M",
+        "path": "data/registry/mcp_registry_public_beta_mcp_dataset_v0_1.json",
+        "size_bytes": 225948
+      },
+      {
+        "status": "M",
+        "path": "data/registry/mcp_registry_quality_audit_v0_1.json",
+        "size_bytes": 24698
+      },
+      {
+        "status": "M",
+        "path": "data/registry/mcp_registry_report_v0_1.md",
+        "size_bytes": 2103
+      },
+      {
+        "status": "M",
+        "path": "data/registry/mcp_registry_source_traces_v0_1.jsonl",
+        "size_bytes": 95297
+      },
+      {
+        "status": "M",
+        "path": "data/registry/registry_payload_audit_v0_1.json",
+        "size_bytes": 559
+      },
+      {
+        "status": "M",
+        "path": "data/registry/registry_reprocess_all_result_v0_1.json",
+        "size_bytes": 20792
+      },
+      {
+        "status": "M",
+        "path": "deployment/private_deployment_v0_2/HF_GITHUB_CROSSLINK_AUDIT_RESULT.json",
+        "size_bytes": 17475
+      },
+      {
+        "status": "M",
+        "path": "deployment/private_deployment_v0_2/PRIVATE_DEPLOYMENT_QA_RESULT.json",
+        "size_bytes": 1628
+      },
+      {
+        "status": "M",
+        "path": "deployment/private_deployment_v0_2/PUSH_SYNC_RESULT.json",
+        "size_bytes": 10467
+      },
+      {
+        "status": "M",
+        "path": "hf_dataset/README.md",
+        "size_bytes": 1382
+      },
+      {
+        "status": "M",
+        "path": "hf_dataset/mcp_registry_beta_candidates.jsonl",
+        "size_bytes": 87204
+      },
+      {
+        "status": "M",
+        "path": "hf_dataset/mcp_registry_source_traces.jsonl",
+        "size_bytes": 13647
+      },
+      {
+        "status": "M",
+        "path": "hf_upload/dataset/mcp_registry_beta_candidates.jsonl",
+        "size_bytes": 87204
+      },
+      {
+        "status": "M",
+        "path": "hf_upload/dataset/mcp_registry_source_traces.jsonl",
+        "size_bytes": 95297
+      },
+      {
+        "status": "M",
+        "path": "hf_upload/dataset/public_beta_mcp_dataset.json",
+        "size_bytes": 225948
+      },
+      {
+        "status": "M",
+        "path": "hf_upload/space/data/generated/final_preflight_result_v0_2.json",
+        "size_bytes": 2215
+      },
+      {
+        "status": "M",
+        "path": "hf_upload/space/data/generated/realdata_claim_audit_v0_2.json",
+        "size_bytes": 26759
+      },
+      {
+        "status": "M",
+        "path": "hf_upload/space/data/registry/mcp_registry_beta_candidates_v0_1.jsonl",
+        "size_bytes": 87204
+      },
+      {
+        "status": "M",
+        "path": "hf_upload/space/data/registry/mcp_registry_public_beta_mcp_dataset_v0_1.json",
+        "size_bytes": 225948
+      },
+      {
+        "status": "M",
+        "path": "hf_upload/space/data/registry/mcp_registry_source_traces_v0_1.jsonl",
+        "size_bytes": 95297
+      },
+      {
+        "status": "M",
+        "path": "hf_upload/space/reports/mcp_server_objective_index_v0_2.md",
+        "size_bytes": 434
+      },
+      {
+        "status": "M",
+        "path": "hf_upload/space/reports/source_trace_quality_report_v0_2.md",
+        "size_bytes": 452
+      },
+      {
+        "status": "M",
+        "path": "launch/manual_public_beta_v0_2/FINAL_LINKS_PLACEHOLDER.md",
+        "size_bytes": 139
+      },
+      {
+        "status": "M",
+        "path": "launch/manual_public_beta_v0_2/GITHUB_RELEASE_DRAFT.md",
+        "size_bytes": 1169
+      },
+      {
+        "status": "M",
+        "path": "launch/manual_public_beta_v0_2/LAUNCH_CHECKSUMS.json",
+        "size_bytes": 2860
+      },
+      {
+        "status": "M",
+        "path": "launch/manual_public_beta_v0_2/LAUNCH_CLAIM_GUARD_RESULT.json",
+        "size_bytes": 4244
+      },
+      {
+        "status": "M",
+        "path": "launch/manual_public_beta_v0_2/LAUNCH_FILE_MANIFEST.json",
+        "size_bytes": 3170
+      },
+      {
+        "status": "M",
+        "path": "launch/manual_public_beta_v0_2/LOCAL_DRY_RUN_RESULT.json",
+        "size_bytes": 1693
+      },
+      {
+        "status": "M",
+        "path": "launch/manual_public_beta_v0_2/NO_SECRETS_AUDIT_RESULT.json",
+        "size_bytes": 7562
+      },
+      {
+        "status": "M",
+        "path": "launch/manual_public_beta_v0_2/README_LAUNCH_STEPS.md",
+        "size_bytes": 725
+      },
+      {
+        "status": "M",
+        "path": "release/public_beta_v0_1/CHECKSUMS.json",
+        "size_bytes": 2418
+      },
+      {
+        "status": "M",
+        "path": "release/public_beta_v0_1/FILE_MANIFEST.json",
+        "size_bytes": 1875
+      },
+      {
+        "status": "M",
+        "path": "release/public_beta_v0_1/release_readiness_result.json",
+        "size_bytes": 2634
+      },
+      {
+        "status": "M",
+        "path": "release/public_beta_v0_2/CHECKSUMS_v0_2.json",
+        "size_bytes": 2242
+      },
+      {
+        "status": "M",
+        "path": "release/public_beta_v0_2/FILE_MANIFEST_v0_2.json",
+        "size_bytes": 2104
+      },
+      {
+        "status": "M",
+        "path": "release/public_beta_v0_2/README_PUBLIC_BETA_v0_2.md",
+        "size_bytes": 1481
+      },
+      {
+        "status": "M",
+        "path": "release/public_beta_v0_2/final_preflight_result_v0_2.json",
+        "size_bytes": 2215
+      },
+      {
+        "status": "??",
+        "path": "data/generated/hf_upload_audit_result_v0_2.json",
+        "size_bytes": 1211
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/ai_reviewer_simulation.py",
+        "size_bytes": 11051
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/final_public_dry_run.py",
+        "size_bytes": 8099
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/github_issue_labels.py",
+        "size_bytes": 7570
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/issue_feedback_loop_packager.py",
+        "size_bytes": 3639
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/no_contact_launch_gate.py",
+        "size_bytes": 10891
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/observation_decision_gate.py",
+        "size_bytes": 5002
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/observation_log.py",
+        "size_bytes": 2590
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/post_public_stabilization.py",
+        "size_bytes": 7889
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/post_public_state_report.py",
+        "size_bytes": 3400
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/prepublic_state_report.py",
+        "size_bytes": 3389
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/prepublic_sync.py",
+        "size_bytes": 14070
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/private_reviewer_packager.py",
+        "size_bytes": 3410
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/public_beta_message_guard.py",
+        "size_bytes": 5003
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/public_issue_loop.py",
+        "size_bytes": 7890
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/public_launch_claim_audit.py",
+        "size_bytes": 4357
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/public_launch_execute.py",
+        "size_bytes": 11808
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/public_launch_gate.py",
+        "size_bytes": 7594
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/public_metrics_snapshot.py",
+        "size_bytes": 8186
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/public_observation_plan.py",
+        "size_bytes": 4138
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/public_observation_runner.py",
+        "size_bytes": 5389
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/public_ops_baseline.py",
+        "size_bytes": 4729
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/public_url_qa.py",
+        "size_bytes": 5538
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/public_visibility_switch.py",
+        "size_bytes": 7070
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/release_next_decision_gate.py",
+        "size_bytes": 3958
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/residual_worktree_review.py",
+        "size_bytes": 10680
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/token_revocation_checklist.py",
+        "size_bytes": 1171
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/token_revocation_verify.py",
+        "size_bytes": 2899
+      },
+      {
+        "status": "??",
+        "path": "hf_upload/space/src/ai_objective_index/worktree_hygiene_audit.py",
+        "size_bytes": 9649
+      }
+    ],
+    "possible_large_artifact": [
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/CHANGELOG.md",
+        "size_bytes": 22719
+      },
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/README.md",
+        "size_bytes": 33628
+      },
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/data/registry/mcp_registry_beta_report_v0_1.md",
+        "size_bytes": 4127
+      },
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/data/registry/mcp_registry_public_beta_mcp_dataset_v0_1.json",
+        "size_bytes": 622
+      },
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/community_launch.md",
+        "size_bytes": 5491
+      },
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/huggingface_demo.md",
+        "size_bytes": 5439
+      },
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/launch_notes.md",
+        "size_bytes": 13782
+      },
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/manual_publish_checklist.md",
+        "size_bytes": 8005
+      },
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/mcp_registry_submission_prep.md",
+        "size_bytes": 1596
+      },
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/public_beta_release_plan.md",
+        "size_bytes": 9040
+      },
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/hf_dataset/mcp_registry_beta_candidates.jsonl",
+        "size_bytes": 87204
+      },
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/hf_dataset/mcp_registry_source_traces.jsonl",
+        "size_bytes": 13647
+      },
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/launch/manual_public_beta_v0_2/LAUNCH_CHECKSUMS.json",
+        "size_bytes": 2860
+      },
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/launch/manual_public_beta_v0_2/LAUNCH_CLAIM_GUARD_RESULT.json",
+        "size_bytes": 4244
+      },
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/launch/manual_public_beta_v0_2/LAUNCH_FILE_MANIFEST.json",
+        "size_bytes": 3170
+      },
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/launch/manual_public_beta_v0_2/LOCAL_DRY_RUN_RESULT.json",
+        "size_bytes": 1693
+      },
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/launch/manual_public_beta_v0_2/NO_SECRETS_AUDIT_RESULT.json",
+        "size_bytes": 7562
+      },
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/release/public_beta_v0_2/CHECKSUMS_v0_2.json",
+        "size_bytes": 2242
+      },
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/release/public_beta_v0_2/FILE_MANIFEST_v0_2.json",
+        "size_bytes": 2104
+      },
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/release/public_beta_v0_2/final_preflight_result_v0_2.json",
+        "size_bytes": 2215
+      },
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/reports/ai_tool_pricing_index_v0_1.md",
+        "size_bytes": 2486
+      },
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/reports/mcp_server_objective_index_v0_1.md",
+        "size_bytes": 3699
+      },
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/reports/mcp_server_objective_index_v0_2.md",
+        "size_bytes": 434
+      },
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/reports/source_trace_quality_report_v0_1.md",
+        "size_bytes": 1885
+      },
+      {
+        "status": "M",
+        "path": "dist/ai_objective_index_public_beta_v0_2/reports/source_trace_quality_report_v0_2.md",
+        "size_bytes": 452
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/ai_reviewer_simulation.md",
+        "size_bytes": 977
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/final_public_dry_run.md",
+        "size_bytes": 1030
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/github_issue_loop_operations.md",
+        "size_bytes": 807
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/github_private_staging_review.md",
+        "size_bytes": 843
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/hf_github_link_policy.md",
+        "size_bytes": 870
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/huggingface_cli_upload.md",
+        "size_bytes": 677
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/huggingface_post_upload_checklist.md",
+        "size_bytes": 531
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/issue_based_feedback_loop.md",
+        "size_bytes": 837
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/issue_feedback_after_public.md",
+        "size_bytes": 1106
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/no_contact_public_beta_strategy.md",
+        "size_bytes": 1222
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/package_8d_github_private_staging_qa.md",
+        "size_bytes": 940
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/package_8g_huggingface_private_upload.md",
+        "size_bytes": 932
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/package_8h_private_deployment_sync.md",
+        "size_bytes": 1145
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/package_8i_public_launch_decision_gate.md",
+        "size_bytes": 1185
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/package_8j_prepublic_sync.md",
+        "size_bytes": 1030
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/package_8k_public_visibility_switch.md",
+        "size_bytes": 1132
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/package_8l_post_public_stabilization.md",
+        "size_bytes": 1053
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/package_8m_public_ops_baseline.md",
+        "size_bytes": 1089
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/package_8n_public_observation_runner.md",
+        "size_bytes": 1074
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/post_public_observation.md",
+        "size_bytes": 1669
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/post_public_review.md",
+        "size_bytes": 889
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/private_deployment_review.md",
+        "size_bytes": 646
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/private_reviewer_workflow.md",
+        "size_bytes": 652
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/public_launch_policy.md",
+        "size_bytes": 704
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/public_metrics_baseline.md",
+        "size_bytes": 812
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/public_observation_runner.md",
+        "size_bytes": 974
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/public_visibility_switch_policy.md",
+        "size_bytes": 849
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/residual_worktree_review_policy.md",
+        "size_bytes": 954
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/token_revocation_after_upload.md",
+        "size_bytes": 511
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/token_revocation_public_stage.md",
+        "size_bytes": 471
+      },
+      {
+        "status": "??",
+        "path": "dist/ai_objective_index_public_beta_v0_2/docs/worktree_hygiene_policy.md",
+        "size_bytes": 1209
+      }
+    ],
+    "possible_sensitive": [],
+    "unknown": [
+      {
+        "status": "M",
+        "path": "data/curated/curated_public_beta_index_v0_1.json",
+        "size_bytes": 4050
+      },
+      {
+        "status": "M",
+        "path": "data/curated/curated_report_v0_1.md",
+        "size_bytes": 1481
+      },
+      {
+        "status": "M",
+        "path": "data/downloads/action_objects_v0_1.json",
+        "size_bytes": 35145
+      },
+      {
+        "status": "M",
+        "path": "data/downloads/golden_queries_v0_1.json",
+        "size_bytes": 6822
+      },
+      {
+        "status": "M",
+        "path": "data/downloads/objective_scores_v0_1.json",
+        "size_bytes": 38633
+      },
+      {
+        "status": "M",
+        "path": "data/downloads/source_traces_v0_1.json",
+        "size_bytes": 9989
+      },
+      {
+        "status": "M",
+        "path": "data/eval_results.json",
+        "size_bytes": 503326
+      },
+      {
+        "status": "M",
+        "path": "github_upload/GITHUB_REMOTE_STATUS.json",
+        "size_bytes": 3569
+      },
+      {
+        "status": "M",
+        "path": "github_upload/GITHUB_STAGING_SUMMARY.md",
+        "size_bytes": 455
+      },
+      {
+        "status": "M",
+        "path": "huggingface_upload/HF_AUTH_STATUS.json",
+        "size_bytes": 1727
+      },
+      {
+        "status": "M",
+        "path": "huggingface_upload/HF_POST_UPLOAD_QA_RESULT.json",
+        "size_bytes": 697
+      },
+      {
+        "status": "M",
+        "path": "huggingface_upload/HF_PRIVATE_UPLOAD_RESULT.json",
+        "size_bytes": 942
+      },
+      {
+        "status": "M",
+        "path": "public_ops/PUBLIC_OPS_BASELINE_v0_1.json",
+        "size_bytes": 1600
+      },
+      {
+        "status": "M",
+        "path": "public_ops/WORKTREE_CLASSIFICATION.md",
+        "size_bytes": 17808
+      },
+      {
+        "status": "M",
+        "path": "public_ops/WORKTREE_HYGIENE_AUDIT_v0_1.json",
+        "size_bytes": 39746
+      },
+      {
+        "status": "M",
+        "path": "reports/ai_tool_pricing_index_v0_1.md",
+        "size_bytes": 2486
+      },
+      {
+        "status": "M",
+        "path": "reports/mcp_server_objective_index_v0_1.md",
+        "size_bytes": 3699
+      },
+      {
+        "status": "M",
+        "path": "reports/mcp_server_objective_index_v0_2.md",
+        "size_bytes": 434
+      },
+      {
+        "status": "M",
+        "path": "reports/source_trace_quality_report_v0_1.md",
+        "size_bytes": 1885
+      },
+      {
+        "status": "M",
+        "path": "reports/source_trace_quality_report_v0_2.md",
+        "size_bytes": 452
+      },
+      {
+        "status": "??",
+        "path": "github_upload/GITHUB_LINK_BINDING_RESULT.json",
+        "size_bytes": 843
+      },
+      {
+        "status": "??",
+        "path": "github_upload/GITHUB_POST_UPLOAD_QA_RESULT.json",
+        "size_bytes": 15461
+      },
+      {
+        "status": "??",
+        "path": "github_upload/GITHUB_WEB_REVIEW_CHECKLIST.md",
+        "size_bytes": 551
+      },
+      {
+        "status": "??",
+        "path": "github_upload/PUBLIC_SWITCH_PREFLIGHT_RESULT.json",
+        "size_bytes": 1376
+      },
+      {
+        "status": "??",
+        "path": "github_upload/PUBLIC_VISIBILITY_DECISION_CHECKLIST.md",
+        "size_bytes": 612
+      }
+    ]
+  },
+  "hygiene_input_available": true,
+  "recommended_next_action": "Observe public deployment first; defer residual cleanup to a scoped cleanup package.",
+  "deleted_files": [],
+  "git_add_all_used": false,
+  "community_post_performed": false,
+  "github_release_created": false,
+  "mcp_registry_submission_performed": false,
+  "token_printed": false
+}

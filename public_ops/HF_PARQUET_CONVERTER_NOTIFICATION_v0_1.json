@@ -1,0 +1,19 @@
+{
+  "recorded_at": "2026-05-20",
+  "dataset": "edict-lab/ai-objective-index-sample",
+  "dataset_url": "https://huggingface.co/datasets/edict-lab/ai-objective-index-sample",
+  "event": "refs/convert/parquet created by parquet-converter bot",
+  "meaning": "Hugging Face Dataset Viewer and Parquet access are available for the dataset.",
+  "action_required": "none",
+  "claim_boundary": {
+    "does_not_imply_dataset_quality": true,
+    "does_not_imply_verification": true,
+    "does_not_imply_certification": true
+  },
+  "read_only": true,
+  "tokens_used": false,
+  "upload_performed_by_this_record": false,
+  "community_post_performed": false,
+  "github_release_created": false,
+  "mcp_registry_submission_performed": false
+}

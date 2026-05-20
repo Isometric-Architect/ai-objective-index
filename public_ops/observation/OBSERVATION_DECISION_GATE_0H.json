@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-05-20T01:13:33.354063+00:00",
+  "phase": "0h",
+  "recommendation": "observe_72h",
+  "reasons": [
+    "Default recommendation: continue observing before community launch or release."
+  ],
+  "inputs": {
+    "snapshot_available": true,
+    "public_ops_baseline": "HOLD",
+    "issue_loop_ready": true,
+    "worktree_hygiene": "HOLD",
+    "residual_worktree_review": "HOLD_REVIEW",
+    "public_launch_claim_audit": "PASS",
+    "launch_claim_guard": "PASS"
+  },
+  "next_options": {
+    "A": "continue observing",
+    "B": "fix public URL issue",
+    "C": "clean residual worktree",
+    "D": "prepare GitHub Release later",
+    "E": "prepare community post later"
+  },
+  "community_post_performed": false,
+  "github_release_created": false,
+  "mcp_registry_submission_performed": false,
+  "actual_publish_performed": false,
+  "token_printed": false
+}

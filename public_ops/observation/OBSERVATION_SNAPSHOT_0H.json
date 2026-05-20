@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-05-20T01:13:27.623426+00:00",
+  "phase": "0h",
+  "github": {
+    "repo_url": "https://github.com/Isometric-Architect/ai-objective-index",
+    "latest_commit": "50cc5d4",
+    "stars_count": "not_checked",
+    "open_issues_count": "not_checked",
+    "visibility": "not_checked",
+    "gh_available": true,
+    "gh_checked": false
+  },
+  "huggingface": {
+    "space_url": "https://huggingface.co/spaces/edict-lab/ai-objective-index-demo",
+    "dataset_url": "https://huggingface.co/datasets/edict-lab/ai-objective-index-sample",
+    "space_status": "RUNNING",
+    "dataset_exists": true,
+    "source": "local_post_upload_qa"
+  },
+  "public_beta_mcp_count": 50,
+  "source_trace_count": 191,
+  "community_post_performed": false,
+  "github_release_created": false,
+  "mcp_registry_submission_performed": false,
+  "read_only": true,
+  "token_printed": false,
+  "actual_publish_performed": false,
+  "notes": [
+    "Online/API checks may be not_checked when unavailable; that is not a failure.",
+    "No community post, GitHub Release, or MCP Registry submission was performed."
+  ]
+}

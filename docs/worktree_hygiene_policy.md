@@ -20,3 +20,4 @@ AOI has many generated outputs from release, registry, Hugging Face, and report 
 - Treat `do_not_commit` as blocking.
 - Use focused staging lists for each package.
 
+Package 8N adds a residual review layer after the 8M hygiene audit. It writes a residual commit plan, ignore plan, and user-review list without deleting files or staging all generated leftovers.

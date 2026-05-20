@@ -23,3 +23,5 @@ Actual weights, thresholds, anti-gaming heuristics, negative-control seeds, and 
 This is not a security certification or quality guarantee.
 
 Package 9B implements a minimal offline version of this router vocabulary. The output is a source-traced route-readiness estimate with ALLOW/HOLD/BLOCK labels. It does not override hard risk boundaries, and objective fit cannot convert missing evidence or unsupported claims into verification.
+
+Package 9C exposes this vocabulary through read-only REST and MCP surfaces. The API returns route decisions and evidence/risk summaries. It still does not execute a gateway, run probes, fetch live URLs, or certify capability quality or safety.

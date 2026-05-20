@@ -99,6 +99,43 @@ def _build_fastmcp_server() -> Any:
             constraints=constraints,
         )
 
+    @server.tool()
+    def route_objective(
+        query: str,
+        objective: str,
+        domain: str = "mcp_servers",
+        data_scope: str = "sample",
+        limit: int = 10,
+        constraints: dict[str, Any] | None = None,
+    ) -> dict[str, Any]:
+        """Route an objective to local capability candidates without probes or network fetch."""
+        return mcp_tools.route_objective(
+            query=query,
+            objective=objective,
+            domain=domain,
+            data_scope=data_scope,
+            limit=limit,
+            constraints=constraints,
+        )
+
+    @server.tool()
+    def get_capability_trust(capability_id: str, data_scope: str = "sample") -> dict[str, Any]:
+        """Return one vNext CapabilityTrustCard."""
+        return mcp_tools.get_capability_trust(capability_id=capability_id, data_scope=data_scope)
+
+    @server.tool()
+    def explain_route_decision(
+        capability_id: str,
+        objective: str | None = None,
+        data_scope: str = "sample",
+    ) -> dict[str, Any]:
+        """Explain one vNext route decision."""
+        return mcp_tools.explain_route_decision(
+            capability_id=capability_id,
+            objective=objective,
+            data_scope=data_scope,
+        )
+
     return server
 
 
@@ -116,4 +153,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

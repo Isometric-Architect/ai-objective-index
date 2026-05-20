@@ -747,6 +747,30 @@ python -m ai_objective_index.vnext_capability_trust_audit
 
 CapabilityTrust is a conservative routing-readiness estimate. It is not a quality guarantee, security certification, supplier verification, purchasing advice, product readiness claim, or action permission. Package 9B does not run probes, execute a gateway, upload to PyPI, submit to MCP Registry, post to communities, crawl, scrape, or call external LLM APIs.
 
+## Package 9C Objective Router API MVP
+
+Package 9C exposes the vNext Capability Trust model through read-only REST and MCP surfaces:
+
+- `POST /v1/objectives/route`
+- `POST /v1/objectives/trust-report`
+- `GET /v1/capabilities/{capability_id}/trust`
+- `GET /v1/objectives/router/status`
+- MCP tools: `route_objective`, `get_capability_trust`, `explain_route_decision`
+
+Generate the separate vNext OpenAPI file:
+
+```powershell
+python -m ai_objective_index.vnext.objective_router_openapi
+```
+
+Run a local Objective Router demo:
+
+```powershell
+python -m ai_objective_index.vnext.objective_router_cli_demo --query "browser automation MCP server" --objective "select source-traced MCP candidates" --data-scope public_beta_mcp --limit 5
+```
+
+Objective Router returns route decisions, not final truth. It does not run probes, execute tools, fetch live URLs, perform gateway actions, upload packages, submit MCP Registry metadata, or post to communities.
+
 ## Claim Boundary
 
 Allowed claim: AOI is a read-only MCP/API objective ranking and comparison tool with explicit schemas, sample source traces, missing-field reporting, and decision receipt contracts.
@@ -822,6 +846,9 @@ AOI output is not a quality guarantee. It is not legal, financial, medical, purc
 - `docs/vnext/package_9b_capability_trust_schema_mvp.md`: offline capability trust schema MVP.
 - `docs/vnext/capability_trust_card.md`: vNext trust card fields.
 - `docs/vnext/capability_route_decision.md`: ALLOW/HOLD/BLOCK routing labels.
+- `docs/vnext/package_9c_objective_router_api_mvp.md`: vNext REST/MCP Objective Router surface.
+- `docs/vnext/objective_router_api.md`: vNext Objective Router REST endpoints.
+- `docs/vnext/objective_router_mcp_tools.md`: vNext Objective Router MCP tools.
 - `docs/vnext/public_private_ranking_kernel.md`: public/private ranking kernel split.
 - `docs/token_revocation_after_upload.md`: token revocation guidance after HF uploads.
 - `docs/public_data_intake_policy.md`: public-data intake limits.

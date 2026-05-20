@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-05-20T17:21:30.248590+00:00",
+  "overall_token": "PASS",
+  "risky_phrase_count": 0,
+  "findings": [],
+  "scanned_files": [
+    "README.md",
+    "CHANGELOG.md",
+    "docs\\vnext\\objective_router_api.md",
+    "docs\\vnext\\objective_router_limitations.md",
+    "docs\\vnext\\objective_router_mcp_tools.md",
+    "docs\\vnext\\objective_router_response_standard.md",
+    "public_launch\\wave5\\OBJECTIVE_ROUTER_MCP_TOOL_MANIFEST.json",
+    "public_launch\\wave5\\OBJECTIVE_ROUTER_OPENAPI_AUDIT.json",
+    "public_launch\\wave5\\OBJECTIVE_ROUTER_SAMPLE_RESPONSE.json",
+    "public_launch\\wave5\\PACKAGE_9C_OBJECTIVE_ROUTER_RESULT.json",
+    "public_launch\\wave5\\PACKAGE_9C_NEXT_STEPS.md"
+  ],
+  "allowed_wording": [
+    "source-traced candidate",
+    "route decision",
+    "trust estimate",
+    "evidence summary",
+    "risk boundary",
+    "missing fields",
+    "known limits",
+    "not verified",
+    "security not assessed"
+  ],
+  "pypi_upload_performed": false,
+  "mcp_registry_submission_performed": false,
+  "community_post_performed": false,
+  "token_printed": false
+}

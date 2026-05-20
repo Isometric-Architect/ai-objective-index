@@ -182,3 +182,18 @@ These fields do not change the API into an action system. A recommendation or de
 The API does not crawl URLs, execute purchases, payments, bookings, logins, email sending, form submissions, account connections, supplier claim/verify workflows, profile modifications, or contract signing.
 
 Package 7A MCP `search`/`fetch` wrappers are MCP compatibility tools, not new REST endpoints.
+
+## Package 9C Objective Router API
+
+Package 9C adds read-only vNext router endpoints:
+
+- `POST /v1/objectives/route`
+- `POST /v1/objectives/trust-report`
+- `GET /v1/capabilities/{capability_id}/trust`
+- `GET /v1/objectives/router/status`
+
+These endpoints return route decisions from the vNext Capability Trust model. They do not run probes, execute tools, fetch live URLs, perform gateway actions, upload packages, submit MCP Registry metadata, or post to communities.
+
+`ALLOW_CANDIDATE` and `ALLOW_WITH_LIMITS` mean the candidate can be compared or considered under stated limits. They do not mean verified, safe, security certified, quality guaranteed, product ready, or purchase ready.
+
+The separate vNext OpenAPI file is `api/vnext/objective_router_openapi.json`.

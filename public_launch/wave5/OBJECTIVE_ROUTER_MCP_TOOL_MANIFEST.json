@@ -1,0 +1,195 @@
+{
+  "generated_from": "data/generated_mcp_tools_manifest.json",
+  "read_only": true,
+  "tools": [
+    {
+      "name": "route_objective",
+      "description": "vNext read-only Objective Router: return ALLOW/HOLD/BLOCK route decisions for source-traced capability candidates.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "query",
+          "objective"
+        ],
+        "properties": {
+          "query": {
+            "type": "string"
+          },
+          "objective": {
+            "type": "string"
+          },
+          "domain": {
+            "type": "string",
+            "default": "mcp_servers"
+          },
+          "data_scope": {
+            "type": "string",
+            "enum": [
+              "sample",
+              "integrated",
+              "mcp_registry",
+              "public_beta_mcp"
+            ],
+            "default": "sample"
+          },
+          "limit": {
+            "type": "integer",
+            "default": 10,
+            "minimum": 1
+          },
+          "constraints": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "schema": {
+            "type": "string"
+          },
+          "route_summary": {
+            "type": "object"
+          },
+          "results": {
+            "type": "array"
+          },
+          "read_only": {
+            "const": true
+          },
+          "probe_execution": {
+            "const": false
+          },
+          "gateway_execution": {
+            "const": false
+          }
+        }
+      }
+    },
+    {
+      "name": "get_capability_trust",
+      "description": "Return one vNext CapabilityTrustCard by capability id without network, probes, or external tool execution.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "capability_id"
+        ],
+        "properties": {
+          "capability_id": {
+            "type": "string"
+          },
+          "data_scope": {
+            "type": "string",
+            "enum": [
+              "sample",
+              "integrated",
+              "mcp_registry",
+              "public_beta_mcp"
+            ],
+            "default": "sample"
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "capability_trust_card": {
+            "type": "object"
+          },
+          "found": {
+            "type": "boolean"
+          },
+          "read_only": {
+            "const": true
+          },
+          "probe_execution": {
+            "const": false
+          }
+        }
+      }
+    },
+    {
+      "name": "explain_route_decision",
+      "description": "Explain one vNext route decision with evidence summary, risk boundary, missing fields, and must-not-claim terms.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "capability_id"
+        ],
+        "properties": {
+          "capability_id": {
+            "type": "string"
+          },
+          "objective": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "data_scope": {
+            "type": "string",
+            "enum": [
+              "sample",
+              "integrated",
+              "mcp_registry",
+              "public_beta_mcp"
+            ],
+            "default": "sample"
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "decision": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "evidence_summary": {
+            "type": "object"
+          },
+          "risk_boundary": {
+            "type": "object"
+          },
+          "must_not_claim": {
+            "type": "array"
+          },
+          "read_only": {
+            "const": true
+          },
+          "probe_execution": {
+            "const": false
+          }
+        }
+      }
+    }
+  ],
+  "forbidden_actions": [
+    "payment",
+    "booking",
+    "login",
+    "email_sending",
+    "form_submission",
+    "purchase",
+    "contract_signing",
+    "account_connection"
+  ],
+  "probe_execution": false,
+  "gateway_execution": false,
+  "external_tool_execution": false
+}

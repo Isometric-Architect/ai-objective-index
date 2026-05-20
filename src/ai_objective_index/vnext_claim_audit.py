@@ -32,6 +32,7 @@ ALLOWED_CONTEXT_HINTS = [
     "schema",
     "future",
     "not already",
+    "must_not_claim",
 ]
 
 

@@ -40,3 +40,5 @@ Allowed wording:
 - product readiness not asserted
 - no probe execution yet
 - no gateway execution yet
+
+Package 9C adds Objective Router REST/MCP surfaces. Do not describe these endpoints as a live gateway, probe runner, security scanner, product certification layer, or final truth engine. They expose conservative route decisions only.

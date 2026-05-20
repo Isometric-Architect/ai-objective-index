@@ -6,6 +6,197 @@
     "version": "0.1"
   },
   "paths": {
+    "/v1/objectives/route": {
+      "post": {
+        "tags": [
+          "vnext-objective-router"
+        ],
+        "summary": "Post Objective Route",
+        "operationId": "post_objective_route_v1_objectives_route_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ObjectiveRouteRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Post Objective Route V1 Objectives Route Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/objectives/trust-report": {
+      "post": {
+        "tags": [
+          "vnext-objective-router"
+        ],
+        "summary": "Post Objective Trust Report",
+        "operationId": "post_objective_trust_report_v1_objectives_trust_report_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ObjectiveRouteRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Post Objective Trust Report V1 Objectives Trust Report Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/capabilities/{capability_id}/trust": {
+      "get": {
+        "tags": [
+          "vnext-objective-router"
+        ],
+        "summary": "Get Capability Trust Endpoint",
+        "operationId": "get_capability_trust_endpoint_v1_capabilities__capability_id__trust_get",
+        "parameters": [
+          {
+            "name": "capability_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Capability Id"
+            }
+          },
+          {
+            "name": "data_scope",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "sample",
+              "title": "Data Scope"
+            }
+          },
+          {
+            "name": "objective",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Objective"
+            }
+          },
+          {
+            "name": "query",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Query"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/objectives/router/status": {
+      "get": {
+        "tags": [
+          "vnext-objective-router"
+        ],
+        "summary": "Get Objective Router Status",
+        "operationId": "get_objective_router_status_v1_objectives_router_status_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Get Objective Router Status V1 Objectives Router Status Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/status": {
       "get": {
         "summary": "Status",
@@ -567,6 +758,157 @@
         },
         "type": "object",
         "title": "HTTPValidationError"
+      },
+      "ObjectiveRouteConstraints": {
+        "properties": {
+          "require_source_trace": {
+            "type": "boolean",
+            "title": "Require Source Trace",
+            "default": true
+          },
+          "require_policy_clarity": {
+            "type": "boolean",
+            "title": "Require Policy Clarity",
+            "default": false
+          },
+          "require_docs": {
+            "type": "boolean",
+            "title": "Require Docs",
+            "default": false
+          },
+          "require_pricing": {
+            "type": "boolean",
+            "title": "Require Pricing",
+            "default": false
+          },
+          "require_license": {
+            "type": "boolean",
+            "title": "Require License",
+            "default": false
+          },
+          "require_repository": {
+            "type": "boolean",
+            "title": "Require Repository",
+            "default": false
+          },
+          "allowed_integration_types": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Allowed Integration Types"
+          },
+          "forbidden_actions": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Forbidden Actions"
+          },
+          "risk_tolerance": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high",
+              "unknown"
+            ],
+            "title": "Risk Tolerance",
+            "default": "unknown"
+          }
+        },
+        "additionalProperties": true,
+        "type": "object",
+        "title": "ObjectiveRouteConstraints"
+      },
+      "ObjectiveRouteInclude": {
+        "properties": {
+          "source_traces": {
+            "type": "boolean",
+            "title": "Source Traces",
+            "default": true
+          },
+          "missing_fields": {
+            "type": "boolean",
+            "title": "Missing Fields",
+            "default": true
+          },
+          "score_components": {
+            "type": "boolean",
+            "title": "Score Components",
+            "default": true
+          },
+          "known_limits": {
+            "type": "boolean",
+            "title": "Known Limits",
+            "default": true
+          }
+        },
+        "additionalProperties": true,
+        "type": "object",
+        "title": "ObjectiveRouteInclude"
+      },
+      "ObjectiveRouteRequest": {
+        "properties": {
+          "query": {
+            "type": "string",
+            "title": "Query"
+          },
+          "objective": {
+            "type": "string",
+            "title": "Objective"
+          },
+          "domain": {
+            "type": "string",
+            "title": "Domain",
+            "default": "mcp_servers"
+          },
+          "data_scope": {
+            "type": "string",
+            "enum": [
+              "sample",
+              "integrated",
+              "mcp_registry",
+              "public_beta_mcp"
+            ],
+            "title": "Data Scope",
+            "default": "sample"
+          },
+          "limit": {
+            "type": "integer",
+            "maximum": 100.0,
+            "minimum": 1.0,
+            "title": "Limit",
+            "default": 10
+          },
+          "constraints": {
+            "$ref": "#/components/schemas/ObjectiveRouteConstraints"
+          },
+          "include": {
+            "$ref": "#/components/schemas/ObjectiveRouteInclude"
+          }
+        },
+        "additionalProperties": true,
+        "type": "object",
+        "required": [
+          "query",
+          "objective"
+        ],
+        "title": "ObjectiveRouteRequest"
       },
       "RankOption": {
         "properties": {

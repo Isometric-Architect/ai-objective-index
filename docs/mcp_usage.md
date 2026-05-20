@@ -31,6 +31,16 @@ python -m ai_objective_index.mcp_smoke
 python -m ai_objective_index.mcp_stdio_entrypoint
 ```
 
+## Package 9C Objective Router Tools
+
+Package 9C adds read-only vNext MCP helpers:
+
+- `route_objective(query, objective, domain="mcp_servers", data_scope="sample", limit=10, constraints={})`
+- `get_capability_trust(capability_id, data_scope="sample")`
+- `explain_route_decision(capability_id, objective=None, data_scope="sample")`
+
+These tools return route decisions, evidence summaries, risk boundaries, missing fields, and must-not-claim terms. They do not fetch network data, run probes, execute external tools, or perform payment, booking, login, email, purchase, form submission, or contract actions.
+
 ## Package 6C data_scope
 
 Package 6C adds optional `data_scope` support to MCP helper functions while preserving `sample` as the default.

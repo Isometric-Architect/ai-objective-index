@@ -29,3 +29,5 @@ Package 8P adds a PyPI package path using `registryType: pypi`. Even with a PyPI
 Package 9A pauses MCP Registry submission until AOI vNext positioning and schemas are aligned. The pause is strategic, not a technical failure.
 
 Package 9B keeps MCP Registry submission paused while CapabilityTrust cards and route decisions are introduced. A future registry submission must not imply verified, safe, security-certified, or quality-guaranteed capabilities.
+
+Package 9C keeps MCP Registry submission paused while Objective Router REST/MCP surfaces are introduced. Registry metadata must not imply the router is a live security gateway or that candidates are verified.

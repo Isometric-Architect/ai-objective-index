@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-05-20T17:21:08.120614+00:00",
+  "openapi_path": "api\\vnext\\objective_router_openapi.json",
+  "paths": [
+    "/v1/capabilities/{capability_id}/trust",
+    "/v1/objectives/route",
+    "/v1/objectives/router/status",
+    "/v1/objectives/trust-report"
+  ],
+  "read_only": true,
+  "probe_execution": false,
+  "gateway_execution": false,
+  "external_fetch": false
+}

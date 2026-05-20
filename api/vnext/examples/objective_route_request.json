@@ -1,0 +1,18 @@
+{
+  "query": "browser automation MCP server",
+  "objective": "select source-traced MCP candidates",
+  "domain": "mcp_servers",
+  "data_scope": "public_beta_mcp",
+  "limit": 5,
+  "constraints": {
+    "require_source_trace": true,
+    "require_policy_clarity": true,
+    "risk_tolerance": "unknown"
+  },
+  "include": {
+    "source_traces": true,
+    "missing_fields": true,
+    "score_components": true,
+    "known_limits": true
+  }
+}

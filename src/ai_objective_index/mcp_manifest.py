@@ -217,6 +217,88 @@ def get_mcp_tool_manifest() -> dict[str, Any]:
                 {"decision_receipt": {"type": "object"}, "read_only": {"const": True}, "data_scope": text}
             ),
         },
+        {
+            "name": "route_objective",
+            "description": "vNext read-only Objective Router: return ALLOW/HOLD/BLOCK route decisions for source-traced capability candidates.",
+            "read_only": True,
+            "input_schema": _schema(
+                {
+                    "query": text,
+                    "objective": text,
+                    "domain": {"type": "string", "default": "mcp_servers"},
+                    "data_scope": {
+                        "type": "string",
+                        "enum": ["sample", "integrated", "mcp_registry", "public_beta_mcp"],
+                        "default": "sample",
+                    },
+                    "limit": {"type": "integer", "default": 10, "minimum": 1},
+                    "constraints": constraints,
+                },
+                ["query", "objective"],
+            ),
+            "output_schema": _schema(
+                {
+                    "schema": text,
+                    "route_summary": {"type": "object"},
+                    "results": {"type": "array"},
+                    "read_only": {"const": True},
+                    "probe_execution": {"const": False},
+                    "gateway_execution": {"const": False},
+                }
+            ),
+        },
+        {
+            "name": "get_capability_trust",
+            "description": "Return one vNext CapabilityTrustCard by capability id without network, probes, or external tool execution.",
+            "read_only": True,
+            "input_schema": _schema(
+                {
+                    "capability_id": text,
+                    "data_scope": {
+                        "type": "string",
+                        "enum": ["sample", "integrated", "mcp_registry", "public_beta_mcp"],
+                        "default": "sample",
+                    },
+                },
+                ["capability_id"],
+            ),
+            "output_schema": _schema(
+                {
+                    "capability_trust_card": {"type": "object"},
+                    "found": {"type": "boolean"},
+                    "read_only": {"const": True},
+                    "probe_execution": {"const": False},
+                }
+            ),
+        },
+        {
+            "name": "explain_route_decision",
+            "description": "Explain one vNext route decision with evidence summary, risk boundary, missing fields, and must-not-claim terms.",
+            "read_only": True,
+            "input_schema": _schema(
+                {
+                    "capability_id": text,
+                    "objective": optional_text,
+                    "data_scope": {
+                        "type": "string",
+                        "enum": ["sample", "integrated", "mcp_registry", "public_beta_mcp"],
+                        "default": "sample",
+                    },
+                },
+                ["capability_id"],
+            ),
+            "output_schema": _schema(
+                {
+                    "decision": text,
+                    "reason": text,
+                    "evidence_summary": {"type": "object"},
+                    "risk_boundary": {"type": "object"},
+                    "must_not_claim": {"type": "array"},
+                    "read_only": {"const": True},
+                    "probe_execution": {"const": False},
+                }
+            ),
+        },
     ]
 
     return {

@@ -1,0 +1,157 @@
+{
+  "read_only": true,
+  "found": true,
+  "data_scope": "public_beta_mcp",
+  "capability_trust_card": {
+    "schema": "AOI_CapabilityTrustCard/v0.1",
+    "trust_card_id": "trust-8d8d4033403d",
+    "objective_id": "objective-3d2bb79cc6ad",
+    "capability_id": "capability:mcp-registry-ac-inference-sh-mcp-1-0-0",
+    "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-0",
+    "name": "ac.inference.sh/mcp",
+    "provider": null,
+    "domain": "mcp_servers",
+    "integration_type": "mcp_server",
+    "status": "EXTRACTED_UNVERIFIED",
+    "source_trace_ids": [
+      "trace-mcp-registry-ac-inference-sh-mcp-1-0-0-name",
+      "trace-mcp-registry-ac-inference-sh-mcp-1-0-0-description",
+      "trace-mcp-registry-ac-inference-sh-mcp-1-0-0-capabilities"
+    ],
+    "evidence_summary": {
+      "schema": "AOI_CapabilityEvidenceSummary/v0.1",
+      "official_source_count": 2,
+      "source_trace_count": 3,
+      "source_trace_coverage": 0.143,
+      "docs_found": false,
+      "pricing_found": false,
+      "policy_found": false,
+      "repository_found": false,
+      "license_found": false,
+      "examples_found": false,
+      "last_checked_at": "2026-05-20T17:20:47.437035+00:00",
+      "evidence_status": "PARTIAL_TRACE",
+      "confidence": 0.63,
+      "evidence_notes": [
+        "Documentation evidence is missing or weak.",
+        "Policy evidence is missing or weak.",
+        "Pricing evidence is missing or weak; this is a hold signal, not a quality judgement."
+      ]
+    },
+    "match": {
+      "schema": "AOI_ObjectiveCapabilityMatch/v0.1",
+      "objective_fit": 0.25,
+      "domain_fit": 0.75,
+      "constraint_fit": 0.65,
+      "integration_fit": 0.8,
+      "policy_fit": 0.35,
+      "evidence_fit": 0.63,
+      "missing_field_penalty": 1.0,
+      "forbidden_action_penalty": 0.0,
+      "unsupported_claim_penalty": 0.0,
+      "explanation": [
+        "Objective keyword fit is 0.25.",
+        "Integration type inferred as mcp_server.",
+        "Missing fields reduce readiness: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url."
+      ]
+    },
+    "risk_boundary": {
+      "schema": "AOI_CapabilityRiskBoundary/v0.1",
+      "risk_level": "medium",
+      "allowed_use": [
+        "read-only objective-relative comparison",
+        "source-traced candidate ranking",
+        "missing-field review"
+      ],
+      "hold_use": [
+        "Data handling policy evidence needs review.",
+        "Commercial-use policy clarity needs review."
+      ],
+      "blocked_use": [],
+      "forbidden_actions_detected": [],
+      "unsupported_claims_detected": [],
+      "sensitive_domain_flags": [],
+      "security_claim_status": "NOT_ASSESSED",
+      "legal_claim_status": "NOT_ASSESSED",
+      "product_claim_status": "HOLD_PRODUCT_EVIDENCE_REQUIRED",
+      "route_block_reasons": []
+    },
+    "route_decision": {
+      "schema": "AOI_CapabilityRouteDecision/v0.1",
+      "decision": "HOLD_POLICY_CLARITY",
+      "reason": "Policy clarity fields are missing: commercial_use_terms, data_retention_policy, docs_url, pricing, privacy_policy.",
+      "claim_ceiling": "source-traced capability candidate; not verified",
+      "next_actions": [
+        "Collect official policy traces before stronger recommendations."
+      ],
+      "can_rank": true,
+      "can_compare": true,
+      "can_recommend_as_candidate": false,
+      "must_not_claim": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production-ready",
+        "purchasing advice"
+      ]
+    },
+    "score_components": {
+      "objective_score": 6.16,
+      "v0_2_score_components": {
+        "relevance": 25.0,
+        "cost_fit": 25.0,
+        "policy_clarity": 0.0,
+        "documentation_quality": 0.0,
+        "trust_signal": 74.5,
+        "source_trace_coverage": 12.5,
+        "freshness": 100.0,
+        "capability_fit": 25.0,
+        "structuredness": 92.86
+      },
+      "v0_2_penalties": {
+        "missing_field_penalty": 25.0,
+        "stale_penalty": 0.0,
+        "unsafe_claim_penalty": 0.0,
+        "ambiguity_penalty": 0.0
+      },
+      "capability_trust": {
+        "profile_id": "demo_profile_v0_1",
+        "demo_trust_score": 0.221,
+        "raw_component_sum": 0.361,
+        "penalty_sum": 0.14
+      }
+    },
+    "residual_notes": [
+      "CapabilityTrust is a routing readiness estimate, not verification.",
+      "Security, quality, and product readiness are not asserted."
+    ],
+    "missing_fields": [
+      "pricing",
+      "free_plan",
+      "commercial_use_terms",
+      "rate_limits",
+      "privacy_policy",
+      "docs_url",
+      "refund_policy",
+      "data_retention_policy",
+      "repository_or_homepage",
+      "clear_capabilities"
+    ],
+    "known_limits": [
+      "Objective score is a v0.1 fit heuristic, not a quality guarantee.",
+      "Object status is EXTRACTED_UNVERIFIED; verify source traces before production use.",
+      "Missing or weak fields detected: pricing, free_plan, commercial_use_terms, rate_limits, privacy_policy, docs_url.",
+      "No live probes were executed.",
+      "No gateway or security scanner was run."
+    ],
+    "generated_at": "2026-05-20T17:21:08.107761+00:00"
+  },
+  "known_limits": [
+    "Objective Router returns route decisions, not final truth.",
+    "ALLOW_CANDIDATE and ALLOW_WITH_LIMITS do not mean verified, safe, security certified, quality guaranteed, or product ready.",
+    "HOLD means evidence, policy clarity, or review requirements are insufficient for stronger use.",
+    "BLOCK means the route must not be used under the requested scope.",
+    "No probes, gateway execution, live URL fetch, external tool execution, or external LLM calls are performed."
+  ]
+}

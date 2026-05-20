@@ -22,6 +22,9 @@ def test_manifest_lists_all_read_only_tools():
         "get_source_trace",
         "list_missing_fields",
         "generate_decision_receipt",
+        "route_objective",
+        "get_capability_trust",
+        "explain_route_decision",
     }
     assert all(tool["read_only"] is True for tool in manifest["tools"])
 

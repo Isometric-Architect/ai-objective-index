@@ -19,6 +19,7 @@ from .integrated_store import get_store_for_scope
 from .registry_intake.mcp_registry_loader import load_registry_source_traces
 from .seed_loader import load_sample_index, load_source_traces
 from .store import ObjectiveIndexStore
+from .vnext.objective_router_api import router as objective_router
 
 
 DATA_SCOPE_PATTERN = "^(sample|generated|integrated|curated|public_beta|mcp_registry|public_beta_mcp)$"
@@ -28,6 +29,7 @@ app = FastAPI(
     version="0.1",
     description="Read-only objective-fit ranking API for local AOI sample records.",
 )
+app.include_router(objective_router)
 
 
 def _store(data_scope: str = "sample") -> ObjectiveIndexStore:

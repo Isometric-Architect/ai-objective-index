@@ -1,0 +1,550 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "AI Objective Index vNext Objective Router API",
+    "version": "0.1",
+    "description": "Read-only objective-to-capability route decisions. Not verification, security certification, or quality guarantee."
+  },
+  "paths": {
+    "/v1/objectives/route": {
+      "post": {
+        "summary": "Route an objective to source-traced capability candidates",
+        "operationId": "routeObjective",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$defs": {
+                  "ObjectiveRouteConstraints": {
+                    "additionalProperties": true,
+                    "properties": {
+                      "require_source_trace": {
+                        "default": true,
+                        "title": "Require Source Trace",
+                        "type": "boolean"
+                      },
+                      "require_policy_clarity": {
+                        "default": false,
+                        "title": "Require Policy Clarity",
+                        "type": "boolean"
+                      },
+                      "require_docs": {
+                        "default": false,
+                        "title": "Require Docs",
+                        "type": "boolean"
+                      },
+                      "require_pricing": {
+                        "default": false,
+                        "title": "Require Pricing",
+                        "type": "boolean"
+                      },
+                      "require_license": {
+                        "default": false,
+                        "title": "Require License",
+                        "type": "boolean"
+                      },
+                      "require_repository": {
+                        "default": false,
+                        "title": "Require Repository",
+                        "type": "boolean"
+                      },
+                      "allowed_integration_types": {
+                        "anyOf": [
+                          {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "default": null,
+                        "title": "Allowed Integration Types"
+                      },
+                      "forbidden_actions": {
+                        "anyOf": [
+                          {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "default": null,
+                        "title": "Forbidden Actions"
+                      },
+                      "risk_tolerance": {
+                        "default": "unknown",
+                        "enum": [
+                          "low",
+                          "medium",
+                          "high",
+                          "unknown"
+                        ],
+                        "title": "Risk Tolerance",
+                        "type": "string"
+                      }
+                    },
+                    "title": "ObjectiveRouteConstraints",
+                    "type": "object"
+                  },
+                  "ObjectiveRouteInclude": {
+                    "additionalProperties": true,
+                    "properties": {
+                      "source_traces": {
+                        "default": true,
+                        "title": "Source Traces",
+                        "type": "boolean"
+                      },
+                      "missing_fields": {
+                        "default": true,
+                        "title": "Missing Fields",
+                        "type": "boolean"
+                      },
+                      "score_components": {
+                        "default": true,
+                        "title": "Score Components",
+                        "type": "boolean"
+                      },
+                      "known_limits": {
+                        "default": true,
+                        "title": "Known Limits",
+                        "type": "boolean"
+                      }
+                    },
+                    "title": "ObjectiveRouteInclude",
+                    "type": "object"
+                  }
+                },
+                "additionalProperties": true,
+                "properties": {
+                  "query": {
+                    "title": "Query",
+                    "type": "string"
+                  },
+                  "objective": {
+                    "title": "Objective",
+                    "type": "string"
+                  },
+                  "domain": {
+                    "default": "mcp_servers",
+                    "title": "Domain",
+                    "type": "string"
+                  },
+                  "data_scope": {
+                    "default": "sample",
+                    "enum": [
+                      "sample",
+                      "integrated",
+                      "mcp_registry",
+                      "public_beta_mcp"
+                    ],
+                    "title": "Data Scope",
+                    "type": "string"
+                  },
+                  "limit": {
+                    "default": 10,
+                    "maximum": 100,
+                    "minimum": 1,
+                    "title": "Limit",
+                    "type": "integer"
+                  },
+                  "constraints": {
+                    "$ref": "#/$defs/ObjectiveRouteConstraints"
+                  },
+                  "include": {
+                    "$ref": "#/$defs/ObjectiveRouteInclude"
+                  }
+                },
+                "required": [
+                  "query",
+                  "objective"
+                ],
+                "title": "ObjectiveRouteRequest",
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Objective route response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$defs": {
+                    "ObjectiveRouteSummary": {
+                      "additionalProperties": true,
+                      "properties": {
+                        "total_candidates": {
+                          "default": 0,
+                          "title": "Total Candidates",
+                          "type": "integer"
+                        },
+                        "allow_count": {
+                          "default": 0,
+                          "title": "Allow Count",
+                          "type": "integer"
+                        },
+                        "hold_count": {
+                          "default": 0,
+                          "title": "Hold Count",
+                          "type": "integer"
+                        },
+                        "block_count": {
+                          "default": 0,
+                          "title": "Block Count",
+                          "type": "integer"
+                        },
+                        "top_decision_reasons": {
+                          "items": {
+                            "additionalProperties": true,
+                            "type": "object"
+                          },
+                          "title": "Top Decision Reasons",
+                          "type": "array"
+                        },
+                        "claim_ceiling": {
+                          "default": "source-traced capability candidate; not verified; not security certified; not a quality guarantee",
+                          "title": "Claim Ceiling",
+                          "type": "string"
+                        }
+                      },
+                      "title": "ObjectiveRouteSummary",
+                      "type": "object"
+                    }
+                  },
+                  "additionalProperties": true,
+                  "properties": {
+                    "schema": {
+                      "default": "AOI_ObjectiveRouteResponse/v0.1",
+                      "title": "Schema",
+                      "type": "string"
+                    },
+                    "query": {
+                      "title": "Query",
+                      "type": "string"
+                    },
+                    "objective": {
+                      "title": "Objective",
+                      "type": "string"
+                    },
+                    "domain": {
+                      "title": "Domain",
+                      "type": "string"
+                    },
+                    "data_scope": {
+                      "title": "Data Scope",
+                      "type": "string"
+                    },
+                    "generated_at": {
+                      "title": "Generated At",
+                      "type": "string"
+                    },
+                    "route_summary": {
+                      "$ref": "#/$defs/ObjectiveRouteSummary"
+                    },
+                    "results": {
+                      "items": {
+                        "additionalProperties": true,
+                        "type": "object"
+                      },
+                      "title": "Results",
+                      "type": "array"
+                    },
+                    "known_limits": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Known Limits",
+                      "type": "array"
+                    },
+                    "must_not_claim": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Must Not Claim",
+                      "type": "array"
+                    },
+                    "next_actions": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Next Actions",
+                      "type": "array"
+                    },
+                    "read_only": {
+                      "default": true,
+                      "title": "Read Only",
+                      "type": "boolean"
+                    },
+                    "probe_execution": {
+                      "default": false,
+                      "title": "Probe Execution",
+                      "type": "boolean"
+                    },
+                    "gateway_execution": {
+                      "default": false,
+                      "title": "Gateway Execution",
+                      "type": "boolean"
+                    },
+                    "external_fetch": {
+                      "default": false,
+                      "title": "External Fetch",
+                      "type": "boolean"
+                    },
+                    "pypi_upload_performed": {
+                      "default": false,
+                      "title": "Pypi Upload Performed",
+                      "type": "boolean"
+                    },
+                    "mcp_registry_submission_performed": {
+                      "default": false,
+                      "title": "Mcp Registry Submission Performed",
+                      "type": "boolean"
+                    },
+                    "community_post_performed": {
+                      "default": false,
+                      "title": "Community Post Performed",
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "query",
+                    "objective",
+                    "domain",
+                    "data_scope",
+                    "generated_at",
+                    "route_summary",
+                    "results"
+                  ],
+                  "title": "ObjectiveRouteResponse",
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/objectives/trust-report": {
+      "post": {
+        "summary": "Return the full read-only capability trust report",
+        "operationId": "objectiveTrustReport",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$defs": {
+                  "ObjectiveRouteConstraints": {
+                    "additionalProperties": true,
+                    "properties": {
+                      "require_source_trace": {
+                        "default": true,
+                        "title": "Require Source Trace",
+                        "type": "boolean"
+                      },
+                      "require_policy_clarity": {
+                        "default": false,
+                        "title": "Require Policy Clarity",
+                        "type": "boolean"
+                      },
+                      "require_docs": {
+                        "default": false,
+                        "title": "Require Docs",
+                        "type": "boolean"
+                      },
+                      "require_pricing": {
+                        "default": false,
+                        "title": "Require Pricing",
+                        "type": "boolean"
+                      },
+                      "require_license": {
+                        "default": false,
+                        "title": "Require License",
+                        "type": "boolean"
+                      },
+                      "require_repository": {
+                        "default": false,
+                        "title": "Require Repository",
+                        "type": "boolean"
+                      },
+                      "allowed_integration_types": {
+                        "anyOf": [
+                          {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "default": null,
+                        "title": "Allowed Integration Types"
+                      },
+                      "forbidden_actions": {
+                        "anyOf": [
+                          {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "default": null,
+                        "title": "Forbidden Actions"
+                      },
+                      "risk_tolerance": {
+                        "default": "unknown",
+                        "enum": [
+                          "low",
+                          "medium",
+                          "high",
+                          "unknown"
+                        ],
+                        "title": "Risk Tolerance",
+                        "type": "string"
+                      }
+                    },
+                    "title": "ObjectiveRouteConstraints",
+                    "type": "object"
+                  },
+                  "ObjectiveRouteInclude": {
+                    "additionalProperties": true,
+                    "properties": {
+                      "source_traces": {
+                        "default": true,
+                        "title": "Source Traces",
+                        "type": "boolean"
+                      },
+                      "missing_fields": {
+                        "default": true,
+                        "title": "Missing Fields",
+                        "type": "boolean"
+                      },
+                      "score_components": {
+                        "default": true,
+                        "title": "Score Components",
+                        "type": "boolean"
+                      },
+                      "known_limits": {
+                        "default": true,
+                        "title": "Known Limits",
+                        "type": "boolean"
+                      }
+                    },
+                    "title": "ObjectiveRouteInclude",
+                    "type": "object"
+                  }
+                },
+                "additionalProperties": true,
+                "properties": {
+                  "query": {
+                    "title": "Query",
+                    "type": "string"
+                  },
+                  "objective": {
+                    "title": "Objective",
+                    "type": "string"
+                  },
+                  "domain": {
+                    "default": "mcp_servers",
+                    "title": "Domain",
+                    "type": "string"
+                  },
+                  "data_scope": {
+                    "default": "sample",
+                    "enum": [
+                      "sample",
+                      "integrated",
+                      "mcp_registry",
+                      "public_beta_mcp"
+                    ],
+                    "title": "Data Scope",
+                    "type": "string"
+                  },
+                  "limit": {
+                    "default": 10,
+                    "maximum": 100,
+                    "minimum": 1,
+                    "title": "Limit",
+                    "type": "integer"
+                  },
+                  "constraints": {
+                    "$ref": "#/$defs/ObjectiveRouteConstraints"
+                  },
+                  "include": {
+                    "$ref": "#/$defs/ObjectiveRouteInclude"
+                  }
+                },
+                "required": [
+                  "query",
+                  "objective"
+                ],
+                "title": "ObjectiveRouteRequest",
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Objective route response"
+          }
+        }
+      }
+    },
+    "/v1/capabilities/{capability_id}/trust": {
+      "get": {
+        "summary": "Fetch one capability trust card",
+        "operationId": "getCapabilityTrust",
+        "parameters": [
+          {
+            "name": "capability_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "data_scope",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Capability trust card or stable not_found result"
+          }
+        }
+      }
+    },
+    "/v1/objectives/router/status": {
+      "get": {
+        "summary": "Objective Router safety/status metadata",
+        "operationId": "objectiveRouterStatus",
+        "responses": {
+          "200": {
+            "description": "Read-only router status"
+          }
+        }
+      }
+    }
+  }
+}

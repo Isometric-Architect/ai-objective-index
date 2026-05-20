@@ -17,6 +17,11 @@ from .seed_loader import load_sample_index, load_source_traces
 from .source_trace import get_source_trace as core_get_source_trace
 from .store import ObjectiveIndexStore
 from .use_rights import default_use_rights_for_object
+from .vnext.objective_router_mcp_tools import (
+    explain_route_decision as vnext_explain_route_decision,
+    get_capability_trust as vnext_get_capability_trust,
+    route_objective as vnext_route_objective,
+)
 
 
 FORBIDDEN_ACTIONS = [
@@ -509,4 +514,42 @@ def generate_decision_receipt(
                 "blocked_actions": forbidden_actions_v0_1(),
             },
         }
+    )
+
+
+def route_objective(
+    query: str,
+    objective: str,
+    domain: str = "mcp_servers",
+    data_scope: str = "sample",
+    limit: int = 10,
+    constraints: dict[str, Any] | None = None,
+) -> dict[str, Any]:
+    return _assert_jsonable(
+        vnext_route_objective(
+            query=query,
+            objective=objective,
+            domain=domain,
+            data_scope=data_scope,
+            limit=limit,
+            constraints=constraints,
+        )
+    )
+
+
+def get_capability_trust(capability_id: str, data_scope: str = "sample") -> dict[str, Any]:
+    return _assert_jsonable(vnext_get_capability_trust(capability_id=capability_id, data_scope=data_scope))
+
+
+def explain_route_decision(
+    capability_id: str,
+    objective: str | None = None,
+    data_scope: str = "sample",
+) -> dict[str, Any]:
+    return _assert_jsonable(
+        vnext_explain_route_decision(
+            capability_id=capability_id,
+            objective=objective,
+            data_scope=data_scope,
+        )
     )

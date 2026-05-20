@@ -1,0 +1,15 @@
+{
+  "overall_token": "PASS",
+  "sample_response_path": "public_launch\\wave5\\OBJECTIVE_ROUTER_SAMPLE_RESPONSE.json",
+  "total_candidates": 5,
+  "allow_count": 0,
+  "hold_count": 5,
+  "block_count": 0,
+  "offline_only": true,
+  "network_used": false,
+  "probe_execution_performed": false,
+  "gateway_execution_performed": false,
+  "pypi_upload_performed": false,
+  "mcp_registry_submission_performed": false,
+  "community_post_performed": false
+}

@@ -34,3 +34,5 @@ These commands build and inspect local artifacts only. They do not upload to Tes
 Package 9A pauses PyPI upload while AOI vNext positioning is aligned around the AI Agent Capability Trust Router strategy. Local build artifacts can remain available, but upload is still HOLD.
 
 Package 9B keeps the pause in place while the Capability Trust Schema MVP is introduced. Local build artifacts remain useful for future packaging, but TestPyPI/PyPI upload should not resume until the vNext route-decision language and public claim boundaries stay stable.
+
+Package 9C keeps the pause in place while Objective Router REST/MCP surfaces are introduced. Packaging can resume later only after these surfaces preserve read-only behavior and conservative claim boundaries.

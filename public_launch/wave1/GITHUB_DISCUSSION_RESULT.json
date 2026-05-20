@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-05-20T01:55:17.831514+00:00",
+  "dry_run": false,
+  "execute_safe": true,
+  "github_discussion_created": false,
+  "manual_post_required": true,
+  "token_printed": false,
+  "warnings": [
+    "GitHub Discussion auto-post is not implemented; use the draft manually if Discussions are enabled."
+  ]
+}

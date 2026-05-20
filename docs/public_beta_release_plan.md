@@ -180,4 +180,8 @@ Package 8M classifies generated leftovers and prepares public issue labels. The 
 - GitHub repository: https://github.com/Isometric-Architect/ai-objective-index
 - Hugging Face Space: https://huggingface.co/spaces/edict-lab/ai-objective-index-demo
 - Hugging Face Dataset: https://huggingface.co/datasets/edict-lab/ai-objective-index-sample
+
+## Package 8O Wave 1 Launch
+
+Package 8O can create the `v0.2.0-public-beta` GitHub prerelease and conservative feedback drafts. MCP Registry submission remains gated and should HOLD unless server JSON, package/remote endpoint, publisher tooling, authentication, and explicit confirmation are all present.
 - Community posting, GitHub Release creation, and MCP Registry submission remain HOLD.

@@ -199,3 +199,9 @@ No action is required. This event does not imply dataset quality, verification, 
 Package 8N starts the active 72-hour public observation workflow, records a 0-hour public metrics snapshot, writes 24/48/72-hour templates, reviews residual worktree changes, and gates the next decision.
 
 It does not post to communities, create a GitHub Release, submit to MCP Registry, delete residual files, stage all changes, force push, crawl, scrape, follow links, print/store tokens, or perform external actions.
+
+## Package 8O Public Beta Launch Wave 1
+
+Package 8O prepares the first conservative public beta wave: GitHub prerelease notes, feedback drafts, optional safe discussion handling, MCP Registry server JSON draft, submission gate, and launch report.
+
+It does not auto-post to HN, Reddit, OpenAI Developer Community, Product Hunt, or MCP community sites. It does not submit to MCP Registry unless eligibility passes and explicit confirmation is present.

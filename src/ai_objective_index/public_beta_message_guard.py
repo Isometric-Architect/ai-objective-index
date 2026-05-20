@@ -38,6 +38,7 @@ BLOCKED_POSITIVE_CLAIMS = [
 SCAN_TARGETS = [
     "public_launch/PUBLIC_BETA_POST_DRAFT_NO_CONTACT.md",
     "public_launch/PUBLIC_ANNOUNCEMENT_DRAFTS.md",
+    "public_launch/wave1",
     "docs/community_launch.md",
     "launch/manual_public_beta_v0_2/COMMUNITY_POST_DRAFTS.md",
 ]

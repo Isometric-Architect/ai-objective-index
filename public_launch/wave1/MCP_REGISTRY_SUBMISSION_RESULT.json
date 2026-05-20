@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-05-20T01:55:11.169822+00:00",
+  "dry_run": true,
+  "execute": false,
+  "eligibility_decision": "HOLD_SERVER_JSON_DRAFT_ONLY",
+  "submission_performed": false,
+  "token_printed": false,
+  "errors": [],
+  "warnings": [],
+  "next_action": "Dry-run only. Submission requires PASS eligibility and explicit environment confirmation."
+}

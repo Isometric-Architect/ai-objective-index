@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-05-20T01:54:56.176877+00:00",
+  "dry_run": false,
+  "execute": true,
+  "release_created": false,
+  "release_existing": true,
+  "tag": "v0.2.0-public-beta",
+  "title": "AI Objective Index v0.2.0 Public Beta",
+  "url": "https://github.com/Isometric-Architect/ai-objective-index/releases/tag/v0.2.0-public-beta",
+  "notes_path": "public_launch\\wave1\\GITHUB_RELEASE_NOTES_v0_2_0_public_beta.md",
+  "asset_candidate": {
+    "path": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\dist\\ai_objective_index_public_beta_v0_2.zip",
+    "exists": true,
+    "size_bytes": 162590,
+    "upload_allowed": true,
+    "reason": "size_ok"
+  },
+  "asset_uploaded": false,
+  "asset_upload_reason": "skipped_conservative_default",
+  "gh_available": true,
+  "gh_authenticated": true,
+  "token_printed": false,
+  "errors": [],
+  "warnings": [
+    "Release already exists; not deleting or clobbering it."
+  ],
+  "community_post_performed": false,
+  "mcp_registry_submission_performed": false,
+  "no_clobber": true
+}

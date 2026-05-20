@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-05-20T01:55:17.831514+00:00",
+  "dry_run": false,
+  "execute_safe": true,
+  "drafts": {
+    "community": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\public_launch\\wave1\\COMMUNITY_FEEDBACK_POST_DRAFTS.md",
+    "huggingface": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\public_launch\\wave1\\HUGGINGFACE_DISCUSSION_DRAFT.md",
+    "github": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\public_launch\\wave1\\GITHUB_DISCUSSION_DRAFT.md"
+  },
+  "hf_discussion_created": false,
+  "github_discussion_created": false,
+  "external_manual_posts_created": false,
+  "manual_post_required": true,
+  "token_printed": false,
+  "errors": [],
+  "warnings": [
+    "(Request ID: Root=1-6a0d1486-0b3e387c39b8fd8919fa0a59;2cf271f9-ab7e-4744-8a4e-fd0b611387ac)\n\n403 Forbidden: Authorization error..\nCannot access content at: https://huggingface.co/api/spaces/edict-lab/ai-objective-index-demo/discussions.\nMake sure your token has the correct permissions.",
+    "HN, Reddit, OpenAI Developer Community, Product Hunt, and MCP community posts are manual copy-paste only."
+  ],
+  "community_post_performed": false
+}

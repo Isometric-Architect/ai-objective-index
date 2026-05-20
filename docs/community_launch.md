@@ -35,6 +35,8 @@ Package 8L keeps community launch on HOLD. Run `python -m ai_objective_index.pos
 
 Package 8N starts the active 72-hour observation runner and residual worktree review. Community launch remains HOLD unless the owner explicitly requests the next package to prepare a conservative feedback post.
 
+Package 8O prepares conservative Wave 1 feedback drafts and may create a GitHub prerelease. HN, Reddit, OpenAI Developer Community, Product Hunt, and MCP community posts remain manual copy-paste actions unless a later package provides explicit authenticated support and the owner confirms execution.
+
 Package 8M still keeps community launch on HOLD. It creates the public ops baseline, classifies the dirty worktree, prepares GitHub issue labels, and starts a 72-hour observation log. Community posting should wait for a later explicit decision after observation.
 
 ## Short Public Message

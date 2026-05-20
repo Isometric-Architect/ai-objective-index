@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-05-20T01:55:26.978660+00:00",
+  "github_release_created": false,
+  "github_release_existing": true,
+  "release_url": "https://github.com/Isometric-Architect/ai-objective-index/releases/tag/v0.2.0-public-beta",
+  "hf_discussion_created": false,
+  "github_discussion_created": false,
+  "community_manual_posts_pending": true,
+  "external_manual_posts_created": false,
+  "mcp_registry_eligibility_decision": "HOLD_SERVER_JSON_DRAFT_ONLY",
+  "mcp_registry_submission_performed": false,
+  "recommended_next_step": "Monitor release and issues. MCP Registry remains HOLD until eligibility blockers are resolved.",
+  "token_printed": false,
+  "overclaim_detected": false,
+  "community_post_performed": false,
+  "github_release_created_or_existing": true
+}

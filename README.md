@@ -678,6 +678,22 @@ python -m ai_objective_index.observation_decision_gate --phase 0h
 
 Outputs are written to `public_ops/observation/` and `public_ops/residual_review/`. Package 8N does not post to communities, create a GitHub Release, submit to MCP Registry, delete residual files, stage all changes, force push, print/store tokens, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
 
+## Package 8O Public Beta Launch Wave 1
+
+Package 8O prepares and can execute the first conservative public beta launch wave:
+
+```powershell
+python -m ai_objective_index.github_release_manager --dry-run
+python -m ai_objective_index.community_launch_manager --dry-run
+python -m ai_objective_index.mcp_registry_server_json_builder
+python -m ai_objective_index.mcp_registry_submission_gate --dry-run
+python -m ai_objective_index.launch_wave1_report
+```
+
+The GitHub release manager targets prerelease tag `v0.2.0-public-beta`. MCP Registry submission remains gated and requires `PASS_SUBMIT_READY` plus `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES`.
+
+Package 8O does not post to HN, Reddit, OpenAI Developer Community, Product Hunt, or MCP communities automatically. It does not claim verified, safe, security-certified, quality-guaranteed, production-ready, or purchasing-advice status.
+
 ## Claim Boundary
 
 Allowed claim: AOI is a read-only MCP/API objective ranking and comparison tool with explicit schemas, sample source traces, missing-field reporting, and decision receipt contracts.
@@ -738,6 +754,10 @@ AOI output is not a quality guarantee. It is not legal, financial, medical, purc
 - `docs/package_8n_public_observation_runner.md`: active 72-hour observation runner commands.
 - `docs/public_observation_runner.md`: phase-based public observation workflow.
 - `docs/residual_worktree_review_policy.md`: residual working-tree review policy.
+- `docs/package_8o_public_beta_launch_wave1.md`: first public beta launch wave commands.
+- `docs/github_release_public_beta.md`: GitHub prerelease policy.
+- `docs/conservative_community_feedback_launch.md`: conservative feedback launch wording.
+- `docs/mcp_registry_submission_gate.md`: MCP Registry eligibility and submission gate.
 - `docs/token_revocation_after_upload.md`: token revocation guidance after HF uploads.
 - `docs/public_data_intake_policy.md`: public-data intake limits.
 - `docs/real_mcp_integration.md`: real MCP SDK integration and fallback behavior.

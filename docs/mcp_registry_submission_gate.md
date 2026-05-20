@@ -1,0 +1,25 @@
+# MCP Registry Submission Gate
+
+AOI treats MCP Registry submission as a gated action.
+
+The gate checks:
+
+- server JSON exists
+- namespace format is valid
+- MCP server entrypoint exists
+- package artifact or remote MCP endpoint exists where required
+- `mcp-publisher` is available
+- claim and no-secrets checks are clean
+
+Possible decisions:
+
+- `PASS_SUBMIT_READY`
+- `HOLD_PACKAGE_NOT_PUBLISHED`
+- `HOLD_NO_REMOTE_MCP_ENDPOINT`
+- `HOLD_MCP_PUBLISHER_MISSING`
+- `HOLD_AUTH_MISSING`
+- `HOLD_SERVER_JSON_DRAFT_ONLY`
+- `BLOCK_OVERCLAIM`
+- `BLOCK_INVALID_NAMESPACE`
+
+Submission must not run unless the decision is `PASS_SUBMIT_READY` and `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES` is set. The helper never unpublishes or deletes registry resources.

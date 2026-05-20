@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-05-20T01:55:11.169794+00:00",
+  "decision": "HOLD_SERVER_JSON_DRAFT_ONLY",
+  "server_json_path": ".mcp\\server.json",
+  "server_name": "io.github.isometric-architect/ai-objective-index",
+  "server_json_valid_namespace": true,
+  "draft_not_submittable": true,
+  "mcp_publisher_available": false,
+  "registry_authentication_available": "not_checked",
+  "errors": [],
+  "warnings": [],
+  "holds": [
+    "server.json is a draft because no package artifact or remote MCP endpoint is available."
+  ],
+  "token_printed": false,
+  "submission_performed": false
+}

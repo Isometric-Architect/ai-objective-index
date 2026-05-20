@@ -248,3 +248,11 @@
 - Added residual worktree review with commit, ignore, and user-review plans.
 - Added observation decision gate for `observe_72h`, public URL fixes, claim fixes, and residual worktree cleanup decisions.
 - Preserved Package 8N exclusions: no community posting, GitHub Release creation, MCP Registry submission, crawling, scraping, link following, arbitrary external data fetch, external LLM API calls, token printing/storage, force push, generated-leftover deletion, broad staging, payment, booking, login automation, email, form submission, purchase, contract signing, account connection, supplier claim/verify, profile modification, or claims of verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
+
+## 0.1.0-package-8o
+
+- Added GitHub public beta prerelease manager for `v0.2.0-public-beta`.
+- Added conservative community feedback drafts and optional safe discussion helper.
+- Added MCP Registry server JSON draft builder and submission eligibility gate.
+- Added launch wave 1 report and post-launch monitoring checklist.
+- Preserved Package 8O exclusions: no exaggerated claims, no HN/Reddit/OpenAI/Product Hunt/MCP community auto-posting, no MCP Registry submission unless gated and explicitly confirmed, no crawling, scraping, link following, arbitrary external data fetch, external LLM API calls, token printing/storage, force push, release deletion, payment, booking, login automation, email, form submission, purchase, contract signing, account connection, supplier claim/verify, profile modification, or claims of verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.

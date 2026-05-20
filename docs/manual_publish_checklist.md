@@ -109,6 +109,16 @@ For v0.2 real-data public beta, also do not claim verified MCP servers, safe MCP
 - GitHub repository: https://github.com/Isometric-Architect/ai-objective-index
 - Hugging Face Space: https://huggingface.co/spaces/edict-lab/ai-objective-index-demo
 - Hugging Face Dataset: https://huggingface.co/datasets/edict-lab/ai-objective-index-sample
+
+## Package 8O Wave 1
+
+96. Run `python -m ai_objective_index.github_release_manager --dry-run`.
+97. Run `python -m ai_objective_index.community_launch_manager --dry-run`.
+98. Run `python -m ai_objective_index.mcp_registry_server_json_builder`.
+99. Run `python -m ai_objective_index.mcp_registry_submission_gate --dry-run`.
+100. Run `python -m ai_objective_index.launch_wave1_report`.
+101. If the release dry-run passes, run `python -m ai_objective_index.github_release_manager --execute`.
+102. Do not submit MCP Registry unless eligibility is `PASS_SUBMIT_READY` and `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES` is set.
 - MCP Registry submission: HOLD, manual only.
 
 These links are public after Package 8K. Community posting, GitHub Release creation, and MCP Registry submission remain HOLD. `public_beta_mcp` records are source-traced registry metadata candidates; they are not verified, not safe/certified, not security certified, not a quality guarantee, and not purchasing advice.

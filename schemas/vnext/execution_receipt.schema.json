@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aoi.local/schemas/vnext/execution_receipt.schema.json",
+  "title": "AOI vNext ExecutionReceipt",
+  "type": "object",
+  "required": ["schema", "receipt_id", "objective_id", "capability_id", "agent_id_hash", "environment_class", "outcome", "timestamp"],
+  "properties": {
+    "schema": {"type": "string"},
+    "receipt_id": {"type": "string"},
+    "objective_id": {"type": "string"},
+    "capability_id": {"type": "string"},
+    "agent_id_hash": {"type": "string"},
+    "environment_class": {"type": "string"},
+    "selected_pipeline": {"type": "array", "items": {"type": "string"}},
+    "outcome": {"enum": ["success", "partial", "fail", "hold", "blocked"]},
+    "verifier_result": {"type": "object"},
+    "negative_control_result": {"type": "object"},
+    "latency_bucket": {"type": "string"},
+    "cost_bucket": {"type": "string"},
+    "error_type": {"type": ["string", "null"]},
+    "residual_found": {"type": "boolean"},
+    "claim_ceiling_change": {"type": ["string", "null"]},
+    "timestamp": {"type": "string", "format": "date-time"}
+  }
+}

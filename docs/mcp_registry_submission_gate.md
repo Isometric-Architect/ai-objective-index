@@ -25,3 +25,5 @@ Possible decisions:
 Submission must not run unless the decision is `PASS_SUBMIT_READY` and `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES` is set. The helper never unpublishes or deletes registry resources.
 
 Package 8P adds a PyPI package path using `registryType: pypi`. Even with a PyPI-ready server JSON, registry submission remains HOLD until the package is actually uploaded and verified, `mcp-publisher` is available, authentication exists, and explicit confirmation is present.
+
+Package 9A pauses MCP Registry submission until AOI vNext positioning and schemas are aligned. The pause is strategic, not a technical failure.

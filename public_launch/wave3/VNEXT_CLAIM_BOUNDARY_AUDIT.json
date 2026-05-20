@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-05-20T16:25:51.687265+00:00",
+  "overall_token": "PASS",
+  "findings": [],
+  "risky_phrase_count": 0,
+  "scanned_files": [
+    "docs\\vnext\\aoi_vnext_strategy.md",
+    "docs\\vnext\\capability_card.md",
+    "docs\\vnext\\capability_graph.md",
+    "docs\\vnext\\capability_trust_router.md",
+    "docs\\vnext\\coding_agent_tool_selection_vertical.md",
+    "docs\\vnext\\do_not_overclaim_vnext.md",
+    "docs\\vnext\\execution_receipt_loop.md",
+    "docs\\vnext\\migration_from_v0_2_to_v0_3.md",
+    "docs\\vnext\\objective_card.md",
+    "docs\\vnext\\probe_before_use.md",
+    "docs\\vnext\\public_private_ranking_kernel.md",
+    "docs\\vnext\\residual_credit.md"
+  ],
+  "vnext_positioning": "AI Agent Capability Trust Router",
+  "pypi_upload_performed": false,
+  "testpypi_upload_performed": false,
+  "mcp_registry_submission_performed": false,
+  "community_post_performed": false,
+  "token_printed": false
+}

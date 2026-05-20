@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aoi.local/schemas/vnext/probe_card.schema.json",
+  "title": "AOI vNext ProbeCard",
+  "type": "object",
+  "required": ["schema", "probe_id", "target_capability", "objective_scope", "expected_behavior"],
+  "properties": {
+    "schema": {"type": "string"},
+    "probe_id": {"type": "string"},
+    "target_capability": {"type": "string"},
+    "objective_scope": {"type": "string"},
+    "canary_input": {"type": "object"},
+    "expected_behavior": {"type": "string"},
+    "negative_control": {"type": "object"},
+    "sandbox_policy": {"type": "string"},
+    "pass_fail": {"enum": ["pass", "fail", "hold", "not_run"]},
+    "failure_type": {"type": ["string", "null"]},
+    "receipt_hash": {"type": ["string", "null"]}
+  }
+}

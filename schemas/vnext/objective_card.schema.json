@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aoi.local/schemas/vnext/objective_card.schema.json",
+  "title": "AOI vNext ObjectiveCard",
+  "type": "object",
+  "required": ["schema", "objective_id", "task", "domain", "agent_role", "desired_output"],
+  "properties": {
+    "schema": {"type": "string"},
+    "objective_id": {"type": "string"},
+    "task": {"type": "string"},
+    "domain": {"type": "string"},
+    "agent_role": {"type": "string"},
+    "desired_output": {"type": "string"},
+    "risk_level": {"enum": ["low", "medium", "high", "critical"]},
+    "budget": {"type": "object"},
+    "latency": {"type": "object"},
+    "environment": {"type": "object"},
+    "allowed_actions": {"type": "array", "items": {"type": "string"}},
+    "forbidden_actions": {"type": "array", "items": {"type": "string"}},
+    "evidence_requirement": {"type": "string"},
+    "claim_ceiling": {"type": "string"}
+  }
+}

@@ -273,3 +273,11 @@
 - Added local install smoke helper for built wheel verification.
 - Added PyPI readiness refresh result and beginner next-step instructions.
 - Preserved Package 8Q-A exclusions: no TestPyPI/PyPI upload, no MCP Registry submission, no token request/printing/storage/commit, no community posting, no external LLM calls, no crawling/scraping/link following, no force push, no GitHub Release deletion, payment, booking, login automation, email, form submission, purchase, contract signing, account connection, supplier claim/verify, profile modification, or claims of verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
+
+## 0.1.0-package-9a
+
+- Added AOI vNext strategy docs positioning AOI as an AI Agent Capability Trust Router.
+- Added vNext Pydantic model stubs and JSON schema drafts for ObjectiveCard, CapabilityCard, ExecutionReceipt, ResidualCredit, ProbeCard, and CapabilityGraph.
+- Added vNext claim-boundary audit and package hold note.
+- Paused PyPI/MCP Registry publishing path until vNext alignment is complete.
+- Preserved Package 9A exclusions: no PyPI/TestPyPI upload, no MCP Registry submission, no community posting, no claim that AOI is already a security gateway, no claims of verification, safety, security certification, quality guarantee, ecosystem dominance, purchasing advice, payment, booking, login automation, email, form submission, purchase, contract signing, account connection, supplier claim/verify, profile modification, crawling, scraping, link following, external LLM calls, token printing/storage/commit, or force push.

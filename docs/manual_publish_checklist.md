@@ -140,6 +140,14 @@ For v0.2 real-data public beta, also do not claim verified MCP servers, safe MCP
 115. Run `python -m ai_objective_index.pypi_readiness_refresh`.
 116. Do not paste PyPI/TestPyPI tokens into chat.
 117. Do not upload to TestPyPI/PyPI until a later explicit upload package.
+
+## Package 9A vNext Alignment
+
+118. Run `python -m ai_objective_index.vnext_claim_audit`.
+119. Confirm PyPI upload remains paused.
+120. Confirm MCP Registry submission remains paused.
+121. Review `docs/vnext/aoi_vnext_strategy.md`.
+122. Do not claim AOI is already a security gateway, verified capability system, security certification, quality guarantee, official standard, or purchasing advice.
 - MCP Registry submission: HOLD, manual only.
 
 These links are public after Package 8K. Community posting, GitHub Release creation, and MCP Registry submission remain HOLD. `public_beta_mcp` records are source-traced registry metadata candidates; they are not verified, not safe/certified, not security certified, not a quality guarantee, and not purchasing advice.

@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-05-20T16:25:51.687265+00:00",
+  "overall_token": "PASS",
+  "positioning": "AI Agent Capability Trust Router",
+  "v0_2_status": "public beta engine remains active",
+  "vnext_status": "strategy_schema_alignment",
+  "first_vertical": "Coding Agent Tool Selection",
+  "pypi_upload_paused": true,
+  "mcp_registry_submission_paused": true,
+  "not_asserted": [
+    "security certification",
+    "quality guarantee",
+    "capability verification",
+    "purchasing advice",
+    "security gateway already implemented"
+  ]
+}

@@ -188,4 +188,6 @@ Package 8O can create the `v0.2.0-public-beta` GitHub prerelease and conservativ
 Package 8P prepares the PyPI-based MCP Registry path. It can build local package artifacts and write upload instructions, but it does not upload to PyPI or submit to MCP Registry.
 
 Package 8Q-A installs/checks local packaging tools, builds local wheel/sdist artifacts, runs `twine check`, and refreshes PyPI readiness. It still does not upload to TestPyPI/PyPI or submit to MCP Registry.
+
+Package 9A pauses the PyPI/MCP Registry path for vNext strategy and schema alignment. AOI vNext is positioned as an AI Agent Capability Trust Router: objective-relative routing from agent objectives to capability candidates with evidence, residual risk, and usage boundaries.
 - Community posting, GitHub Release creation, and MCP Registry submission remain HOLD.

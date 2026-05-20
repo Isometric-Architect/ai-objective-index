@@ -724,6 +724,16 @@ python -m ai_objective_index.pypi_readiness_refresh
 
 It does not upload to TestPyPI/PyPI, submit to MCP Registry, ask for tokens, print tokens, or post to communities.
 
+## Package 9A AOI vNext Alignment
+
+Package 9A pauses the PyPI/MCP Registry publishing path long enough to align AOI vNext around the positioning:
+
+**AI Agent Capability Trust Router**
+
+vNext frames AOI as the trust/routing layer above registries: it routes AI agents from objectives to capabilities with evidence, residual risk, and usage boundaries. It adds ObjectiveCard, CapabilityCard, ExecutionReceipt, ResidualCredit, ProbeCard, and CapabilityGraph schema drafts.
+
+Package 9A is strategy/schema alignment only. It does not upload to PyPI, submit to MCP Registry, post to communities, run probes, execute a security gateway, or claim verification, security certification, quality guarantee, or purchasing advice.
+
 ## Claim Boundary
 
 Allowed claim: AOI is a read-only MCP/API objective ranking and comparison tool with explicit schemas, sample source traces, missing-field reporting, and decision receipt contracts.
@@ -794,6 +804,9 @@ AOI output is not a quality guarantee. It is not legal, financial, medical, purc
 - `docs/community_manual_post_queue.md`: manual community feedback queue.
 - `docs/package_8q_a_local_build_and_twine_check.md`: local build/twine check workflow.
 - `docs/pypi_beginner_next_steps.md`: beginner TestPyPI/PyPI account and token steps.
+- `docs/vnext/aoi_vnext_strategy.md`: AOI vNext strategy and positioning.
+- `docs/vnext/capability_trust_router.md`: capability trust router model.
+- `docs/vnext/public_private_ranking_kernel.md`: public/private ranking kernel split.
 - `docs/token_revocation_after_upload.md`: token revocation guidance after HF uploads.
 - `docs/public_data_intake_policy.md`: public-data intake limits.
 - `docs/real_mcp_integration.md`: real MCP SDK integration and fallback behavior.

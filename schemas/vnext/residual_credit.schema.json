@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aoi.local/schemas/vnext/residual_credit.schema.json",
+  "title": "AOI vNext ResidualCredit",
+  "type": "object",
+  "required": ["schema", "capability_id", "objective_scope", "raw_success_score", "eco_success_score", "negative_control_score"],
+  "properties": {
+    "schema": {"type": "string"},
+    "capability_id": {"type": "string"},
+    "objective_scope": {"type": "string"},
+    "raw_success_score": {"type": "number", "minimum": 0, "maximum": 1},
+    "eco_success_score": {"type": "number", "minimum": 0, "maximum": 1},
+    "negative_control_score": {"type": "number", "minimum": 0, "maximum": 1},
+    "security_risk": {"type": "number", "minimum": 0, "maximum": 1},
+    "context_burden": {"type": "number", "minimum": 0, "maximum": 1},
+    "integration_reliability": {"type": "number", "minimum": 0, "maximum": 1},
+    "known_failure_similarity": {"type": "number", "minimum": 0, "maximum": 1},
+    "freshness": {"type": "number", "minimum": 0, "maximum": 1},
+    "allowed_use": {"type": "array", "items": {"type": "string"}},
+    "hold_use": {"type": "array", "items": {"type": "string"}},
+    "blocked_use": {"type": "array", "items": {"type": "string"}},
+    "residual_notes": {"type": "array", "items": {"type": "string"}}
+  }
+}

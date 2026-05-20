@@ -217,3 +217,9 @@ It does not upload to PyPI/TestPyPI, submit to MCP Registry, auto-post to commun
 Package 8Q-A checks and installs local packaging tools if requested, including the required `setuptools` backend, builds local dist artifacts, runs `twine check`, runs a local install smoke, and refreshes PyPI readiness.
 
 It does not upload to TestPyPI/PyPI, submit to MCP Registry, request/print/store tokens, post to communities, crawl, scrape, follow links, or perform forbidden actions.
+
+## Package 9A AOI vNext Alignment
+
+Package 9A reframes AOI vNext as an AI Agent Capability Trust Router: a trust/routing layer above registries that maps agent objectives to source-traced capability candidates with residual risk and usage boundaries.
+
+It adds vNext model/schema drafts and claim-boundary docs. It pauses PyPI upload and MCP Registry submission until vNext alignment is complete.

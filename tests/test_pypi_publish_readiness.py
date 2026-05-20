@@ -11,6 +11,7 @@ def test_pypi_publish_readiness_handles_missing_build_tool(monkeypatch):
 
 def test_pypi_publish_readiness_mocked_build_records_dist(monkeypatch):
     monkeypatch.setattr("ai_objective_index.pypi_publish_readiness._module_available", lambda name: name == "build")
+    monkeypatch.setattr("ai_objective_index.pypi_publish_readiness.shutil.which", lambda name: None)
     monkeypatch.setattr("ai_objective_index.pypi_publish_readiness._dist_files", lambda: [{"path": "dist/a.whl", "size_bytes": 10}])
 
     def runner(command, timeout=180):

@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-05-20T03:41:04.368910+00:00",
+  "build_available_before": true,
+  "twine_available_before": true,
+  "install_attempted": false,
+  "setuptools_available_before": true,
+  "install_result": {
+    "ok": false,
+    "skipped": true
+  },
+  "build_available_after": true,
+  "twine_available_after": true,
+  "setuptools_available_after": true,
+  "errors": [],
+  "warnings": [],
+  "upload_performed": false,
+  "testpypi_upload_performed": false,
+  "pypi_upload_performed": false,
+  "token_printed": false
+}

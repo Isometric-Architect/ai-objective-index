@@ -265,3 +265,11 @@
 - Added TestPyPI/PyPI/MCP Registry manual upload instructions and community manual post queue.
 - Updated package version to `0.2.0` for public beta packaging readiness.
 - Preserved Package 8P exclusions: no PyPI/TestPyPI upload, no MCP Registry submission, no HN/Reddit/OpenAI/Product Hunt auto-posting, no Hugging Face permission expansion, no token printing/storage, no crawling, scraping, link following, arbitrary external data fetch, external LLM API calls, force push, GitHub Release deletion, payment, booking, login automation, email, form submission, purchase, contract signing, account connection, supplier claim/verify, profile modification, or claims of verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
+
+## 0.1.0-package-8q-a
+
+- Added local build tool checker/installer for `build` and `twine`.
+- Added dist build runner for local wheel/sdist creation and `twine check`.
+- Added local install smoke helper for built wheel verification.
+- Added PyPI readiness refresh result and beginner next-step instructions.
+- Preserved Package 8Q-A exclusions: no TestPyPI/PyPI upload, no MCP Registry submission, no token request/printing/storage/commit, no community posting, no external LLM calls, no crawling/scraping/link following, no force push, no GitHub Release deletion, payment, booking, login automation, email, form submission, purchase, contract signing, account connection, supplier claim/verify, profile modification, or claims of verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.

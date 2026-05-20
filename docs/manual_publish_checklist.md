@@ -130,6 +130,16 @@ For v0.2 real-data public beta, also do not claim verified MCP servers, safe MCP
 108. Run `python -m ai_objective_index.community_manual_queue`.
 109. Do not upload to PyPI/TestPyPI in Package 8P.
 110. Do not submit to MCP Registry until PyPI upload and registry readiness both pass.
+
+## Package 8Q-A Local Build Readiness
+
+111. Run `python -m ai_objective_index.local_build_tools --check`.
+112. If needed, run `python -m ai_objective_index.local_build_tools --install`.
+113. Run `python -m ai_objective_index.dist_build_runner`.
+114. Run `python -m ai_objective_index.local_install_smoke`.
+115. Run `python -m ai_objective_index.pypi_readiness_refresh`.
+116. Do not paste PyPI/TestPyPI tokens into chat.
+117. Do not upload to TestPyPI/PyPI until a later explicit upload package.
 - MCP Registry submission: HOLD, manual only.
 
 These links are public after Package 8K. Community posting, GitHub Release creation, and MCP Registry submission remain HOLD. `public_beta_mcp` records are source-traced registry metadata candidates; they are not verified, not safe/certified, not security certified, not a quality guarantee, and not purchasing advice.

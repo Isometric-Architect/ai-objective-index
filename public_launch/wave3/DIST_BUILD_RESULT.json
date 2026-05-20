@@ -1,8 +1,9 @@
 {
-  "generated_at": "2026-05-20T03:43:06.787696+00:00",
+  "generated_at": "2026-05-20T03:41:38.605679+00:00",
   "decision": "PASS_BUILD_READY",
-  "build_tool_available": true,
+  "build_available": true,
   "twine_available": true,
+  "old_aoi_dist_artifacts_removed": [],
   "build_result": {
     "command": [
       "C:\\Users\\Isometric-Architect\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
@@ -15,25 +16,7 @@
     "ok": true,
     "returncode": 0,
     "stdout": "running egg_info\nwriting src\\ai_objective_index.egg-info\\PKG-INFO\nwriting dependency_links to src\\ai_objective_index.egg-info\\dependency_links.txt\nwriting entry points to src\\ai_objective_index.egg-info\\entry_points.txt\nwriting requirements to src\\ai_objective_index.egg-info\\requires.txt\nwriting top-level names to src\\ai_objective_index.egg-info\\top_level.txt\nreading manifest file 'src\\ai_objective_index.egg-info\\SOURCES.txt'\nadding license file 'LICENSE'\nwriting manifest file 'src\\ai_objective_index.egg-info\\SOURCES.txt'\nrunning sdist\nrunning egg_info\nwriting src\\ai_objective_index.egg-info\\PKG-INFO\nwriting dependency_links to src\\ai_objective_index.egg-info\\dependency_links.txt\nwriting entry points to src\\ai_objective_index.egg-info\\entry_points.txt\nwriting requirements to src\\ai_objective_index.egg-info\\requires.txt\nwriting top-level names to src\\ai_objective_index.egg-info\\top_level.txt\nreading manifest file 'src\\ai_objective_index.egg-info\\SOURCES.txt'\nadding license file 'LICENSE'\nwriting manifest file 'src\\ai_objective_index.egg-info\\SOURCES.txt'\nrunning check\ncreating ai_objective_index-0.2.0\ncreating ai_objective_index-0.2.0\\src\\ai_objective_index\ncreating ai_objective_index-0.2.0\\src\\ai_objective_index.egg-info\ncreating ai_objective_index-0.2.0\\src\\ai_objective_index\\crawler\ncreating ai_objective_index-0.2.0\\src\\ai_objective_index\\extractor\ncreating ai_objective_index-0.2.0\\src\\ai_objective_index\\registry_intake\ncreating ai_objective_index-0.2.0\\tests\ncopying files to ai_objective_index-0.2.0...\ncopying LICENSE -> ai_objective_index-0.2.0\ncopying README.md -> ai_objective_index-0.2.0\ncopying pyproject.toml -> ai_objective_index-0.2.0\ncopying src\\ai_objective_index\\__init__.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\action_boundary.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\ai_reviewer_simulation.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\api.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\api_models.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\beta_readiness.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\claim_ceiling.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\cli_demo.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\community_launch_manager.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\community_manual_queue.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\compare.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\curated_eval.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\curated_evidence_gate.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\curated_index_export.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\curated_loader.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\curated_report_generator.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\curated_validator.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\datascope_qa.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\decision_packet.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\decision_receipt.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\deployment_link_sync.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\deployment_push_sync.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\dist_build_runner.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\eval_runner.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\final_preflight.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\final_public_dry_run.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\generated_loader.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\git_release_audit.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\github_issue_labels.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\github_link_binder.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\github_post_upload_qa.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\github_release_manager.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\github_staging.py -> ai_objective_index-0.2.0\\src\\ai_objective_index\ncopying src\\ai_objective_index\\[redacted]",
-    "stderr": "* Getting build dependencies for sdist...\nC:\\Users\\Isometric-Architect\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\setuptools\\config\\_apply_pyprojecttoml.py:82: SetuptoolsDeprecationWarning: `project.license` as a TOML table is deprecated\n!!\n\n        ********************************************************************************\n        Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).\n\n        By 2027-Feb-18, you need to update your project and remove deprecated calls\n        or your builds will no longer be supported.\n\n        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.\n        ********************************************************************************\n\n!!\n  corresp(dist, value, root_dir)\n* Building sdist...\nC:\\Users\\Isometric-Architect\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\set"
-  },
-  "twine_result": {
-    "command": [
-      "twine",
-      "check",
-      "dist\\ai_objective_index-0.2.0-py3-none-any.whl",
-      "dist\\ai_objective_index-0.2.0.tar.gz"
-    ],
-    "ok": true,
-    "returncode": 0,
-    "stdout": "Checking dist\\ai_objective_index-0.2.0-py3-none-any.whl: PASSED\nChecking dist\\ai_objective_index-0.2.0.tar.gz: PASSED\n",
-    "stderr": ""
-  },
-  "local_install_check": "NOT_CHECKED_NO_NETWORK_FREE_TEMP_INSTALL",
-  "mcp_smoke_result": {
-    "ok": true,
-    "stdout": "MCP smoke: pass=True results=5 top=PixelForge API forbidden_tool_overlap=0\nSaved MCP smoke result: C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\generated\\mcp_smoke_result_v0_2.json\n",
-    "stderr": ""
+    "stderr": "* Getting build dependencies for sdist...\nC:\\Users\\Isometric-Architect\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\setuptools\\config\\_apply_pyprojecttoml.py:82: SetuptoolsDeprecationWarning: `project.license` as a TOML table is deprecated\n!!\n\n        ********************************************************************************\n        Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).\n\n        By 2027-Feb-18, you need to update your project and remove deprecated calls\n        or your builds will no longer be supported.\n\n        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.\n        ********************************************************************************\n\n!!\n  corresp(dist, value, root_dir)\n* Building sdist...\nC:\\Users\\Isometric-Architect\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\setuptools\\config\\_apply_pyprojecttoml.py:82: SetuptoolsDeprecationWarning: `project.license` as a TOML table is deprecated\n!!\n\n        ********************************************************************************\n        Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).\n\n        By 2027-Feb-18, you need to update your project and remove deprecated calls\n        or your builds will no longer be supported.\n\n        See https://packaging.python.org/en/latest/guides/writing-pypro"
   },
   "dist_files": [
     {
@@ -42,7 +25,7 @@
     },
     {
       "path": "dist\\ai_objective_index-0.2.0.tar.gz",
-      "size_bytes": 259141
+      "size_bytes": 259145
     }
   ],
   "errors": [],

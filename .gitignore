@@ -31,12 +31,19 @@ logs/
 # Local caches and transient generated folders
 data/source_cache/
 data/generated/tmp*/
+data/generated/build_tmp/
 data/generated/test_*/
 data/generated/test_pytest_tmp/
 temp/
 tmp/
 local_tokens/
 local_credentials/
+
+# Local Python packaging build artifacts
+/build/
+/src/*.egg-info/
+/dist/ai_objective_index-*.whl
+/dist/ai_objective_index-*.tar.gz
 
 # Local manual raw copy at repository root; canonical processed files live under data/registry/
 /mcp_registry_raw_v0_1.json

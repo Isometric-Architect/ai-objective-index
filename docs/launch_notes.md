@@ -211,3 +211,9 @@ It does not auto-post to HN, Reddit, OpenAI Developer Community, Product Hunt, o
 Package 8P prepares PyPI package readiness, a `registryType: pypi` server JSON candidate, MCP Registry publish readiness checks, upload instructions, and a manual community post queue.
 
 It does not upload to PyPI/TestPyPI, submit to MCP Registry, auto-post to communities, broaden Hugging Face token scopes, print/store tokens, crawl, scrape, follow links, or perform external actions.
+
+## Package 8Q-A Local Build Readiness
+
+Package 8Q-A checks and installs local packaging tools if requested, including the required `setuptools` backend, builds local dist artifacts, runs `twine check`, runs a local install smoke, and refreshes PyPI readiness.
+
+It does not upload to TestPyPI/PyPI, submit to MCP Registry, request/print/store tokens, post to communities, crawl, scrape, follow links, or perform forbidden actions.

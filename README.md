@@ -710,6 +710,20 @@ python -m ai_objective_index.community_manual_queue
 
 It adds the MCP Registry README marker, prepares `.mcp/server.json` for a future `registryType: pypi` path, and creates manual TestPyPI/PyPI/MCP Registry instructions. Package 8P does not upload to PyPI, submit to MCP Registry, auto-post to communities, broaden token scopes, print/store tokens, or claim verified/safe/security-certified/quality-guaranteed status.
 
+## Package 8Q-A Local Build Readiness
+
+Package 8Q-A checks/installs local packaging tools (`build`, `twine`, and the required `setuptools` backend), builds local wheel/sdist artifacts, runs `twine check`, and runs a local install smoke test where possible:
+
+```powershell
+python -m ai_objective_index.local_build_tools --check
+python -m ai_objective_index.local_build_tools --install
+python -m ai_objective_index.dist_build_runner
+python -m ai_objective_index.local_install_smoke
+python -m ai_objective_index.pypi_readiness_refresh
+```
+
+It does not upload to TestPyPI/PyPI, submit to MCP Registry, ask for tokens, print tokens, or post to communities.
+
 ## Claim Boundary
 
 Allowed claim: AOI is a read-only MCP/API objective ranking and comparison tool with explicit schemas, sample source traces, missing-field reporting, and decision receipt contracts.
@@ -778,6 +792,8 @@ AOI output is not a quality guarantee. It is not legal, financial, medical, purc
 - `docs/pypi_publish_readiness.md`: local build and token-safe PyPI readiness.
 - `docs/mcp_registry_pypi_path.md`: `registryType: pypi` path and README marker.
 - `docs/community_manual_post_queue.md`: manual community feedback queue.
+- `docs/package_8q_a_local_build_and_twine_check.md`: local build/twine check workflow.
+- `docs/pypi_beginner_next_steps.md`: beginner TestPyPI/PyPI account and token steps.
 - `docs/token_revocation_after_upload.md`: token revocation guidance after HF uploads.
 - `docs/public_data_intake_policy.md`: public-data intake limits.
 - `docs/real_mcp_integration.md`: real MCP SDK integration and fallback behavior.

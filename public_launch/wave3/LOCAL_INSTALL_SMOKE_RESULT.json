@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-05-20T03:42:03.097451+00:00",
+  "decision": "PASS_LOCAL_INSTALL_SMOKE",
+  "wheel_path": "dist\\ai_objective_index-0.2.0-py3-none-any.whl",
+  "venv_path": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\generated\\test_install_tmp\\aoi_pkg_smoke",
+  "venv_cleaned": true,
+  "install_result": {
+    "command": [
+      "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\generated\\test_install_tmp\\aoi_pkg_smoke\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "install",
+      "--no-index",
+      "--find-links",
+      "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\dist",
+      "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\dist\\ai_objective_index-0.2.0-py3-none-any.whl"
+    ],
+    "ok": true,
+    "returncode": 0,
+    "stdout": "Looking in links: c:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\dist\nProcessing c:\\users\\isometric-architect\\desktop\\ai_objective_index\\dist\\ai_objective_index-0.2.0-py3-none-any.whl\nRequirement already satisfied: fastapi>=0.100 in c:\\users\\isometric-architect\\appdata\\local\\programs\\python\\python314\\lib\\site-packages (from ai-objective-index==0.2.0) (0.136.1)\nRequirement already satisfied: pydantic<3,>=2 in c:\\users\\isometric-architect\\appdata\\local\\programs\\python\\python314\\lib\\site-packages (from ai-objective-index==0.2.0) (2.13.3)\nRequirement already satisfied: annotated-types>=0.6.0 in c:\\users\\isometric-architect\\appdata\\local\\programs\\python\\python314\\lib\\site-packages (from pydantic<3,>=2->ai-objective-index==0.2.0) (0.7.0)\nRequirement already satisfied: pydantic-core==2.46.3 in c:\\users\\isometric-architect\\appdata\\local\\programs\\python\\python314\\lib\\site-packages (from pydantic<3,>=2->ai-objective-index==0.2.0) (2.46.3)\nRequirement already satisfied: typing-extensions>=4.14.1 in c:\\users\\isometric-architect\\appdata\\local\\programs\\python\\python314\\lib\\site-packages (from pydantic<3,>=2->ai-objective-index==0.2.0) (4.15.0)\nRequirement already satisfied: typing-inspection>=0.4.2 in c:\\users\\isometric-architect\\appdata\\local\\programs\\python\\python314\\lib\\site-packages (from pydantic<3,>=2->ai-objective-index==0.2.0) (0.4.2)\nRequirement already satisfied: starlette>=0.46.0 in c:\\users\\isometric-architect\\appdata\\local\\programs\\python\\python314\\lib\\site-packages (from fastapi>=0.100->ai-objective-index==0.2.0) (1.0.0)\nRequirement already satisfied: annotated-doc",
+    "stderr": ""
+  },
+  "import_result": {
+    "command": [
+      "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\generated\\test_install_tmp\\aoi_pkg_smoke\\Scripts\\python.exe",
+      "-c",
+      "import ai_objective_index; print(ai_objective_index.__name__)"
+    ],
+    "ok": true,
+    "returncode": 0,
+    "stdout": "ai_objective_index\n",
+    "stderr": ""
+  },
+  "mcp_smoke_result": {
+    "command": [
+      "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\generated\\test_install_tmp\\aoi_pkg_smoke\\Scripts\\python.exe",
+      "-m",
+      "ai_objective_index.mcp_smoke"
+    ],
+    "ok": true,
+    "returncode": 0,
+    "stdout": "MCP smoke: pass=True results=5 top=PixelForge API forbidden_tool_overlap=0\nSaved MCP smoke result: C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\generated\\mcp_smoke_result_v0_2.json\n",
+    "stderr": ""
+  },
+  "console_smoke_result": {
+    "command": [
+      "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\generated\\test_install_tmp\\aoi_pkg_smoke\\Scripts\\ai-objective-index-mcp-smoke.exe"
+    ],
+    "ok": true,
+    "returncode": 0,
+    "stdout": "MCP smoke: pass=True results=5 top=PixelForge API forbidden_tool_overlap=0\nSaved MCP smoke result: C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\generated\\mcp_smoke_result_v0_2.json\n",
+    "stderr": ""
+  },
+  "errors": [],
+  "warnings": [],
+  "network_required": false,
+  "upload_performed": false,
+  "token_printed": false
+}

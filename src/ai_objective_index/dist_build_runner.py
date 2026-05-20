@@ -3,18 +3,16 @@ from __future__ import annotations
 import importlib.util
 import json
 import os
-import shutil
 import subprocess
 import sys
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any, Callable
 
-from .package_metadata_audit import run_package_metadata_audit
 
-
-WAVE2_DIR = Path("public_launch") / "wave2"
-OUTPUT_PATH = WAVE2_DIR / "PYPI_PUBLISH_READINESS_RESULT.json"
+WAVE3_DIR = Path("public_launch") / "wave3"
+DIST_RESULT_PATH = WAVE3_DIR / "DIST_BUILD_RESULT.json"
+TWINE_RESULT_PATH = WAVE3_DIR / "TWINE_CHECK_RESULT.json"
 
 
 def _repo_root() -> Path:
@@ -30,14 +28,15 @@ def _write_json(path: Path, payload: dict[str, Any]) -> Path:
 
 def _sanitize(value: Any) -> str:
     text = str(value or "")
-    for marker in ["pypi-", "ghp_", "gho_", "github_pat_", "hf_", "password=", "api_key="]:
-        index = text.lower().find(marker.lower())
+    lowered = text.lower()
+    for marker in ["pypi-", "ghp_", "gho_", "github_pat_", "hf_", "password=", "api_key=", "bearer "]:
+        index = lowered.find(marker)
         if index >= 0:
             return text[:index] + "[redacted]"
-    return text[:1000]
+    return text[:1600]
 
 
-def _run(command: list[str], timeout: int = 180) -> dict[str, Any]:
+def _run(command: list[str], timeout: int = 300) -> dict[str, Any]:
     try:
         tmp_dir = _repo_root() / "data" / "generated" / "build_tmp"
         tmp_dir.mkdir(parents=True, exist_ok=True)
@@ -76,76 +75,65 @@ def _dist_files() -> list[dict[str, Any]]:
     if not dist.exists():
         return []
     files: list[dict[str, Any]] = []
-    for path in sorted(list(dist.glob("*.whl")) + list(dist.glob("*.tar.gz"))):
+    for path in sorted(list(dist.glob("ai_objective_index-*.whl")) + list(dist.glob("ai_objective_index-*.tar.gz"))):
         files.append({"path": str(path.relative_to(_repo_root())), "size_bytes": path.stat().st_size})
     return files
 
 
-def _run_mcp_smoke(runner: Callable[[list[str], int], dict[str, Any]]) -> dict[str, Any]:
-    return runner([sys.executable, "-m", "ai_objective_index.mcp_smoke"], 120)
+def _remove_old_aoi_dist_artifacts() -> list[str]:
+    dist = _repo_root() / "dist"
+    removed: list[str] = []
+    if not dist.exists():
+        return removed
+    for path in sorted(list(dist.glob("ai_objective_index-*.whl")) + list(dist.glob("ai_objective_index-*.tar.gz"))):
+        path.unlink()
+        removed.append(str(path.relative_to(_repo_root())))
+    return removed
 
 
-def run_pypi_publish_readiness(
+def run_dist_build(
     runner: Callable[[list[str], int], dict[str, Any]] = _run,
+    clean_old: bool = True,
     write_result: bool = True,
 ) -> dict[str, Any]:
-    metadata = run_package_metadata_audit(write_result=True)
+    build_available = _module_available("build")
+    twine_available = _module_available("twine")
+    removed = _remove_old_aoi_dist_artifacts() if clean_old else []
     errors: list[str] = []
     warnings: list[str] = []
-    build_available = _module_available("build")
-    twine_available = _module_available("twine") or bool(shutil.which("twine"))
     build_result: dict[str, Any] = {"ok": False, "skipped": True}
     twine_result: dict[str, Any] = {"ok": False, "status": "NOT_CHECKED"}
-    smoke_result: dict[str, Any] = {"ok": False, "status": "NOT_CHECKED"}
-
-    if metadata.get("overall_token") != "PASS":
-        errors.append("Package metadata audit did not pass.")
+    dist_files: list[dict[str, Any]] = []
 
     if not build_available:
         decision = "HOLD_BUILD_TOOL_MISSING"
-        warnings.append("Python build module is not installed; run python -m pip install build locally if packaging is desired.")
+        warnings.append("Python build module is unavailable.")
     else:
-        build_result = runner([sys.executable, "-m", "build", "--sdist", "--wheel", "--no-isolation"], 240)
-        if not build_result.get("ok"):
-            decision = "HOLD_BUILD_TOOL_MISSING"
-            warnings.append("Local package build failed.")
+        build_result = runner([sys.executable, "-m", "build", "--sdist", "--wheel", "--no-isolation"], 600)
+        dist_files = _dist_files()
+        wheel_count = sum(1 for item in dist_files if item["path"].endswith(".whl"))
+        sdist_count = sum(1 for item in dist_files if item["path"].endswith(".tar.gz"))
+        if not build_result.get("ok") or wheel_count == 0 or sdist_count == 0:
+            decision = "BLOCK_BUILD_FAILED"
+            errors.append("Build failed or did not create both wheel and sdist.")
+        elif not twine_available:
+            decision = "HOLD_TWINE_MISSING"
+            warnings.append("twine is unavailable; twine check was not run.")
         else:
-            dist_files = _dist_files()
-            if twine_available:
-                twine_cmd = ["twine", "check", *[item["path"] for item in dist_files]] if shutil.which("twine") else [sys.executable, "-m", "twine", "check", *[item["path"] for item in dist_files]]
-                twine_result = runner(twine_cmd, 120)
-                if not twine_result.get("ok"):
-                    decision = "HOLD_TWINE_MISSING"
-                    warnings.append("twine check failed or was unavailable.")
-                else:
-                    decision = "PASS_BUILD_READY"
+            twine_result = runner([sys.executable, "-m", "twine", "check", *[item["path"] for item in dist_files]], 180)
+            if not twine_result.get("ok"):
+                decision = "BLOCK_TWINE_CHECK_FAILED"
+                errors.append("twine check failed.")
             else:
-                decision = "HOLD_TWINE_MISSING"
-                warnings.append("twine is not installed; twine check was not run.")
-            smoke_result = _run_mcp_smoke(runner)
-            if not smoke_result.get("ok"):
-                warnings.append("MCP smoke command did not pass in current environment.")
+                decision = "PASS_BUILD_READY"
 
-    if metadata.get("token_like_findings"):
-        decision = "BLOCK_SECRET_FINDING"
-        errors.append("Token-like strings found in package metadata.")
-    elif metadata.get("overall_token") != "PASS":
-        decision = "BLOCK_INVALID_METADATA"
-
-    dist_files = _dist_files()
     result = {
         "generated_at": datetime.now(UTC).isoformat(),
         "decision": decision,
-        "build_tool_available": build_available,
+        "build_available": build_available,
         "twine_available": twine_available,
+        "old_aoi_dist_artifacts_removed": removed,
         "build_result": build_result,
-        "twine_result": twine_result,
-        "local_install_check": "NOT_CHECKED_NO_NETWORK_FREE_TEMP_INSTALL",
-        "mcp_smoke_result": {
-            "ok": bool(smoke_result.get("ok")),
-            "stdout": smoke_result.get("stdout", ""),
-            "stderr": smoke_result.get("stderr", ""),
-        },
         "dist_files": dist_files,
         "errors": errors,
         "warnings": warnings,
@@ -154,15 +142,25 @@ def run_pypi_publish_readiness(
         "pypi_upload_performed": False,
         "token_printed": False,
     }
+    twine_payload = {
+        "generated_at": result["generated_at"],
+        "decision": "PASS_TWINE_CHECK" if twine_result.get("ok") else ("HOLD_TWINE_MISSING" if not twine_available else "BLOCK_TWINE_CHECK_FAILED"),
+        "twine_available": twine_available,
+        "twine_result": twine_result,
+        "dist_files_checked": dist_files if twine_result.get("ok") else [],
+        "upload_performed": False,
+        "token_printed": False,
+    }
     if write_result:
-        _write_json(OUTPUT_PATH, result)
+        _write_json(DIST_RESULT_PATH, result)
+        _write_json(TWINE_RESULT_PATH, twine_payload)
     return result
 
 
 def main() -> None:
-    result = run_pypi_publish_readiness()
+    result = run_dist_build()
     print(
-        "pypi_publish_readiness: "
+        "dist_build_runner: "
         f"{result['decision']} "
         f"dist_files={len(result['dist_files'])} "
         "upload_performed=False"

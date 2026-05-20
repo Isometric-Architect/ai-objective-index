@@ -40,7 +40,8 @@ def build_server_json() -> dict[str, Any]:
     manifest_exists = (root / "data/generated_mcp_tools_manifest.json").exists()
     pyproject = (root / "pyproject.toml").read_text(encoding="utf-8") if (root / "pyproject.toml").exists() else ""
     package_script_exists = "ai-objective-index-mcp" in pyproject
-    package_artifact_exists = any((root / "dist").glob("*.whl")) if (root / "dist").exists() else False
+    local_package_artifact_exists = any((root / "dist").glob("*.whl")) if (root / "dist").exists() else False
+    package_artifact_exists = False
     remote_endpoint_exists = False
     draft_not_submittable = not (package_artifact_exists or remote_endpoint_exists)
     payload: dict[str, Any] = {
@@ -70,6 +71,7 @@ def build_server_json() -> dict[str, Any]:
         "artifacts": {
             "manifest_exists": manifest_exists,
             "python_package_artifact_exists": package_artifact_exists,
+            "local_python_package_artifact_exists": local_package_artifact_exists,
             "remote_mcp_endpoint_exists": remote_endpoint_exists,
         },
         "limitations": [

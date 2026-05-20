@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-objective-index.local/schemas/vnext/capability_route_decision.schema.json",
+  "title": "AOI Capability Route Decision",
+  "type": "object",
+  "required": [
+    "schema",
+    "decision",
+    "reason",
+    "claim_ceiling",
+    "can_rank",
+    "can_compare",
+    "can_recommend_as_candidate",
+    "must_not_claim"
+  ],
+  "properties": {
+    "schema": { "const": "AOI_CapabilityRouteDecision/v0.1" },
+    "decision": {
+      "enum": [
+        "ALLOW_CANDIDATE",
+        "ALLOW_WITH_LIMITS",
+        "HOLD_EVIDENCE",
+        "HOLD_MISSING_FIELDS",
+        "HOLD_POLICY_CLARITY",
+        "HOLD_SECURITY_REVIEW",
+        "BLOCK_FORBIDDEN_ACTION",
+        "BLOCK_UNSUPPORTED_CLAIM",
+        "BLOCK_HIGH_RISK_DOMAIN",
+        "BLOCK_NO_SOURCE_TRACE"
+      ]
+    },
+    "reason": { "type": "string" },
+    "claim_ceiling": { "type": "string" },
+    "next_actions": { "type": "array", "items": { "type": "string" } },
+    "can_rank": { "type": "boolean" },
+    "can_compare": { "type": "boolean" },
+    "can_recommend_as_candidate": { "type": "boolean" },
+    "must_not_claim": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

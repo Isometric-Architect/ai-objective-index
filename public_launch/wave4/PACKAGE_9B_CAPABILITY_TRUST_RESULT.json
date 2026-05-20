@@ -1,0 +1,15 @@
+{
+  "overall_token": "PASS",
+  "report_path": "public_launch\\wave4\\CAPABILITY_TRUST_SAMPLE_REPORT.json",
+  "candidate_count": 5,
+  "route_decision_counts": {
+    "HOLD_POLICY_CLARITY": 5
+  },
+  "offline_only": true,
+  "network_used": false,
+  "probe_execution_performed": false,
+  "gateway_execution_performed": false,
+  "pypi_upload_performed": false,
+  "mcp_registry_submission_performed": false,
+  "community_post_performed": false
+}

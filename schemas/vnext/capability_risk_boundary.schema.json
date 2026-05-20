@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-objective-index.local/schemas/vnext/capability_risk_boundary.schema.json",
+  "title": "AOI Capability Risk Boundary",
+  "type": "object",
+  "required": [
+    "schema",
+    "risk_level",
+    "allowed_use",
+    "hold_use",
+    "blocked_use",
+    "security_claim_status",
+    "legal_claim_status",
+    "product_claim_status"
+  ],
+  "properties": {
+    "schema": { "const": "AOI_CapabilityRiskBoundary/v0.1" },
+    "risk_level": { "enum": ["low", "medium", "high", "unknown"] },
+    "allowed_use": { "type": "array", "items": { "type": "string" } },
+    "hold_use": { "type": "array", "items": { "type": "string" } },
+    "blocked_use": { "type": "array", "items": { "type": "string" } },
+    "forbidden_actions_detected": { "type": "array", "items": { "type": "string" } },
+    "unsupported_claims_detected": { "type": "array", "items": { "type": "string" } },
+    "sensitive_domain_flags": { "type": "array", "items": { "type": "string" } },
+    "security_claim_status": {
+      "enum": [
+        "NOT_ASSESSED",
+        "SOURCE_TRACED_ONLY",
+        "HOLD_SECURITY_REVIEW_REQUIRED",
+        "BLOCK_SECURITY_CLAIM"
+      ]
+    },
+    "legal_claim_status": {
+      "enum": ["NOT_ASSESSED", "HOLD_LEGAL_REVIEW_REQUIRED", "BLOCK_LEGAL_CLAIM"]
+    },
+    "product_claim_status": {
+      "enum": [
+        "NOT_ASSESSED",
+        "HOLD_PRODUCT_EVIDENCE_REQUIRED",
+        "BLOCK_PRODUCT_READY_CLAIM"
+      ]
+    },
+    "route_block_reasons": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

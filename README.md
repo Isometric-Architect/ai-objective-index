@@ -734,6 +734,19 @@ vNext frames AOI as the trust/routing layer above registries: it routes AI agent
 
 Package 9A is strategy/schema alignment only. It does not upload to PyPI, submit to MCP Registry, post to communities, run probes, execute a security gateway, or claim verification, security certification, quality guarantee, or purchasing advice.
 
+## Package 9B Capability Trust Schema MVP
+
+Package 9B turns the vNext card strategy into a minimal offline capability trust model. It creates `CapabilityTrustCard`, `CapabilityEvidenceSummary`, `ObjectiveCapabilityMatch`, `CapabilityRiskBoundary`, `CapabilityRouteDecision`, `CapabilityTrustProfile`, and `CapabilityTrustReport`.
+
+Run a local trust report:
+
+```powershell
+python -m ai_objective_index.vnext.trust_cli --query "find MCP servers for browser automation" --objective "select source-traced MCP candidates" --data-scope public_beta_mcp --limit 5
+python -m ai_objective_index.vnext_capability_trust_audit
+```
+
+CapabilityTrust is a conservative routing-readiness estimate. It is not a quality guarantee, security certification, supplier verification, purchasing advice, product readiness claim, or action permission. Package 9B does not run probes, execute a gateway, upload to PyPI, submit to MCP Registry, post to communities, crawl, scrape, or call external LLM APIs.
+
 ## Claim Boundary
 
 Allowed claim: AOI is a read-only MCP/API objective ranking and comparison tool with explicit schemas, sample source traces, missing-field reporting, and decision receipt contracts.
@@ -806,6 +819,9 @@ AOI output is not a quality guarantee. It is not legal, financial, medical, purc
 - `docs/pypi_beginner_next_steps.md`: beginner TestPyPI/PyPI account and token steps.
 - `docs/vnext/aoi_vnext_strategy.md`: AOI vNext strategy and positioning.
 - `docs/vnext/capability_trust_router.md`: capability trust router model.
+- `docs/vnext/package_9b_capability_trust_schema_mvp.md`: offline capability trust schema MVP.
+- `docs/vnext/capability_trust_card.md`: vNext trust card fields.
+- `docs/vnext/capability_route_decision.md`: ALLOW/HOLD/BLOCK routing labels.
 - `docs/vnext/public_private_ranking_kernel.md`: public/private ranking kernel split.
 - `docs/token_revocation_after_upload.md`: token revocation guidance after HF uploads.
 - `docs/public_data_intake_policy.md`: public-data intake limits.

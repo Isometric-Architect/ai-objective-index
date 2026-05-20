@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-objective-index.local/schemas/vnext/capability_trust_report.schema.json",
+  "title": "AOI Capability Trust Report",
+  "type": "object",
+  "required": [
+    "schema",
+    "query",
+    "objective",
+    "data_scope",
+    "generated_at",
+    "trust_cards",
+    "summary",
+    "known_limits",
+    "not_asserted"
+  ],
+  "properties": {
+    "schema": { "const": "AOI_CapabilityTrustReport/v0.1" },
+    "query": { "type": "string" },
+    "objective": { "type": "string" },
+    "domain": { "type": "string" },
+    "data_scope": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "objective_card": { "type": "object" },
+    "trust_cards": {
+      "type": "array",
+      "items": { "$ref": "capability_trust_card.schema.json" }
+    },
+    "summary": {
+      "type": "object",
+      "required": ["candidate_count", "allow_count", "hold_count", "block_count", "claim_ceiling"],
+      "properties": {
+        "candidate_count": { "type": "integer", "minimum": 0 },
+        "allow_count": { "type": "integer", "minimum": 0 },
+        "hold_count": { "type": "integer", "minimum": 0 },
+        "block_count": { "type": "integer", "minimum": 0 },
+        "no_source_trace_count": { "type": "integer", "minimum": 0 },
+        "route_decision_counts": { "type": "object" },
+        "top_holds": { "type": "array" },
+        "claim_ceiling": { "type": "string" }
+      }
+    },
+    "known_limits": { "type": "array", "items": { "type": "string" } },
+    "not_asserted": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

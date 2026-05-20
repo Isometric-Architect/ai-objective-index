@@ -32,3 +32,5 @@ python -m ai_objective_index.pypi_readiness_refresh
 These commands build and inspect local artifacts only. They do not upload to TestPyPI or PyPI.
 
 Package 9A pauses PyPI upload while AOI vNext positioning is aligned around the AI Agent Capability Trust Router strategy. Local build artifacts can remain available, but upload is still HOLD.
+
+Package 9B keeps the pause in place while the Capability Trust Schema MVP is introduced. Local build artifacts remain useful for future packaging, but TestPyPI/PyPI upload should not resume until the vNext route-decision language and public claim boundaries stay stable.

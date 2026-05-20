@@ -281,3 +281,11 @@
 - Added vNext claim-boundary audit and package hold note.
 - Paused PyPI/MCP Registry publishing path until vNext alignment is complete.
 - Preserved Package 9A exclusions: no PyPI/TestPyPI upload, no MCP Registry submission, no community posting, no claim that AOI is already a security gateway, no claims of verification, safety, security certification, quality guarantee, ecosystem dominance, purchasing advice, payment, booking, login automation, email, form submission, purchase, contract signing, account connection, supplier claim/verify, profile modification, crawling, scraping, link following, external LLM calls, token printing/storage/commit, or force push.
+
+## 0.1.0-package-9b
+
+- Added vNext Capability Trust Schema MVP with CapabilityTrustCard, CapabilityEvidenceSummary, ObjectiveCapabilityMatch, CapabilityRiskBoundary, CapabilityRouteDecision, CapabilityTrustProfile, and CapabilityTrustReport.
+- Added offline trust report CLI for local sample, integrated, MCP Registry, and public beta MCP scopes.
+- Added deterministic ALLOW/HOLD/BLOCK route-decision rules and claim-boundary audit for capability trust artifacts.
+- Added vNext JSON schema drafts and Package 9B documentation.
+- Preserved Package 9B exclusions: no probe execution, gateway execution, live security scanning, crawling, scraping, link following, external LLM calls, PyPI/TestPyPI upload, MCP Registry submission, community posting, token printing/storage/commit, force push, payment, booking, login automation, email, form submission, purchase, contract signing, account connection, supplier claim/verify, profile modification, or claims of verification, safety, security certification, quality guarantee, product readiness, or purchasing advice.

@@ -13,3 +13,5 @@ AOI does not certify security or quality. It does not verify suppliers. It does 
 The first vNext vertical is **Coding Agent Tool Selection**.
 
 PyPI upload and MCP Registry submission are paused only until vNext alignment is complete.
+
+Package 9B adds the first local Capability Trust Schema MVP. It can build offline route-readiness cards from existing AOI objects and source traces, but it still does not run probes, execute a gateway, certify security, guarantee quality, or assert product readiness.

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-objective-index.local/schemas/vnext/capability_evidence_summary.schema.json",
+  "title": "AOI Capability Evidence Summary",
+  "type": "object",
+  "required": [
+    "schema",
+    "official_source_count",
+    "source_trace_count",
+    "source_trace_coverage",
+    "evidence_status",
+    "confidence"
+  ],
+  "properties": {
+    "schema": { "const": "AOI_CapabilityEvidenceSummary/v0.1" },
+    "official_source_count": { "type": "integer", "minimum": 0 },
+    "source_trace_count": { "type": "integer", "minimum": 0 },
+    "source_trace_coverage": { "type": "number", "minimum": 0, "maximum": 1 },
+    "docs_found": { "type": "boolean" },
+    "pricing_found": { "type": "boolean" },
+    "policy_found": { "type": "boolean" },
+    "repository_found": { "type": "boolean" },
+    "license_found": { "type": "boolean" },
+    "examples_found": { "type": "boolean" },
+    "last_checked_at": { "type": ["string", "null"] },
+    "evidence_status": {
+      "enum": [
+        "NO_TRACE",
+        "PARTIAL_TRACE",
+        "SOURCE_TRACED",
+        "OFFICIAL_TRACE_AVAILABLE",
+        "STALE_OR_INCOMPLETE"
+      ]
+    },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "evidence_notes": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "AOI_ExecutionReceiptSubmission/v0.1",
+  "receipt_id": "exec-receipt-917889d35300",
+  "objective_id": "objective-browser-automation-mcp",
+  "route_request_id": null,
+  "capability_id": "capability:mcp-registry-ac-inference-sh-mcp-1-0-0",
+  "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-0",
+  "capability_name": "ac.inference.sh/mcp",
+  "data_scope": "public_beta_mcp",
+  "submitted_by": "local_test",
+  "receipt_origin": "local_fixture",
+  "outcome": "hold",
+  "outcome_summary": "Local fixture found policy clarity still insufficient for stronger route use.",
+  "task_context": "Offline receipt-loop demo for browser automation MCP candidate routing.",
+  "environment_class": "local",
+  "constraints_checked": [
+    "require_source_trace",
+    "require_policy_clarity"
+  ],
+  "observed_outputs": [
+    "Route remained conservative and did not execute external tools."
+  ],
+  "error_type": "policy_unclear",
+  "residual_found": true,
+  "residual_notes": [
+    "Policy/privacy/data-retention fields require manual review before stronger use."
+  ],
+  "missing_fields_found": [
+    "privacy_policy",
+    "data_retention_policy",
+    "pricing"
+  ],
+  "source_trace_ids": [],
+  "route_decision_before": "HOLD_POLICY_CLARITY",
+  "route_decision_after": "HOLD_POLICY_CLARITY",
+  "claim_ceiling": "receipt memory only; not verification, security certification, quality guarantee, or action authorization",
+  "must_not_claim": [
+    "verified",
+    "safe",
+    "security certified",
+    "quality guaranteed",
+    "production ready",
+    "legal/financial/medical advice",
+    "purchasing advice",
+    "action authorization"
+  ],
+  "timestamp": "2026-05-21T00:20:31+00:00"
+}

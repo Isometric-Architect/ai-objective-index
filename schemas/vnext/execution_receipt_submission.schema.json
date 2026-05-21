@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aoi.local/schemas/vnext/execution_receipt_submission.schema.json",
+  "title": "AOI ExecutionReceiptSubmission",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["capability_id", "outcome"],
+  "properties": {
+    "schema": {"const": "AOI_ExecutionReceiptSubmission/v0.1"},
+    "receipt_id": {"type": ["string", "null"]},
+    "objective_id": {"type": ["string", "null"]},
+    "route_request_id": {"type": ["string", "null"]},
+    "capability_id": {"type": "string"},
+    "object_id": {"type": ["string", "null"]},
+    "capability_name": {"type": ["string", "null"]},
+    "data_scope": {"type": ["string", "null"]},
+    "submitted_by": {"enum": ["user", "agent", "local_test", "unknown"]},
+    "receipt_origin": {"enum": ["self_reported", "local_fixture", "public_issue", "manual_review", "benchmark", "unknown"]},
+    "outcome": {"enum": ["success", "partial", "fail", "hold", "blocked"]},
+    "outcome_summary": {"type": "string"},
+    "task_context": {"type": "string"},
+    "environment_class": {"enum": ["local", "cloud", "browser", "api", "mcp_client", "unknown"]},
+    "constraints_checked": {"type": "array", "items": {"type": "string"}},
+    "observed_outputs": {"type": "array", "items": {"type": "string"}},
+    "error_type": {
+      "enum": ["install_failure", "docs_missing", "policy_unclear", "source_trace_missing", "wrong_ranking", "stale_metadata", "api_failure", "security_concern", "unsupported_claim", "unknown", null]
+    },
+    "residual_found": {"type": "boolean"},
+    "residual_notes": {"type": "array", "items": {"type": "string"}},
+    "missing_fields_found": {"type": "array", "items": {"type": "string"}},
+    "source_trace_ids": {"type": "array", "items": {"type": "string"}},
+    "route_decision_before": {"type": ["string", "null"]},
+    "route_decision_after": {"type": ["string", "null"]},
+    "claim_ceiling": {"type": "string"},
+    "must_not_claim": {"type": "array", "items": {"type": "string"}},
+    "timestamp": {"type": "string"}
+  }
+}

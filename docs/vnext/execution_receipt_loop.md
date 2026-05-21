@@ -1,7 +1,26 @@
-# Execution Receipt Loop
+# ExecutionReceipt Loop
 
-ExecutionReceipt records what happened after a capability was selected or held.
+The ExecutionReceipt loop connects route decisions to local memory.
 
-It includes objective, capability, agent hash, environment class, selected pipeline, outcome, verifier result, negative-control result, latency/cost bucket, error type, residual found, claim ceiling change, and timestamp.
+```text
+objective route -> manual use outcome -> receipt validation -> local receipt store -> receipt memory -> route overlay
+```
 
-The loop is intended to improve future routing. Package 9A only defines the schema and roadmap; it does not implement a live execution gateway.
+AOI stores only the reported outcome and conservative metadata. It does not run the capability, open links, execute a probe, or contact external services.
+
+Receipts can:
+
+- record known failures;
+- record missing fields found during use;
+- add residual notes;
+- add warnings to a route;
+- downgrade a candidate when failure signals are present.
+
+Receipts cannot:
+
+- turn HOLD into verified;
+- certify security;
+- guarantee quality;
+- authorize external actions;
+- replace current source-trace review.
+

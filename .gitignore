@@ -4,6 +4,8 @@ __pycache__/
 *.pyo
 .pytest_cache/
 pytest-cache-files-*/
+pytest_tmp/
+aoi_test_tmp/
 
 # Virtual environments
 .venv/

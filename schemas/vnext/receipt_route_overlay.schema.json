@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aoi.local/schemas/vnext/receipt_route_overlay.schema.json",
+  "title": "AOI ReceiptRouteOverlay",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["route_request", "original_route_summary", "receipt_memory_applied"],
+  "properties": {
+    "schema": {"const": "AOI_ReceiptRouteOverlay/v0.1"},
+    "route_request": {"type": "object"},
+    "original_route_summary": {"type": "object"},
+    "receipt_memory_applied": {"type": "boolean"},
+    "per_capability_overlay": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "capability_id": {"type": "string"},
+          "receipt_count": {"type": "integer"},
+          "outcome_signal": {"type": "string"},
+          "failure_signal": {"type": "string"},
+          "overlay_notes": {"type": "array", "items": {"type": "string"}},
+          "decision_effect": {"enum": ["NO_CHANGE", "ADD_WARNING", "DOWNGRADE_TO_HOLD", "DOWNGRADE_TO_BLOCK", "DO_NOT_UPGRADE"]}
+        }
+      }
+    },
+    "final_claim_ceiling": {"type": "string"},
+    "generated_at": {"type": "string"},
+    "must_not_claim": {"type": "array", "items": {"type": "string"}},
+    "external_execution": {"const": false},
+    "probe_execution": {"const": false},
+    "gateway_execution": {"const": false}
+  }
+}

@@ -2,6 +2,8 @@
 
 The Objective Router API is a read-only vNext surface.
 
+Package 9D extends this surface with local ExecutionReceipt memory. Use `POST /v1/objectives/route-with-receipts` when a route should include local receipt warnings or downgrade signals. The receipt overlay cannot upgrade a HOLD route into verification, certification, quality guarantee, product readiness, or action authorization.
+
 ## Route Objective
 
 `POST /v1/objectives/route`

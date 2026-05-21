@@ -1,0 +1,32 @@
+{
+  "schema": "AOI_CapabilityReceiptMemory/v0.1",
+  "capability_id": "capability:mcp-registry-ac-inference-sh-mcp-1-0-0",
+  "receipt_count": 1,
+  "outcome_counts": {
+    "hold": 1
+  },
+  "last_outcome": "hold",
+  "known_failures": [],
+  "recurring_error_types": [
+    "policy_unclear"
+  ],
+  "residual_notes": [
+    "Policy/privacy/data-retention fields require manual review before stronger use."
+  ],
+  "evidence_origins": [
+    "local_fixture"
+  ],
+  "can_influence_route": true,
+  "must_not_claim": [
+    "verified",
+    "safe",
+    "security certified",
+    "quality guaranteed",
+    "production ready",
+    "legal/financial/medical advice",
+    "purchasing advice",
+    "action authorization"
+  ],
+  "memory_status": "HOLD_INSUFFICIENT_RECEIPTS",
+  "generated_at": "2026-05-21T00:20:31+00:00"
+}

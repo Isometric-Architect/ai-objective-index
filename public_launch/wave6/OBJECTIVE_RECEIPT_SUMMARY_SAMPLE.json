@@ -1,0 +1,22 @@
+{
+  "schema": "AOI_ObjectiveReceiptSummary/v0.1",
+  "objective_id": "objective-browser-automation-mcp",
+  "receipt_count": 1,
+  "capabilities_seen": [
+    "capability:mcp-registry-ac-inference-sh-mcp-1-0-0"
+  ],
+  "outcome_counts": {
+    "hold": 1
+  },
+  "top_failure_modes": [
+    "policy_unclear"
+  ],
+  "route_adjustment_notes": [
+    "Receipt memory can add context but cannot upgrade a route into verification or certification."
+  ],
+  "known_limits": [
+    "Receipt summaries are local memory, not independent verification.",
+    "Success receipts cannot certify safety, security, quality, or product readiness."
+  ],
+  "generated_at": "2026-05-21T00:20:31+00:00"
+}

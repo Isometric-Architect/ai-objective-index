@@ -41,6 +41,18 @@ Package 9C adds read-only vNext MCP helpers:
 
 These tools return route decisions, evidence summaries, risk boundaries, missing fields, and must-not-claim terms. They do not fetch network data, run probes, execute external tools, or perform payment, booking, login, email, purchase, form submission, or contract actions.
 
+## Package 9D ExecutionReceipt Tools
+
+Package 9D adds local receipt-memory MCP helpers:
+
+- `submit_execution_receipt(receipt)`
+- `get_execution_receipt(receipt_id)`
+- `list_capability_receipts(capability_id, limit=20)`
+- `get_capability_receipt_memory(capability_id)`
+- `route_objective_with_receipts(query, objective, domain="mcp_servers", data_scope="sample", limit=10, constraints={})`
+
+`submit_execution_receipt` writes only to the local receipt store. It is not an external action and does not contact services. Receipt memory can add warnings or downgrade routes; it cannot verify capabilities, certify security, guarantee quality, or authorize payment, booking, login, email, purchase, form submission, or contract actions.
+
 ## Package 6C data_scope
 
 Package 6C adds optional `data_scope` support to MCP helper functions while preserving `sample` as the default.

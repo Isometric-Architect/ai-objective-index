@@ -65,7 +65,7 @@ def run_hf_upload_audit() -> dict[str, Any]:
         result = scan_text_for_secrets(text, rel)
         for finding in result["findings"]:
             finding_text = finding.get("text", "")
-            if path.name.endswith("_audit.py") and "re.compile" in finding_text:
+            if "re.compile" in finding_text and "PRIVATE KEY" in finding_text:
                 warnings.append({**finding, "severity": "warning", "pattern_definition": True})
             else:
                 findings.append(finding)

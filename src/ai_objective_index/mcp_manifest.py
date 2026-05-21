@@ -299,6 +299,97 @@ def get_mcp_tool_manifest() -> dict[str, Any]:
                 }
             ),
         },
+        {
+            "name": "submit_execution_receipt",
+            "description": "Store a local/offline execution receipt as receipt memory; no external execution, probes, payment, booking, login, email, purchase, or contract actions are performed.",
+            "read_only": True,
+            "local_memory_write": True,
+            "input_schema": _schema(
+                {
+                    "receipt": {
+                        "type": "object",
+                        "additionalProperties": True,
+                        "required": ["capability_id", "outcome"],
+                        "properties": {
+                            "capability_id": text,
+                            "outcome": {
+                                "type": "string",
+                                "enum": ["success", "partial", "fail", "hold", "blocked"],
+                            },
+                            "outcome_summary": text,
+                            "receipt_origin": {
+                                "type": "string",
+                                "enum": ["self_reported", "local_fixture", "public_issue", "manual_review", "benchmark", "unknown"],
+                                "default": "unknown",
+                            },
+                        },
+                    }
+                },
+                ["receipt"],
+            ),
+            "output_schema": _schema(
+                {
+                    "validation": {"type": "object"},
+                    "stored": {"type": "boolean"},
+                    "local_memory_write": {"type": "boolean"},
+                    "external_execution": {"const": False},
+                    "verification_guarantee": {"const": False},
+                }
+            ),
+        },
+        {
+            "name": "get_execution_receipt",
+            "description": "Read one local execution receipt by id. This is receipt memory only and not verification or action authorization.",
+            "read_only": True,
+            "input_schema": _schema({"receipt_id": text}, ["receipt_id"]),
+            "output_schema": _schema({"receipt": {"type": "object"}, "found": {"type": "boolean"}, "read_only": {"const": True}}),
+        },
+        {
+            "name": "list_capability_receipts",
+            "description": "List local execution receipts for one capability without external execution or probes.",
+            "read_only": True,
+            "input_schema": _schema(
+                {"capability_id": text, "limit": {"type": "integer", "default": 20, "minimum": 1}},
+                ["capability_id"],
+            ),
+            "output_schema": _schema({"receipts": {"type": "array"}, "receipt_count": {"type": "integer"}, "read_only": {"const": True}}),
+        },
+        {
+            "name": "get_capability_receipt_memory",
+            "description": "Summarize local receipt memory for one capability; receipt memory cannot certify safety, security, quality, or product readiness.",
+            "read_only": True,
+            "input_schema": _schema({"capability_id": text}, ["capability_id"]),
+            "output_schema": _schema({"receipt_count": {"type": "integer"}, "memory_status": text, "read_only": {"const": True}}),
+        },
+        {
+            "name": "route_objective_with_receipts",
+            "description": "Route an objective and overlay local receipt memory. Receipts can warn or downgrade, but cannot verify, certify, or authorize actions.",
+            "read_only": True,
+            "input_schema": _schema(
+                {
+                    "query": text,
+                    "objective": text,
+                    "domain": {"type": "string", "default": "mcp_servers"},
+                    "data_scope": {
+                        "type": "string",
+                        "enum": ["sample", "integrated", "mcp_registry", "public_beta_mcp"],
+                        "default": "sample",
+                    },
+                    "limit": {"type": "integer", "default": 10, "minimum": 1},
+                    "constraints": constraints,
+                },
+                ["query", "objective"],
+            ),
+            "output_schema": _schema(
+                {
+                    "route_summary": {"type": "object"},
+                    "receipt_route_overlay": {"type": "object"},
+                    "read_only": {"const": True},
+                    "external_execution": {"const": False},
+                    "probe_execution": {"const": False},
+                }
+            ),
+        },
     ]
 
     return {

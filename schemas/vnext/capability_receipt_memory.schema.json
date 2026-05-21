@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aoi.local/schemas/vnext/capability_receipt_memory.schema.json",
+  "title": "AOI CapabilityReceiptMemory",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["capability_id", "receipt_count", "memory_status"],
+  "properties": {
+    "schema": {"const": "AOI_CapabilityReceiptMemory/v0.1"},
+    "capability_id": {"type": "string"},
+    "receipt_count": {"type": "integer"},
+    "outcome_counts": {"type": "object", "additionalProperties": {"type": "integer"}},
+    "last_outcome": {"type": ["string", "null"]},
+    "known_failures": {"type": "array", "items": {"type": "string"}},
+    "recurring_error_types": {"type": "array", "items": {"type": "string"}},
+    "residual_notes": {"type": "array", "items": {"type": "string"}},
+    "evidence_origins": {"type": "array", "items": {"type": "string"}},
+    "can_influence_route": {"type": "boolean"},
+    "must_not_claim": {"type": "array", "items": {"type": "string"}},
+    "memory_status": {"enum": ["NO_RECEIPTS", "RECEIPTS_AVAILABLE", "FAILURE_SIGNALS", "MIXED_SIGNALS", "HOLD_INSUFFICIENT_RECEIPTS"]},
+    "generated_at": {"type": "string"}
+  }
+}

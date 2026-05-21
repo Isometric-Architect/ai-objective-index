@@ -197,6 +197,311 @@
         }
       }
     },
+    "/v1/execution-receipts/status": {
+      "get": {
+        "tags": [
+          "vnext-execution-receipts"
+        ],
+        "summary": "Get Execution Receipt Status",
+        "operationId": "get_execution_receipt_status_v1_execution_receipts_status_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Get Execution Receipt Status V1 Execution Receipts Status Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/execution-receipts": {
+      "post": {
+        "tags": [
+          "vnext-execution-receipts"
+        ],
+        "summary": "Post Execution Receipt",
+        "operationId": "post_execution_receipt_v1_execution_receipts_post",
+        "parameters": [
+          {
+            "name": "store_rejected",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Store Rejected"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExecutionReceiptSubmission"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Post Execution Receipt V1 Execution Receipts Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/execution-receipts/{receipt_id}": {
+      "get": {
+        "tags": [
+          "vnext-execution-receipts"
+        ],
+        "summary": "Get Execution Receipt Endpoint",
+        "operationId": "get_execution_receipt_endpoint_v1_execution_receipts__receipt_id__get",
+        "parameters": [
+          {
+            "name": "receipt_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Receipt Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/capabilities/{capability_id}/execution-receipts": {
+      "get": {
+        "tags": [
+          "vnext-execution-receipts"
+        ],
+        "summary": "List Capability Execution Receipts",
+        "operationId": "list_capability_execution_receipts_v1_capabilities__capability_id__execution_receipts_get",
+        "parameters": [
+          {
+            "name": "capability_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Capability Id"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 100,
+              "minimum": 1,
+              "default": 20,
+              "title": "Limit"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response List Capability Execution Receipts V1 Capabilities  Capability Id  Execution Receipts Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/capabilities/{capability_id}/receipt-memory": {
+      "get": {
+        "tags": [
+          "vnext-execution-receipts"
+        ],
+        "summary": "Get Capability Receipt Memory Endpoint",
+        "operationId": "get_capability_receipt_memory_endpoint_v1_capabilities__capability_id__receipt_memory_get",
+        "parameters": [
+          {
+            "name": "capability_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Capability Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Get Capability Receipt Memory Endpoint V1 Capabilities  Capability Id  Receipt Memory Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/objectives/{objective_id}/receipt-summary": {
+      "get": {
+        "tags": [
+          "vnext-execution-receipts"
+        ],
+        "summary": "Get Objective Receipt Summary Endpoint",
+        "operationId": "get_objective_receipt_summary_endpoint_v1_objectives__objective_id__receipt_summary_get",
+        "parameters": [
+          {
+            "name": "objective_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Objective Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Get Objective Receipt Summary Endpoint V1 Objectives  Objective Id  Receipt Summary Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/objectives/route-with-receipts": {
+      "post": {
+        "tags": [
+          "vnext-execution-receipts"
+        ],
+        "summary": "Post Route With Receipts",
+        "operationId": "post_route_with_receipts_v1_objectives_route_with_receipts_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ObjectiveRouteRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Post Route With Receipts V1 Objectives Route With Receipts Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/status": {
       "get": {
         "summary": "Status",
@@ -745,6 +1050,251 @@
           "selected_object_id"
         ],
         "title": "DecisionReceiptRequest"
+      },
+      "ExecutionReceiptSubmission": {
+        "properties": {
+          "schema": {
+            "type": "string",
+            "title": "Schema",
+            "default": "AOI_ExecutionReceiptSubmission/v0.1"
+          },
+          "receipt_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Receipt Id"
+          },
+          "objective_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Objective Id"
+          },
+          "route_request_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Route Request Id"
+          },
+          "capability_id": {
+            "type": "string",
+            "title": "Capability Id"
+          },
+          "object_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Object Id"
+          },
+          "capability_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Capability Name"
+          },
+          "data_scope": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Data Scope"
+          },
+          "submitted_by": {
+            "type": "string",
+            "enum": [
+              "user",
+              "agent",
+              "local_test",
+              "unknown"
+            ],
+            "title": "Submitted By",
+            "default": "unknown"
+          },
+          "receipt_origin": {
+            "type": "string",
+            "enum": [
+              "self_reported",
+              "local_fixture",
+              "public_issue",
+              "manual_review",
+              "benchmark",
+              "unknown"
+            ],
+            "title": "Receipt Origin",
+            "default": "unknown"
+          },
+          "outcome": {
+            "type": "string",
+            "enum": [
+              "success",
+              "partial",
+              "fail",
+              "hold",
+              "blocked"
+            ],
+            "title": "Outcome"
+          },
+          "outcome_summary": {
+            "type": "string",
+            "title": "Outcome Summary",
+            "default": ""
+          },
+          "task_context": {
+            "type": "string",
+            "title": "Task Context",
+            "default": ""
+          },
+          "environment_class": {
+            "type": "string",
+            "enum": [
+              "local",
+              "cloud",
+              "browser",
+              "api",
+              "mcp_client",
+              "unknown"
+            ],
+            "title": "Environment Class",
+            "default": "unknown"
+          },
+          "constraints_checked": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Constraints Checked"
+          },
+          "observed_outputs": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Observed Outputs"
+          },
+          "error_type": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "install_failure",
+                  "docs_missing",
+                  "policy_unclear",
+                  "source_trace_missing",
+                  "wrong_ranking",
+                  "stale_metadata",
+                  "api_failure",
+                  "security_concern",
+                  "unsupported_claim",
+                  "unknown"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Error Type"
+          },
+          "residual_found": {
+            "type": "boolean",
+            "title": "Residual Found",
+            "default": false
+          },
+          "residual_notes": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Residual Notes"
+          },
+          "missing_fields_found": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Missing Fields Found"
+          },
+          "source_trace_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Source Trace Ids"
+          },
+          "route_decision_before": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Route Decision Before"
+          },
+          "route_decision_after": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Route Decision After"
+          },
+          "claim_ceiling": {
+            "type": "string",
+            "title": "Claim Ceiling",
+            "default": "receipt memory only; not verification, security certification, quality guarantee, or action authorization"
+          },
+          "must_not_claim": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Must Not Claim"
+          },
+          "timestamp": {
+            "type": "string",
+            "title": "Timestamp"
+          }
+        },
+        "additionalProperties": true,
+        "type": "object",
+        "required": [
+          "capability_id",
+          "outcome"
+        ],
+        "title": "ExecutionReceiptSubmission"
       },
       "HTTPValidationError": {
         "properties": {

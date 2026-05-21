@@ -749,6 +749,251 @@
           }
         }
       }
+    },
+    {
+      "name": "submit_execution_receipt",
+      "description": "Store a local/offline execution receipt as receipt memory; no external execution, probes, payment, booking, login, email, purchase, or contract actions are performed.",
+      "read_only": true,
+      "local_memory_write": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "receipt"
+        ],
+        "properties": {
+          "receipt": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": [
+              "capability_id",
+              "outcome"
+            ],
+            "properties": {
+              "capability_id": {
+                "type": "string"
+              },
+              "outcome": {
+                "type": "string",
+                "enum": [
+                  "success",
+                  "partial",
+                  "fail",
+                  "hold",
+                  "blocked"
+                ]
+              },
+              "outcome_summary": {
+                "type": "string"
+              },
+              "receipt_origin": {
+                "type": "string",
+                "enum": [
+                  "self_reported",
+                  "local_fixture",
+                  "public_issue",
+                  "manual_review",
+                  "benchmark",
+                  "unknown"
+                ],
+                "default": "unknown"
+              }
+            }
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "validation": {
+            "type": "object"
+          },
+          "stored": {
+            "type": "boolean"
+          },
+          "local_memory_write": {
+            "type": "boolean"
+          },
+          "external_execution": {
+            "const": false
+          },
+          "verification_guarantee": {
+            "const": false
+          }
+        }
+      }
+    },
+    {
+      "name": "get_execution_receipt",
+      "description": "Read one local execution receipt by id. This is receipt memory only and not verification or action authorization.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "receipt_id"
+        ],
+        "properties": {
+          "receipt_id": {
+            "type": "string"
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "receipt": {
+            "type": "object"
+          },
+          "found": {
+            "type": "boolean"
+          },
+          "read_only": {
+            "const": true
+          }
+        }
+      }
+    },
+    {
+      "name": "list_capability_receipts",
+      "description": "List local execution receipts for one capability without external execution or probes.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "capability_id"
+        ],
+        "properties": {
+          "capability_id": {
+            "type": "string"
+          },
+          "limit": {
+            "type": "integer",
+            "default": 20,
+            "minimum": 1
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "receipts": {
+            "type": "array"
+          },
+          "receipt_count": {
+            "type": "integer"
+          },
+          "read_only": {
+            "const": true
+          }
+        }
+      }
+    },
+    {
+      "name": "get_capability_receipt_memory",
+      "description": "Summarize local receipt memory for one capability; receipt memory cannot certify safety, security, quality, or product readiness.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "capability_id"
+        ],
+        "properties": {
+          "capability_id": {
+            "type": "string"
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "receipt_count": {
+            "type": "integer"
+          },
+          "memory_status": {
+            "type": "string"
+          },
+          "read_only": {
+            "const": true
+          }
+        }
+      }
+    },
+    {
+      "name": "route_objective_with_receipts",
+      "description": "Route an objective and overlay local receipt memory. Receipts can warn or downgrade, but cannot verify, certify, or authorize actions.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "query",
+          "objective"
+        ],
+        "properties": {
+          "query": {
+            "type": "string"
+          },
+          "objective": {
+            "type": "string"
+          },
+          "domain": {
+            "type": "string",
+            "default": "mcp_servers"
+          },
+          "data_scope": {
+            "type": "string",
+            "enum": [
+              "sample",
+              "integrated",
+              "mcp_registry",
+              "public_beta_mcp"
+            ],
+            "default": "sample"
+          },
+          "limit": {
+            "type": "integer",
+            "default": 10,
+            "minimum": 1
+          },
+          "constraints": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "route_summary": {
+            "type": "object"
+          },
+          "receipt_route_overlay": {
+            "type": "object"
+          },
+          "read_only": {
+            "const": true
+          },
+          "external_execution": {
+            "const": false
+          },
+          "probe_execution": {
+            "const": false
+          }
+        }
+      }
     }
   ],
   "forbidden_actions": [

@@ -771,6 +771,28 @@ python -m ai_objective_index.vnext.objective_router_cli_demo --query "browser au
 
 Objective Router returns route decisions, not final truth. It does not run probes, execute tools, fetch live URLs, perform gateway actions, upload packages, submit MCP Registry metadata, or post to communities.
 
+## Package 9D ExecutionReceipt Loop MVP
+
+Package 9D adds a local/offline receipt loop for manual outcomes after a user or agent tries a routed capability:
+
+- `POST /v1/execution-receipts`
+- `GET /v1/execution-receipts/{receipt_id}`
+- `GET /v1/capabilities/{capability_id}/execution-receipts`
+- `GET /v1/capabilities/{capability_id}/receipt-memory`
+- `GET /v1/objectives/{objective_id}/receipt-summary`
+- `POST /v1/objectives/route-with-receipts`
+- `GET /v1/execution-receipts/status`
+- MCP tools: `submit_execution_receipt`, `get_execution_receipt`, `list_capability_receipts`, `get_capability_receipt_memory`, `route_objective_with_receipts`
+
+Run the offline demo:
+
+```powershell
+python -m ai_objective_index.vnext.execution_receipt_cli_demo
+python -m ai_objective_index.vnext_execution_receipt_audit
+```
+
+ExecutionReceipt memory can record failures, missing fields, and residual notes. It can add warnings or downgrade routes, but it cannot verify a capability, certify security, guarantee quality, establish product readiness, authorize actions, run probes, execute tools, fetch live URLs, upload packages, submit MCP Registry metadata, or post to communities.
+
 ## Claim Boundary
 
 Allowed claim: AOI is a read-only MCP/API objective ranking and comparison tool with explicit schemas, sample source traces, missing-field reporting, and decision receipt contracts.
@@ -849,6 +871,8 @@ AOI output is not a quality guarantee. It is not legal, financial, medical, purc
 - `docs/vnext/package_9c_objective_router_api_mvp.md`: vNext REST/MCP Objective Router surface.
 - `docs/vnext/objective_router_api.md`: vNext Objective Router REST endpoints.
 - `docs/vnext/objective_router_mcp_tools.md`: vNext Objective Router MCP tools.
+- `docs/vnext/package_9d_execution_receipt_loop_mvp.md`: local/offline receipt memory loop.
+- `docs/vnext/execution_receipt_loop.md`: route -> use -> receipt -> memory -> overlay flow.
 - `docs/vnext/public_private_ranking_kernel.md`: public/private ranking kernel split.
 - `docs/token_revocation_after_upload.md`: token revocation guidance after HF uploads.
 - `docs/public_data_intake_policy.md`: public-data intake limits.

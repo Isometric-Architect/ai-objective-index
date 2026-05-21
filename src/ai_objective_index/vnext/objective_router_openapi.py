@@ -5,6 +5,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 
 from .objective_router_models import ObjectiveRouteRequest, ObjectiveRouteResponse
+from .execution_receipt_loop import ExecutionReceiptSubmission, ExecutionReceiptValidationResult, CapabilityReceiptMemory, ObjectiveReceiptSummary, ReceiptRouteOverlay
 
 
 OPENAPI_PATH = Path("api") / "vnext" / "objective_router_openapi.json"
@@ -14,6 +15,11 @@ AUDIT_PATH = Path("public_launch") / "wave5" / "OBJECTIVE_ROUTER_OPENAPI_AUDIT.j
 def build_objective_router_openapi() -> dict:
     request_schema = ObjectiveRouteRequest.model_json_schema()
     response_schema = ObjectiveRouteResponse.model_json_schema()
+    receipt_schema = ExecutionReceiptSubmission.model_json_schema()
+    receipt_validation_schema = ExecutionReceiptValidationResult.model_json_schema()
+    memory_schema = CapabilityReceiptMemory.model_json_schema()
+    objective_summary_schema = ObjectiveReceiptSummary.model_json_schema()
+    overlay_schema = ReceiptRouteOverlay.model_json_schema()
     return {
         "openapi": "3.1.0",
         "info": {
@@ -65,6 +71,70 @@ def build_objective_router_openapi() -> dict:
                     "summary": "Objective Router safety/status metadata",
                     "operationId": "objectiveRouterStatus",
                     "responses": {"200": {"description": "Read-only router status"}},
+                }
+            },
+            "/v1/execution-receipts": {
+                "post": {
+                    "summary": "Submit a local execution receipt",
+                    "operationId": "submitExecutionReceipt",
+                    "requestBody": {
+                        "required": True,
+                        "content": {"application/json": {"schema": receipt_schema}},
+                    },
+                    "responses": {
+                        "200": {
+                            "description": "Receipt validation result and optional local store result",
+                            "content": {"application/json": {"schema": receipt_validation_schema}},
+                        }
+                    },
+                }
+            },
+            "/v1/execution-receipts/{receipt_id}": {
+                "get": {
+                    "summary": "Fetch a local execution receipt",
+                    "operationId": "getExecutionReceipt",
+                    "parameters": [
+                        {"name": "receipt_id", "in": "path", "required": True, "schema": {"type": "string"}}
+                    ],
+                    "responses": {"200": {"description": "Stored receipt or stable not_found result"}},
+                }
+            },
+            "/v1/capabilities/{capability_id}/receipt-memory": {
+                "get": {
+                    "summary": "Fetch local receipt memory for one capability",
+                    "operationId": "getCapabilityReceiptMemory",
+                    "parameters": [
+                        {"name": "capability_id", "in": "path", "required": True, "schema": {"type": "string"}}
+                    ],
+                    "responses": {"200": {"description": "Capability receipt memory", "content": {"application/json": {"schema": memory_schema}}}},
+                }
+            },
+            "/v1/objectives/{objective_id}/receipt-summary": {
+                "get": {
+                    "summary": "Fetch local receipt summary for one objective",
+                    "operationId": "getObjectiveReceiptSummary",
+                    "parameters": [
+                        {"name": "objective_id", "in": "path", "required": True, "schema": {"type": "string"}}
+                    ],
+                    "responses": {"200": {"description": "Objective receipt summary", "content": {"application/json": {"schema": objective_summary_schema}}}},
+                }
+            },
+            "/v1/objectives/route-with-receipts": {
+                "post": {
+                    "summary": "Route an objective and overlay local receipt memory",
+                    "operationId": "routeObjectiveWithReceipts",
+                    "requestBody": {
+                        "required": True,
+                        "content": {"application/json": {"schema": request_schema}},
+                    },
+                    "responses": {"200": {"description": "Objective route response with receipt overlay", "content": {"application/json": {"schema": overlay_schema}}}},
+                }
+            },
+            "/v1/execution-receipts/status": {
+                "get": {
+                    "summary": "Execution receipt loop status and boundaries",
+                    "operationId": "executionReceiptStatus",
+                    "responses": {"200": {"description": "Read-only local receipt status"}},
                 }
             },
         },

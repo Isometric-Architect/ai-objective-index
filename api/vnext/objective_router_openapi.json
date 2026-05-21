@@ -545,6 +545,912 @@
           }
         }
       }
+    },
+    "/v1/execution-receipts": {
+      "post": {
+        "summary": "Submit a local execution receipt",
+        "operationId": "submitExecutionReceipt",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": true,
+                "properties": {
+                  "schema": {
+                    "default": "AOI_ExecutionReceiptSubmission/v0.1",
+                    "title": "Schema",
+                    "type": "string"
+                  },
+                  "receipt_id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null,
+                    "title": "Receipt Id"
+                  },
+                  "objective_id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null,
+                    "title": "Objective Id"
+                  },
+                  "route_request_id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null,
+                    "title": "Route Request Id"
+                  },
+                  "capability_id": {
+                    "title": "Capability Id",
+                    "type": "string"
+                  },
+                  "object_id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null,
+                    "title": "Object Id"
+                  },
+                  "capability_name": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null,
+                    "title": "Capability Name"
+                  },
+                  "data_scope": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null,
+                    "title": "Data Scope"
+                  },
+                  "submitted_by": {
+                    "default": "unknown",
+                    "enum": [
+                      "user",
+                      "agent",
+                      "local_test",
+                      "unknown"
+                    ],
+                    "title": "Submitted By",
+                    "type": "string"
+                  },
+                  "receipt_origin": {
+                    "default": "unknown",
+                    "enum": [
+                      "self_reported",
+                      "local_fixture",
+                      "public_issue",
+                      "manual_review",
+                      "benchmark",
+                      "unknown"
+                    ],
+                    "title": "Receipt Origin",
+                    "type": "string"
+                  },
+                  "outcome": {
+                    "enum": [
+                      "success",
+                      "partial",
+                      "fail",
+                      "hold",
+                      "blocked"
+                    ],
+                    "title": "Outcome",
+                    "type": "string"
+                  },
+                  "outcome_summary": {
+                    "default": "",
+                    "title": "Outcome Summary",
+                    "type": "string"
+                  },
+                  "task_context": {
+                    "default": "",
+                    "title": "Task Context",
+                    "type": "string"
+                  },
+                  "environment_class": {
+                    "default": "unknown",
+                    "enum": [
+                      "local",
+                      "cloud",
+                      "browser",
+                      "api",
+                      "mcp_client",
+                      "unknown"
+                    ],
+                    "title": "Environment Class",
+                    "type": "string"
+                  },
+                  "constraints_checked": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Constraints Checked",
+                    "type": "array"
+                  },
+                  "observed_outputs": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Observed Outputs",
+                    "type": "array"
+                  },
+                  "error_type": {
+                    "anyOf": [
+                      {
+                        "enum": [
+                          "install_failure",
+                          "docs_missing",
+                          "policy_unclear",
+                          "source_trace_missing",
+                          "wrong_ranking",
+                          "stale_metadata",
+                          "api_failure",
+                          "security_concern",
+                          "unsupported_claim",
+                          "unknown"
+                        ],
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null,
+                    "title": "Error Type"
+                  },
+                  "residual_found": {
+                    "default": false,
+                    "title": "Residual Found",
+                    "type": "boolean"
+                  },
+                  "residual_notes": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Residual Notes",
+                    "type": "array"
+                  },
+                  "missing_fields_found": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Missing Fields Found",
+                    "type": "array"
+                  },
+                  "source_trace_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Source Trace Ids",
+                    "type": "array"
+                  },
+                  "route_decision_before": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null,
+                    "title": "Route Decision Before"
+                  },
+                  "route_decision_after": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null,
+                    "title": "Route Decision After"
+                  },
+                  "claim_ceiling": {
+                    "default": "receipt memory only; not verification, security certification, quality guarantee, or action authorization",
+                    "title": "Claim Ceiling",
+                    "type": "string"
+                  },
+                  "must_not_claim": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Must Not Claim",
+                    "type": "array"
+                  },
+                  "timestamp": {
+                    "title": "Timestamp",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "capability_id",
+                  "outcome"
+                ],
+                "title": "ExecutionReceiptSubmission",
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Receipt validation result and optional local store result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "properties": {
+                    "schema": {
+                      "default": "AOI_ExecutionReceiptValidationResult/v0.1",
+                      "title": "Schema",
+                      "type": "string"
+                    },
+                    "receipt_id": {
+                      "title": "Receipt Id",
+                      "type": "string"
+                    },
+                    "valid": {
+                      "title": "Valid",
+                      "type": "boolean"
+                    },
+                    "decision": {
+                      "enum": [
+                        "RECEIPT_ACCEPTED",
+                        "HOLD_MISSING_REQUIRED_FIELDS",
+                        "HOLD_LOW_EVIDENCE_ORIGIN",
+                        "HOLD_CONFLICTING_OUTCOME",
+                        "BLOCK_FORBIDDEN_ACTION",
+                        "BLOCK_UNSUPPORTED_CLAIM",
+                        "BLOCK_ACTION_AUTHORIZATION",
+                        "INVALID_RECEIPT"
+                      ],
+                      "title": "Decision",
+                      "type": "string"
+                    },
+                    "errors": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Errors",
+                      "type": "array"
+                    },
+                    "warnings": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Warnings",
+                      "type": "array"
+                    },
+                    "claim_ceiling": {
+                      "default": "receipt memory only; cannot certify safety, security, quality, legal compliance, product readiness, or action authorization",
+                      "title": "Claim Ceiling",
+                      "type": "string"
+                    },
+                    "can_influence_route": {
+                      "default": false,
+                      "title": "Can Influence Route",
+                      "type": "boolean"
+                    },
+                    "can_upgrade_to_verified": {
+                      "default": false,
+                      "title": "Can Upgrade To Verified",
+                      "type": "boolean"
+                    },
+                    "can_certify_security": {
+                      "default": false,
+                      "title": "Can Certify Security",
+                      "type": "boolean"
+                    },
+                    "can_certify_quality": {
+                      "default": false,
+                      "title": "Can Certify Quality",
+                      "type": "boolean"
+                    },
+                    "next_actions": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Next Actions",
+                      "type": "array"
+                    },
+                    "token_printed": {
+                      "default": false,
+                      "title": "Token Printed",
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "receipt_id",
+                    "valid",
+                    "decision"
+                  ],
+                  "title": "ExecutionReceiptValidationResult",
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/execution-receipts/{receipt_id}": {
+      "get": {
+        "summary": "Fetch a local execution receipt",
+        "operationId": "getExecutionReceipt",
+        "parameters": [
+          {
+            "name": "receipt_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Stored receipt or stable not_found result"
+          }
+        }
+      }
+    },
+    "/v1/capabilities/{capability_id}/receipt-memory": {
+      "get": {
+        "summary": "Fetch local receipt memory for one capability",
+        "operationId": "getCapabilityReceiptMemory",
+        "parameters": [
+          {
+            "name": "capability_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Capability receipt memory",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "properties": {
+                    "schema": {
+                      "default": "AOI_CapabilityReceiptMemory/v0.1",
+                      "title": "Schema",
+                      "type": "string"
+                    },
+                    "capability_id": {
+                      "title": "Capability Id",
+                      "type": "string"
+                    },
+                    "receipt_count": {
+                      "default": 0,
+                      "title": "Receipt Count",
+                      "type": "integer"
+                    },
+                    "outcome_counts": {
+                      "additionalProperties": {
+                        "type": "integer"
+                      },
+                      "title": "Outcome Counts",
+                      "type": "object"
+                    },
+                    "last_outcome": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ],
+                      "default": null,
+                      "title": "Last Outcome"
+                    },
+                    "known_failures": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Known Failures",
+                      "type": "array"
+                    },
+                    "recurring_error_types": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Recurring Error Types",
+                      "type": "array"
+                    },
+                    "residual_notes": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Residual Notes",
+                      "type": "array"
+                    },
+                    "evidence_origins": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Evidence Origins",
+                      "type": "array"
+                    },
+                    "can_influence_route": {
+                      "default": false,
+                      "title": "Can Influence Route",
+                      "type": "boolean"
+                    },
+                    "must_not_claim": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Must Not Claim",
+                      "type": "array"
+                    },
+                    "memory_status": {
+                      "default": "NO_RECEIPTS",
+                      "enum": [
+                        "NO_RECEIPTS",
+                        "RECEIPTS_AVAILABLE",
+                        "FAILURE_SIGNALS",
+                        "MIXED_SIGNALS",
+                        "HOLD_INSUFFICIENT_RECEIPTS"
+                      ],
+                      "title": "Memory Status",
+                      "type": "string"
+                    },
+                    "generated_at": {
+                      "title": "Generated At",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "capability_id"
+                  ],
+                  "title": "CapabilityReceiptMemory",
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/objectives/{objective_id}/receipt-summary": {
+      "get": {
+        "summary": "Fetch local receipt summary for one objective",
+        "operationId": "getObjectiveReceiptSummary",
+        "parameters": [
+          {
+            "name": "objective_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Objective receipt summary",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "properties": {
+                    "schema": {
+                      "default": "AOI_ObjectiveReceiptSummary/v0.1",
+                      "title": "Schema",
+                      "type": "string"
+                    },
+                    "objective_id": {
+                      "title": "Objective Id",
+                      "type": "string"
+                    },
+                    "receipt_count": {
+                      "default": 0,
+                      "title": "Receipt Count",
+                      "type": "integer"
+                    },
+                    "capabilities_seen": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Capabilities Seen",
+                      "type": "array"
+                    },
+                    "outcome_counts": {
+                      "additionalProperties": {
+                        "type": "integer"
+                      },
+                      "title": "Outcome Counts",
+                      "type": "object"
+                    },
+                    "top_failure_modes": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Top Failure Modes",
+                      "type": "array"
+                    },
+                    "route_adjustment_notes": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Route Adjustment Notes",
+                      "type": "array"
+                    },
+                    "known_limits": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Known Limits",
+                      "type": "array"
+                    },
+                    "generated_at": {
+                      "title": "Generated At",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "objective_id"
+                  ],
+                  "title": "ObjectiveReceiptSummary",
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/objectives/route-with-receipts": {
+      "post": {
+        "summary": "Route an objective and overlay local receipt memory",
+        "operationId": "routeObjectiveWithReceipts",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$defs": {
+                  "ObjectiveRouteConstraints": {
+                    "additionalProperties": true,
+                    "properties": {
+                      "require_source_trace": {
+                        "default": true,
+                        "title": "Require Source Trace",
+                        "type": "boolean"
+                      },
+                      "require_policy_clarity": {
+                        "default": false,
+                        "title": "Require Policy Clarity",
+                        "type": "boolean"
+                      },
+                      "require_docs": {
+                        "default": false,
+                        "title": "Require Docs",
+                        "type": "boolean"
+                      },
+                      "require_pricing": {
+                        "default": false,
+                        "title": "Require Pricing",
+                        "type": "boolean"
+                      },
+                      "require_license": {
+                        "default": false,
+                        "title": "Require License",
+                        "type": "boolean"
+                      },
+                      "require_repository": {
+                        "default": false,
+                        "title": "Require Repository",
+                        "type": "boolean"
+                      },
+                      "allowed_integration_types": {
+                        "anyOf": [
+                          {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "default": null,
+                        "title": "Allowed Integration Types"
+                      },
+                      "forbidden_actions": {
+                        "anyOf": [
+                          {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "default": null,
+                        "title": "Forbidden Actions"
+                      },
+                      "risk_tolerance": {
+                        "default": "unknown",
+                        "enum": [
+                          "low",
+                          "medium",
+                          "high",
+                          "unknown"
+                        ],
+                        "title": "Risk Tolerance",
+                        "type": "string"
+                      }
+                    },
+                    "title": "ObjectiveRouteConstraints",
+                    "type": "object"
+                  },
+                  "ObjectiveRouteInclude": {
+                    "additionalProperties": true,
+                    "properties": {
+                      "source_traces": {
+                        "default": true,
+                        "title": "Source Traces",
+                        "type": "boolean"
+                      },
+                      "missing_fields": {
+                        "default": true,
+                        "title": "Missing Fields",
+                        "type": "boolean"
+                      },
+                      "score_components": {
+                        "default": true,
+                        "title": "Score Components",
+                        "type": "boolean"
+                      },
+                      "known_limits": {
+                        "default": true,
+                        "title": "Known Limits",
+                        "type": "boolean"
+                      }
+                    },
+                    "title": "ObjectiveRouteInclude",
+                    "type": "object"
+                  }
+                },
+                "additionalProperties": true,
+                "properties": {
+                  "query": {
+                    "title": "Query",
+                    "type": "string"
+                  },
+                  "objective": {
+                    "title": "Objective",
+                    "type": "string"
+                  },
+                  "domain": {
+                    "default": "mcp_servers",
+                    "title": "Domain",
+                    "type": "string"
+                  },
+                  "data_scope": {
+                    "default": "sample",
+                    "enum": [
+                      "sample",
+                      "integrated",
+                      "mcp_registry",
+                      "public_beta_mcp"
+                    ],
+                    "title": "Data Scope",
+                    "type": "string"
+                  },
+                  "limit": {
+                    "default": 10,
+                    "maximum": 100,
+                    "minimum": 1,
+                    "title": "Limit",
+                    "type": "integer"
+                  },
+                  "constraints": {
+                    "$ref": "#/$defs/ObjectiveRouteConstraints"
+                  },
+                  "include": {
+                    "$ref": "#/$defs/ObjectiveRouteInclude"
+                  }
+                },
+                "required": [
+                  "query",
+                  "objective"
+                ],
+                "title": "ObjectiveRouteRequest",
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Objective route response with receipt overlay",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$defs": {
+                    "ReceiptCapabilityOverlay": {
+                      "additionalProperties": true,
+                      "properties": {
+                        "capability_id": {
+                          "title": "Capability Id",
+                          "type": "string"
+                        },
+                        "receipt_count": {
+                          "default": 0,
+                          "title": "Receipt Count",
+                          "type": "integer"
+                        },
+                        "outcome_signal": {
+                          "default": "none",
+                          "title": "Outcome Signal",
+                          "type": "string"
+                        },
+                        "failure_signal": {
+                          "default": "none",
+                          "title": "Failure Signal",
+                          "type": "string"
+                        },
+                        "overlay_notes": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "title": "Overlay Notes",
+                          "type": "array"
+                        },
+                        "decision_effect": {
+                          "default": "NO_CHANGE",
+                          "enum": [
+                            "NO_CHANGE",
+                            "ADD_WARNING",
+                            "DOWNGRADE_TO_HOLD",
+                            "DOWNGRADE_TO_BLOCK",
+                            "DO_NOT_UPGRADE"
+                          ],
+                          "title": "Decision Effect",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "capability_id"
+                      ],
+                      "title": "ReceiptCapabilityOverlay",
+                      "type": "object"
+                    }
+                  },
+                  "additionalProperties": true,
+                  "properties": {
+                    "schema": {
+                      "default": "AOI_ReceiptRouteOverlay/v0.1",
+                      "title": "Schema",
+                      "type": "string"
+                    },
+                    "route_request": {
+                      "additionalProperties": true,
+                      "title": "Route Request",
+                      "type": "object"
+                    },
+                    "original_route_summary": {
+                      "additionalProperties": true,
+                      "title": "Original Route Summary",
+                      "type": "object"
+                    },
+                    "receipt_memory_applied": {
+                      "default": false,
+                      "title": "Receipt Memory Applied",
+                      "type": "boolean"
+                    },
+                    "per_capability_overlay": {
+                      "items": {
+                        "$ref": "#/$defs/ReceiptCapabilityOverlay"
+                      },
+                      "title": "Per Capability Overlay",
+                      "type": "array"
+                    },
+                    "final_claim_ceiling": {
+                      "default": "route decision with local receipt memory; not verified, not security certified, not a quality guarantee",
+                      "title": "Final Claim Ceiling",
+                      "type": "string"
+                    },
+                    "generated_at": {
+                      "title": "Generated At",
+                      "type": "string"
+                    },
+                    "must_not_claim": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Must Not Claim",
+                      "type": "array"
+                    },
+                    "external_execution": {
+                      "default": false,
+                      "title": "External Execution",
+                      "type": "boolean"
+                    },
+                    "probe_execution": {
+                      "default": false,
+                      "title": "Probe Execution",
+                      "type": "boolean"
+                    },
+                    "gateway_execution": {
+                      "default": false,
+                      "title": "Gateway Execution",
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "route_request",
+                    "original_route_summary"
+                  ],
+                  "title": "ReceiptRouteOverlay",
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/execution-receipts/status": {
+      "get": {
+        "summary": "Execution receipt loop status and boundaries",
+        "operationId": "executionReceiptStatus",
+        "responses": {
+          "200": {
+            "description": "Read-only local receipt status"
+          }
+        }
+      }
     }
   }
 }

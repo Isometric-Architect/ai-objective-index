@@ -1,0 +1,15 @@
+{
+  "schema": "AOI_ExecutionReceiptIndex/v0.1",
+  "receipt_count": 1,
+  "receipts": [
+    {
+      "receipt_id": "exec-receipt-917889d35300",
+      "capability_id": "capability:mcp-registry-ac-inference-sh-mcp-1-0-0",
+      "objective_id": "objective-browser-automation-mcp",
+      "outcome": "hold",
+      "validation_decision": "RECEIPT_ACCEPTED",
+      "stored_at": "2026-05-21T00:20:31+00:00"
+    }
+  ],
+  "token_printed": false
+}

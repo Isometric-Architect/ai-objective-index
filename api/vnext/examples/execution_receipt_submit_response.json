@@ -1,0 +1,21 @@
+{
+  "schema": "AOI_ExecutionReceiptSubmitResponse/v0.1",
+  "receipt_id": "exec-receipt-example",
+  "stored": true,
+  "validation": {
+    "schema": "AOI_ExecutionReceiptValidationResult/v0.1",
+    "receipt_id": "exec-receipt-example",
+    "valid": true,
+    "decision": "RECEIPT_ACCEPTED",
+    "can_influence_route": true,
+    "can_upgrade_to_verified": false,
+    "can_certify_security": false,
+    "can_certify_quality": false
+  },
+  "read_only_external": true,
+  "local_memory_write": true,
+  "external_execution": false,
+  "probe_execution": false,
+  "gateway_execution": false,
+  "token_printed": false
+}

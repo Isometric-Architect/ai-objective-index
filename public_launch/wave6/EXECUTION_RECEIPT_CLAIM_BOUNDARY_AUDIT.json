@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-05-21T00:20:31.072234+00:00",
+  "overall_token": "PASS",
+  "risky_phrase_count": 0,
+  "findings": [],
+  "scanned_files": [
+    "CHANGELOG.md",
+    "README.md",
+    "docs\\vnext\\execution_receipt_limitations.md",
+    "docs\\vnext\\execution_receipt_loop.md",
+    "docs\\vnext\\execution_receipt_memory.md",
+    "docs\\vnext\\execution_receipt_submission.md",
+    "docs\\vnext\\receipt_route_overlay.md",
+    "public_launch\\wave6\\CAPABILITY_RECEIPT_MEMORY_SAMPLE.json",
+    "public_launch\\wave6\\EXECUTION_RECEIPT_SAMPLE_SUBMISSION.json",
+    "public_launch\\wave6\\EXECUTION_RECEIPT_VALIDATION_RESULT.json",
+    "public_launch\\wave6\\OBJECTIVE_RECEIPT_SUMMARY_SAMPLE.json",
+    "public_launch\\wave6\\PACKAGE_9D_EXECUTION_RECEIPT_LOOP_RESULT.json",
+    "public_launch\\wave6\\PACKAGE_9D_NEXT_STEPS.md",
+    "public_launch\\wave6\\RECEIPT_ROUTE_OVERLAY_SAMPLE.json"
+  ],
+  "allowed_wording": [
+    "receipt memory",
+    "self-reported outcome",
+    "known failure",
+    "residual note",
+    "local fixture",
+    "not verified",
+    "not security certified",
+    "no action authorization"
+  ],
+  "blocked_positive_claims": [
+    "verified by receipt",
+    "safe tool",
+    "security certified",
+    "quality guaranteed",
+    "production ready",
+    "action authorized",
+    "purchase recommended",
+    "legal advice",
+    "external validation"
+  ],
+  "external_execution": false,
+  "probe_execution": false,
+  "pypi_upload_performed": false,
+  "mcp_registry_submission_performed": false,
+  "community_post_performed": false,
+  "token_printed": false
+}

@@ -2,6 +2,16 @@
 
 Package 9C adds three read-only MCP tools.
 
+Package 9D adds receipt-memory MCP tools for local/offline outcome records:
+
+- `submit_execution_receipt`
+- `get_execution_receipt`
+- `list_capability_receipts`
+- `get_capability_receipt_memory`
+- `route_objective_with_receipts`
+
+These tools do not run probes or external actions. Receipt memory can warn or downgrade, but it cannot verify a capability or authorize any external action.
+
 ## `route_objective`
 
 Routes an objective to local capability candidates and returns an `ObjectiveRouteResponse`.

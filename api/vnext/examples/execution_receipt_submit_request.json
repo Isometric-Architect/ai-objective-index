@@ -1,0 +1,21 @@
+{
+  "schema": "AOI_ExecutionReceiptSubmission/v0.1",
+  "objective_id": "objective-browser-automation-mcp",
+  "capability_id": "capability:example-browser-mcp",
+  "capability_name": "Example Browser MCP",
+  "data_scope": "public_beta_mcp",
+  "submitted_by": "user",
+  "receipt_origin": "self_reported",
+  "outcome": "hold",
+  "outcome_summary": "The route looked relevant, but policy clarity was insufficient for stronger use.",
+  "task_context": "Manual public beta feedback for browser automation MCP routing.",
+  "environment_class": "local",
+  "constraints_checked": ["require_source_trace", "require_policy_clarity"],
+  "observed_outputs": ["No external tool execution was performed by AOI."],
+  "error_type": "policy_unclear",
+  "residual_found": true,
+  "residual_notes": ["Privacy and data-retention details need review."],
+  "missing_fields_found": ["privacy_policy", "data_retention_policy"],
+  "route_decision_before": "HOLD_POLICY_CLARITY",
+  "route_decision_after": "HOLD_POLICY_CLARITY"
+}

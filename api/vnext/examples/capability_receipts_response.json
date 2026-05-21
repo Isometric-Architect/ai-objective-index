@@ -1,0 +1,8 @@
+{
+  "schema": "AOI_CapabilityExecutionReceiptsResponse/v0.1",
+  "capability_id": "capability:example-browser-mcp",
+  "receipt_count": 1,
+  "receipts": [],
+  "read_only_external": true,
+  "external_execution": false
+}

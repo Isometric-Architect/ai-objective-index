@@ -1,0 +1,17 @@
+{
+  "schema": "AOI_Package9DExecutionReceiptLoopResult/v0.1",
+  "receipt_id": "exec-receipt-917889d35300",
+  "validation_decision": "RECEIPT_ACCEPTED",
+  "stored_sample_fixture": true,
+  "sample_store_path": "data\\vnext\\sample_execution_receipts.jsonl",
+  "capability_id": "capability:mcp-registry-ac-inference-sh-mcp-1-0-0",
+  "memory_status": "HOLD_INSUFFICIENT_RECEIPTS",
+  "receipt_memory_applied": true,
+  "external_execution": false,
+  "probe_execution": false,
+  "gateway_execution": false,
+  "pypi_upload_performed": false,
+  "mcp_registry_submission_performed": false,
+  "community_post_performed": false,
+  "token_printed": false
+}

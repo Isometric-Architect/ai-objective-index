@@ -178,6 +178,45 @@ def build_server() -> Any:
             data_scope=data_scope,
         )
 
+    @server.tool()
+    def submit_execution_receipt(receipt: dict[str, Any]) -> dict[str, Any]:
+        """Store a local execution receipt; no external action is performed."""
+        return mcp_tools.submit_execution_receipt(receipt=receipt)
+
+    @server.tool()
+    def get_execution_receipt(receipt_id: str) -> dict[str, Any]:
+        """Read one local execution receipt by id."""
+        return mcp_tools.get_execution_receipt(receipt_id=receipt_id)
+
+    @server.tool()
+    def list_capability_receipts(capability_id: str, limit: int = 20) -> dict[str, Any]:
+        """List local receipt memory for one capability."""
+        return mcp_tools.list_capability_receipts(capability_id=capability_id, limit=limit)
+
+    @server.tool()
+    def get_capability_receipt_memory(capability_id: str) -> dict[str, Any]:
+        """Summarize local receipt memory for one capability."""
+        return mcp_tools.get_capability_receipt_memory(capability_id=capability_id)
+
+    @server.tool()
+    def route_objective_with_receipts(
+        query: str,
+        objective: str,
+        domain: str = "mcp_servers",
+        data_scope: str = "sample",
+        limit: int = 10,
+        constraints: dict[str, Any] | None = None,
+    ) -> dict[str, Any]:
+        """Route an objective with local receipt-memory overlay; no probes or external execution."""
+        return mcp_tools.route_objective_with_receipts(
+            query=query,
+            objective=objective,
+            domain=domain,
+            data_scope=data_scope,
+            limit=limit,
+            constraints=constraints,
+        )
+
     return server
 
 

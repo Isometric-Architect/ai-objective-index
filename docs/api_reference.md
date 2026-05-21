@@ -197,3 +197,17 @@ These endpoints return route decisions from the vNext Capability Trust model. Th
 `ALLOW_CANDIDATE` and `ALLOW_WITH_LIMITS` mean the candidate can be compared or considered under stated limits. They do not mean verified, safe, security certified, quality guaranteed, product ready, or purchase ready.
 
 The separate vNext OpenAPI file is `api/vnext/objective_router_openapi.json`.
+
+## Package 9D ExecutionReceipt Loop API
+
+Package 9D adds local/offline receipt-memory endpoints:
+
+- `POST /v1/execution-receipts`
+- `GET /v1/execution-receipts/{receipt_id}`
+- `GET /v1/capabilities/{capability_id}/execution-receipts`
+- `GET /v1/capabilities/{capability_id}/receipt-memory`
+- `GET /v1/objectives/{objective_id}/receipt-summary`
+- `POST /v1/objectives/route-with-receipts`
+- `GET /v1/execution-receipts/status`
+
+Receipts are local memory records. They can add warnings and failure signals to future route responses. They do not execute tools, run probes, fetch live URLs, certify security, guarantee quality, verify capabilities, or authorize actions.

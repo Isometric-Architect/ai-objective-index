@@ -22,6 +22,13 @@ from .vnext.objective_router_mcp_tools import (
     get_capability_trust as vnext_get_capability_trust,
     route_objective as vnext_route_objective,
 )
+from .vnext.execution_receipt_mcp_tools import (
+    get_capability_receipt_memory as vnext_get_capability_receipt_memory,
+    get_execution_receipt as vnext_get_execution_receipt,
+    list_capability_receipts as vnext_list_capability_receipts,
+    route_objective_with_receipts as vnext_route_objective_with_receipts,
+    submit_execution_receipt as vnext_submit_execution_receipt,
+)
 
 
 FORBIDDEN_ACTIONS = [
@@ -551,5 +558,41 @@ def explain_route_decision(
             capability_id=capability_id,
             objective=objective,
             data_scope=data_scope,
+        )
+    )
+
+
+def submit_execution_receipt(receipt: dict[str, Any]) -> dict[str, Any]:
+    return _assert_jsonable(vnext_submit_execution_receipt(receipt=receipt))
+
+
+def get_execution_receipt(receipt_id: str) -> dict[str, Any]:
+    return _assert_jsonable(vnext_get_execution_receipt(receipt_id=receipt_id))
+
+
+def list_capability_receipts(capability_id: str, limit: int = 20) -> dict[str, Any]:
+    return _assert_jsonable(vnext_list_capability_receipts(capability_id=capability_id, limit=limit))
+
+
+def get_capability_receipt_memory(capability_id: str) -> dict[str, Any]:
+    return _assert_jsonable(vnext_get_capability_receipt_memory(capability_id=capability_id))
+
+
+def route_objective_with_receipts(
+    query: str,
+    objective: str,
+    domain: str = "mcp_servers",
+    data_scope: str = "sample",
+    limit: int = 10,
+    constraints: dict[str, Any] | None = None,
+) -> dict[str, Any]:
+    return _assert_jsonable(
+        vnext_route_objective_with_receipts(
+            query=query,
+            objective=objective,
+            domain=domain,
+            data_scope=data_scope,
+            limit=limit,
+            constraints=constraints,
         )
     )

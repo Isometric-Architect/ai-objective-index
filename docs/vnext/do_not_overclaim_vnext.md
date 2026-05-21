@@ -42,3 +42,5 @@ Allowed wording:
 - no gateway execution yet
 
 Package 9C adds Objective Router REST/MCP surfaces. Do not describe these endpoints as a live gateway, probe runner, security scanner, product certification layer, or final truth engine. They expose conservative route decisions only.
+
+Package 9D adds local ExecutionReceipt memory. Do not describe a receipt as independent verification, certification, product readiness evidence, action authorization, or proof that a capability is safe. Receipts can record reported outcomes and known failures, and they can add warnings or downgrade route decisions.

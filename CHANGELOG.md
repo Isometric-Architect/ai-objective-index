@@ -297,3 +297,11 @@
 - Added MCP tools `route_objective`, `get_capability_trust`, and `explain_route_decision`.
 - Added separate vNext Objective Router OpenAPI export, examples, CLI demo, and claim-boundary audit.
 - Preserved Package 9C exclusions: no probe execution, gateway execution, external tool execution, live URL fetch, crawling, scraping, link following, external LLM calls, PyPI/TestPyPI upload, MCP Registry submission, community posting, token printing/storage/commit, force push, payment, booking, login automation, email, form submission, purchase, contract signing, account connection, supplier claim/verify, profile modification, or claims of verification, safety, security certification, quality guarantee, product readiness, or purchasing advice.
+
+## 0.1.0-package-9d
+
+- Added local/offline ExecutionReceipt submission, validation, storage, capability memory, objective summary, and route overlay models.
+- Added REST endpoints for execution receipts, receipt memory, objective receipt summaries, route-with-receipts, and receipt loop status.
+- Added MCP receipt-memory tools and regenerated the MCP manifest surface.
+- Added offline CLI demo, vNext schemas, API examples, docs, and receipt claim-boundary audit.
+- Preserved Package 9D exclusions: no external tool execution, probe execution, gateway execution, live URL fetch, crawling, scraping, link following, external LLM calls, PyPI/TestPyPI upload, MCP Registry submission, community posting, token printing/storage/commit, payment, booking, login automation, email, form submission, purchase, contract signing, account connection, supplier claim/verify, profile modification, action authorization, or claims of verification, safety, security certification, quality guarantee, product readiness, or purchasing advice.

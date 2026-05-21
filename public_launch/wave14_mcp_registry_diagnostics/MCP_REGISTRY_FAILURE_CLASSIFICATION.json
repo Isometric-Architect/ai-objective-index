@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-21T12:42:25.323350+00:00",
-  "classification": "AUTH_REQUIRED",
-  "returncode": 1,
+  "generated_at": "2026-05-21T13:04:42.597234+00:00",
+  "classification": "VALIDATE_PASS_NO_PUBLISH",
+  "returncode": 0,
   "validate_ok": true,
   "matched_patterns": [
-    "401/403/unauthorized/forbidden"
+    "validate_ok and publish_attempted == false"
   ],
   "token_printed": false,
   "token_like_detected_before_redaction": false

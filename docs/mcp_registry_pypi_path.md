@@ -4,7 +4,7 @@ MCP Registry can reference a PyPI package with `registryType: pypi`.
 
 Package 8P prepares:
 
-- README marker: `<!-- mcp-name: io.github.isometric-architect/ai-objective-index -->`
+- README marker: `<!-- mcp-name: io.github.Isometric-Architect/ai-objective-index -->`
 - `.mcp/server.json`
 - package identifier: `ai-objective-index`
 - version: `0.3.0a1`
@@ -44,7 +44,7 @@ Do not submit to MCP Registry from Package 8Q-C-alt.
 
 ## Package 8R Publisher Gate
 
-Package 8R starts from the verified real PyPI package and audits `.mcp/server.json` as a final `registryType: pypi` manifest. The expected server name is `io.github.isometric-architect/ai-objective-index`, and the package identifier/version are `ai-objective-index` / `0.3.0a1`.
+Package 8R starts from the verified real PyPI package and audits `.mcp/server.json` as a final `registryType: pypi` manifest. The expected server name is `io.github.Isometric-Architect/ai-objective-index`, and the package identifier/version are `ai-objective-index` / `0.3.0a1`.
 
 Run:
 

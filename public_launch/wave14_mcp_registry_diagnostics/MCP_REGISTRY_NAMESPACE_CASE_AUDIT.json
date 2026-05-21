@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-05-21T12:57:00+00:00",
+  "decision": "PASS_EXACT_CASE_NAMESPACE_VALIDATE_ONLY",
+  "previous_server_name": "io.github.isometric-architect/ai-objective-index",
+  "exact_case_server_name": "io.github.Isometric-Architect/ai-objective-index",
+  "github_account_observed_by_user": "Isometric-Architect",
+  "publisher_permission_evidence": {
+    "source": "redacted mcp-publisher 403 output from prior failed publish",
+    "allowed_namespace": "io.github.Isometric-Architect/*",
+    "attempted_previous_namespace": "io.github.isometric-architect/ai-objective-index"
+  },
+  "active_files_aligned": {
+    ".mcp/server.json": true,
+    "README.md mcp-name marker": true,
+    "source_constants": true,
+    "tests": true
+  },
+  "exact_case_validate_result": "PASS_VALIDATE",
+  "publish_attempted": false,
+  "submission_performed": false,
+  "token_printed": false,
+  "claim_boundary": [
+    "MCP Registry validation is not verification",
+    "MCP Registry validation is not security certification",
+    "MCP Registry validation is not a quality guarantee",
+    "No publish should run without explicit confirmation"
+  ],
+  "next_action": "Ask for explicit publish confirmation before running mcp_registry_submit_execute --execute."
+}

@@ -11,8 +11,9 @@ MCP_DIR = Path(".mcp")
 SERVER_JSON_PATH = MCP_DIR / "server.json"
 WAVE1_DIR = Path("public_launch") / "wave1"
 DRAFT_PATH = WAVE1_DIR / "MCP_REGISTRY_SERVER_JSON_DRAFT.json"
-SERVER_NAME = "io.github.isometric-architect/ai-objective-index"
+SERVER_NAME = "io.github.Isometric-Architect/ai-objective-index"
 VERSION = "0.3.0a1"
+SERVER_SCHEMA_URL = "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json"
 
 
 def _repo_root() -> Path:
@@ -31,7 +32,7 @@ def _write_json(path: Path, payload: dict[str, Any]) -> Path:
 
 
 def namespace_is_valid(name: str) -> bool:
-    return bool(re.fullmatch(r"io\.github\.[a-z0-9][a-z0-9-]*/[a-z0-9][a-z0-9-]*", name))
+    return bool(re.fullmatch(r"io\.github\.[A-Za-z0-9][A-Za-z0-9-]*/[a-z0-9][a-z0-9-]*", name))
 
 
 def build_server_json() -> dict[str, Any]:
@@ -41,13 +42,22 @@ def build_server_json() -> dict[str, Any]:
     pyproject = (root / "pyproject.toml").read_text(encoding="utf-8") if (root / "pyproject.toml").exists() else ""
     package_script_exists = "ai-objective-index-mcp" in pyproject
     local_package_artifact_exists = any((root / "dist").glob("*.whl")) if (root / "dist").exists() else False
-    package_artifact_exists = False
+    release_audit_path = root / "public_launch/wave10_real_pypi/REAL_PYPI_RELEASE_AUDIT_RESULT.json"
+    release_audit = {}
+    if release_audit_path.exists():
+        try:
+            loaded = json.loads(release_audit_path.read_text(encoding="utf-8"))
+            release_audit = loaded if isinstance(loaded, dict) else {}
+        except json.JSONDecodeError:
+            release_audit = {}
+    package_artifact_exists = release_audit.get("decision") == "PASS_REAL_PYPI_RELEASE_VERIFIED"
     remote_endpoint_exists = False
     draft_not_submittable = not (package_artifact_exists or remote_endpoint_exists)
     payload: dict[str, Any] = {
+        "$schema": SERVER_SCHEMA_URL,
         "name": SERVER_NAME,
         "version": VERSION,
-        "description": "AI Objective Index read-only Objective-to-Capability Trust Router for source-traced capability candidates, conservative route decisions, receipt memory, and local probe-before-use overlays.",
+        "description": "Read-only Objective-to-Capability Trust Router for source-traced MCP/API candidates.",
         "repository": {
             "url": "https://github.com/Isometric-Architect/ai-objective-index",
             "source": "github",
@@ -97,7 +107,9 @@ def build_server_json() -> dict[str, Any]:
             "remote_mcp_endpoint_exists": remote_endpoint_exists,
         },
         "limitations": [
-            "Draft server metadata only unless a publishable PyPI package or remote MCP endpoint is available.",
+            "PyPI package metadata is available for registry submission, but publication remains gated by mcp-publisher, GitHub auth, and explicit confirmation."
+            if package_artifact_exists
+            else "Draft server metadata only unless a publishable PyPI package or remote MCP endpoint is available.",
             "Registry metadata candidates are not verified, not security certified, and not a quality guarantee.",
             "Probe-before-Use is local metadata and fixture checking, not a live security scanner.",
             "ExecutionReceipt memory is a local evidence sidecar, not independent verification or action authorization.",
@@ -113,7 +125,9 @@ def build_server_json() -> dict[str, Any]:
             "external_tool_execution": False,
         },
         "draft_not_submittable": draft_not_submittable,
-        "draft_reason": "No package artifact or remote MCP endpoint was found." if draft_not_submittable else "",
+        "draft_reason": "No package artifact or remote MCP endpoint was found."
+        if draft_not_submittable
+        else "Real PyPI package 0.3.0a1 is published and install-verified; MCP Registry submission remains gated by mcp-publisher, GitHub auth, and explicit confirmation.",
         "generated_at": datetime.now(UTC).isoformat(),
     }
     return payload

@@ -14,7 +14,7 @@ def _fixture(root: Path) -> None:
     (root / ".mcp" / "server.json").write_text(
         json.dumps(
             {
-                "name": "io.github.isometric-architect/ai-objective-index",
+                "name": "io.github.Isometric-Architect/ai-objective-index",
                 "version": "0.2.0",
                 "packages": [{"identifier": "ai-objective-index", "version": "0.2.0"}],
             }

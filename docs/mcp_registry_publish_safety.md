@@ -5,7 +5,7 @@ MCP Registry publication should be treated as metadata distribution, not as cert
 Safe path:
 
 1. Confirm real PyPI install verification passed.
-2. Confirm `.mcp/server.json` matches `io.github.isometric-architect/ai-objective-index`.
+2. Confirm `.mcp/server.json` matches `io.github.Isometric-Architect/ai-objective-index`.
 3. Confirm README contains the matching `mcp-name` marker.
 4. Run the manifest final audit.
 5. Install and authenticate `mcp-publisher`.

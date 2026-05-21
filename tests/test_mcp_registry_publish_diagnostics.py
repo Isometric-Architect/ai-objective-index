@@ -72,3 +72,25 @@ def test_diagnostics_classifies_latest_publish_failure(monkeypatch):
 
     assert result["publish_attempted"] is True
     assert result["classification"]["classification"] == "AUTH_REQUIRED"
+
+
+def test_diagnostics_labels_validate_only_run(monkeypatch):
+    monkeypatch.setattr(diagnostics, "find_mcp_publisher", lambda: "tools/mcp-publisher/mcp-publisher.exe")
+    monkeypatch.setattr(
+        diagnostics,
+        "_run_publisher_command",
+        lambda command, timeout=180: {
+            "ok": True,
+            "returncode": 0,
+            "stdout": "valid",
+            "stderr": "",
+            "command_redacted": " ".join(command),
+            "token_printed": False,
+        },
+    )
+    monkeypatch.setattr(diagnostics, "_read_json", lambda path: {"execute": False, "result_token": "DRY_RUN_ONLY"})
+
+    result = diagnostics.run_mcp_registry_publish_diagnostics(write_result=False)
+
+    assert result["publish_attempted"] is False
+    assert result["classification"]["classification"] == "VALIDATE_PASS_NO_PUBLISH"

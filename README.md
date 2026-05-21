@@ -1,5 +1,5 @@
 # AI Objective Index
-<!-- mcp-name: io.github.isometric-architect/ai-objective-index -->
+<!-- mcp-name: io.github.Isometric-Architect/ai-objective-index -->
 
 AI Objective Index (AOI) is a read-only MCP/API data contract and vNext AI Agent Capability Trust Router for routing explicit objectives to source-traced capability candidates with constraints, missing fields, route decisions, local receipt memory, and local metadata probes.
 

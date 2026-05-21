@@ -72,7 +72,7 @@ Package 8P does not upload to PyPI.
 2. Confirm README contains:
 
 ```html
-<!-- mcp-name: io.github.isometric-architect/ai-objective-index -->
+<!-- mcp-name: io.github.Isometric-Architect/ai-objective-index -->
 ```
 
 3. Confirm `.mcp/server.json` uses `registryType: pypi`.

@@ -61,7 +61,7 @@ def _server_json() -> dict[str, Any]:
 
 
 def _server_name_valid(name: str) -> bool:
-    return bool(re.fullmatch(r"io\.github\.[a-z0-9][a-z0-9-]*/[a-z0-9][a-z0-9-]*", name))
+    return bool(re.fullmatch(r"io\.github\.[A-Za-z0-9][A-Za-z0-9-]*/[a-z0-9][a-z0-9-]*", name))
 
 
 def run_mcp_registry_publish_readiness(

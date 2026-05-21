@@ -1,6 +1,6 @@
 # Package 8R-B MCP Registry Submit Summary
 
-- Server name: `io.github.isometric-architect/ai-objective-index`
+- Server name: `io.github.Isometric-Architect/ai-objective-index`
 - Package: `ai-objective-index==0.3.0a1`
 - Registry status: `HOLD_PUBLISH_NOT_CONFIRMED`
 - Submission performed: false

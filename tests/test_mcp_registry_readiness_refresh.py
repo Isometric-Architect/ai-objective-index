@@ -6,7 +6,7 @@ def test_mcp_registry_readiness_holds_before_pypi(monkeypatch):
         name = str(path)
         if name.endswith("server.json"):
             return {
-                "name": "io.github.isometric-architect/ai-objective-index",
+                "name": "io.github.Isometric-Architect/ai-objective-index",
                 "version": "0.3.0a1",
                 "packages": [{"registryType": "pypi", "identifier": "ai-objective-index", "version": "0.3.0a1"}],
             }
@@ -17,7 +17,7 @@ def test_mcp_registry_readiness_holds_before_pypi(monkeypatch):
         return {}
 
     monkeypatch.setattr(mcp_registry_readiness_refresh, "_read_json", fake_read_json)
-    monkeypatch.setattr(mcp_registry_readiness_refresh, "_read", lambda path: "<!-- mcp-name: io.github.isometric-architect/ai-objective-index -->")
+    monkeypatch.setattr(mcp_registry_readiness_refresh, "_read", lambda path: "<!-- mcp-name: io.github.Isometric-Architect/ai-objective-index -->")
     result = mcp_registry_readiness_refresh.run_mcp_registry_readiness_refresh(write_result=False)
 
     assert result["decision"] == "HOLD_TESTPYPI_FIRST"
@@ -29,14 +29,14 @@ def test_mcp_registry_readiness_blocks_version_mismatch(monkeypatch):
         mcp_registry_readiness_refresh,
         "_read_json",
         lambda path: {
-            "name": "io.github.isometric-architect/ai-objective-index",
+            "name": "io.github.Isometric-Architect/ai-objective-index",
             "version": "0.2.0",
             "packages": [{"registryType": "pypi", "identifier": "ai-objective-index", "version": "0.2.0"}],
         }
         if str(path).endswith("server.json")
         else {},
     )
-    monkeypatch.setattr(mcp_registry_readiness_refresh, "_read", lambda path: "<!-- mcp-name: io.github.isometric-architect/ai-objective-index -->")
+    monkeypatch.setattr(mcp_registry_readiness_refresh, "_read", lambda path: "<!-- mcp-name: io.github.Isometric-Architect/ai-objective-index -->")
     result = mcp_registry_readiness_refresh.run_mcp_registry_readiness_refresh(write_result=False)
 
     assert result["decision"] == "BLOCK_VERSION_MISMATCH"

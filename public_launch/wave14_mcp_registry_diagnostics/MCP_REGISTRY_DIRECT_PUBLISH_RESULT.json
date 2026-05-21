@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-21T12:37:46.138236+00:00",
-  "dry_run": true,
-  "execute": false,
-  "env_confirm_present": false,
+  "generated_at": "2026-05-21T12:46:50.181532+00:00",
+  "dry_run": false,
+  "execute": true,
+  "env_confirm_present": true,
   "mcp_publisher_path": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\tools\\mcp-publisher\\mcp-publisher.exe",
   "validate_decision": "PASS_VALIDATE",
   "validate_ok": true,
@@ -10,14 +10,21 @@
   "auth_decision": "PASS_AUTH_ASSUMED_FROM_DIRECT_LOGIN",
   "auth_override_reason": "preflight_pass",
   "command_redacted": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\tools\\mcp-publisher\\mcp-publisher.exe publish .mcp/server.json",
-  "publish_attempted": false,
+  "publish_attempted": true,
   "submission_performed": false,
-  "publish_result": {},
-  "result_token": "DRY_RUN_ONLY",
-  "failure_classification": "DRY_RUN_ONLY",
+  "publish_result": {
+    "ok": false,
+    "returncode": 1,
+    "stdout": "Publishing to https://registry.modelcontextprotocol.io...\n",
+    "stderr": "Error: publish failed: server returned status 403: {\"title\":\"Forbidden\",\"status\":403,\"detail\":\"You do not have permission to publish this server. You have permission to publish: io.github.Isometric-Architect/*. Attempting to publish: io.github.isometric-architect/ai-objective-index. If you're trying to publish to a GitHub organization, you may need to make your organization membership public in your GitHub settings: https://docs.github.com/en/account-and-profile/how-tos/organization-membership/publicizing-or-hiding-organization-membership\"}\n\n",
+    "command_redacted": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\tools\\mcp-publisher\\mcp-publisher.exe publish .mcp/server.json",
+    "token_printed": false
+  },
+  "result_token": "BLOCK_PUBLISH_FAILED",
+  "failure_classification": "AUTH_REQUIRED",
   "token_printed": false,
-  "errors": [],
-  "warnings": [
-    "Dry-run only; direct publish was not attempted."
-  ]
+  "errors": [
+    "mcp-publisher publish failed."
+  ],
+  "warnings": []
 }

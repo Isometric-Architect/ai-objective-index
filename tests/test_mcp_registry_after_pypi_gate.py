@@ -3,7 +3,7 @@ from ai_objective_index import mcp_registry_after_pypi_gate
 
 def _server(version="0.3.0a1"):
     return {
-        "name": "io.github.isometric-architect/ai-objective-index",
+        "name": "io.github.Isometric-Architect/ai-objective-index",
         "version": version,
         "packages": [{"registryType": "pypi", "identifier": "ai-objective-index", "version": version}],
     }
@@ -21,7 +21,7 @@ def test_mcp_registry_after_pypi_gate_success_or_publisher_hold(monkeypatch):
         return {}
 
     monkeypatch.setattr(mcp_registry_after_pypi_gate, "_read_json", fake_read_json)
-    monkeypatch.setattr(mcp_registry_after_pypi_gate, "_read", lambda path: "<!-- mcp-name: io.github.isometric-architect/ai-objective-index -->")
+    monkeypatch.setattr(mcp_registry_after_pypi_gate, "_read", lambda path: "<!-- mcp-name: io.github.Isometric-Architect/ai-objective-index -->")
     monkeypatch.setattr(mcp_registry_after_pypi_gate, "tracked_token_findings", lambda: [])
     monkeypatch.setattr(mcp_registry_after_pypi_gate, "_claim_guard_passed", lambda: True)
     monkeypatch.setattr(mcp_registry_after_pypi_gate.shutil, "which", lambda name: None)
@@ -44,7 +44,7 @@ def test_mcp_registry_after_pypi_gate_missing_install_holds(monkeypatch):
         return {}
 
     monkeypatch.setattr(mcp_registry_after_pypi_gate, "_read_json", fake_read_json)
-    monkeypatch.setattr(mcp_registry_after_pypi_gate, "_read", lambda path: "<!-- mcp-name: io.github.isometric-architect/ai-objective-index -->")
+    monkeypatch.setattr(mcp_registry_after_pypi_gate, "_read", lambda path: "<!-- mcp-name: io.github.Isometric-Architect/ai-objective-index -->")
     monkeypatch.setattr(mcp_registry_after_pypi_gate, "tracked_token_findings", lambda: [])
     monkeypatch.setattr(mcp_registry_after_pypi_gate, "_claim_guard_passed", lambda: True)
 
@@ -56,7 +56,7 @@ def test_mcp_registry_after_pypi_gate_missing_install_holds(monkeypatch):
 def test_mcp_registry_after_pypi_gate_metadata_mismatch_blocks(monkeypatch):
     monkeypatch.setattr(mcp_registry_after_pypi_gate, "_read_json", lambda path: {"result_token": "UPLOAD_SUCCESS", "decision": "PASS_REAL_PYPI_INSTALL"})
     monkeypatch.setattr(mcp_registry_after_pypi_gate, "_read_server_json", lambda: _server("0.2.0"))
-    monkeypatch.setattr(mcp_registry_after_pypi_gate, "_read", lambda path: "<!-- mcp-name: io.github.isometric-architect/ai-objective-index -->")
+    monkeypatch.setattr(mcp_registry_after_pypi_gate, "_read", lambda path: "<!-- mcp-name: io.github.Isometric-Architect/ai-objective-index -->")
     monkeypatch.setattr(mcp_registry_after_pypi_gate, "tracked_token_findings", lambda: [])
     monkeypatch.setattr(mcp_registry_after_pypi_gate, "_claim_guard_passed", lambda: True)
 

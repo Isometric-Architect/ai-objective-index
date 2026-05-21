@@ -10,7 +10,7 @@ from typing import Any
 
 WAVE2_DIR = Path("public_launch") / "wave2"
 OUTPUT_PATH = WAVE2_DIR / "PACKAGE_METADATA_AUDIT_RESULT.json"
-MCP_NAME = "io.github.isometric-architect/ai-objective-index"
+MCP_NAME = "io.github.Isometric-Architect/ai-objective-index"
 MCP_MARKER = f"<!-- mcp-name: {MCP_NAME} -->"
 RECOMMENDED_VERSION = "0.3.0a1"
 

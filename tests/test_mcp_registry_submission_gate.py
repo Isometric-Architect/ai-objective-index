@@ -23,7 +23,7 @@ def test_mcp_registry_submission_gate_execute_requires_env():
 
 def test_mcp_registry_submission_gate_pass_mocked_submit():
     server_json = {
-        "name": "io.github.isometric-architect/ai-objective-index",
+        "name": "io.github.Isometric-Architect/ai-objective-index",
         "draft_not_submittable": False,
         "entrypoints": {"stdio_entrypoint_exists": True},
         "artifacts": {"python_package_artifact_exists": True, "remote_mcp_endpoint_exists": False},

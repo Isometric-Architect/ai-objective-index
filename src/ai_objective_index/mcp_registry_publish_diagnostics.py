@@ -117,6 +117,8 @@ def validate_server_json(publisher: str | None = None, write_result: bool = True
 
 
 def _recovery_steps(classification: str) -> list[str]:
+    if classification == "VALIDATE_PASS_NO_PUBLISH":
+        return ["No recovery is required for validation.", "Ask for explicit publish confirmation before running submit."]
     if classification == "AUTH_REQUIRED":
         return ["Rerun local GitHub login with tools/mcp-publisher/mcp-publisher.exe login github.", "Rerun diagnostics before publishing."]
     if classification == "NAMESPACE_MISMATCH":
@@ -179,6 +181,16 @@ def run_mcp_registry_publish_diagnostics(write_result: bool = True) -> dict[str,
             returncode=publish_result.get("returncode"),
             validate_ok=validate_result.get("validate_ok"),
         )
+    elif validate_result.get("validate_ok"):
+        classification = {
+            "generated_at": datetime.now(UTC).isoformat(),
+            "classification": "VALIDATE_PASS_NO_PUBLISH",
+            "returncode": (validate_result.get("validate_result") or {}).get("returncode"),
+            "validate_ok": True,
+            "matched_patterns": ["validate_ok and publish_attempted == false"],
+            "token_printed": False,
+            "token_like_detected_before_redaction": False,
+        }
     else:
         classification = classify_publish_failure(
             stdout=(validate_result.get("validate_result") or {}).get("stdout"),

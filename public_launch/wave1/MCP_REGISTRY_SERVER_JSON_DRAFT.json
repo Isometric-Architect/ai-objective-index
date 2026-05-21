@@ -1,21 +1,46 @@
 {
-  "name": "io.github.isometric-architect/ai-objective-index",
-  "version": "0.2.0-public-beta",
-  "description": "AI Objective Index read-only MCP server for objective-based ranking and comparison of AI tools and MCP servers with source traces.",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Isometric-Architect/ai-objective-index",
+  "version": "0.3.0a1",
+  "description": "Read-only Objective-to-Capability Trust Router for source-traced MCP/API candidates.",
   "repository": {
     "url": "https://github.com/Isometric-Architect/ai-objective-index",
     "source": "github"
   },
   "read_only": true,
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "ai-objective-index",
+      "version": "0.3.0a1",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ],
   "tools_summary": [
     "search",
     "fetch",
     "search_objectives",
+    "rank_options",
     "compare_tools",
     "explain_score",
     "get_source_trace",
     "list_missing_fields",
-    "generate_decision_receipt"
+    "generate_decision_receipt",
+    "route_objective",
+    "get_capability_trust",
+    "explain_route_decision",
+    "submit_execution_receipt",
+    "get_execution_receipt",
+    "list_capability_receipts",
+    "get_capability_receipt_memory",
+    "route_objective_with_receipts",
+    "plan_probe_before_use",
+    "run_local_probe_plan",
+    "get_probe_receipt",
+    "get_capability_probe_memory",
+    "route_objective_with_probes"
   ],
   "entrypoints": {
     "python_module": "ai_objective_index.mcp_stdio_entrypoint",
@@ -24,15 +49,27 @@
   },
   "artifacts": {
     "manifest_exists": true,
-    "python_package_artifact_exists": false,
+    "python_package_artifact_exists": true,
+    "local_python_package_artifact_exists": true,
     "remote_mcp_endpoint_exists": false
   },
   "limitations": [
-    "Draft server metadata only unless a publishable package artifact or remote MCP endpoint is available.",
+    "PyPI package metadata is available for registry submission, but publication remains gated by mcp-publisher, GitHub auth, and explicit confirmation.",
     "Registry metadata candidates are not verified, not security certified, and not a quality guarantee.",
+    "Probe-before-Use is local metadata and fixture checking, not a live security scanner.",
+    "ExecutionReceipt memory is a local evidence sidecar, not independent verification or action authorization.",
     "AOI is read-only and does not perform payment, booking, login, email, form submission, purchase, contract signing, account connection, supplier claim, or supplier verification."
   ],
-  "draft_not_submittable": true,
-  "draft_reason": "No package artifact or remote MCP endpoint was found.",
-  "generated_at": "2026-05-20T01:55:11.156935+00:00"
+  "vnext_surfaces": {
+    "capability_trust": true,
+    "objective_router": true,
+    "execution_receipt_memory": true,
+    "local_probe_before_use": true,
+    "external_action_authorization": false,
+    "live_mcp_calls": false,
+    "external_tool_execution": false
+  },
+  "draft_not_submittable": false,
+  "draft_reason": "Real PyPI package 0.3.0a1 is published and install-verified; MCP Registry submission remains gated by mcp-publisher, GitHub auth, and explicit confirmation.",
+  "generated_at": "2026-05-21T13:03:01.169224+00:00"
 }

@@ -184,4 +184,16 @@ For v0.2 real-data public beta, also do not claim verified MCP servers, safe MCP
 146. Do not submit MCP Registry metadata in Package 8Q-C-alt.
 147. Do not paste tokens into chat, create `.pypirc`, post to communities, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
 
-These links are public after Package 8K. Community posting, GitHub Release creation, and MCP Registry submission remain HOLD. `public_beta_mcp` records are source-traced registry metadata candidates; they are not verified, not safe/certified, not security certified, not a quality guarantee, and not purchasing advice.
+## Package 8R MCP Registry Publish Gate
+
+148. Run `python -m ai_objective_index.mcp_publisher_setup --check`.
+149. Run `python -m ai_objective_index.mcp_registry_manifest_final_audit`.
+150. Run `python -m ai_objective_index.mcp_registry_publish_runner --dry-run`.
+151. If `mcp-publisher` is missing, install it from the official modelcontextprotocol/registry release source and rerun the setup check.
+152. Run `python -m ai_objective_index.mcp_registry_publish_runner --login` only after `mcp-publisher` is available.
+153. Do not run `--execute` unless the manifest audit passes, GitHub auth works, and `$env:AOI_MCP_REGISTRY_SUBMIT_CONFIRM="YES"` is set.
+154. After any publish attempt, run `python -m ai_objective_index.mcp_registry_post_publish_verify`.
+155. Run `python -m ai_objective_index.mcp_registry_release_audit`.
+156. Registry publication is not verification, security certification, quality guarantee, product readiness, purchasing advice, or action authorization.
+
+These links are public after Package 8K. The GitHub prerelease and real PyPI package exist; community posting and MCP Registry submission remain gated/HOLD. `public_beta_mcp` records are source-traced registry metadata candidates; they are not verified, not safe/certified, not security certified, not a quality guarantee, and not purchasing advice.

@@ -41,3 +41,17 @@ python -m ai_objective_index.mcp_registry_after_pypi_gate
 ```
 
 Do not submit to MCP Registry from Package 8Q-C-alt.
+
+## Package 8R Publisher Gate
+
+Package 8R starts from the verified real PyPI package and audits `.mcp/server.json` as a final `registryType: pypi` manifest. The expected server name is `io.github.isometric-architect/ai-objective-index`, and the package identifier/version are `ai-objective-index` / `0.3.0a1`.
+
+Run:
+
+```powershell
+python -m ai_objective_index.mcp_publisher_setup --check
+python -m ai_objective_index.mcp_registry_manifest_final_audit
+python -m ai_objective_index.mcp_registry_publish_runner --dry-run
+```
+
+Do not publish unless `mcp-publisher` is available, GitHub auth is complete, the manifest audit passes, and `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES` is set.

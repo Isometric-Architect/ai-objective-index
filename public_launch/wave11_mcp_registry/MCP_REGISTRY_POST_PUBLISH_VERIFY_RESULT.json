@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-05-21T08:03:28.641936+00:00",
+  "decision": "HOLD_REGISTRY_VERIFY_NOT_CHECKED",
+  "server_name": "io.github.isometric-architect/ai-objective-index",
+  "registry_search_url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.isometric-architect/ai-objective-index",
+  "registry_entry_found": false,
+  "checked": false,
+  "status_code": null,
+  "error": "<urlopen error [WinError 10054] 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다>",
+  "body_excerpt": "",
+  "mcp_registry_submission_performed": false,
+  "token_printed": false,
+  "errors": [],
+  "warnings": [
+    "MCP Registry search could not be checked."
+  ]
+}

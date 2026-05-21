@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-05-21T08:03:42.248611+00:00",
+  "decision": "HOLD_PUBLISH_NOT_CONFIRMED",
+  "publish_result_token": "HOLD_LOGIN_REQUIRED",
+  "submission_performed": false,
+  "post_publish_verify_decision": "HOLD_REGISTRY_VERIFY_NOT_CHECKED",
+  "manifest_audit_decision": "PASS_MANIFEST_READY",
+  "pypi_release_audit_decision": "PASS_REAL_PYPI_RELEASE_VERIFIED",
+  "token_like_tracked_findings": [],
+  "mcp_registry_submission_performed": false,
+  "token_printed": false,
+  "errors": [],
+  "warnings": [
+    "MCP Registry publish has not been confirmed."
+  ]
+}

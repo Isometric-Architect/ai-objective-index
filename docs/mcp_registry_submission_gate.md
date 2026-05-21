@@ -37,3 +37,14 @@ Package 9F adds a vNext distribution gate. MCP Registry submission remains pause
 Package 8Q-A resumed chooses `0.3.0a1` for the local build candidate and refreshes Registry readiness, but does not submit anything.
 
 Package 8Q-C-alt may upload and verify the `0.3.0a1` package on real PyPI because TestPyPI signup is blocked. MCP Registry submission still remains HOLD until `mcp_registry_after_pypi_gate` passes, `mcp-publisher` and registry auth are available, and a later package sets explicit `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES`.
+
+## Package 8R
+
+Package 8R adds the concrete publisher gate:
+
+- `mcp_publisher_setup` checks for `mcp-publisher`.
+- `mcp_registry_manifest_final_audit` validates `.mcp/server.json` against the real PyPI package and README marker.
+- `mcp_registry_publish_runner --dry-run` records the planned publish command without submitting.
+- `mcp_registry_publish_runner --execute` refuses unless `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES` is set.
+
+Publication, if later completed, is a metadata listing only. It does not certify security, verify quality, establish product readiness, provide purchasing advice, or authorize actions.

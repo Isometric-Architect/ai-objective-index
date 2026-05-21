@@ -1,5 +1,11 @@
 # Changelog
 
+## Package 8R
+
+- Added MCP Registry publisher setup, manifest final audit, dry-run/login/execute runner, post-publish verification, and release audit.
+- Aligned `.mcp/server.json` with the verified real PyPI `0.3.0a1` package while keeping submission gated by `mcp-publisher`, GitHub auth, and `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES`.
+- Preserved boundaries: no Registry submission by default, no new PyPI upload, no community posting, no tokens printed/stored/committed, and no verification, safety, security-certification, quality-guarantee, product-readiness, purchasing-advice, or action-authorization claim.
+
 ## Package 8Q-C-alt
 
 - Added a real PyPI direct upload gate for `0.3.0a1` because TestPyPI signup is blocked for the owner.

@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-05-21T08:02:35.804913+00:00",
+  "mode": "dry-run",
+  "dry_run": true,
+  "login": false,
+  "execute": false,
+  "submission_performed": false,
+  "command_redacted": "mcp-publisher publish .mcp/server.json",
+  "login_command_redacted": "mcp-publisher login github",
+  "token_printed": false,
+  "errors": [],
+  "warnings": [
+    "mcp-publisher is missing; install and login before execute."
+  ],
+  "mcp_publisher_setup_decision": "HOLD_MCP_PUBLISHER_MISSING",
+  "manifest_audit_decision": "PASS_MANIFEST_READY",
+  "mcp_publisher_available": false,
+  "env_confirm_present": false,
+  "result_token": "HOLD_LOGIN_REQUIRED"
+}

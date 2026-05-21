@@ -48,12 +48,12 @@
   },
   "artifacts": {
     "manifest_exists": true,
-    "python_package_artifact_exists": false,
+    "python_package_artifact_exists": true,
     "local_python_package_artifact_exists": true,
     "remote_mcp_endpoint_exists": false
   },
   "limitations": [
-    "Draft server metadata only unless a publishable PyPI package or remote MCP endpoint is available.",
+    "PyPI package metadata is available for registry submission, but publication remains gated by mcp-publisher, GitHub auth, and explicit confirmation.",
     "Registry metadata candidates are not verified, not security certified, and not a quality guarantee.",
     "Probe-before-Use is local metadata and fixture checking, not a live security scanner.",
     "ExecutionReceipt memory is a local evidence sidecar, not independent verification or action authorization.",
@@ -68,7 +68,7 @@
     "live_mcp_calls": false,
     "external_tool_execution": false
   },
-  "draft_not_submittable": true,
-  "draft_reason": "No package artifact or remote MCP endpoint was found.",
-  "generated_at": "2026-05-21T02:58:41.226117+00:00"
+  "draft_not_submittable": false,
+  "draft_reason": "Real PyPI package 0.3.0a1 is published and install-verified; MCP Registry submission remains gated by mcp-publisher, GitHub auth, and explicit confirmation.",
+  "generated_at": "2026-05-21T08:01:03.121611+00:00"
 }

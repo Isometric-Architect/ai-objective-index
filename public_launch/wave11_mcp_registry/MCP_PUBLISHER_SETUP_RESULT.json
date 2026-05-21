@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-05-21T08:02:42.403873+00:00",
+  "mode": "check",
+  "decision": "HOLD_MCP_PUBLISHER_MISSING",
+  "mcp_publisher_available": false,
+  "mcp_publisher_path": "",
+  "help_result": {},
+  "download_attempted": false,
+  "download_performed": false,
+  "token_printed": false,
+  "instructions": [
+    "Install mcp-publisher from the official modelcontextprotocol/registry GitHub releases.",
+    "Put the binary on PATH as mcp-publisher or run from its installed directory.",
+    "Run: python -m ai_objective_index.mcp_publisher_setup --check",
+    "Then run: python -m ai_objective_index.mcp_registry_publish_runner --login",
+    "Do not paste GitHub tokens into chat and do not commit credentials."
+  ],
+  "errors": [],
+  "warnings": [
+    "mcp-publisher is not available on PATH."
+  ]
+}

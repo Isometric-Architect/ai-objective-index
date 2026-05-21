@@ -753,6 +753,18 @@ python -m ai_objective_index.real_pypi_upload_runner --dry-run
 
 If the gate passes, the owner can run `python -m ai_objective_index.real_pypi_upload_runner --execute` with `AOI_REAL_PYPI_UPLOAD_CONFIRM=YES` and enter the PyPI token only into twine's local prompt. This package does not use TestPyPI, submit MCP Registry metadata, post to communities, create `.pypirc`, print/store tokens, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
 
+### Package 8R MCP Registry Publish Gate
+
+Package 8R prepares the Official MCP Registry path after real PyPI install verification. It validates `.mcp/server.json`, checks `mcp-publisher`, writes a dry-run result, and records post-publish audit helpers:
+
+```powershell
+python -m ai_objective_index.mcp_publisher_setup --check
+python -m ai_objective_index.mcp_registry_manifest_final_audit
+python -m ai_objective_index.mcp_registry_publish_runner --dry-run
+```
+
+Actual registry submission remains gated by `mcp-publisher` availability, GitHub authentication, a passing manifest audit, and `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES`. Registry publication is a metadata listing only; it is not verification, security certification, a quality guarantee, product-readiness evidence, purchasing advice, or action authorization.
+
 ## Package 9A AOI vNext Alignment
 
 Package 9A pauses the PyPI/MCP Registry publishing path long enough to align AOI vNext around the positioning:
@@ -927,6 +939,9 @@ AOI output is not a quality guarantee. It is not legal, financial, medical, purc
 - `docs/package_8p_mcp_registry_pypi_readiness.md`: PyPI/MCP Registry readiness commands.
 - `docs/pypi_publish_readiness.md`: local build and token-safe PyPI readiness.
 - `docs/mcp_registry_pypi_path.md`: `registryType: pypi` path and README marker.
+- `docs/package_8r_mcp_registry_publish.md`: MCP Registry publisher setup, dry-run, and optional submit gate.
+- `docs/mcp_registry_publish_safety.md`: Registry token and claim-boundary safety.
+- `docs/mcp_registry_after_publish.md`: Post-publish verification and monitoring.
 - `docs/community_manual_post_queue.md`: manual community feedback queue.
 - `docs/package_8q_a_local_build_and_twine_check.md`: local build/twine check workflow.
 - `docs/pypi_beginner_next_steps.md`: beginner TestPyPI/PyPI account and token steps.
@@ -965,4 +980,5 @@ AOI output is not a quality guarantee. It is not legal, financial, medical, purc
 - GitHub repository: https://github.com/Isometric-Architect/ai-objective-index
 - Hugging Face Space: https://huggingface.co/spaces/edict-lab/ai-objective-index-demo
 - Hugging Face Dataset: https://huggingface.co/datasets/edict-lab/ai-objective-index-sample
-- Current status: public visibility is switched on; community posting, GitHub Release creation, and MCP Registry submission are still HOLD.
+- PyPI package: https://pypi.org/project/ai-objective-index/0.3.0a1/
+- Current status: public visibility, GitHub prerelease, and PyPI package are live; community posting and MCP Registry submission are still gated/HOLD.

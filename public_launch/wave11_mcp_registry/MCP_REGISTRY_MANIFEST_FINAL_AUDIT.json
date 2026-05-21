@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-05-21T08:02:37.003866+00:00",
+  "decision": "PASS_MANIFEST_READY",
+  "server_name": "io.github.isometric-architect/ai-objective-index",
+  "server_version": "0.3.0a1",
+  "package": {
+    "registryType": "pypi",
+    "identifier": "ai-objective-index",
+    "version": "0.3.0a1",
+    "transport": {
+      "type": "stdio"
+    }
+  },
+  "repository_url": "https://github.com/Isometric-Architect/ai-objective-index",
+  "pypi_project_url": "https://pypi.org/project/ai-objective-index/0.3.0a1/",
+  "checks": {
+    "server_json_exists": true,
+    "server_name_matches": true,
+    "server_version_matches": true,
+    "registry_type_pypi": true,
+    "package_identifier_matches": true,
+    "package_version_matches": true,
+    "transport_stdio": true,
+    "repository_public_url_matches": true,
+    "readme_marker_matches": true,
+    "pypi_release_verified": true,
+    "draft_not_submittable_false": true
+  },
+  "overclaim_findings": [],
+  "token_like_tracked_findings": [],
+  "mcp_registry_submission_performed": false,
+  "token_printed": false,
+  "errors": [],
+  "warnings": []
+}

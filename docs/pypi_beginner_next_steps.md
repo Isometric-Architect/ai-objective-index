@@ -19,4 +19,4 @@ PyPI is where Python packages are published. TestPyPI is the practice version. U
 
 TestPyPI and PyPI are separate accounts. A token may only be shown once. Keep it private.
 
-Package 8Q-A does not upload anything.
+Package 8Q-A resumed does not upload anything. A PyPI/TestPyPI token is not needed until a later explicit upload package.

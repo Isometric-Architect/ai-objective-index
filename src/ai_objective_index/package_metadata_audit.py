@@ -12,7 +12,7 @@ WAVE2_DIR = Path("public_launch") / "wave2"
 OUTPUT_PATH = WAVE2_DIR / "PACKAGE_METADATA_AUDIT_RESULT.json"
 MCP_NAME = "io.github.isometric-architect/ai-objective-index"
 MCP_MARKER = f"<!-- mcp-name: {MCP_NAME} -->"
-RECOMMENDED_VERSION = "0.2.0"
+RECOMMENDED_VERSION = "0.3.0a1"
 
 PEP440_SIMPLE = re.compile(r"^[0-9]+(?:\.[0-9]+)*(?:(?:a|b|rc)[0-9]+)?(?:\.post[0-9]+)?(?:\.dev[0-9]+)?$")
 TOKEN_PATTERNS = [

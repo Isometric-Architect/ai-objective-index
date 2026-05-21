@@ -12,7 +12,7 @@ def test_package_metadata_audit_detects_marker_and_version():
 
     assert result["checks"]["readme_mcp_marker"] is True
     assert result["checks"]["version_pep440"] is True
-    assert result["version"] == "0.2.0"
+    assert result["version"] in {"0.2.0", "0.3.0a1"}
 
 
 def test_package_metadata_helpers_detect_missing_marker_and_tokens():
@@ -20,3 +20,4 @@ def test_package_metadata_helpers_detect_missing_marker_and_tokens():
     assert not readme_has_mcp_marker("# README")
     assert find_token_like_strings("token = ghp_abc123")
     assert version_is_pep440("0.2.0")
+    assert version_is_pep440("0.3.0a1")

@@ -12,7 +12,7 @@ SERVER_JSON_PATH = MCP_DIR / "server.json"
 WAVE1_DIR = Path("public_launch") / "wave1"
 DRAFT_PATH = WAVE1_DIR / "MCP_REGISTRY_SERVER_JSON_DRAFT.json"
 SERVER_NAME = "io.github.isometric-architect/ai-objective-index"
-VERSION = "0.2.0"
+VERSION = "0.3.0a1"
 
 
 def _repo_root() -> Path:

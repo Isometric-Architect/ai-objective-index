@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-05-21T02:59:16.276637+00:00",
+  "decision": "HOLD_TESTPYPI_FIRST",
+  "server_name": "io.github.isometric-architect/ai-objective-index",
+  "server_version": "0.3.0a1",
+  "registry_type": "pypi",
+  "identifier": "ai-objective-index",
+  "package_version": "0.3.0a1",
+  "readme_marker_matches": true,
+  "package_build_decision": "PASS_BUILD_READY",
+  "pypi_readiness_decision": "HOLD_TESTPYPI_ACCOUNT_REQUIRED",
+  "testpypi_upload_performed": false,
+  "pypi_upload_performed": false,
+  "mcp_registry_submission_performed": false,
+  "token_printed": false,
+  "errors": [],
+  "warnings": [
+    "Run TestPyPI upload and install verification before PyPI/MCP Registry submission."
+  ]
+}

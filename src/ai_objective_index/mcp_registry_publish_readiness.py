@@ -46,7 +46,7 @@ def _read(path: str) -> str:
 
 def _dist_exists() -> bool:
     dist = _repo_root() / "dist"
-    return dist.exists() and any(dist.glob("ai_objective_index-0.2.0*"))
+    return dist.exists() and any(dist.glob("ai_objective_index-*.whl"))
 
 
 def _pypi_uploaded_known() -> bool:

@@ -5,14 +5,16 @@ import json
 import os
 import subprocess
 import sys
+import tomllib
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any, Callable
 
 
-WAVE3_DIR = Path("public_launch") / "wave3"
-DIST_RESULT_PATH = WAVE3_DIR / "DIST_BUILD_RESULT.json"
-TWINE_RESULT_PATH = WAVE3_DIR / "TWINE_CHECK_RESULT.json"
+TARGET_VERSION = "0.3.0a1"
+WAVE9_DIR = Path("public_launch") / "wave9"
+DIST_RESULT_PATH = WAVE9_DIR / "DIST_BUILD_RESULT.json"
+TWINE_RESULT_PATH = WAVE9_DIR / "TWINE_CHECK_RESULT.json"
 
 
 def _repo_root() -> Path:
@@ -70,6 +72,16 @@ def _module_available(name: str) -> bool:
     return importlib.util.find_spec(name) is not None
 
 
+def _current_version() -> str:
+    path = _repo_root() / "pyproject.toml"
+    if not path.exists():
+        return ""
+    with path.open("rb") as handle:
+        payload = tomllib.load(handle)
+    project = payload.get("project", {}) if isinstance(payload, dict) else {}
+    return str(project.get("version") or "") if isinstance(project, dict) else ""
+
+
 def _dist_files() -> list[dict[str, Any]]:
     dist = _repo_root() / "dist"
     if not dist.exists():
@@ -98,17 +110,22 @@ def run_dist_build(
 ) -> dict[str, Any]:
     build_available = _module_available("build")
     twine_available = _module_available("twine")
-    removed = _remove_old_aoi_dist_artifacts() if clean_old else []
+    current_version = _current_version()
+    removed: list[str] = []
     errors: list[str] = []
     warnings: list[str] = []
     build_result: dict[str, Any] = {"ok": False, "skipped": True}
     twine_result: dict[str, Any] = {"ok": False, "status": "NOT_CHECKED"}
     dist_files: list[dict[str, Any]] = []
 
-    if not build_available:
+    if current_version != TARGET_VERSION:
+        decision = "BLOCK_VERSION_MISMATCH"
+        errors.append(f"Expected package version {TARGET_VERSION}, found {current_version or 'missing'}.")
+    elif not build_available:
         decision = "HOLD_BUILD_TOOL_MISSING"
         warnings.append("Python build module is unavailable.")
     else:
+        removed = _remove_old_aoi_dist_artifacts() if clean_old else []
         build_result = runner([sys.executable, "-m", "build", "--sdist", "--wheel", "--no-isolation"], 600)
         dist_files = _dist_files()
         wheel_count = sum(1 for item in dist_files if item["path"].endswith(".whl"))
@@ -130,6 +147,8 @@ def run_dist_build(
     result = {
         "generated_at": datetime.now(UTC).isoformat(),
         "decision": decision,
+        "target_version": TARGET_VERSION,
+        "current_version": current_version,
         "build_available": build_available,
         "twine_available": twine_available,
         "old_aoi_dist_artifacts_removed": removed,
@@ -144,7 +163,11 @@ def run_dist_build(
     }
     twine_payload = {
         "generated_at": result["generated_at"],
-        "decision": "PASS_TWINE_CHECK" if twine_result.get("ok") else ("HOLD_TWINE_MISSING" if not twine_available else "BLOCK_TWINE_CHECK_FAILED"),
+        "decision": (
+            "PASS_TWINE_CHECK"
+            if twine_result.get("ok")
+            else ("NOT_CHECKED_VERSION_MISMATCH" if decision == "BLOCK_VERSION_MISMATCH" else ("HOLD_TWINE_MISSING" if not twine_available else "BLOCK_TWINE_CHECK_FAILED"))
+        ),
         "twine_available": twine_available,
         "twine_result": twine_result,
         "dist_files_checked": dist_files if twine_result.get("ok") else [],

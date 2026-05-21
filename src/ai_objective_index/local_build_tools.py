@@ -10,8 +10,8 @@ from pathlib import Path
 from typing import Any, Callable
 
 
-WAVE3_DIR = Path("public_launch") / "wave3"
-OUTPUT_PATH = WAVE3_DIR / "LOCAL_BUILD_TOOLS_RESULT.json"
+WAVE9_DIR = Path("public_launch") / "wave9"
+OUTPUT_PATH = WAVE9_DIR / "LOCAL_BUILD_TOOLS_RESULT.json"
 
 
 def _repo_root() -> Path:
@@ -75,7 +75,7 @@ def run_local_build_tools(
     warnings: list[str] = []
 
     if install:
-        install_result = runner([sys.executable, "-m", "pip", "install", "--upgrade", "build", "twine", "setuptools"], 600)
+        install_result = runner([sys.executable, "-m", "pip", "install", "--upgrade", "build", "twine"], 600)
         if not install_result.get("ok"):
             errors.append("Failed to install or upgrade build/twine/setuptools.")
     elif not build_before or not twine_before:

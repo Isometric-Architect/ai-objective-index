@@ -8,9 +8,11 @@ from typing import Any
 
 WAVE2_DIR = Path("public_launch") / "wave2"
 WAVE3_DIR = Path("public_launch") / "wave3"
-OUTPUT_PATH = WAVE3_DIR / "PYPI_READINESS_REFRESH_RESULT.json"
-SUMMARY_PATH = WAVE3_DIR / "PACKAGE_8Q_A_SUMMARY.md"
-NEXT_STEPS_PATH = WAVE3_DIR / "NEXT_PYPI_ACCOUNT_STEPS.md"
+WAVE9_DIR = Path("public_launch") / "wave9"
+OUTPUT_PATH = WAVE9_DIR / "PYPI_READINESS_REFRESH_RESULT.json"
+SUMMARY_PATH = WAVE9_DIR / "PACKAGE_8Q_A_RESUMED_SUMMARY.md"
+NEXT_STEPS_PATH = WAVE9_DIR / "NEXT_TESTPYPI_ACCOUNT_STEPS.md"
+COMPAT_NEXT_STEPS_PATH = WAVE3_DIR / "NEXT_PYPI_ACCOUNT_STEPS.md"
 
 
 def _repo_root() -> Path:
@@ -40,7 +42,7 @@ def _read_json(path: Path) -> dict[str, Any]:
 
 
 def _write_next_steps() -> Path:
-    text = """# Next PyPI Account Steps
+    text = """# Next TestPyPI Account Steps
 
 1. Create a TestPyPI account.
 2. Verify your TestPyPI email.
@@ -56,17 +58,20 @@ Notes:
 - Token text may be visible only once.
 - Keep tokens private.
 - Do not commit `.pypirc` or token files.
-- Package 8Q-A does not upload anything.
+- Package 8Q-A resumed does not upload anything.
 """
-    return _write(NEXT_STEPS_PATH, text)
+    written = _write(NEXT_STEPS_PATH, text)
+    _write(COMPAT_NEXT_STEPS_PATH, text.replace("Next TestPyPI Account Steps", "Next PyPI Account Steps"))
+    return written
 
 
 def run_pypi_readiness_refresh(write_result: bool = True) -> dict[str, Any]:
     metadata = _read_json(WAVE2_DIR / "PACKAGE_METADATA_AUDIT_RESULT.json")
     wave2 = _read_json(WAVE2_DIR / "PYPI_PUBLISH_READINESS_RESULT.json")
-    build = _read_json(WAVE3_DIR / "DIST_BUILD_RESULT.json")
-    twine = _read_json(WAVE3_DIR / "TWINE_CHECK_RESULT.json")
-    install = _read_json(WAVE3_DIR / "LOCAL_INSTALL_SMOKE_RESULT.json")
+    build = _read_json(WAVE9_DIR / "DIST_BUILD_RESULT.json") or _read_json(WAVE3_DIR / "DIST_BUILD_RESULT.json")
+    twine = _read_json(WAVE9_DIR / "TWINE_CHECK_RESULT.json") or _read_json(WAVE3_DIR / "TWINE_CHECK_RESULT.json")
+    install = _read_json(WAVE9_DIR / "LOCAL_INSTALL_SMOKE_RESULT.json") or _read_json(WAVE3_DIR / "LOCAL_INSTALL_SMOKE_RESULT.json")
+    version = _read_json(WAVE9_DIR / "VERSION_APPLY_RESULT.json")
     errors: list[str] = []
     warnings: list[str] = []
 
@@ -101,6 +106,8 @@ def run_pypi_readiness_refresh(write_result: bool = True) -> dict[str, Any]:
         "dist_build_decision": build.get("decision"),
         "twine_check_decision": twine.get("decision"),
         "local_install_smoke_decision": install.get("decision"),
+        "version_apply_target": version.get("target_version"),
+        "package_version": version.get("new_pyproject_version"),
         "dist_files": dist_files,
         "next_required_step": "Create TestPyPI account/token and upload manually only after user approval." if decision == "HOLD_TESTPYPI_ACCOUNT_REQUIRED" else "Resolve the HOLD/BLOCK reason before upload.",
         "pypi_upload_performed": False,
@@ -113,9 +120,9 @@ def run_pypi_readiness_refresh(write_result: bool = True) -> dict[str, Any]:
     if write_result:
         _write_json(OUTPUT_PATH, result)
         _write_next_steps()
-        summary = f"""# Package 8Q-A Summary
+        summary = f"""# Package 8Q-A Resumed Summary
 
-Package 8Q-A installs/checks local build tooling, builds local distribution artifacts, runs `twine check`, runs a local install smoke where possible, and refreshes PyPI/MCP Registry readiness.
+Package 8Q-A resumed applies the `0.3.0a1` vNext package version, installs/checks local build tooling, builds local distribution artifacts, runs `twine check`, runs a local install smoke where possible, and refreshes PyPI/MCP Registry readiness.
 
 ## Result
 

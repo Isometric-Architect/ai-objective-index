@@ -5,7 +5,7 @@ from ai_objective_index import local_install_smoke
 
 def test_local_install_smoke_mocked_success(monkeypatch):
     root = Path.cwd()
-    monkeypatch.setattr(local_install_smoke, "_wheel_path", lambda: root / "dist" / "ai_objective_index-0.2.0-py3-none-any.whl")
+    monkeypatch.setattr(local_install_smoke, "_wheel_path", lambda: root / "dist" / "ai_objective_index-0.3.0a1-py3-none-any.whl")
 
     def create_venv(path):
         (path / "Scripts").mkdir(parents=True, exist_ok=True)

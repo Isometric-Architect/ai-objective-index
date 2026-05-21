@@ -714,7 +714,7 @@ It adds the MCP Registry README marker, prepares `.mcp/server.json` for a future
 
 ## Package 8Q-A Local Build Readiness
 
-Package 8Q-A checks/installs local packaging tools (`build`, `twine`, and the required `setuptools` backend), builds local wheel/sdist artifacts, runs `twine check`, and runs a local install smoke test where possible:
+Package 8Q-A checks/installs local packaging tools (`build` and `twine`), builds local wheel/sdist artifacts, runs `twine check`, and runs a local install smoke test where possible:
 
 ```powershell
 python -m ai_objective_index.local_build_tools --check
@@ -725,6 +725,22 @@ python -m ai_objective_index.pypi_readiness_refresh
 ```
 
 It does not upload to TestPyPI/PyPI, submit to MCP Registry, ask for tokens, print tokens, or post to communities.
+
+### Package 8Q-A Resumed
+
+After the vNext 9F distribution gate, AOI uses `0.3.0a1` as the first vNext PyPI/TestPyPI build candidate. The resumed local build path applies that version, builds local artifacts, runs `twine check`, runs local install smoke checks, and refreshes PyPI/MCP Registry readiness:
+
+```powershell
+python -m ai_objective_index.version_apply_gate --dry-run
+python -m ai_objective_index.version_apply_gate --apply 0.3.0a1
+python -m ai_objective_index.local_build_tools --check
+python -m ai_objective_index.dist_build_runner
+python -m ai_objective_index.local_install_smoke
+python -m ai_objective_index.pypi_readiness_refresh
+python -m ai_objective_index.mcp_registry_readiness_refresh
+```
+
+This still does not upload to TestPyPI/PyPI, submit MCP Registry metadata, request tokens, or create `.pypirc`.
 
 ## Package 9A AOI vNext Alignment
 

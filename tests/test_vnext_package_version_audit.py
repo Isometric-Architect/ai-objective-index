@@ -15,5 +15,5 @@ def test_version_audit_default_does_not_modify_files():
 
 def test_version_audit_recommends_or_holds_for_vnext():
     result = run_vnext_package_version_audit(write_result=False)
-    assert result["decision"] in {"HOLD_VERSION_DECISION", "PASS_VERSION_APPLIED", "BLOCK_INVALID_VERSION"}
+    assert result["decision"] in {"HOLD_VERSION_DECISION", "PASS_VERSION_APPLIED", "PASS_VERSION_SELECTED", "BLOCK_INVALID_VERSION"}
     assert result["pypi_upload_performed"] is False

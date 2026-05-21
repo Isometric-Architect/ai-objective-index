@@ -1,8 +1,8 @@
 # vNext Distribution Summary
 
-- Distribution gate decision: `HOLD_VERSION_DECISION`
+- Distribution gate decision: `PASS_READY_TO_RESUME_8Q_A`
 - Surface sync: `PASS`
-- Version audit: `HOLD_VERSION_DECISION`
+- Version audit: `PASS_VERSION_SELECTED`
 - ResidualOps alignment: `PASS_ALIGNED`
 - vNext claim audits: `PASS`
 - no_secrets: `PASS`

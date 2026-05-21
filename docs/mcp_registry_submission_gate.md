@@ -33,3 +33,5 @@ Package 9B keeps MCP Registry submission paused while CapabilityTrust cards and 
 Package 9C keeps MCP Registry submission paused while Objective Router REST/MCP surfaces are introduced. Registry metadata must not imply the router is a live security gateway or that candidates are verified.
 
 Package 9F adds a vNext distribution gate. MCP Registry submission remains paused until the vNext package version is chosen, the PyPI package exists, `.mcp/server.json` matches that package, and explicit registry confirmation is present.
+
+Package 8Q-A resumed chooses `0.3.0a1` for the local build candidate and refreshes Registry readiness, but does not submit anything.

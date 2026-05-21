@@ -1,19 +1,17 @@
 {
-  "generated_at": "2026-05-21T01:51:20.874796+00:00",
-  "decision": "HOLD_VERSION_DECISION",
-  "overall_token": "HOLD",
+  "generated_at": "2026-05-21T02:59:05.005988+00:00",
+  "decision": "PASS_READY_TO_RESUME_8Q_A",
+  "overall_token": "PASS",
   "checks": {
     "surface_sync": "PASS",
-    "version_audit": "HOLD_VERSION_DECISION",
+    "version_audit": "PASS_VERSION_SELECTED",
     "residualops_alignment": "PASS_ALIGNED",
     "vnext_claim_audits": "PASS",
     "no_secrets": "PASS",
     "launch_claim_guard": "PASS",
     "smoke_all": "PASS"
   },
-  "warnings": [
-    "Choose package/server version 0.3.0 or 0.3.0a1 before PyPI upload."
-  ],
+  "warnings": [],
   "errors": [],
   "pytest_result": "not_checked_by_gate",
   "safe_to_resume_8q_a": true,

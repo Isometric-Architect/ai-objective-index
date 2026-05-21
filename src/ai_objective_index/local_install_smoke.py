@@ -10,8 +10,8 @@ from pathlib import Path
 from typing import Any, Callable
 
 
-WAVE3_DIR = Path("public_launch") / "wave3"
-OUTPUT_PATH = WAVE3_DIR / "LOCAL_INSTALL_SMOKE_RESULT.json"
+WAVE9_DIR = Path("public_launch") / "wave9"
+OUTPUT_PATH = WAVE9_DIR / "LOCAL_INSTALL_SMOKE_RESULT.json"
 DEFAULT_VENV_PATH = Path("data/generated/test_install_tmp/aoi_pkg_smoke")
 
 
@@ -86,6 +86,8 @@ def run_local_install_smoke(
     install_result: dict[str, Any] = {"ok": False, "skipped": True}
     import_result: dict[str, Any] = {"ok": False, "skipped": True}
     smoke_result: dict[str, Any] = {"ok": False, "skipped": True}
+    vnext_smoke_result: dict[str, Any] = {"ok": False, "skipped": True}
+    probe_smoke_result: dict[str, Any] = {"ok": False, "skipped": True}
     console_smoke_result: dict[str, Any] = {"ok": False, "skipped": True}
 
     if wheel is None:
@@ -104,12 +106,54 @@ def run_local_install_smoke(
             install_result = runner([str(python), "-m", "pip", "install", "--no-index", "--find-links", str(wheel.parent), str(wheel)], 300, root)
             import_result = runner([str(python), "-c", "import ai_objective_index; print(ai_objective_index.__name__)"], 120, root)
             smoke_result = runner([str(python), "-m", "ai_objective_index.mcp_smoke"], 120, root)
+            vnext_smoke_result = runner(
+                [
+                    str(python),
+                    "-m",
+                    "ai_objective_index.vnext.objective_router_cli_demo",
+                    "--query",
+                    "browser automation MCP server",
+                    "--objective",
+                    "select source-traced MCP candidates",
+                    "--data-scope",
+                    "public_beta_mcp",
+                    "--limit",
+                    "3",
+                ],
+                180,
+                root,
+            )
+            probe_smoke_result = runner(
+                [
+                    str(python),
+                    "-m",
+                    "ai_objective_index.vnext.probe_cli_demo",
+                    "--query",
+                    "browser automation MCP server",
+                    "--objective",
+                    "select source-traced MCP candidates",
+                    "--data-scope",
+                    "public_beta_mcp",
+                    "--limit",
+                    "3",
+                ],
+                180,
+                root,
+            )
             script = venv_full / ("Scripts/ai-objective-index-mcp-smoke.exe" if sys.platform == "win32" else "bin/ai-objective-index-mcp-smoke")
             if script.exists():
                 console_smoke_result = runner([str(script)], 120, root)
             else:
                 warnings.append("Console smoke script was not found in the temp venv.")
-            decision = "PASS_LOCAL_INSTALL_SMOKE" if install_result.get("ok") and import_result.get("ok") and smoke_result.get("ok") else "HOLD_LOCAL_INSTALL_SMOKE_FAILED"
+            decision = (
+                "PASS_LOCAL_INSTALL_SMOKE"
+                if install_result.get("ok")
+                and import_result.get("ok")
+                and smoke_result.get("ok")
+                and vnext_smoke_result.get("ok")
+                and probe_smoke_result.get("ok")
+                else "HOLD_LOCAL_INSTALL_SMOKE_FAILED"
+            )
             if decision != "PASS_LOCAL_INSTALL_SMOKE":
                 errors.append("Local install smoke did not fully pass.")
         except Exception as exc:
@@ -128,6 +172,8 @@ def run_local_install_smoke(
         "install_result": install_result,
         "import_result": import_result,
         "mcp_smoke_result": smoke_result,
+        "vnext_objective_router_smoke_result": vnext_smoke_result,
+        "vnext_probe_smoke_result": probe_smoke_result,
         "console_smoke_result": console_smoke_result,
         "errors": errors,
         "warnings": warnings,

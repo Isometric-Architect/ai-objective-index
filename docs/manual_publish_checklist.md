@@ -160,4 +160,15 @@ For v0.2 real-data public beta, also do not claim verified MCP servers, safe MCP
 128. Choose a vNext package version, likely `0.3.0` or `0.3.0a1`, before any upload-oriented package.
 129. Resume 8Q-A only for local build/twine checks. Do not upload to PyPI/TestPyPI in 9F.
 
+## Package 8Q-A Resumed vNext Build Candidate
+
+130. Run `python -m ai_objective_index.version_apply_gate --dry-run`.
+131. Run `python -m ai_objective_index.version_apply_gate --apply 0.3.0a1`.
+132. Run `python -m ai_objective_index.local_build_tools --check`.
+133. Run `python -m ai_objective_index.dist_build_runner`.
+134. Run `python -m ai_objective_index.local_install_smoke`.
+135. Run `python -m ai_objective_index.pypi_readiness_refresh`.
+136. Run `python -m ai_objective_index.mcp_registry_readiness_refresh`.
+137. Do not upload to TestPyPI/PyPI in this package.
+
 These links are public after Package 8K. Community posting, GitHub Release creation, and MCP Registry submission remain HOLD. `public_beta_mcp` records are source-traced registry metadata candidates; they are not verified, not safe/certified, not security certified, not a quality guarantee, and not purchasing advice.

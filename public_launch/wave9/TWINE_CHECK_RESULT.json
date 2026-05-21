@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-05-21T02:52:08.106368+00:00",
+  "decision": "PASS_TWINE_CHECK",
+  "twine_available": true,
+  "twine_result": {
+    "command": [
+      "C:\\Users\\Isometric-Architect\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+      "-m",
+      "twine",
+      "check",
+      "dist\\ai_objective_index-0.3.0a1-py3-none-any.whl",
+      "dist\\ai_objective_index-0.3.0a1.tar.gz"
+    ],
+    "ok": true,
+    "returncode": 0,
+    "stdout": "Checking dist\\ai_objective_index-0.3.0a1-py3-none-any.whl: PASSED\nChecking dist\\ai_objective_index-0.3.0a1.tar.gz: PASSED\n",
+    "stderr": ""
+  },
+  "dist_files_checked": [
+    {
+      "path": "dist\\ai_objective_index-0.3.0a1-py3-none-any.whl",
+      "size_bytes": 386396
+    },
+    {
+      "path": "dist\\ai_objective_index-0.3.0a1.tar.gz",
+      "size_bytes": 331735
+    }
+  ],
+  "upload_performed": false,
+  "token_printed": false
+}

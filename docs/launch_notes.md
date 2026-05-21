@@ -214,7 +214,7 @@ It does not upload to PyPI/TestPyPI, submit to MCP Registry, auto-post to commun
 
 ## Package 8Q-A Local Build Readiness
 
-Package 8Q-A checks and installs local packaging tools if requested, including the required `setuptools` backend, builds local dist artifacts, runs `twine check`, runs a local install smoke, and refreshes PyPI readiness.
+Package 8Q-A checks and installs local packaging tools if requested, builds local dist artifacts, runs `twine check`, runs a local install smoke, and refreshes PyPI readiness.
 
 It does not upload to TestPyPI/PyPI, submit to MCP Registry, request/print/store tokens, post to communities, crawl, scrape, follow links, or perform forbidden actions.
 
@@ -229,3 +229,7 @@ It adds vNext model/schema drafts and claim-boundary docs. It pauses PyPI upload
 Package 9F audits distribution surfaces after Capability Trust, Objective Router, ExecutionReceipt memory, and local Probe-before-Use are present.
 
 It does not build or upload packages, submit MCP Registry metadata, post to communities, call live MCP servers, execute external tools, fetch URLs, or request tokens. It recommends a version decision before the 8Q-A local build path resumes.
+
+## Package 8Q-A Resumed
+
+Package 8Q-A resumed applies `0.3.0a1` for the first vNext local build candidate, builds wheel/sdist artifacts, runs `twine check`, runs local install smoke checks, and refreshes PyPI/MCP Registry readiness. It still performs no TestPyPI/PyPI upload, no MCP Registry submission, and no token handling.

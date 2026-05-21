@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-05-21T02:51:04.704310+00:00",
+  "dry_run": false,
+  "apply": "0.3.0a1",
+  "target_version": "0.3.0a1",
+  "old_pyproject_version": "0.2.0",
+  "new_pyproject_version": "0.3.0a1",
+  "old_server_json_version": "0.3.0a1",
+  "new_server_json_version": "0.3.0a1",
+  "version_changed": true,
+  "errors": [],
+  "warnings": [],
+  "testpypi_upload_performed": false,
+  "pypi_upload_performed": false,
+  "mcp_registry_submission_performed": false,
+  "community_post_performed": false,
+  "token_printed": false
+}

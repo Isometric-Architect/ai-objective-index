@@ -1,5 +1,11 @@
 # Changelog
 
+## Package 8Q-A Resumed
+
+- Applied the vNext build candidate decision around `0.3.0a1` for local PyPI/TestPyPI build readiness.
+- Added version apply, local build, twine check, local install smoke, PyPI readiness, and MCP Registry readiness refresh outputs under `public_launch/wave9`.
+- Preserved no-upload/no-registry/no-token boundaries.
+
 ## Package 9E
 
 - Added local-only probe-before-use models, probe plans, probe results, probe receipts, capability probe memory, and route overlays.

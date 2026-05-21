@@ -38,3 +38,5 @@ Package 9B keeps the pause in place while the Capability Trust Schema MVP is int
 Package 9C keeps the pause in place while Objective Router REST/MCP surfaces are introduced. Packaging can resume later only after these surfaces preserve read-only behavior and conservative claim boundaries.
 
 Package 9F adds a distribution gate before 8Q-A resumes. It recommends choosing `0.3.0` or `0.3.0a1` for the vNext package surface before any upload-oriented package. 9F does not upload; it only prepares the local build path to resume safely.
+
+Package 8Q-A resumed uses `0.3.0a1` as the first vNext build candidate. It builds local wheel/sdist artifacts and runs `twine check`, but still does not upload to TestPyPI or PyPI.

@@ -1,4 +1,4 @@
-# Next PyPI Account Steps
+# Next TestPyPI Account Steps
 
 1. Create a TestPyPI account.
 2. Verify your TestPyPI email.

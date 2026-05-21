@@ -82,15 +82,25 @@ def run_vnext_package_version_audit(apply_version: str | None = None, write_resu
         errors.append("pyproject version is missing.")
     if current_version and not PEP440_SIMPLE.fullmatch(current_version):
         errors.append("pyproject version is not PEP 440-compatible.")
+    version_selected = current_version in {RECOMMENDED_VERSION, RECOMMENDED_PRERELEASE_VERSION} and (
+        not server_version or server_version == current_version
+    )
     if current_version == "0.2.0":
         warnings.append("vNext 9A-9E surfaces are present while pyproject version remains 0.2.0.")
     if server_version and server_version != current_version:
         warnings.append("server.json version differs from pyproject version.")
-    decision = "BLOCK_INVALID_VERSION" if errors else ("PASS_VERSION_APPLIED" if version_change_applied else "HOLD_VERSION_DECISION")
+    if errors:
+        decision = "BLOCK_INVALID_VERSION"
+    elif version_change_applied:
+        decision = "PASS_VERSION_APPLIED"
+    elif version_selected:
+        decision = "PASS_VERSION_SELECTED"
+    else:
+        decision = "HOLD_VERSION_DECISION"
     result = {
         "generated_at": datetime.now(UTC).isoformat(),
         "decision": decision,
-        "overall_token": "BLOCK" if decision.startswith("BLOCK") else ("PASS" if decision == "PASS_VERSION_APPLIED" else "HOLD"),
+        "overall_token": "BLOCK" if decision.startswith("BLOCK") else ("PASS" if decision in {"PASS_VERSION_APPLIED", "PASS_VERSION_SELECTED"} else "HOLD"),
         "current_pyproject_version": current_version,
         "current_server_json_version": server_version,
         "recommended_version": RECOMMENDED_VERSION,

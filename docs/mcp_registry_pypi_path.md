@@ -7,7 +7,7 @@ Package 8P prepares:
 - README marker: `<!-- mcp-name: io.github.isometric-architect/ai-objective-index -->`
 - `.mcp/server.json`
 - package identifier: `ai-objective-index`
-- version: `0.2.0`
+- version: `0.3.0a1`
 - transport: `stdio`
 
 Submission is not automatic. The package must first be uploaded and verified on PyPI. Then run:
@@ -21,3 +21,5 @@ Only submit later if readiness is `PASS_READY_TO_SUBMIT` and explicit confirmati
 Package 8Q-A can create local dist files and run `twine check`. MCP Registry readiness should still HOLD until the package is actually uploaded to PyPI and registry tooling/authentication pass.
 
 Package 9F keeps MCP Registry submission gated after vNext. `.mcp/server.json` now describes the Objective Router, ExecutionReceipt memory, and local Probe-before-Use surfaces, but Registry submission still waits for a final package version decision, a real PyPI package, and explicit submit confirmation.
+
+Package 8Q-A resumed applies `0.3.0a1` for the local build candidate. MCP Registry remains HOLD until TestPyPI/PyPI verification is complete and explicit submission confirmation exists.

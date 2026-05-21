@@ -1,17 +1,15 @@
 {
-  "generated_at": "2026-05-21T01:51:14.076282+00:00",
-  "decision": "HOLD_VERSION_DECISION",
-  "overall_token": "HOLD",
-  "current_pyproject_version": "0.2.0",
-  "current_server_json_version": "0.2.0",
+  "generated_at": "2026-05-21T02:59:04.538376+00:00",
+  "decision": "PASS_VERSION_SELECTED",
+  "overall_token": "PASS",
+  "current_pyproject_version": "0.3.0a1",
+  "current_server_json_version": "0.3.0a1",
   "recommended_version": "0.3.0",
   "recommended_prerelease_version": "0.3.0a1",
   "version_change_applied": false,
   "reason": "AOI vNext 9A-9E added major public surfaces; choose 0.3.0 or 0.3.0a1 before PyPI upload.",
   "errors": [],
-  "warnings": [
-    "vNext 9A-9E surfaces are present while pyproject version remains 0.2.0."
-  ],
+  "warnings": [],
   "pypi_upload_performed": false,
   "mcp_registry_submission_performed": false,
   "community_post_performed": false,

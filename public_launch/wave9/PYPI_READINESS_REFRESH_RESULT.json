@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-05-21T02:59:16.129907+00:00",
+  "decision": "HOLD_TESTPYPI_ACCOUNT_REQUIRED",
+  "package_metadata_token": "PASS",
+  "wave2_decision": "PASS_BUILD_READY",
+  "dist_build_decision": "PASS_BUILD_READY",
+  "twine_check_decision": "PASS_TWINE_CHECK",
+  "local_install_smoke_decision": "PASS_LOCAL_INSTALL_SMOKE",
+  "version_apply_target": "0.3.0a1",
+  "package_version": "0.3.0a1",
+  "dist_files": [
+    {
+      "path": "dist\\ai_objective_index-0.3.0a1-py3-none-any.whl",
+      "size_bytes": 386396
+    },
+    {
+      "path": "dist\\ai_objective_index-0.3.0a1.tar.gz",
+      "size_bytes": 331735
+    }
+  ],
+  "next_required_step": "Create TestPyPI account/token and upload manually only after user approval.",
+  "pypi_upload_performed": false,
+  "testpypi_upload_performed": false,
+  "mcp_registry_submission_performed": false,
+  "token_printed": false,
+  "errors": [],
+  "warnings": []
+}

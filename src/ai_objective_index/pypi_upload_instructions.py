@@ -68,7 +68,7 @@ Package 8P does not upload to PyPI.
 """
     mcp = """# MCP Registry Publish Instructions
 
-1. Confirm PyPI package `ai-objective-index` version `0.2.0` is public.
+1. Confirm PyPI package `ai-objective-index` version `0.3.0a1` is public after the explicit PyPI upload package.
 2. Confirm README contains:
 
 ```html

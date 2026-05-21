@@ -1,6 +1,6 @@
 # Package 8Q-A: Local Build Tool Install + Dist Build + Twine Check
 
-Package 8Q-A prepares AI Objective Index for a future PyPI/TestPyPI upload by checking local packaging tools, building local distribution artifacts, running `twine check`, and running a local install smoke test. The install helper includes `setuptools` because AOI's `pyproject.toml` uses `setuptools.build_meta`.
+Package 8Q-A prepares AI Objective Index for a future PyPI/TestPyPI upload by checking local packaging tools, building local distribution artifacts, running `twine check`, and running a local install smoke test.
 
 It does not upload to TestPyPI, upload to PyPI, submit to MCP Registry, post to communities, request tokens, print tokens, store tokens, or commit tokens.
 

@@ -1,18 +1,94 @@
 {
-  "generated_at": "2026-05-21T06:39:18.472903+00:00",
-  "decision": "HOLD_PYPI_PACKAGE_NOT_FOUND",
+  "generated_at": "2026-05-21T07:34:18.085640+00:00",
+  "decision": "PASS_REAL_PYPI_INSTALL",
   "target_version": "0.3.0a1",
   "package_name": "ai-objective-index",
-  "upload_result_token": "DRY_RUN_ONLY",
-  "steps": {},
+  "upload_result_token": "UPLOAD_SUCCESS",
+  "steps": {
+    "create_venv": {
+      "ok": true,
+      "path": "data\\generated\\real_pypi_install_tmp\\aoi_real_pypi_verify"
+    },
+    "pip_install": {
+      "command": [
+        "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\generated\\real_pypi_install_tmp\\aoi_real_pypi_verify\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "install",
+        "ai-objective-index==0.3.0a1"
+      ],
+      "ok": true,
+      "returncode": 0,
+      "stdout": "Collecting ai-objective-index==0.3.0a1\n  Using cached ai_objective_index-0.3.0a1-py3-none-any.whl.metadata (46 kB)\nCollecting fastapi>=0.100 (from ai-objective-index==0.3.0a1)\n  Using cached fastapi-0.136.1-py3-none-any.whl.metadata (28 kB)\nCollecting pydantic<3,>=2 (from ai-objective-index==0.3.0a1)\n  Using cached pydantic-2.13.4-py3-none-any.whl.metadata (109 kB)\nCollecting annotated-types>=0.6.0 (from pydantic<3,>=2->ai-objective-index==0.3.0a1)\n  Using cached annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)\nCollecting pydantic-core==2.46.4 (from pydantic<3,>=2->ai-objective-index==0.3.0a1)\n  Using cached pydantic_core-2.46.4-cp314-cp314-win_amd64.whl.metadata (6.7 kB)\nCollecting typing-extensions>=4.14.1 (from pydantic<3,>=2->ai-objective-index==0.3.0a1)\n  Using cached typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)\nCollecting typing-inspection>=0.4.2 (from pydantic<3,>=2->ai-objective-index==0.3.0a1)\n  Using cached typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)\nCollecting starlette>=0.46.0 (from fastapi>=0.100->ai-objective-index==0.3.0a1)\n  Using cached starlette-1.0.0-py3-none-any.whl.metadata (6.3 kB)\nCollecting annotated-doc>=0.0.2 (from fastapi>=0.100->ai-objective-index==0.3.0a1)\n  Using cached annotated_doc-0.0.4-py3-none-any.whl.metadata (6.6 kB)\nCollecting anyio<5,>=3.6.2 (from starlette>=0.46.0->fastapi>=0.100->ai-objective-index==0.3.0a1)\n  Using cached anyio-4.13.0-py3-none-any.whl.metadata (4.5 kB)\nCollecting idna>=2.8 (from anyio<5,>=3.6.2->starlette>=0.46.0->fastapi>=0.100->ai-objective-index==0.3.0a1)\n  Using cached idna-3",
+      "stderr": "\n[notice] A new release of pip is available: 25.3 -> 26.1.1\n[notice] To update, run: C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\generated\\real_pypi_install_tmp\\aoi_real_pypi_verify\\Scripts\\python.exe -m pip install --upgrade pip\n"
+    },
+    "import_check": {
+      "command": [
+        "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\generated\\real_pypi_install_tmp\\aoi_real_pypi_verify\\Scripts\\python.exe",
+        "-c",
+        "import ai_objective_index; print(ai_objective_index.__version__)"
+      ],
+      "ok": true,
+      "returncode": 0,
+      "stdout": "0.3.0a1\n",
+      "stderr": ""
+    },
+    "mcp_smoke": {
+      "command": [
+        "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\generated\\real_pypi_install_tmp\\aoi_real_pypi_verify\\Scripts\\python.exe",
+        "-m",
+        "ai_objective_index.mcp_smoke"
+      ],
+      "ok": true,
+      "returncode": 0,
+      "stdout": "MCP smoke: pass=True results=5 top=PixelForge API forbidden_tool_overlap=0\nSaved MCP smoke result: C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\generated\\mcp_smoke_result_v0_2.json\n",
+      "stderr": ""
+    },
+    "objective_router_demo": {
+      "command": [
+        "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\generated\\real_pypi_install_tmp\\aoi_real_pypi_verify\\Scripts\\python.exe",
+        "-m",
+        "ai_objective_index.vnext.objective_router_cli_demo",
+        "--query",
+        "browser automation MCP server",
+        "--objective",
+        "select source-traced MCP candidates",
+        "--data-scope",
+        "public_beta_mcp",
+        "--limit",
+        "3"
+      ],
+      "ok": true,
+      "returncode": 0,
+      "stdout": "AOI vNext Objective Router\ndata_scope=public_beta_mcp candidates=0\ncounts={\"allow\": 0, \"block\": 0, \"hold\": 0}\n",
+      "stderr": ""
+    },
+    "probe_demo": {
+      "command": [
+        "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\data\\generated\\real_pypi_install_tmp\\aoi_real_pypi_verify\\Scripts\\python.exe",
+        "-m",
+        "ai_objective_index.vnext.probe_cli_demo",
+        "--query",
+        "browser automation MCP server",
+        "--objective",
+        "select source-traced MCP candidates",
+        "--data-scope",
+        "public_beta_mcp",
+        "--limit",
+        "3"
+      ],
+      "ok": true,
+      "returncode": 0,
+      "stdout": "probe_cli_demo: candidates=0 probe_cards=0 negative_controls=PASS\n",
+      "stderr": ""
+    }
+  },
   "temp_venv_path": "data\\generated\\real_pypi_install_tmp\\aoi_real_pypi_verify",
-  "temp_venv_cleaned": false,
+  "temp_venv_cleaned": true,
   "external_api_keys_required": false,
   "live_mcp_calls_performed": false,
   "external_tool_execution_performed": false,
   "token_printed": false,
   "errors": [],
-  "warnings": [
-    "Real PyPI upload has not been confirmed, so install verification was not attempted."
-  ]
+  "warnings": []
 }

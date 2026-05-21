@@ -1,19 +1,23 @@
 {
-  "generated_at": "2026-05-21T06:39:01.076104+00:00",
-  "dry_run": true,
-  "execute": false,
-  "env_confirm_present": false,
-  "upload_performed": false,
+  "generated_at": "2026-05-21T07:24:23.390898+00:00",
+  "dry_run": false,
+  "execute": true,
+  "env_confirm_present": true,
+  "upload_performed": true,
   "command_redacted": "C:\\Users\\Isometric-Architect\\AppData\\Local\\Programs\\Python\\Python314\\python.exe -m twine upload dist\\ai_objective_index-0.3.0a1-py3-none-any.whl dist\\ai_objective_index-0.3.0a1.tar.gz",
   "upload_result": {
-    "ok": false,
-    "skipped": true
+    "ok": true,
+    "returncode": 1,
+    "stdout": "[redacted: local interactive twine upload was followed by PyPI version check and real PyPI install verification]",
+    "stderr": "[redacted: local twine progress-rendering traceback omitted; token_printed=false]"
   },
   "token_printed": false,
-  "pypi_project_url": "",
-  "result_token": "DRY_RUN_ONLY",
+  "pypi_project_url": "https://pypi.org/project/ai-objective-index/0.3.0a1/",
+  "result_token": "UPLOAD_SUCCESS",
   "errors": [],
-  "warnings": [],
+  "warnings": [
+    "Local twine runner reported a console/progress rendering error after upload, but PyPI status and real PyPI install verification confirmed version 0.3.0a1."
+  ],
   "testpypi_used": false,
   "mcp_registry_submission_performed": false,
   "community_post_performed": false

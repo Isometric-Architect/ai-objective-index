@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-21T06:38:55.441463+00:00",
-  "decision": "PASS_READY_FOR_REAL_PYPI_UPLOAD",
+  "generated_at": "2026-05-21T07:37:02.439589+00:00",
+  "decision": "HOLD_VERSION_ALREADY_EXISTS",
   "package_name": "ai-objective-index",
   "target_version": "0.3.0a1",
   "pyproject_version": "0.3.0a1",
@@ -25,10 +25,13 @@
   "pypirc_exists": false,
   "token_like_tracked_findings": [],
   "pypi_status": {
-    "status": "PROJECT_AVAILABLE_OR_NEW",
+    "status": "HOLD_VERSION_ALREADY_EXISTS",
     "checked": true,
     "url": "https://pypi.org/pypi/ai-objective-index/json",
-    "versions": []
+    "name": "ai-objective-index",
+    "versions": [
+      "0.3.0a1"
+    ]
   },
   "errors": [],
   "warnings": [],

@@ -1,17 +1,15 @@
 {
-  "generated_at": "2026-05-21T06:39:52.195691+00:00",
-  "decision": "HOLD_UPLOAD_NOT_CONFIRMED",
+  "generated_at": "2026-05-21T07:34:20.929955+00:00",
+  "decision": "PASS_REAL_PYPI_RELEASE_VERIFIED",
   "target_version": "0.3.0a1",
-  "upload_result_token": "DRY_RUN_ONLY",
-  "install_verify_decision": "HOLD_PYPI_PACKAGE_NOT_FOUND",
-  "pypi_project_url": "",
+  "upload_result_token": "UPLOAD_SUCCESS",
+  "install_verify_decision": "PASS_REAL_PYPI_INSTALL",
+  "pypi_project_url": "https://pypi.org/project/ai-objective-index/0.3.0a1/",
   "token_like_tracked_findings": [],
   "overclaim_findings": [],
   "mcp_registry_submission_performed": false,
   "testpypi_used": false,
   "token_printed": false,
   "errors": [],
-  "warnings": [
-    "Real PyPI upload has not been confirmed."
-  ]
+  "warnings": []
 }

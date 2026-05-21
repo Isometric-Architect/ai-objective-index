@@ -127,7 +127,11 @@ def tracked_token_findings() -> list[str]:
         # Those are intentionally committed and covered by no_secrets_audit; do not
         # block the PyPI gate on those controlled test strings.
         normalized = raw.replace("\\", "/")
-        if normalized.startswith("tests/") and ("redacts_token_like" in text or "REDACTED_TOKEN_LIKE_TEXT" in text):
+        if normalized.startswith("tests/") and (
+            "redacts_token_like" in text
+            or "REDACTED_TOKEN_LIKE_TEXT" in text
+            or "pypi-secret-token-value" in text
+        ):
             continue
         if any(pattern.search(text) for pattern in TOKEN_PATTERNS):
             findings.append(raw)

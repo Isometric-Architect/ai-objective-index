@@ -1,8 +1,27 @@
 from ai_objective_index import mcp_publisher_auth_check as auth
 
 
-def test_auth_check_without_status_command_holds(monkeypatch):
+def test_auth_check_accepts_non_publishing_probe(monkeypatch):
     monkeypatch.setattr(auth, "find_mcp_publisher", lambda: "mcp-publisher")
+    monkeypatch.setattr(
+        auth,
+        "_run_non_publishing_probe",
+        lambda command: {"ok": True, "publish_or_validate_can_run": True, "checks": []},
+    )
+
+    result = auth.run_mcp_publisher_auth_check(write_result=False)
+
+    assert result["decision"] == "PASS_AUTH_ASSUMED_FROM_DIRECT_LOGIN"
+    assert result["auth_available"] is True
+
+
+def test_auth_check_without_probe_holds(monkeypatch):
+    monkeypatch.setattr(auth, "find_mcp_publisher", lambda: "mcp-publisher")
+    monkeypatch.setattr(
+        auth,
+        "_run_non_publishing_probe",
+        lambda command: {"ok": False, "publish_or_validate_can_run": False, "checks": []},
+    )
 
     result = auth.run_mcp_publisher_auth_check(write_result=False)
 

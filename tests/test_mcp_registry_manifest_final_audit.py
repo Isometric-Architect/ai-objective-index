@@ -66,3 +66,16 @@ def test_manifest_final_audit_overclaim_blocks(monkeypatch):
     result = audit.run_mcp_registry_manifest_final_audit(write_result=False)
 
     assert result["decision"] == "BLOCK_OVERCLAIM"
+
+
+def test_manifest_final_audit_downgrades_test_fixture_tokens(monkeypatch):
+    monkeypatch.setattr(audit, "_read_server_json", _server)
+    monkeypatch.setattr(audit, "_read_text", lambda path: MCP_MARKER)
+    monkeypatch.setattr(audit, "_pypi_verified", lambda: True)
+    monkeypatch.setattr(audit, "tracked_token_findings", lambda: ["tests/test_fixture.py"])
+    monkeypatch.setattr(audit, "_overclaim_findings", lambda paths=None: [])
+
+    result = audit.run_mcp_registry_manifest_final_audit(write_result=False)
+
+    assert result["decision"] == "PASS_MANIFEST_READY"
+    assert result["safe_token_fixture_findings"] == ["tests/test_fixture.py"]

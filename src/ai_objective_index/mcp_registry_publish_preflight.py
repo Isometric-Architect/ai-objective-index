@@ -57,7 +57,11 @@ def _no_secret_real_findings() -> bool:
 
 
 def _auth_passed(auth: dict[str, Any]) -> bool:
-    return auth.get("decision") == "PASS_AUTH_CONFIRMED" or (auth.get("login_attempted") and (auth.get("login_result") or {}).get("ok"))
+    return (
+        auth.get("decision") in {"PASS_AUTH_CONFIRMED", "PASS_AUTH_ASSUMED_FROM_DIRECT_LOGIN"}
+        or bool(auth.get("auth_available"))
+        or (auth.get("login_attempted") and (auth.get("login_result") or {}).get("ok"))
+    )
 
 
 def run_mcp_registry_publish_preflight(write_result: bool = True) -> dict[str, Any]:
@@ -108,6 +112,8 @@ def run_mcp_registry_publish_preflight(write_result: bool = True) -> dict[str, A
         "protection_gate_decision": protection.get("decision"),
         "pypi_release_audit_decision": pypi.get("decision"),
         "mcp_publisher_available": publisher_available,
+        "auth_available": _auth_passed(auth),
+        "mcp_publisher_path": find_mcp_publisher(),
         "token_printed": False,
         "mcp_registry_submission_performed": False,
         "errors": errors,

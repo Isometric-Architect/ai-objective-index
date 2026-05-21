@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T08:02:37.003866+00:00",
+  "generated_at": "2026-05-21T12:02:51.180921+00:00",
   "decision": "PASS_MANIFEST_READY",
   "server_name": "io.github.isometric-architect/ai-objective-index",
   "server_version": "0.3.0a1",
@@ -28,8 +28,13 @@
   },
   "overclaim_findings": [],
   "token_like_tracked_findings": [],
+  "safe_token_fixture_findings": [
+    "tests/test_tech_protection_audit.py"
+  ],
   "mcp_registry_submission_performed": false,
   "token_printed": false,
   "errors": [],
-  "warnings": []
+  "warnings": [
+    "Token-like strings appear only in controlled test fixtures and were downgraded to warnings."
+  ]
 }

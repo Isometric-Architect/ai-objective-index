@@ -41,12 +41,14 @@ def local_publisher_path() -> Path:
 
 
 def find_mcp_publisher() -> str:
+    local = local_publisher_path()
+    if local.exists():
+        return str(local)
     for name in ["mcp-publisher", "mcp-publisher.exe"]:
         found = shutil.which(name)
         if found:
             return found
-    local = local_publisher_path()
-    return str(local) if local.exists() else ""
+    return ""
 
 
 def run_publisher_help(command: str) -> dict[str, Any]:

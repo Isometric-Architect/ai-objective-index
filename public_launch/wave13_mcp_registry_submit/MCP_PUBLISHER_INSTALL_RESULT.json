@@ -1,12 +1,17 @@
 {
-  "generated_at": "2026-05-21T09:37:56.089655+00:00",
-  "mode": "instructions",
-  "decision": "HOLD_MANUAL_INSTALL_REQUIRED",
-  "mcp_publisher_available": false,
-  "mcp_publisher_path": "",
+  "generated_at": "2026-05-21T12:01:05.692795+00:00",
+  "mode": "check",
+  "decision": "PASS_MCP_PUBLISHER_AVAILABLE",
+  "mcp_publisher_available": true,
+  "mcp_publisher_path": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\tools\\mcp-publisher\\mcp-publisher.exe",
   "download_attempted": false,
   "download_performed": false,
-  "help_result": {},
+  "help_result": {
+    "ok": true,
+    "returncode": 0,
+    "stdout": "MCP Registry Publisher Tool\n\nUsage:\n  mcp-publisher <command> [arguments]\n\nCommands:\n  init          Create a server.json file template\n  login         Authenticate with the registry\n  logout        Clear saved authentication\n  publish       Publish server.json to the registry\n  status        Update the status of a server version\n  validate      Validate server.json without publishing\n\nUse 'mcp-publisher <command> --help' for more information about a command.\n",
+    "stderr": ""
+  },
   "instructions": [
     "Download mcp-publisher from the official modelcontextprotocol/registry GitHub releases.",
     "Expected Windows x64 asset: mcp-publisher_windows_amd64.tar.gz",
@@ -17,7 +22,5 @@
   ],
   "token_printed": false,
   "errors": [],
-  "warnings": [
-    "Manual mcp-publisher installation instructions written."
-  ]
+  "warnings": []
 }

@@ -11,6 +11,24 @@ def test_submit_dry_run_does_not_publish(monkeypatch):
     assert result["submission_performed"] is False
 
 
+def test_submit_dry_run_uses_non_publishing_validation(monkeypatch):
+    commands = []
+    monkeypatch.setattr(submit, "run_mcp_registry_publish_preflight", lambda write_result=False: {"decision": "PASS_READY_TO_SUBMIT"})
+    monkeypatch.setattr(submit, "find_mcp_publisher", lambda: "tools/mcp-publisher/mcp-publisher.exe")
+
+    def fake_run(command, timeout=300):
+        commands.append(command)
+        return {"ok": True, "returncode": 0, "stdout": "valid", "stderr": ""}
+
+    monkeypatch.setattr(submit, "_run_command", fake_run)
+
+    result = submit.run_mcp_registry_submit_execute(write_result=False)
+
+    assert result["result_token"] == "DRY_RUN_ONLY"
+    assert result["submission_performed"] is False
+    assert commands[0][1] == "validate"
+
+
 def test_submit_execute_without_env_refuses(monkeypatch):
     monkeypatch.setattr(submit, "run_mcp_registry_publish_preflight", lambda write_result=False: {"decision": "PASS_READY_TO_SUBMIT"})
     monkeypatch.setattr(submit, "find_mcp_publisher", lambda: "mcp-publisher")

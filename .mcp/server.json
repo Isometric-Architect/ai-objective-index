@@ -1,7 +1,8 @@
 {
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.isometric-architect/ai-objective-index",
   "version": "0.3.0a1",
-  "description": "AI Objective Index read-only Objective-to-Capability Trust Router for source-traced capability candidates, conservative route decisions, receipt memory, and local probe-before-use overlays.",
+  "description": "Read-only Objective-to-Capability Trust Router for source-traced MCP/API candidates.",
   "repository": {
     "url": "https://github.com/Isometric-Architect/ai-objective-index",
     "source": "github"
@@ -70,5 +71,5 @@
   },
   "draft_not_submittable": false,
   "draft_reason": "Real PyPI package 0.3.0a1 is published and install-verified; MCP Registry submission remains gated by mcp-publisher, GitHub auth, and explicit confirmation.",
-  "generated_at": "2026-05-21T08:01:03.121611+00:00"
+  "generated_at": "2026-05-21T12:00:12.519065+00:00"
 }

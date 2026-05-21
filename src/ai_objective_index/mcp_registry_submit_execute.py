@@ -51,6 +51,17 @@ def _planned_command(binary: str | None = None) -> list[str]:
     return [binary or "mcp-publisher", "publish", SERVER_JSON]
 
 
+def _run_non_publishing_validation(binary: str) -> dict[str, Any]:
+    attempts: list[dict[str, Any]] = []
+    for command in ([binary, "validate", SERVER_JSON], [binary, "publish", "--dry-run", SERVER_JSON]):
+        result = _run_command(command, timeout=120)
+        result["command_redacted"] = " ".join(command)
+        attempts.append(result)
+        if result.get("ok"):
+            return {"ok": True, "attempts": attempts, "token_printed": False}
+    return {"ok": False, "attempts": attempts, "token_printed": False}
+
+
 def run_mcp_registry_submit_execute(
     execute: bool = False,
     env: dict[str, str] | None = None,
@@ -71,10 +82,9 @@ def run_mcp_registry_submit_execute(
         if preflight.get("decision") != "PASS_READY_TO_SUBMIT":
             warnings.append(f"Dry-run only; preflight is {preflight.get('decision')}.")
         elif publisher:
-            dry_run_command = [publisher, "publish", "--dry-run", SERVER_JSON]
-            dry_run_result = _run_command(dry_run_command, timeout=120)
+            dry_run_result = _run_non_publishing_validation(publisher)
             if not dry_run_result.get("ok"):
-                warnings.append("DRY_RUN_COMMAND_NOT_SUPPORTED or dry-run validation failed; no publish attempted.")
+                warnings.append("DRY_RUN_COMMAND_NOT_SUPPORTED or validation failed; no publish attempted.")
         warnings.append("No MCP Registry submission performed in dry-run mode.")
     elif preflight.get("decision") != "PASS_READY_TO_SUBMIT":
         result_token = "BLOCK_PREFLIGHT_FAILED"
@@ -105,6 +115,7 @@ def run_mcp_registry_submit_execute(
         "env_confirm_present": env_map.get(CONFIRM_ENV) == "YES",
         "submission_performed": submission_performed,
         "command_redacted": " ".join(command),
+        "mcp_publisher_path": publisher,
         "dry_run_result": dry_run_result,
         "publish_result": publish_result,
         "preflight_decision": preflight.get("decision"),

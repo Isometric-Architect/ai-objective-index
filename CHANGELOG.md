@@ -6,6 +6,12 @@
 - Added deterministic offline metadata probes, fixture negative controls, REST endpoints, MCP tools, CLI demo, schemas, docs, and claim-boundary audit.
 - Preserved vNext limits: no live MCP calls, no external tool execution, no URL fetch, no gateway execution, no verification claim, no security certification, no quality guarantee, and no action authorization.
 
+## Package 9F
+
+- Added vNext distribution gate, surface sync audit, package version audit, ResidualOps alignment audit, and PyPI resume gate.
+- Aligned `.mcp/server.json`, README, OpenAPI/MCP manifest docs, and vNext distribution docs around conservative AI Agent Capability Trust Router language.
+- Kept PyPI/TestPyPI upload, MCP Registry submission, community posting, live MCP calls, external tools, URL fetching, token handling, and action authorization out of scope.
+
 ## 0.1.0-package-0
 
 - Added project identity for AI Objective Index (AOI).

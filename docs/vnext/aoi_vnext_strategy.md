@@ -15,3 +15,7 @@ The first vNext vertical is **Coding Agent Tool Selection**.
 PyPI upload and MCP Registry submission are paused only until vNext alignment is complete.
 
 Package 9B adds the first local Capability Trust Schema MVP. It can build offline route-readiness cards from existing AOI objects and source traces, but it still does not run probes, execute a gateway, certify security, guarantee quality, or assert product readiness.
+
+Packages 9C-9E add read-only Objective Router REST/MCP surfaces, local ExecutionReceipt memory, and local-only Probe-before-Use. Together they form a minimum router loop, not a security gateway or external action authorization system.
+
+Package 9F gates distribution so PyPI/TestPyPI and MCP Registry work can resume only after README, package version, `.mcp/server.json`, OpenAPI, MCP manifest, docs, and claim boundaries are aligned.

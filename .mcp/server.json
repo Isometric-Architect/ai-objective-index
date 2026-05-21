@@ -1,12 +1,12 @@
 {
   "name": "io.github.isometric-architect/ai-objective-index",
-  "title": "AI Objective Index",
   "version": "0.2.0",
-  "description": "Read-only MCP/API benchmark engine for objective-based ranking and comparison of AI tools, APIs, SaaS products, and MCP servers with source traces.",
+  "description": "AI Objective Index read-only Objective-to-Capability Trust Router for source-traced capability candidates, conservative route decisions, receipt memory, and local probe-before-use overlays.",
   "repository": {
     "url": "https://github.com/Isometric-Architect/ai-objective-index",
     "source": "github"
   },
+  "read_only": true,
   "packages": [
     {
       "registryType": "pypi",
@@ -17,7 +17,7 @@
       }
     }
   ],
-  "tools": [
+  "tools_summary": [
     "search",
     "fetch",
     "search_objectives",
@@ -26,19 +26,49 @@
     "explain_score",
     "get_source_trace",
     "list_missing_fields",
-    "generate_decision_receipt"
+    "generate_decision_receipt",
+    "route_objective",
+    "get_capability_trust",
+    "explain_route_decision",
+    "submit_execution_receipt",
+    "get_execution_receipt",
+    "list_capability_receipts",
+    "get_capability_receipt_memory",
+    "route_objective_with_receipts",
+    "plan_probe_before_use",
+    "run_local_probe_plan",
+    "get_probe_receipt",
+    "get_capability_probe_memory",
+    "route_objective_with_probes"
   ],
-  "read_only": true,
+  "entrypoints": {
+    "python_module": "ai_objective_index.mcp_stdio_entrypoint",
+    "console_script": "ai-objective-index-mcp",
+    "stdio_entrypoint_exists": true
+  },
+  "artifacts": {
+    "manifest_exists": true,
+    "python_package_artifact_exists": false,
+    "local_python_package_artifact_exists": true,
+    "remote_mcp_endpoint_exists": false
+  },
   "limitations": [
-    "not verified",
-    "not security certified",
-    "not a quality guarantee",
-    "no purchasing advice",
-    "no payment, booking, login, email, purchase, or contract actions",
-    "read-only local/package-based MCP stdio server"
+    "Draft server metadata only unless a publishable PyPI package or remote MCP endpoint is available.",
+    "Registry metadata candidates are not verified, not security certified, and not a quality guarantee.",
+    "Probe-before-Use is local metadata and fixture checking, not a live security scanner.",
+    "ExecutionReceipt memory is a local evidence sidecar, not independent verification or action authorization.",
+    "AOI is read-only and does not perform payment, booking, login, email, form submission, purchase, contract signing, account connection, supplier claim, or supplier verification."
   ],
-  "server_json_status": "READY_BUT_PYPI_UPLOAD_REQUIRED",
-  "pypi_upload_required": true,
-  "mcp_registry_submission_performed": false,
-  "generated_at": "2026-05-20T02:53:41.787374+00:00"
+  "vnext_surfaces": {
+    "capability_trust": true,
+    "objective_router": true,
+    "execution_receipt_memory": true,
+    "local_probe_before_use": true,
+    "external_action_authorization": false,
+    "live_mcp_calls": false,
+    "external_tool_execution": false
+  },
+  "draft_not_submittable": true,
+  "draft_reason": "No package artifact or remote MCP endpoint was found.",
+  "generated_at": "2026-05-21T01:50:07.059819+00:00"
 }

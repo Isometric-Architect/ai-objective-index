@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-05-21T01:51:20.876863+00:00",
+  "decision": "HOLD_VERSION_DECISION_BEFORE_UPLOAD",
+  "overall_token": "HOLD",
+  "distribution_gate_decision": "HOLD_VERSION_DECISION",
+  "pyproject_exists": true,
+  "build_tool_status_required_now": false,
+  "dist_required_now": false,
+  "pypi_token_required_now": false,
+  "next_package": "8Q-A Local Build Tool Install + Dist Build + Twine Check",
+  "upload_performed": false,
+  "testpypi_upload_performed": false,
+  "pypi_upload_performed": false,
+  "mcp_registry_submission_performed": false,
+  "community_post_performed": false,
+  "token_printed": false
+}

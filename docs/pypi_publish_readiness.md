@@ -36,3 +36,5 @@ Package 9A pauses PyPI upload while AOI vNext positioning is aligned around the 
 Package 9B keeps the pause in place while the Capability Trust Schema MVP is introduced. Local build artifacts remain useful for future packaging, but TestPyPI/PyPI upload should not resume until the vNext route-decision language and public claim boundaries stay stable.
 
 Package 9C keeps the pause in place while Objective Router REST/MCP surfaces are introduced. Packaging can resume later only after these surfaces preserve read-only behavior and conservative claim boundaries.
+
+Package 9F adds a distribution gate before 8Q-A resumes. It recommends choosing `0.3.0` or `0.3.0a1` for the vNext package surface before any upload-oriented package. 9F does not upload; it only prepares the local build path to resume safely.

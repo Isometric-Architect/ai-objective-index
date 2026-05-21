@@ -1,7 +1,7 @@
 # AI Objective Index
 <!-- mcp-name: io.github.isometric-architect/ai-objective-index -->
 
-AI Objective Index (AOI) is a read-only MCP/API data contract for ranking and comparing AI tools, APIs, SaaS products, and MCP servers against explicit objectives, constraints, source traces, missing fields, and decision receipts.
+AI Objective Index (AOI) is a read-only MCP/API data contract and vNext AI Agent Capability Trust Router for routing explicit objectives to source-traced capability candidates with constraints, missing fields, route decisions, local receipt memory, and local metadata probes.
 
 ## Why This Exists
 
@@ -16,6 +16,8 @@ AOI is a productization prototype built from internal research concepts. Interna
 Package 0 defines the v0.1 project identity, schemas, documentation, sample data contract, and claim boundaries for the first vertical: AI tools, APIs, SaaS products, and MCP servers.
 
 v0.1 is read-only. Package 1 adds the local core engine, Package 2 adds read-only MCP tool functions, and Package 3 adds a read-only FastAPI REST API. Package 6A adds a crawler/extractor skeleton and fixture pipeline, but it does not run broad live crawling. This repository still does not implement a production ingestion pipeline, payment flow, booking flow, account login, email sender, form submitter, purchasing system, supplier claim/verify flow, profile modification, or contract workflow.
+
+vNext adds conservative routing surfaces: Capability Trust, Objective Router, ExecutionReceipt memory, and local-only Probe-before-Use. These are source-traced route-decision aids, not verification, safety certification, quality guarantee, product readiness, live security scanning, external gateway execution, or action authorization.
 
 ## Quick Example
 
@@ -817,6 +819,20 @@ python -m ai_objective_index.vnext_probe_audit
 
 Probe results are pre-use warnings over local metadata. They do not call live MCP servers, execute external tools, fetch URLs, certify security, guarantee quality, verify capabilities, authorize actions, upload packages, submit registry metadata, or post to communities.
 
+## Package 9F: vNext Distribution Gate
+
+Package 9F audits README, package version, `.mcp/server.json`, OpenAPI, MCP manifest, vNext docs, and claim boundaries before resuming the PyPI/TestPyPI path.
+
+```powershell
+python -m ai_objective_index.vnext_surface_sync_audit
+python -m ai_objective_index.vnext_package_version_audit
+python -m ai_objective_index.residualops_alignment_audit
+python -m ai_objective_index.vnext_distribution_gate
+python -m ai_objective_index.vnext_pypi_resume_gate
+```
+
+The current vNext distribution gate recommends choosing `0.3.0` or `0.3.0a1` before upload-oriented packages. Package 9F itself does not upload to PyPI/TestPyPI, submit MCP Registry metadata, post to communities, execute external tools, call live MCP servers, fetch URLs, or request tokens.
+
 ## Claim Boundary
 
 Allowed claim: AOI is a read-only MCP/API objective ranking and comparison tool with explicit schemas, sample source traces, missing-field reporting, and decision receipt contracts.
@@ -899,6 +915,8 @@ AOI output is not a quality guarantee. It is not legal, financial, medical, purc
 - `docs/vnext/execution_receipt_loop.md`: route -> use -> receipt -> memory -> overlay flow.
 - `docs/vnext/package_9e_probe_before_use_mvp.md`: local-only probe-before-use MVP.
 - `docs/vnext/probe_before_use.md`: route -> probe plan -> local receipt -> overlay flow.
+- `docs/vnext/package_9f_vnext_distribution_gate.md`: vNext distribution gate and version decision.
+- `docs/vnext/residualops_alignment.md`: ResidualOps vocabulary alignment without external action authorization.
 - `docs/vnext/public_private_ranking_kernel.md`: public/private ranking kernel split.
 - `docs/token_revocation_after_upload.md`: token revocation guidance after HF uploads.
 - `docs/public_data_intake_policy.md`: public-data intake limits.

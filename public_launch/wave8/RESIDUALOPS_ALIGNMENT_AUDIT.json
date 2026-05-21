@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-05-21T01:51:14.079331+00:00",
+  "decision": "PASS_ALIGNED",
+  "overall_token": "PASS",
+  "concept_checks": {
+    "objective_or_q": true,
+    "front_readout_or_f": true,
+    "target_decision_or_q": true,
+    "residual_channel": true,
+    "receipt": true,
+    "d_raw_d_eco_or_coverage": true,
+    "allow_hold_block": true,
+    "no_action_authorization": true
+  },
+  "missing_concepts": [],
+  "block_findings": [],
+  "claim_boundary": [
+    "AOI aligns with ResidualOps-style vocabulary",
+    "AOI is not the full executable ResidualOps Engine",
+    "AOI provides no external action authorization",
+    "Probe or receipt pass is not a trust guarantee"
+  ],
+  "pypi_upload_performed": false,
+  "mcp_registry_submission_performed": false,
+  "community_post_performed": false,
+  "token_printed": false
+}

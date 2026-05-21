@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-05-21T01:51:20.874796+00:00",
+  "decision": "HOLD_VERSION_DECISION",
+  "overall_token": "HOLD",
+  "checks": {
+    "surface_sync": "PASS",
+    "version_audit": "HOLD_VERSION_DECISION",
+    "residualops_alignment": "PASS_ALIGNED",
+    "vnext_claim_audits": "PASS",
+    "no_secrets": "PASS",
+    "launch_claim_guard": "PASS",
+    "smoke_all": "PASS"
+  },
+  "warnings": [
+    "Choose package/server version 0.3.0 or 0.3.0a1 before PyPI upload."
+  ],
+  "errors": [],
+  "pytest_result": "not_checked_by_gate",
+  "safe_to_resume_8q_a": true,
+  "claim_boundary": "Distribution readiness is not product, security, legal, safety, or quality readiness.",
+  "pypi_upload_performed": false,
+  "mcp_registry_submission_performed": false,
+  "community_post_performed": false,
+  "external_tool_execution": false,
+  "live_mcp_call_performed": false,
+  "token_printed": false,
+  "next_action": "Resolve version decision, then resume 8Q-A local build/twine check. Do not upload yet."
+}

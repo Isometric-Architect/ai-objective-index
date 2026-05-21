@@ -150,4 +150,14 @@ For v0.2 real-data public beta, also do not claim verified MCP servers, safe MCP
 122. Do not claim AOI is already a security gateway, verified capability system, security certification, quality guarantee, official standard, or purchasing advice.
 - MCP Registry submission: HOLD, manual only.
 
+## Package 9F vNext Distribution Gate
+
+123. Run `python -m ai_objective_index.vnext_surface_sync_audit`.
+124. Run `python -m ai_objective_index.vnext_package_version_audit`.
+125. Run `python -m ai_objective_index.residualops_alignment_audit`.
+126. Run `python -m ai_objective_index.vnext_distribution_gate`.
+127. Run `python -m ai_objective_index.vnext_pypi_resume_gate`.
+128. Choose a vNext package version, likely `0.3.0` or `0.3.0a1`, before any upload-oriented package.
+129. Resume 8Q-A only for local build/twine checks. Do not upload to PyPI/TestPyPI in 9F.
+
 These links are public after Package 8K. Community posting, GitHub Release creation, and MCP Registry submission remain HOLD. `public_beta_mcp` records are source-traced registry metadata candidates; they are not verified, not safe/certified, not security certified, not a quality guarantee, and not purchasing advice.

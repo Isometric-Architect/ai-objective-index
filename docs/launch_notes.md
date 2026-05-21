@@ -223,3 +223,9 @@ It does not upload to TestPyPI/PyPI, submit to MCP Registry, request/print/store
 Package 9A reframes AOI vNext as an AI Agent Capability Trust Router: a trust/routing layer above registries that maps agent objectives to source-traced capability candidates with residual risk and usage boundaries.
 
 It adds vNext model/schema drafts and claim-boundary docs. It pauses PyPI upload and MCP Registry submission until vNext alignment is complete.
+
+## Package 9F vNext Distribution Gate
+
+Package 9F audits distribution surfaces after Capability Trust, Objective Router, ExecutionReceipt memory, and local Probe-before-Use are present.
+
+It does not build or upload packages, submit MCP Registry metadata, post to communities, call live MCP servers, execute external tools, fetch URLs, or request tokens. It recommends a version decision before the 8Q-A local build path resumes.

@@ -12,7 +12,7 @@ SERVER_JSON_PATH = MCP_DIR / "server.json"
 WAVE1_DIR = Path("public_launch") / "wave1"
 DRAFT_PATH = WAVE1_DIR / "MCP_REGISTRY_SERVER_JSON_DRAFT.json"
 SERVER_NAME = "io.github.isometric-architect/ai-objective-index"
-VERSION = "0.2.0-public-beta"
+VERSION = "0.2.0"
 
 
 def _repo_root() -> Path:
@@ -47,21 +47,43 @@ def build_server_json() -> dict[str, Any]:
     payload: dict[str, Any] = {
         "name": SERVER_NAME,
         "version": VERSION,
-        "description": "AI Objective Index read-only MCP server for objective-based ranking and comparison of AI tools and MCP servers with source traces.",
+        "description": "AI Objective Index read-only Objective-to-Capability Trust Router for source-traced capability candidates, conservative route decisions, receipt memory, and local probe-before-use overlays.",
         "repository": {
             "url": "https://github.com/Isometric-Architect/ai-objective-index",
             "source": "github",
         },
         "read_only": True,
+        "packages": [
+            {
+                "registryType": "pypi",
+                "identifier": "ai-objective-index",
+                "version": VERSION,
+                "transport": {"type": "stdio"},
+            }
+        ],
         "tools_summary": [
             "search",
             "fetch",
             "search_objectives",
+            "rank_options",
             "compare_tools",
             "explain_score",
             "get_source_trace",
             "list_missing_fields",
             "generate_decision_receipt",
+            "route_objective",
+            "get_capability_trust",
+            "explain_route_decision",
+            "submit_execution_receipt",
+            "get_execution_receipt",
+            "list_capability_receipts",
+            "get_capability_receipt_memory",
+            "route_objective_with_receipts",
+            "plan_probe_before_use",
+            "run_local_probe_plan",
+            "get_probe_receipt",
+            "get_capability_probe_memory",
+            "route_objective_with_probes",
         ],
         "entrypoints": {
             "python_module": "ai_objective_index.mcp_stdio_entrypoint",
@@ -75,10 +97,21 @@ def build_server_json() -> dict[str, Any]:
             "remote_mcp_endpoint_exists": remote_endpoint_exists,
         },
         "limitations": [
-            "Draft server metadata only unless a publishable package artifact or remote MCP endpoint is available.",
+            "Draft server metadata only unless a publishable PyPI package or remote MCP endpoint is available.",
             "Registry metadata candidates are not verified, not security certified, and not a quality guarantee.",
+            "Probe-before-Use is local metadata and fixture checking, not a live security scanner.",
+            "ExecutionReceipt memory is a local evidence sidecar, not independent verification or action authorization.",
             "AOI is read-only and does not perform payment, booking, login, email, form submission, purchase, contract signing, account connection, supplier claim, or supplier verification.",
         ],
+        "vnext_surfaces": {
+            "capability_trust": True,
+            "objective_router": True,
+            "execution_receipt_memory": True,
+            "local_probe_before_use": True,
+            "external_action_authorization": False,
+            "live_mcp_calls": False,
+            "external_tool_execution": False,
+        },
         "draft_not_submittable": draft_not_submittable,
         "draft_reason": "No package artifact or remote MCP endpoint was found." if draft_not_submittable else "",
         "generated_at": datetime.now(UTC).isoformat(),

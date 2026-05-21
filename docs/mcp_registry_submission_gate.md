@@ -31,3 +31,5 @@ Package 9A pauses MCP Registry submission until AOI vNext positioning and schema
 Package 9B keeps MCP Registry submission paused while CapabilityTrust cards and route decisions are introduced. A future registry submission must not imply verified, safe, security-certified, or quality-guaranteed capabilities.
 
 Package 9C keeps MCP Registry submission paused while Objective Router REST/MCP surfaces are introduced. Registry metadata must not imply the router is a live security gateway or that candidates are verified.
+
+Package 9F adds a vNext distribution gate. MCP Registry submission remains paused until the vNext package version is chosen, the PyPI package exists, `.mcp/server.json` matches that package, and explicit registry confirmation is present.

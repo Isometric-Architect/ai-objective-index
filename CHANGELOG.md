@@ -1,5 +1,11 @@
 # Changelog
 
+## Package 8Q-C-alt
+
+- Added a real PyPI direct upload gate for `0.3.0a1` because TestPyPI signup is blocked for the owner.
+- Added token-safe real PyPI upload runner, real PyPI install verification, real PyPI release audit, and post-PyPI MCP Registry gate.
+- Preserved boundaries: no TestPyPI, no MCP Registry submission, no community posting, no `.pypirc`, no token request/printing/storage/commit, no force push, and no verification, safety, security-certification, quality-guarantee, product-readiness, or purchasing-advice claim.
+
 ## Package 8Q-A Resumed
 
 - Applied the vNext build candidate decision around `0.3.0a1` for local PyPI/TestPyPI build readiness.

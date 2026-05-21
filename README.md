@@ -742,6 +742,17 @@ python -m ai_objective_index.mcp_registry_readiness_refresh
 
 This still does not upload to TestPyPI/PyPI, submit MCP Registry metadata, request tokens, or create `.pypirc`.
 
+### Package 8Q-C-alt Real PyPI Direct Gate
+
+Because TestPyPI signup is blocked for the owner, Package 8Q-C-alt adds a stricter real PyPI direct upload gate for `0.3.0a1`:
+
+```powershell
+python -m ai_objective_index.real_pypi_upload_gate
+python -m ai_objective_index.real_pypi_upload_runner --dry-run
+```
+
+If the gate passes, the owner can run `python -m ai_objective_index.real_pypi_upload_runner --execute` with `AOI_REAL_PYPI_UPLOAD_CONFIRM=YES` and enter the PyPI token only into twine's local prompt. This package does not use TestPyPI, submit MCP Registry metadata, post to communities, create `.pypirc`, print/store tokens, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
+
 ## Package 9A AOI vNext Alignment
 
 Package 9A pauses the PyPI/MCP Registry publishing path long enough to align AOI vNext around the positioning:

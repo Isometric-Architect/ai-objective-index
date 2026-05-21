@@ -35,3 +35,5 @@ Package 9C keeps MCP Registry submission paused while Objective Router REST/MCP 
 Package 9F adds a vNext distribution gate. MCP Registry submission remains paused until the vNext package version is chosen, the PyPI package exists, `.mcp/server.json` matches that package, and explicit registry confirmation is present.
 
 Package 8Q-A resumed chooses `0.3.0a1` for the local build candidate and refreshes Registry readiness, but does not submit anything.
+
+Package 8Q-C-alt may upload and verify the `0.3.0a1` package on real PyPI because TestPyPI signup is blocked. MCP Registry submission still remains HOLD until `mcp_registry_after_pypi_gate` passes, `mcp-publisher` and registry auth are available, and a later package sets explicit `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES`.

@@ -23,3 +23,21 @@ Package 8Q-A can create local dist files and run `twine check`. MCP Registry rea
 Package 9F keeps MCP Registry submission gated after vNext. `.mcp/server.json` now describes the Objective Router, ExecutionReceipt memory, and local Probe-before-Use surfaces, but Registry submission still waits for a final package version decision, a real PyPI package, and explicit submit confirmation.
 
 Package 8Q-A resumed applies `0.3.0a1` for the local build candidate. MCP Registry remains HOLD until TestPyPI/PyPI verification is complete and explicit submission confirmation exists.
+## After Real PyPI Direct Upload
+
+Package 8Q-C-alt can verify a real PyPI `0.3.0a1` upload when TestPyPI is unavailable. MCP Registry submission still waits for:
+
+- real PyPI upload confirmation;
+- real PyPI install verification;
+- `.mcp/server.json` `registryType: pypi` metadata;
+- README `mcp-name` marker match;
+- no secrets or overclaims;
+- `mcp-publisher` availability and registry auth in a later package.
+
+Run:
+
+```powershell
+python -m ai_objective_index.mcp_registry_after_pypi_gate
+```
+
+Do not submit to MCP Registry from Package 8Q-C-alt.

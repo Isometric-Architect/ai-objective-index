@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-05-21T06:39:01.076104+00:00",
+  "dry_run": true,
+  "execute": false,
+  "env_confirm_present": false,
+  "upload_performed": false,
+  "command_redacted": "C:\\Users\\Isometric-Architect\\AppData\\Local\\Programs\\Python\\Python314\\python.exe -m twine upload dist\\ai_objective_index-0.3.0a1-py3-none-any.whl dist\\ai_objective_index-0.3.0a1.tar.gz",
+  "upload_result": {
+    "ok": false,
+    "skipped": true
+  },
+  "token_printed": false,
+  "pypi_project_url": "",
+  "result_token": "DRY_RUN_ONLY",
+  "errors": [],
+  "warnings": [],
+  "testpypi_used": false,
+  "mcp_registry_submission_performed": false,
+  "community_post_performed": false
+}

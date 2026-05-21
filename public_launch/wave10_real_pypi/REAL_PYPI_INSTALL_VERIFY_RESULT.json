@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-05-21T06:39:18.472903+00:00",
+  "decision": "HOLD_PYPI_PACKAGE_NOT_FOUND",
+  "target_version": "0.3.0a1",
+  "package_name": "ai-objective-index",
+  "upload_result_token": "DRY_RUN_ONLY",
+  "steps": {},
+  "temp_venv_path": "data\\generated\\real_pypi_install_tmp\\aoi_real_pypi_verify",
+  "temp_venv_cleaned": false,
+  "external_api_keys_required": false,
+  "live_mcp_calls_performed": false,
+  "external_tool_execution_performed": false,
+  "token_printed": false,
+  "errors": [],
+  "warnings": [
+    "Real PyPI upload has not been confirmed, so install verification was not attempted."
+  ]
+}

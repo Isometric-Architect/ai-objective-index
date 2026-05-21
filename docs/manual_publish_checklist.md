@@ -171,4 +171,17 @@ For v0.2 real-data public beta, also do not claim verified MCP servers, safe MCP
 136. Run `python -m ai_objective_index.mcp_registry_readiness_refresh`.
 137. Do not upload to TestPyPI/PyPI in this package.
 
+## Package 8Q-C-alt Real PyPI Direct Upload
+
+138. Run `python -m ai_objective_index.real_pypi_upload_gate`.
+139. Run `python -m ai_objective_index.real_pypi_upload_runner --dry-run`.
+140. If and only if the gate passes, set `$env:AOI_REAL_PYPI_UPLOAD_CONFIRM="YES"`.
+141. Run `python -m ai_objective_index.real_pypi_upload_runner --execute`.
+142. Enter username `__token__` and the real PyPI API token only into the local twine prompt.
+143. Run `python -m ai_objective_index.real_pypi_install_verify`.
+144. Run `python -m ai_objective_index.real_pypi_release_audit`.
+145. Run `python -m ai_objective_index.mcp_registry_after_pypi_gate`.
+146. Do not submit MCP Registry metadata in Package 8Q-C-alt.
+147. Do not paste tokens into chat, create `.pypirc`, post to communities, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
+
 These links are public after Package 8K. Community posting, GitHub Release creation, and MCP Registry submission remain HOLD. `public_beta_mcp` records are source-traced registry metadata candidates; they are not verified, not safe/certified, not security certified, not a quality guarantee, and not purchasing advice.

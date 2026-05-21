@@ -233,3 +233,9 @@ It does not build or upload packages, submit MCP Registry metadata, post to comm
 ## Package 8Q-A Resumed
 
 Package 8Q-A resumed applies `0.3.0a1` for the first vNext local build candidate, builds wheel/sdist artifacts, runs `twine check`, runs local install smoke checks, and refreshes PyPI/MCP Registry readiness. It still performs no TestPyPI/PyPI upload, no MCP Registry submission, and no token handling.
+
+## Package 8Q-C-alt Real PyPI Direct Gate
+
+Package 8Q-C-alt exists because TestPyPI signup is blocked for the owner. It adds a strict real PyPI direct upload gate, a token-safe interactive twine upload runner, real PyPI install verification, release audit, and a post-PyPI MCP Registry gate.
+
+It does not use TestPyPI, submit MCP Registry metadata, post to communities, create `.pypirc`, pass tokens through command-line flags, print/store tokens, or claim verification, safety, security certification, quality guarantee, product readiness, or purchasing advice.

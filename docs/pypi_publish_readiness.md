@@ -40,3 +40,15 @@ Package 9C keeps the pause in place while Objective Router REST/MCP surfaces are
 Package 9F adds a distribution gate before 8Q-A resumes. It recommends choosing `0.3.0` or `0.3.0a1` for the vNext package surface before any upload-oriented package. 9F does not upload; it only prepares the local build path to resume safely.
 
 Package 8Q-A resumed uses `0.3.0a1` as the first vNext build candidate. It builds local wheel/sdist artifacts and runs `twine check`, but still does not upload to TestPyPI or PyPI.
+
+Package 8Q-C-alt handles the TestPyPI signup failure by adding a strict real PyPI direct upload gate. It checks the `0.3.0a1` build, PyPI project/version status, `.pypirc` absence, token safety, and twine metadata before allowing an interactive twine upload. Tokens must be entered only into the local twine prompt and never into chat, files, or command-line flags.
+
+After a real PyPI upload, run:
+
+```powershell
+python -m ai_objective_index.real_pypi_install_verify
+python -m ai_objective_index.real_pypi_release_audit
+python -m ai_objective_index.mcp_registry_after_pypi_gate
+```
+
+MCP Registry submission remains a later gated package.

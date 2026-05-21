@@ -1,0 +1,34 @@
+{
+  "schema": "AOI_ProbeClaimBoundaryAudit/v0.1",
+  "overall_token": "PASS",
+  "risky_phrase_count": 0,
+  "findings": [],
+  "scanned_files": [
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\docs\\vnext\\probe_before_use.md",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\docs\\vnext\\probe_card.md",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\docs\\vnext\\probe_limitations.md",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\docs\\vnext\\probe_plan.md",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\docs\\vnext\\probe_route_overlay.md",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\docs\\vnext\\package_9e_probe_before_use_mvp.md",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\public_launch\\wave7\\CAPABILITY_PROBE_MEMORY_SAMPLE.json",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\public_launch\\wave7\\PACKAGE_9E_NEXT_STEPS.md",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\public_launch\\wave7\\PACKAGE_9E_PROBE_BEFORE_USE_RESULT.json",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\public_launch\\wave7\\PROBE_NEGATIVE_CONTROL_RESULT.json",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\public_launch\\wave7\\PROBE_PLAN_SAMPLE.json",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\public_launch\\wave7\\PROBE_ROUTE_OVERLAY_SAMPLE.json",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\public_launch\\wave7\\PROBE_RUN_SAMPLE_RESULT.json",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\README.md",
+    "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\CHANGELOG.md"
+  ],
+  "claim_boundary": [
+    "local probe pass is not verification",
+    "not security certified",
+    "not a quality guarantee",
+    "no action authorization",
+    "no live MCP call or external tool execution"
+  ],
+  "pypi_upload_performed": false,
+  "mcp_registry_submission_performed": false,
+  "community_post_performed": false,
+  "token_printed": false
+}

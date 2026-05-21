@@ -1451,6 +1451,1480 @@
           }
         }
       }
+    },
+    "/v1/probes/plan": {
+      "post": {
+        "summary": "Plan local metadata probes before use",
+        "operationId": "planProbeBeforeUse",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$defs": {
+                  "ObjectiveRouteConstraints": {
+                    "additionalProperties": true,
+                    "properties": {
+                      "require_source_trace": {
+                        "default": true,
+                        "title": "Require Source Trace",
+                        "type": "boolean"
+                      },
+                      "require_policy_clarity": {
+                        "default": false,
+                        "title": "Require Policy Clarity",
+                        "type": "boolean"
+                      },
+                      "require_docs": {
+                        "default": false,
+                        "title": "Require Docs",
+                        "type": "boolean"
+                      },
+                      "require_pricing": {
+                        "default": false,
+                        "title": "Require Pricing",
+                        "type": "boolean"
+                      },
+                      "require_license": {
+                        "default": false,
+                        "title": "Require License",
+                        "type": "boolean"
+                      },
+                      "require_repository": {
+                        "default": false,
+                        "title": "Require Repository",
+                        "type": "boolean"
+                      },
+                      "allowed_integration_types": {
+                        "anyOf": [
+                          {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "default": null,
+                        "title": "Allowed Integration Types"
+                      },
+                      "forbidden_actions": {
+                        "anyOf": [
+                          {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "default": null,
+                        "title": "Forbidden Actions"
+                      },
+                      "risk_tolerance": {
+                        "default": "unknown",
+                        "enum": [
+                          "low",
+                          "medium",
+                          "high",
+                          "unknown"
+                        ],
+                        "title": "Risk Tolerance",
+                        "type": "string"
+                      }
+                    },
+                    "title": "ObjectiveRouteConstraints",
+                    "type": "object"
+                  },
+                  "ObjectiveRouteInclude": {
+                    "additionalProperties": true,
+                    "properties": {
+                      "source_traces": {
+                        "default": true,
+                        "title": "Source Traces",
+                        "type": "boolean"
+                      },
+                      "missing_fields": {
+                        "default": true,
+                        "title": "Missing Fields",
+                        "type": "boolean"
+                      },
+                      "score_components": {
+                        "default": true,
+                        "title": "Score Components",
+                        "type": "boolean"
+                      },
+                      "known_limits": {
+                        "default": true,
+                        "title": "Known Limits",
+                        "type": "boolean"
+                      }
+                    },
+                    "title": "ObjectiveRouteInclude",
+                    "type": "object"
+                  }
+                },
+                "additionalProperties": true,
+                "properties": {
+                  "query": {
+                    "title": "Query",
+                    "type": "string"
+                  },
+                  "objective": {
+                    "title": "Objective",
+                    "type": "string"
+                  },
+                  "domain": {
+                    "default": "mcp_servers",
+                    "title": "Domain",
+                    "type": "string"
+                  },
+                  "data_scope": {
+                    "default": "sample",
+                    "enum": [
+                      "sample",
+                      "integrated",
+                      "mcp_registry",
+                      "public_beta_mcp"
+                    ],
+                    "title": "Data Scope",
+                    "type": "string"
+                  },
+                  "limit": {
+                    "default": 10,
+                    "maximum": 100,
+                    "minimum": 1,
+                    "title": "Limit",
+                    "type": "integer"
+                  },
+                  "constraints": {
+                    "$ref": "#/$defs/ObjectiveRouteConstraints"
+                  },
+                  "include": {
+                    "$ref": "#/$defs/ObjectiveRouteInclude"
+                  }
+                },
+                "required": [
+                  "query",
+                  "objective"
+                ],
+                "title": "ObjectiveRouteRequest",
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Probe plan",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$defs": {
+                    "ProbeCard": {
+                      "additionalProperties": true,
+                      "properties": {
+                        "schema": {
+                          "default": "AOI_ProbeCard/v0.1",
+                          "title": "Schema",
+                          "type": "string"
+                        },
+                        "probe_id": {
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ],
+                          "default": null,
+                          "title": "Probe Id"
+                        },
+                        "probe_type": {
+                          "default": "local_fixture",
+                          "enum": [
+                            "source_trace_integrity",
+                            "missing_field_check",
+                            "policy_clarity_check",
+                            "docs_presence_check",
+                            "repository_presence_check",
+                            "license_presence_check",
+                            "unsupported_claim_check",
+                            "forbidden_action_check",
+                            "negative_control",
+                            "local_fixture"
+                          ],
+                          "title": "Probe Type",
+                          "type": "string"
+                        },
+                        "objective_id": {
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ],
+                          "default": null,
+                          "title": "Objective Id"
+                        },
+                        "capability_id": {
+                          "title": "Capability Id",
+                          "type": "string"
+                        },
+                        "object_id": {
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ],
+                          "default": null,
+                          "title": "Object Id"
+                        },
+                        "name": {
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ],
+                          "default": null,
+                          "title": "Name"
+                        },
+                        "data_scope": {
+                          "default": "sample",
+                          "title": "Data Scope",
+                          "type": "string"
+                        },
+                        "probe_goal": {
+                          "default": "Run a deterministic local metadata probe before use.",
+                          "title": "Probe Goal",
+                          "type": "string"
+                        },
+                        "canary_input": {
+                          "anyOf": [
+                            {
+                              "additionalProperties": true,
+                              "type": "object"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ],
+                          "default": null,
+                          "title": "Canary Input"
+                        },
+                        "expected_behavior": {
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ],
+                          "default": null,
+                          "title": "Expected Behavior"
+                        },
+                        "negative_control_expected": {
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ],
+                          "default": null,
+                          "title": "Negative Control Expected"
+                        },
+                        "required_fields": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "title": "Required Fields",
+                          "type": "array"
+                        },
+                        "forbidden_claims": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "title": "Forbidden Claims",
+                          "type": "array"
+                        },
+                        "forbidden_actions": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "title": "Forbidden Actions",
+                          "type": "array"
+                        },
+                        "sandbox_policy": {
+                          "$ref": "#/$defs/ProbeSandboxPolicy"
+                        },
+                        "claim_ceiling": {
+                          "default": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+                          "title": "Claim Ceiling",
+                          "type": "string"
+                        },
+                        "generated_at": {
+                          "title": "Generated At",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "capability_id"
+                      ],
+                      "title": "ProbeCard",
+                      "type": "object"
+                    },
+                    "ProbeSandboxPolicy": {
+                      "additionalProperties": true,
+                      "properties": {
+                        "no_network": {
+                          "default": true,
+                          "title": "No Network",
+                          "type": "boolean"
+                        },
+                        "no_external_tool_execution": {
+                          "default": true,
+                          "title": "No External Tool Execution",
+                          "type": "boolean"
+                        },
+                        "no_subprocess": {
+                          "default": true,
+                          "title": "No Subprocess",
+                          "type": "boolean"
+                        },
+                        "local_data_only": {
+                          "default": true,
+                          "title": "Local Data Only",
+                          "type": "boolean"
+                        }
+                      },
+                      "title": "ProbeSandboxPolicy",
+                      "type": "object"
+                    }
+                  },
+                  "additionalProperties": true,
+                  "properties": {
+                    "schema": {
+                      "default": "AOI_ProbePlan/v0.1",
+                      "title": "Schema",
+                      "type": "string"
+                    },
+                    "plan_id": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ],
+                      "default": null,
+                      "title": "Plan Id"
+                    },
+                    "objective_id": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ],
+                      "default": null,
+                      "title": "Objective Id"
+                    },
+                    "route_request": {
+                      "anyOf": [
+                        {
+                          "additionalProperties": true,
+                          "type": "object"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ],
+                      "default": null,
+                      "title": "Route Request"
+                    },
+                    "capability_ids": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Capability Ids",
+                      "type": "array"
+                    },
+                    "probe_cards": {
+                      "items": {
+                        "$ref": "#/$defs/ProbeCard"
+                      },
+                      "title": "Probe Cards",
+                      "type": "array"
+                    },
+                    "plan_scope": {
+                      "default": "local_metadata_only",
+                      "enum": [
+                        "local_metadata_only",
+                        "local_fixture_only",
+                        "negative_control_only"
+                      ],
+                      "title": "Plan Scope",
+                      "type": "string"
+                    },
+                    "allowed_execution": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Allowed Execution",
+                      "type": "array"
+                    },
+                    "forbidden_execution": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Forbidden Execution",
+                      "type": "array"
+                    },
+                    "expected_outputs": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Expected Outputs",
+                      "type": "array"
+                    },
+                    "claim_ceiling": {
+                      "default": "local probe plan only; not verification, certification, quality guarantee, or action authorization",
+                      "title": "Claim Ceiling",
+                      "type": "string"
+                    },
+                    "must_not_claim": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Must Not Claim",
+                      "type": "array"
+                    },
+                    "generated_at": {
+                      "title": "Generated At",
+                      "type": "string"
+                    }
+                  },
+                  "title": "ProbePlan",
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/probes/run-local": {
+      "post": {
+        "summary": "Run a local-only probe plan",
+        "operationId": "runLocalProbePlan",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$defs": {
+                  "ProbeCard": {
+                    "additionalProperties": true,
+                    "properties": {
+                      "schema": {
+                        "default": "AOI_ProbeCard/v0.1",
+                        "title": "Schema",
+                        "type": "string"
+                      },
+                      "probe_id": {
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "default": null,
+                        "title": "Probe Id"
+                      },
+                      "probe_type": {
+                        "default": "local_fixture",
+                        "enum": [
+                          "source_trace_integrity",
+                          "missing_field_check",
+                          "policy_clarity_check",
+                          "docs_presence_check",
+                          "repository_presence_check",
+                          "license_presence_check",
+                          "unsupported_claim_check",
+                          "forbidden_action_check",
+                          "negative_control",
+                          "local_fixture"
+                        ],
+                        "title": "Probe Type",
+                        "type": "string"
+                      },
+                      "objective_id": {
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "default": null,
+                        "title": "Objective Id"
+                      },
+                      "capability_id": {
+                        "title": "Capability Id",
+                        "type": "string"
+                      },
+                      "object_id": {
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "default": null,
+                        "title": "Object Id"
+                      },
+                      "name": {
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "default": null,
+                        "title": "Name"
+                      },
+                      "data_scope": {
+                        "default": "sample",
+                        "title": "Data Scope",
+                        "type": "string"
+                      },
+                      "probe_goal": {
+                        "default": "Run a deterministic local metadata probe before use.",
+                        "title": "Probe Goal",
+                        "type": "string"
+                      },
+                      "canary_input": {
+                        "anyOf": [
+                          {
+                            "additionalProperties": true,
+                            "type": "object"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "default": null,
+                        "title": "Canary Input"
+                      },
+                      "expected_behavior": {
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "default": null,
+                        "title": "Expected Behavior"
+                      },
+                      "negative_control_expected": {
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "default": null,
+                        "title": "Negative Control Expected"
+                      },
+                      "required_fields": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "title": "Required Fields",
+                        "type": "array"
+                      },
+                      "forbidden_claims": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "title": "Forbidden Claims",
+                        "type": "array"
+                      },
+                      "forbidden_actions": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "title": "Forbidden Actions",
+                        "type": "array"
+                      },
+                      "sandbox_policy": {
+                        "$ref": "#/$defs/ProbeSandboxPolicy"
+                      },
+                      "claim_ceiling": {
+                        "default": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+                        "title": "Claim Ceiling",
+                        "type": "string"
+                      },
+                      "generated_at": {
+                        "title": "Generated At",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "capability_id"
+                    ],
+                    "title": "ProbeCard",
+                    "type": "object"
+                  },
+                  "ProbeSandboxPolicy": {
+                    "additionalProperties": true,
+                    "properties": {
+                      "no_network": {
+                        "default": true,
+                        "title": "No Network",
+                        "type": "boolean"
+                      },
+                      "no_external_tool_execution": {
+                        "default": true,
+                        "title": "No External Tool Execution",
+                        "type": "boolean"
+                      },
+                      "no_subprocess": {
+                        "default": true,
+                        "title": "No Subprocess",
+                        "type": "boolean"
+                      },
+                      "local_data_only": {
+                        "default": true,
+                        "title": "Local Data Only",
+                        "type": "boolean"
+                      }
+                    },
+                    "title": "ProbeSandboxPolicy",
+                    "type": "object"
+                  }
+                },
+                "additionalProperties": true,
+                "properties": {
+                  "schema": {
+                    "default": "AOI_ProbePlan/v0.1",
+                    "title": "Schema",
+                    "type": "string"
+                  },
+                  "plan_id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null,
+                    "title": "Plan Id"
+                  },
+                  "objective_id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null,
+                    "title": "Objective Id"
+                  },
+                  "route_request": {
+                    "anyOf": [
+                      {
+                        "additionalProperties": true,
+                        "type": "object"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null,
+                    "title": "Route Request"
+                  },
+                  "capability_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Capability Ids",
+                    "type": "array"
+                  },
+                  "probe_cards": {
+                    "items": {
+                      "$ref": "#/$defs/ProbeCard"
+                    },
+                    "title": "Probe Cards",
+                    "type": "array"
+                  },
+                  "plan_scope": {
+                    "default": "local_metadata_only",
+                    "enum": [
+                      "local_metadata_only",
+                      "local_fixture_only",
+                      "negative_control_only"
+                    ],
+                    "title": "Plan Scope",
+                    "type": "string"
+                  },
+                  "allowed_execution": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Allowed Execution",
+                    "type": "array"
+                  },
+                  "forbidden_execution": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Forbidden Execution",
+                    "type": "array"
+                  },
+                  "expected_outputs": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Expected Outputs",
+                    "type": "array"
+                  },
+                  "claim_ceiling": {
+                    "default": "local probe plan only; not verification, certification, quality guarantee, or action authorization",
+                    "title": "Claim Ceiling",
+                    "type": "string"
+                  },
+                  "must_not_claim": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Must Not Claim",
+                    "type": "array"
+                  },
+                  "generated_at": {
+                    "title": "Generated At",
+                    "type": "string"
+                  }
+                },
+                "title": "ProbePlan",
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Probe receipt",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$defs": {
+                    "ProbeReceiptAggregate": {
+                      "additionalProperties": true,
+                      "properties": {
+                        "pass_local_count": {
+                          "default": 0,
+                          "title": "Pass Local Count",
+                          "type": "integer"
+                        },
+                        "hold_count": {
+                          "default": 0,
+                          "title": "Hold Count",
+                          "type": "integer"
+                        },
+                        "block_count": {
+                          "default": 0,
+                          "title": "Block Count",
+                          "type": "integer"
+                        },
+                        "fail_unexpected_count": {
+                          "default": 0,
+                          "title": "Fail Unexpected Count",
+                          "type": "integer"
+                        },
+                        "negative_control_pass_count": {
+                          "default": 0,
+                          "title": "Negative Control Pass Count",
+                          "type": "integer"
+                        },
+                        "negative_control_fail_count": {
+                          "default": 0,
+                          "title": "Negative Control Fail Count",
+                          "type": "integer"
+                        }
+                      },
+                      "title": "ProbeReceiptAggregate",
+                      "type": "object"
+                    },
+                    "ProbeResult": {
+                      "additionalProperties": true,
+                      "properties": {
+                        "schema": {
+                          "default": "AOI_ProbeResult/v0.1",
+                          "title": "Schema",
+                          "type": "string"
+                        },
+                        "probe_id": {
+                          "title": "Probe Id",
+                          "type": "string"
+                        },
+                        "capability_id": {
+                          "title": "Capability Id",
+                          "type": "string"
+                        },
+                        "result": {
+                          "enum": [
+                            "PASS_LOCAL",
+                            "HOLD_INSUFFICIENT_EVIDENCE",
+                            "HOLD_POLICY_CLARITY",
+                            "HOLD_MISSING_FIELDS",
+                            "FAIL_EXPECTED_NEGATIVE_CONTROL",
+                            "FAIL_UNEXPECTED",
+                            "BLOCK_FORBIDDEN_ACTION",
+                            "BLOCK_UNSUPPORTED_CLAIM",
+                            "BLOCK_NETWORK_REQUIRED",
+                            "INVALID_PROBE"
+                          ],
+                          "title": "Result",
+                          "type": "string"
+                        },
+                        "checked_fields": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "title": "Checked Fields",
+                          "type": "array"
+                        },
+                        "findings": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "title": "Findings",
+                          "type": "array"
+                        },
+                        "warnings": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "title": "Warnings",
+                          "type": "array"
+                        },
+                        "errors": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "title": "Errors",
+                          "type": "array"
+                        },
+                        "evidence_refs": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "title": "Evidence Refs",
+                          "type": "array"
+                        },
+                        "can_influence_route": {
+                          "default": true,
+                          "title": "Can Influence Route",
+                          "type": "boolean"
+                        },
+                        "can_upgrade_to_verified": {
+                          "default": false,
+                          "title": "Can Upgrade To Verified",
+                          "type": "boolean"
+                        },
+                        "can_certify_security": {
+                          "default": false,
+                          "title": "Can Certify Security",
+                          "type": "boolean"
+                        },
+                        "can_certify_quality": {
+                          "default": false,
+                          "title": "Can Certify Quality",
+                          "type": "boolean"
+                        },
+                        "can_authorize_action": {
+                          "default": false,
+                          "title": "Can Authorize Action",
+                          "type": "boolean"
+                        }
+                      },
+                      "required": [
+                        "probe_id",
+                        "capability_id",
+                        "result"
+                      ],
+                      "title": "ProbeResult",
+                      "type": "object"
+                    }
+                  },
+                  "additionalProperties": true,
+                  "properties": {
+                    "schema": {
+                      "default": "AOI_ProbeReceipt/v0.1",
+                      "title": "Schema",
+                      "type": "string"
+                    },
+                    "receipt_id": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ],
+                      "default": null,
+                      "title": "Receipt Id"
+                    },
+                    "plan_id": {
+                      "title": "Plan Id",
+                      "type": "string"
+                    },
+                    "probe_results": {
+                      "items": {
+                        "$ref": "#/$defs/ProbeResult"
+                      },
+                      "title": "Probe Results",
+                      "type": "array"
+                    },
+                    "aggregate": {
+                      "$ref": "#/$defs/ProbeReceiptAggregate"
+                    },
+                    "route_effect": {
+                      "default": "NO_CHANGE",
+                      "enum": [
+                        "NO_CHANGE",
+                        "ADD_WARNING",
+                        "DOWNGRADE_TO_HOLD",
+                        "DOWNGRADE_TO_BLOCK",
+                        "DO_NOT_UPGRADE"
+                      ],
+                      "title": "Route Effect",
+                      "type": "string"
+                    },
+                    "claim_ceiling": {
+                      "default": "local probe receipt only; not verification, security certification, quality guarantee, or action authorization",
+                      "title": "Claim Ceiling",
+                      "type": "string"
+                    },
+                    "generated_at": {
+                      "title": "Generated At",
+                      "type": "string"
+                    },
+                    "token_printed": {
+                      "default": false,
+                      "title": "Token Printed",
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "plan_id"
+                  ],
+                  "title": "ProbeReceipt",
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/probes/{receipt_id}": {
+      "get": {
+        "summary": "Fetch one local probe receipt",
+        "operationId": "getProbeReceipt",
+        "parameters": [
+          {
+            "name": "receipt_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Stored probe receipt or stable not_found result"
+          }
+        }
+      }
+    },
+    "/v1/capabilities/{capability_id}/probe-memory": {
+      "get": {
+        "summary": "Fetch local probe memory for one capability",
+        "operationId": "getCapabilityProbeMemory",
+        "parameters": [
+          {
+            "name": "capability_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Capability probe memory",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "properties": {
+                    "schema": {
+                      "default": "AOI_CapabilityProbeMemory/v0.1",
+                      "title": "Schema",
+                      "type": "string"
+                    },
+                    "capability_id": {
+                      "title": "Capability Id",
+                      "type": "string"
+                    },
+                    "probe_count": {
+                      "default": 0,
+                      "title": "Probe Count",
+                      "type": "integer"
+                    },
+                    "latest_probe_result": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ],
+                      "default": null,
+                      "title": "Latest Probe Result"
+                    },
+                    "hold_reasons": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Hold Reasons",
+                      "type": "array"
+                    },
+                    "block_reasons": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Block Reasons",
+                      "type": "array"
+                    },
+                    "recurring_findings": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Recurring Findings",
+                      "type": "array"
+                    },
+                    "negative_control_status": {
+                      "default": "not_checked",
+                      "title": "Negative Control Status",
+                      "type": "string"
+                    },
+                    "can_influence_route": {
+                      "default": false,
+                      "title": "Can Influence Route",
+                      "type": "boolean"
+                    },
+                    "can_verify": {
+                      "default": false,
+                      "title": "Can Verify",
+                      "type": "boolean"
+                    },
+                    "can_certify_security": {
+                      "default": false,
+                      "title": "Can Certify Security",
+                      "type": "boolean"
+                    },
+                    "memory_status": {
+                      "default": "NO_PROBES",
+                      "enum": [
+                        "NO_PROBES",
+                        "LOCAL_PROBES_AVAILABLE",
+                        "HOLD_SIGNALS",
+                        "BLOCK_SIGNALS",
+                        "MIXED_SIGNALS"
+                      ],
+                      "title": "Memory Status",
+                      "type": "string"
+                    },
+                    "generated_at": {
+                      "title": "Generated At",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "capability_id"
+                  ],
+                  "title": "CapabilityProbeMemory",
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/objectives/route-with-probes": {
+      "post": {
+        "summary": "Route an objective with local probe overlay",
+        "operationId": "routeObjectiveWithProbes",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$defs": {
+                  "ObjectiveRouteConstraints": {
+                    "additionalProperties": true,
+                    "properties": {
+                      "require_source_trace": {
+                        "default": true,
+                        "title": "Require Source Trace",
+                        "type": "boolean"
+                      },
+                      "require_policy_clarity": {
+                        "default": false,
+                        "title": "Require Policy Clarity",
+                        "type": "boolean"
+                      },
+                      "require_docs": {
+                        "default": false,
+                        "title": "Require Docs",
+                        "type": "boolean"
+                      },
+                      "require_pricing": {
+                        "default": false,
+                        "title": "Require Pricing",
+                        "type": "boolean"
+                      },
+                      "require_license": {
+                        "default": false,
+                        "title": "Require License",
+                        "type": "boolean"
+                      },
+                      "require_repository": {
+                        "default": false,
+                        "title": "Require Repository",
+                        "type": "boolean"
+                      },
+                      "allowed_integration_types": {
+                        "anyOf": [
+                          {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "default": null,
+                        "title": "Allowed Integration Types"
+                      },
+                      "forbidden_actions": {
+                        "anyOf": [
+                          {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "default": null,
+                        "title": "Forbidden Actions"
+                      },
+                      "risk_tolerance": {
+                        "default": "unknown",
+                        "enum": [
+                          "low",
+                          "medium",
+                          "high",
+                          "unknown"
+                        ],
+                        "title": "Risk Tolerance",
+                        "type": "string"
+                      }
+                    },
+                    "title": "ObjectiveRouteConstraints",
+                    "type": "object"
+                  },
+                  "ObjectiveRouteInclude": {
+                    "additionalProperties": true,
+                    "properties": {
+                      "source_traces": {
+                        "default": true,
+                        "title": "Source Traces",
+                        "type": "boolean"
+                      },
+                      "missing_fields": {
+                        "default": true,
+                        "title": "Missing Fields",
+                        "type": "boolean"
+                      },
+                      "score_components": {
+                        "default": true,
+                        "title": "Score Components",
+                        "type": "boolean"
+                      },
+                      "known_limits": {
+                        "default": true,
+                        "title": "Known Limits",
+                        "type": "boolean"
+                      }
+                    },
+                    "title": "ObjectiveRouteInclude",
+                    "type": "object"
+                  }
+                },
+                "additionalProperties": true,
+                "properties": {
+                  "query": {
+                    "title": "Query",
+                    "type": "string"
+                  },
+                  "objective": {
+                    "title": "Objective",
+                    "type": "string"
+                  },
+                  "domain": {
+                    "default": "mcp_servers",
+                    "title": "Domain",
+                    "type": "string"
+                  },
+                  "data_scope": {
+                    "default": "sample",
+                    "enum": [
+                      "sample",
+                      "integrated",
+                      "mcp_registry",
+                      "public_beta_mcp"
+                    ],
+                    "title": "Data Scope",
+                    "type": "string"
+                  },
+                  "limit": {
+                    "default": 10,
+                    "maximum": 100,
+                    "minimum": 1,
+                    "title": "Limit",
+                    "type": "integer"
+                  },
+                  "constraints": {
+                    "$ref": "#/$defs/ObjectiveRouteConstraints"
+                  },
+                  "include": {
+                    "$ref": "#/$defs/ObjectiveRouteInclude"
+                  }
+                },
+                "required": [
+                  "query",
+                  "objective"
+                ],
+                "title": "ObjectiveRouteRequest",
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Objective route response with probe overlay",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$defs": {
+                    "ProbeCapabilityOverlay": {
+                      "additionalProperties": true,
+                      "properties": {
+                        "capability_id": {
+                          "title": "Capability Id",
+                          "type": "string"
+                        },
+                        "probe_results": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "title": "Probe Results",
+                          "type": "array"
+                        },
+                        "overlay_notes": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "title": "Overlay Notes",
+                          "type": "array"
+                        },
+                        "decision_effect": {
+                          "default": "NO_CHANGE",
+                          "enum": [
+                            "NO_CHANGE",
+                            "ADD_WARNING",
+                            "DOWNGRADE_TO_HOLD",
+                            "DOWNGRADE_TO_BLOCK",
+                            "DO_NOT_UPGRADE"
+                          ],
+                          "title": "Decision Effect",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "capability_id"
+                      ],
+                      "title": "ProbeCapabilityOverlay",
+                      "type": "object"
+                    }
+                  },
+                  "additionalProperties": true,
+                  "properties": {
+                    "schema": {
+                      "default": "AOI_ProbeRouteOverlay/v0.1",
+                      "title": "Schema",
+                      "type": "string"
+                    },
+                    "route_request": {
+                      "additionalProperties": true,
+                      "title": "Route Request",
+                      "type": "object"
+                    },
+                    "original_route_summary": {
+                      "additionalProperties": true,
+                      "title": "Original Route Summary",
+                      "type": "object"
+                    },
+                    "probe_plan_id": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ],
+                      "default": null,
+                      "title": "Probe Plan Id"
+                    },
+                    "probe_receipt_id": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ],
+                      "default": null,
+                      "title": "Probe Receipt Id"
+                    },
+                    "probe_memory_applied": {
+                      "default": false,
+                      "title": "Probe Memory Applied",
+                      "type": "boolean"
+                    },
+                    "per_capability_probe_overlay": {
+                      "items": {
+                        "$ref": "#/$defs/ProbeCapabilityOverlay"
+                      },
+                      "title": "Per Capability Probe Overlay",
+                      "type": "array"
+                    },
+                    "final_claim_ceiling": {
+                      "default": "route with local probe overlay; not verified, not security certified, not a quality guarantee",
+                      "title": "Final Claim Ceiling",
+                      "type": "string"
+                    },
+                    "must_not_claim": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "title": "Must Not Claim",
+                      "type": "array"
+                    },
+                    "generated_at": {
+                      "title": "Generated At",
+                      "type": "string"
+                    },
+                    "external_execution": {
+                      "default": false,
+                      "title": "External Execution",
+                      "type": "boolean"
+                    },
+                    "network_used": {
+                      "default": false,
+                      "title": "Network Used",
+                      "type": "boolean"
+                    },
+                    "gateway_execution": {
+                      "default": false,
+                      "title": "Gateway Execution",
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "route_request",
+                    "original_route_summary"
+                  ],
+                  "title": "ProbeRouteOverlay",
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/probes/status": {
+      "get": {
+        "summary": "Probe layer status and boundaries",
+        "operationId": "probeStatus",
+        "responses": {
+          "200": {
+            "description": "Local-only probe status"
+          }
+        }
+      }
     }
   }
 }

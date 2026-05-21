@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aoi.local/schemas/vnext/capability_probe_memory.schema.json",
+  "title": "AOI CapabilityProbeMemory v0.1",
+  "type": "object",
+  "required": ["schema", "capability_id", "probe_count", "memory_status"],
+  "properties": {
+    "schema": {"const": "AOI_CapabilityProbeMemory/v0.1"},
+    "capability_id": {"type": "string"},
+    "probe_count": {"type": "integer"},
+    "latest_probe_result": {"type": ["string", "null"]},
+    "hold_reasons": {"type": "array", "items": {"type": "string"}},
+    "block_reasons": {"type": "array", "items": {"type": "string"}},
+    "recurring_findings": {"type": "array", "items": {"type": "string"}},
+    "negative_control_status": {"type": "string"},
+    "can_influence_route": {"type": "boolean"},
+    "can_verify": {"const": false},
+    "can_certify_security": {"const": false},
+    "memory_status": {"enum": ["NO_PROBES", "LOCAL_PROBES_AVAILABLE", "HOLD_SIGNALS", "BLOCK_SIGNALS", "MIXED_SIGNALS"]},
+    "generated_at": {"type": "string"}
+  }
+}

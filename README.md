@@ -793,6 +793,30 @@ python -m ai_objective_index.vnext_execution_receipt_audit
 
 ExecutionReceipt memory can record failures, missing fields, and residual notes. It can add warnings or downgrade routes, but it cannot verify a capability, certify security, guarantee quality, establish product readiness, authorize actions, run probes, execute tools, fetch live URLs, upload packages, submit MCP Registry metadata, or post to communities.
 
+## Package 9E: Probe-before-Use MVP
+
+Package 9E adds a local-only probe-before-use layer on top of the vNext Objective Router. It can plan deterministic metadata probes, run local fixture checks and negative controls, store probe receipts, and overlay probe warnings or downgrades on routes.
+
+New REST endpoints:
+
+- `POST /v1/probes/plan`
+- `POST /v1/probes/run-local`
+- `GET /v1/probes/{receipt_id}`
+- `GET /v1/capabilities/{capability_id}/probe-memory`
+- `POST /v1/objectives/route-with-probes`
+- `GET /v1/probes/status`
+
+New MCP tools: `plan_probe_before_use`, `run_local_probe_plan`, `get_probe_receipt`, `get_capability_probe_memory`, `route_objective_with_probes`.
+
+Run the offline demo:
+
+```powershell
+python -m ai_objective_index.vnext.probe_cli_demo --query "browser automation MCP server" --objective "select source-traced MCP candidates" --data-scope public_beta_mcp --limit 5
+python -m ai_objective_index.vnext_probe_audit
+```
+
+Probe results are pre-use warnings over local metadata. They do not call live MCP servers, execute external tools, fetch URLs, certify security, guarantee quality, verify capabilities, authorize actions, upload packages, submit registry metadata, or post to communities.
+
 ## Claim Boundary
 
 Allowed claim: AOI is a read-only MCP/API objective ranking and comparison tool with explicit schemas, sample source traces, missing-field reporting, and decision receipt contracts.
@@ -873,6 +897,8 @@ AOI output is not a quality guarantee. It is not legal, financial, medical, purc
 - `docs/vnext/objective_router_mcp_tools.md`: vNext Objective Router MCP tools.
 - `docs/vnext/package_9d_execution_receipt_loop_mvp.md`: local/offline receipt memory loop.
 - `docs/vnext/execution_receipt_loop.md`: route -> use -> receipt -> memory -> overlay flow.
+- `docs/vnext/package_9e_probe_before_use_mvp.md`: local-only probe-before-use MVP.
+- `docs/vnext/probe_before_use.md`: route -> probe plan -> local receipt -> overlay flow.
 - `docs/vnext/public_private_ranking_kernel.md`: public/private ranking kernel split.
 - `docs/token_revocation_after_upload.md`: token revocation guidance after HF uploads.
 - `docs/public_data_intake_policy.md`: public-data intake limits.

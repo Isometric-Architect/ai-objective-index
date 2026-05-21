@@ -1,5 +1,11 @@
 # Changelog
 
+## Package 9E
+
+- Added local-only probe-before-use models, probe plans, probe results, probe receipts, capability probe memory, and route overlays.
+- Added deterministic offline metadata probes, fixture negative controls, REST endpoints, MCP tools, CLI demo, schemas, docs, and claim-boundary audit.
+- Preserved vNext limits: no live MCP calls, no external tool execution, no URL fetch, no gateway execution, no verification claim, no security certification, no quality guarantee, and no action authorization.
+
 ## 0.1.0-package-0
 
 - Added project identity for AI Objective Index (AOI).

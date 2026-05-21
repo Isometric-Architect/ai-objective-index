@@ -1,7 +1,11 @@
-# Probe Before Use
+# Probe-before-Use
 
-ProbeCard describes a canary-style test before relying on a capability for an objective.
+The vNext probe loop is:
 
-It includes target capability, objective scope, canary input, expected behavior, negative control, sandbox policy, pass/fail/hold state, failure type, and receipt hash.
+1. Route an objective to capability candidates.
+2. Build a local probe plan for those candidates.
+3. Run deterministic metadata probes and negative controls.
+4. Store a local probe receipt.
+5. Overlay probe warnings or downgrades on the route response.
 
-Package 9A defines probe metadata only. It does not run probes against external systems.
+Probes can add warnings, keep HOLD decisions, or downgrade routes to HOLD/BLOCK. They cannot upgrade HOLD to ALLOW and cannot certify a capability.

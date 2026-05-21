@@ -994,6 +994,271 @@
           }
         }
       }
+    },
+    {
+      "name": "plan_probe_before_use",
+      "description": "Plan local metadata probes before use. No live MCP calls, external tool execution, security certification, or action authorization.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "query",
+          "objective"
+        ],
+        "properties": {
+          "query": {
+            "type": "string"
+          },
+          "objective": {
+            "type": "string"
+          },
+          "data_scope": {
+            "type": "string",
+            "enum": [
+              "sample",
+              "integrated",
+              "mcp_registry",
+              "public_beta_mcp"
+            ],
+            "default": "sample"
+          },
+          "limit": {
+            "type": "integer",
+            "default": 5,
+            "minimum": 1
+          },
+          "domain": {
+            "type": "string",
+            "default": "mcp_servers"
+          },
+          "constraints": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "probe_plan": {
+            "type": "object"
+          },
+          "read_only": {
+            "const": true
+          },
+          "local_metadata_probes_only": {
+            "const": true
+          },
+          "live_mcp_call": {
+            "const": false
+          },
+          "external_tool_execution": {
+            "const": false
+          }
+        }
+      }
+    },
+    {
+      "name": "run_local_probe_plan",
+      "description": "Run deterministic local metadata probes from a ProbePlan. This writes local probe memory only and never calls live tools or networks.",
+      "read_only": true,
+      "local_memory_write": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "plan": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": true
+          },
+          "plan_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "probe_receipt": {
+            "type": "object"
+          },
+          "local_probe_only": {
+            "const": true
+          },
+          "network_used": {
+            "const": false
+          },
+          "external_tool_execution": {
+            "const": false
+          },
+          "security_certification": {
+            "const": false
+          },
+          "action_authorization": {
+            "const": false
+          }
+        }
+      }
+    },
+    {
+      "name": "get_probe_receipt",
+      "description": "Read one local probe receipt by id. Probe receipts are local metadata checks, not verification.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "receipt_id"
+        ],
+        "properties": {
+          "receipt_id": {
+            "type": "string"
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "probe_receipt": {
+            "type": "object"
+          },
+          "found": {
+            "type": "boolean"
+          },
+          "read_only": {
+            "const": true
+          }
+        }
+      }
+    },
+    {
+      "name": "get_capability_probe_memory",
+      "description": "Summarize local probe memory for one capability. Probe memory cannot verify or certify security.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "capability_id"
+        ],
+        "properties": {
+          "capability_id": {
+            "type": "string"
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "capability_id": {
+            "type": "string"
+          },
+          "probe_count": {
+            "type": "integer"
+          },
+          "memory_status": {
+            "type": "string"
+          },
+          "can_verify": {
+            "const": false
+          },
+          "can_certify_security": {
+            "const": false
+          }
+        }
+      }
+    },
+    {
+      "name": "route_objective_with_probes",
+      "description": "Route an objective and optionally apply local metadata probe overlay. Probes can warn or downgrade, never verify or authorize actions.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "query",
+          "objective"
+        ],
+        "properties": {
+          "query": {
+            "type": "string"
+          },
+          "objective": {
+            "type": "string"
+          },
+          "data_scope": {
+            "type": "string",
+            "enum": [
+              "sample",
+              "integrated",
+              "mcp_registry",
+              "public_beta_mcp"
+            ],
+            "default": "sample"
+          },
+          "limit": {
+            "type": "integer",
+            "default": 5,
+            "minimum": 1
+          },
+          "domain": {
+            "type": "string",
+            "default": "mcp_servers"
+          },
+          "constraints": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "run_local_probes": {
+            "type": "boolean",
+            "default": false
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "route_summary": {
+            "type": "object"
+          },
+          "probe_route_overlay": {
+            "type": "object"
+          },
+          "read_only": {
+            "const": true
+          },
+          "network_used": {
+            "const": false
+          },
+          "external_tool_execution": {
+            "const": false
+          },
+          "security_certification": {
+            "const": false
+          },
+          "action_authorization": {
+            "const": false
+          }
+        }
+      }
     }
   ],
   "forbidden_actions": [

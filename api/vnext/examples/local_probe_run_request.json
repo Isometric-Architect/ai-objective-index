@@ -1,0 +1,16 @@
+{
+  "schema": "AOI_ProbePlan/v0.1",
+  "capability_ids": ["capability:example"],
+  "probe_cards": [
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_type": "unsupported_claim_check",
+      "capability_id": "capability:example",
+      "object_id": "example",
+      "data_scope": "sample",
+      "probe_goal": "Check local metadata for unsupported positive claims."
+    }
+  ],
+  "allowed_execution": ["deterministic_local_only"],
+  "forbidden_execution": ["network", "live_mcp_call", "external_tool", "shell_subprocess"]
+}

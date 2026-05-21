@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aoi.local/schemas/vnext/probe_plan.schema.json",
+  "title": "AOI ProbePlan v0.1",
+  "type": "object",
+  "required": ["schema", "probe_cards", "allowed_execution", "forbidden_execution"],
+  "properties": {
+    "schema": {"const": "AOI_ProbePlan/v0.1"},
+    "plan_id": {"type": ["string", "null"]},
+    "objective_id": {"type": ["string", "null"]},
+    "route_request": {"type": ["object", "null"]},
+    "capability_ids": {"type": "array", "items": {"type": "string"}},
+    "probe_cards": {"type": "array", "items": {"$ref": "probe_card.schema.json"}},
+    "plan_scope": {"enum": ["local_metadata_only", "local_fixture_only", "negative_control_only"]},
+    "allowed_execution": {"type": "array", "items": {"type": "string"}},
+    "forbidden_execution": {"type": "array", "items": {"type": "string"}},
+    "expected_outputs": {"type": "array", "items": {"type": "string"}},
+    "claim_ceiling": {"type": "string"},
+    "must_not_claim": {"type": "array", "items": {"type": "string"}},
+    "generated_at": {"type": "string"}
+  }
+}

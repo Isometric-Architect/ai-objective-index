@@ -1,7 +1,7 @@
 from ai_objective_index.vnext import ProbeCard
 
 
-def test_vnext_probe_card_defaults_to_not_run():
+def test_vnext_probe_card_is_local_only_probe():
     probe = ProbeCard(
         probe_id="probe-package-import",
         target_capability="cap-local-install-smoke",
@@ -10,6 +10,7 @@ def test_vnext_probe_card_defaults_to_not_run():
     )
 
     payload = probe.model_dump(by_alias=True)
-    assert payload["schema"] == "aoi.vnext.probe_card.v0_3"
-    assert payload["pass_fail"] == "not_run"
-    assert payload["sandbox_policy"] == "local_or_read_only"
+    assert payload["schema"] == "AOI_ProbeCard/v0.1"
+    assert payload["capability_id"] == "cap-local-install-smoke"
+    assert payload["sandbox_policy"]["no_network"] is True
+    assert payload["sandbox_policy"]["no_external_tool_execution"] is True

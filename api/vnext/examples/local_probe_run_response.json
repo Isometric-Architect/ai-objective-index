@@ -1,0 +1,11 @@
+{
+  "schema": "AOI_LocalProbeRunResponse/v0.1",
+  "stored": true,
+  "read_only_external": true,
+  "local_memory_write": true,
+  "local_probe_only": true,
+  "network_used": false,
+  "external_tool_execution": false,
+  "gateway_execution": false,
+  "token_printed": false
+}

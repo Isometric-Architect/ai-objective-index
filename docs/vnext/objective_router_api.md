@@ -4,6 +4,8 @@ The Objective Router API is a read-only vNext surface.
 
 Package 9D extends this surface with local ExecutionReceipt memory. Use `POST /v1/objectives/route-with-receipts` when a route should include local receipt warnings or downgrade signals. The receipt overlay cannot upgrade a HOLD route into verification, certification, quality guarantee, product readiness, or action authorization.
 
+Package 9E adds local probe overlays. Use `POST /v1/objectives/route-with-probes` when a route should include deterministic local metadata probe warnings or downgrades. The probe overlay cannot upgrade a HOLD route into ALLOW and cannot verify, certify, guarantee, or authorize use.
+
 ## Route Objective
 
 `POST /v1/objectives/route`
@@ -49,3 +51,11 @@ Returns one `CapabilityTrustCard` or a stable `capability_not_found` response.
 `GET /v1/objectives/router/status`
 
 Reports read-only boundaries, supported data scopes, decision labels, and disabled execution flags.
+
+## Probe-before-Use
+
+`POST /v1/probes/plan` creates a local metadata probe plan.
+
+`POST /v1/probes/run-local` runs a supplied plan against local data only.
+
+`GET /v1/probes/status` reports that probes do not use network, live MCP calls, external tools, or gateway execution.

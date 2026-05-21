@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aoi.local/schemas/vnext/probe_route_overlay.schema.json",
+  "title": "AOI ProbeRouteOverlay v0.1",
+  "type": "object",
+  "required": ["schema", "route_request", "original_route_summary", "per_capability_probe_overlay"],
+  "properties": {
+    "schema": {"const": "AOI_ProbeRouteOverlay/v0.1"},
+    "route_request": {"type": "object"},
+    "original_route_summary": {"type": "object"},
+    "probe_plan_id": {"type": ["string", "null"]},
+    "probe_receipt_id": {"type": ["string", "null"]},
+    "probe_memory_applied": {"type": "boolean"},
+    "per_capability_probe_overlay": {"type": "array", "items": {"type": "object"}},
+    "final_claim_ceiling": {"type": "string"},
+    "must_not_claim": {"type": "array", "items": {"type": "string"}},
+    "generated_at": {"type": "string"},
+    "external_execution": {"const": false},
+    "network_used": {"const": false},
+    "gateway_execution": {"const": false}
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "schema": "AOI_ProbeRouteOverlay/v0.1",
+  "route_request": {
+    "query": "browser automation MCP server",
+    "objective": "select source-traced MCP candidates",
+    "domain": "mcp_servers",
+    "data_scope": "public_beta_mcp",
+    "limit": 5,
+    "constraints": {
+      "require_source_trace": true,
+      "require_policy_clarity": false,
+      "require_docs": false,
+      "require_pricing": false,
+      "require_license": false,
+      "require_repository": false,
+      "allowed_integration_types": null,
+      "forbidden_actions": null,
+      "risk_tolerance": "unknown"
+    },
+    "include": {
+      "source_traces": true,
+      "missing_fields": true,
+      "score_components": true,
+      "known_limits": true
+    }
+  },
+  "original_route_summary": {
+    "total_candidates": 5,
+    "allow_count": 0,
+    "hold_count": 5,
+    "block_count": 0,
+    "top_decision_reasons": [
+      {
+        "decision": "HOLD_POLICY_CLARITY",
+        "reason": "Policy clarity fields are missing: commercial_use_terms, data_retention_policy, docs_url, pricing, privacy_policy.",
+        "name": "ac.inference.sh/mcp",
+        "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-0"
+      },
+      {
+        "decision": "HOLD_POLICY_CLARITY",
+        "reason": "Policy clarity fields are missing: commercial_use_terms, data_retention_policy, docs_url, pricing, privacy_policy.",
+        "name": "ac.inference.sh/mcp",
+        "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-1"
+      },
+      {
+        "decision": "HOLD_POLICY_CLARITY",
+        "reason": "Policy clarity fields are missing: commercial_use_terms, data_retention_policy, docs_url, pricing, privacy_policy.",
+        "name": "ac.tandem/docs-mcp",
+        "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-0"
+      },
+      {
+        "decision": "HOLD_POLICY_CLARITY",
+        "reason": "Policy clarity fields are missing: commercial_use_terms, data_retention_policy, docs_url, pricing, privacy_policy.",
+        "name": "ac.tandem/docs-mcp",
+        "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-1"
+      },
+      {
+        "decision": "HOLD_POLICY_CLARITY",
+        "reason": "Policy clarity fields are missing: commercial_use_terms, data_retention_policy, docs_url, pricing, privacy_policy.",
+        "name": "ac.tandem/docs-mcp",
+        "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-2"
+      }
+    ],
+    "claim_ceiling": "source-traced capability candidate; not verified; not security certified; not a quality guarantee"
+  },
+  "probe_plan_id": "probe-plan-edb94fe0a129",
+  "probe_receipt_id": "probe-receipt-db3f23ac95cb",
+  "probe_memory_applied": true,
+  "per_capability_probe_overlay": [
+    {
+      "capability_id": "capability:mcp-registry-ac-inference-sh-mcp-1-0-0",
+      "probe_results": [
+        "PASS_LOCAL",
+        "HOLD_POLICY_CLARITY",
+        "HOLD_MISSING_FIELDS",
+        "PASS_LOCAL",
+        "PASS_LOCAL"
+      ],
+      "overlay_notes": [
+        "Local metadata probe keeps the route conservative."
+      ],
+      "decision_effect": "ADD_WARNING"
+    },
+    {
+      "capability_id": "capability:mcp-registry-ac-inference-sh-mcp-1-0-1",
+      "probe_results": [
+        "PASS_LOCAL",
+        "HOLD_POLICY_CLARITY",
+        "HOLD_MISSING_FIELDS",
+        "PASS_LOCAL",
+        "PASS_LOCAL"
+      ],
+      "overlay_notes": [
+        "Local metadata probe keeps the route conservative."
+      ],
+      "decision_effect": "ADD_WARNING"
+    },
+    {
+      "capability_id": "capability:mcp-registry-ac-tandem-docs-mcp-0-3-0",
+      "probe_results": [
+        "PASS_LOCAL",
+        "HOLD_POLICY_CLARITY",
+        "HOLD_MISSING_FIELDS",
+        "PASS_LOCAL",
+        "PASS_LOCAL"
+      ],
+      "overlay_notes": [
+        "Local metadata probe keeps the route conservative."
+      ],
+      "decision_effect": "ADD_WARNING"
+    },
+    {
+      "capability_id": "capability:mcp-registry-ac-tandem-docs-mcp-0-3-1",
+      "probe_results": [
+        "PASS_LOCAL",
+        "HOLD_POLICY_CLARITY",
+        "HOLD_MISSING_FIELDS",
+        "PASS_LOCAL",
+        "PASS_LOCAL"
+      ],
+      "overlay_notes": [
+        "Local metadata probe keeps the route conservative."
+      ],
+      "decision_effect": "ADD_WARNING"
+    },
+    {
+      "capability_id": "capability:mcp-registry-ac-tandem-docs-mcp-0-3-2",
+      "probe_results": [
+        "PASS_LOCAL",
+        "HOLD_POLICY_CLARITY",
+        "HOLD_MISSING_FIELDS",
+        "PASS_LOCAL",
+        "PASS_LOCAL"
+      ],
+      "overlay_notes": [
+        "Local metadata probe keeps the route conservative."
+      ],
+      "decision_effect": "ADD_WARNING"
+    }
+  ],
+  "final_claim_ceiling": "route with local probe overlay; not verified, not security certified, not a quality guarantee",
+  "must_not_claim": [
+    "verified",
+    "safe",
+    "security certified",
+    "quality guaranteed",
+    "production ready",
+    "external validation",
+    "action authorization",
+    "purchasing advice"
+  ],
+  "generated_at": "2026-05-21T01:06:36+00:00",
+  "external_execution": false,
+  "network_used": false,
+  "gateway_execution": false
+}

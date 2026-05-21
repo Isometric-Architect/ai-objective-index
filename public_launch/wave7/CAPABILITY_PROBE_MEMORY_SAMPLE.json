@@ -1,0 +1,24 @@
+{
+  "schema": "AOI_CapabilityProbeMemory/v0.1",
+  "capability_id": "capability:mcp-registry-ac-inference-sh-mcp-1-0-0",
+  "probe_count": 5,
+  "latest_probe_result": "PASS_LOCAL",
+  "hold_reasons": [
+    "Critical missing fields: commercial_use_terms, data_retention_policy, docs_url, free_plan, pricing, privacy_policy, rate_limits, refund_policy",
+    "Policy, privacy, retention, or pricing metadata is incomplete."
+  ],
+  "block_reasons": [],
+  "recurring_findings": [
+    "3 local source traces found.",
+    "Policy, privacy, retention, or pricing metadata is incomplete.",
+    "Critical missing fields: commercial_use_terms, data_retention_policy, docs_url, free_plan, pricing, privacy_policy, rate_limits, refund_policy",
+    "No unsupported positive claim wording detected in local metadata.",
+    "No forbidden action wording detected in local metadata."
+  ],
+  "negative_control_status": "not_checked",
+  "can_influence_route": true,
+  "can_verify": false,
+  "can_certify_security": false,
+  "memory_status": "MIXED_SIGNALS",
+  "generated_at": "2026-05-21T01:06:36+00:00"
+}

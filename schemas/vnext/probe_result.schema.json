@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aoi.local/schemas/vnext/probe_result.schema.json",
+  "title": "AOI ProbeResult v0.1",
+  "type": "object",
+  "required": ["probe_id", "capability_id", "result"],
+  "properties": {
+    "schema": {"const": "AOI_ProbeResult/v0.1"},
+    "probe_id": {"type": "string"},
+    "capability_id": {"type": "string"},
+    "result": {
+      "enum": [
+        "PASS_LOCAL",
+        "HOLD_INSUFFICIENT_EVIDENCE",
+        "HOLD_POLICY_CLARITY",
+        "HOLD_MISSING_FIELDS",
+        "FAIL_EXPECTED_NEGATIVE_CONTROL",
+        "FAIL_UNEXPECTED",
+        "BLOCK_FORBIDDEN_ACTION",
+        "BLOCK_UNSUPPORTED_CLAIM",
+        "BLOCK_NETWORK_REQUIRED",
+        "INVALID_PROBE"
+      ]
+    },
+    "checked_fields": {"type": "array", "items": {"type": "string"}},
+    "findings": {"type": "array", "items": {"type": "string"}},
+    "warnings": {"type": "array", "items": {"type": "string"}},
+    "errors": {"type": "array", "items": {"type": "string"}},
+    "evidence_refs": {"type": "array", "items": {"type": "string"}},
+    "can_influence_route": {"type": "boolean"},
+    "can_upgrade_to_verified": {"const": false},
+    "can_certify_security": {"const": false},
+    "can_certify_quality": {"const": false},
+    "can_authorize_action": {"const": false}
+  }
+}

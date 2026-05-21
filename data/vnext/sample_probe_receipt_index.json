@@ -1,0 +1,14 @@
+{
+  "schema": "AOI_ProbeReceiptIndex/v0.1",
+  "receipt_count": 1,
+  "receipts": [
+    {
+      "receipt_id": "probe-receipt-db3f23ac95cb",
+      "plan_id": "probe-plan-edb94fe0a129",
+      "result_count": 25,
+      "route_effect": "DOWNGRADE_TO_HOLD",
+      "stored_at": "2026-05-21T01:06:36+00:00"
+    }
+  ],
+  "token_printed": false
+}

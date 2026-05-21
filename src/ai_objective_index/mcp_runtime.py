@@ -217,6 +217,61 @@ def build_server() -> Any:
             constraints=constraints,
         )
 
+    @server.tool()
+    def plan_probe_before_use(
+        query: str,
+        objective: str,
+        data_scope: str = "sample",
+        limit: int = 5,
+        domain: str = "mcp_servers",
+        constraints: dict[str, Any] | None = None,
+    ) -> dict[str, Any]:
+        """Plan local metadata probes before use; no live MCP call or external execution."""
+        return mcp_tools.plan_probe_before_use(
+            query=query,
+            objective=objective,
+            data_scope=data_scope,
+            limit=limit,
+            domain=domain,
+            constraints=constraints,
+        )
+
+    @server.tool()
+    def run_local_probe_plan(plan: dict[str, Any] | None = None, plan_id: str | None = None) -> dict[str, Any]:
+        """Run deterministic local metadata probes only."""
+        return mcp_tools.run_local_probe_plan(plan=plan, plan_id=plan_id)
+
+    @server.tool()
+    def get_probe_receipt(receipt_id: str) -> dict[str, Any]:
+        """Read one local probe receipt by id."""
+        return mcp_tools.get_probe_receipt(receipt_id=receipt_id)
+
+    @server.tool()
+    def get_capability_probe_memory(capability_id: str) -> dict[str, Any]:
+        """Summarize local probe memory for one capability."""
+        return mcp_tools.get_capability_probe_memory(capability_id=capability_id)
+
+    @server.tool()
+    def route_objective_with_probes(
+        query: str,
+        objective: str,
+        data_scope: str = "sample",
+        limit: int = 5,
+        domain: str = "mcp_servers",
+        constraints: dict[str, Any] | None = None,
+        run_local_probes: bool = False,
+    ) -> dict[str, Any]:
+        """Route an objective with local probe overlay; probe pass is not verification."""
+        return mcp_tools.route_objective_with_probes(
+            query=query,
+            objective=objective,
+            data_scope=data_scope,
+            limit=limit,
+            domain=domain,
+            constraints=constraints,
+            run_local_probes=run_local_probes,
+        )
+
     return server
 
 

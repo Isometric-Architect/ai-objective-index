@@ -1,0 +1,13 @@
+{
+  "schema": "AOI_ProbePlanResponse/v0.1",
+  "read_only": true,
+  "local_probe_only": true,
+  "network_used": false,
+  "external_tool_execution": false,
+  "probe_plan": {
+    "schema": "AOI_ProbePlan/v0.1",
+    "plan_scope": "local_metadata_only",
+    "allowed_execution": ["deterministic_local_only"],
+    "forbidden_execution": ["network", "live_mcp_call", "external_tool", "shell_subprocess"]
+  }
+}

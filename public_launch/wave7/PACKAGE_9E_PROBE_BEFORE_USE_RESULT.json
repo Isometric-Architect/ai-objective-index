@@ -1,0 +1,32 @@
+{
+  "schema": "AOI_Package9EProbeBeforeUseResult/v0.1",
+  "package": "9E",
+  "query": "browser automation MCP server",
+  "objective": "select source-traced MCP candidates",
+  "data_scope": "public_beta_mcp",
+  "candidate_count": 5,
+  "probe_plan_id": "probe-plan-edb94fe0a129",
+  "probe_card_count": 25,
+  "probe_receipt_id": "probe-receipt-db3f23ac95cb",
+  "probe_result_counts": {
+    "pass_local_count": 15,
+    "hold_count": 10,
+    "block_count": 0,
+    "fail_unexpected_count": 0,
+    "negative_control_pass_count": 0,
+    "negative_control_fail_count": 0
+  },
+  "negative_control_token": "PASS",
+  "negative_control_false_pass_count": 0,
+  "capability_probe_memory_status": "MIXED_SIGNALS",
+  "probe_route_overlay_applied": true,
+  "stored_sample_receipt_id": "probe-receipt-db3f23ac95cb",
+  "network_used": false,
+  "external_tool_execution": false,
+  "gateway_execution": false,
+  "pypi_upload_performed": false,
+  "mcp_registry_submission_performed": false,
+  "community_post_performed": false,
+  "token_printed": false,
+  "claim_boundary": "local probe pass is not verification, not security certification, not quality guarantee, and not action authorization"
+}

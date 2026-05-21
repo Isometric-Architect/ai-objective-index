@@ -30,6 +30,11 @@ def test_manifest_lists_all_read_only_tools():
         "list_capability_receipts",
         "get_capability_receipt_memory",
         "route_objective_with_receipts",
+        "plan_probe_before_use",
+        "run_local_probe_plan",
+        "get_probe_receipt",
+        "get_capability_probe_memory",
+        "route_objective_with_probes",
     }
     assert all(tool["read_only"] is True for tool in manifest["tools"])
 

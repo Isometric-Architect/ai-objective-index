@@ -8,6 +8,8 @@ objective route -> manual use outcome -> receipt validation -> local receipt sto
 
 AOI stores only the reported outcome and conservative metadata. It does not run the capability, open links, execute a probe, or contact external services.
 
+Package 9E adds a separate local probe-before-use loop. Receipts remain manual/local outcome memory; probe receipts remain deterministic local metadata checks. Neither one is independent verification or action authorization.
+
 Receipts can:
 
 - record known failures;
@@ -23,4 +25,3 @@ Receipts cannot:
 - guarantee quality;
 - authorize external actions;
 - replace current source-trace review.
-

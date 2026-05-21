@@ -211,3 +211,16 @@ Package 9D adds local/offline receipt-memory endpoints:
 - `GET /v1/execution-receipts/status`
 
 Receipts are local memory records. They can add warnings and failure signals to future route responses. They do not execute tools, run probes, fetch live URLs, certify security, guarantee quality, verify capabilities, or authorize actions.
+
+## Package 9E Probe-before-Use API
+
+Package 9E adds local-only probe endpoints:
+
+- `POST /v1/probes/plan`
+- `POST /v1/probes/run-local`
+- `GET /v1/probes/{receipt_id}`
+- `GET /v1/capabilities/{capability_id}/probe-memory`
+- `POST /v1/objectives/route-with-probes`
+- `GET /v1/probes/status`
+
+Probe endpoints use local AOI metadata, source traces, missing fields, and fixture negative controls. They do not call live MCP servers, execute external tools, fetch URLs, run shell commands, certify security, guarantee quality, verify capabilities, or authorize actions.

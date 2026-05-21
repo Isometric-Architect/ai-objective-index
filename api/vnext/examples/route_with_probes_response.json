@@ -1,0 +1,12 @@
+{
+  "schema": "AOI_ObjectiveRouteResponse/v0.1",
+  "local_probe_only": true,
+  "network_used": false,
+  "external_tool_execution": false,
+  "gateway_execution": false,
+  "probe_route_overlay": {
+    "schema": "AOI_ProbeRouteOverlay/v0.1",
+    "probe_memory_applied": false,
+    "final_claim_ceiling": "route with local probe overlay; not verified, not security certified, not a quality guarantee"
+  }
+}

@@ -21,6 +21,7 @@ from .seed_loader import load_sample_index, load_source_traces
 from .store import ObjectiveIndexStore
 from .vnext.objective_router_api import router as objective_router
 from .vnext.execution_receipt_api import router as execution_receipts
+from .vnext.probe_api import router as probes
 
 
 DATA_SCOPE_PATTERN = "^(sample|generated|integrated|curated|public_beta|mcp_registry|public_beta_mcp)$"
@@ -32,6 +33,7 @@ app = FastAPI(
 )
 app.include_router(objective_router)
 app.include_router(execution_receipts)
+app.include_router(probes)
 
 
 def _store(data_scope: str = "sample") -> ObjectiveIndexStore:

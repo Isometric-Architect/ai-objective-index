@@ -1,0 +1,7 @@
+{
+  "query": "browser automation MCP server",
+  "objective": "select source-traced MCP candidates",
+  "domain": "mcp_servers",
+  "data_scope": "public_beta_mcp",
+  "limit": 5
+}

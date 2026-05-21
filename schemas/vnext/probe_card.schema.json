@@ -1,20 +1,48 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://aoi.local/schemas/vnext/probe_card.schema.json",
-  "title": "AOI vNext ProbeCard",
+  "title": "AOI ProbeCard v0.1",
   "type": "object",
-  "required": ["schema", "probe_id", "target_capability", "objective_scope", "expected_behavior"],
+  "required": ["schema", "probe_type", "capability_id", "data_scope", "sandbox_policy"],
   "properties": {
-    "schema": {"type": "string"},
-    "probe_id": {"type": "string"},
-    "target_capability": {"type": "string"},
-    "objective_scope": {"type": "string"},
-    "canary_input": {"type": "object"},
-    "expected_behavior": {"type": "string"},
-    "negative_control": {"type": "object"},
-    "sandbox_policy": {"type": "string"},
-    "pass_fail": {"enum": ["pass", "fail", "hold", "not_run"]},
-    "failure_type": {"type": ["string", "null"]},
-    "receipt_hash": {"type": ["string", "null"]}
+    "schema": {"const": "AOI_ProbeCard/v0.1"},
+    "probe_id": {"type": ["string", "null"]},
+    "probe_type": {
+      "enum": [
+        "source_trace_integrity",
+        "missing_field_check",
+        "policy_clarity_check",
+        "docs_presence_check",
+        "repository_presence_check",
+        "license_presence_check",
+        "unsupported_claim_check",
+        "forbidden_action_check",
+        "negative_control",
+        "local_fixture"
+      ]
+    },
+    "objective_id": {"type": ["string", "null"]},
+    "capability_id": {"type": "string"},
+    "object_id": {"type": ["string", "null"]},
+    "name": {"type": ["string", "null"]},
+    "data_scope": {"type": "string"},
+    "probe_goal": {"type": "string"},
+    "canary_input": {"type": ["object", "null"]},
+    "expected_behavior": {"type": ["string", "null"]},
+    "negative_control_expected": {"type": ["string", "null"]},
+    "required_fields": {"type": "array", "items": {"type": "string"}},
+    "forbidden_claims": {"type": "array", "items": {"type": "string"}},
+    "forbidden_actions": {"type": "array", "items": {"type": "string"}},
+    "sandbox_policy": {
+      "type": "object",
+      "properties": {
+        "no_network": {"const": true},
+        "no_external_tool_execution": {"const": true},
+        "no_subprocess": {"const": true},
+        "local_data_only": {"const": true}
+      }
+    },
+    "claim_ceiling": {"type": "string"},
+    "generated_at": {"type": "string"}
   }
 }

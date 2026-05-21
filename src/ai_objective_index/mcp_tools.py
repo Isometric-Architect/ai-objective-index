@@ -29,6 +29,13 @@ from .vnext.execution_receipt_mcp_tools import (
     route_objective_with_receipts as vnext_route_objective_with_receipts,
     submit_execution_receipt as vnext_submit_execution_receipt,
 )
+from .vnext.probe_mcp_tools import (
+    get_capability_probe_memory as vnext_get_capability_probe_memory,
+    get_probe_receipt as vnext_get_probe_receipt,
+    plan_probe_before_use as vnext_plan_probe_before_use,
+    route_objective_with_probes as vnext_route_objective_with_probes,
+    run_local_probe_plan as vnext_run_local_probe_plan,
+)
 
 
 FORBIDDEN_ACTIONS = [
@@ -594,5 +601,59 @@ def route_objective_with_receipts(
             data_scope=data_scope,
             limit=limit,
             constraints=constraints,
+        )
+    )
+
+
+def plan_probe_before_use(
+    query: str,
+    objective: str,
+    data_scope: str = "sample",
+    limit: int = 5,
+    domain: str = "mcp_servers",
+    constraints: dict[str, Any] | None = None,
+) -> dict[str, Any]:
+    return _assert_jsonable(
+        vnext_plan_probe_before_use(
+            query=query,
+            objective=objective,
+            data_scope=data_scope,
+            limit=limit,
+            domain=domain,
+            constraints=constraints,
+        )
+    )
+
+
+def run_local_probe_plan(plan: dict[str, Any] | None = None, plan_id: str | None = None) -> dict[str, Any]:
+    return _assert_jsonable(vnext_run_local_probe_plan(plan=plan, plan_id=plan_id))
+
+
+def get_probe_receipt(receipt_id: str) -> dict[str, Any]:
+    return _assert_jsonable(vnext_get_probe_receipt(receipt_id=receipt_id))
+
+
+def get_capability_probe_memory(capability_id: str) -> dict[str, Any]:
+    return _assert_jsonable(vnext_get_capability_probe_memory(capability_id=capability_id))
+
+
+def route_objective_with_probes(
+    query: str,
+    objective: str,
+    data_scope: str = "sample",
+    limit: int = 5,
+    domain: str = "mcp_servers",
+    constraints: dict[str, Any] | None = None,
+    run_local_probes: bool = False,
+) -> dict[str, Any]:
+    return _assert_jsonable(
+        vnext_route_objective_with_probes(
+            query=query,
+            objective=objective,
+            data_scope=data_scope,
+            limit=limit,
+            domain=domain,
+            constraints=constraints,
+            run_local_probes=run_local_probes,
         )
     )

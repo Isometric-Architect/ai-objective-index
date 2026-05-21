@@ -390,6 +390,111 @@ def get_mcp_tool_manifest() -> dict[str, Any]:
                 }
             ),
         },
+        {
+            "name": "plan_probe_before_use",
+            "description": "Plan local metadata probes before use. No live MCP calls, external tool execution, security certification, or action authorization.",
+            "read_only": True,
+            "input_schema": _schema(
+                {
+                    "query": text,
+                    "objective": text,
+                    "data_scope": {
+                        "type": "string",
+                        "enum": ["sample", "integrated", "mcp_registry", "public_beta_mcp"],
+                        "default": "sample",
+                    },
+                    "limit": {"type": "integer", "default": 5, "minimum": 1},
+                    "domain": {"type": "string", "default": "mcp_servers"},
+                    "constraints": constraints,
+                },
+                ["query", "objective"],
+            ),
+            "output_schema": _schema(
+                {
+                    "probe_plan": {"type": "object"},
+                    "read_only": {"const": True},
+                    "local_metadata_probes_only": {"const": True},
+                    "live_mcp_call": {"const": False},
+                    "external_tool_execution": {"const": False},
+                }
+            ),
+        },
+        {
+            "name": "run_local_probe_plan",
+            "description": "Run deterministic local metadata probes from a ProbePlan. This writes local probe memory only and never calls live tools or networks.",
+            "read_only": True,
+            "local_memory_write": True,
+            "input_schema": _schema(
+                {
+                    "plan": {"type": ["object", "null"], "additionalProperties": True},
+                    "plan_id": optional_text,
+                }
+            ),
+            "output_schema": _schema(
+                {
+                    "probe_receipt": {"type": "object"},
+                    "local_probe_only": {"const": True},
+                    "network_used": {"const": False},
+                    "external_tool_execution": {"const": False},
+                    "security_certification": {"const": False},
+                    "action_authorization": {"const": False},
+                }
+            ),
+        },
+        {
+            "name": "get_probe_receipt",
+            "description": "Read one local probe receipt by id. Probe receipts are local metadata checks, not verification.",
+            "read_only": True,
+            "input_schema": _schema({"receipt_id": text}, ["receipt_id"]),
+            "output_schema": _schema({"probe_receipt": {"type": "object"}, "found": {"type": "boolean"}, "read_only": {"const": True}}),
+        },
+        {
+            "name": "get_capability_probe_memory",
+            "description": "Summarize local probe memory for one capability. Probe memory cannot verify or certify security.",
+            "read_only": True,
+            "input_schema": _schema({"capability_id": text}, ["capability_id"]),
+            "output_schema": _schema(
+                {
+                    "capability_id": text,
+                    "probe_count": {"type": "integer"},
+                    "memory_status": text,
+                    "can_verify": {"const": False},
+                    "can_certify_security": {"const": False},
+                }
+            ),
+        },
+        {
+            "name": "route_objective_with_probes",
+            "description": "Route an objective and optionally apply local metadata probe overlay. Probes can warn or downgrade, never verify or authorize actions.",
+            "read_only": True,
+            "input_schema": _schema(
+                {
+                    "query": text,
+                    "objective": text,
+                    "data_scope": {
+                        "type": "string",
+                        "enum": ["sample", "integrated", "mcp_registry", "public_beta_mcp"],
+                        "default": "sample",
+                    },
+                    "limit": {"type": "integer", "default": 5, "minimum": 1},
+                    "domain": {"type": "string", "default": "mcp_servers"},
+                    "constraints": constraints,
+                    "run_local_probes": {"type": "boolean", "default": False},
+                },
+                ["query", "objective"],
+            ),
+            "output_schema": _schema(
+                {
+                    "route_summary": {"type": "object"},
+                    "probe_route_overlay": {"type": "object"},
+                    "read_only": {"const": True},
+                    "network_used": {"const": False},
+                    "external_tool_execution": {"const": False},
+                    "security_certification": {"const": False},
+                    "action_authorization": {"const": False},
+                }
+            ),
+        },
     ]
 
     return {

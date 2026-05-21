@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aoi.local/schemas/vnext/probe_receipt.schema.json",
+  "title": "AOI ProbeReceipt v0.1",
+  "type": "object",
+  "required": ["schema", "plan_id", "probe_results", "aggregate", "route_effect"],
+  "properties": {
+    "schema": {"const": "AOI_ProbeReceipt/v0.1"},
+    "receipt_id": {"type": ["string", "null"]},
+    "plan_id": {"type": "string"},
+    "probe_results": {"type": "array", "items": {"$ref": "probe_result.schema.json"}},
+    "aggregate": {"type": "object"},
+    "route_effect": {"enum": ["NO_CHANGE", "ADD_WARNING", "DOWNGRADE_TO_HOLD", "DOWNGRADE_TO_BLOCK", "DO_NOT_UPGRADE"]},
+    "claim_ceiling": {"type": "string"},
+    "generated_at": {"type": "string"},
+    "token_printed": {"const": false}
+  }
+}

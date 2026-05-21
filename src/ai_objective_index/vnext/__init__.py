@@ -7,7 +7,7 @@ from .evidence_summary import CapabilityEvidenceSummary
 from .execution_receipt import ExecutionReceipt
 from .objective_card import ObjectiveCard
 from .objective_router_models import ObjectiveRouteRequest, ObjectiveRouteResponse
-from .probe_card import ProbeCard
+from .probe_card import CapabilityProbeMemory, ProbeCard, ProbePlan, ProbeReceipt, ProbeResult, ProbeRouteOverlay
 from .residual_credit import ResidualCredit
 from .risk_boundary import CapabilityRiskBoundary
 from .route_decision import CapabilityRouteDecision
@@ -27,6 +27,11 @@ __all__ = [
     "ObjectiveCard",
     "ObjectiveRouteRequest",
     "ObjectiveRouteResponse",
+    "CapabilityProbeMemory",
     "ProbeCard",
+    "ProbePlan",
+    "ProbeReceipt",
+    "ProbeResult",
+    "ProbeRouteOverlay",
     "ResidualCredit",
 ]

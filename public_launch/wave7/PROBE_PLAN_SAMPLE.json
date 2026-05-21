@@ -1,0 +1,1190 @@
+{
+  "schema": "AOI_ProbePlan/v0.1",
+  "plan_id": "probe-plan-edb94fe0a129",
+  "objective_id": "select source-traced MCP candidates",
+  "route_request": {
+    "query": "browser automation MCP server",
+    "objective": "select source-traced MCP candidates",
+    "domain": "mcp_servers",
+    "data_scope": "public_beta_mcp",
+    "limit": 5,
+    "constraints": {
+      "require_source_trace": true,
+      "require_policy_clarity": false,
+      "require_docs": false,
+      "require_pricing": false,
+      "require_license": false,
+      "require_repository": false,
+      "allowed_integration_types": null,
+      "forbidden_actions": null,
+      "risk_tolerance": "unknown"
+    },
+    "include": {
+      "source_traces": true,
+      "missing_fields": true,
+      "score_components": true,
+      "known_limits": true
+    }
+  },
+  "capability_ids": [
+    "capability:mcp-registry-ac-inference-sh-mcp-1-0-0",
+    "capability:mcp-registry-ac-inference-sh-mcp-1-0-1",
+    "capability:mcp-registry-ac-tandem-docs-mcp-0-3-0",
+    "capability:mcp-registry-ac-tandem-docs-mcp-0-3-1",
+    "capability:mcp-registry-ac-tandem-docs-mcp-0-3-2"
+  ],
+  "probe_cards": [
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-a60a09ff31a6",
+      "probe_type": "source_trace_integrity",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-inference-sh-mcp-1-0-0",
+      "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-0",
+      "name": "ac.inference.sh/mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run source_trace_integrity before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    },
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-74b25240dc90",
+      "probe_type": "policy_clarity_check",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-inference-sh-mcp-1-0-0",
+      "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-0",
+      "name": "ac.inference.sh/mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run policy_clarity_check before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [
+        "privacy_policy",
+        "data_retention_policy",
+        "commercial_use_terms",
+        "pricing"
+      ],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    },
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-e61b5c40cde5",
+      "probe_type": "missing_field_check",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-inference-sh-mcp-1-0-0",
+      "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-0",
+      "name": "ac.inference.sh/mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run missing_field_check before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [
+        "pricing",
+        "free_plan",
+        "commercial_use_terms",
+        "rate_limits",
+        "privacy_policy",
+        "docs_url",
+        "refund_policy",
+        "data_retention_policy"
+      ],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    },
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-6c281fd61216",
+      "probe_type": "unsupported_claim_check",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-inference-sh-mcp-1-0-0",
+      "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-0",
+      "name": "ac.inference.sh/mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run unsupported_claim_check before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    },
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-0e205f500f70",
+      "probe_type": "forbidden_action_check",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-inference-sh-mcp-1-0-0",
+      "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-0",
+      "name": "ac.inference.sh/mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run forbidden_action_check before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    },
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-baa48246cc6e",
+      "probe_type": "source_trace_integrity",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-inference-sh-mcp-1-0-1",
+      "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-1",
+      "name": "ac.inference.sh/mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run source_trace_integrity before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    },
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-46b591574666",
+      "probe_type": "policy_clarity_check",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-inference-sh-mcp-1-0-1",
+      "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-1",
+      "name": "ac.inference.sh/mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run policy_clarity_check before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [
+        "privacy_policy",
+        "data_retention_policy",
+        "commercial_use_terms",
+        "pricing"
+      ],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    },
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-12d5b050a71e",
+      "probe_type": "missing_field_check",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-inference-sh-mcp-1-0-1",
+      "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-1",
+      "name": "ac.inference.sh/mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run missing_field_check before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [
+        "pricing",
+        "free_plan",
+        "commercial_use_terms",
+        "rate_limits",
+        "privacy_policy",
+        "docs_url",
+        "refund_policy",
+        "data_retention_policy"
+      ],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    },
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-115b03e6d129",
+      "probe_type": "unsupported_claim_check",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-inference-sh-mcp-1-0-1",
+      "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-1",
+      "name": "ac.inference.sh/mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run unsupported_claim_check before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    },
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-508bcdf2bd35",
+      "probe_type": "forbidden_action_check",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-inference-sh-mcp-1-0-1",
+      "object_id": "mcp-registry-ac-inference-sh-mcp-1-0-1",
+      "name": "ac.inference.sh/mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run forbidden_action_check before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    },
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-6061d3607bb5",
+      "probe_type": "source_trace_integrity",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-tandem-docs-mcp-0-3-0",
+      "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-0",
+      "name": "ac.tandem/docs-mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run source_trace_integrity before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    },
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-0b092ff2bf4c",
+      "probe_type": "policy_clarity_check",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-tandem-docs-mcp-0-3-0",
+      "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-0",
+      "name": "ac.tandem/docs-mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run policy_clarity_check before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [
+        "privacy_policy",
+        "data_retention_policy",
+        "commercial_use_terms",
+        "pricing"
+      ],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    },
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-edee0cca90c5",
+      "probe_type": "missing_field_check",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-tandem-docs-mcp-0-3-0",
+      "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-0",
+      "name": "ac.tandem/docs-mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run missing_field_check before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [
+        "pricing",
+        "free_plan",
+        "commercial_use_terms",
+        "rate_limits",
+        "privacy_policy",
+        "docs_url",
+        "refund_policy",
+        "data_retention_policy"
+      ],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    },
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-a1f142b021ce",
+      "probe_type": "unsupported_claim_check",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-tandem-docs-mcp-0-3-0",
+      "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-0",
+      "name": "ac.tandem/docs-mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run unsupported_claim_check before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    },
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-b570eaab4a47",
+      "probe_type": "forbidden_action_check",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-tandem-docs-mcp-0-3-0",
+      "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-0",
+      "name": "ac.tandem/docs-mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run forbidden_action_check before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    },
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-a52862d74295",
+      "probe_type": "source_trace_integrity",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-tandem-docs-mcp-0-3-1",
+      "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-1",
+      "name": "ac.tandem/docs-mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run source_trace_integrity before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    },
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-452ce51962b8",
+      "probe_type": "policy_clarity_check",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-tandem-docs-mcp-0-3-1",
+      "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-1",
+      "name": "ac.tandem/docs-mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run policy_clarity_check before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [
+        "privacy_policy",
+        "data_retention_policy",
+        "commercial_use_terms",
+        "pricing"
+      ],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    },
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-4b0bde7e3e3f",
+      "probe_type": "missing_field_check",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-tandem-docs-mcp-0-3-1",
+      "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-1",
+      "name": "ac.tandem/docs-mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run missing_field_check before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [
+        "pricing",
+        "free_plan",
+        "commercial_use_terms",
+        "rate_limits",
+        "privacy_policy",
+        "docs_url",
+        "refund_policy",
+        "data_retention_policy"
+      ],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    },
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-135f7b8307bc",
+      "probe_type": "unsupported_claim_check",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-tandem-docs-mcp-0-3-1",
+      "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-1",
+      "name": "ac.tandem/docs-mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run unsupported_claim_check before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    },
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-3cfde521bb4d",
+      "probe_type": "forbidden_action_check",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-tandem-docs-mcp-0-3-1",
+      "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-1",
+      "name": "ac.tandem/docs-mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run forbidden_action_check before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    },
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-b0f37b627773",
+      "probe_type": "source_trace_integrity",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-tandem-docs-mcp-0-3-2",
+      "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-2",
+      "name": "ac.tandem/docs-mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run source_trace_integrity before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    },
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-11cbc6765b04",
+      "probe_type": "policy_clarity_check",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-tandem-docs-mcp-0-3-2",
+      "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-2",
+      "name": "ac.tandem/docs-mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run policy_clarity_check before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [
+        "privacy_policy",
+        "data_retention_policy",
+        "commercial_use_terms",
+        "pricing"
+      ],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    },
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-0691bd3d1e86",
+      "probe_type": "missing_field_check",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-tandem-docs-mcp-0-3-2",
+      "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-2",
+      "name": "ac.tandem/docs-mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run missing_field_check before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [
+        "pricing",
+        "free_plan",
+        "commercial_use_terms",
+        "rate_limits",
+        "privacy_policy",
+        "docs_url",
+        "refund_policy",
+        "data_retention_policy"
+      ],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    },
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-a33367dacecd",
+      "probe_type": "unsupported_claim_check",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-tandem-docs-mcp-0-3-2",
+      "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-2",
+      "name": "ac.tandem/docs-mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run unsupported_claim_check before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    },
+    {
+      "schema": "AOI_ProbeCard/v0.1",
+      "probe_id": "probe-0c824465e54d",
+      "probe_type": "forbidden_action_check",
+      "objective_id": "select source-traced MCP candidates",
+      "capability_id": "capability:mcp-registry-ac-tandem-docs-mcp-0-3-2",
+      "object_id": "mcp-registry-ac-tandem-docs-mcp-0-3-2",
+      "name": "ac.tandem/docs-mcp",
+      "data_scope": "public_beta_mcp",
+      "probe_goal": "Run forbidden_action_check before using this capability route.",
+      "canary_input": null,
+      "expected_behavior": null,
+      "negative_control_expected": null,
+      "required_fields": [],
+      "forbidden_claims": [
+        "verified",
+        "safe",
+        "security certified",
+        "quality guaranteed",
+        "production ready",
+        "official best",
+        "purchasing advice"
+      ],
+      "forbidden_actions": [
+        "payment",
+        "booking",
+        "login",
+        "email",
+        "purchase",
+        "contract",
+        "supplier verification",
+        "account connection"
+      ],
+      "sandbox_policy": {
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess": true,
+        "local_data_only": true
+      },
+      "claim_ceiling": "local metadata probe only; not verification, security certification, quality guarantee, or action authorization",
+      "generated_at": "2026-05-21T01:06:36+00:00"
+    }
+  ],
+  "plan_scope": "local_metadata_only",
+  "allowed_execution": [
+    "deterministic_local_only"
+  ],
+  "forbidden_execution": [
+    "network",
+    "live_mcp_call",
+    "external_tool",
+    "shell_subprocess",
+    "payment",
+    "booking",
+    "login",
+    "email",
+    "purchase",
+    "contract"
+  ],
+  "expected_outputs": [
+    "ProbeReceipt",
+    "ProbeRouteOverlay"
+  ],
+  "claim_ceiling": "local probe plan only; not verification, certification, quality guarantee, or action authorization",
+  "must_not_claim": [
+    "verified",
+    "safe",
+    "security certified",
+    "quality guaranteed",
+    "production ready",
+    "external validation",
+    "action authorization",
+    "purchasing advice"
+  ],
+  "generated_at": "2026-05-21T01:06:36+00:00"
+}

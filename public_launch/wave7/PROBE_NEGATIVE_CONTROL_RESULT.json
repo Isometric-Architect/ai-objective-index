@@ -1,0 +1,50 @@
+{
+  "schema": "AOI_ProbeNegativeControlResult/v0.1",
+  "negative_controls_run": 2,
+  "false_pass_count": 0,
+  "expected_block_count": 1,
+  "expected_failure_count": 1,
+  "overall_token": "PASS",
+  "results": [
+    {
+      "schema": "AOI_ProbeResult/v0.1",
+      "probe_id": "probe-4f983a1124ac",
+      "capability_id": "capability:negative-control-unsupported-claim",
+      "result": "BLOCK_UNSUPPORTED_CLAIM",
+      "checked_fields": [],
+      "findings": [
+        "Negative control unsupported claim was blocked."
+      ],
+      "warnings": [],
+      "errors": [],
+      "evidence_refs": [],
+      "can_influence_route": true,
+      "can_upgrade_to_verified": false,
+      "can_certify_security": false,
+      "can_certify_quality": false,
+      "can_authorize_action": false
+    },
+    {
+      "schema": "AOI_ProbeResult/v0.1",
+      "probe_id": "probe-24e59c6b5af7",
+      "capability_id": "capability:negative-control-no-trigger",
+      "result": "FAIL_EXPECTED_NEGATIVE_CONTROL",
+      "checked_fields": [],
+      "findings": [],
+      "warnings": [],
+      "errors": [
+        "Negative control did not trigger expected block."
+      ],
+      "evidence_refs": [],
+      "can_influence_route": true,
+      "can_upgrade_to_verified": false,
+      "can_certify_security": false,
+      "can_certify_quality": false,
+      "can_authorize_action": false
+    }
+  ],
+  "network_used": false,
+  "external_tool_execution": false,
+  "gateway_execution": false,
+  "token_printed": false
+}

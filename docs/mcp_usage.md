@@ -139,6 +139,18 @@ These wrappers are read-only. They do not crawl, fetch remote URLs, buy, book, p
 
 The receipt is an explanation artifact, not a purchase order, contract, or approval.
 
+## Package 9E Probe-before-Use MCP Tools
+
+Package 9E adds local-only probe tools:
+
+- `plan_probe_before_use`
+- `run_local_probe_plan`
+- `get_probe_receipt`
+- `get_capability_probe_memory`
+- `route_objective_with_probes`
+
+These tools inspect local metadata and source-trace records only. They do not call live MCP servers, execute external tools, fetch URLs, run a gateway, certify security, guarantee quality, verify capabilities, or authorize payment, booking, login, email, purchase, or contract actions.
+
 ## Example Inputs
 
 ```json

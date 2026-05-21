@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-05-21T12:37:46.138236+00:00",
+  "dry_run": true,
+  "execute": false,
+  "env_confirm_present": false,
+  "mcp_publisher_path": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\tools\\mcp-publisher\\mcp-publisher.exe",
+  "validate_decision": "PASS_VALIDATE",
+  "validate_ok": true,
+  "preflight_decision": "PASS_READY_TO_SUBMIT",
+  "auth_decision": "PASS_AUTH_ASSUMED_FROM_DIRECT_LOGIN",
+  "auth_override_reason": "preflight_pass",
+  "command_redacted": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\tools\\mcp-publisher\\mcp-publisher.exe publish .mcp/server.json",
+  "publish_attempted": false,
+  "submission_performed": false,
+  "publish_result": {},
+  "result_token": "DRY_RUN_ONLY",
+  "failure_classification": "DRY_RUN_ONLY",
+  "token_printed": false,
+  "errors": [],
+  "warnings": [
+    "Dry-run only; direct publish was not attempted."
+  ]
+}

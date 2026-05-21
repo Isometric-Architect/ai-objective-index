@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-05-21T12:42:25.321750+00:00",
+  "decision": "PASS_VALIDATE",
+  "mcp_publisher_path": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\tools\\mcp-publisher\\mcp-publisher.exe",
+  "validate_command": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\tools\\mcp-publisher\\mcp-publisher.exe validate .mcp/server.json",
+  "validate_result": {
+    "ok": true,
+    "returncode": 0,
+    "stdout": "Validating against https://registry.modelcontextprotocol.io...\n✅ server.json is valid\n",
+    "stderr": "",
+    "command_redacted": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\tools\\mcp-publisher\\mcp-publisher.exe validate .mcp/server.json",
+    "token_printed": false
+  },
+  "validate_ok": true,
+  "token_printed": false,
+  "errors": [],
+  "warnings": []
+}

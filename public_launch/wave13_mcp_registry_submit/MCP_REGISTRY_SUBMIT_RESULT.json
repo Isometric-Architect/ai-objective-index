@@ -1,30 +1,23 @@
 {
-  "generated_at": "2026-05-21T12:03:00.845737+00:00",
-  "dry_run": true,
-  "execute": false,
-  "env_confirm_present": false,
+  "generated_at": "2026-05-21T12:25:52.130442+00:00",
+  "dry_run": false,
+  "execute": true,
+  "env_confirm_present": true,
   "submission_performed": false,
   "command_redacted": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\tools\\mcp-publisher\\mcp-publisher.exe publish .mcp/server.json",
   "mcp_publisher_path": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\tools\\mcp-publisher\\mcp-publisher.exe",
-  "dry_run_result": {
-    "ok": true,
-    "attempts": [
-      {
-        "ok": true,
-        "returncode": 0,
-        "stdout": "Validating against https://registry.modelcontextprotocol.io...\n✅ server.json is valid\n",
-        "stderr": "",
-        "command_redacted": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\tools\\mcp-publisher\\mcp-publisher.exe validate .mcp/server.json"
-      }
-    ],
-    "token_printed": false
+  "dry_run_result": {},
+  "publish_result": {
+    "ok": false,
+    "returncode": 1,
+    "stdout": "Publishing to https://registry.modelcontextprotocol.io...\n",
+    "stderr": "Error: publish failed: server returned status 401: {\"title\":\"Unauthorized\",\"status\":401,\"detail\":\"Invalid or expired Registry JWT token\",\"errors\":[{\"message\":\"failed to parse token: token has invalid claims: token is expired\"}]}\n\n"
   },
-  "publish_result": {},
   "preflight_decision": "PASS_READY_TO_SUBMIT",
-  "result_token": "DRY_RUN_ONLY",
+  "result_token": "BLOCK_PUBLISH_FAILED",
   "token_printed": false,
-  "errors": [],
-  "warnings": [
-    "No MCP Registry submission performed in dry-run mode."
-  ]
+  "errors": [
+    "mcp-publisher publish failed."
+  ],
+  "warnings": []
 }

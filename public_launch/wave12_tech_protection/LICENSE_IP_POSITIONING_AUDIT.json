@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-05-21T08:52:03.146943+00:00",
+  "decision": "PASS_LICENSE_PRESENT",
+  "license_exists": true,
+  "license_type": "MIT",
+  "readme_references_license": true,
+  "non_legal_note": "This is operational positioning, not legal advice. Consult a legal professional for IP, patent, trademark, or licensing strategy.",
+  "future_options": [
+    "keep open source for adoption",
+    "dual-license later",
+    "keep core open and commercial/private kernel closed",
+    "consult legal professional for IP/patent/trademark strategy"
+  ],
+  "mcp_registry_submission_performed": false,
+  "token_printed": false,
+  "errors": [],
+  "warnings": [
+    "MIT is permissive; copying/forking may be allowed under its terms."
+  ]
+}

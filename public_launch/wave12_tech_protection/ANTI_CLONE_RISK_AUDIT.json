@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-05-21T08:52:06.519883+00:00",
+  "risk_level": "MEDIUM",
+  "decision": "PASS_ACCEPTABLE_PUBLIC_BETA_RISK",
+  "factors": {
+    "public_code_completeness": "high",
+    "public_data_reproducibility": "medium",
+    "public_schema_completeness": "high",
+    "private_kernel_separation": "present",
+    "operational_data_moat": "future/private",
+    "community_distribution_surface": "growing",
+    "license_permissiveness": "MIT permits copying/forking under terms",
+    "mcp_pypi_discoverability": "increasing"
+  },
+  "honest_assessment": "Surface cloning is possible because AOI is public/open-source and published to PyPI. The defensible moat should be data quality, source traces, receipts, local probes, issue feedback, vertical expertise, private calibration, and distribution trust from conservative claims.",
+  "mcp_registry_submission_performed": false,
+  "token_printed": false
+}

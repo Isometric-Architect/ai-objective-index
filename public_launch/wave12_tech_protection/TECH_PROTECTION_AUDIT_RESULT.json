@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-05-21T08:52:06.499411+00:00",
+  "decision": "PASS_NO_SENSITIVE_KERNEL_EXPOSED",
+  "scanned_files": 1192,
+  "skipped_files": 14,
+  "findings": [],
+  "finding_count": 0,
+  "block_count": 0,
+  "hold_count": 0,
+  "public_allowed": [
+    "schemas",
+    "API/MCP shapes",
+    "high-level scoring component names",
+    "source-trace methodology",
+    "ALLOW/HOLD/BLOCK labels",
+    "limitations",
+    "sample/public_beta_mcp data"
+  ],
+  "private_must_not_expose": [
+    "exact weights",
+    "thresholds",
+    "provider trust priors",
+    "anti-gaming rules",
+    "private negative-control seeds",
+    "private probe bank",
+    "commercial routing policy",
+    "private operational datasets"
+  ],
+  "mcp_registry_submission_performed": false,
+  "token_printed": false
+}

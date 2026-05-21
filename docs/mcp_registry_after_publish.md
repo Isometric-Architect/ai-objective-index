@@ -15,3 +15,5 @@ Expected follow-up:
 - Keep README and `.mcp/server.json` version-aligned.
 - If the version already exists, bump to the next prerelease such as `0.3.0a2`; do not delete or overwrite as a normal workflow.
 - Keep public wording conservative: source-traced candidates, route decisions, known limits, and no certification claims.
+
+Package 8S adds a protection gate before publish. If that gate is HOLD or BLOCK, resolve exposure, license, or package-artifact findings before increasing discovery through MCP Registry.

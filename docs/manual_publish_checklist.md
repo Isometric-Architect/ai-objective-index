@@ -196,4 +196,16 @@ For v0.2 real-data public beta, also do not claim verified MCP servers, safe MCP
 155. Run `python -m ai_objective_index.mcp_registry_release_audit`.
 156. Registry publication is not verification, security certification, quality guarantee, product readiness, purchasing advice, or action authorization.
 
+## Package 8S Technology Protection
+
+157. Run `python -m ai_objective_index.tech_protection_audit`.
+158. Run `python -m ai_objective_index.public_private_split_audit`.
+159. Run `python -m ai_objective_index.package_artifact_exposure_audit`.
+160. Run `python -m ai_objective_index.anti_clone_risk_audit`.
+161. Run `python -m ai_objective_index.license_ip_positioning_audit`.
+162. Run `python -m ai_objective_index.private_kernel_template_generator`.
+163. Run `python -m ai_objective_index.mcp_registry_pre_publish_protection_gate`.
+164. Do not expose exact weights, thresholds, provider priors, anti-gaming rules, private negative controls, private probe seeds, commercial routing policy, or private data strategy.
+165. Do not submit MCP Registry metadata until the protection gate is PASS or an explicit remediation decision is made.
+
 These links are public after Package 8K. The GitHub prerelease and real PyPI package exist; community posting and MCP Registry submission remain gated/HOLD. `public_beta_mcp` records are source-traced registry metadata candidates; they are not verified, not safe/certified, not security certified, not a quality guarantee, and not purchasing advice.

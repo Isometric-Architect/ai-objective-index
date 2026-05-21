@@ -1,5 +1,11 @@
 # Changelog
 
+## Package 8S
+
+- Added technology protection, public/private split, package artifact exposure, anti-clone, license/IP, and MCP Registry pre-publish protection audits.
+- Added placeholder-only private kernel inventory template generation and `.gitignore` hardening for private calibration, data, priors, and negative-control paths.
+- Preserved boundaries: no MCP Registry submission, no `mcp-publisher` install/execute, no new PyPI upload, no token handling, and no verification, safety, security-certification, quality-guarantee, product-readiness, purchasing-advice, or action-authorization claim.
+
 ## Package 8R
 
 - Added MCP Registry publisher setup, manifest final audit, dry-run/login/execute runner, post-publish verification, and release audit.

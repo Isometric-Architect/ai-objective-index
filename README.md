@@ -765,6 +765,21 @@ python -m ai_objective_index.mcp_registry_publish_runner --dry-run
 
 Actual registry submission remains gated by `mcp-publisher` availability, GitHub authentication, a passing manifest audit, and `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES`. Registry publication is a metadata listing only; it is not verification, security certification, a quality guarantee, product-readiness evidence, purchasing advice, or action authorization.
 
+### Package 8S Technology Protection
+
+Package 8S hardens the public/private split before increasing discovery through MCP Registry:
+
+```powershell
+python -m ai_objective_index.tech_protection_audit
+python -m ai_objective_index.public_private_split_audit
+python -m ai_objective_index.package_artifact_exposure_audit
+python -m ai_objective_index.anti_clone_risk_audit
+python -m ai_objective_index.license_ip_positioning_audit
+python -m ai_objective_index.mcp_registry_pre_publish_protection_gate
+```
+
+Public AOI exposes schemas, read-only API/MCP surfaces, high-level route components, source traces, ALLOW/HOLD/BLOCK labels, limitations, and sample data. Private calibration, exact weights, thresholds, provider priors, anti-gaming rules, private negative controls, private probe seeds, commercial routing policy, and private data strategy remain non-public. This protection layer does not submit MCP Registry metadata, install `mcp-publisher`, upload a new PyPI version, or claim verification, safety, security certification, quality guarantee, product readiness, purchasing advice, or action authorization.
+
 ## Package 9A AOI vNext Alignment
 
 Package 9A pauses the PyPI/MCP Registry publishing path long enough to align AOI vNext around the positioning:
@@ -942,6 +957,12 @@ AOI output is not a quality guarantee. It is not legal, financial, medical, purc
 - `docs/package_8r_mcp_registry_publish.md`: MCP Registry publisher setup, dry-run, and optional submit gate.
 - `docs/mcp_registry_publish_safety.md`: Registry token and claim-boundary safety.
 - `docs/mcp_registry_after_publish.md`: Post-publish verification and monitoring.
+- `docs/technology_protection_policy.md`: public/private technology protection policy.
+- `docs/public_private_split.md`: public/private split table.
+- `docs/anti_clone_strategy.md`: anti-clone risk and moat strategy.
+- `docs/package_artifact_exposure_policy.md`: wheel/sdist exposure policy.
+- `docs/license_ip_positioning.md`: non-legal license/IP positioning notes.
+- `docs/mcp_registry_pre_publish_protection.md`: pre-Registry protection gate.
 - `docs/community_manual_post_queue.md`: manual community feedback queue.
 - `docs/package_8q_a_local_build_and_twine_check.md`: local build/twine check workflow.
 - `docs/pypi_beginner_next_steps.md`: beginner TestPyPI/PyPI account and token steps.

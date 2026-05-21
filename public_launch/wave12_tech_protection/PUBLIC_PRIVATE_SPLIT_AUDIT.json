@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-05-21T08:52:06.252485+00:00",
+  "decision": "PASS_PUBLIC_PRIVATE_SPLIT_CLEAR",
+  "split_doc_exists": true,
+  "public_terms_present": true,
+  "private_terms_present": true,
+  "private_detail_findings": [],
+  "finding_count": 0,
+  "public_allowed": [
+    "schemas",
+    "endpoint shapes",
+    "MCP tool descriptions",
+    "high-level score components",
+    "source-trace methodology",
+    "ALLOW/HOLD/BLOCK labels",
+    "limitations",
+    "sample public_beta_mcp data"
+  ],
+  "private_reserved": [
+    "exact operational weights",
+    "scoring thresholds",
+    "anti-gaming heuristics",
+    "private negative controls",
+    "private probe seeds",
+    "provider trust priors",
+    "receipt weighting logic",
+    "commercial routing policy",
+    "private data acquisition strategy"
+  ],
+  "mcp_registry_submission_performed": false,
+  "token_printed": false
+}

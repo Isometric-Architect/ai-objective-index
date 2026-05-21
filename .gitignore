@@ -57,3 +57,12 @@ local_credentials/
 *.tmp
 *.bak
 Thumbs.db
+.aoi_private/
+private_kernel/
+private_kernels/
+private_data/
+private_calibration/
+private_negative_controls/
+private_provider_priors/
+*.pypirc
+.pypirc

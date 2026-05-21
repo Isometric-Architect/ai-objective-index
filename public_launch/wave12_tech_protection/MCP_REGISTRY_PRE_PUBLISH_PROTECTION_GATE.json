@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-05-21T08:52:54.960624+00:00",
+  "decision": "PASS_READY_FOR_MCP_REGISTRY_AFTER_PROTECTION",
+  "tech_protection_decision": "PASS_NO_SENSITIVE_KERNEL_EXPOSED",
+  "public_private_split_decision": "PASS_PUBLIC_PRIVATE_SPLIT_CLEAR",
+  "package_artifact_decision": "PASS_PACKAGE_ARTIFACT_SAFE",
+  "anti_clone_risk_decision": "PASS_ACCEPTABLE_PUBLIC_BETA_RISK",
+  "anti_clone_risk_level": "MEDIUM",
+  "license_ip_decision": "PASS_LICENSE_PRESENT",
+  "manifest_final_audit_decision": "PASS_MANIFEST_READY",
+  "recommended_next_package": "8R-B MCP Publisher Install + Registry Submit",
+  "mcp_registry_submission_performed": false,
+  "token_printed": false,
+  "errors": [],
+  "warnings": []
+}

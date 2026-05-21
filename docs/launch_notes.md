@@ -245,3 +245,9 @@ It does not use TestPyPI, submit MCP Registry metadata, post to communities, cre
 Package 8R prepares Official MCP Registry publication after the real PyPI `0.3.0a1` upload and install verification. It checks `mcp-publisher`, audits `.mcp/server.json`, writes a dry-run result, and provides post-publish verification/audit helpers.
 
 It does not submit MCP Registry metadata unless every gate passes and `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES` is set. It does not upload a new PyPI version, post to communities, print/store tokens, or claim verification, safety, security certification, quality guarantee, product readiness, purchasing advice, or action authorization.
+
+## Package 8S Technology Protection
+
+Package 8S audits public surfaces and package artifacts before increasing exposure through MCP Registry. It defines a public/private split, checks for private kernel disclosure, inspects wheel/sdist contents where available, assesses clone risk, records license/IP positioning, and writes a pre-publish protection gate.
+
+It does not submit MCP Registry metadata, install or execute `mcp-publisher`, upload a new PyPI version, expose private kernel values, request/print/store tokens, or claim verification, safety, security certification, quality guarantee, product readiness, purchasing advice, or action authorization.

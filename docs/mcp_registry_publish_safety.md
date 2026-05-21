@@ -15,3 +15,13 @@ Safe path:
 Do not paste GitHub tokens into chat. Do not commit token files or `.pypirc`. If a credential is exposed, revoke it.
 
 AOI remains read-only. Registry publication does not authorize payment, booking, login, email, purchase, contract signing, account connection, supplier verification, or profile modification.
+
+## Package 8S Protection Gate
+
+Before running a Registry submit package, run the technology protection gate:
+
+```powershell
+python -m ai_objective_index.mcp_registry_pre_publish_protection_gate
+```
+
+The gate checks whether public files and package artifacts expose private kernel details. Keep exact weights, thresholds, anti-gaming rules, provider trust priors, private negative controls, private probe seeds, and commercial routing policies outside public files.

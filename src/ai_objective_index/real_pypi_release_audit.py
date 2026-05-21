@@ -22,6 +22,7 @@ RISKY_PHRASES = [
     "purchase recommendation",
     "legal advice",
 ]
+CONFIRMED_UPLOAD_TOKENS = {"UPLOAD_SUCCESS", "UPLOAD_SUCCESS_DIRECT_TWINE_VERIFIED", "HOLD_ALREADY_EXISTS"}
 
 
 def _write(path: Path, text: str) -> Path:
@@ -72,7 +73,7 @@ def run_real_pypi_release_audit(write_result: bool = True) -> dict[str, Any]:
     errors: list[str] = []
     warnings: list[str] = []
 
-    upload_confirmed = upload.get("result_token") in {"UPLOAD_SUCCESS", "HOLD_ALREADY_EXISTS"}
+    upload_confirmed = upload.get("result_token") in CONFIRMED_UPLOAD_TOKENS
     install_passed = install.get("decision") == "PASS_REAL_PYPI_INSTALL"
     if token_findings:
         decision = "BLOCK_TOKEN_FINDING"

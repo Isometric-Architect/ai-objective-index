@@ -15,6 +15,7 @@ from .real_pypi_upload_runner import OUTPUT_PATH as UPLOAD_RESULT_PATH
 
 OUTPUT_PATH = Path("public_launch") / "wave10_real_pypi" / "REAL_PYPI_INSTALL_VERIFY_RESULT.json"
 TEMP_VENV_PATH = Path("data") / "generated" / "real_pypi_install_tmp" / "aoi_real_pypi_verify"
+CONFIRMED_UPLOAD_TOKENS = {"UPLOAD_SUCCESS", "UPLOAD_SUCCESS_DIRECT_TWINE_VERIFIED", "HOLD_ALREADY_EXISTS"}
 
 
 def _write_json(path: Path, payload: dict[str, Any]) -> Path:
@@ -99,7 +100,7 @@ def run_real_pypi_install_verify(
     temp_venv = _repo_root() / TEMP_VENV_PATH
     cleaned = False
 
-    if upload_token not in {"UPLOAD_SUCCESS", "HOLD_ALREADY_EXISTS"}:
+    if upload_token not in CONFIRMED_UPLOAD_TOKENS:
         decision = "HOLD_PYPI_PACKAGE_NOT_FOUND"
         warnings.append("Real PyPI upload has not been confirmed, so install verification was not attempted.")
     else:

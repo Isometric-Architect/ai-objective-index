@@ -4,7 +4,7 @@ Package 8Q-C-alt adds a strict real PyPI direct upload gate because TestPyPI sig
 
 ## Current Result
 
-- Upload gate / upload result: `UPLOAD_SUCCESS`
+- Upload gate / upload result: `UPLOAD_SUCCESS_DIRECT_TWINE_VERIFIED`
 - Real PyPI install verification: `PASS_REAL_PYPI_INSTALL`
 - Release audit: `PASS_REAL_PYPI_RELEASE_VERIFIED`
 - TestPyPI used: false

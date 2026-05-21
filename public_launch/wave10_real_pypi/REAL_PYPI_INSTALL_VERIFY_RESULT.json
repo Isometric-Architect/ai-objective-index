@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-21T07:34:18.085640+00:00",
+  "generated_at": "2026-05-21T07:43:49.945779+00:00",
   "decision": "PASS_REAL_PYPI_INSTALL",
   "target_version": "0.3.0a1",
   "package_name": "ai-objective-index",
-  "upload_result_token": "UPLOAD_SUCCESS",
+  "upload_result_token": "UPLOAD_SUCCESS_DIRECT_TWINE_VERIFIED",
   "steps": {
     "create_venv": {
       "ok": true,

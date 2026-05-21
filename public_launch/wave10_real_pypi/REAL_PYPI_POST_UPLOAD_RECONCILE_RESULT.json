@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-05-21T07:43:16.099840+00:00",
+  "pypi_version_reachable": true,
+  "target_version": "0.3.0a1",
+  "pypi_status": {
+    "status": "HOLD_VERSION_ALREADY_EXISTS",
+    "checked": true,
+    "url": "https://pypi.org/pypi/ai-objective-index/json",
+    "name": "ai-objective-index",
+    "versions": [
+      "0.3.0a1"
+    ]
+  },
+  "upload_result_token": "UPLOAD_SUCCESS_DIRECT_TWINE_VERIFIED",
+  "upload_result_path": "public_launch\\wave10_real_pypi\\REAL_PYPI_UPLOAD_RESULT.json",
+  "pypi_project_url": "https://pypi.org/project/ai-objective-index/0.3.0a1/",
+  "token_printed": false,
+  "next_action": "Run real PyPI install verification, release audit, and MCP Registry after-PyPI gate.",
+  "errors": [],
+  "warnings": []
+}

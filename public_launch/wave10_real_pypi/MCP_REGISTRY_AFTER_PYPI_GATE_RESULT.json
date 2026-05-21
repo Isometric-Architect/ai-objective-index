@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T07:34:23.069952+00:00",
+  "generated_at": "2026-05-21T07:44:10.048589+00:00",
   "decision": "HOLD_MCP_PUBLISHER_REQUIRED",
   "server_name": "io.github.isometric-architect/ai-objective-index",
   "server_version": "0.3.0a1",
@@ -7,7 +7,7 @@
   "identifier": "ai-objective-index",
   "package_version": "0.3.0a1",
   "readme_marker_matches": true,
-  "real_pypi_upload_result": "UPLOAD_SUCCESS",
+  "real_pypi_upload_result": "UPLOAD_SUCCESS_DIRECT_TWINE_VERIFIED",
   "real_pypi_install_verify": "PASS_REAL_PYPI_INSTALL",
   "mcp_publisher_available": false,
   "mcp_publisher_path": "",

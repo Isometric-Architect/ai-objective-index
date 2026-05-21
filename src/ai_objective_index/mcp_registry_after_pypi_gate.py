@@ -13,6 +13,7 @@ from .real_pypi_upload_runner import OUTPUT_PATH as UPLOAD_RESULT_PATH
 
 
 OUTPUT_PATH = Path("public_launch") / "wave10_real_pypi" / "MCP_REGISTRY_AFTER_PYPI_GATE_RESULT.json"
+CONFIRMED_UPLOAD_TOKENS = {"UPLOAD_SUCCESS", "UPLOAD_SUCCESS_DIRECT_TWINE_VERIFIED", "HOLD_ALREADY_EXISTS"}
 
 
 def _write_json(path: Path, payload: dict[str, Any]) -> Path:
@@ -65,7 +66,7 @@ def run_mcp_registry_after_pypi_gate(write_result: bool = True) -> dict[str, Any
     errors: list[str] = []
     warnings: list[str] = []
 
-    upload_confirmed = upload.get("result_token") in {"UPLOAD_SUCCESS", "HOLD_ALREADY_EXISTS"}
+    upload_confirmed = upload.get("result_token") in CONFIRMED_UPLOAD_TOKENS
     install_passed = install.get("decision") == "PASS_REAL_PYPI_INSTALL"
     metadata_ok = (
         server.get("name") == MCP_NAME

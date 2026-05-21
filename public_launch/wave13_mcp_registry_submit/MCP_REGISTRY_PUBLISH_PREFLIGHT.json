@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-05-21T09:38:02.004888+00:00",
+  "decision": "HOLD_MCP_PUBLISHER_MISSING",
+  "publisher_install_decision": "HOLD_MANUAL_INSTALL_REQUIRED",
+  "publisher_auth_decision": "HOLD_LOGIN_REQUIRED",
+  "manifest_final_audit_decision": "PASS_MANIFEST_READY",
+  "protection_gate_decision": "PASS_READY_FOR_MCP_REGISTRY_AFTER_PROTECTION",
+  "pypi_release_audit_decision": "PASS_REAL_PYPI_RELEASE_VERIFIED",
+  "mcp_publisher_available": false,
+  "token_printed": false,
+  "mcp_registry_submission_performed": false,
+  "errors": [],
+  "warnings": [
+    "mcp-publisher is not available."
+  ]
+}

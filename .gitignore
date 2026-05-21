@@ -66,3 +66,4 @@ private_negative_controls/
 private_provider_priors/
 *.pypirc
 .pypirc
+tools/mcp-publisher/

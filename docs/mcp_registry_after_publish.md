@@ -17,3 +17,5 @@ Expected follow-up:
 - Keep public wording conservative: source-traced candidates, route decisions, known limits, and no certification claims.
 
 Package 8S adds a protection gate before publish. If that gate is HOLD or BLOCK, resolve exposure, license, or package-artifact findings before increasing discovery through MCP Registry.
+
+Package 8R-B adds reconcile and discovery report helpers. If publish succeeds but search is not visible yet, wait for propagation and rerun `python -m ai_objective_index.mcp_registry_submit_reconcile`.

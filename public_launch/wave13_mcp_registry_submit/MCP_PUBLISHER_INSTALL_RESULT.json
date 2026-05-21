@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-05-21T09:37:56.089655+00:00",
+  "mode": "instructions",
+  "decision": "HOLD_MANUAL_INSTALL_REQUIRED",
+  "mcp_publisher_available": false,
+  "mcp_publisher_path": "",
+  "download_attempted": false,
+  "download_performed": false,
+  "help_result": {},
+  "instructions": [
+    "Download mcp-publisher from the official modelcontextprotocol/registry GitHub releases.",
+    "Expected Windows x64 asset: mcp-publisher_windows_amd64.tar.gz",
+    "Extract mcp-publisher.exe into tools/mcp-publisher/ or another local folder.",
+    "Run: python -m ai_objective_index.mcp_publisher_installer --check",
+    "Authenticate with: python -m ai_objective_index.mcp_publisher_auth_check --login",
+    "Do not paste GitHub tokens into chat and do not commit downloaded credentials."
+  ],
+  "token_printed": false,
+  "errors": [],
+  "warnings": [
+    "Manual mcp-publisher installation instructions written."
+  ]
+}

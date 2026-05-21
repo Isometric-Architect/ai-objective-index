@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-05-21T09:38:02.026271+00:00",
+  "dry_run": true,
+  "execute": false,
+  "env_confirm_present": false,
+  "submission_performed": false,
+  "command_redacted": "mcp-publisher publish .mcp/server.json",
+  "dry_run_result": {},
+  "publish_result": {},
+  "preflight_decision": "HOLD_MCP_PUBLISHER_MISSING",
+  "result_token": "DRY_RUN_ONLY",
+  "token_printed": false,
+  "errors": [],
+  "warnings": [
+    "Dry-run only; preflight is HOLD_MCP_PUBLISHER_MISSING.",
+    "No MCP Registry submission performed in dry-run mode."
+  ]
+}

@@ -251,3 +251,9 @@ It does not submit MCP Registry metadata unless every gate passes and `AOI_MCP_R
 Package 8S audits public surfaces and package artifacts before increasing exposure through MCP Registry. It defines a public/private split, checks for private kernel disclosure, inspects wheel/sdist contents where available, assesses clone risk, records license/IP positioning, and writes a pre-publish protection gate.
 
 It does not submit MCP Registry metadata, install or execute `mcp-publisher`, upload a new PyPI version, expose private kernel values, request/print/store tokens, or claim verification, safety, security certification, quality guarantee, product readiness, purchasing advice, or action authorization.
+
+## Package 8R-B MCP Registry Submit
+
+Package 8R-B adds the guarded publisher setup, GitHub auth, preflight, dry-run, execute, reconcile, and discovery-report path for MCP Registry publication.
+
+It does not publish unless all gates pass and `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES` is set. It does not modify PyPI, post to communities, print/store tokens, expose private kernel details, or claim Registry publication is verification, security certification, quality guarantee, product readiness, purchasing advice, or action authorization.

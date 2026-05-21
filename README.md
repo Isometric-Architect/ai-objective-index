@@ -780,6 +780,18 @@ python -m ai_objective_index.mcp_registry_pre_publish_protection_gate
 
 Public AOI exposes schemas, read-only API/MCP surfaces, high-level route components, source traces, ALLOW/HOLD/BLOCK labels, limitations, and sample data. Private calibration, exact weights, thresholds, provider priors, anti-gaming rules, private negative controls, private probe seeds, commercial routing policy, and private data strategy remain non-public. This protection layer does not submit MCP Registry metadata, install `mcp-publisher`, upload a new PyPI version, or claim verification, safety, security certification, quality guarantee, product readiness, purchasing advice, or action authorization.
 
+### Package 8R-B MCP Registry Submit
+
+Package 8R-B is the guarded submit path after PyPI verification and the 8S protection gate:
+
+```powershell
+python -m ai_objective_index.mcp_publisher_installer --check
+python -m ai_objective_index.mcp_registry_publish_preflight
+python -m ai_objective_index.mcp_registry_submit_execute --dry-run
+```
+
+Actual Registry publish remains blocked unless `mcp-publisher` is available, GitHub auth is complete, preflight is `PASS_READY_TO_SUBMIT`, and `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES` is set. The Registry listing is not verification, security certification, a quality guarantee, product-readiness evidence, purchasing advice, or action authorization.
+
 ## Package 9A AOI vNext Alignment
 
 Package 9A pauses the PyPI/MCP Registry publishing path long enough to align AOI vNext around the positioning:
@@ -963,6 +975,10 @@ AOI output is not a quality guarantee. It is not legal, financial, medical, purc
 - `docs/package_artifact_exposure_policy.md`: wheel/sdist exposure policy.
 - `docs/license_ip_positioning.md`: non-legal license/IP positioning notes.
 - `docs/mcp_registry_pre_publish_protection.md`: pre-Registry protection gate.
+- `docs/package_8r_b_mcp_registry_submit.md`: guarded MCP Registry submit workflow.
+- `docs/mcp_publisher_windows_setup.md`: Windows setup notes for `mcp-publisher`.
+- `docs/mcp_registry_submit_runbook.md`: step-by-step Registry submit runbook.
+- `docs/mcp_registry_failure_recovery.md`: Registry failure recovery notes.
 - `docs/community_manual_post_queue.md`: manual community feedback queue.
 - `docs/package_8q_a_local_build_and_twine_check.md`: local build/twine check workflow.
 - `docs/pypi_beginner_next_steps.md`: beginner TestPyPI/PyPI account and token steps.

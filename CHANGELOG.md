@@ -1,5 +1,11 @@
 # Changelog
 
+## Package 8R-B
+
+- Added guarded MCP Publisher install/check, GitHub auth, Registry submit preflight, dry-run/execute, reconcile, and discovery report helpers.
+- Added Windows setup, submit runbook, and failure recovery docs for Official MCP Registry publication.
+- Preserved boundaries: no Registry publish unless all gates pass and `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES`, no token printing/storage/commit, no PyPI modification, no community posting, no private-kernel disclosure, and no certification or product-readiness claim.
+
 ## Package 8S
 
 - Added technology protection, public/private split, package artifact exposure, anti-clone, license/IP, and MCP Registry pre-publish protection audits.

@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-05-21T09:37:30.387578+00:00",
+  "mode": "check",
+  "decision": "HOLD_LOGIN_REQUIRED",
+  "mcp_publisher_available": false,
+  "mcp_publisher_path": "",
+  "login_attempted": false,
+  "login_result": {},
+  "token_printed": false,
+  "errors": [],
+  "warnings": [
+    "mcp-publisher is not available, so auth status cannot be checked."
+  ]
+}

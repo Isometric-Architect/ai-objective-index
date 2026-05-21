@@ -25,3 +25,13 @@ python -m ai_objective_index.mcp_registry_pre_publish_protection_gate
 ```
 
 The gate checks whether public files and package artifacts expose private kernel details. Keep exact weights, thresholds, anti-gaming rules, provider trust priors, private negative controls, private probe seeds, and commercial routing policies outside public files.
+
+## Package 8R-B Submit Gate
+
+`mcp_registry_submit_execute --execute` must not run unless:
+
+- `mcp_registry_publish_preflight` is `PASS_READY_TO_SUBMIT`;
+- GitHub auth through `mcp-publisher login github` is complete;
+- `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES` is set.
+
+Do not use GitHub PATs in chat or files.

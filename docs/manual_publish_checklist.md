@@ -208,4 +208,16 @@ For v0.2 real-data public beta, also do not claim verified MCP servers, safe MCP
 164. Do not expose exact weights, thresholds, provider priors, anti-gaming rules, private negative controls, private probe seeds, commercial routing policy, or private data strategy.
 165. Do not submit MCP Registry metadata until the protection gate is PASS or an explicit remediation decision is made.
 
+## Package 8R-B MCP Registry Submit
+
+166. Run `python -m ai_objective_index.mcp_publisher_installer --check`.
+167. If missing, run `python -m ai_objective_index.mcp_publisher_installer --instructions`.
+168. Run `python -m ai_objective_index.mcp_publisher_auth_check --login` only after publisher availability is confirmed.
+169. Run `python -m ai_objective_index.mcp_registry_publish_preflight`.
+170. Run `python -m ai_objective_index.mcp_registry_submit_execute --dry-run`.
+171. Do not run execute unless preflight is PASS and `$env:AOI_MCP_REGISTRY_SUBMIT_CONFIRM="YES"` is set.
+172. After execute or manual publish, run `python -m ai_objective_index.mcp_registry_submit_reconcile`.
+173. Run `python -m ai_objective_index.mcp_registry_discovery_report`.
+174. Do not paste GitHub tokens into chat or commit credentials.
+
 These links are public after Package 8K. The GitHub prerelease and real PyPI package exist; community posting and MCP Registry submission remain gated/HOLD. `public_beta_mcp` records are source-traced registry metadata candidates; they are not verified, not safe/certified, not security certified, not a quality guarantee, and not purchasing advice.

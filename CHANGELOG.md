@@ -1,5 +1,11 @@
 # Changelog
 
+## QIRA-5
+
+- Added a local PR diff/changed-file packet generator that emits conservative QIRA task packets.
+- Added a QIRA-5 CLI, sample diff, generated packet, review output, docs, and tests.
+- Preserved boundaries: no GitHub API calls, no `git` command execution, no patch application, no project command execution, no deploy, no token handling, no external publishing, and no certification/readiness claim.
+
 ## QIRA-4
 
 - Added a reusable GitHub Action dry-run wrapper for QIRA local release-gate review.

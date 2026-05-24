@@ -29,6 +29,8 @@ QIRA-3 adds local patch path classification and test-command contracts. It recor
 
 QIRA-4 adds a reusable GitHub Action dry-run wrapper under `.github/actions/qira-releasegate-dry-run/`. It is not an auto-enabled workflow; the example workflow stays in `examples/` until a repository owner intentionally enables it.
 
+QIRA-5 adds a local PR diff/changed-file packet generator. It turns repository-supplied diff text or changed-file metadata into a conservative QIRA task packet and optional QIRA-3 review output without calling GitHub APIs, running `git`, applying patches, executing tests, deploying code, handling tokens, or publishing anything.
+
 ## Quick Example
 
 Example objective request:

@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-05-24T03:36:01.724382+00:00",
+  "decision": "PASS_QIRA_CLAIM_BOUNDARY",
+  "risky_phrase_count": 0,
+  "findings": [],
+  "allowed_language": [
+    "behavior contract",
+    "residual ledger",
+    "patch receipt",
+    "action license",
+    "ALLOW/HOLD/BLOCK",
+    "local release-gate receipt"
+  ],
+  "must_not_claim": [
+    "do not claim verified patch status",
+    "do not claim safety",
+    "do not claim security certification",
+    "do not claim quality guarantee",
+    "do not claim production readiness",
+    "do not claim deployment approval",
+    "do not claim external action authorization"
+  ],
+  "external_actions_performed": false,
+  "token_printed": false
+}

@@ -1,0 +1,79 @@
+{
+  "schema": "QIRA_PacketGenerationResult/v0.1",
+  "decision": "PASS_QIRA_PACKET_GENERATED",
+  "changed_files": [
+    "docs/qira5_pr_packet_generator.md",
+    "src/ai_objective_index/qira/packet_generator.py",
+    "tests/test_qira_packet_generator.py"
+  ],
+  "inferred_expected_behavior": [
+    "Implement the requested task without expanding scope: Generate a conservative QIRA task packet from local PR diff metadata.",
+    "Preserve existing public claim boundaries and do not add verification, security-certification, quality-guarantee, production-readiness, deployment-approval, or action-authorization claims.",
+    "Source changes should preserve documented behavior unless the task explicitly states a behavior change.",
+    "Test changes should cover the intended behavior and avoid replacing evidence with unsupported claims.",
+    "Documentation changes should match implementation boundaries and limitations.",
+    "Do not deploy, publish, upload packages, submit registry metadata, or run external actions from this packet."
+  ],
+  "path_classification_decision": "PASS_PATH_CLASSIFICATION",
+  "path_classification": {
+    "schema": "QIRA_PatchDiffClassificationReport/v0.1",
+    "decision": "PASS_PATH_CLASSIFICATION",
+    "changed_file_count": 3,
+    "classifications": [
+      {
+        "schema": "QIRA_ChangedFileClassification/v0.1",
+        "path": "docs/qira5_pr_packet_generator.md",
+        "category": "docs",
+        "risk": "LOW",
+        "reasons": [
+          "documentation surface changed"
+        ]
+      },
+      {
+        "schema": "QIRA_ChangedFileClassification/v0.1",
+        "path": "src/ai_objective_index/qira/packet_generator.py",
+        "category": "source",
+        "risk": "LOW",
+        "reasons": [
+          "source surface changed"
+        ]
+      },
+      {
+        "schema": "QIRA_ChangedFileClassification/v0.1",
+        "path": "tests/test_qira_packet_generator.py",
+        "category": "test",
+        "risk": "LOW",
+        "reasons": [
+          "test surface changed"
+        ]
+      }
+    ],
+    "category_counts": {
+      "docs": 1,
+      "source": 1,
+      "test": 1
+    },
+    "risk_counts": {
+      "LOW": 3
+    },
+    "block_reasons": [],
+    "hold_reasons": [],
+    "external_actions_performed": false,
+    "patch_applied": false,
+    "tests_executed": false,
+    "token_printed": false,
+    "generated_at": "2026-05-24T03:36:01.473244+00:00"
+  },
+  "known_limits": [
+    "QIRA-5 reads local diff text or changed-file metadata only.",
+    "QIRA-5 does not call GitHub APIs, run git commands, apply patches, execute tests, deploy, upload, or publish.",
+    "Generated packets can support review intake, but they do not verify code, certify security, guarantee quality, or authorize release actions."
+  ],
+  "external_actions_performed": false,
+  "git_command_executed": false,
+  "github_api_used": false,
+  "tests_executed": false,
+  "patch_applied": false,
+  "token_printed": false,
+  "generated_at": "2026-05-24T03:36:01.473412+00:00"
+}

@@ -1,0 +1,15 @@
+diff --git a/src/ai_objective_index/qira/packet_generator.py b/src/ai_objective_index/qira/packet_generator.py
+--- a/src/ai_objective_index/qira/packet_generator.py
++++ b/src/ai_objective_index/qira/packet_generator.py
+@@ -0,0 +1,5 @@
++# local packet generator fixture
+diff --git a/tests/test_qira_packet_generator.py b/tests/test_qira_packet_generator.py
+--- a/tests/test_qira_packet_generator.py
++++ b/tests/test_qira_packet_generator.py
+@@ -0,0 +1,5 @@
++# local packet generator tests fixture
+diff --git a/docs/qira5_pr_packet_generator.md b/docs/qira5_pr_packet_generator.md
+--- a/docs/qira5_pr_packet_generator.md
++++ b/docs/qira5_pr_packet_generator.md
+@@ -0,0 +1,5 @@
++# local packet generator docs fixture

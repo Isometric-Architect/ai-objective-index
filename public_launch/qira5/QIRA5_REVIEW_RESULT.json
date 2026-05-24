@@ -1,0 +1,52 @@
+{
+  "decision": "HOLD_QIRA3_REVIEW",
+  "release_gate_decision": "HOLD_CI_PASS_CONTRACT_GAP",
+  "path_classification_decision": "PASS_PATH_CLASSIFICATION",
+  "test_command_contract_decision": "PASS_TEST_COMMAND_CONTRACT",
+  "action_license": {
+    "schema": "QIRA_ActionLicense/v0.1",
+    "license_id": "qira-license-1fd828cf2182",
+    "patch_id": "qira-patch-fbbe45763683",
+    "patch_draft": "ALLOW",
+    "pr_open": "HOLD",
+    "merge": "HOLD",
+    "deploy": "BLOCK",
+    "public_claim": "HOLD",
+    "decision_reason": "Held by HOLD_CI_PASS_CONTRACT_GAP; more evidence is needed before PR or release claims.",
+    "must_not_claim": [
+      "do not claim verified status",
+      "do not claim safety",
+      "do not claim security certification",
+      "do not claim quality guarantee",
+      "do not claim production readiness",
+      "do not claim legal compliance",
+      "do not claim deployment approval",
+      "do not claim external action authorization"
+    ],
+    "generated_at": "2026-05-24T03:36:01.476496+00:00"
+  },
+  "path_summary": {
+    "changed_file_count": 3,
+    "category_counts": {
+      "docs": 1,
+      "source": 1,
+      "test": 1
+    },
+    "risk_counts": {
+      "LOW": 3
+    }
+  },
+  "test_command_summary": {
+    "command_count": 1,
+    "commands_executed": false,
+    "allowed_execution": "record_only_not_executed"
+  },
+  "external_actions_performed": false,
+  "tests_executed_by_qira": false,
+  "patch_applied": false,
+  "deploy_performed": false,
+  "token_printed": false,
+  "qira5_generation_decision": "PASS_QIRA_PACKET_GENERATED",
+  "git_command_executed": false,
+  "github_api_used": false
+}

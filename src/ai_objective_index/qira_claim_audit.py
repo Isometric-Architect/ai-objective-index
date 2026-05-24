@@ -12,6 +12,7 @@ from .real_pypi_upload_gate import _repo_root
 OUTPUT_PATH = Path("public_launch") / "qira1" / "QIRA_CLAIM_BOUNDARY_AUDIT.json"
 QIRA2_OUTPUT_PATH = Path("public_launch") / "qira2" / "QIRA_CLAIM_BOUNDARY_AUDIT.json"
 QIRA3_OUTPUT_PATH = Path("public_launch") / "qira3" / "QIRA_CLAIM_BOUNDARY_AUDIT.json"
+QIRA4_OUTPUT_PATH = Path("public_launch") / "qira4" / "QIRA_CLAIM_BOUNDARY_AUDIT.json"
 SCAN_PATHS = [
     Path("docs") / "qira_code_releasegate_plan.md",
     Path("docs") / "qira_releasegate_mvp.md",
@@ -19,11 +20,14 @@ SCAN_PATHS = [
     Path("docs") / "qira_local_packet_cli.md",
     Path("docs") / "qira3_patch_classification.md",
     Path("docs") / "qira_test_command_contract.md",
+    Path("docs") / "qira4_github_action_dry_run.md",
+    Path("docs") / "qira_github_action_limitations.md",
     Path("docs") / "qira_action_license.md",
     Path("docs") / "qira_claim_boundaries.md",
     Path("public_launch") / "qira1",
     Path("public_launch") / "qira2",
     Path("public_launch") / "qira3",
+    Path("public_launch") / "qira4",
 ]
 
 RISKY_PATTERNS = [
@@ -120,6 +124,7 @@ def run_qira_claim_audit(write_result: bool = True) -> dict[str, Any]:
         _write_json(OUTPUT_PATH, result)
         _write_json(QIRA2_OUTPUT_PATH, result)
         _write_json(QIRA3_OUTPUT_PATH, result)
+        _write_json(QIRA4_OUTPUT_PATH, result)
     return result
 
 

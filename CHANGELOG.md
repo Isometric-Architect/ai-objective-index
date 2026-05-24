@@ -1,5 +1,11 @@
 # Changelog
 
+## QIRA-4
+
+- Added a reusable GitHub Action dry-run wrapper for QIRA local release-gate review.
+- Added a non-active sample workflow under `examples/`, QIRA-4 docs, action dry-run outputs, and action manifest audit.
+- Preserved boundaries: no auto-enabled workflow, no project command execution, no patch application, no deploy, no token handling, no external publishing, and no certification/readiness claim.
+
 ## QIRA-3
 
 - Added local patch path classification for source, tests, docs, config, CI, dependency, generated/data, private/secret, path escape, and unknown paths.

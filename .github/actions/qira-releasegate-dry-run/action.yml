@@ -1,0 +1,16 @@
+name: QIRA ReleaseGate Dry Run
+description: Local/offline QIRA release-gate dry run for a user-supplied task packet.
+inputs:
+  packet:
+    description: Path to a QIRA task packet JSON file.
+    required: true
+  output-dir:
+    description: Directory for QIRA dry-run outputs.
+    required: false
+    default: public_launch/qira4
+runs:
+  using: composite
+  steps:
+    - name: Run QIRA dry run
+      shell: bash
+      run: python -m ai_objective_index.qira.github_action --input "${{ inputs.packet }}" --output-dir "${{ inputs.output-dir }}"

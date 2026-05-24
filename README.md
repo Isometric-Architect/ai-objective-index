@@ -27,6 +27,8 @@ QIRA-2 adds local JSON task-packet intake for QIRA. A user can provide task, exp
 
 QIRA-3 adds local patch path classification and test-command contracts. It records which files changed and which project-supplied commands would need review, but it still does not execute commands, apply patches, deploy code, contact external services, or handle secrets.
 
+QIRA-4 adds a reusable GitHub Action dry-run wrapper under `.github/actions/qira-releasegate-dry-run/`. It is not an auto-enabled workflow; the example workflow stays in `examples/` until a repository owner intentionally enables it.
+
 ## Quick Example
 
 Example objective request:

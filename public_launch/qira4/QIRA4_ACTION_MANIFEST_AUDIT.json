@@ -1,0 +1,8 @@
+{
+  "decision": "PASS_QIRA_ACTION_MANIFEST_SAFE",
+  "manifest_exists": true,
+  "forbidden_command_findings": [],
+  "workflow_auto_enabled": false,
+  "external_actions_performed": false,
+  "token_printed": false
+}

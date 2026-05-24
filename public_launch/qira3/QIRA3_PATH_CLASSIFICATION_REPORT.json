@@ -1,0 +1,39 @@
+{
+  "schema": "QIRA_PatchDiffClassificationReport/v0.1",
+  "decision": "PASS_PATH_CLASSIFICATION",
+  "changed_file_count": 2,
+  "classifications": [
+    {
+      "schema": "QIRA_ChangedFileClassification/v0.1",
+      "path": "src/ai_objective_index/qira/task_cli.py",
+      "category": "source",
+      "risk": "LOW",
+      "reasons": [
+        "source surface changed"
+      ]
+    },
+    {
+      "schema": "QIRA_ChangedFileClassification/v0.1",
+      "path": "tests/test_qira_task_cli.py",
+      "category": "test",
+      "risk": "LOW",
+      "reasons": [
+        "test surface changed"
+      ]
+    }
+  ],
+  "category_counts": {
+    "source": 1,
+    "test": 1
+  },
+  "risk_counts": {
+    "LOW": 2
+  },
+  "block_reasons": [],
+  "hold_reasons": [],
+  "external_actions_performed": false,
+  "patch_applied": false,
+  "tests_executed": false,
+  "token_printed": false,
+  "generated_at": "2026-05-24T02:45:59.582017+00:00"
+}

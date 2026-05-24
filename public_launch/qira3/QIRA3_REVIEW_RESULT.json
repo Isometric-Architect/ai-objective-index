@@ -1,0 +1,48 @@
+{
+  "decision": "PASS_QIRA3_REVIEW",
+  "release_gate_decision": "PASS_CONTRACT_SCOPED",
+  "path_classification_decision": "PASS_PATH_CLASSIFICATION",
+  "test_command_contract_decision": "PASS_TEST_COMMAND_CONTRACT",
+  "action_license": {
+    "schema": "QIRA_ActionLicense/v0.1",
+    "license_id": "qira-license-859c1c0c4904",
+    "patch_id": "qira-patch-8188a7b16c8a",
+    "patch_draft": "ALLOW",
+    "pr_open": "ALLOW",
+    "merge": "HOLD",
+    "deploy": "BLOCK",
+    "public_claim": "ALLOW_SCOPED_INTERNAL",
+    "decision_reason": "Scoped local contract evidence supports draft/PR handling, while merge and deploy remain separately gated.",
+    "must_not_claim": [
+      "do not claim verified status",
+      "do not claim safety",
+      "do not claim security certification",
+      "do not claim quality guarantee",
+      "do not claim production readiness",
+      "do not claim legal compliance",
+      "do not claim deployment approval",
+      "do not claim external action authorization"
+    ],
+    "generated_at": "2026-05-24T02:45:59.581836+00:00"
+  },
+  "path_summary": {
+    "changed_file_count": 2,
+    "category_counts": {
+      "source": 1,
+      "test": 1
+    },
+    "risk_counts": {
+      "LOW": 2
+    }
+  },
+  "test_command_summary": {
+    "command_count": 1,
+    "commands_executed": false,
+    "allowed_execution": "record_only_not_executed"
+  },
+  "external_actions_performed": false,
+  "tests_executed_by_qira": false,
+  "patch_applied": false,
+  "deploy_performed": false,
+  "token_printed": false
+}

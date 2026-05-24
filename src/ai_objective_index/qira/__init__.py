@@ -15,7 +15,9 @@ from .models import (
 )
 from .input_packet import QiraTaskPacket
 from .packet_loader import build_report_from_packet, build_report_from_packet_file, load_task_packet
+from .diff_classifier import ChangedFileClassification, PatchDiffClassificationReport, classify_patch_paths
 from .releasegate import build_release_gate_report
+from .test_command_contract import TestCommandContract, TestCommandRecord, build_test_command_contract
 
 __all__ = [
     "ActionLicense",
@@ -25,9 +27,15 @@ __all__ = [
     "QiraTaskPacket",
     "QiraReleaseGateReport",
     "ResidualLedger",
+    "ChangedFileClassification",
+    "PatchDiffClassificationReport",
+    "TestCommandContract",
+    "TestCommandRecord",
     "ValidatorPacket",
     "build_report_from_packet",
     "build_report_from_packet_file",
     "build_release_gate_report",
+    "build_test_command_contract",
+    "classify_patch_paths",
     "load_task_packet",
 ]

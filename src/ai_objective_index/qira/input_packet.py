@@ -32,6 +32,7 @@ class QiraTaskPacket(BaseModel):
     patch_summary: str = ""
     patch_diff: str = ""
     tests_passed: bool = False
+    test_commands: list[str] = Field(default_factory=list)
     test_summary: str = ""
     evidence_origin: EvidenceOrigin = "unknown"
     requested_action: PatchAction = "patch_draft"
@@ -114,6 +115,7 @@ diff --git a/tests/test_qira_task_cli.py b/tests/test_qira_task_cli.py
 +# local fixture test
 """,
         tests_passed=True,
+        test_commands=["python -m pytest tests/test_qira_task_cli.py tests/test_qira_packet_loader.py"],
         test_summary="QIRA packet fixture tests passed locally.",
         evidence_origin="local_fixture",
         requested_action="pr_open",

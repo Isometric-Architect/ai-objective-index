@@ -25,6 +25,8 @@ QIRA-1 adds the first ResidualOps vertical MVP: a local/offline QIRA-Code Releas
 
 QIRA-2 adds local JSON task-packet intake for QIRA. A user can provide task, expected behavior, changed files or patch diff text, test summary, and declared claims; QIRA emits a local release-gate report without applying patches, executing tests, deploying code, contacting external services, or handling secrets.
 
+QIRA-3 adds local patch path classification and test-command contracts. It records which files changed and which project-supplied commands would need review, but it still does not execute commands, apply patches, deploy code, contact external services, or handle secrets.
+
 ## Quick Example
 
 Example objective request:

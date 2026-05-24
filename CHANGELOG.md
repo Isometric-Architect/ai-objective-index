@@ -1,5 +1,11 @@
 # Changelog
 
+## QIRA-3
+
+- Added local patch path classification for source, tests, docs, config, CI, dependency, generated/data, private/secret, path escape, and unknown paths.
+- Added test-command contracts that record project-supplied commands without executing them and conservatively hold or block network, publish, destructive, install, container, browser, login, or unknown command patterns.
+- Added QIRA-3 review CLI, public sample outputs, docs, and tests while preserving no-execution/no-deploy/no-token/no-certification boundaries.
+
 ## QIRA-2
 
 - Added local QIRA task packet intake for user-supplied JSON packets with task, expected behavior, changed files or patch diff text, local evidence summary, declared claims, and requested action.

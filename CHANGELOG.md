@@ -1,5 +1,11 @@
 # Changelog
 
+## DataCapsule-4
+
+- Added an opt-in CI artifact bridge for repository-supplied CSV/JSONL/JSON corpus manifests.
+- Added a reusable composite action, inactive example workflow, bridge result/report outputs, action manifest audit, docs, and tests.
+- Preserved boundaries: no active workflow creation, no GitHub API calls, no directory crawling, no private file-content inspection, no token handling, no certification, no evaluation-clean proof, and no action authorization.
+
 ## DataCapsule-3
 
 - Added CSV, JSONL, and JSON corpus manifest intake for local DataCapsule metadata normalization.

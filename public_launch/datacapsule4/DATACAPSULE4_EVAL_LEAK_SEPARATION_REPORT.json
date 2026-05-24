@@ -1,0 +1,15 @@
+{
+  "schema": "DataCapsule_EvalLeakSeparationReport/v0.1",
+  "decision": "PASS_EVAL_SEPARATION_LOCAL_METADATA",
+  "train_count": 1,
+  "eval_count": 1,
+  "overlap_count": 0,
+  "overlap_paths": [],
+  "hold_reasons": [],
+  "local_only": true,
+  "network_used": false,
+  "crawler_used": false,
+  "external_service_used": false,
+  "can_prove_eval_cleanliness": false,
+  "generated_at": "2026-05-24T12:56:36.947687+00:00"
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "DataCapsule_CiArtifactBridgeResult/v0.1",
+  "decision": "BLOCK_DATACAPSULE4_USE_RISK",
+  "intake_decision": "BLOCK_DATACAPSULE3_USE_RISK",
+  "eval_leak_decision": "PASS_EVAL_SEPARATION_LOCAL_METADATA",
+  "manifest_path": "public_launch/datacapsule4/DATACAPSULE4_SAMPLE_MANIFEST.csv",
+  "output_dir": "public_launch/datacapsule4",
+  "intake_result_path": "public_launch/datacapsule4/DATACAPSULE4_INTAKE_RESULT.json",
+  "bridge_report_path": "public_launch/datacapsule4/DATACAPSULE4_BRIDGE_REPORT.md",
+  "workflow_auto_enabled": false,
+  "active_workflow_created": false,
+  "external_actions_performed": false,
+  "github_api_used_by_datacapsule": false,
+  "directory_crawled": false,
+  "private_file_contents_read": false,
+  "url_fetch_performed": false,
+  "external_service_used": false,
+  "token_printed": false,
+  "can_certify_rights": false,
+  "can_certify_privacy": false,
+  "can_certify_quality": false,
+  "can_prove_eval_cleanliness": false,
+  "can_authorize_action": false,
+  "known_limits": [
+    "DataCapsule-4 converts opt-in workflow corpus manifest metadata into local review artifacts.",
+    "DataCapsule-4 does not crawl directories, read private file contents, fetch URLs, call GitHub APIs, or handle tokens.",
+    "A bridge pass is not rights clearance, privacy certification, data quality guarantee, evaluation-clean proof, product readiness, or action authorization."
+  ]
+}

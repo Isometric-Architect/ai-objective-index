@@ -1,0 +1,37 @@
+name: DataCapsule Corpus Manifest Artifact Example
+
+on:
+  workflow_dispatch:
+    inputs:
+      manifest:
+        description: Path to a committed CSV, JSONL, or JSON corpus manifest
+        required: true
+        default: public_launch/datacapsule3/DATACAPSULE3_SAMPLE_MANIFEST.csv
+      corpus_id:
+        description: Stable local corpus identifier
+        required: true
+        default: repository.local/corpus
+      name:
+        description: Human-readable corpus name
+        required: true
+        default: Repository local corpus manifest
+
+jobs:
+  datacapsule-corpus-manifest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install package locally
+        run: python -m pip install -e .
+      - name: DataCapsule corpus manifest artifact bridge
+        uses: ./.github/actions/datacapsule-corpus-manifest-artifact
+        with:
+          manifest: ${{ inputs.manifest }}
+          output-dir: public_launch/datacapsule4
+          corpus-id: ${{ inputs.corpus_id }}
+          name: ${{ inputs.name }}

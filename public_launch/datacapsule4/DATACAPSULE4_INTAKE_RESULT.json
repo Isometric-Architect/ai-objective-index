@@ -1,0 +1,283 @@
+{
+  "schema": "DataCapsule_ManifestIntakeResult/v0.1",
+  "result_id": "datacapsule3-a88538185123",
+  "decision": "BLOCK_DATACAPSULE3_USE_RISK",
+  "source_format": "csv",
+  "source_path": "public_launch/datacapsule4/DATACAPSULE4_SAMPLE_MANIFEST.csv",
+  "normalized_manifest_path": "public_launch/datacapsule4/DATACAPSULE4_NORMALIZED_MANIFEST.json",
+  "corpus_result_path": "public_launch/datacapsule4/DATACAPSULE4_CORPUS_RESULT.json",
+  "eval_leak_report_path": "public_launch/datacapsule4/DATACAPSULE4_EVAL_LEAK_SEPARATION_REPORT.json",
+  "corpus_result": {
+    "schema": "DataCapsule_CorpusBuildResult/v0.1",
+    "result_id": "datacapsule2-a88538185123",
+    "decision": "BLOCK_DATACAPSULE2_USE_RISK",
+    "manifest_path": "public_launch/datacapsule4/DATACAPSULE4_SAMPLE_MANIFEST.csv",
+    "capsule_path": "public_launch/datacapsule4/DATACAPSULE4_CORPUS_CAPSULE.json",
+    "report_path": "public_launch/datacapsule4/DATACAPSULE4_BRIDGE_REPORT.md",
+    "summary": {
+      "corpus_id": "fixture.local/datacapsule4-corpus",
+      "name": "DataCapsule-4 CI manifest fixture",
+      "root_path": "",
+      "file_count": 3,
+      "source_record_count": 3,
+      "license_values": [
+        "MIT"
+      ],
+      "privacy_levels": [
+        "public_metadata"
+      ],
+      "risk_flags": {
+        "privacy": false,
+        "poison": false,
+        "prompt_injection": false,
+        "eval_leak": false,
+        "stale": false,
+        "contradiction": false,
+        "rights_unknown": false,
+        "source_unknown": false,
+        "raw_indicators": []
+      },
+      "missing_fields": [],
+      "local_only": true,
+      "network_used": false,
+      "crawler_used": false,
+      "external_service_used": false
+    },
+    "capsule": {
+      "schema": "DataCapsule/v0.1",
+      "capsule_id": "datacapsule-a88538185123",
+      "data_id": "fixture.local/datacapsule4-corpus",
+      "name": "DataCapsule-4 CI manifest fixture",
+      "source": "repository-local-csv-manifest",
+      "raw_hash": "a88538185123125d6ce1ba75e7ca81499a7097b14e81858306185de297fe0adf",
+      "transform_chain": [
+        "repository_supplied_corpus_manifest",
+        "datacapsule2_local_manifest_intake"
+      ],
+      "license": "MIT",
+      "privacy_level": "public_metadata",
+      "source_records": [
+        "docs/rag-guide.md",
+        "docs/eval-set.md",
+        "docs/train-notes.md"
+      ],
+      "use_permissions": {
+        "train": {
+          "use_class": "train",
+          "decision": "ALLOW_USE",
+          "allowed": true,
+          "reasons": [
+            "train use explicitly allowed by supplied local metadata"
+          ],
+          "evidence_required": [],
+          "claim_ceiling": "local data-use boundary only; not legal, privacy, quality, or action authorization"
+        },
+        "retrieve": {
+          "use_class": "retrieve",
+          "decision": "ALLOW_USE",
+          "allowed": true,
+          "reasons": [
+            "retrieve use explicitly allowed by supplied local metadata"
+          ],
+          "evidence_required": [],
+          "claim_ceiling": "local data-use boundary only; not legal, privacy, quality, or action authorization"
+        },
+        "evaluate": {
+          "use_class": "evaluate",
+          "decision": "ALLOW_USE",
+          "allowed": true,
+          "reasons": [
+            "evaluate use explicitly allowed by supplied local metadata"
+          ],
+          "evidence_required": [],
+          "claim_ceiling": "local data-use boundary only; not legal, privacy, quality, or action authorization"
+        },
+        "summarize": {
+          "use_class": "summarize",
+          "decision": "ALLOW_USE",
+          "allowed": true,
+          "reasons": [
+            "summarize use explicitly allowed by supplied local metadata"
+          ],
+          "evidence_required": [],
+          "claim_ceiling": "local data-use boundary only; not legal, privacy, quality, or action authorization"
+        },
+        "share": {
+          "use_class": "share",
+          "decision": "HOLD_SOURCE_RIGHTS_REVIEW",
+          "allowed": false,
+          "reasons": [
+            "share use is not explicitly allowed by supplied metadata"
+          ],
+          "evidence_required": [
+            "explicit share permission"
+          ],
+          "claim_ceiling": "local data-use boundary only; not legal, privacy, quality, or action authorization"
+        },
+        "act": {
+          "use_class": "act",
+          "decision": "BLOCK_ACTION_USE",
+          "allowed": false,
+          "reasons": [
+            "data capsule metadata cannot authorize external actions"
+          ],
+          "evidence_required": [
+            "separate action license and execution gate required"
+          ],
+          "claim_ceiling": "local data-use boundary only; not legal, privacy, quality, or action authorization"
+        }
+      },
+      "risk_flags": {
+        "privacy": false,
+        "poison": false,
+        "prompt_injection": false,
+        "eval_leak": false,
+        "stale": false,
+        "contradiction": false,
+        "rights_unknown": false,
+        "source_unknown": false,
+        "raw_indicators": []
+      },
+      "residual_notes": [
+        "local metadata capsule built; this is still not rights, privacy, or quality certification"
+      ],
+      "claim_ceiling": "local DataCapsule metadata receipt; not legal sufficiency, privacy compliance, data quality guarantee, or action authorization",
+      "must_not_claim": [
+        "do not claim legal sufficiency",
+        "do not claim privacy compliance",
+        "do not claim data quality guarantee",
+        "do not claim license clearance",
+        "do not claim evaluation cleanliness",
+        "do not claim action authorization",
+        "do not claim purchasing advice"
+      ],
+      "local_only": true,
+      "network_used": false,
+      "external_service_used": false,
+      "token_printed": false,
+      "can_certify_rights": false,
+      "can_certify_privacy": false,
+      "can_certify_quality": false,
+      "can_authorize_action": false,
+      "generated_at": "2026-05-24T12:56:36.947128+00:00"
+    },
+    "negative_controls": [
+      {
+        "control_id": "unsupported_claim_blocks",
+        "control_goal": "Unsupported legal/privacy/eval-clean claims must block use decisions.",
+        "expected_decision": "BLOCK_UNSUPPORTED_CLAIM",
+        "actual_decision": "BLOCK_UNSUPPORTED_CLAIM",
+        "result": "PASS_NEGATIVE_CONTROL",
+        "findings": [
+          "description: This corpus is [redacted unsupported claim] and [redacted unsupported claim]."
+        ]
+      },
+      {
+        "control_id": "no_source_holds",
+        "control_goal": "Missing source records must not pass as source-reviewed data.",
+        "expected_decision": "HOLD_SOURCE_RIGHTS_REVIEW",
+        "actual_decision": "HOLD_SOURCE_RIGHTS_REVIEW",
+        "result": "PASS_NEGATIVE_CONTROL",
+        "findings": [
+          "source records missing"
+        ]
+      },
+      {
+        "control_id": "prompt_injection_holds",
+        "control_goal": "Prompt-injection risk in local metadata must hold retrieval use.",
+        "expected_decision": "HOLD_PROMPT_INJECTION_REVIEW",
+        "actual_decision": "HOLD_PROMPT_INJECTION_REVIEW",
+        "result": "PASS_NEGATIVE_CONTROL",
+        "findings": [
+          "local metadata capsule built; this is still not rights, privacy, or quality certification"
+        ]
+      },
+      {
+        "control_id": "action_use_blocks",
+        "control_goal": "DataCapsule metadata must never authorize external actions.",
+        "expected_decision": "BLOCK_ACTION_USE",
+        "actual_decision": "BLOCK_ACTION_USE",
+        "result": "PASS_NEGATIVE_CONTROL",
+        "findings": [
+          "local metadata capsule built; this is still not rights, privacy, or quality certification"
+        ]
+      }
+    ],
+    "negative_control_false_pass_count": 0,
+    "local_only": true,
+    "network_used": false,
+    "crawler_used": false,
+    "external_service_used": false,
+    "token_printed": false,
+    "can_certify_rights": false,
+    "can_certify_privacy": false,
+    "can_certify_quality": false,
+    "can_authorize_action": false,
+    "known_limits": [
+      "local manifest metadata only",
+      "no directory crawling",
+      "no file content inspection unless supplied in manifest metadata",
+      "no live source verification",
+      "not legal sufficiency",
+      "not privacy compliance",
+      "not data quality guarantee",
+      "not action authorization"
+    ],
+    "must_not_claim": [
+      "do not claim legal sufficiency",
+      "do not claim privacy compliance",
+      "do not claim data quality guarantee",
+      "do not claim license clearance",
+      "do not claim evaluation cleanliness",
+      "do not claim action authorization",
+      "do not claim purchasing advice"
+    ],
+    "generated_at": "2026-05-24T12:56:36.947665+00:00"
+  },
+  "eval_leak_report": {
+    "schema": "DataCapsule_EvalLeakSeparationReport/v0.1",
+    "decision": "PASS_EVAL_SEPARATION_LOCAL_METADATA",
+    "train_count": 1,
+    "eval_count": 1,
+    "overlap_count": 0,
+    "overlap_paths": [],
+    "hold_reasons": [],
+    "local_only": true,
+    "network_used": false,
+    "crawler_used": false,
+    "external_service_used": false,
+    "can_prove_eval_cleanliness": false,
+    "generated_at": "2026-05-24T12:56:36.947687+00:00"
+  },
+  "local_only": true,
+  "network_used": false,
+  "crawler_used": false,
+  "external_service_used": false,
+  "token_printed": false,
+  "can_certify_rights": false,
+  "can_certify_privacy": false,
+  "can_certify_quality": false,
+  "can_prove_eval_cleanliness": false,
+  "can_authorize_action": false,
+  "known_limits": [
+    "local CSV/JSONL/JSON manifest metadata only",
+    "no directory crawling",
+    "no private file content inspection",
+    "no URL fetch",
+    "not legal sufficiency",
+    "not privacy compliance",
+    "not data quality guarantee",
+    "not evaluation cleanliness proof",
+    "not action authorization"
+  ],
+  "must_not_claim": [
+    "do not claim legal sufficiency",
+    "do not claim privacy compliance",
+    "do not claim data quality guarantee",
+    "do not claim license clearance",
+    "do not claim evaluation cleanliness",
+    "do not claim action authorization",
+    "do not claim purchasing advice"
+  ],
+  "generated_at": "2026-05-24T12:56:36.947719+00:00"
+}

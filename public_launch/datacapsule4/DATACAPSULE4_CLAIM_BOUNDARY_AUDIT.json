@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-05-24T12:56:37.147598+00:00",
+  "decision": "PASS_DATACAPSULE_CLAIM_BOUNDARY",
+  "risky_phrase_count": 0,
+  "findings": [],
+  "allowed_language": [
+    "local metadata capsule",
+    "use boundary",
+    "source and rights review",
+    "ALLOW/HOLD/BLOCK",
+    "not legal sufficiency",
+    "not privacy compliance",
+    "not action authorization"
+  ],
+  "must_not_claim": [
+    "do not claim legal sufficiency",
+    "do not claim privacy compliance",
+    "do not claim data quality guarantee",
+    "do not claim license clearance",
+    "do not claim evaluation cleanliness",
+    "do not claim action authorization"
+  ],
+  "external_actions_performed": false,
+  "network_used": false,
+  "crawler_used": false,
+  "token_printed": false
+}

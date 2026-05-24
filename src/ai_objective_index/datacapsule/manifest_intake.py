@@ -168,14 +168,23 @@ def _result_decision(corpus_decision: str, eval_decision: str) -> str:
     return "PASS_DATACAPSULE3_MANIFEST_INTAKE"
 
 
-def build_manifest_intake_result(path: Path, corpus_id: str, name: str) -> DataCapsuleManifestIntakeResult:
+def build_manifest_intake_result(
+    path: Path,
+    corpus_id: str,
+    name: str,
+    normalized_manifest_path: Path = NORMALIZED_MANIFEST_PATH,
+    corpus_capsule_path: Path = CORPUS_CAPSULE_PATH,
+    corpus_result_path: Path = CORPUS_RESULT_PATH,
+    eval_leak_report_path: Path = EVAL_LEAK_REPORT_PATH,
+    report_path: Path = REPORT_PATH,
+) -> DataCapsuleManifestIntakeResult:
     source_format, rows = load_manifest_table(path)
     manifest = rows_to_corpus_manifest(rows, corpus_id=corpus_id, name=name, source_format=source_format)
     corpus_result = build_corpus_manifest_result(
         manifest,
         str(path).replace("\\", "/"),
-        capsule_path=CORPUS_CAPSULE_PATH,
-        report_path=REPORT_PATH,
+        capsule_path=corpus_capsule_path,
+        report_path=report_path,
     )
     eval_report = build_eval_leak_separation_report(manifest)
     return DataCapsuleManifestIntakeResult(
@@ -183,9 +192,9 @@ def build_manifest_intake_result(path: Path, corpus_id: str, name: str) -> DataC
         decision=_result_decision(corpus_result.decision, eval_report.decision),
         source_format=source_format,
         source_path=str(path).replace("\\", "/"),
-        normalized_manifest_path=str(NORMALIZED_MANIFEST_PATH).replace("\\", "/"),
-        corpus_result_path=str(CORPUS_RESULT_PATH).replace("\\", "/"),
-        eval_leak_report_path=str(EVAL_LEAK_REPORT_PATH).replace("\\", "/"),
+        normalized_manifest_path=str(normalized_manifest_path).replace("\\", "/"),
+        corpus_result_path=str(corpus_result_path).replace("\\", "/"),
+        eval_leak_report_path=str(eval_leak_report_path).replace("\\", "/"),
         corpus_result=corpus_result,
         eval_leak_report=eval_report,
         known_limits=[

@@ -46,3 +46,5 @@ Each JSONL row can contain the same fields:
 ## Boundary
 
 DataCapsule-3 makes local metadata review easier. It is not a live data governance system, legal opinion, privacy compliance system, data quality guarantee, evaluation-contamination proof, or action authorization layer.
+
+DataCapsule-4 can call this intake path from an opt-in CI artifact bridge. That bridge is inactive by default and does not add live crawling, file-content inspection, GitHub API calls, token handling, or certification.

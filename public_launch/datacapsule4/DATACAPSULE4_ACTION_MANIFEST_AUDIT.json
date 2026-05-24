@@ -1,0 +1,14 @@
+{
+  "decision": "PASS_DATACAPSULE4_ACTION_MANIFEST_SAFE",
+  "manifest_exists": true,
+  "example_workflow_exists": true,
+  "active_workflow_created": false,
+  "workflow_auto_enabled": false,
+  "forbidden_command_findings": [],
+  "external_actions_performed": false,
+  "github_api_used_by_datacapsule": false,
+  "directory_crawled": false,
+  "private_file_contents_read": false,
+  "url_fetch_performed": false,
+  "token_printed": false
+}

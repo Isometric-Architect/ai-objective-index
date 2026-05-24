@@ -49,6 +49,8 @@ DataCapsule-2 adds local corpus manifest intake and negative controls. It aggreg
 
 DataCapsule-3 adds CSV/JSONL corpus manifest intake and a local eval-leak separation report. It normalizes repository-supplied tables into the DataCapsule corpus shape and flags direct train/evaluation path overlap, but it does not inspect file contents, crawl, fetch URLs, prove evaluation cleanliness, certify rights/privacy/data quality, or authorize actions.
 
+DataCapsule-4 adds an opt-in CI artifact bridge for repository-supplied corpus manifests. It provides a reusable composite action and inactive example workflow that convert CSV/JSONL/JSON manifests into DataCapsule artifacts, without auto-enabling workflows, calling GitHub APIs, reading private file contents, fetching URLs, handling tokens, proving rights/privacy/data quality/eval cleanliness, or authorizing actions.
+
 ## Quick Example
 
 Example objective request:

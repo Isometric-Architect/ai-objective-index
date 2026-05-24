@@ -1,0 +1,29 @@
+name: DataCapsule Corpus Manifest Artifact
+description: Convert repository-supplied CSV/JSONL/JSON corpus manifests into DataCapsule local review artifacts.
+inputs:
+  manifest:
+    description: Path to a committed CSV, JSONL, or JSON corpus manifest.
+    required: true
+  output-dir:
+    description: Directory for DataCapsule bridge artifacts.
+    required: false
+    default: public_launch/datacapsule4
+  corpus-id:
+    description: Stable local corpus identifier.
+    required: false
+    default: repository.local/corpus
+  name:
+    description: Human-readable corpus name.
+    required: false
+    default: Repository local corpus manifest
+runs:
+  using: composite
+  steps:
+    - name: Build DataCapsule corpus manifest artifacts
+      shell: bash
+      run: |
+        python -m ai_objective_index.datacapsule.ci_artifact_bridge \
+          --manifest "${{ inputs.manifest }}" \
+          --output-dir "${{ inputs.output-dir }}" \
+          --corpus-id "${{ inputs.corpus-id }}" \
+          --name "${{ inputs.name }}"

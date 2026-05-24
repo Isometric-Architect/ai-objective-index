@@ -1,0 +1,4 @@
+path,source,license,privacy_level,purpose,risk_flags
+docs/rag-guide.md,repository-local-doc,MIT,public_metadata,"retrieve;summarize",
+docs/eval-set.md,repository-local-eval,MIT,public_metadata,evaluate,
+docs/train-notes.md,repository-local-train,MIT,public_metadata,train,

@@ -1,0 +1,53 @@
+{
+  "corpus_id": "fixture.local/datacapsule3-corpus",
+  "name": "DataCapsule-3 local manifest fixture",
+  "root_path": "",
+  "source": "repository-local-csv-manifest",
+  "allowed_use": {
+    "train": true,
+    "retrieve": true,
+    "evaluate": true,
+    "summarize": true,
+    "share": false,
+    "act": false
+  },
+  "files": [
+    {
+      "path": "docs/rag-guide.md",
+      "source": "repository-local-doc",
+      "license": "MIT",
+      "privacy_level": "public_metadata",
+      "purpose": [
+        "retrieve",
+        "summarize"
+      ],
+      "risk_flags": {}
+    },
+    {
+      "path": "docs/eval-set.md",
+      "source": "repository-local-eval",
+      "license": "MIT",
+      "privacy_level": "public_metadata",
+      "purpose": [
+        "evaluate"
+      ],
+      "risk_flags": {}
+    },
+    {
+      "path": "docs/train-notes.md",
+      "source": "repository-local-train",
+      "license": "MIT",
+      "privacy_level": "public_metadata",
+      "purpose": [
+        "train"
+      ],
+      "risk_flags": {}
+    }
+  ],
+  "claim_boundaries": [
+    "not legal sufficiency",
+    "not privacy compliance",
+    "not data quality guarantee",
+    "no action authorization"
+  ]
+}

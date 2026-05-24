@@ -28,6 +28,17 @@ CapsuleDecision = Literal[
     "BLOCK_DATACAPSULE2_USE_RISK",
 ]
 NegativeControlResult = Literal["PASS_NEGATIVE_CONTROL", "FAIL_NEGATIVE_CONTROL"]
+ManifestSourceFormat = Literal["csv", "jsonl", "json"]
+ManifestIntakeDecision = Literal[
+    "PASS_DATACAPSULE3_MANIFEST_INTAKE",
+    "HOLD_DATACAPSULE3_REVIEW_REQUIRED",
+    "BLOCK_DATACAPSULE3_USE_RISK",
+]
+EvalLeakDecision = Literal[
+    "PASS_EVAL_SEPARATION_LOCAL_METADATA",
+    "HOLD_EVAL_LEAK_REVIEW",
+    "BLOCK_EVAL_LEAK_CONFLICT",
+]
 
 
 DEFAULT_MUST_NOT_CLAIM = [
@@ -198,6 +209,52 @@ class DataCapsuleCorpusBuildResult(BaseModel):
     can_certify_rights: bool = False
     can_certify_privacy: bool = False
     can_certify_quality: bool = False
+    can_authorize_action: bool = False
+    known_limits: list[str] = Field(default_factory=list)
+    must_not_claim: list[str] = Field(default_factory=lambda: list(DEFAULT_MUST_NOT_CLAIM))
+    generated_at: str = Field(default_factory=timestamp)
+
+
+class EvalLeakSeparationReport(BaseModel):
+    model_config = ConfigDict(extra="allow", populate_by_name=True)
+
+    schema_id: str = Field(default="DataCapsule_EvalLeakSeparationReport/v0.1", alias="schema")
+    decision: EvalLeakDecision
+    train_count: int = 0
+    eval_count: int = 0
+    overlap_count: int = 0
+    overlap_paths: list[str] = Field(default_factory=list)
+    hold_reasons: list[str] = Field(default_factory=list)
+    local_only: bool = True
+    network_used: bool = False
+    crawler_used: bool = False
+    external_service_used: bool = False
+    can_prove_eval_cleanliness: bool = False
+    generated_at: str = Field(default_factory=timestamp)
+
+
+class DataCapsuleManifestIntakeResult(BaseModel):
+    model_config = ConfigDict(extra="allow", populate_by_name=True)
+
+    schema_id: str = Field(default="DataCapsule_ManifestIntakeResult/v0.1", alias="schema")
+    result_id: str
+    decision: ManifestIntakeDecision
+    source_format: ManifestSourceFormat
+    source_path: str
+    normalized_manifest_path: str
+    corpus_result_path: str
+    eval_leak_report_path: str
+    corpus_result: DataCapsuleCorpusBuildResult
+    eval_leak_report: EvalLeakSeparationReport
+    local_only: bool = True
+    network_used: bool = False
+    crawler_used: bool = False
+    external_service_used: bool = False
+    token_printed: bool = False
+    can_certify_rights: bool = False
+    can_certify_privacy: bool = False
+    can_certify_quality: bool = False
+    can_prove_eval_cleanliness: bool = False
     can_authorize_action: bool = False
     known_limits: list[str] = Field(default_factory=list)
     must_not_claim: list[str] = Field(default_factory=lambda: list(DEFAULT_MUST_NOT_CLAIM))

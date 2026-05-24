@@ -156,7 +156,12 @@ def manifest_to_capsule_metadata(manifest: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def build_corpus_manifest_result(manifest: dict[str, Any], manifest_path: str) -> DataCapsuleCorpusBuildResult:
+def build_corpus_manifest_result(
+    manifest: dict[str, Any],
+    manifest_path: str,
+    capsule_path: Path = CAPSULE_PATH,
+    report_path: Path = REPORT_PATH,
+) -> DataCapsuleCorpusBuildResult:
     summary = summarize_corpus_manifest(manifest)
     capsule = build_datacapsule_from_metadata(manifest_to_capsule_metadata(manifest), manifest_path)
     controls = run_datacapsule_negative_controls()
@@ -174,8 +179,8 @@ def build_corpus_manifest_result(manifest: dict[str, Any], manifest_path: str) -
         result_id=f"datacapsule2-{capsule.capsule_id.removeprefix('datacapsule-')}",
         decision=decision,
         manifest_path=manifest_path,
-        capsule_path=str(CAPSULE_PATH).replace("\\", "/"),
-        report_path=str(REPORT_PATH).replace("\\", "/"),
+        capsule_path=str(capsule_path).replace("\\", "/"),
+        report_path=str(report_path).replace("\\", "/"),
         summary=summary,
         capsule=capsule,
         negative_controls=controls,

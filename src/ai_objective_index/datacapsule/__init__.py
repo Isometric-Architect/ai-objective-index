@@ -17,9 +17,11 @@ from .models import (
     DataCapsule,
     DataCapsuleBuildResult,
     DataCapsuleCorpusBuildResult,
+    DataCapsuleManifestIntakeResult,
     DataCapsuleNegativeControl,
     DataUseBoundary,
     DataUsePermission,
+    EvalLeakSeparationReport,
     RiskFlags,
 )
 
@@ -27,9 +29,11 @@ __all__ = [
     "DataCapsule",
     "DataCapsuleBuildResult",
     "DataCapsuleCorpusBuildResult",
+    "DataCapsuleManifestIntakeResult",
     "DataCapsuleNegativeControl",
     "DataUseBoundary",
     "DataUsePermission",
+    "EvalLeakSeparationReport",
     "CorpusManifestSummary",
     "RiskFlags",
     "SAMPLE_DATASET_METADATA",

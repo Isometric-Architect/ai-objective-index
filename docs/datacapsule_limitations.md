@@ -9,6 +9,7 @@ Current limits:
 - no URL fetch;
 - no private data inspection;
 - no implicit file-content inspection from corpus manifests;
+- no proof of evaluation cleanliness from path separation alone;
 - no external service calls;
 - no legal sufficiency claim;
 - no privacy compliance claim;
@@ -17,6 +18,6 @@ Current limits:
 - no evaluation cleanliness claim;
 - no action authorization.
 
-The capsule can surface missing source records, unclear rights, privacy risk flags, eval-leak flags, prompt-injection risk flags, stale-data flags, and unsupported claims. It cannot prove that a dataset is complete, current, lawful, private-data-safe, uncontaminated, or suitable for purchase.
+The capsule can surface missing source records, unclear rights, privacy risk flags, eval-leak flags, prompt-injection risk flags, stale-data flags, unsupported claims, and train/evaluation path overlap in supplied manifests. It cannot prove that a dataset is complete, current, lawful, private-data-safe, uncontaminated, or suitable for purchase.
 
 Private data acquisition strategy, private negative controls, private policy thresholds, and commercial data routing policy remain non-public.

@@ -47,6 +47,8 @@ DataCapsule-1 starts the third ResidualOps vertical: local data-use capsules for
 
 DataCapsule-2 adds local corpus manifest intake and negative controls. It aggregates repository-supplied file metadata into a corpus-level DataCapsule, checks known-bad local fixtures, and records false-pass counts without crawling directories, reading private file contents, fetching URLs, calling external services, proving rights/privacy/data quality/eval cleanliness, or authorizing actions.
 
+DataCapsule-3 adds CSV/JSONL corpus manifest intake and a local eval-leak separation report. It normalizes repository-supplied tables into the DataCapsule corpus shape and flags direct train/evaluation path overlap, but it does not inspect file contents, crawl, fetch URLs, prove evaluation cleanliness, certify rights/privacy/data quality, or authorize actions.
+
 ## Quick Example
 
 Example objective request:

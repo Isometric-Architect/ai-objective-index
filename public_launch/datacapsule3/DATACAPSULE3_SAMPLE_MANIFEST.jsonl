@@ -1,0 +1,3 @@
+{"path": "docs/rag-guide.md", "source": "repository-local-doc", "license": "MIT", "privacy_level": "public_metadata", "purpose": ["retrieve", "summarize"]}
+{"path": "docs/eval-set.md", "source": "repository-local-eval", "license": "MIT", "privacy_level": "public_metadata", "purpose": ["evaluate"]}
+{"path": "docs/train-notes.md", "source": "repository-local-train", "license": "MIT", "privacy_level": "public_metadata", "purpose": ["train"]}

@@ -24,4 +24,6 @@ Each use class receives one conservative decision:
 
 The public MVP treats action use as blocked by default because data metadata is not action permission. Broad use classes such as training and sharing require clearer source, license, and privacy evidence than local retrieval or summarization. DataCapsule-2 can also hold retrieval or summarization when a repository-supplied manifest marks prompt-injection risk.
 
-These decisions are review boundaries. They are not legal advice, privacy compliance, license clearance, product readiness, purchasing advice, or action authorization.
+DataCapsule-3 can normalize CSV/JSONL manifests before these use decisions are generated. It can also report direct train/evaluation path overlap in local metadata, but that report is not evaluation-clean proof.
+
+These decisions are review boundaries. They are not legal advice, privacy compliance, license clearance, product readiness, purchasing advice, evaluation-contamination proof, or action authorization.

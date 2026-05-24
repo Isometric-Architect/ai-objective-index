@@ -10,14 +10,18 @@ from .real_pypi_upload_gate import _repo_root
 
 
 OUTPUT_PATH = Path("public_launch") / "datacapsule1" / "DATACAPSULE_CLAIM_BOUNDARY_AUDIT.json"
+DATACAPSULE3_OUTPUT_PATH = Path("public_launch") / "datacapsule3" / "DATACAPSULE3_CLAIM_BOUNDARY_AUDIT.json"
 SCAN_PATHS = [
     Path("docs") / "datacapsule_engine_plan.md",
     Path("docs") / "datacapsule1_local_capsule.md",
     Path("docs") / "datacapsule2_corpus_manifest.md",
+    Path("docs") / "datacapsule3_manifest_intake.md",
+    Path("docs") / "datacapsule_eval_leak_separation.md",
     Path("docs") / "datacapsule_use_rights.md",
     Path("docs") / "datacapsule_limitations.md",
     Path("public_launch") / "datacapsule1",
     Path("public_launch") / "datacapsule2",
+    Path("public_launch") / "datacapsule3",
 ]
 
 RISKY_PATTERNS = [
@@ -112,6 +116,8 @@ def run_datacapsule_claim_audit(write_result: bool = True) -> dict[str, Any]:
     }
     if write_result:
         _write_json(OUTPUT_PATH, result)
+        if (_repo_root() / Path("public_launch") / "datacapsule3").exists():
+            _write_json(DATACAPSULE3_OUTPUT_PATH, result)
     return result
 
 

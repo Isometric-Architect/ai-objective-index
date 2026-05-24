@@ -1,5 +1,11 @@
 # Changelog
 
+## DataCapsule-3
+
+- Added CSV, JSONL, and JSON corpus manifest intake for local DataCapsule metadata normalization.
+- Added local eval-leak separation reporting for direct train/evaluation path overlap in supplied manifests.
+- Added DataCapsule-3 docs, sample outputs, and tests while preserving no-crawl, no-fetch, no-private-file-inspection, no-certification, and no-action-authorization boundaries.
+
 ## DataCapsule-2
 
 - Added local corpus manifest intake that aggregates repository-supplied file metadata into a corpus-level DataCapsule.

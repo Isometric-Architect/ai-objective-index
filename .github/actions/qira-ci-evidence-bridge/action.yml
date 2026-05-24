@@ -1,0 +1,46 @@
+name: QIRA CI Evidence Bridge
+description: Convert repository-owned CI status metadata into QIRA CI evidence and review artifacts.
+inputs:
+  packet:
+    description: Path to a QIRA task packet JSON file.
+    required: true
+  output-dir:
+    description: Directory for QIRA bridge artifacts.
+    required: false
+    default: public_launch/qira7
+  check-name:
+    description: Name of the CI check being recorded.
+    required: true
+  check-command:
+    description: Command string already run by repository CI.
+    required: true
+  check-status:
+    description: Recorded status: pass, fail, skipped, cancelled, or unknown.
+    required: true
+  exit-code:
+    description: Recorded exit code from the repository CI step.
+    required: false
+    default: ""
+  evidence-summary:
+    description: Short summary of the repository-owned CI result.
+    required: false
+    default: ""
+runs:
+  using: composite
+  steps:
+    - name: Bridge CI evidence into QIRA
+      shell: bash
+      run: |
+        args=(
+          python -m ai_objective_index.qira.ci_evidence_bridge
+          --packet "${{ inputs.packet }}"
+          --output-dir "${{ inputs.output-dir }}"
+          --check-name "${{ inputs.check-name }}"
+          --check-command "${{ inputs.check-command }}"
+          --check-status "${{ inputs.check-status }}"
+          --evidence-summary "${{ inputs.evidence-summary }}"
+        )
+        if [ -n "${{ inputs.exit-code }}" ]; then
+          args+=(--exit-code "${{ inputs.exit-code }}")
+        fi
+        "${args[@]}"

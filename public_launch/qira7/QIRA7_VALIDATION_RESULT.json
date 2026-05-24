@@ -1,0 +1,32 @@
+{
+  "schema": "QIRA_CiEvidenceValidationResult/v0.1",
+  "evidence_id": "qira-ci-evidence-92b24a4c087c",
+  "decision": "BLOCK_CI_EVIDENCE_FAILED",
+  "tests_passed": false,
+  "accepted_command_count": 0,
+  "failed_check_names": [
+    "pytest"
+  ],
+  "hold_check_names": [],
+  "block_reasons": [
+    "pytest: check did not pass"
+  ],
+  "hold_reasons": [],
+  "command_contract_decision": "PASS_TEST_COMMAND_CONTRACT",
+  "can_support_patch_draft": false,
+  "can_support_pr_open": false,
+  "can_authorize_merge": false,
+  "can_authorize_deploy": false,
+  "can_certify_security": false,
+  "can_guarantee_quality": false,
+  "known_limits": [
+    "CI evidence is externally supplied metadata; QIRA does not execute commands or inspect live CI systems.",
+    "A CI pass can close a local test-evidence gap for scoped review, but it does not authorize merge, deploy, package upload, registry submission, or public readiness claims.",
+    "CI evidence is not security certification, quality guarantee, legal compliance, or production readiness."
+  ],
+  "external_actions_performed_by_qira": false,
+  "commands_executed_by_qira": false,
+  "github_api_used_by_qira": false,
+  "token_printed": false,
+  "generated_at": "2026-05-24T05:10:53.027624+00:00"
+}

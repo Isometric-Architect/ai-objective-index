@@ -1,0 +1,36 @@
+name: QIRA CI Evidence Bridge Example
+
+on:
+  workflow_dispatch:
+    inputs:
+      packet:
+        description: Path to a committed QIRA task packet JSON file
+        required: true
+        default: public_launch/qira7/QIRA7_SAMPLE_TASK_PACKET.json
+
+jobs:
+  qira-ci-evidence-bridge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install package locally
+        run: python -m pip install -e .
+      - name: Run repository-owned checks
+        id: qira_checks
+        continue-on-error: true
+        run: python -m pytest tests/test_qira_ci_evidence.py tests/test_qira_ci_evidence_cli.py
+      - name: QIRA CI evidence bridge
+        uses: ./.github/actions/qira-ci-evidence-bridge
+        with:
+          packet: ${{ inputs.packet }}
+          output-dir: public_launch/qira7
+          check-name: qira targeted pytest
+          check-command: python -m pytest tests/test_qira_ci_evidence.py tests/test_qira_ci_evidence_cli.py
+          check-status: ${{ steps.qira_checks.outcome == 'success' && 'pass' || 'fail' }}
+          exit-code: ${{ steps.qira_checks.outcome == 'success' && '0' || '1' }}
+          evidence-summary: Repository-owned QIRA targeted tests completed before bridge intake.

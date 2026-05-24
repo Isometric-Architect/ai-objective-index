@@ -1,5 +1,11 @@
 # Changelog
 
+## QIRA-7
+
+- Added an opt-in GitHub CI evidence bridge that converts repository-owned CI status metadata into QIRA CI evidence and review artifacts.
+- Added a reusable composite action, non-active example workflow, action manifest audit, docs, sample outputs, and tests.
+- Preserved boundaries: no active workflow by default, no GitHub API calls, no QIRA-owned project command execution, no patch application, no merge/deploy/upload/publish, no token handling, and no certification/readiness claim.
+
 ## QIRA-6
 
 - Added CI evidence intake for repository-supplied test/static-check result metadata.

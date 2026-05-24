@@ -1,0 +1,32 @@
+{
+  "schema": "QIRA_CiEvidencePacket/v0.1",
+  "evidence_id": null,
+  "packet_id": "qira-generated-packet-b2c431e4123b",
+  "source": "github_actions",
+  "workflow_name": "QIRA CI Evidence Bridge",
+  "job_name": "qira-ci-evidence",
+  "commit_sha": "",
+  "branch": "",
+  "checks": [
+    {
+      "schema": "QIRA_CiCheckResult/v0.1",
+      "name": "pytest",
+      "command": "python -m pytest tests/test_example.py",
+      "status": "fail",
+      "exit_code": 1,
+      "summary": "",
+      "duration_seconds": null,
+      "artifact_refs": [],
+      "log_excerpt": ""
+    }
+  ],
+  "declared_claims": [
+    "Repository-supplied CI evidence for scoped QIRA review only."
+  ],
+  "evidence_summary": "Repository-supplied CI status metadata for QIRA review.",
+  "submitted_at": "2026-05-24T05:10:53.027056+00:00",
+  "external_actions_performed_by_qira": false,
+  "commands_executed_by_qira": false,
+  "github_api_used_by_qira": false,
+  "token_printed": false
+}

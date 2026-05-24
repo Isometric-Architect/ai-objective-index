@@ -33,6 +33,8 @@ QIRA-5 adds a local PR diff/changed-file packet generator. It turns repository-s
 
 QIRA-6 adds CI evidence intake. It accepts repository-supplied CI result metadata, validates the recorded commands and statuses, and can close the local test-evidence gap for scoped QIRA review without QIRA running tests, calling GitHub APIs, inspecting live CI, merging, deploying, handling tokens, or authorizing production actions.
 
+QIRA-7 adds an opt-in GitHub CI evidence bridge. It provides a reusable composite action and example workflow that pass repository-owned CI status metadata into QIRA-6, while keeping workflows disabled by default and preserving no-GitHub-API/no-token/no-merge/no-deploy boundaries.
+
 ## Quick Example
 
 Example objective request:

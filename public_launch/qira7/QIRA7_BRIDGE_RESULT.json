@@ -1,0 +1,26 @@
+{
+  "schema": "QIRA_CiEvidenceBridgeResult/v0.1",
+  "decision": "BLOCK_QIRA7_CI_EVIDENCE",
+  "validation_decision": "BLOCK_CI_EVIDENCE_FAILED",
+  "review_decision": "BLOCK_QIRA6_CI_EVIDENCE",
+  "release_gate_decision": "HOLD_CI_PASS_CONTRACT_GAP",
+  "packet_path": "C:/Users/Isometric-Architect/Desktop/ai_objective_index/aoi_test_tmp/tests_test_qira_ci_evidence_bridge.py_test_qira7_failed_ci_blocks/packet.json",
+  "evidence_path": "public_launch/qira7/QIRA7_CI_EVIDENCE.json",
+  "validation_path": "public_launch/qira7/QIRA7_VALIDATION_RESULT.json",
+  "review_path": "public_launch/qira7/QIRA7_REVIEW_RESULT.json",
+  "output_dir": "public_launch/qira7",
+  "workflow_auto_enabled": false,
+  "active_workflow_created": false,
+  "external_actions_performed": false,
+  "commands_executed_by_qira": false,
+  "github_api_used_by_qira": false,
+  "patch_applied": false,
+  "deploy_performed": false,
+  "token_printed": false,
+  "known_limits": [
+    "QIRA-7 converts opt-in workflow metadata into QIRA CI evidence JSON.",
+    "QIRA-7 does not execute project commands; tests must run in normal repository CI steps.",
+    "QIRA-7 does not call GitHub APIs, apply patches, merge, deploy, upload, publish, or handle tokens.",
+    "A bridge pass is not security certification, quality guarantee, production readiness, or action authorization."
+  ]
+}

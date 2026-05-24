@@ -1,0 +1,31 @@
+{
+  "schema": "AgentSec_PolicyProfile/v0.1",
+  "profile_id": "agentsec-developer-default",
+  "name": "AgentSec developer default local metadata policy",
+  "mode": "developer_default",
+  "require_namespace": true,
+  "hold_on_network_access": true,
+  "hold_on_file_access": true,
+  "hold_on_write_access": true,
+  "hold_on_secret_access": true,
+  "hold_on_browser_access": true,
+  "hold_on_code_execution": true,
+  "hold_on_hidden_instruction": true,
+  "block_on_forbidden_action": true,
+  "block_on_unsupported_claim": true,
+  "local_only": true,
+  "no_network": true,
+  "no_live_mcp_call": true,
+  "no_external_tool_execution": true,
+  "no_action_authorization": true,
+  "public_weight_details_exposed": false,
+  "must_not_claim": [
+    "do not claim verified tool status",
+    "do not claim safety",
+    "do not claim security certification",
+    "do not claim quality guarantee",
+    "do not claim production readiness",
+    "do not claim external action authorization",
+    "do not claim legal compliance"
+  ]
+}

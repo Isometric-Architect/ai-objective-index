@@ -1,5 +1,11 @@
 # Changelog
 
+## AgentSec-2
+
+- Added local multi-manifest intake and policy-profile gate for AgentSec MCP/tool metadata review.
+- Added AgentSecPolicyProfile and AgentSecPolicyGateResult models, sample manifest-set outputs, docs, claim audit coverage, and tests.
+- Preserved boundaries: no live MCP calls, no external tool execution, no URL fetch, no token handling, no public private-kernel details, no security certification, no quality guarantee, no product-readiness claim, and no action authorization.
+
 ## AgentSec-1
 
 - Added a local/offline MCP/tool manifest scanner that emits ToolRiskPacket, AgentSecScanResult, and action-boundary receipt artifacts.

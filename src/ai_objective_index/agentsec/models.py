@@ -18,6 +18,12 @@ ScanDecision = Literal[
     "HOLD_AGENTSEC1_REVIEW_REQUIRED",
     "BLOCK_AGENTSEC1_MANIFEST_RISK",
 ]
+PolicyMode = Literal["developer_default", "strict_enterprise", "local_metadata_only"]
+PolicyGateDecision = Literal[
+    "PASS_AGENTSEC2_POLICY_GATE",
+    "HOLD_AGENTSEC2_REVIEW_REQUIRED",
+    "BLOCK_AGENTSEC2_POLICY_RISK",
+]
 
 
 DEFAULT_MUST_NOT_CLAIM = [
@@ -112,6 +118,61 @@ class AgentSecScanResult(BaseModel):
     live_mcp_called: bool = False
     external_tool_executed: bool = False
     token_printed: bool = False
+    known_limits: list[str] = Field(default_factory=list)
+    must_not_claim: list[str] = Field(default_factory=lambda: list(DEFAULT_MUST_NOT_CLAIM))
+    generated_at: str = Field(default_factory=timestamp)
+
+
+class AgentSecPolicyProfile(BaseModel):
+    model_config = ConfigDict(extra="allow", populate_by_name=True)
+
+    schema_id: str = Field(default="AgentSec_PolicyProfile/v0.1", alias="schema")
+    profile_id: str = "agentsec-developer-default"
+    name: str = "AgentSec developer default local metadata policy"
+    mode: PolicyMode = "developer_default"
+    require_namespace: bool = True
+    hold_on_network_access: bool = True
+    hold_on_file_access: bool = True
+    hold_on_write_access: bool = True
+    hold_on_secret_access: bool = True
+    hold_on_browser_access: bool = True
+    hold_on_code_execution: bool = True
+    hold_on_hidden_instruction: bool = True
+    block_on_forbidden_action: bool = True
+    block_on_unsupported_claim: bool = True
+    local_only: bool = True
+    no_network: bool = True
+    no_live_mcp_call: bool = True
+    no_external_tool_execution: bool = True
+    no_action_authorization: bool = True
+    public_weight_details_exposed: bool = False
+    must_not_claim: list[str] = Field(default_factory=lambda: list(DEFAULT_MUST_NOT_CLAIM))
+
+
+class AgentSecPolicyGateResult(BaseModel):
+    model_config = ConfigDict(extra="allow", populate_by_name=True)
+
+    schema_id: str = Field(default="AgentSec_PolicyGateResult/v0.1", alias="schema")
+    gate_id: str
+    decision: PolicyGateDecision
+    profile: AgentSecPolicyProfile
+    manifest_set_path: str
+    packet_count: int
+    allow_count: int
+    hold_count: int
+    block_count: int
+    policy_hold_reasons: list[str] = Field(default_factory=list)
+    policy_block_reasons: list[str] = Field(default_factory=list)
+    packets: list[ToolRiskPacket] = Field(default_factory=list)
+    receipts: list[AgentSecActionBoundaryReceipt] = Field(default_factory=list)
+    local_only: bool = True
+    network_used: bool = False
+    live_mcp_called: bool = False
+    external_tool_executed: bool = False
+    token_printed: bool = False
+    can_certify_security: bool = False
+    can_certify_quality: bool = False
+    can_authorize_action: bool = False
     known_limits: list[str] = Field(default_factory=list)
     must_not_claim: list[str] = Field(default_factory=lambda: list(DEFAULT_MUST_NOT_CLAIM))
     generated_at: str = Field(default_factory=timestamp)

@@ -21,6 +21,8 @@ vNext adds conservative routing surfaces: Capability Trust, Objective Router, Ex
 
 ROE-0 adds a parallel ResidualOps productization plan for QIRA-Code ReleaseGate, AgentSec Gate, and DataCapsule / AIDREG Engine. The public repository may expose high-level packet, residual, receipt, and ALLOW/HOLD/BLOCK language, while ranking calibration, threshold policy, anti-gaming rules, provider priors, private negative controls, private probe seeds, and commercial routing policy remain non-public.
 
+QIRA-1 adds the first ResidualOps vertical MVP: a local/offline QIRA-Code ReleaseGate that creates behavior contracts, patch candidates, validator packets, residual ledgers, patch receipts, and action licenses. It does not execute arbitrary external tools, deploy code, request tokens, certify security, guarantee quality, or approve production use.
+
 ## Quick Example
 
 Example objective request:

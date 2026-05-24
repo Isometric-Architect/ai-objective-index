@@ -1,0 +1,31 @@
+{
+  "schema": "QIRA_BehaviorContract/v0.1",
+  "contract_id": "qira-contract-1966195304aa",
+  "task": "Add a read-only CLI demo for objective routing without network calls.",
+  "repo_scope": "local_or_fixture_repo",
+  "expected_behavior": [
+    "CLI accepts a query and objective.",
+    "CLI writes a local JSON receipt.",
+    "CLI does not fetch network resources or request secrets."
+  ],
+  "forbidden_changes": [
+    ".env",
+    ".pypirc",
+    "credentials",
+    "secrets"
+  ],
+  "required_evidence": [
+    "changed_files",
+    "test_result",
+    "patch_summary"
+  ],
+  "test_command_scope": {
+    "local_only": true,
+    "no_network": true,
+    "no_external_services": true,
+    "no_secret_access": true,
+    "no_deploy": true
+  },
+  "claim_ceiling": "local release-gate receipt; not verification; not security certification; not deployment approval",
+  "created_at": "2026-05-24T01:54:19.201144+00:00"
+}

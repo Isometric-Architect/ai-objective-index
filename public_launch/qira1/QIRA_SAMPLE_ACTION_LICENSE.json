@@ -1,0 +1,22 @@
+{
+  "schema": "QIRA_ActionLicense/v0.1",
+  "license_id": "qira-license-4247b74cf5b0",
+  "patch_id": "qira-patch-e70ff401f7a2",
+  "patch_draft": "ALLOW",
+  "pr_open": "ALLOW",
+  "merge": "HOLD",
+  "deploy": "BLOCK",
+  "public_claim": "ALLOW_SCOPED_INTERNAL",
+  "decision_reason": "Scoped local contract evidence supports draft/PR handling, while merge and deploy remain separately gated.",
+  "must_not_claim": [
+    "do not claim verified status",
+    "do not claim safety",
+    "do not claim security certification",
+    "do not claim quality guarantee",
+    "do not claim production readiness",
+    "do not claim legal compliance",
+    "do not claim deployment approval",
+    "do not claim external action authorization"
+  ],
+  "generated_at": "2026-05-24T01:54:19.201307+00:00"
+}

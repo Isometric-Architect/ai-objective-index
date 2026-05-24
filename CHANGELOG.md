@@ -1,5 +1,11 @@
 # Changelog
 
+## QIRA-1
+
+- Added a local/offline QIRA-Code ReleaseGate MVP with behavior contracts, patch candidates, validator packets, residual ledgers, patch receipts, action licenses, and a sample CLI demo.
+- Added QIRA docs, claim-boundary audit, sample release-gate outputs, and tests.
+- Preserved boundaries: no arbitrary external tool execution, no deploy, no token handling, no PyPI/MCP Registry/community action, and no verification, security-certification, quality-guarantee, production-readiness, legal, or action-authorization claim.
+
 ## ROE-0
 
 - Added the ResidualOps portfolio strategy package for choosing a narrow implementation sequence instead of opening AgentSec, QIRA, and DataCapsule all at once.

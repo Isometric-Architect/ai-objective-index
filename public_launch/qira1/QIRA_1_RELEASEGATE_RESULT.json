@@ -1,0 +1,177 @@
+{
+  "schema": "QIRA_ReleaseGateReport/v0.1",
+  "report_id": "qira-report-4247b74cf5b0",
+  "decision_token": "PASS_CONTRACT_SCOPED",
+  "action_license": {
+    "schema": "QIRA_ActionLicense/v0.1",
+    "license_id": "qira-license-4247b74cf5b0",
+    "patch_id": "qira-patch-e70ff401f7a2",
+    "patch_draft": "ALLOW",
+    "pr_open": "ALLOW",
+    "merge": "HOLD",
+    "deploy": "BLOCK",
+    "public_claim": "ALLOW_SCOPED_INTERNAL",
+    "decision_reason": "Scoped local contract evidence supports draft/PR handling, while merge and deploy remain separately gated.",
+    "must_not_claim": [
+      "do not claim verified status",
+      "do not claim safety",
+      "do not claim security certification",
+      "do not claim quality guarantee",
+      "do not claim production readiness",
+      "do not claim legal compliance",
+      "do not claim deployment approval",
+      "do not claim external action authorization"
+    ],
+    "generated_at": "2026-05-24T01:54:19.201307+00:00"
+  },
+  "receipt": {
+    "schema": "QIRA_PatchReceipt/v0.1",
+    "receipt_id": "qira-receipt-bf0d4cae7e3e",
+    "contract": {
+      "schema": "QIRA_BehaviorContract/v0.1",
+      "contract_id": "qira-contract-1966195304aa",
+      "task": "Add a read-only CLI demo for objective routing without network calls.",
+      "repo_scope": "local_or_fixture_repo",
+      "expected_behavior": [
+        "CLI accepts a query and objective.",
+        "CLI writes a local JSON receipt.",
+        "CLI does not fetch network resources or request secrets."
+      ],
+      "forbidden_changes": [
+        ".env",
+        ".pypirc",
+        "credentials",
+        "secrets"
+      ],
+      "required_evidence": [
+        "changed_files",
+        "test_result",
+        "patch_summary"
+      ],
+      "test_command_scope": {
+        "local_only": true,
+        "no_network": true,
+        "no_external_services": true,
+        "no_secret_access": true,
+        "no_deploy": true
+      },
+      "claim_ceiling": "local release-gate receipt; not verification; not security certification; not deployment approval",
+      "created_at": "2026-05-24T01:54:19.201144+00:00"
+    },
+    "patch": {
+      "schema": "QIRA_PatchCandidate/v0.1",
+      "patch_id": "qira-patch-e70ff401f7a2",
+      "contract_id": "qira-contract-1966195304aa",
+      "summary": "Adds a local fixture-backed CLI demo and tests.",
+      "changed_files": [
+        "src/ai_objective_index/example_cli.py",
+        "tests/test_example_cli.py"
+      ],
+      "tests_passed": true,
+      "test_summary": "Fixture tests passed locally.",
+      "evidence_origin": "local_fixture",
+      "requested_action": "pr_open",
+      "declared_claims": [
+        "Scoped local fixture replay passed."
+      ],
+      "generated_at": "2026-05-24T01:54:19.201187+00:00"
+    },
+    "validator": {
+      "schema": "QIRA_ValidatorPacket/v0.1",
+      "validator_id": "qira-validator-2832a58a62a0",
+      "contract_id": "qira-contract-1966195304aa",
+      "checks": [
+        "behavior_contract_present",
+        "patch_scope_lint",
+        "forbidden_change_check",
+        "unsupported_claim_check",
+        "test_evidence_check",
+        "action_license_noninflation"
+      ],
+      "sandbox_policy": {
+        "local_data_only": true,
+        "no_network": true,
+        "no_external_tool_execution": true,
+        "no_subprocess_for_arbitrary_tools": true,
+        "no_deploy": true
+      },
+      "generated_at": "2026-05-24T01:54:19.201217+00:00"
+    },
+    "residual_ledger": {
+      "schema": "QIRA_ResidualLedger/v0.1",
+      "ledger_id": "qira-ledger-bf0d4cae7e3e",
+      "contract_id": "qira-contract-1966195304aa",
+      "patch_id": "qira-patch-e70ff401f7a2",
+      "residuals": [],
+      "missing_evidence": [],
+      "forbidden_change_findings": [],
+      "unsupported_claim_findings": [],
+      "decision_token": "PASS_CONTRACT_SCOPED",
+      "d_raw_status": "not_assessed_as_truth",
+      "d_eco_status": "not_assessed_as_ecosystem_readiness",
+      "generated_at": "2026-05-24T01:54:19.201280+00:00"
+    },
+    "action_license": {
+      "schema": "QIRA_ActionLicense/v0.1",
+      "license_id": "qira-license-4247b74cf5b0",
+      "patch_id": "qira-patch-e70ff401f7a2",
+      "patch_draft": "ALLOW",
+      "pr_open": "ALLOW",
+      "merge": "HOLD",
+      "deploy": "BLOCK",
+      "public_claim": "ALLOW_SCOPED_INTERNAL",
+      "decision_reason": "Scoped local contract evidence supports draft/PR handling, while merge and deploy remain separately gated.",
+      "must_not_claim": [
+        "do not claim verified status",
+        "do not claim safety",
+        "do not claim security certification",
+        "do not claim quality guarantee",
+        "do not claim production readiness",
+        "do not claim legal compliance",
+        "do not claim deployment approval",
+        "do not claim external action authorization"
+      ],
+      "generated_at": "2026-05-24T01:54:19.201307+00:00"
+    },
+    "claim_ceiling": "scoped local release-gate receipt only",
+    "can_verify_security": false,
+    "can_certify_quality": false,
+    "can_authorize_deploy": false,
+    "generated_at": "2026-05-24T01:54:19.201328+00:00"
+  },
+  "summary": {
+    "patch_id": "qira-patch-e70ff401f7a2",
+    "contract_id": "qira-contract-1966195304aa",
+    "decision_token": "PASS_CONTRACT_SCOPED",
+    "residual_count": 0,
+    "missing_evidence_count": 0,
+    "forbidden_change_count": 0,
+    "unsupported_claim_count": 0,
+    "patch_draft": "ALLOW",
+    "pr_open": "ALLOW",
+    "merge": "HOLD",
+    "deploy": "BLOCK",
+    "public_claim": "ALLOW_SCOPED_INTERNAL"
+  },
+  "known_limits": [
+    "Local or fixture evidence is not independent verification.",
+    "A test pass does not imply merge, deploy, product, security, legal, or safety readiness.",
+    "QIRA-1 does not execute arbitrary external tools or contact external services."
+  ],
+  "must_not_claim": [
+    "do not claim verified status",
+    "do not claim safety",
+    "do not claim security certification",
+    "do not claim quality guarantee",
+    "do not claim production readiness",
+    "do not claim legal compliance",
+    "do not claim deployment approval",
+    "do not claim external action authorization"
+  ],
+  "external_actions_performed": false,
+  "pypi_upload_performed": false,
+  "mcp_registry_submission_performed": false,
+  "community_post_performed": false,
+  "token_printed": false,
+  "generated_at": "2026-05-24T01:54:19.201362+00:00"
+}

@@ -1,5 +1,11 @@
 # Changelog
 
+## DataCapsule-1
+
+- Added a local metadata DataCapsule MVP for dataset/corpus use-boundary decisions.
+- Added DataCapsule, DataUseBoundary, RiskFlags, sample metadata, local capsule/report generation, docs, claim audit, public outputs, and tests.
+- Preserved boundaries: no crawling, no URL fetch, no private data inspection, no external service calls, no token handling, no legal/privacy/license/data-quality/eval-cleanliness certification, and no action authorization.
+
 ## AgentSec-3
 
 - Added an opt-in CI artifact bridge for repository-supplied MCP/tool manifests.

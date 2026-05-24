@@ -1,0 +1,119 @@
+{
+  "schema": "DataCapsule/v0.1",
+  "capsule_id": "datacapsule-5c53f2ded887",
+  "data_id": "fixture.local/aoi-docs-corpus",
+  "name": "AOI local docs corpus fixture",
+  "source": "repository-local-fixture",
+  "raw_hash": "5c53f2ded88728f62b3a68128608825045fc6967478ef9c319bec512bd0c170e",
+  "transform_chain": [
+    "metadata_supplied_by_repository",
+    "local_capsule_builder"
+  ],
+  "license": "MIT",
+  "privacy_level": "public_metadata",
+  "source_records": [
+    "docs/quickstart.md",
+    "docs/mcp_usage.md"
+  ],
+  "use_permissions": {
+    "train": {
+      "use_class": "train",
+      "decision": "HOLD_SOURCE_RIGHTS_REVIEW",
+      "allowed": false,
+      "reasons": [
+        "train use is not explicitly allowed by supplied metadata"
+      ],
+      "evidence_required": [
+        "explicit train permission"
+      ],
+      "claim_ceiling": "local data-use boundary only; not legal, privacy, quality, or action authorization"
+    },
+    "retrieve": {
+      "use_class": "retrieve",
+      "decision": "ALLOW_USE",
+      "allowed": true,
+      "reasons": [
+        "retrieve use explicitly allowed by supplied local metadata"
+      ],
+      "evidence_required": [],
+      "claim_ceiling": "local data-use boundary only; not legal, privacy, quality, or action authorization"
+    },
+    "evaluate": {
+      "use_class": "evaluate",
+      "decision": "ALLOW_USE",
+      "allowed": true,
+      "reasons": [
+        "evaluate use explicitly allowed by supplied local metadata"
+      ],
+      "evidence_required": [],
+      "claim_ceiling": "local data-use boundary only; not legal, privacy, quality, or action authorization"
+    },
+    "summarize": {
+      "use_class": "summarize",
+      "decision": "ALLOW_USE",
+      "allowed": true,
+      "reasons": [
+        "summarize use explicitly allowed by supplied local metadata"
+      ],
+      "evidence_required": [],
+      "claim_ceiling": "local data-use boundary only; not legal, privacy, quality, or action authorization"
+    },
+    "share": {
+      "use_class": "share",
+      "decision": "HOLD_SOURCE_RIGHTS_REVIEW",
+      "allowed": false,
+      "reasons": [
+        "share use is not explicitly allowed by supplied metadata"
+      ],
+      "evidence_required": [
+        "explicit share permission"
+      ],
+      "claim_ceiling": "local data-use boundary only; not legal, privacy, quality, or action authorization"
+    },
+    "act": {
+      "use_class": "act",
+      "decision": "BLOCK_ACTION_USE",
+      "allowed": false,
+      "reasons": [
+        "data capsule metadata cannot authorize external actions"
+      ],
+      "evidence_required": [
+        "separate action license and execution gate required"
+      ],
+      "claim_ceiling": "local data-use boundary only; not legal, privacy, quality, or action authorization"
+    }
+  },
+  "risk_flags": {
+    "privacy": false,
+    "poison": false,
+    "prompt_injection": false,
+    "eval_leak": false,
+    "stale": false,
+    "contradiction": false,
+    "rights_unknown": false,
+    "source_unknown": false,
+    "raw_indicators": []
+  },
+  "residual_notes": [
+    "local metadata capsule built; this is still not rights, privacy, or quality certification"
+  ],
+  "claim_ceiling": "local DataCapsule metadata receipt; not legal sufficiency, privacy compliance, data quality guarantee, or action authorization",
+  "must_not_claim": [
+    "do not claim legal sufficiency",
+    "do not claim privacy compliance",
+    "do not claim data quality guarantee",
+    "do not claim license clearance",
+    "do not claim evaluation cleanliness",
+    "do not claim action authorization",
+    "do not claim purchasing advice"
+  ],
+  "local_only": true,
+  "network_used": false,
+  "external_service_used": false,
+  "token_printed": false,
+  "can_certify_rights": false,
+  "can_certify_privacy": false,
+  "can_certify_quality": false,
+  "can_authorize_action": false,
+  "generated_at": "2026-05-24T08:44:08.717485+00:00"
+}

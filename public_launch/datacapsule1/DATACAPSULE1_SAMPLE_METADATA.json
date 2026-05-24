@@ -1,0 +1,37 @@
+{
+  "data_id": "fixture.local/aoi-docs-corpus",
+  "name": "AOI local docs corpus fixture",
+  "source": "repository-local-fixture",
+  "source_records": [
+    "docs/quickstart.md",
+    "docs/mcp_usage.md"
+  ],
+  "license": "MIT",
+  "privacy_level": "public_metadata",
+  "transform_chain": [
+    "metadata_supplied_by_repository",
+    "local_capsule_builder"
+  ],
+  "allowed_use": {
+    "train": false,
+    "retrieve": true,
+    "evaluate": true,
+    "summarize": true,
+    "share": false,
+    "act": false
+  },
+  "risk_flags": {
+    "privacy": false,
+    "poison": false,
+    "prompt_injection": false,
+    "eval_leak": false,
+    "stale": false,
+    "contradiction": false
+  },
+  "claim_boundaries": [
+    "not legal sufficiency",
+    "not privacy compliance",
+    "not data quality guarantee",
+    "no action authorization"
+  ]
+}

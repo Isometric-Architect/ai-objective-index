@@ -23,6 +23,8 @@ ROE-0 adds a parallel ResidualOps productization plan for QIRA-Code ReleaseGate,
 
 QIRA-1 adds the first ResidualOps vertical MVP: a local/offline QIRA-Code ReleaseGate that creates behavior contracts, patch candidates, validator packets, residual ledgers, patch receipts, and action licenses. It does not execute arbitrary external tools, deploy code, request tokens, certify security, guarantee quality, or approve production use.
 
+QIRA-2 adds local JSON task-packet intake for QIRA. A user can provide task, expected behavior, changed files or patch diff text, test summary, and declared claims; QIRA emits a local release-gate report without applying patches, executing tests, deploying code, contacting external services, or handling secrets.
+
 ## Quick Example
 
 Example objective request:

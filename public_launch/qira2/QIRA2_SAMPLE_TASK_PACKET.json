@@ -1,0 +1,29 @@
+{
+  "schema": "QIRA_TaskPacket/v0.1",
+  "packet_id": "qira-task-sample-local-cli",
+  "task": "Add a local-only QIRA task packet CLI without external execution.",
+  "repo_scope": "local_or_fixture_repo",
+  "expected_behavior": [
+    "CLI reads a user-supplied JSON task packet.",
+    "CLI derives changed files from packet metadata or patch diff.",
+    "CLI writes a local release-gate report.",
+    "CLI does not execute tests, deploy, or contact external services."
+  ],
+  "changed_files": [],
+  "patch_summary": "Adds packet intake helpers and local report writing.",
+  "patch_diff": "diff --git a/src/ai_objective_index/qira/task_cli.py b/src/ai_objective_index/qira/task_cli.py\n--- a/src/ai_objective_index/qira/task_cli.py\n+++ b/src/ai_objective_index/qira/task_cli.py\n@@ -0,0 +1,5 @@\n+# local fixture patch\ndiff --git a/tests/test_qira_task_cli.py b/tests/test_qira_task_cli.py\n--- a/tests/test_qira_task_cli.py\n+++ b/tests/test_qira_task_cli.py\n@@ -0,0 +1,5 @@\n+# local fixture test\n",
+  "tests_passed": true,
+  "test_summary": "QIRA packet fixture tests passed locally.",
+  "evidence_origin": "local_fixture",
+  "requested_action": "pr_open",
+  "declared_claims": [
+    "Scoped local packet intake passed."
+  ],
+  "forbidden_changes": [
+    ".env",
+    ".pypirc",
+    "credentials",
+    "secrets"
+  ],
+  "created_at": "2026-05-24T02:03:20.679170+00:00"
+}

@@ -13,6 +13,8 @@ from .models import (
     ResidualLedger,
     ValidatorPacket,
 )
+from .input_packet import QiraTaskPacket
+from .packet_loader import build_report_from_packet, build_report_from_packet_file, load_task_packet
 from .releasegate import build_release_gate_report
 
 __all__ = [
@@ -20,8 +22,12 @@ __all__ = [
     "BehaviorContract",
     "PatchCandidate",
     "PatchReceipt",
+    "QiraTaskPacket",
     "QiraReleaseGateReport",
     "ResidualLedger",
     "ValidatorPacket",
+    "build_report_from_packet",
+    "build_report_from_packet_file",
     "build_release_gate_report",
+    "load_task_packet",
 ]

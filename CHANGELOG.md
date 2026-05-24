@@ -1,5 +1,11 @@
 # Changelog
 
+## QIRA-2
+
+- Added local QIRA task packet intake for user-supplied JSON packets with task, expected behavior, changed files or patch diff text, local evidence summary, declared claims, and requested action.
+- Added a local packet CLI that writes sample packets, intake results, release-gate reports, and next-step notes without applying patches or executing tests.
+- Preserved boundaries: no arbitrary external tool execution, no network, no deploy, no token handling, no PyPI/MCP Registry/community action, and no verification, security-certification, quality-guarantee, production-readiness, legal, or action-authorization claim.
+
 ## QIRA-1
 
 - Added a local/offline QIRA-Code ReleaseGate MVP with behavior contracts, patch candidates, validator packets, residual ledgers, patch receipts, action licenses, and a sample CLI demo.

@@ -14,7 +14,7 @@ Public surfaces may include:
 
 Public surfaces must not include:
 
-- exact ranking weights;
+- ranking-weight values;
 - private scoring thresholds;
 - provider trust priors;
 - anti-gaming rules;

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-21T08:52:06.499411+00:00",
+  "generated_at": "2026-05-24T01:05:11.563837+00:00",
   "decision": "PASS_NO_SENSITIVE_KERNEL_EXPOSED",
-  "scanned_files": 1192,
+  "scanned_files": 1263,
   "skipped_files": 14,
   "findings": [],
   "finding_count": 0,

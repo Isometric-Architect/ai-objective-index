@@ -19,6 +19,8 @@ v0.1 is read-only. Package 1 adds the local core engine, Package 2 adds read-onl
 
 vNext adds conservative routing surfaces: Capability Trust, Objective Router, ExecutionReceipt memory, and local-only Probe-before-Use. These are source-traced route-decision aids, not verification, safety certification, quality guarantee, product readiness, live security scanning, external gateway execution, or action authorization.
 
+ROE-0 adds a parallel ResidualOps productization plan for QIRA-Code ReleaseGate, AgentSec Gate, and DataCapsule / AIDREG Engine. The public repository may expose high-level packet, residual, receipt, and ALLOW/HOLD/BLOCK language, while ranking calibration, threshold policy, anti-gaming rules, provider priors, private negative controls, private probe seeds, and commercial routing policy remain non-public.
+
 ## Quick Example
 
 Example objective request:

@@ -52,6 +52,13 @@ local_credentials/
 
 # Internal source packs used as research input, not public release payload
 /SOURCE_0513_REPACK_FINAL_v1/
+/QBCPL_RUN019_INTERNAL_SOURCE_MASTER_INTEGRATION_bundle_v0_1.zip
+/RdsidualOps_Engine/
+/ResidualOps_Engine/
+data/generated/qbcpl_run019_extract_for_analysis_*/
+~$*.docx
+~$*
+/ResidualOps 엔진 이유.docx
 
 # OS/browser/download scratch
 *.tmp

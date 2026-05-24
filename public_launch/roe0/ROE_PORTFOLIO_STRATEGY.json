@@ -1,0 +1,106 @@
+{
+  "generated_at": "2026-05-24T01:05:01.748293+00:00",
+  "decision": "PASS_PORTFOLIO_SEQUENCE_LOCKED",
+  "strategy": "Build a shared ResidualOps operating kernel and productize it through narrow verticals rather than launching three broad products at once.",
+  "implementation_sequence": [
+    {
+      "order": 0,
+      "package": "ROE-0",
+      "track": "portfolio_strategy_and_protection",
+      "product": "ResidualOps Portfolio Kernel",
+      "decision": "IMPLEMENT_NOW",
+      "reason": "Lock the public/private split, product order, and QBCPL coding governance before opening more surface area."
+    },
+    {
+      "order": 1,
+      "package": "QIRA-1",
+      "track": "first_implementation_vertical",
+      "product": "QIRA-Code ReleaseGate",
+      "decision": "BUILD_FIRST",
+      "reason": "QBCPL RUN019 is the most concrete local source: behavior contracts, patch receipts, residual ledgers, and action-license boundaries map directly to a GitHub Action/CLI MVP."
+    },
+    {
+      "order": 2,
+      "package": "AgentSec-1",
+      "track": "first_market_security_vertical",
+      "product": "AgentSec Gate",
+      "decision": "BUILD_SECOND",
+      "reason": "Agent/MCP/tool-call security has the strongest market signal, but it should reuse the QIRA receipt, residual, and license primitives instead of starting as a separate stack."
+    },
+    {
+      "order": 3,
+      "package": "DataCapsule-1",
+      "track": "data_governance_vertical",
+      "product": "DataCapsule / AIDREG Engine",
+      "decision": "BUILD_THIRD",
+      "reason": "Data rights, source, poison, eval-leak, and use-permission routing are large-platform candidates; the first version should reuse the same packet/probe/receipt pattern after QIRA and AgentSec stabilize it."
+    }
+  ],
+  "market_priority": [
+    {
+      "rank": 1,
+      "product": "AgentSec Gate",
+      "why": "largest immediate security and MCP/tool-call buyer signal"
+    },
+    {
+      "rank": 2,
+      "product": "DataCapsule / AIDREG Engine",
+      "why": "large AI data governance platform potential"
+    },
+    {
+      "rank": 3,
+      "product": "QIRA-Code ReleaseGate",
+      "why": "fastest MVP and proof loop through GitHub/CI workflows"
+    }
+  ],
+  "selected_next_package": "QIRA-1",
+  "selected_next_package_name": "QIRA-Code ReleaseGate MVP",
+  "rationale": [
+    "QIRA is first for implementation because QBCPL provides concrete local coding objects and validators.",
+    "AgentSec remains the first external market/security story and should follow with reused route and receipt primitives.",
+    "DataCapsule is the long-platform track and should follow once the packet/receipt loop is proven."
+  ],
+  "common_kernel": {
+    "public_kernel_language": [
+      "Packet",
+      "Probe",
+      "Validator",
+      "ResidualLedger",
+      "Receipt",
+      "CertCost",
+      "d_raw/d_eco",
+      "ALLOW/HOLD/BLOCK"
+    ],
+    "private_kernel_reserved": [
+      "ranking-weight values",
+      "threshold policy",
+      "anti-gaming rules",
+      "provider trust priors",
+      "private negative-control bank",
+      "private probe seeds",
+      "commercial routing policy",
+      "enterprise data policy"
+    ]
+  },
+  "public_claim_ceiling": [
+    "strategy and schema alignment",
+    "local/offline prototype planning",
+    "source-traced route decisions",
+    "receipt and residual memory language"
+  ],
+  "must_not_claim": [
+    "verified",
+    "safe",
+    "security certified",
+    "quality guaranteed",
+    "product ready",
+    "legal/financial/medical advice",
+    "purchasing advice",
+    "external action authorization"
+  ],
+  "external_actions_performed": false,
+  "pypi_upload_performed": false,
+  "mcp_registry_submission_performed": false,
+  "community_post_performed": false,
+  "token_printed": false
+}

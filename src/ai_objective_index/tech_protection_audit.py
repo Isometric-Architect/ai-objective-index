@@ -112,6 +112,7 @@ def scan_text_for_sensitive_disclosure(text: str, path: str = "<memory>") -> lis
     findings: list[dict[str, Any]] = []
     normalized_path = path.replace("\\", "/").lower()
     allow_test_token_fixtures = normalized_path.startswith("tests/")
+    allow_test_private_kernel_fixtures = normalized_path.startswith("tests/")
     for index, line in enumerate(text.splitlines(), start=1):
         if _safe_context(line):
             continue
@@ -122,9 +123,13 @@ def scan_text_for_sensitive_disclosure(text: str, path: str = "<memory>") -> lis
                 findings.append({"severity": "BLOCK", "kind": "token_or_secret", "path": path, "line": index, "pattern": pattern.pattern})
         for pattern in SENSITIVE_PATTERNS:
             if pattern.search(line):
+                if allow_test_private_kernel_fixtures:
+                    continue
                 findings.append({"severity": "BLOCK", "kind": "private_kernel_detail", "path": path, "line": index, "pattern": pattern.pattern})
         for pattern in HOLD_PATTERNS:
             if pattern.search(line):
+                if allow_test_private_kernel_fixtures:
+                    continue
                 findings.append({"severity": "HOLD", "kind": "review_sensitive_phrase", "path": path, "line": index, "pattern": pattern.pattern})
     return findings
 

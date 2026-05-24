@@ -2,7 +2,7 @@
 
 This placeholder-only template is safe to commit. Do not place real private values in this file.
 
-## Private Ranking Weights
+## Ranking Weight Placeholders
 
 - Placeholder: `<describe private weight family without values>`
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## ROE-0
+
+- Added the ResidualOps portfolio strategy package for choosing a narrow implementation sequence instead of opening AgentSec, QIRA, and DataCapsule all at once.
+- Added QBCPL coding governance, ROE public/private split, AgentSec, QIRA-Code ReleaseGate, and DataCapsule planning docs.
+- Added source-intake and protection-gate helpers that use internal QBCPL/ResidualOps material for planning while keeping source bundles, analysis extracts, private kernels, tokens, and action-authorization claims out of public commits.
+
 ## Package 8R-B
 
 - Added guarded MCP Publisher install/check, GitHub auth, Registry submit preflight, dry-run/execute, reconcile, and discovery report helpers.

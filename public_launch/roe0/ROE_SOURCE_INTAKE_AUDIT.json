@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-05-24T01:05:52.730010+00:00",
+  "decision": "PASS_SOURCE_INPUTS_PROTECTED",
+  "qbcpl_zip": {
+    "exists": true,
+    "readable": true,
+    "size_bytes": 12556,
+    "sha256": "6659bd105f2c38144aef23c6811268047623b96daf0406d1e1adfc5d9894bbe2",
+    "entry_count": 4,
+    "entry_names_redacted": true,
+    "entry_sizes": [
+      23308,
+      5150,
+      604,
+      701
+    ]
+  },
+  "residualops_folders": [
+    {
+      "name": "RdsidualOps_Engine",
+      "exists": true,
+      "file_count": 3,
+      "suffix_counts": {
+        ".md": 2,
+        ".json": 1
+      },
+      "sample_file_names_redacted": true
+    },
+    {
+      "name": "ResidualOps_Engine",
+      "exists": false
+    }
+  ],
+  "analysis_extract_folders": [
+    "data/generated/qbcpl_run019_extract_for_analysis_20260524"
+  ],
+  "tracked_internal_source_findings": [],
+  "source_inputs_commit_allowed": false,
+  "public_summary_commit_allowed": true,
+  "claim_ceiling": "internal source analysis and productization planning only",
+  "must_not_claim": [
+    "product readiness",
+    "security certification",
+    "quality guarantee",
+    "legal/safety readiness",
+    "external action authorization"
+  ],
+  "external_actions_performed": false,
+  "token_printed": false
+}

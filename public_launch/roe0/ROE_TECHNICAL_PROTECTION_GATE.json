@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-05-24T01:05:52.724720+00:00",
+  "decision": "PASS_READY_FOR_QIRA_MVP",
+  "source_intake_decision": "PASS_SOURCE_INPUTS_PROTECTED",
+  "portfolio_strategy_decision": "PASS_PORTFOLIO_SEQUENCE_LOCKED",
+  "selected_next_package": "QIRA-1",
+  "selected_next_package_name": "QIRA-Code ReleaseGate MVP",
+  "missing_gitignore_patterns": [],
+  "public_private_split": {
+    "public_allowed": [
+      "product sequence",
+      "schemas and route labels",
+      "high-level packet/probe/receipt language",
+      "claim boundaries",
+      "placeholder-only private kernel templates"
+    ],
+    "remain_private": [
+      "ranking-weight values",
+      "threshold policy",
+      "anti-gaming rules",
+      "provider trust priors",
+      "private negative-control bank",
+      "private probe seeds",
+      "commercial routing policy"
+    ]
+  },
+  "external_actions_performed": false,
+  "pypi_upload_performed": false,
+  "mcp_registry_submission_performed": false,
+  "community_post_performed": false,
+  "token_printed": false
+}

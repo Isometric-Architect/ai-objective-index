@@ -1,0 +1,35 @@
+{
+  "schema": "AgentSec_ActionBoundaryReceipt/v0.1",
+  "receipt_id": "agentsec-receipt-dce63c511d55",
+  "packet_id": "agentsec-risk-dce63c511d55",
+  "decision": "ALLOW_METADATA_ONLY",
+  "allowed_actions": [
+    "local metadata review"
+  ],
+  "hold_actions": [],
+  "blocked_actions": [
+    "account connection",
+    "booking",
+    "contract signing",
+    "email sending",
+    "login",
+    "payment",
+    "purchase"
+  ],
+  "no_network": true,
+  "no_live_mcp_call": true,
+  "no_external_tool_execution": true,
+  "can_certify_security": false,
+  "can_certify_quality": false,
+  "can_authorize_action": false,
+  "must_not_claim": [
+    "do not claim verified tool status",
+    "do not claim safety",
+    "do not claim security certification",
+    "do not claim quality guarantee",
+    "do not claim production readiness",
+    "do not claim external action authorization",
+    "do not claim legal compliance"
+  ],
+  "generated_at": "2026-05-24T08:14:16.928543+00:00"
+}

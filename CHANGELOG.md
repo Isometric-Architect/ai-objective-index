@@ -1,5 +1,11 @@
 # Changelog
 
+## AgentSec-1
+
+- Added a local/offline MCP/tool manifest scanner that emits ToolRiskPacket, AgentSecScanResult, and action-boundary receipt artifacts.
+- Added permission, hidden-instruction, namespace, forbidden-action, and unsupported-claim indicators plus sample public outputs, docs, claim audit, and tests.
+- Preserved boundaries: no live MCP call, no external tool execution, no URL fetch, no token handling, no security certification, no quality guarantee, no product-readiness claim, and no action authorization.
+
 ## QIRA-8
 
 - Added reviewer-facing PR artifact bundle generation for QIRA local review outputs.

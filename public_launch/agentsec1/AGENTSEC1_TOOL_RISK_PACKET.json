@@ -1,0 +1,44 @@
+{
+  "schema": "AgentSec_ToolRiskPacket/v0.1",
+  "packet_id": "agentsec-risk-dce63c511d55",
+  "tool_id": "fixture.local/local-metadata-browser-helper",
+  "name": "local-metadata-browser-helper",
+  "provider": "local-fixture",
+  "manifest_path": "public_launch/agentsec1/AGENTSEC1_SAMPLE_TOOL_MANIFEST.json",
+  "metadata_hash": "2254c787325d2e836878ac2599cc9e94db3c832f4c148786b8a3e5bd0e27b29f",
+  "integration_type": "mcp_server",
+  "permission_scope": {
+    "network_access": false,
+    "file_access": false,
+    "write_access": false,
+    "secret_access": false,
+    "browser_access": false,
+    "code_execution": false,
+    "raw_indicators": []
+  },
+  "hidden_instruction_findings": [],
+  "prompt_injection_findings": [],
+  "namespace_findings": [],
+  "forbidden_action_findings": [],
+  "unsupported_claim_findings": [],
+  "risk_decision": "ALLOW_METADATA_ONLY",
+  "allowed_use": [
+    "local metadata review"
+  ],
+  "hold_use": [],
+  "blocked_use": [],
+  "residual_notes": [
+    "metadata-only scan found no blocking indicators; this is still not verification"
+  ],
+  "claim_ceiling": "local metadata risk packet only; not verification or security certification",
+  "must_not_claim": [
+    "do not claim verified tool status",
+    "do not claim safety",
+    "do not claim security certification",
+    "do not claim quality guarantee",
+    "do not claim production readiness",
+    "do not claim external action authorization",
+    "do not claim legal compliance"
+  ],
+  "generated_at": "2026-05-24T08:14:16.928503+00:00"
+}

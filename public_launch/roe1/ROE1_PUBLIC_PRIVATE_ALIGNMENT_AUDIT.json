@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-05-24T23:56:38.549988+00:00",
+  "decision": "PASS_PUBLIC_PRIVATE_ALIGNMENT",
+  "finding_count": 0,
+  "risky_phrase_count": 0,
+  "findings": [],
+  "public_allowed": [
+    "packet, manifest, capsule, risk packet, and task packet shapes",
+    "local probe/check/result/receipt artifact shapes",
+    "ALLOW/HOLD/BLOCK labels",
+    "high-level CertCost, residual, d_raw/d_eco vocabulary",
+    "claim boundaries and limitations",
+    "opt-in CI artifact bridge shape"
+  ],
+  "remain_private": [
+    "ranking-weight values",
+    "threshold policy",
+    "anti-gaming rules",
+    "provider trust priors",
+    "private negative-control banks",
+    "private probe seeds",
+    "commercial routing policy",
+    "enterprise data policy"
+  ],
+  "external_actions_performed": false,
+  "network_used": false,
+  "token_printed": false
+}

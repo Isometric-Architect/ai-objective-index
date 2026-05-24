@@ -1,5 +1,11 @@
 # Changelog
 
+## ROE-1
+
+- Added ResidualOps vertical surface alignment for QIRA, AgentSec, and DataCapsule.
+- Added public/private alignment audit, common kernel docs, vertical surface matrix, ROE-1 public outputs, and tests.
+- Preserved boundaries: no workflow enablement, no GitHub API calls, no URL fetch, no external tool execution, no token handling, no private kernel disclosure, no certification, no product-readiness claim, and no action authorization.
+
 ## DataCapsule-4
 
 - Added an opt-in CI artifact bridge for repository-supplied CSV/JSONL/JSON corpus manifests.

@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-05-24T23:56:38.551271+00:00",
+  "decision": "PASS_ROE1_SURFACE_ALIGNED",
+  "inventory_decision": "PASS_VERTICAL_SURFACES_PRESENT",
+  "public_private_alignment_decision": "PASS_PUBLIC_PRIVATE_ALIGNMENT",
+  "missing_paths": [],
+  "active_workflow_findings": [],
+  "risky_phrase_count": 0,
+  "vertical_count": 3,
+  "safe_to_continue_parallel_verticals": true,
+  "recommended_next_package": "ROE-2 shared artifact manifest and dashboard skeleton",
+  "external_actions_performed": false,
+  "workflow_enabled": false,
+  "pypi_upload_performed": false,
+  "mcp_registry_submission_performed": false,
+  "community_post_performed": false,
+  "token_printed": false,
+  "private_kernel_exposed": false
+}

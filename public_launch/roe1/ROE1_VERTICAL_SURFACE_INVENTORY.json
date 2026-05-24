@@ -1,0 +1,278 @@
+{
+  "generated_at": "2026-05-24T23:56:38.381416+00:00",
+  "decision": "PASS_VERTICAL_SURFACES_PRESENT",
+  "vertical_count": 3,
+  "surfaces": [
+    {
+      "vertical_id": "qira",
+      "product_name": "QIRA-Code ReleaseGate",
+      "public_role": "AI-generated code and patch release-gate review using local packets, receipts, and artifact bundles.",
+      "packages": [
+        "QIRA-1",
+        "QIRA-2",
+        "QIRA-3",
+        "QIRA-4",
+        "QIRA-5",
+        "QIRA-6",
+        "QIRA-7",
+        "QIRA-8"
+      ],
+      "expected_primitives": [
+        "behavior contract",
+        "patch receipt",
+        "residual ledger",
+        "release gate report",
+        "artifact bridge",
+        "claim boundary"
+      ],
+      "surface_paths": {
+        "source_paths": [
+          {
+            "path": "src/ai_objective_index/qira/models.py",
+            "exists": true,
+            "kind": "file"
+          },
+          {
+            "path": "src/ai_objective_index/qira/releasegate.py",
+            "exists": true,
+            "kind": "file"
+          },
+          {
+            "path": "src/ai_objective_index/qira/reviewer_report.py",
+            "exists": true,
+            "kind": "file"
+          },
+          {
+            "path": "src/ai_objective_index/qira/ci_evidence_bridge.py",
+            "exists": true,
+            "kind": "file"
+          }
+        ],
+        "docs": [
+          {
+            "path": "docs/qira_code_releasegate_plan.md",
+            "exists": true,
+            "kind": "file"
+          },
+          {
+            "path": "docs/qira_releasegate_mvp.md",
+            "exists": true,
+            "kind": "file"
+          },
+          {
+            "path": "docs/qira8_pr_artifact_bundle.md",
+            "exists": true,
+            "kind": "file"
+          }
+        ],
+        "actions": [
+          {
+            "path": ".github/actions/qira-releasegate-dry-run/action.yml",
+            "exists": true,
+            "kind": "file"
+          },
+          {
+            "path": ".github/actions/qira-ci-evidence-bridge/action.yml",
+            "exists": true,
+            "kind": "file"
+          }
+        ],
+        "examples": [
+          {
+            "path": "examples/qira_releasegate_dry_run_workflow.yml",
+            "exists": true,
+            "kind": "file"
+          },
+          {
+            "path": "examples/qira_ci_evidence_bridge_workflow.yml",
+            "exists": true,
+            "kind": "file"
+          }
+        ],
+        "public_outputs": [
+          {
+            "path": "public_launch/qira8",
+            "exists": true,
+            "kind": "directory"
+          }
+        ]
+      }
+    },
+    {
+      "vertical_id": "agentsec",
+      "product_name": "AgentSec Gate",
+      "public_role": "Local MCP/tool manifest risk review with policy-gate artifacts and explicit action boundaries.",
+      "packages": [
+        "AgentSec-1",
+        "AgentSec-2",
+        "AgentSec-3"
+      ],
+      "expected_primitives": [
+        "tool risk packet",
+        "manifest scanner",
+        "policy gate",
+        "artifact bridge",
+        "ALLOW/HOLD/BLOCK",
+        "claim boundary"
+      ],
+      "surface_paths": {
+        "source_paths": [
+          {
+            "path": "src/ai_objective_index/agentsec/models.py",
+            "exists": true,
+            "kind": "file"
+          },
+          {
+            "path": "src/ai_objective_index/agentsec/manifest_scanner.py",
+            "exists": true,
+            "kind": "file"
+          },
+          {
+            "path": "src/ai_objective_index/agentsec/policy_gate.py",
+            "exists": true,
+            "kind": "file"
+          },
+          {
+            "path": "src/ai_objective_index/agentsec/ci_artifact_bridge.py",
+            "exists": true,
+            "kind": "file"
+          }
+        ],
+        "docs": [
+          {
+            "path": "docs/agentsec_gate_plan.md",
+            "exists": true,
+            "kind": "file"
+          },
+          {
+            "path": "docs/agentsec_policy_profiles.md",
+            "exists": true,
+            "kind": "file"
+          },
+          {
+            "path": "docs/agentsec3_ci_artifact_bridge.md",
+            "exists": true,
+            "kind": "file"
+          }
+        ],
+        "actions": [
+          {
+            "path": ".github/actions/agentsec-policy-gate-artifact/action.yml",
+            "exists": true,
+            "kind": "file"
+          }
+        ],
+        "examples": [
+          {
+            "path": "examples/agentsec_policy_gate_artifact_workflow.yml",
+            "exists": true,
+            "kind": "file"
+          }
+        ],
+        "public_outputs": [
+          {
+            "path": "public_launch/agentsec3",
+            "exists": true,
+            "kind": "directory"
+          }
+        ]
+      }
+    },
+    {
+      "vertical_id": "datacapsule",
+      "product_name": "DataCapsule / AIDREG Engine",
+      "public_role": "Local data-use boundary capsules over repository-supplied corpus manifests and eval-separation signals.",
+      "packages": [
+        "DataCapsule-1",
+        "DataCapsule-2",
+        "DataCapsule-3",
+        "DataCapsule-4"
+      ],
+      "expected_primitives": [
+        "corpus manifest",
+        "data-use capsule",
+        "use boundary",
+        "negative controls",
+        "eval separation report",
+        "artifact bridge",
+        "claim boundary"
+      ],
+      "surface_paths": {
+        "source_paths": [
+          {
+            "path": "src/ai_objective_index/datacapsule/models.py",
+            "exists": true,
+            "kind": "file"
+          },
+          {
+            "path": "src/ai_objective_index/datacapsule/capsule_builder.py",
+            "exists": true,
+            "kind": "file"
+          },
+          {
+            "path": "src/ai_objective_index/datacapsule/manifest_intake.py",
+            "exists": true,
+            "kind": "file"
+          },
+          {
+            "path": "src/ai_objective_index/datacapsule/ci_artifact_bridge.py",
+            "exists": true,
+            "kind": "file"
+          }
+        ],
+        "docs": [
+          {
+            "path": "docs/datacapsule_engine_plan.md",
+            "exists": true,
+            "kind": "file"
+          },
+          {
+            "path": "docs/datacapsule3_manifest_intake.md",
+            "exists": true,
+            "kind": "file"
+          },
+          {
+            "path": "docs/datacapsule4_ci_artifact_bridge.md",
+            "exists": true,
+            "kind": "file"
+          }
+        ],
+        "actions": [
+          {
+            "path": ".github/actions/datacapsule-corpus-manifest-artifact/action.yml",
+            "exists": true,
+            "kind": "file"
+          }
+        ],
+        "examples": [
+          {
+            "path": "examples/datacapsule_corpus_manifest_artifact_workflow.yml",
+            "exists": true,
+            "kind": "file"
+          }
+        ],
+        "public_outputs": [
+          {
+            "path": "public_launch/datacapsule4",
+            "exists": true,
+            "kind": "directory"
+          }
+        ]
+      }
+    }
+  ],
+  "missing_paths": [],
+  "active_workflow_findings": [],
+  "common_public_pattern": [
+    "Packet or manifest intake",
+    "Local check/probe/review",
+    "Receipt or result artifact",
+    "ALLOW/HOLD/BLOCK route decision",
+    "Opt-in artifact bridge",
+    "Claim boundary"
+  ],
+  "external_actions_performed": false,
+  "network_used": false,
+  "token_printed": false,
+  "private_kernel_exposed": false
+}

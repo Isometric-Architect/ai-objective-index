@@ -13,3 +13,18 @@ Market priority is slightly different: AgentSec has the strongest first buyer si
 Public ROE language may expose packet, probe, validator, residual, receipt, CertCost, d_raw/d_eco, and ALLOW/HOLD/BLOCK concepts at a high level. Ranking-weight values, thresholds, anti-gaming rules, provider priors, private negative-control banks, private probe seeds, and commercial routing policy remain private.
 
 ROE-0 is not verification, security certification, a quality guarantee, product readiness, legal advice, purchasing advice, or external action authorization.
+
+## ROE-1 Surface Alignment
+
+ROE-1 checks that the implemented QIRA, AgentSec, and DataCapsule surfaces follow the same ResidualOps pattern before more exposure or cross-product packaging:
+
+```text
+Packet or manifest
+-> local check/probe/review
+-> receipt/result artifact
+-> ALLOW/HOLD/BLOCK
+-> opt-in artifact bridge
+-> claim boundary
+```
+
+This keeps the public surface useful to AI agents and developers while reserving exact weights, thresholds, provider priors, anti-gaming rules, private negative controls, private probe seeds, and commercial routing policy as non-public kernel details.

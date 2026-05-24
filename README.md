@@ -35,6 +35,8 @@ QIRA-6 adds CI evidence intake. It accepts repository-supplied CI result metadat
 
 QIRA-7 adds an opt-in GitHub CI evidence bridge. It provides a reusable composite action and example workflow that pass repository-owned CI status metadata into QIRA-6, while keeping workflows disabled by default and preserving no-GitHub-API/no-token/no-merge/no-deploy boundaries.
 
+QIRA-8 adds reviewer-facing PR artifacts: a Markdown reviewer report, PR comment draft, artifact manifest, and bundle result. It writes local artifacts only and does not post comments, call GitHub APIs, execute commands, merge, deploy, upload, publish, or handle tokens.
+
 ## Quick Example
 
 Example objective request:

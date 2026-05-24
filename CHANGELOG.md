@@ -1,5 +1,11 @@
 # Changelog
 
+## QIRA-8
+
+- Added reviewer-facing PR artifact bundle generation for QIRA local review outputs.
+- Added Markdown reviewer report, PR comment draft, artifact manifest, bundle result, docs, public sample outputs, and tests.
+- Preserved boundaries: no PR comment posting, no GitHub API calls, no command execution, no patch application, no merge/deploy/upload/publish, no token handling, and no certification/readiness claim.
+
 ## QIRA-7
 
 - Added an opt-in GitHub CI evidence bridge that converts repository-owned CI status metadata into QIRA CI evidence and review artifacts.

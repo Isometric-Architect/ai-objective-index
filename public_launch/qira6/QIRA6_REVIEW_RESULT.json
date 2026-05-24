@@ -1,0 +1,130 @@
+{
+  "schema": "QIRA_CiEvidenceReviewResult/v0.1",
+  "decision": "PASS_QIRA6_REVIEW",
+  "validation": {
+    "schema": "QIRA_CiEvidenceValidationResult/v0.1",
+    "evidence_id": "qira-ci-evidence-sample-pass",
+    "decision": "PASS_CI_EVIDENCE_ACCEPTED",
+    "tests_passed": true,
+    "accepted_command_count": 1,
+    "failed_check_names": [],
+    "hold_check_names": [],
+    "block_reasons": [],
+    "hold_reasons": [],
+    "command_contract_decision": "PASS_TEST_COMMAND_CONTRACT",
+    "can_support_patch_draft": true,
+    "can_support_pr_open": true,
+    "can_authorize_merge": false,
+    "can_authorize_deploy": false,
+    "can_certify_security": false,
+    "can_guarantee_quality": false,
+    "known_limits": [
+      "CI evidence is externally supplied metadata; QIRA does not execute commands or inspect live CI systems.",
+      "A CI pass can close a local test-evidence gap for scoped review, but it does not authorize merge, deploy, package upload, registry submission, or public readiness claims.",
+      "CI evidence is not security certification, quality guarantee, legal compliance, or production readiness."
+    ],
+    "external_actions_performed_by_qira": false,
+    "commands_executed_by_qira": false,
+    "github_api_used_by_qira": false,
+    "token_printed": false,
+    "generated_at": "2026-05-24T04:59:22.088455+00:00"
+  },
+  "release_gate_review": {
+    "decision": "PASS_QIRA3_REVIEW",
+    "release_gate_decision": "PASS_CONTRACT_SCOPED",
+    "path_classification_decision": "PASS_PATH_CLASSIFICATION",
+    "test_command_contract_decision": "PASS_TEST_COMMAND_CONTRACT",
+    "action_license": {
+      "schema": "QIRA_ActionLicense/v0.1",
+      "license_id": "qira-license-2a4d90390c7e",
+      "patch_id": "qira-patch-fbbe45763683",
+      "patch_draft": "ALLOW",
+      "pr_open": "ALLOW",
+      "merge": "HOLD",
+      "deploy": "BLOCK",
+      "public_claim": "ALLOW_SCOPED_INTERNAL",
+      "decision_reason": "Scoped local contract evidence supports draft/PR handling, while merge and deploy remain separately gated.",
+      "must_not_claim": [
+        "do not claim verified status",
+        "do not claim safety",
+        "do not claim security certification",
+        "do not claim quality guarantee",
+        "do not claim production readiness",
+        "do not claim legal compliance",
+        "do not claim deployment approval",
+        "do not claim external action authorization"
+      ],
+      "generated_at": "2026-05-24T04:59:22.088608+00:00"
+    },
+    "path_summary": {
+      "changed_file_count": 3,
+      "category_counts": {
+        "docs": 1,
+        "source": 1,
+        "test": 1
+      },
+      "risk_counts": {
+        "LOW": 3
+      }
+    },
+    "test_command_summary": {
+      "command_count": 1,
+      "commands_executed": false,
+      "allowed_execution": "record_only_not_executed"
+    },
+    "external_actions_performed": false,
+    "tests_executed_by_qira": false,
+    "patch_applied": false,
+    "deploy_performed": false,
+    "token_printed": false
+  },
+  "augmented_packet": {
+    "schema": "QIRA_TaskPacket/v0.1",
+    "packet_id": "qira-generated-packet-b2c431e4123b",
+    "task": "Generate a conservative QIRA task packet from local PR diff metadata.",
+    "repo_scope": "github_pr_or_local_diff",
+    "expected_behavior": [
+      "Implement the requested task without expanding scope: Generate a conservative QIRA task packet from local PR diff metadata.",
+      "Preserve existing public claim boundaries and do not add verification, security-certification, quality-guarantee, production-readiness, deployment-approval, or action-authorization claims.",
+      "Source changes should preserve documented behavior unless the task explicitly states a behavior change.",
+      "Test changes should cover the intended behavior and avoid replacing evidence with unsupported claims.",
+      "Documentation changes should match implementation boundaries and limitations.",
+      "Do not deploy, publish, upload packages, submit registry metadata, or run external actions from this packet."
+    ],
+    "changed_files": [
+      "docs/qira5_pr_packet_generator.md",
+      "src/ai_objective_index/qira/packet_generator.py",
+      "tests/test_qira_packet_generator.py"
+    ],
+    "patch_summary": "Adds a local packet generator and CLI demo for PR-style diffs.",
+    "patch_diff": "diff --git a/src/ai_objective_index/qira/packet_generator.py b/src/ai_objective_index/qira/packet_generator.py\n--- a/src/ai_objective_index/qira/packet_generator.py\n+++ b/src/ai_objective_index/qira/packet_generator.py\n@@ -0,0 +1,5 @@\n+# local packet generator fixture\ndiff --git a/tests/test_qira_packet_generator.py b/tests/test_qira_packet_generator.py\n--- a/tests/test_qira_packet_generator.py\n+++ b/tests/test_qira_packet_generator.py\n@@ -0,0 +1,5 @@\n+# local packet generator tests fixture\ndiff --git a/docs/qira5_pr_packet_generator.md b/docs/qira5_pr_packet_generator.md\n--- a/docs/qira5_pr_packet_generator.md\n+++ b/docs/qira5_pr_packet_generator.md\n@@ -0,0 +1,5 @@\n+# local packet generator docs fixture\n",
+    "tests_passed": true,
+    "test_commands": [
+      "python -m pytest tests/test_qira_packet_generator.py tests/test_qira_pr_packet_cli.py"
+    ],
+    "test_summary": "Repository-owned CI fixture reports local QIRA-5 packet generator tests passed. Targeted QIRA-5 tests passed in CI fixture metadata.",
+    "evidence_origin": "ci_fixture",
+    "requested_action": "pr_open",
+    "declared_claims": [
+      "Local packet generation only; no tests executed by QIRA-5."
+    ],
+    "forbidden_changes": [
+      ".env",
+      ".pypirc",
+      "credentials",
+      "secrets"
+    ],
+    "created_at": "2026-05-24T04:59:22.085766+00:00",
+    "packet_generation_source": "local_diff_or_changed_files",
+    "generated_by": "qira5_packet_generator",
+    "ci_evidence_id": "qira-ci-evidence-sample-pass",
+    "ci_evidence_source": "github_actions"
+  },
+  "external_actions_performed": false,
+  "commands_executed_by_qira": false,
+  "github_api_used_by_qira": false,
+  "patch_applied": false,
+  "deploy_performed": false,
+  "token_printed": false,
+  "generated_at": "2026-05-24T04:59:22.088794+00:00"
+}

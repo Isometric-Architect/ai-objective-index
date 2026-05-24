@@ -1,5 +1,11 @@
 # Changelog
 
+## QIRA-6
+
+- Added CI evidence intake for repository-supplied test/static-check result metadata.
+- Added validation, packet augmentation, QIRA-6 review output, CLI sample, docs, and tests.
+- Preserved boundaries: QIRA does not run tests, call GitHub APIs, inspect live CI, apply patches, merge, deploy, upload, publish, handle tokens, certify security, guarantee quality, or authorize production actions.
+
 ## QIRA-5
 
 - Added a local PR diff/changed-file packet generator that emits conservative QIRA task packets.

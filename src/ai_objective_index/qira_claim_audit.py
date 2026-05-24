@@ -14,6 +14,7 @@ QIRA2_OUTPUT_PATH = Path("public_launch") / "qira2" / "QIRA_CLAIM_BOUNDARY_AUDIT
 QIRA3_OUTPUT_PATH = Path("public_launch") / "qira3" / "QIRA_CLAIM_BOUNDARY_AUDIT.json"
 QIRA4_OUTPUT_PATH = Path("public_launch") / "qira4" / "QIRA_CLAIM_BOUNDARY_AUDIT.json"
 QIRA5_OUTPUT_PATH = Path("public_launch") / "qira5" / "QIRA_CLAIM_BOUNDARY_AUDIT.json"
+QIRA6_OUTPUT_PATH = Path("public_launch") / "qira6" / "QIRA_CLAIM_BOUNDARY_AUDIT.json"
 SCAN_PATHS = [
     Path("docs") / "qira_code_releasegate_plan.md",
     Path("docs") / "qira_releasegate_mvp.md",
@@ -25,6 +26,8 @@ SCAN_PATHS = [
     Path("docs") / "qira_github_action_limitations.md",
     Path("docs") / "qira5_pr_packet_generator.md",
     Path("docs") / "qira_pr_diff_packet_limitations.md",
+    Path("docs") / "qira6_ci_evidence_intake.md",
+    Path("docs") / "qira_ci_evidence_limitations.md",
     Path("docs") / "qira_action_license.md",
     Path("docs") / "qira_claim_boundaries.md",
     Path("public_launch") / "qira1",
@@ -32,6 +35,7 @@ SCAN_PATHS = [
     Path("public_launch") / "qira3",
     Path("public_launch") / "qira4",
     Path("public_launch") / "qira5",
+    Path("public_launch") / "qira6",
 ]
 
 RISKY_PATTERNS = [
@@ -130,6 +134,7 @@ def run_qira_claim_audit(write_result: bool = True) -> dict[str, Any]:
         _write_json(QIRA3_OUTPUT_PATH, result)
         _write_json(QIRA4_OUTPUT_PATH, result)
         _write_json(QIRA5_OUTPUT_PATH, result)
+        _write_json(QIRA6_OUTPUT_PATH, result)
     return result
 
 

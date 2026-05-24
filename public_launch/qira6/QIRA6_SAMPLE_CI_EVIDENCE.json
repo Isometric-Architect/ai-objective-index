@@ -1,0 +1,32 @@
+{
+  "schema": "QIRA_CiEvidencePacket/v0.1",
+  "evidence_id": "qira-ci-evidence-sample-pass",
+  "packet_id": "qira-generated-packet-b2c431e4123b",
+  "source": "github_actions",
+  "workflow_name": "QIRA local release gate",
+  "job_name": "qira-dry-run",
+  "commit_sha": "local-fixture",
+  "branch": "sample",
+  "checks": [
+    {
+      "schema": "QIRA_CiCheckResult/v0.1",
+      "name": "qira5 targeted pytest",
+      "command": "python -m pytest tests/test_qira_packet_generator.py tests/test_qira_pr_packet_cli.py",
+      "status": "pass",
+      "exit_code": 0,
+      "summary": "Targeted QIRA-5 tests passed in CI fixture metadata.",
+      "duration_seconds": null,
+      "artifact_refs": [],
+      "log_excerpt": ""
+    }
+  ],
+  "declared_claims": [
+    "Scoped CI evidence accepted for local QIRA review only."
+  ],
+  "evidence_summary": "Repository-owned CI fixture reports local QIRA-5 packet generator tests passed.",
+  "submitted_at": "2026-05-24T04:59:22.085791+00:00",
+  "external_actions_performed_by_qira": false,
+  "commands_executed_by_qira": false,
+  "github_api_used_by_qira": false,
+  "token_printed": false
+}

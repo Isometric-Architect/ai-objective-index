@@ -31,6 +31,8 @@ QIRA-4 adds a reusable GitHub Action dry-run wrapper under `.github/actions/qira
 
 QIRA-5 adds a local PR diff/changed-file packet generator. It turns repository-supplied diff text or changed-file metadata into a conservative QIRA task packet and optional QIRA-3 review output without calling GitHub APIs, running `git`, applying patches, executing tests, deploying code, handling tokens, or publishing anything.
 
+QIRA-6 adds CI evidence intake. It accepts repository-supplied CI result metadata, validates the recorded commands and statuses, and can close the local test-evidence gap for scoped QIRA review without QIRA running tests, calling GitHub APIs, inspecting live CI, merging, deploying, handling tokens, or authorizing production actions.
+
 ## Quick Example
 
 Example objective request:

@@ -11,6 +11,7 @@ from .real_pypi_upload_gate import _repo_root
 
 OUTPUT_PATH = Path("public_launch") / "agentsec1" / "AGENTSEC_CLAIM_BOUNDARY_AUDIT.json"
 AGENTSEC2_OUTPUT_PATH = Path("public_launch") / "agentsec2" / "AGENTSEC_CLAIM_BOUNDARY_AUDIT.json"
+AGENTSEC3_OUTPUT_PATH = Path("public_launch") / "agentsec3" / "AGENTSEC_CLAIM_BOUNDARY_AUDIT.json"
 SCAN_PATHS = [
     Path("docs") / "agentsec_gate_plan.md",
     Path("docs") / "agentsec1_tool_risk_packet.md",
@@ -18,8 +19,13 @@ SCAN_PATHS = [
     Path("docs") / "agentsec_limitations.md",
     Path("docs") / "agentsec2_policy_gate.md",
     Path("docs") / "agentsec_policy_profiles.md",
+    Path("docs") / "agentsec3_ci_artifact_bridge.md",
+    Path("docs") / "agentsec_github_ci_bridge_limitations.md",
+    Path(".github") / "actions" / "agentsec-policy-gate-artifact" / "action.yml",
+    Path("examples") / "agentsec_policy_gate_artifact_workflow.yml",
     Path("public_launch") / "agentsec1",
     Path("public_launch") / "agentsec2",
+    Path("public_launch") / "agentsec3",
 ]
 
 RISKY_PATTERNS = [
@@ -114,6 +120,7 @@ def run_agentsec_claim_audit(write_result: bool = True) -> dict[str, Any]:
     if write_result:
         _write_json(OUTPUT_PATH, result)
         _write_json(AGENTSEC2_OUTPUT_PATH, result)
+        _write_json(AGENTSEC3_OUTPUT_PATH, result)
     return result
 
 

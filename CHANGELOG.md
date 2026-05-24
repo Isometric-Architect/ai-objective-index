@@ -1,5 +1,11 @@
 # Changelog
 
+## AgentSec-3
+
+- Added an opt-in CI artifact bridge for repository-supplied MCP/tool manifests.
+- Added a reusable composite action, inactive example workflow, bridge result model, action manifest audit, docs, sample outputs, and tests.
+- Preserved boundaries: no active workflow by default, no live MCP call, no external tool execution, no URL fetch, no GitHub API call, no PR comment, no token handling, no public private-kernel details, no security certification, no quality guarantee, no product-readiness claim, and no action authorization.
+
 ## AgentSec-2
 
 - Added local multi-manifest intake and policy-profile gate for AgentSec MCP/tool metadata review.

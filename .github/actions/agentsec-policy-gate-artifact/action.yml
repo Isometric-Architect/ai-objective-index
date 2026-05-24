@@ -1,0 +1,24 @@
+name: AgentSec Policy Gate Artifact
+description: Convert repository-supplied MCP/tool manifests into AgentSec local policy-gate artifacts.
+inputs:
+  manifest-set:
+    description: Path to a JSON manifest, JSON list, or directory of JSON MCP/tool manifests.
+    required: true
+  output-dir:
+    description: Directory for AgentSec bridge artifacts.
+    required: false
+    default: public_launch/agentsec3
+  profile:
+    description: Public-safe policy profile: developer_default or strict_enterprise.
+    required: false
+    default: developer_default
+runs:
+  using: composite
+  steps:
+    - name: Build AgentSec policy-gate artifacts
+      shell: bash
+      run: |
+        python -m ai_objective_index.agentsec.ci_artifact_bridge \
+          --manifest-set "${{ inputs.manifest-set }}" \
+          --output-dir "${{ inputs.output-dir }}" \
+          --profile "${{ inputs.profile }}"

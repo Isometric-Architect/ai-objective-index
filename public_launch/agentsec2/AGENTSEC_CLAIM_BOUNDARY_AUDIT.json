@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T08:27:59.856405+00:00",
+  "generated_at": "2026-05-24T08:35:38.124290+00:00",
   "decision": "PASS_AGENTSEC_CLAIM_BOUNDARY",
   "risky_phrase_count": 0,
   "findings": [],

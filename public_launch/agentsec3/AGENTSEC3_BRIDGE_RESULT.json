@@ -1,0 +1,26 @@
+{
+  "schema": "AgentSec_CiArtifactBridgeResult/v0.1",
+  "decision": "BLOCK_AGENTSEC3_POLICY_RISK",
+  "policy_gate_decision": "BLOCK_AGENTSEC2_POLICY_RISK",
+  "manifest_set_path": "public_launch/agentsec3/AGENTSEC3_SAMPLE_MANIFEST_SET.json",
+  "policy_gate_result_path": "public_launch/agentsec3/AGENTSEC3_POLICY_GATE_RESULT.json",
+  "policy_gate_report_path": "public_launch/agentsec3/AGENTSEC3_POLICY_GATE_REPORT.md",
+  "output_dir": "public_launch/agentsec3",
+  "profile": "developer_default",
+  "workflow_auto_enabled": false,
+  "active_workflow_created": false,
+  "external_actions_performed": false,
+  "live_mcp_called": false,
+  "external_tool_executed": false,
+  "url_fetch_performed": false,
+  "github_api_used_by_agentsec": false,
+  "token_printed": false,
+  "can_certify_security": false,
+  "can_certify_quality": false,
+  "can_authorize_action": false,
+  "known_limits": [
+    "AgentSec-3 converts opt-in workflow manifest metadata into local policy-gate artifacts.",
+    "AgentSec-3 does not call live MCP servers, execute tools, fetch URLs, post comments, or call GitHub APIs.",
+    "A bridge pass is not verification, security certification, quality guarantee, product readiness, or action authorization."
+  ]
+}

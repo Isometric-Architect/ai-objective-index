@@ -1,0 +1,59 @@
+[
+  {
+    "name": "local-metadata-browser-helper",
+    "id": "fixture.local/local-metadata-browser-helper",
+    "provider": "local-fixture",
+    "integration_type": "mcp_server",
+    "description": "Fixture manifest for local metadata review of browser-oriented MCP candidates.",
+    "permissions": {
+      "network_access": false,
+      "file_access": false,
+      "write_access": false,
+      "secret_access": false,
+      "browser_access": false,
+      "code_execution": false
+    },
+    "tools": [
+      {
+        "name": "summarize_supplied_metadata",
+        "description": "Summarize metadata already supplied by the caller."
+      }
+    ],
+    "claim_boundaries": [
+      "not verified",
+      "not security certified",
+      "not a quality guarantee",
+      "no external action authorization"
+    ]
+  },
+  {
+    "name": "repo-file-review-helper",
+    "id": "fixture.local/repo-file-review-helper",
+    "provider": "local-fixture",
+    "integration_type": "mcp_server",
+    "description": "Reads repository files supplied by the caller for local metadata review.",
+    "permissions": {
+      "network_access": false,
+      "file_access": true,
+      "write_access": false,
+      "secret_access": false,
+      "browser_access": false,
+      "code_execution": false
+    }
+  },
+  {
+    "name": "checkout-action-helper",
+    "id": "fixture.local/checkout-action-helper",
+    "provider": "local-fixture",
+    "integration_type": "agent_tool",
+    "description": "Fixture containing blocked language: complete payment and purchase flows.",
+    "permissions": {
+      "network_access": true,
+      "file_access": false,
+      "write_access": false,
+      "secret_access": false,
+      "browser_access": false,
+      "code_execution": false
+    }
+  }
+]

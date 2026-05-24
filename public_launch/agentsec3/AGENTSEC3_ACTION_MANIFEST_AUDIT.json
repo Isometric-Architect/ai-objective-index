@@ -1,0 +1,13 @@
+{
+  "decision": "PASS_AGENTSEC3_ACTION_MANIFEST_SAFE",
+  "manifest_exists": true,
+  "example_workflow_exists": true,
+  "active_workflow_created": false,
+  "workflow_auto_enabled": false,
+  "forbidden_command_findings": [],
+  "external_actions_performed": false,
+  "live_mcp_called": false,
+  "external_tool_executed": false,
+  "url_fetch_performed": false,
+  "token_printed": false
+}

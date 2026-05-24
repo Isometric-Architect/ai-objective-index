@@ -41,6 +41,8 @@ AgentSec-1 starts the second ResidualOps vertical: a local/offline MCP/tool mani
 
 AgentSec-2 adds local multi-manifest intake and public-safe policy profiles. It can summarize ALLOW metadata-only, HOLD review-required, and BLOCK policy-risk decisions across a supplied manifest set, while keeping exact private thresholds, provider priors, anti-gaming rules, private negative controls, and commercial routing policy non-public.
 
+AgentSec-3 adds an opt-in CI artifact bridge. It provides a reusable composite action and inactive example workflow that convert repository-supplied MCP/tool manifests into AgentSec-2 policy-gate artifacts. It does not enable workflows by default, call live MCP servers, execute tools, fetch URLs, call GitHub APIs, post comments, handle tokens, certify security, guarantee quality, or authorize actions.
+
 ## Quick Example
 
 Example objective request:

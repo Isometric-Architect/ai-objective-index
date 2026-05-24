@@ -1,0 +1,334 @@
+{
+  "schema": "AgentSec_PolicyGateResult/v0.1",
+  "gate_id": "agentsec2-gate-81dcc4d934f4",
+  "decision": "BLOCK_AGENTSEC2_POLICY_RISK",
+  "profile": {
+    "schema": "AgentSec_PolicyProfile/v0.1",
+    "profile_id": "agentsec-developer-default",
+    "name": "AgentSec developer default local metadata policy",
+    "mode": "developer_default",
+    "require_namespace": true,
+    "hold_on_network_access": true,
+    "hold_on_file_access": true,
+    "hold_on_write_access": true,
+    "hold_on_secret_access": true,
+    "hold_on_browser_access": true,
+    "hold_on_code_execution": true,
+    "hold_on_hidden_instruction": true,
+    "block_on_forbidden_action": true,
+    "block_on_unsupported_claim": true,
+    "local_only": true,
+    "no_network": true,
+    "no_live_mcp_call": true,
+    "no_external_tool_execution": true,
+    "no_action_authorization": true,
+    "public_weight_details_exposed": false,
+    "must_not_claim": [
+      "do not claim verified tool status",
+      "do not claim safety",
+      "do not claim security certification",
+      "do not claim quality guarantee",
+      "do not claim production readiness",
+      "do not claim external action authorization",
+      "do not claim legal compliance"
+    ]
+  },
+  "manifest_set_path": "public_launch/agentsec3/AGENTSEC3_SAMPLE_MANIFEST_SET.json",
+  "packet_count": 3,
+  "allow_count": 1,
+  "hold_count": 1,
+  "block_count": 1,
+  "policy_hold_reasons": [
+    "fixture.local/checkout-action-helper: policy holds network_access",
+    "fixture.local/repo-file-review-helper: policy holds file_access"
+  ],
+  "policy_block_reasons": [
+    "fixture.local/checkout-action-helper: forbidden action language"
+  ],
+  "packets": [
+    {
+      "schema": "AgentSec_ToolRiskPacket/v0.1",
+      "packet_id": "agentsec-risk-dce63c511d55",
+      "tool_id": "fixture.local/local-metadata-browser-helper",
+      "name": "local-metadata-browser-helper",
+      "provider": "local-fixture",
+      "manifest_path": "public_launch/agentsec3/AGENTSEC3_SAMPLE_MANIFEST_SET.json#0",
+      "metadata_hash": "2254c787325d2e836878ac2599cc9e94db3c832f4c148786b8a3e5bd0e27b29f",
+      "integration_type": "mcp_server",
+      "permission_scope": {
+        "network_access": false,
+        "file_access": false,
+        "write_access": false,
+        "secret_access": false,
+        "browser_access": false,
+        "code_execution": false,
+        "raw_indicators": []
+      },
+      "hidden_instruction_findings": [],
+      "prompt_injection_findings": [],
+      "namespace_findings": [],
+      "forbidden_action_findings": [],
+      "unsupported_claim_findings": [],
+      "risk_decision": "ALLOW_METADATA_ONLY",
+      "allowed_use": [
+        "local metadata review"
+      ],
+      "hold_use": [],
+      "blocked_use": [],
+      "residual_notes": [
+        "metadata-only scan found no blocking indicators; this is still not verification"
+      ],
+      "claim_ceiling": "local metadata risk packet only; not verification or security certification",
+      "must_not_claim": [
+        "do not claim verified tool status",
+        "do not claim safety",
+        "do not claim security certification",
+        "do not claim quality guarantee",
+        "do not claim production readiness",
+        "do not claim external action authorization",
+        "do not claim legal compliance"
+      ],
+      "generated_at": "2026-05-24T08:35:38.012941+00:00"
+    },
+    {
+      "schema": "AgentSec_ToolRiskPacket/v0.1",
+      "packet_id": "agentsec-risk-30421eec9c4a",
+      "tool_id": "fixture.local/repo-file-review-helper",
+      "name": "repo-file-review-helper",
+      "provider": "local-fixture",
+      "manifest_path": "public_launch/agentsec3/AGENTSEC3_SAMPLE_MANIFEST_SET.json#1",
+      "metadata_hash": "17d98e3a399502657c664f346e67a130f1ac3b014ca76584c95ea7bb80213a43",
+      "integration_type": "mcp_server",
+      "permission_scope": {
+        "network_access": false,
+        "file_access": true,
+        "write_access": false,
+        "secret_access": false,
+        "browser_access": false,
+        "code_execution": false,
+        "raw_indicators": [
+          "file_access: id: fixture.local/repo-file-review-helper",
+          "file_access: name: repo-file-review-helper"
+        ]
+      },
+      "hidden_instruction_findings": [],
+      "prompt_injection_findings": [],
+      "namespace_findings": [],
+      "forbidden_action_findings": [],
+      "unsupported_claim_findings": [],
+      "risk_decision": "HOLD_REVIEW_REQUIRED",
+      "allowed_use": [
+        "local metadata review"
+      ],
+      "hold_use": [
+        "agent tool routing until permissions, ownership, and instruction boundaries are reviewed"
+      ],
+      "blocked_use": [],
+      "residual_notes": [
+        "fixture.local/repo-file-review-helper: policy holds file_access",
+        "permission indicators require human review before any live execution path"
+      ],
+      "claim_ceiling": "local metadata risk packet only; not verification or security certification",
+      "must_not_claim": [
+        "do not claim verified tool status",
+        "do not claim safety",
+        "do not claim security certification",
+        "do not claim quality guarantee",
+        "do not claim production readiness",
+        "do not claim external action authorization",
+        "do not claim legal compliance"
+      ],
+      "generated_at": "2026-05-24T08:35:38.013673+00:00"
+    },
+    {
+      "schema": "AgentSec_ToolRiskPacket/v0.1",
+      "packet_id": "agentsec-risk-bf69af226e2a",
+      "tool_id": "fixture.local/checkout-action-helper",
+      "name": "checkout-action-helper",
+      "provider": "local-fixture",
+      "manifest_path": "public_launch/agentsec3/AGENTSEC3_SAMPLE_MANIFEST_SET.json#2",
+      "metadata_hash": "d900281d8411304d2db6542d4142f9a71285643af24991079be1b382922beeb3",
+      "integration_type": "agent_tool",
+      "permission_scope": {
+        "network_access": true,
+        "file_access": false,
+        "write_access": false,
+        "secret_access": false,
+        "browser_access": false,
+        "code_execution": false,
+        "raw_indicators": []
+      },
+      "hidden_instruction_findings": [],
+      "prompt_injection_findings": [],
+      "namespace_findings": [],
+      "forbidden_action_findings": [
+        "description: Fixture containing blocked language: complete payment and purchase flows."
+      ],
+      "unsupported_claim_findings": [],
+      "risk_decision": "BLOCK_FORBIDDEN_ACTION",
+      "allowed_use": [
+        "local metadata review"
+      ],
+      "hold_use": [],
+      "blocked_use": [
+        "agent routing under this policy until blocked language is removed or separately justified",
+        "tool use under requested scope because forbidden real-world action language was detected"
+      ],
+      "residual_notes": [
+        "fixture.local/checkout-action-helper: forbidden action language",
+        "fixture.local/checkout-action-helper: policy holds network_access",
+        "metadata-only scan found no blocking indicators; this is still not verification"
+      ],
+      "claim_ceiling": "local metadata risk packet only; not verification or security certification",
+      "must_not_claim": [
+        "do not claim verified tool status",
+        "do not claim safety",
+        "do not claim security certification",
+        "do not claim quality guarantee",
+        "do not claim production readiness",
+        "do not claim external action authorization",
+        "do not claim legal compliance"
+      ],
+      "generated_at": "2026-05-24T08:35:38.014409+00:00"
+    }
+  ],
+  "receipts": [
+    {
+      "schema": "AgentSec_ActionBoundaryReceipt/v0.1",
+      "receipt_id": "agentsec-receipt-dce63c511d55",
+      "packet_id": "agentsec-risk-dce63c511d55",
+      "decision": "ALLOW_METADATA_ONLY",
+      "allowed_actions": [
+        "local metadata review"
+      ],
+      "hold_actions": [],
+      "blocked_actions": [
+        "account connection",
+        "booking",
+        "contract signing",
+        "email sending",
+        "login",
+        "payment",
+        "purchase"
+      ],
+      "no_network": true,
+      "no_live_mcp_call": true,
+      "no_external_tool_execution": true,
+      "can_certify_security": false,
+      "can_certify_quality": false,
+      "can_authorize_action": false,
+      "must_not_claim": [
+        "do not claim verified tool status",
+        "do not claim safety",
+        "do not claim security certification",
+        "do not claim quality guarantee",
+        "do not claim production readiness",
+        "do not claim external action authorization",
+        "do not claim legal compliance"
+      ],
+      "generated_at": "2026-05-24T08:35:38.014609+00:00"
+    },
+    {
+      "schema": "AgentSec_ActionBoundaryReceipt/v0.1",
+      "receipt_id": "agentsec-receipt-30421eec9c4a",
+      "packet_id": "agentsec-risk-30421eec9c4a",
+      "decision": "HOLD_REVIEW_REQUIRED",
+      "allowed_actions": [
+        "local metadata review"
+      ],
+      "hold_actions": [
+        "live tool execution"
+      ],
+      "blocked_actions": [
+        "account connection",
+        "booking",
+        "contract signing",
+        "email sending",
+        "login",
+        "payment",
+        "purchase"
+      ],
+      "no_network": true,
+      "no_live_mcp_call": true,
+      "no_external_tool_execution": true,
+      "can_certify_security": false,
+      "can_certify_quality": false,
+      "can_authorize_action": false,
+      "must_not_claim": [
+        "do not claim verified tool status",
+        "do not claim safety",
+        "do not claim security certification",
+        "do not claim quality guarantee",
+        "do not claim production readiness",
+        "do not claim external action authorization",
+        "do not claim legal compliance"
+      ],
+      "generated_at": "2026-05-24T08:35:38.014629+00:00"
+    },
+    {
+      "schema": "AgentSec_ActionBoundaryReceipt/v0.1",
+      "receipt_id": "agentsec-receipt-bf69af226e2a",
+      "packet_id": "agentsec-risk-bf69af226e2a",
+      "decision": "BLOCK_FORBIDDEN_ACTION",
+      "allowed_actions": [
+        "local metadata review"
+      ],
+      "hold_actions": [],
+      "blocked_actions": [
+        "account connection",
+        "agent delegation",
+        "booking",
+        "contract signing",
+        "email sending",
+        "external action",
+        "live tool execution",
+        "login",
+        "payment",
+        "purchase"
+      ],
+      "no_network": true,
+      "no_live_mcp_call": true,
+      "no_external_tool_execution": true,
+      "can_certify_security": false,
+      "can_certify_quality": false,
+      "can_authorize_action": false,
+      "must_not_claim": [
+        "do not claim verified tool status",
+        "do not claim safety",
+        "do not claim security certification",
+        "do not claim quality guarantee",
+        "do not claim production readiness",
+        "do not claim external action authorization",
+        "do not claim legal compliance"
+      ],
+      "generated_at": "2026-05-24T08:35:38.014651+00:00"
+    }
+  ],
+  "local_only": true,
+  "network_used": false,
+  "live_mcp_called": false,
+  "external_tool_executed": false,
+  "token_printed": false,
+  "can_certify_security": false,
+  "can_certify_quality": false,
+  "can_authorize_action": false,
+  "known_limits": [
+    "local metadata policy gate only",
+    "no live MCP call",
+    "no external tool execution",
+    "no URL fetch",
+    "not verification",
+    "not security certification",
+    "not action authorization"
+  ],
+  "must_not_claim": [
+    "do not claim verified tool status",
+    "do not claim safety",
+    "do not claim security certification",
+    "do not claim quality guarantee",
+    "do not claim production readiness",
+    "do not claim external action authorization",
+    "do not claim legal compliance"
+  ],
+  "generated_at": "2026-05-24T08:35:38.014678+00:00"
+}

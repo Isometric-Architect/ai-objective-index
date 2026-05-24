@@ -12,6 +12,7 @@ UseDecision = Literal[
     "HOLD_SOURCE_RIGHTS_REVIEW",
     "HOLD_PRIVACY_REVIEW",
     "HOLD_EVAL_LEAK_REVIEW",
+    "HOLD_PROMPT_INJECTION_REVIEW",
     "HOLD_STALENESS_REVIEW",
     "BLOCK_ACTION_USE",
     "BLOCK_LICENSE_RESTRICTED",
@@ -22,7 +23,11 @@ CapsuleDecision = Literal[
     "PASS_DATACAPSULE1_LOCAL_CAPSULE",
     "HOLD_DATACAPSULE1_REVIEW_REQUIRED",
     "BLOCK_DATACAPSULE1_USE_RISK",
+    "PASS_DATACAPSULE2_LOCAL_CORPUS_MANIFEST",
+    "HOLD_DATACAPSULE2_REVIEW_REQUIRED",
+    "BLOCK_DATACAPSULE2_USE_RISK",
 ]
+NegativeControlResult = Literal["PASS_NEGATIVE_CONTROL", "FAIL_NEGATIVE_CONTROL"]
 
 
 DEFAULT_MUST_NOT_CLAIM = [
@@ -118,6 +123,73 @@ class DataCapsuleBuildResult(BaseModel):
     hold_count: int
     block_count: int
     capsule: DataCapsule
+    local_only: bool = True
+    network_used: bool = False
+    crawler_used: bool = False
+    external_service_used: bool = False
+    token_printed: bool = False
+    can_certify_rights: bool = False
+    can_certify_privacy: bool = False
+    can_certify_quality: bool = False
+    can_authorize_action: bool = False
+    known_limits: list[str] = Field(default_factory=list)
+    must_not_claim: list[str] = Field(default_factory=lambda: list(DEFAULT_MUST_NOT_CLAIM))
+    generated_at: str = Field(default_factory=timestamp)
+
+
+class CorpusManifestFile(BaseModel):
+    model_config = ConfigDict(extra="allow", populate_by_name=True)
+
+    path: str
+    source: str = ""
+    license: str = "unknown"
+    purpose: list[str] = Field(default_factory=list)
+    privacy_level: str = "unknown"
+    risk_flags: RiskFlags = Field(default_factory=RiskFlags)
+
+
+class CorpusManifestSummary(BaseModel):
+    model_config = ConfigDict(extra="allow", populate_by_name=True)
+
+    corpus_id: str
+    name: str
+    root_path: str = ""
+    file_count: int
+    source_record_count: int
+    license_values: list[str] = Field(default_factory=list)
+    privacy_levels: list[str] = Field(default_factory=list)
+    risk_flags: RiskFlags = Field(default_factory=RiskFlags)
+    missing_fields: list[str] = Field(default_factory=list)
+    local_only: bool = True
+    network_used: bool = False
+    crawler_used: bool = False
+    external_service_used: bool = False
+
+
+class DataCapsuleNegativeControl(BaseModel):
+    model_config = ConfigDict(extra="allow", populate_by_name=True)
+
+    control_id: str
+    control_goal: str
+    expected_decision: str
+    actual_decision: str
+    result: NegativeControlResult
+    findings: list[str] = Field(default_factory=list)
+
+
+class DataCapsuleCorpusBuildResult(BaseModel):
+    model_config = ConfigDict(extra="allow", populate_by_name=True)
+
+    schema_id: str = Field(default="DataCapsule_CorpusBuildResult/v0.1", alias="schema")
+    result_id: str
+    decision: CapsuleDecision
+    manifest_path: str
+    capsule_path: str
+    report_path: str
+    summary: CorpusManifestSummary
+    capsule: DataCapsule
+    negative_controls: list[DataCapsuleNegativeControl] = Field(default_factory=list)
+    negative_control_false_pass_count: int = 0
     local_only: bool = True
     network_used: bool = False
     crawler_used: bool = False

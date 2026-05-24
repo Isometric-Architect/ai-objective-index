@@ -200,6 +200,14 @@ def _use_boundary(use_class: UseClass, payload: dict[str, Any], risks: RiskFlags
             reasons=["source record is missing"],
             evidence_required=["source record"],
         )
+    if risks.prompt_injection and use_class in {"retrieve", "summarize"}:
+        return DataUseBoundary(
+            use_class=use_class,
+            decision="HOLD_PROMPT_INJECTION_REVIEW",
+            allowed=False,
+            reasons=["prompt-injection risk flag present for retrieval or summarization use"],
+            evidence_required=["local prompt-injection review and separation notes"],
+        )
     if risks.eval_leak and use_class == "evaluate":
         return DataUseBoundary(
             use_class=use_class,

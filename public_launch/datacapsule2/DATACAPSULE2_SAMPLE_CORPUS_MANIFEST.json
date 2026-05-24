@@ -1,0 +1,54 @@
+{
+  "corpus_id": "fixture.local/aoi-docs-corpus-manifest",
+  "name": "AOI local docs corpus manifest fixture",
+  "root_path": "docs/",
+  "source": "repository-local-manifest",
+  "allowed_use": {
+    "train": false,
+    "retrieve": true,
+    "evaluate": false,
+    "summarize": true,
+    "share": false,
+    "act": false
+  },
+  "files": [
+    {
+      "path": "docs/mcp_usage.md",
+      "source": "repository-local-doc",
+      "license": "MIT",
+      "privacy_level": "public_metadata",
+      "purpose": [
+        "retrieve",
+        "summarize"
+      ]
+    },
+    {
+      "path": "docs/api_reference.md",
+      "source": "repository-local-doc",
+      "license": "MIT",
+      "privacy_level": "public_metadata",
+      "purpose": [
+        "retrieve",
+        "summarize"
+      ]
+    },
+    {
+      "path": "docs/launch_notes.md",
+      "source": "repository-local-doc",
+      "license": "MIT",
+      "privacy_level": "public_metadata",
+      "purpose": [
+        "retrieve"
+      ],
+      "risk_flags": {
+        "stale": true
+      }
+    }
+  ],
+  "claim_boundaries": [
+    "not legal sufficiency",
+    "not privacy compliance",
+    "not data quality guarantee",
+    "no action authorization"
+  ]
+}

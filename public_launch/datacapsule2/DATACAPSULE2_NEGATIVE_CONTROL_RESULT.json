@@ -1,0 +1,45 @@
+{
+  "negative_controls": [
+    {
+      "control_id": "unsupported_claim_blocks",
+      "control_goal": "Unsupported legal/privacy/eval-clean claims must block use decisions.",
+      "expected_decision": "BLOCK_UNSUPPORTED_CLAIM",
+      "actual_decision": "BLOCK_UNSUPPORTED_CLAIM",
+      "result": "PASS_NEGATIVE_CONTROL",
+      "findings": [
+        "description: This corpus is [redacted unsupported claim] and [redacted unsupported claim]."
+      ]
+    },
+    {
+      "control_id": "no_source_holds",
+      "control_goal": "Missing source records must not pass as source-reviewed data.",
+      "expected_decision": "HOLD_SOURCE_RIGHTS_REVIEW",
+      "actual_decision": "HOLD_SOURCE_RIGHTS_REVIEW",
+      "result": "PASS_NEGATIVE_CONTROL",
+      "findings": [
+        "source records missing"
+      ]
+    },
+    {
+      "control_id": "prompt_injection_holds",
+      "control_goal": "Prompt-injection risk in local metadata must hold retrieval use.",
+      "expected_decision": "HOLD_PROMPT_INJECTION_REVIEW",
+      "actual_decision": "HOLD_PROMPT_INJECTION_REVIEW",
+      "result": "PASS_NEGATIVE_CONTROL",
+      "findings": [
+        "local metadata capsule built; this is still not rights, privacy, or quality certification"
+      ]
+    },
+    {
+      "control_id": "action_use_blocks",
+      "control_goal": "DataCapsule metadata must never authorize external actions.",
+      "expected_decision": "BLOCK_ACTION_USE",
+      "actual_decision": "BLOCK_ACTION_USE",
+      "result": "PASS_NEGATIVE_CONTROL",
+      "findings": [
+        "local metadata capsule built; this is still not rights, privacy, or quality certification"
+      ]
+    }
+  ],
+  "false_pass_count": 0
+}

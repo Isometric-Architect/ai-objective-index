@@ -45,6 +45,8 @@ AgentSec-3 adds an opt-in CI artifact bridge. It provides a reusable composite a
 
 DataCapsule-1 starts the third ResidualOps vertical: local data-use capsules for repository-supplied dataset or corpus metadata. It separates `train`, `retrieve`, `evaluate`, `summarize`, `share`, and `act` use boundaries under source, rights, privacy, eval-leak, stale-data, and claim-ceiling limits. It does not crawl, fetch URLs, inspect private data, call external services, certify legal sufficiency, certify privacy compliance, guarantee data quality, clear licenses, prove evaluation cleanliness, or authorize actions.
 
+DataCapsule-2 adds local corpus manifest intake and negative controls. It aggregates repository-supplied file metadata into a corpus-level DataCapsule, checks known-bad local fixtures, and records false-pass counts without crawling directories, reading private file contents, fetching URLs, calling external services, proving rights/privacy/data quality/eval cleanliness, or authorizing actions.
+
 ## Quick Example
 
 Example objective request:

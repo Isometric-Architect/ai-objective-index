@@ -1,5 +1,11 @@
 # Changelog
 
+## DataCapsule-2
+
+- Added local corpus manifest intake that aggregates repository-supplied file metadata into a corpus-level DataCapsule.
+- Added DataCapsule negative controls for unsupported claims, missing source records, prompt-injection risk flags, and action-use blocking.
+- Added DataCapsule-2 docs, public sample outputs, and tests while preserving no-crawl, no-fetch, no-private-data-inspection, no-certification, and no-action-authorization boundaries.
+
 ## DataCapsule-1
 
 - Added a local metadata DataCapsule MVP for dataset/corpus use-boundary decisions.

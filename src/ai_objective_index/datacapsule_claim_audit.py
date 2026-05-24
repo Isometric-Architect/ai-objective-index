@@ -13,9 +13,11 @@ OUTPUT_PATH = Path("public_launch") / "datacapsule1" / "DATACAPSULE_CLAIM_BOUNDA
 SCAN_PATHS = [
     Path("docs") / "datacapsule_engine_plan.md",
     Path("docs") / "datacapsule1_local_capsule.md",
+    Path("docs") / "datacapsule2_corpus_manifest.md",
     Path("docs") / "datacapsule_use_rights.md",
     Path("docs") / "datacapsule_limitations.md",
     Path("public_launch") / "datacapsule1",
+    Path("public_launch") / "datacapsule2",
 ]
 
 RISKY_PATTERNS = [

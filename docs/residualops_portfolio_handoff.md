@@ -14,8 +14,8 @@ Use the ROE-3 release kit to decide which vertical to advance next. It is meant 
 
 The likely next paths are:
 
-- ROE-4 public/private distribution split
-- Portfolio-level opt-in workflow distribution runbook
+- ROE-5 portfolio onboarding kit
+- first external repository pilot with exactly one manually enabled workflow
 
 ## Private Material
 

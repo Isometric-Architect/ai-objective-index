@@ -1,5 +1,11 @@
 # Changelog
 
+## ROE-4
+
+- Added a ResidualOps public/private distribution split gate over QIRA-9, AgentSec-8, and DataCapsule-7.
+- Added a portfolio distribution matrix, opt-in workflow distribution runbook, claim-boundary audit, artifact manifest, docs, public outputs, and tests.
+- Preserved boundaries: no active workflow enablement, no GitHub API calls, no comment posting, no crawling, no live MCP calls, no external tool execution, no package upload, no registry submission, no token handling, no private-kernel exposure, and no certification/readiness/legal/privacy/license/eval-clean/purchasing/action-authorization claim.
+
 ## DataCapsule-7
 
 - Added an opt-in workflow artifact template for generating DataCapsule local corpus review artifacts from repository-supplied manifests.

@@ -75,6 +75,8 @@ ROE-2 adds a shared artifact manifest and local dashboard skeleton across QIRA, 
 
 ROE-3 adds a unified ResidualOps portfolio release kit across QIRA-8, AgentSec-7, and DataCapsule-6. It produces local release notes, a public vertical index, an operator handoff, and a release artifact manifest without enabling workflows, calling GitHub APIs, posting comments, crawling, calling live MCP servers, executing tools, uploading packages, submitting registry metadata, exposing private kernels, certifying security, guaranteeing quality, proving product readiness, proving legal/privacy/license/evaluation status, or authorizing actions.
 
+ROE-4 aligns the public/private distribution split across QIRA-9, AgentSec-8, and DataCapsule-7. It treats opt-in workflow artifact examples as public-safe distribution surfaces while keeping exact weights, thresholds, provider priors, anti-gaming rules, private negative controls, private probe seeds, receipt weighting, and commercial routing policy non-public. It does not enable workflows, call GitHub APIs, post comments, execute tools, submit registries, handle tokens, certify security, guarantee quality, prove readiness, or authorize actions.
+
 ## Quick Example
 
 Example objective request:

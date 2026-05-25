@@ -1,0 +1,54 @@
+{
+  "schema": "ResidualOps_ROE4ArtifactManifest/v0.1",
+  "generated_at": "2026-05-25T05:35:49.083418+00:00",
+  "decision": "PASS_ROE4_ARTIFACT_MANIFEST",
+  "artifacts": [
+    {
+      "path": "public_launch/roe4/ROE4_DISTRIBUTION_SPLIT_GATE.json",
+      "role": "roe4_output",
+      "exists": true,
+      "size_bytes": 1759,
+      "sha256": "417696af9cb86fe194f8374738c776d74cac183c262aad2953e59d260cbc5d9d"
+    },
+    {
+      "path": "public_launch/roe4/ROE4_PUBLIC_PRIVATE_DISTRIBUTION_MATRIX.json",
+      "role": "roe4_output",
+      "exists": true,
+      "size_bytes": 8878,
+      "sha256": "cca9181d1854192f36c6fe405b3010dd8e648e32b1f24c2cdd703160f22fee29"
+    },
+    {
+      "path": "public_launch/roe4/ROE4_OPT_IN_WORKFLOW_DISTRIBUTION_RUNBOOK.md",
+      "role": "roe4_output",
+      "exists": true,
+      "size_bytes": 1986,
+      "sha256": "55475a9adc984a27ebe188a7dd075ed3d4601a43cab56a17612aa435573a5df8"
+    },
+    {
+      "path": "public_launch/roe4/ROE4_PORTFOLIO_DISTRIBUTION_SUMMARY.md",
+      "role": "roe4_output",
+      "exists": true,
+      "size_bytes": 835,
+      "sha256": "d36bd3c30fd845dfb117a05e351be86bd470b917a11a46dd5dbc3fc5b23eb622"
+    },
+    {
+      "path": "public_launch/roe4/ROE4_CLAIM_BOUNDARY_AUDIT.json",
+      "role": "roe4_output",
+      "exists": true,
+      "size_bytes": 388,
+      "sha256": "b9e7dcd0b294e48d0afaced118de941433431e7dba6b9760ea3d1f8076aa9daf"
+    },
+    {
+      "path": "public_launch/roe4/ROE4_NEXT_STEPS.md",
+      "role": "roe4_output",
+      "exists": true,
+      "size_bytes": 318,
+      "sha256": "c6fad1028c2a8afb6f5deaa406ef405a50dda31d721d0c0ca1ed3dd9267a758e"
+    }
+  ],
+  "missing_artifacts": [],
+  "external_actions_performed": false,
+  "workflow_enabled": false,
+  "network_used": false,
+  "token_printed": false
+}

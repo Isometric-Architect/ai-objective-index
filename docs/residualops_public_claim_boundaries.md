@@ -15,6 +15,8 @@ They must stay conservative.
 - false-pass count
 - opt-in workflow artifact
 - human review handoff
+- opt-in workflow distribution runbook
+- public/private distribution matrix
 
 ## Forbidden Public Framing
 
@@ -49,3 +51,4 @@ Private:
 - private probe seeds
 - commercial routing policy
 - enterprise data strategy
+- private receipt weighting

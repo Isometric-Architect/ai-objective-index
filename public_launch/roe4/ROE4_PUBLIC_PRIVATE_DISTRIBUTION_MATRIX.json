@@ -1,0 +1,220 @@
+{
+  "schema": "ResidualOps_ROE4PublicPrivateDistributionMatrix/v0.1",
+  "generated_at": "2026-05-25T05:35:48.820325+00:00",
+  "vertical_count": 3,
+  "verticals": [
+    {
+      "vertical_id": "qira",
+      "product_name": "QIRA-Code ReleaseGate",
+      "package": "QIRA-9",
+      "public_surface": "opt-in workflow artifact template for local PR/release review",
+      "example_workflow": "examples/qira9_optional_pr_review_artifact_workflow.yml",
+      "primary_decision": "PASS_QIRA9_OPTIONAL_WORKFLOW_ARTIFACT",
+      "workflow_audit_decision": "PASS_QIRA9_OPTIONAL_WORKFLOW_SAFE",
+      "claim_audit_decision": "PASS_QIRA9_CLAIM_BOUNDARY",
+      "artifacts": [
+        {
+          "path": "examples/qira9_optional_pr_review_artifact_workflow.yml",
+          "role": "opt_in_example_workflow",
+          "exists": true,
+          "size_bytes": 1637,
+          "sha256": "d56c5fff436c75ae1e8f374154270b503e743984789fba4d462a5aff2dae90e0"
+        },
+        {
+          "path": "public_launch/qira9/QIRA9_OPTIONAL_WORKFLOW_RESULT.json",
+          "role": "optional_workflow_result",
+          "exists": true,
+          "size_bytes": 2047,
+          "sha256": "97d197b9457f1e18ab2a2d641969601b569cd506e3bed2518462837e0626d79c"
+        },
+        {
+          "path": "public_launch/qira9/QIRA9_WORKFLOW_AUDIT.json",
+          "role": "workflow_audit",
+          "exists": true,
+          "size_bytes": 824,
+          "sha256": "27b04e432e460475eb9038e62771bafa8b2d541f828cddf78412cc2da97f7298"
+        },
+        {
+          "path": "public_launch/qira9/QIRA9_CLAIM_BOUNDARY_AUDIT.json",
+          "role": "claim_audit",
+          "exists": true,
+          "size_bytes": 542,
+          "sha256": "1bd7b00071a09b88f81f3f5aeb881529e37da1e9b42692972325479b79626c43"
+        }
+      ],
+      "public_allowed": [
+        "schemas and artifact shapes",
+        "endpoint or workflow template shapes",
+        "high-level packet, manifest, capsule, residual, receipt, and ALLOW/HOLD/BLOCK language",
+        "public-safe fake fixtures and local negative-control summaries",
+        "claim boundaries and limitations",
+        "opt-in workflow artifact examples under examples/"
+      ],
+      "private_reserved": [
+        "exact ranking weights",
+        "threshold policy",
+        "anti-gaming rules",
+        "provider trust priors",
+        "private negative-control banks",
+        "private probe seeds",
+        "private receipt weighting",
+        "commercial routing policy",
+        "enterprise data policy",
+        "partner-specific strategy"
+      ],
+      "operator_mode": "repository-owner opt-in only"
+    },
+    {
+      "vertical_id": "agentsec",
+      "product_name": "AgentSec Gate",
+      "package": "AgentSec-8",
+      "public_surface": "opt-in workflow artifact template for local MCP/tool manifest review",
+      "example_workflow": "examples/agentsec8_optional_pr_review_artifact_workflow.yml",
+      "primary_decision": "PASS_AGENTSEC8_OPTIONAL_WORKFLOW_ARTIFACT",
+      "workflow_audit_decision": "PASS_AGENTSEC8_OPTIONAL_WORKFLOW_SAFE",
+      "claim_audit_decision": "PASS_AGENTSEC8_CLAIM_BOUNDARY",
+      "artifacts": [
+        {
+          "path": "examples/agentsec8_optional_pr_review_artifact_workflow.yml",
+          "role": "opt_in_example_workflow",
+          "exists": true,
+          "size_bytes": 1297,
+          "sha256": "eded768edc124b7009a8c3b59836705d6f58bcfefee58b25150512a11fd95847"
+        },
+        {
+          "path": "public_launch/agentsec8/AGENTSEC8_OPTIONAL_WORKFLOW_RESULT.json",
+          "role": "optional_workflow_result",
+          "exists": true,
+          "size_bytes": 2018,
+          "sha256": "40b31a3a92b9feadd52d6111c44f330064223a19b3e84a9c19d11fda4270bf3e"
+        },
+        {
+          "path": "public_launch/agentsec8/AGENTSEC8_WORKFLOW_AUDIT.json",
+          "role": "workflow_audit",
+          "exists": true,
+          "size_bytes": 841,
+          "sha256": "a2231bc26dacd1515f38aa1aae8a990db82a73dc4d71874ca0737271882f50d7"
+        },
+        {
+          "path": "public_launch/agentsec8/AGENTSEC8_CLAIM_BOUNDARY_AUDIT.json",
+          "role": "claim_audit",
+          "exists": true,
+          "size_bytes": 538,
+          "sha256": "a0c0a89d980ecefcf8670fd39547dcbf2e0e4640d16765d3903444de44e7e0e0"
+        }
+      ],
+      "public_allowed": [
+        "schemas and artifact shapes",
+        "endpoint or workflow template shapes",
+        "high-level packet, manifest, capsule, residual, receipt, and ALLOW/HOLD/BLOCK language",
+        "public-safe fake fixtures and local negative-control summaries",
+        "claim boundaries and limitations",
+        "opt-in workflow artifact examples under examples/"
+      ],
+      "private_reserved": [
+        "exact ranking weights",
+        "threshold policy",
+        "anti-gaming rules",
+        "provider trust priors",
+        "private negative-control banks",
+        "private probe seeds",
+        "private receipt weighting",
+        "commercial routing policy",
+        "enterprise data policy",
+        "partner-specific strategy"
+      ],
+      "operator_mode": "repository-owner opt-in only"
+    },
+    {
+      "vertical_id": "datacapsule",
+      "product_name": "DataCapsule / AIDREG Engine",
+      "package": "DataCapsule-7",
+      "public_surface": "opt-in workflow artifact template for local corpus manifest review",
+      "example_workflow": "examples/datacapsule7_repository_manifest_workflow.yml",
+      "primary_decision": "PASS_DATACAPSULE7_OPTIONAL_WORKFLOW_ARTIFACT",
+      "workflow_audit_decision": "PASS_DATACAPSULE7_OPTIONAL_WORKFLOW_SAFE",
+      "claim_audit_decision": "PASS_DATACAPSULE7_CLAIM_BOUNDARY",
+      "artifacts": [
+        {
+          "path": "examples/datacapsule7_repository_manifest_workflow.yml",
+          "role": "opt_in_example_workflow",
+          "exists": true,
+          "size_bytes": 1485,
+          "sha256": "24a9de537f32b042c48656785821e74f75eecc131275f0332ae1a5b9bf58e350"
+        },
+        {
+          "path": "public_launch/datacapsule7/DATACAPSULE7_OPTIONAL_WORKFLOW_RESULT.json",
+          "role": "optional_workflow_result",
+          "exists": true,
+          "size_bytes": 2305,
+          "sha256": "88f080c78fe5d1f93b19d18b690d548f3a54fc3d5c965f2a09747c547aa1b74d"
+        },
+        {
+          "path": "public_launch/datacapsule7/DATACAPSULE7_WORKFLOW_AUDIT.json",
+          "role": "workflow_audit",
+          "exists": true,
+          "size_bytes": 979,
+          "sha256": "b0a0f142bbcffd2d1fb4b45b60b19187b3ad87b4bf8df865778e60a06f06c118"
+        },
+        {
+          "path": "public_launch/datacapsule7/DATACAPSULE7_CLAIM_BOUNDARY_AUDIT.json",
+          "role": "claim_audit",
+          "exists": true,
+          "size_bytes": 598,
+          "sha256": "e5a9fab60792ac99779b56ef7e635943f1d33c2f670c9778e82183b075509f21"
+        }
+      ],
+      "public_allowed": [
+        "schemas and artifact shapes",
+        "endpoint or workflow template shapes",
+        "high-level packet, manifest, capsule, residual, receipt, and ALLOW/HOLD/BLOCK language",
+        "public-safe fake fixtures and local negative-control summaries",
+        "claim boundaries and limitations",
+        "opt-in workflow artifact examples under examples/"
+      ],
+      "private_reserved": [
+        "exact ranking weights",
+        "threshold policy",
+        "anti-gaming rules",
+        "provider trust priors",
+        "private negative-control banks",
+        "private probe seeds",
+        "private receipt weighting",
+        "commercial routing policy",
+        "enterprise data policy",
+        "partner-specific strategy"
+      ],
+      "operator_mode": "repository-owner opt-in only"
+    }
+  ],
+  "public_allowed": [
+    "schemas and artifact shapes",
+    "endpoint or workflow template shapes",
+    "high-level packet, manifest, capsule, residual, receipt, and ALLOW/HOLD/BLOCK language",
+    "public-safe fake fixtures and local negative-control summaries",
+    "claim boundaries and limitations",
+    "opt-in workflow artifact examples under examples/"
+  ],
+  "private_reserved": [
+    "exact ranking weights",
+    "threshold policy",
+    "anti-gaming rules",
+    "provider trust priors",
+    "private negative-control banks",
+    "private probe seeds",
+    "private receipt weighting",
+    "commercial routing policy",
+    "enterprise data policy",
+    "partner-specific strategy"
+  ],
+  "active_workflow_findings": [],
+  "missing_artifacts": [],
+  "non_pass_decisions": [],
+  "unsafe_flag_findings": [],
+  "external_actions_performed": false,
+  "workflow_enabled": false,
+  "github_api_used": false,
+  "network_used": false,
+  "token_printed": false,
+  "private_kernel_exposed": false
+}

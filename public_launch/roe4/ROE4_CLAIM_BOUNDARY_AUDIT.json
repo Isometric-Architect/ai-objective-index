@@ -1,0 +1,13 @@
+{
+  "schema": "ResidualOps_ROE4ClaimBoundaryAudit/v0.1",
+  "generated_at": "2026-05-25T05:35:48.871702+00:00",
+  "decision": "PASS_ROE4_CLAIM_BOUNDARY",
+  "finding_count": 0,
+  "risky_phrase_count": 0,
+  "findings": [],
+  "external_actions_performed": false,
+  "workflow_enabled": false,
+  "network_used": false,
+  "token_printed": false,
+  "private_kernel_exposed": false
+}

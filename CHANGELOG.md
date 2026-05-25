@@ -1,5 +1,11 @@
 # Changelog
 
+## AgentSec-8
+
+- Added an opt-in workflow artifact template for generating AgentSec local review artifacts from repository-owned CI.
+- Added workflow safety audit, claim-boundary audit, artifact manifest, operator runbook, docs, public outputs, and tests.
+- Preserved boundaries: no active workflow, no automatic PR comment, no GitHub API calls by AgentSec, no live MCP calls, no external tool execution by AgentSec, no URL fetch by AgentSec, no token handling, no private-kernel exposure, and no certification/readiness/action-authorization claim.
+
 ## ROE-3
 
 - Added a unified ResidualOps portfolio release kit over QIRA-8, AgentSec-7, and DataCapsule-6.

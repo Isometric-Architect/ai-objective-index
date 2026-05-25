@@ -16,6 +16,7 @@ AGENTSEC4_OUTPUT_PATH = Path("public_launch") / "agentsec4" / "AGENTSEC_CLAIM_BO
 AGENTSEC5_OUTPUT_PATH = Path("public_launch") / "agentsec5" / "AGENTSEC_CLAIM_BOUNDARY_AUDIT.json"
 AGENTSEC6_OUTPUT_PATH = Path("public_launch") / "agentsec6" / "AGENTSEC_CLAIM_BOUNDARY_AUDIT.json"
 AGENTSEC7_OUTPUT_PATH = Path("public_launch") / "agentsec7" / "AGENTSEC_CLAIM_BOUNDARY_AUDIT.json"
+AGENTSEC8_OUTPUT_PATH = Path("public_launch") / "agentsec8" / "AGENTSEC_CLAIM_BOUNDARY_AUDIT.json"
 SCAN_PATHS = [
     Path("docs") / "agentsec_gate_plan.md",
     Path("docs") / "agentsec1_tool_risk_packet.md",
@@ -30,10 +31,14 @@ SCAN_PATHS = [
     Path("docs") / "agentsec5_manifest_fixture_corpus.md",
     Path("docs") / "agentsec6_manifest_corpus_ingestion.md",
     Path("docs") / "agentsec7_pr_artifact_bundle.md",
+    Path("docs") / "agentsec8_optional_workflow_artifact.md",
     Path("docs") / "agentsec_reviewer_report_limitations.md",
+    Path("docs") / "agentsec_workflow_opt_in_runbook.md",
+    Path("docs") / "agentsec_workflow_artifact_limitations.md",
     Path("docs") / "agentsec_negative_controls.md",
     Path(".github") / "actions" / "agentsec-policy-gate-artifact" / "action.yml",
     Path("examples") / "agentsec_policy_gate_artifact_workflow.yml",
+    Path("examples") / "agentsec8_optional_pr_review_artifact_workflow.yml",
     Path("public_launch") / "agentsec1",
     Path("public_launch") / "agentsec2",
     Path("public_launch") / "agentsec3",
@@ -41,6 +46,7 @@ SCAN_PATHS = [
     Path("public_launch") / "agentsec5",
     Path("public_launch") / "agentsec6",
     Path("public_launch") / "agentsec7",
+    Path("public_launch") / "agentsec8",
 ]
 
 RISKY_PATTERNS = [
@@ -142,6 +148,8 @@ def run_agentsec_claim_audit(write_result: bool = True) -> dict[str, Any]:
             _write_json(AGENTSEC6_OUTPUT_PATH, result)
         if (_repo_root() / Path("public_launch") / "agentsec7").exists():
             _write_json(AGENTSEC7_OUTPUT_PATH, result)
+        if (_repo_root() / Path("public_launch") / "agentsec8").exists():
+            _write_json(AGENTSEC8_OUTPUT_PATH, result)
     return result
 
 

@@ -1,0 +1,54 @@
+{
+  "schema": "AgentSec8_ArtifactManifest/v0.1",
+  "generated_at": "2026-05-25T04:13:40.820946+00:00",
+  "decision": "PASS_AGENTSEC8_ARTIFACT_MANIFEST",
+  "artifacts": [
+    {
+      "path": "examples/agentsec8_optional_pr_review_artifact_workflow.yml",
+      "role": "opt_in_example_workflow",
+      "exists": true,
+      "size_bytes": 1297,
+      "sha256": "eded768edc124b7009a8c3b59836705d6f58bcfefee58b25150512a11fd95847"
+    },
+    {
+      "path": "public_launch/agentsec8/AGENTSEC8_OPTIONAL_WORKFLOW_RESULT.json",
+      "role": "agentsec8_result",
+      "exists": true,
+      "size_bytes": 2018,
+      "sha256": "ccaf1016a68b78f19ab957e2a208799ec68fd8a96c633ce3d62e14ea12893c42"
+    },
+    {
+      "path": "public_launch/agentsec8/AGENTSEC8_WORKFLOW_AUDIT.json",
+      "role": "workflow_audit",
+      "exists": true,
+      "size_bytes": 841,
+      "sha256": "7bd118ca9c57fda9523fa3c44470334ffd3fe6b8c3c9c7ec6576fa2b47d6a597"
+    },
+    {
+      "path": "public_launch/agentsec8/AGENTSEC8_CLAIM_BOUNDARY_AUDIT.json",
+      "role": "claim_audit",
+      "exists": true,
+      "size_bytes": 538,
+      "sha256": "e0d52df392461263c209e829a673395be79bc28a4bb33c2ed609e807e79266e7"
+    },
+    {
+      "path": "public_launch/agentsec8/AGENTSEC8_OPERATOR_RUNBOOK.md",
+      "role": "operator_runbook",
+      "exists": true,
+      "size_bytes": 1036,
+      "sha256": "701f4645d774bfe3d7cc4d1dca15295dcd9e8574645af936353993eb1d29c642"
+    },
+    {
+      "path": "public_launch/agentsec8/AGENTSEC8_NEXT_STEPS.md",
+      "role": "next_steps",
+      "exists": true,
+      "size_bytes": 446,
+      "sha256": "5a2ce83f0679eca9217f46702b2ba5a90caeacafdf82005d193b9812ce48b480"
+    }
+  ],
+  "missing_artifacts": [],
+  "external_actions_performed": false,
+  "workflow_enabled": false,
+  "network_used": false,
+  "token_printed": false
+}

@@ -1,0 +1,38 @@
+name: AgentSec Optional PR Review Artifact
+
+on:
+  workflow_dispatch:
+    inputs:
+      manifest_set:
+        description: Path to a committed JSON manifest, JSON list, or directory of JSON MCP/tool manifests.
+        required: true
+        default: public_launch/agentsec2/AGENTSEC2_SAMPLE_MANIFEST_SET.json
+      profile:
+        description: Public-safe AgentSec policy profile.
+        required: true
+        default: developer_default
+
+jobs:
+  agentsec-pr-review-artifact:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install AOI package locally
+        run: python -m pip install -e .
+      - name: Build AgentSec local policy artifacts
+        uses: ./.github/actions/agentsec-policy-gate-artifact
+        with:
+          manifest-set: ${{ inputs.manifest_set }}
+          output-dir: public_launch/agentsec8/artifacts
+          profile: ${{ inputs.profile }}
+      - name: Upload AgentSec review artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: agentsec-review-artifacts
+          path: public_launch/agentsec8/artifacts
+          if-no-files-found: error

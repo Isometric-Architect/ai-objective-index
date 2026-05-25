@@ -1,0 +1,19 @@
+{
+  "schema": "AgentSec8_ClaimBoundaryAudit/v0.1",
+  "generated_at": "2026-05-25T04:13:40.798711+00:00",
+  "decision": "PASS_AGENTSEC8_CLAIM_BOUNDARY",
+  "risky_phrase_count": 0,
+  "findings": [],
+  "allowed_language": [
+    "opt-in workflow artifact",
+    "local metadata review",
+    "ALLOW/HOLD/BLOCK",
+    "not verified",
+    "not security certified",
+    "not quality guarantee"
+  ],
+  "external_actions_performed": false,
+  "workflow_enabled": false,
+  "token_printed": false,
+  "private_kernel_exposed": false
+}

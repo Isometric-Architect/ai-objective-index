@@ -1,0 +1,22 @@
+{
+  "schema": "AgentSec8_WorkflowAudit/v0.1",
+  "generated_at": "2026-05-25T04:13:40.773121+00:00",
+  "decision": "PASS_AGENTSEC8_OPTIONAL_WORKFLOW_SAFE",
+  "example_workflow_path": "examples/agentsec8_optional_pr_review_artifact_workflow.yml",
+  "example_workflow_exists": true,
+  "active_workflow_created": false,
+  "active_workflow_findings": [],
+  "workflow_auto_enabled": false,
+  "forbidden_command_findings": [],
+  "missing_required_markers": [],
+  "github_api_used_by_agentsec": false,
+  "pr_comment_posted": false,
+  "external_actions_performed_by_agentsec": false,
+  "live_mcp_called": false,
+  "external_tool_executed_by_agentsec": false,
+  "url_fetch_performed_by_agentsec": false,
+  "token_printed": false,
+  "can_certify_security": false,
+  "can_certify_quality": false,
+  "can_authorize_action": false
+}

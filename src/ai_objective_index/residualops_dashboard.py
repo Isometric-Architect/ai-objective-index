@@ -84,7 +84,7 @@ def build_vertical_status_dashboard(root: Path | None = None) -> dict[str, Any]:
         },
         "decision_totals": totals,
         "rows": rows,
-        "portfolio_note": "QIRA and AgentSec currently pass their package-level local gates; DataCapsule intentionally retains conservative BLOCK signals in sample use-risk fixtures.",
+        "portfolio_note": "QIRA, AgentSec, and DataCapsule currently pass their package-level local gates; these are local artifact signals only, not certification, readiness proof, or action authorization.",
         "external_actions_performed": False,
         "workflow_enabled": False,
         "network_used": False,
@@ -140,7 +140,7 @@ ROE-2 creates a shared artifact manifest and dashboard skeleton only. It is mean
 
 def next_steps_markdown(dashboard: dict[str, Any]) -> str:
     if dashboard["decision"] == "PASS_ROE2_DASHBOARD_READY":
-        next_step = "AgentSec-4 local policy profile pack and MCP manifest hardening."
+        next_step = "DataCapsule-6 repository-owned corpus audit bundle or AgentSec-6 local manifest corpus ingestion."
     else:
         next_step = "ROE-2 artifact remediation before adding more dashboard surfaces."
     return f"""# ROE-2 Next Steps

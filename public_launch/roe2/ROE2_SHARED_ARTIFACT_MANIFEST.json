@@ -1,12 +1,12 @@
 {
   "schema": "ResidualOps_SharedArtifactManifest/v0.1",
-  "generated_at": "2026-05-25T00:56:14.066947+00:00",
+  "generated_at": "2026-05-25T01:22:16.032971+00:00",
   "decision": "PASS_ROE2_SHARED_MANIFEST_READY",
   "vertical_count": 3,
   "totals": {
-    "allow": 2,
+    "allow": 3,
     "hold": 0,
-    "block": 1
+    "block": 0
   },
   "verticals": [
     {
@@ -165,17 +165,17 @@
     {
       "vertical_id": "datacapsule",
       "product_name": "DataCapsule / AIDREG Engine",
-      "package": "DataCapsule-4",
-      "public_role": "local data-use and corpus manifest boundary artifact",
-      "primary_result": "public_launch/datacapsule4/DATACAPSULE4_INTAKE_RESULT.json",
-      "primary_decision": "BLOCK_DATACAPSULE3_USE_RISK",
-      "decision_bucket": "block",
+      "package": "DataCapsule-5",
+      "public_role": "local fake data-use fixture corpus and negative-control artifact",
+      "primary_result": "public_launch/datacapsule5/DATACAPSULE5_PACKAGE_RESULT.json",
+      "primary_decision": "PASS_DATACAPSULE5_FIXTURE_CORPUS_AND_NEGATIVE_CONTROLS",
+      "decision_bucket": "allow",
       "decision_counts": {
-        "allow": 0,
+        "allow": 1,
         "hold": 0,
-        "block": 1
+        "block": 0
       },
-      "claim_audit": "public_launch/datacapsule4/DATACAPSULE4_CLAIM_BOUNDARY_AUDIT.json",
+      "claim_audit": "public_launch/datacapsule5/DATACAPSULE_CLAIM_BOUNDARY_AUDIT.json",
       "safe_flags": {
         "local_only": true,
         "network_used": false,
@@ -186,10 +186,11 @@
         "can_certify_quality": false
       },
       "known_limits": [
-        "local CSV/JSONL/JSON manifest metadata only",
-        "no directory crawling",
-        "no private file content inspection",
-        "no URL fetch",
+        "public-safe fake data-use fixtures only",
+        "local negative controls only",
+        "no crawling",
+        "no live source verification",
+        "no private data inspection",
         "not legal sufficiency",
         "not privacy compliance",
         "not data quality guarantee",
@@ -207,40 +208,46 @@
       ],
       "artifacts": [
         {
-          "path": "public_launch/datacapsule4/DATACAPSULE4_INTAKE_RESULT.json",
+          "path": "public_launch/datacapsule5/DATACAPSULE5_PACKAGE_RESULT.json",
           "exists": true,
-          "bytes": 10623,
-          "sha256": "1e920e2daf02de62d5cbc134d58d089f921fc00ffa34833884c9db8596e0501f"
+          "bytes": 1487,
+          "sha256": "5e51f35d6af2487bff82be120f3ed2b5273f21a4db5a48cac19ba2623629da80"
         },
         {
-          "path": "public_launch/datacapsule4/DATACAPSULE4_BRIDGE_RESULT.json",
+          "path": "public_launch/datacapsule5/DATACAPSULE5_FIXTURE_CORPUS.json",
           "exists": true,
-          "bytes": 1435,
-          "sha256": "d903ff04e19d904bb66286ae518af00b685752a13ed20cffeb1ceba8fc0b0dc2"
+          "bytes": 7039,
+          "sha256": "a8112be2e241c80093256479b75bc98dbf187a18a450707688419486d9e7ce64"
         },
         {
-          "path": "public_launch/datacapsule4/DATACAPSULE4_CORPUS_RESULT.json",
+          "path": "public_launch/datacapsule5/DATACAPSULE5_FIXTURE_CORPUS_REPORT.md",
           "exists": true,
-          "bytes": 8098,
-          "sha256": "def4c76e1aa4db2f64cefbe6f39b6e23844b9af11deb3a1cb766e4d82cd3abe5"
+          "bytes": 1458,
+          "sha256": "e50d079085c6fb35eea4f1ae18930250d5f6e1d51098dc4fc2c7a39d93da50e7"
         },
         {
-          "path": "public_launch/datacapsule4/DATACAPSULE4_EVAL_LEAK_SEPARATION_REPORT.json",
+          "path": "public_launch/datacapsule5/DATACAPSULE5_NEGATIVE_CONTROL_RESULT.json",
           "exists": true,
-          "bytes": 433,
-          "sha256": "1c7add4c7e40fae67be83a55ebb3b671cfc52f28acb2d1d262c566d338b29c0e"
+          "bytes": 5210,
+          "sha256": "49c9c376631f7b7649d39921ac1e03fbd74bd5b0da4cf371bf871bf074f2cad5"
         },
         {
-          "path": "public_launch/datacapsule4/DATACAPSULE4_NEXT_STEPS.md",
+          "path": "public_launch/datacapsule5/DATACAPSULE5_NEGATIVE_CONTROL_REPORT.md",
           "exists": true,
-          "bytes": 685,
-          "sha256": "0b665c522efe594d86d382e664e19df2f696332feef6265505d0fa4ea021de67"
+          "bytes": 1589,
+          "sha256": "fa8c88fb2a3b3ab334ba19e2982d29c5b42243195a8a8730f8ddf106223c98ab"
         },
         {
-          "path": "public_launch/datacapsule4/DATACAPSULE4_CLAIM_BOUNDARY_AUDIT.json",
+          "path": "public_launch/datacapsule5/DATACAPSULE5_NEXT_STEPS.md",
+          "exists": true,
+          "bytes": 622,
+          "sha256": "ff1d8c8e4abe7adcb81906f4f7f9cc7b1959fb41873acf07f46fe60601000ce1"
+        },
+        {
+          "path": "public_launch/datacapsule5/DATACAPSULE_CLAIM_BOUNDARY_AUDIT.json",
           "exists": true,
           "bytes": 786,
-          "sha256": "06f7ceb470c8b8af5e4dceebb4e01a621a612affd2c9e19db7f13149ae0cc001"
+          "sha256": "ea7825d0a5e9ddfc392bd627e8ba429ec78b72062d59ddeaa924ddee7fa53bca"
         }
       ]
     }

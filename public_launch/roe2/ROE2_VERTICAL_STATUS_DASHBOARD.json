@@ -1,18 +1,18 @@
 {
   "schema": "ResidualOps_VerticalStatusDashboard/v0.1",
-  "generated_at": "2026-05-25T00:56:14.161769+00:00",
+  "generated_at": "2026-05-25T01:22:20.777865+00:00",
   "decision": "PASS_ROE2_DASHBOARD_READY",
   "manifest_decision": "PASS_ROE2_SHARED_MANIFEST_READY",
   "vertical_count": 3,
   "status_counts": {
-    "allow_or_pass": 2,
+    "allow_or_pass": 3,
     "hold_review": 0,
-    "block_risk": 1
+    "block_risk": 0
   },
   "decision_totals": {
-    "allow": 2,
+    "allow": 3,
     "hold": 0,
-    "block": 1
+    "block": 0
   },
   "rows": [
     {
@@ -56,10 +56,10 @@
     {
       "vertical_id": "datacapsule",
       "product_name": "DataCapsule / AIDREG Engine",
-      "package": "DataCapsule-4",
-      "status": "BLOCK_RISK",
-      "primary_decision": "BLOCK_DATACAPSULE3_USE_RISK",
-      "artifact_count": 6,
+      "package": "DataCapsule-5",
+      "status": "ALLOW_OR_PASS",
+      "primary_decision": "PASS_DATACAPSULE5_FIXTURE_CORPUS_AND_NEGATIVE_CONTROLS",
+      "artifact_count": 7,
       "missing_artifact_count": 0,
       "safe_flags": {
         "local_only": true,
@@ -73,7 +73,7 @@
       "dashboard_note": "local artifact status only; not certification or action authorization"
     }
   ],
-  "portfolio_note": "QIRA and AgentSec currently pass their package-level local gates; DataCapsule intentionally retains conservative BLOCK signals in sample use-risk fixtures.",
+  "portfolio_note": "QIRA, AgentSec, and DataCapsule currently pass their package-level local gates; these are local artifact signals only, not certification, readiness proof, or action authorization.",
   "external_actions_performed": false,
   "workflow_enabled": false,
   "network_used": false,

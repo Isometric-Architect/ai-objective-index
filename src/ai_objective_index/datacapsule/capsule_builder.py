@@ -54,11 +54,11 @@ SAMPLE_DATASET_METADATA: dict[str, Any] = {
 }
 
 UNSUPPORTED_CLAIM_PATTERNS = [
-    re.compile(r"\blegally\s+cleared\b", re.I),
-    re.compile(r"\bprivacy\s+compliant\b", re.I),
-    re.compile(r"\bquality\s+guaranteed\b", re.I),
-    re.compile(r"\beval\s+clean\b", re.I),
-    re.compile(r"\baction\s+authorized\b", re.I),
+    re.compile(r"\blegally[_\s-]+cleared\b", re.I),
+    re.compile(r"\bprivacy[_\s-]+compliant\b", re.I),
+    re.compile(r"\bquality[_\s-]+guaranteed\b", re.I),
+    re.compile(r"\beval[_\s-]+clean\b", re.I),
+    re.compile(r"\baction[_\s-]+authorized\b", re.I),
 ]
 
 SAFE_CONTEXT = ["not ", "no ", "do not", "does not", "must not", "without "]

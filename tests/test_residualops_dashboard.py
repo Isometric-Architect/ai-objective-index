@@ -9,7 +9,7 @@ def test_vertical_status_dashboard_builds_from_manifest():
 
     assert result["decision"] == "PASS_ROE2_DASHBOARD_READY"
     assert result["vertical_count"] == 3
-    assert result["status_counts"]["block_risk"] >= 1
+    assert result["status_counts"]["allow_or_pass"] >= 3
     assert result["external_actions_performed"] is False
 
 

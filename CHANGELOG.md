@@ -1,5 +1,10 @@
 # Changelog
 
+## DataCapsule-5
+
+- Added a public-safe fake use-rights fixture corpus for DataCapsule local regression checks.
+- Added DataCapsule-5 negative-control outputs, docs, claim-audit coverage, and ROE-2 dashboard alignment while preserving no-crawl/no-fetch/no-private-data/no-token/no-certification/no-action-authorization boundaries.
+
 ## AgentSec-5
 
 - Added a public-safe fake MCP/tool manifest fixture corpus.

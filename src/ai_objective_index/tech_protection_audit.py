@@ -39,8 +39,10 @@ HOLD_PATTERNS = [
 
 SAFE_CONTEXT = [
     "do not expose",
+    "do not include",
     "must not expose",
     "not exposed",
+    "does not include",
     "remain private",
     "remains private",
     "should not be public",

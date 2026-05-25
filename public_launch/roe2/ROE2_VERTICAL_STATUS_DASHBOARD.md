@@ -8,11 +8,11 @@ ROE-2 is a local read-only dashboard over existing QIRA, AgentSec, and DataCapsu
 | --- | --- | --- | --- | --- |
 | QIRA-Code ReleaseGate | QIRA-8 | `ALLOW_OR_PASS` | `PASS_QIRA8_REVIEWER_BUNDLE` | 6 |
 | AgentSec Gate | AgentSec-5 | `ALLOW_OR_PASS` | `PASS_AGENTSEC5_FIXTURE_CORPUS_AND_NEGATIVE_CONTROLS` | 7 |
-| DataCapsule / AIDREG Engine | DataCapsule-4 | `BLOCK_RISK` | `BLOCK_DATACAPSULE3_USE_RISK` | 6 |
+| DataCapsule / AIDREG Engine | DataCapsule-5 | `ALLOW_OR_PASS` | `PASS_DATACAPSULE5_FIXTURE_CORPUS_AND_NEGATIVE_CONTROLS` | 7 |
 
 ## Portfolio Note
 
-QIRA and AgentSec currently pass their package-level local gates; DataCapsule intentionally retains conservative BLOCK signals in sample use-risk fixtures.
+QIRA, AgentSec, and DataCapsule currently pass their package-level local gates; these are local artifact signals only, not certification, readiness proof, or action authorization.
 
 ## Boundary
 

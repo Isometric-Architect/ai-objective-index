@@ -55,6 +55,8 @@ DataCapsule-3 adds CSV/JSONL corpus manifest intake and a local eval-leak separa
 
 DataCapsule-4 adds an opt-in CI artifact bridge for repository-supplied corpus manifests. It provides a reusable composite action and inactive example workflow that convert CSV/JSONL/JSON manifests into DataCapsule artifacts, without auto-enabling workflows, calling GitHub APIs, reading private file contents, fetching URLs, handling tokens, proving rights/privacy/data quality/eval cleanliness, or authorizing actions.
 
+DataCapsule-5 adds a public-safe fake use-rights fixture corpus and local negative-control pack. It checks that risky data metadata patterns do not slip into `ALLOW_USE` for the requested use class. It does not crawl, fetch URLs, inspect private data, handle tokens, prove legal sufficiency, certify privacy compliance, guarantee data quality, prove evaluation cleanliness, clear licenses, or authorize actions.
+
 ROE-1 aligns QIRA, AgentSec, and DataCapsule under a common ResidualOps surface matrix: packet or manifest intake, local check/probe/review, receipt/result artifact, ALLOW/HOLD/BLOCK decision, opt-in artifact bridge, and claim boundary. Exact weights, thresholds, provider priors, anti-gaming rules, private negative controls, private probe seeds, and commercial routing policy remain non-public.
 
 ROE-2 adds a shared artifact manifest and local dashboard skeleton across QIRA, AgentSec, and DataCapsule. It indexes existing local result artifacts and status buckets without running probes, enabling workflows, calling GitHub APIs, uploading packages, submitting registry metadata, certifying security, guaranteeing quality, proving product readiness, or authorizing actions.

@@ -1,0 +1,224 @@
+{
+  "schema": "DataCapsule5_FixtureCorpus/v0.1",
+  "generated_at": "2026-05-25T01:22:06.288944+00:00",
+  "decision": "PASS_DATACAPSULE5_FIXTURE_CORPUS_READY",
+  "fixture_count": 9,
+  "fixtures": [
+    {
+      "fixture_id": "safe-retrieval-public-docs",
+      "risk_theme": "source_traced_retrieval_metadata",
+      "primary_use": "retrieve",
+      "expected_decision": "ALLOW_USE",
+      "expected_bucket": "allow",
+      "payload": {
+        "data_id": "fixture.local/public-docs-corpus",
+        "name": "Public docs corpus fixture",
+        "source": "repository-local-fixture",
+        "source_records": [
+          "fixtures/public_docs_manifest.json"
+        ],
+        "license": "MIT",
+        "privacy_level": "public_metadata",
+        "allowed_use": {
+          "retrieve": true,
+          "summarize": true
+        },
+        "risk_flags": {}
+      }
+    },
+    {
+      "fixture_id": "unknown-license-training",
+      "risk_theme": "rights_unknown",
+      "primary_use": "train",
+      "expected_decision": "HOLD_SOURCE_RIGHTS_REVIEW",
+      "expected_bucket": "hold",
+      "payload": {
+        "data_id": "fixture.local/unknown-license-training",
+        "name": "Unknown license training fixture",
+        "source": "repository-local-fixture",
+        "source_records": [
+          "fixtures/unknown_license_manifest.json"
+        ],
+        "license": "unknown",
+        "privacy_level": "public_metadata",
+        "allowed_use": {
+          "train": true
+        },
+        "risk_flags": {}
+      }
+    },
+    {
+      "fixture_id": "restricted-license-training",
+      "risk_theme": "restricted_license",
+      "primary_use": "train",
+      "expected_decision": "BLOCK_LICENSE_RESTRICTED",
+      "expected_bucket": "block",
+      "payload": {
+        "data_id": "fixture.local/restricted-license-training",
+        "name": "Restricted license training fixture",
+        "source": "repository-local-fixture",
+        "source_records": [
+          "fixtures/restricted_license_manifest.json"
+        ],
+        "license": "restricted internal use only",
+        "privacy_level": "public_metadata",
+        "allowed_use": {
+          "train": true
+        },
+        "risk_flags": {}
+      }
+    },
+    {
+      "fixture_id": "privacy-risk-training",
+      "risk_theme": "privacy_risk",
+      "primary_use": "train",
+      "expected_decision": "BLOCK_PRIVACY_RISK",
+      "expected_bucket": "block",
+      "payload": {
+        "data_id": "fixture.local/privacy-risk-training",
+        "name": "Privacy risk training fixture",
+        "source": "repository-local-fixture",
+        "source_records": [
+          "fixtures/privacy_risk_manifest.json"
+        ],
+        "license": "MIT",
+        "privacy_level": "personal_data_possible",
+        "allowed_use": {
+          "train": true,
+          "share": true
+        },
+        "risk_flags": {
+          "privacy": true
+        }
+      }
+    },
+    {
+      "fixture_id": "prompt-injection-retrieval",
+      "risk_theme": "prompt_injection_review",
+      "primary_use": "retrieve",
+      "expected_decision": "HOLD_PROMPT_INJECTION_REVIEW",
+      "expected_bucket": "hold",
+      "payload": {
+        "data_id": "fixture.local/prompt-injection-retrieval",
+        "name": "Prompt injection retrieval fixture",
+        "source": "repository-local-fixture",
+        "source_records": [
+          "fixtures/prompt_injection_manifest.json"
+        ],
+        "license": "MIT",
+        "privacy_level": "public_metadata",
+        "allowed_use": {
+          "retrieve": true,
+          "summarize": true
+        },
+        "risk_flags": {
+          "prompt_injection": true
+        }
+      }
+    },
+    {
+      "fixture_id": "eval-leak-evaluation",
+      "risk_theme": "eval_leak_review",
+      "primary_use": "evaluate",
+      "expected_decision": "HOLD_EVAL_LEAK_REVIEW",
+      "expected_bucket": "hold",
+      "payload": {
+        "data_id": "fixture.local/eval-leak-evaluation",
+        "name": "Eval leak evaluation fixture",
+        "source": "repository-local-fixture",
+        "source_records": [
+          "fixtures/eval_overlap_manifest.json"
+        ],
+        "license": "MIT",
+        "privacy_level": "public_metadata",
+        "allowed_use": {
+          "evaluate": true
+        },
+        "risk_flags": {
+          "eval_leak": true
+        }
+      }
+    },
+    {
+      "fixture_id": "unsupported-claim-metadata",
+      "risk_theme": "unsupported_positive_claim",
+      "primary_use": "retrieve",
+      "expected_decision": "BLOCK_UNSUPPORTED_CLAIM",
+      "expected_bucket": "block",
+      "payload": {
+        "data_id": "fixture.local/unsupported-claim-metadata",
+        "name": "Unsupported claim metadata fixture",
+        "source": "repository-local-fixture",
+        "source_records": [
+          "fixtures/unsupported_claim_manifest.json"
+        ],
+        "license": "MIT",
+        "privacy_level": "public_metadata",
+        "allowed_use": {
+          "retrieve": true
+        },
+        "claims": {
+          "privacy_compliant": true,
+          "eval_clean": true
+        }
+      }
+    },
+    {
+      "fixture_id": "missing-source-record",
+      "risk_theme": "source_trace_missing",
+      "primary_use": "retrieve",
+      "expected_decision": "HOLD_SOURCE_RIGHTS_REVIEW",
+      "expected_bucket": "hold",
+      "payload": {
+        "data_id": "fixture.local/missing-source-record",
+        "name": "Missing source record fixture",
+        "license": "MIT",
+        "privacy_level": "public_metadata",
+        "allowed_use": {
+          "retrieve": true
+        },
+        "risk_flags": {}
+      }
+    },
+    {
+      "fixture_id": "action-use-request",
+      "risk_theme": "action_authorization_boundary",
+      "primary_use": "act",
+      "expected_decision": "BLOCK_ACTION_USE",
+      "expected_bucket": "block",
+      "payload": {
+        "data_id": "fixture.local/action-use-request",
+        "name": "Action use request fixture",
+        "source": "repository-local-fixture",
+        "source_records": [
+          "fixtures/action_use_manifest.json"
+        ],
+        "license": "MIT",
+        "privacy_level": "public_metadata",
+        "allowed_use": {
+          "act": true
+        },
+        "risk_flags": {}
+      }
+    }
+  ],
+  "public_safe": true,
+  "contains_real_private_data": false,
+  "contains_private_kernel": false,
+  "contains_private_negative_control_seeds": false,
+  "network_used": false,
+  "crawler_used": false,
+  "external_actions_performed": false,
+  "token_printed": false,
+  "known_limits": [
+    "public-safe fake data-use fixtures only",
+    "local metadata checks only",
+    "no crawling",
+    "no live source verification",
+    "not legal sufficiency",
+    "not privacy compliance",
+    "not data quality guarantee",
+    "not evaluation cleanliness proof",
+    "not action authorization"
+  ]
+}

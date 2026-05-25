@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-05-25T00:56:06.434131+00:00",
+  "decision": "PASS_AGENTSEC_CLAIM_BOUNDARY",
+  "risky_phrase_count": 0,
+  "findings": [],
+  "allowed_language": [
+    "local metadata scan",
+    "ToolRiskPacket",
+    "permission scope",
+    "source-trace or manifest evidence",
+    "ALLOW/HOLD/BLOCK",
+    "not verified",
+    "not security certified"
+  ],
+  "must_not_claim": [
+    "do not claim verified tool status",
+    "do not claim safety",
+    "do not claim security certification",
+    "do not claim quality guarantee",
+    "do not claim production readiness",
+    "do not claim action authorization"
+  ],
+  "external_actions_performed": false,
+  "token_printed": false
+}

@@ -13,6 +13,7 @@ OUTPUT_PATH = Path("public_launch") / "agentsec1" / "AGENTSEC_CLAIM_BOUNDARY_AUD
 AGENTSEC2_OUTPUT_PATH = Path("public_launch") / "agentsec2" / "AGENTSEC_CLAIM_BOUNDARY_AUDIT.json"
 AGENTSEC3_OUTPUT_PATH = Path("public_launch") / "agentsec3" / "AGENTSEC_CLAIM_BOUNDARY_AUDIT.json"
 AGENTSEC4_OUTPUT_PATH = Path("public_launch") / "agentsec4" / "AGENTSEC_CLAIM_BOUNDARY_AUDIT.json"
+AGENTSEC5_OUTPUT_PATH = Path("public_launch") / "agentsec5" / "AGENTSEC_CLAIM_BOUNDARY_AUDIT.json"
 SCAN_PATHS = [
     Path("docs") / "agentsec_gate_plan.md",
     Path("docs") / "agentsec1_tool_risk_packet.md",
@@ -24,12 +25,15 @@ SCAN_PATHS = [
     Path("docs") / "agentsec_github_ci_bridge_limitations.md",
     Path("docs") / "agentsec4_policy_profile_pack.md",
     Path("docs") / "agentsec_mcp_manifest_hardening.md",
+    Path("docs") / "agentsec5_manifest_fixture_corpus.md",
+    Path("docs") / "agentsec_negative_controls.md",
     Path(".github") / "actions" / "agentsec-policy-gate-artifact" / "action.yml",
     Path("examples") / "agentsec_policy_gate_artifact_workflow.yml",
     Path("public_launch") / "agentsec1",
     Path("public_launch") / "agentsec2",
     Path("public_launch") / "agentsec3",
     Path("public_launch") / "agentsec4",
+    Path("public_launch") / "agentsec5",
 ]
 
 RISKY_PATTERNS = [
@@ -126,6 +130,7 @@ def run_agentsec_claim_audit(write_result: bool = True) -> dict[str, Any]:
         _write_json(AGENTSEC2_OUTPUT_PATH, result)
         _write_json(AGENTSEC3_OUTPUT_PATH, result)
         _write_json(AGENTSEC4_OUTPUT_PATH, result)
+        _write_json(AGENTSEC5_OUTPUT_PATH, result)
     return result
 
 

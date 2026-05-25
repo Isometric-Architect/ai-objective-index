@@ -87,10 +87,10 @@ FORBIDDEN_ACTION_PATTERNS = [
 
 UNSUPPORTED_CLAIM_PATTERNS = [
     r"\bverified tool\b",
-    r"\bsafe tool\b",
-    r"\bsecurity certified\b",
+    r"\bsafe[_ -]?tool\b",
+    r"\bsecurity[_ -]?certified\b",
     r"\bquality guaranteed\b",
-    r"\bproduction[- ]ready\b",
+    r"\bproduction[_ -]?ready\b",
     r"\bofficial best\b",
     r"\btrusted by all agents\b",
 ]

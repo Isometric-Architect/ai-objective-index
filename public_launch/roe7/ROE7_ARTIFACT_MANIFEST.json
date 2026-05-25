@@ -1,0 +1,54 @@
+{
+  "schema": "ResidualOps_ROE7ArtifactManifest/v0.1",
+  "generated_at": "2026-05-25T10:21:53.020186+00:00",
+  "decision": "PASS_ROE7_ARTIFACT_MANIFEST",
+  "artifacts": [
+    {
+      "path": "public_launch/roe7/ROE7_PILOT_READOUT_GATE_RESULT.json",
+      "role": "roe7_output",
+      "exists": true,
+      "size_bytes": 1028,
+      "sha256": "02c86969ca18c450d577e5c770cf2d75d15faf2220bd9b95d4ff1c7297e00a84"
+    },
+    {
+      "path": "public_launch/roe7/ROE7_PILOT_RECEIPT_READOUT.json",
+      "role": "roe7_output",
+      "exists": true,
+      "size_bytes": 679,
+      "sha256": "cc9b81e25cf6a099a667bdb57cb63824c38464195658d5577415889b3de21c83"
+    },
+    {
+      "path": "public_launch/roe7/ROE7_SECOND_RUN_DECISION_GATE.json",
+      "role": "roe7_output",
+      "exists": true,
+      "size_bytes": 750,
+      "sha256": "60f5e6de29a5b98099193d2d5af7f91ce7139e70b80ba89a56856af31e312e88"
+    },
+    {
+      "path": "public_launch/roe7/ROE7_OPERATOR_REVIEW_PACKET.md",
+      "role": "roe7_output",
+      "exists": true,
+      "size_bytes": 775,
+      "sha256": "5c98863f414783854ee922fe26db0dec14131fbe0198d3077882d991ef9ba21a"
+    },
+    {
+      "path": "public_launch/roe7/ROE7_CLAIM_BOUNDARY_AUDIT.json",
+      "role": "roe7_output",
+      "exists": true,
+      "size_bytes": 388,
+      "sha256": "28d7d624815aa8dc4189903cae20f5dddf3f31cba378042763bb4f50dc35ce45"
+    },
+    {
+      "path": "public_launch/roe7/ROE7_NEXT_STEPS.md",
+      "role": "roe7_output",
+      "exists": true,
+      "size_bytes": 399,
+      "sha256": "042ca350199e5e852df12bfe7275178d3c7647c1dee81ed071eb9781d1618532"
+    }
+  ],
+  "missing_artifacts": [],
+  "external_actions_performed": false,
+  "workflow_enabled": false,
+  "network_used": false,
+  "token_printed": false
+}

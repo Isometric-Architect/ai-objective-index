@@ -14,8 +14,8 @@ Use the ROE-3 release kit to decide which vertical to advance next. It is meant 
 
 The likely next paths are:
 
-- first owner-consented external repository pilot with exactly one manually enabled workflow
-- ROE-7 pilot receipt readout and second-run decision gate
+- first owner-consented AgentSec external repository pilot with exactly one manually enabled workflow
+- ROE-8 pilot receipt packager for the first real owner-consented run
 
 ## Private Material
 

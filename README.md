@@ -81,6 +81,8 @@ ROE-5 adds a portfolio onboarding kit for the first external or separate-reposit
 
 ROE-6 adds local pilot receipt intake and feedback memory for future owner-consented repository pilots. It creates a public-safe pilot receipt template, intake gate, feedback memory summary, and claim audit without enabling workflows, calling GitHub APIs, posting comments, storing tokens, exposing private kernels, certifying security, guaranteeing quality, proving readiness, or authorizing actions.
 
+ROE-7 adds pilot receipt readout and a second-run decision gate. It keeps the gate on HOLD until at least one accepted non-secret pilot receipt exists, and it still does not enable workflows, call GitHub APIs, post comments, store tokens, expose private kernels, certify security, guarantee quality, prove readiness, or authorize actions.
+
 ## Quick Example
 
 Example objective request:

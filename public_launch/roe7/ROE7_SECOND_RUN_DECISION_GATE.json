@@ -1,0 +1,20 @@
+{
+  "schema": "ResidualOps_ROE7SecondRunDecisionGate/v0.1",
+  "generated_at": "2026-05-25T10:21:52.765907+00:00",
+  "decision": "HOLD_FIRST_PILOT_RECEIPT_REQUIRED",
+  "reason": "no accepted pilot receipt exists yet",
+  "readout_decision": "HOLD_FIRST_PILOT_RECEIPT_REQUIRED",
+  "owner_consent_confirmed": false,
+  "operator_review_complete": false,
+  "manual_second_run_only": true,
+  "can_prepare_manual_second_run": false,
+  "workflow_enabled_by_aoi": false,
+  "github_api_used_by_aoi": false,
+  "review_comment_posted": false,
+  "external_actions_performed": false,
+  "token_printed": false,
+  "can_upgrade_to_verified": false,
+  "can_certify_security": false,
+  "can_certify_quality": false,
+  "can_authorize_action": false
+}

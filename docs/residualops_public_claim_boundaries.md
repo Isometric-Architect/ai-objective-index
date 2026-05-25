@@ -21,6 +21,8 @@ They must stay conservative.
 - repository pilot checklist
 - pilot receipt intake
 - feedback memory summary
+- pilot receipt readout
+- second-run decision gate
 
 ## Forbidden Public Framing
 
@@ -61,3 +63,7 @@ Private:
 ## ROE-6 Pilot Feedback Memory
 
 Pilot receipt intake can record non-secret manual pilot outcomes and recurring HOLD/BLOCK patterns. Feedback memory can guide the next operator step, but it cannot verify a capability, certify security, guarantee quality, prove readiness, prove legal/privacy/license/evaluation status, provide purchasing advice, authorize actions, store partner secrets, or expose private kernel details.
+
+## ROE-7 Pilot Readout
+
+Pilot receipt readout can summarize whether a first receipt exists and whether failure signals block a second run. A second-run gate can prepare a manual operator decision, but it cannot enable workflows, call GitHub APIs, post comments, verify a capability, certify security, guarantee quality, prove readiness, prove legal/privacy/license/evaluation status, provide purchasing advice, authorize actions, store partner secrets, or expose private kernel details.

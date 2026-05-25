@@ -1,5 +1,11 @@
 # Changelog
 
+## ROE-7
+
+- Added pilot receipt readout and a conservative second-run decision gate for ResidualOps pilots.
+- Added operator review packet, claim-boundary audit, artifact manifest, docs, public outputs, and tests.
+- Preserved boundaries: no workflow enablement, no GitHub API calls, no comment posting, no crawling, no live MCP calls, no external tool execution, no upload, no registry submission, no token handling, no private-kernel exposure, and no certification/readiness/legal/privacy/license/eval-clean/purchasing/action-authorization claim.
+
 ## ROE-6
 
 - Added local pilot receipt intake and feedback memory for owner-consented ResidualOps repository pilots.

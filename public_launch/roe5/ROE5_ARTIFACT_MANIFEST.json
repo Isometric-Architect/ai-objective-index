@@ -1,0 +1,61 @@
+{
+  "schema": "ResidualOps_ROE5ArtifactManifest/v0.1",
+  "generated_at": "2026-05-25T07:43:35.235165+00:00",
+  "decision": "PASS_ROE5_ARTIFACT_MANIFEST",
+  "artifacts": [
+    {
+      "path": "public_launch/roe5/ROE5_PORTFOLIO_ONBOARDING_KIT.json",
+      "role": "roe5_output",
+      "exists": true,
+      "size_bytes": 1774,
+      "sha256": "d9c5111209c028c3f8b3db1bb7cb2f1547b4337ad53b34e59547f81515e1d877"
+    },
+    {
+      "path": "public_launch/roe5/ROE5_VERTICAL_SELECTION_MATRIX.json",
+      "role": "roe5_output",
+      "exists": true,
+      "size_bytes": 2884,
+      "sha256": "6014dbc80f3fe1712a67e24f9802844d081bed2961811fa9810af07b1db284fa"
+    },
+    {
+      "path": "public_launch/roe5/ROE5_OWNER_CONSENT_GATE.json",
+      "role": "roe5_output",
+      "exists": true,
+      "size_bytes": 769,
+      "sha256": "bb5999a4f5db6dc3ebafc158fa9b6258b9351aabf6d178ba65d5cc016a80a24d"
+    },
+    {
+      "path": "public_launch/roe5/ROE5_REPOSITORY_PILOT_CHECKLIST.md",
+      "role": "roe5_output",
+      "exists": true,
+      "size_bytes": 1617,
+      "sha256": "f5d47c586c218a610ceb8c29f96f0e481886297ec70e2b732c02f91133069b52"
+    },
+    {
+      "path": "public_launch/roe5/ROE5_DRY_RUN_ONBOARDING_PLAN.md",
+      "role": "roe5_output",
+      "exists": true,
+      "size_bytes": 952,
+      "sha256": "0452d04aff2df1785449df5b5d1bd313a03fb19d2fdec675557cf8661ec9ed94"
+    },
+    {
+      "path": "public_launch/roe5/ROE5_CLAIM_BOUNDARY_AUDIT.json",
+      "role": "roe5_output",
+      "exists": true,
+      "size_bytes": 388,
+      "sha256": "94287fcd83f0f5a9baf7d9130a678e4ef2811b2a68868219afcce6c31325f84d"
+    },
+    {
+      "path": "public_launch/roe5/ROE5_NEXT_STEPS.md",
+      "role": "roe5_output",
+      "exists": true,
+      "size_bytes": 360,
+      "sha256": "8a1dbc9be7e61af06506d625bcdc509d4b73b05fe8423f51bc97def83d1ae0f6"
+    }
+  ],
+  "missing_artifacts": [],
+  "external_actions_performed": false,
+  "workflow_enabled": false,
+  "network_used": false,
+  "token_printed": false
+}

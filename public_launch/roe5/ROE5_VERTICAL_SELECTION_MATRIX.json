@@ -1,0 +1,63 @@
+{
+  "schema": "ResidualOps_ROE5VerticalSelectionMatrix/v0.1",
+  "generated_at": "2026-05-25T07:43:34.997341+00:00",
+  "decision": "PASS_ROE5_VERTICAL_SELECTION_READY",
+  "recommended_first_pilot": "agentsec",
+  "verticals": [
+    {
+      "vertical_id": "agentsec",
+      "product_name": "AgentSec Gate",
+      "package": "AgentSec-8",
+      "example_workflow": "examples/agentsec8_optional_pr_review_artifact_workflow.yml",
+      "recommended_first_pilot": true,
+      "pilot_rank": 1,
+      "pilot_fit": "best first external security-facing pilot if repository has MCP/tool manifests",
+      "required_inputs": [
+        "committed MCP/tool manifest JSON or manifest set"
+      ],
+      "first_run_goal": "produce local HOLD/BLOCK review artifacts without live MCP calls",
+      "result_decision": "PASS_AGENTSEC8_OPTIONAL_WORKFLOW_ARTIFACT",
+      "workflow_audit_decision": "PASS_AGENTSEC8_OPTIONAL_WORKFLOW_SAFE",
+      "claim_audit_decision": "PASS_AGENTSEC8_CLAIM_BOUNDARY"
+    },
+    {
+      "vertical_id": "qira",
+      "product_name": "QIRA-Code ReleaseGate",
+      "package": "QIRA-9",
+      "example_workflow": "examples/qira9_optional_pr_review_artifact_workflow.yml",
+      "recommended_first_pilot": false,
+      "pilot_rank": 2,
+      "pilot_fit": "fastest developer workflow pilot if repository has stable tests and PR packets",
+      "required_inputs": [
+        "committed QIRA task packet JSON",
+        "repository-owned CI result metadata"
+      ],
+      "first_run_goal": "produce local release-gate artifacts without applying patches or deploying",
+      "result_decision": "PASS_QIRA9_OPTIONAL_WORKFLOW_ARTIFACT",
+      "workflow_audit_decision": "PASS_QIRA9_OPTIONAL_WORKFLOW_SAFE",
+      "claim_audit_decision": "PASS_QIRA9_CLAIM_BOUNDARY"
+    },
+    {
+      "vertical_id": "datacapsule",
+      "product_name": "DataCapsule / AIDREG Engine",
+      "package": "DataCapsule-7",
+      "example_workflow": "examples/datacapsule7_repository_manifest_workflow.yml",
+      "recommended_first_pilot": false,
+      "pilot_rank": 3,
+      "pilot_fit": "best data governance pilot if repository has corpus manifests",
+      "required_inputs": [
+        "committed CSV, JSONL, or JSON corpus manifest"
+      ],
+      "first_run_goal": "produce local data-use review artifacts without crawling or private file inspection",
+      "result_decision": "PASS_DATACAPSULE7_OPTIONAL_WORKFLOW_ARTIFACT",
+      "workflow_audit_decision": "PASS_DATACAPSULE7_OPTIONAL_WORKFLOW_SAFE",
+      "claim_audit_decision": "PASS_DATACAPSULE7_CLAIM_BOUNDARY"
+    }
+  ],
+  "missing_artifacts": [],
+  "selection_rule": "Choose exactly one manually enabled workflow for the first external repository pilot.",
+  "external_actions_performed": false,
+  "workflow_enabled": false,
+  "github_api_used": false,
+  "token_printed": false
+}

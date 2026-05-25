@@ -1,0 +1,21 @@
+{
+  "schema": "ResidualOps_ROE5OwnerConsentGate/v0.1",
+  "generated_at": "2026-05-25T07:43:34.997358+00:00",
+  "decision": "HOLD_OWNER_CONSENT_REQUIRED_BEFORE_ENABLEMENT",
+  "owner_consent_required": true,
+  "owner_consent_present": false,
+  "consent_source": "",
+  "allowed_next_action_if_missing": "prepare local onboarding artifacts only",
+  "must_not_do_without_consent": [
+    "do not copy workflow into .github/workflows of a target repository",
+    "do not run GitHub APIs",
+    "do not post comments",
+    "do not request or store tokens",
+    "do not enable automatic triggers"
+  ],
+  "external_actions_performed": false,
+  "workflow_enabled": false,
+  "github_api_used": false,
+  "token_printed": false,
+  "can_authorize_action": false
+}

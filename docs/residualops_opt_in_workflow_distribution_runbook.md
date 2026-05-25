@@ -22,6 +22,6 @@ This runbook describes how to distribute ResidualOps workflow artifact templates
 - Do not enable all workflows at once by default.
 - Do not add automatic PR comments without a separate token-safe package.
 - Do not add tokens, `.env`, `.pypirc`, private kernel inventories, private datasets, or commercial policy files to public repos.
-- Keep exact weights, thresholds, provider priors, anti-gaming logic, private negative-control banks, and private probe seeds non-public.
+- Keep ranking calibration values, thresholds, provider priors, anti-gaming policy details, private negative-control banks, and private probe seeds non-public.
 
 The workflow artifacts are review aids. They do not certify security, guarantee quality, prove product readiness, prove legal/privacy/license/evaluation status, provide purchasing advice, or authorize actions.

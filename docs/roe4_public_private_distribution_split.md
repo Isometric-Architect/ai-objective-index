@@ -16,9 +16,9 @@ Those three packages expose opt-in workflow artifact templates. ROE-4 makes the 
 
 ## Private Surface
 
-- exact ranking weights
+- private ranking calibration values
 - threshold policy
-- anti-gaming rules
+- anti-gaming policy details
 - provider trust priors
 - private negative-control banks
 - private probe seeds

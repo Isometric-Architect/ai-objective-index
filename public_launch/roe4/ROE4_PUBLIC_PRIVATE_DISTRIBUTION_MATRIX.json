@@ -1,6 +1,6 @@
 {
   "schema": "ResidualOps_ROE4PublicPrivateDistributionMatrix/v0.1",
-  "generated_at": "2026-05-25T05:35:48.820325+00:00",
+  "generated_at": "2026-05-25T07:43:18.983847+00:00",
   "vertical_count": 3,
   "verticals": [
     {
@@ -25,21 +25,21 @@
           "role": "optional_workflow_result",
           "exists": true,
           "size_bytes": 2047,
-          "sha256": "97d197b9457f1e18ab2a2d641969601b569cd506e3bed2518462837e0626d79c"
+          "sha256": "a393607e30765bdf42ad4fdbb5ce0118cbc363f2cbb25e5bc3016446ee69a32f"
         },
         {
           "path": "public_launch/qira9/QIRA9_WORKFLOW_AUDIT.json",
           "role": "workflow_audit",
           "exists": true,
           "size_bytes": 824,
-          "sha256": "27b04e432e460475eb9038e62771bafa8b2d541f828cddf78412cc2da97f7298"
+          "sha256": "f01e0ea02cd247911109c5928987e2e48ae2c28a75fff0c3a8fb83bab4d74ee9"
         },
         {
           "path": "public_launch/qira9/QIRA9_CLAIM_BOUNDARY_AUDIT.json",
           "role": "claim_audit",
           "exists": true,
           "size_bytes": 542,
-          "sha256": "1bd7b00071a09b88f81f3f5aeb881529e37da1e9b42692972325479b79626c43"
+          "sha256": "5cb63be19f8bbe763d226286647a5cb946893816423f7979a1840c0ce477e6fd"
         }
       ],
       "public_allowed": [
@@ -51,9 +51,9 @@
         "opt-in workflow artifact examples under examples/"
       ],
       "private_reserved": [
-        "exact ranking weights",
+        "private ranking calibration values",
         "threshold policy",
-        "anti-gaming rules",
+        "anti-gaming policy details",
         "provider trust priors",
         "private negative-control banks",
         "private probe seeds",
@@ -86,21 +86,21 @@
           "role": "optional_workflow_result",
           "exists": true,
           "size_bytes": 2018,
-          "sha256": "40b31a3a92b9feadd52d6111c44f330064223a19b3e84a9c19d11fda4270bf3e"
+          "sha256": "bc558c906baf5ef262241dc03f09d54c19826b2c23f1e16017430003eed6f94b"
         },
         {
           "path": "public_launch/agentsec8/AGENTSEC8_WORKFLOW_AUDIT.json",
           "role": "workflow_audit",
           "exists": true,
           "size_bytes": 841,
-          "sha256": "a2231bc26dacd1515f38aa1aae8a990db82a73dc4d71874ca0737271882f50d7"
+          "sha256": "9d368904a04c911eac83516f7f15bd3efa2be8b648f1ca20331ea36a6df47ce3"
         },
         {
           "path": "public_launch/agentsec8/AGENTSEC8_CLAIM_BOUNDARY_AUDIT.json",
           "role": "claim_audit",
           "exists": true,
           "size_bytes": 538,
-          "sha256": "a0c0a89d980ecefcf8670fd39547dcbf2e0e4640d16765d3903444de44e7e0e0"
+          "sha256": "108c74ba3da04a39acfab0cabc04f5a12fbfc8b64a49af6fccfaa2835deaeaa8"
         }
       ],
       "public_allowed": [
@@ -112,9 +112,9 @@
         "opt-in workflow artifact examples under examples/"
       ],
       "private_reserved": [
-        "exact ranking weights",
+        "private ranking calibration values",
         "threshold policy",
-        "anti-gaming rules",
+        "anti-gaming policy details",
         "provider trust priors",
         "private negative-control banks",
         "private probe seeds",
@@ -147,21 +147,21 @@
           "role": "optional_workflow_result",
           "exists": true,
           "size_bytes": 2305,
-          "sha256": "88f080c78fe5d1f93b19d18b690d548f3a54fc3d5c965f2a09747c547aa1b74d"
+          "sha256": "6f18515a14ddec3fad33b6162a38c68882a55048ba663878b7dca951bac211b1"
         },
         {
           "path": "public_launch/datacapsule7/DATACAPSULE7_WORKFLOW_AUDIT.json",
           "role": "workflow_audit",
           "exists": true,
           "size_bytes": 979,
-          "sha256": "b0a0f142bbcffd2d1fb4b45b60b19187b3ad87b4bf8df865778e60a06f06c118"
+          "sha256": "e7633121be9eeab099a0a0bd9418911cda2862905432965c3b64ea53a81d44a2"
         },
         {
           "path": "public_launch/datacapsule7/DATACAPSULE7_CLAIM_BOUNDARY_AUDIT.json",
           "role": "claim_audit",
           "exists": true,
           "size_bytes": 598,
-          "sha256": "e5a9fab60792ac99779b56ef7e635943f1d33c2f670c9778e82183b075509f21"
+          "sha256": "ea76863c3bd82b7422581f726a49db20cea87d57d920bd03abebe7190c2a3611"
         }
       ],
       "public_allowed": [
@@ -173,9 +173,9 @@
         "opt-in workflow artifact examples under examples/"
       ],
       "private_reserved": [
-        "exact ranking weights",
+        "private ranking calibration values",
         "threshold policy",
-        "anti-gaming rules",
+        "anti-gaming policy details",
         "provider trust priors",
         "private negative-control banks",
         "private probe seeds",
@@ -196,9 +196,9 @@
     "opt-in workflow artifact examples under examples/"
   ],
   "private_reserved": [
-    "exact ranking weights",
+    "private ranking calibration values",
     "threshold policy",
-    "anti-gaming rules",
+    "anti-gaming policy details",
     "provider trust priors",
     "private negative-control banks",
     "private probe seeds",

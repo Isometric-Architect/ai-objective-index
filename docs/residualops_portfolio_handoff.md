@@ -14,9 +14,9 @@ Use the ROE-3 release kit to decide which vertical to advance next. It is meant 
 
 The likely next paths are:
 
-- ROE-5 portfolio onboarding kit
 - first external repository pilot with exactly one manually enabled workflow
+- ROE-6 pilot receipt intake and feedback memory
 
 ## Private Material
 
-Keep exact ranking weights, threshold policy, anti-gaming rules, provider trust priors, private negative controls, private probe seeds, commercial routing policy, and enterprise data policy outside the public repository.
+Keep ranking calibration values, threshold policy, anti-gaming policy details, provider trust priors, private negative controls, private probe seeds, commercial routing policy, and enterprise data policy outside the public repository.

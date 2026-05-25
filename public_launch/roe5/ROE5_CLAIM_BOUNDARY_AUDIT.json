@@ -1,7 +1,7 @@
 {
-  "schema": "ResidualOps_ROE4ClaimBoundaryAudit/v0.1",
-  "generated_at": "2026-05-25T07:43:19.026694+00:00",
-  "decision": "PASS_ROE4_CLAIM_BOUNDARY",
+  "schema": "ResidualOps_ROE5ClaimBoundaryAudit/v0.1",
+  "generated_at": "2026-05-25T07:43:35.050291+00:00",
+  "decision": "PASS_ROE5_CLAIM_BOUNDARY",
   "finding_count": 0,
   "risky_phrase_count": 0,
   "findings": [],

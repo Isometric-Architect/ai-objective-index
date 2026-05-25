@@ -77,6 +77,8 @@ ROE-3 adds a unified ResidualOps portfolio release kit across QIRA-8, AgentSec-7
 
 ROE-4 aligns the public/private distribution split across QIRA-9, AgentSec-8, and DataCapsule-7. It treats opt-in workflow artifact examples as public-safe distribution surfaces while keeping exact weights, thresholds, provider priors, anti-gaming rules, private negative controls, private probe seeds, receipt weighting, and commercial routing policy non-public. It does not enable workflows, call GitHub APIs, post comments, execute tools, submit registries, handle tokens, certify security, guarantee quality, prove readiness, or authorize actions.
 
+ROE-5 adds a portfolio onboarding kit for the first external or separate-repository pilot. It creates a vertical selection matrix, owner consent gate, repository pilot checklist, and dry-run onboarding plan while keeping owner consent required before any workflow enablement. It does not enable workflows, call GitHub APIs, post comments, handle tokens, expose private kernels, certify security, guarantee quality, prove readiness, or authorize actions.
+
 ## Quick Example
 
 Example objective request:

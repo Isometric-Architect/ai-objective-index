@@ -79,9 +79,9 @@ PUBLIC_ALLOWED = [
 ]
 
 PRIVATE_RESERVED = [
-    "exact ranking weights",
+    "private ranking calibration values",
     "threshold policy",
-    "anti-gaming rules",
+    "anti-gaming policy details",
     "provider trust priors",
     "private negative-control banks",
     "private probe seeds",

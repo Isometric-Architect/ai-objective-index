@@ -17,6 +17,8 @@ They must stay conservative.
 - human review handoff
 - opt-in workflow distribution runbook
 - public/private distribution matrix
+- owner consent gate
+- repository pilot checklist
 
 ## Forbidden Public Framing
 
@@ -52,3 +54,4 @@ Private:
 - commercial routing policy
 - enterprise data strategy
 - private receipt weighting
+- partner-specific strategy

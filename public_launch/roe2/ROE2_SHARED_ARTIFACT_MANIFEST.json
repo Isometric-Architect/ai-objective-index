@@ -1,6 +1,6 @@
 {
   "schema": "ResidualOps_SharedArtifactManifest/v0.1",
-  "generated_at": "2026-05-25T02:00:02.432933+00:00",
+  "generated_at": "2026-05-25T02:15:23.757147+00:00",
   "decision": "PASS_ROE2_SHARED_MANIFEST_READY",
   "vertical_count": 3,
   "totals": {
@@ -76,17 +76,17 @@
     {
       "vertical_id": "agentsec",
       "product_name": "AgentSec Gate",
-      "package": "AgentSec-6",
-      "public_role": "local repository-supplied manifest corpus ingestion artifact",
-      "primary_result": "public_launch/agentsec6/AGENTSEC6_PACKAGE_RESULT.json",
-      "primary_decision": "PASS_AGENTSEC6_LOCAL_MANIFEST_CORPUS_PACKAGE",
+      "package": "AgentSec-7",
+      "public_role": "local AgentSec reviewer report and PR comment draft artifact",
+      "primary_result": "public_launch/agentsec7/AGENTSEC7_BUNDLE_RESULT.json",
+      "primary_decision": "PASS_AGENTSEC7_REVIEWER_BUNDLE",
       "decision_bucket": "allow",
       "decision_counts": {
         "allow": 1,
         "hold": 2,
         "block": 2
       },
-      "claim_audit": "public_launch/agentsec6/AGENTSEC_CLAIM_BOUNDARY_AUDIT.json",
+      "claim_audit": "public_launch/agentsec7/AGENTSEC_CLAIM_BOUNDARY_AUDIT.json",
       "safe_flags": {
         "local_only": true,
         "network_used": false,
@@ -97,11 +97,11 @@
         "can_certify_quality": false
       },
       "known_limits": [
-        "repository-supplied manifest corpus only",
-        "local metadata policy gate only",
+        "local manifest artifact bundle only",
         "no live MCP call",
         "no external tool execution",
         "no URL fetch",
+        "no GitHub API call",
         "not verification",
         "not security certification",
         "not quality guarantee",
@@ -120,46 +120,40 @@
       ],
       "artifacts": [
         {
-          "path": "public_launch/agentsec6/AGENTSEC6_PACKAGE_RESULT.json",
+          "path": "public_launch/agentsec7/AGENTSEC7_ARTIFACT_MANIFEST.json",
           "exists": true,
-          "bytes": 1350,
-          "sha256": "a04b546353a2dd701a6f91f9e029fb2ad6d81619b583af6c1e49a3d169c3f4a7"
+          "bytes": 2227,
+          "sha256": "a81818c93dc74a86e5a86ecaafe62e505b4a78a3eee5ad61882d0b8ec7ffe385"
         },
         {
-          "path": "public_launch/agentsec6/AGENTSEC6_SAMPLE_MANIFEST_CORPUS.json",
+          "path": "public_launch/agentsec7/AGENTSEC7_BUNDLE_RESULT.json",
           "exists": true,
-          "bytes": 2798,
-          "sha256": "da098c2df5201310c2fb0211e0901cc1951759d7ad398dcfeaacccb3f5c1a4fc"
+          "bytes": 1897,
+          "sha256": "f94b6f8dcad86af5e1c788d61ba150fe1f5a73a32a83e30e1d3d76b442d44cc0"
         },
         {
-          "path": "public_launch/agentsec6/AGENTSEC6_CORPUS_INTAKE_RESULT.json",
+          "path": "public_launch/agentsec7/AGENTSEC7_REVIEWER_REPORT.md",
           "exists": true,
-          "bytes": 22316,
-          "sha256": "e516ea1e74b718a156e760e99b85a1f807407033c41b8020cedc9222a716e91e"
+          "bytes": 2318,
+          "sha256": "0e28e85fbac8b473095fbec8bab54569c61050ffaaf86ea73630cb6da6e1f9d7"
         },
         {
-          "path": "public_launch/agentsec6/AGENTSEC6_POLICY_GATE_RESULT.json",
+          "path": "public_launch/agentsec7/AGENTSEC7_PR_COMMENT_DRAFT.md",
           "exists": true,
-          "bytes": 19617,
-          "sha256": "96d3b4ab4946ec920e76833e3c74f22147ee52814442d6266ed6e568e88c85a0"
+          "bytes": 855,
+          "sha256": "da8bfaadc96a8e7b4c285db57c341e48a8c968ed5e374176b86be8885ff1b96b"
         },
         {
-          "path": "public_launch/agentsec6/AGENTSEC6_CORPUS_REPORT.md",
+          "path": "public_launch/agentsec7/AGENTSEC7_NEXT_STEPS.md",
           "exists": true,
-          "bytes": 1336,
-          "sha256": "b98c015bd0db001c75349d5ec6db36dcaf0928fbd3fb08d83ac6be06a098412a"
+          "bytes": 374,
+          "sha256": "2d1e187d53bcea306345fc50fa490d94e788acce983bcbb2bb9576452e518f08"
         },
         {
-          "path": "public_launch/agentsec6/AGENTSEC6_NEXT_STEPS.md",
-          "exists": true,
-          "bytes": 550,
-          "sha256": "3c816e87908980a1b9cdfa4b23a0268cd27b9c72a1aadeac2cb3a496a8a3a01e"
-        },
-        {
-          "path": "public_launch/agentsec6/AGENTSEC_CLAIM_BOUNDARY_AUDIT.json",
+          "path": "public_launch/agentsec7/AGENTSEC_CLAIM_BOUNDARY_AUDIT.json",
           "exists": true,
           "bytes": 711,
-          "sha256": "33fc9120ce00762678e0adeae71ca2ce3b6ffc972671d34e968068597b6d4d72"
+          "sha256": "04a3984b6ff0ca0568887e42da73d432049a267fef628152ef95fa735a6c9178"
         }
       ]
     },

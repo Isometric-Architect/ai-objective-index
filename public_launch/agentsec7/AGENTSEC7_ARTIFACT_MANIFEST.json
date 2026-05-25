@@ -1,0 +1,64 @@
+{
+  "schema": "AgentSec_ArtifactManifest/v0.1",
+  "generated_at": "2026-05-25T02:15:04.250694+00:00",
+  "decision": "PASS_AGENTSEC7_ARTIFACT_MANIFEST",
+  "artifacts": [
+    {
+      "path": "public_launch/agentsec6/AGENTSEC6_SAMPLE_MANIFEST_CORPUS.json",
+      "role": "source_manifest_corpus",
+      "exists": true,
+      "size_bytes": 2798,
+      "sha256": "da098c2df5201310c2fb0211e0901cc1951759d7ad398dcfeaacccb3f5c1a4fc"
+    },
+    {
+      "path": "public_launch/agentsec6/AGENTSEC6_CORPUS_INTAKE_RESULT.json",
+      "role": "corpus_intake",
+      "exists": true,
+      "size_bytes": 22316,
+      "sha256": "bdf3f33c997d013df6d2a105f24f7057152fd65c875e06b011a6937234f407c0"
+    },
+    {
+      "path": "public_launch/agentsec6/AGENTSEC6_POLICY_GATE_RESULT.json",
+      "role": "policy_gate",
+      "exists": true,
+      "size_bytes": 19617,
+      "sha256": "d8552254595614226a41bfaa01bd463d80543bfcffc0ea363731b82d66a9b5f5"
+    },
+    {
+      "path": "public_launch/agentsec6/AGENTSEC6_CORPUS_REPORT.md",
+      "role": "corpus_report",
+      "exists": true,
+      "size_bytes": 1336,
+      "sha256": "b98c015bd0db001c75349d5ec6db36dcaf0928fbd3fb08d83ac6be06a098412a"
+    },
+    {
+      "path": "public_launch/agentsec6/AGENTSEC6_PACKAGE_RESULT.json",
+      "role": "package_result",
+      "exists": true,
+      "size_bytes": 1350,
+      "sha256": "ef17924dc0f054030b8767b8c81eaf95f034c330dd41cdcb08b32dd7f3531c22"
+    },
+    {
+      "path": "public_launch/agentsec7/AGENTSEC7_REVIEWER_REPORT.md",
+      "role": "agentsec7_output",
+      "exists": true,
+      "size_bytes": 2318,
+      "sha256": "0e28e85fbac8b473095fbec8bab54569c61050ffaaf86ea73630cb6da6e1f9d7"
+    },
+    {
+      "path": "public_launch/agentsec7/AGENTSEC7_PR_COMMENT_DRAFT.md",
+      "role": "agentsec7_output",
+      "exists": true,
+      "size_bytes": 855,
+      "sha256": "da8bfaadc96a8e7b4c285db57c341e48a8c968ed5e374176b86be8885ff1b96b"
+    }
+  ],
+  "missing_artifacts": [],
+  "external_actions_performed": false,
+  "github_api_used": false,
+  "pr_comment_posted": false,
+  "live_mcp_called": false,
+  "external_tool_executed": false,
+  "network_used": false,
+  "token_printed": false
+}

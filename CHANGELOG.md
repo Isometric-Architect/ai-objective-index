@@ -1,5 +1,11 @@
 # Changelog
 
+## AgentSec-7
+
+- Added reviewer-facing PR artifact bundle generation for AgentSec local manifest review outputs.
+- Added Markdown reviewer report, PR comment draft, artifact manifest, bundle result, docs, public sample outputs, and tests.
+- Preserved boundaries: no PR comment posting, no GitHub API calls, no live MCP calls, no external tool execution, no URL fetch, no token handling, and no certification/readiness/action-authorization claim.
+
 ## AgentSec-6
 
 - Added local manifest corpus ingestion for repository-supplied MCP/tool metadata.

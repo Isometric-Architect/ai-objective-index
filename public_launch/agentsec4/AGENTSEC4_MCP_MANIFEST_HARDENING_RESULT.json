@@ -1,0 +1,28 @@
+{
+  "schema": "AgentSec_McpManifestHardeningResult/v0.1",
+  "generated_at": "2026-05-25T00:45:46.179636+00:00",
+  "decision": "PASS_AGENTSEC4_MCP_MANIFEST_HARDENED",
+  "tool_manifest_path": "data/generated_mcp_tools_manifest.json",
+  "server_json_path": ".mcp/server.json",
+  "tool_count": 22,
+  "findings": [],
+  "warnings": [],
+  "read_only": true,
+  "local_only": true,
+  "network_used": false,
+  "live_mcp_called": false,
+  "external_tool_executed": false,
+  "token_printed": false,
+  "can_certify_security": false,
+  "can_certify_quality": false,
+  "can_authorize_action": false,
+  "known_limits": [
+    "static MCP manifest hardening only",
+    "no live MCP call",
+    "no external tool execution",
+    "no URL fetch",
+    "not security certification",
+    "not quality guarantee",
+    "not action authorization"
+  ]
+}

@@ -84,7 +84,7 @@ def build_vertical_status_dashboard(root: Path | None = None) -> dict[str, Any]:
         },
         "decision_totals": totals,
         "rows": rows,
-        "portfolio_note": "QIRA currently passes its local bundle gate; AgentSec and DataCapsule intentionally retain conservative BLOCK signals in sample fixtures.",
+        "portfolio_note": "QIRA and AgentSec currently pass their package-level local gates; DataCapsule intentionally retains conservative BLOCK signals in sample use-risk fixtures.",
         "external_actions_performed": False,
         "workflow_enabled": False,
         "network_used": False,

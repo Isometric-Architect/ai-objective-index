@@ -17,4 +17,12 @@ AgentSec-2 includes two public-safe profile constructors:
 - `developer_default_profile()`
 - `strict_enterprise_profile()`
 
-Both are deterministic and conservative. They support local review prioritization only, not verification, security certification, quality guarantee, production readiness, or external action authorization.
+AgentSec-4 adds a profile pack around these constructors and related public-safe presets:
+
+- `agentsec-local-metadata-only`
+- `agentsec-developer-default`
+- `agentsec-ci-artifact-review`
+- `agentsec-mcp-registry-metadata`
+- `agentsec-strict-enterprise`
+
+All profiles are deterministic and conservative. They support local review prioritization only, not verification, security certification, quality guarantee, production readiness, live gateway protection, or external action authorization.

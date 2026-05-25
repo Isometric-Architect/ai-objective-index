@@ -43,6 +43,8 @@ AgentSec-2 adds local multi-manifest intake and public-safe policy profiles. It 
 
 AgentSec-3 adds an opt-in CI artifact bridge. It provides a reusable composite action and inactive example workflow that convert repository-supplied MCP/tool manifests into AgentSec-2 policy-gate artifacts. It does not enable workflows by default, call live MCP servers, execute tools, fetch URLs, call GitHub APIs, post comments, handle tokens, certify security, guarantee quality, or authorize actions.
 
+AgentSec-4 adds public-safe policy profile packs and static MCP manifest hardening for AOI's read-only MCP surfaces. It does not call live MCP servers, execute tools, fetch URLs, request tokens, expose private thresholds or provider priors, certify security, guarantee quality, prove product readiness, or authorize actions.
+
 DataCapsule-1 starts the third ResidualOps vertical: local data-use capsules for repository-supplied dataset or corpus metadata. It separates `train`, `retrieve`, `evaluate`, `summarize`, `share`, and `act` use boundaries under source, rights, privacy, eval-leak, stale-data, and claim-ceiling limits. It does not crawl, fetch URLs, inspect private data, call external services, certify legal sufficiency, certify privacy compliance, guarantee data quality, clear licenses, prove evaluation cleanliness, or authorize actions.
 
 DataCapsule-2 adds local corpus manifest intake and negative controls. It aggregates repository-supplied file metadata into a corpus-level DataCapsule, checks known-bad local fixtures, and records false-pass counts without crawling directories, reading private file contents, fetching URLs, calling external services, proving rights/privacy/data quality/eval cleanliness, or authorizing actions.

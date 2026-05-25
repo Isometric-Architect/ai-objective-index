@@ -1,5 +1,11 @@
 # Changelog
 
+## AgentSec-4
+
+- Added public-safe AgentSec policy profile pack generation.
+- Added static MCP manifest hardening checks for AOI read-only MCP surfaces.
+- Added AgentSec-4 docs, sample outputs, claim audit coverage, and tests while preserving no-live-MCP/no-external-tool/no-token/no-private-kernel/no-certification/no-action-authorization boundaries.
+
 ## ROE-2
 
 - Added a shared ResidualOps artifact manifest over QIRA, AgentSec, and DataCapsule outputs.

@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-05-25T03:33:11.407743+00:00",
+  "decision": "PASS_ROE3_CLAIM_BOUNDARY",
+  "issues": [],
+  "risky_phrase_count": 0,
+  "findings": [],
+  "public_private_alignment_decision": "PASS_PUBLIC_PRIVATE_ALIGNMENT",
+  "alignment_finding_count": 0,
+  "external_actions_performed": false,
+  "workflow_enabled": false,
+  "network_used": false,
+  "token_printed": false,
+  "private_kernel_exposed": false
+}

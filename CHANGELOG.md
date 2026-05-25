@@ -1,5 +1,11 @@
 # Changelog
 
+## ROE-3
+
+- Added a unified ResidualOps portfolio release kit over QIRA-8, AgentSec-7, and DataCapsule-6.
+- Added portfolio release notes, public vertical index, operator handoff, artifact manifest, claim-boundary audit, docs, public outputs, and tests.
+- Preserved boundaries: no workflow enablement, no GitHub API calls, no comment posting, no crawling, no live MCP calls, no external tool execution, no package upload, no registry submission, no token handling, no private-kernel exposure, and no certification/readiness/action-authorization claim.
+
 ## DataCapsule-6
 
 - Added reviewer-facing repository corpus audit bundle generation for DataCapsule local metadata review outputs.

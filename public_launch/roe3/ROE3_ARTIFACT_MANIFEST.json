@@ -1,0 +1,54 @@
+{
+  "schema": "ResidualOps_PortfolioArtifactManifest/v0.1",
+  "generated_at": "2026-05-25T03:33:11.450774+00:00",
+  "decision": "PASS_ROE3_ARTIFACT_MANIFEST",
+  "source_references": [
+    {
+      "path": "public_launch/roe2/ROE2_SHARED_ARTIFACT_MANIFEST.json",
+      "exists": true,
+      "role": "ROE-2 shared artifact manifest input"
+    },
+    {
+      "path": "public_launch/roe2/ROE2_VERTICAL_STATUS_DASHBOARD.json",
+      "exists": true,
+      "role": "ROE-2 vertical status dashboard input"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "public_launch/roe3/ROE3_PORTFOLIO_RELEASE_KIT.json",
+      "exists": true,
+      "bytes": 6293,
+      "sha256": "1f588160bc6ad9fc603a76059f8217d5df8008e6173c9816a0e1584a5f716127"
+    },
+    {
+      "path": "public_launch/roe3/ROE3_PORTFOLIO_RELEASE_NOTES.md",
+      "exists": true,
+      "bytes": 1331,
+      "sha256": "abdcdd1c53527c8efbaad53f3cc3fd614f91fc7e9e410896558720d5ba759243"
+    },
+    {
+      "path": "public_launch/roe3/ROE3_PUBLIC_VERTICAL_INDEX.md",
+      "exists": true,
+      "bytes": 1643,
+      "sha256": "2454b45cc28a3f0c15119532c459f5b734ca5c2cddceb6af7a1904bf9523760b"
+    },
+    {
+      "path": "public_launch/roe3/ROE3_OPERATOR_HANDOFF.md",
+      "exists": true,
+      "bytes": 1082,
+      "sha256": "cfb7323c670e0a8a99de03c8a1327dcd261eae79093d0b0360f62e55e372ec30"
+    },
+    {
+      "path": "public_launch/roe3/ROE3_NEXT_STEPS.md",
+      "exists": true,
+      "bytes": 522,
+      "sha256": "32b3b72b9e4bb14e5885df4b4ab34ebf0db802ecfd20f2fbbd31a691ab1d3b12"
+    }
+  ],
+  "missing_artifacts": [],
+  "external_actions_performed": false,
+  "workflow_enabled": false,
+  "network_used": false,
+  "token_printed": false
+}

@@ -1,0 +1,176 @@
+{
+  "schema": "ResidualOps_PortfolioReleaseKit/v0.1",
+  "generated_at": "2026-05-25T03:33:11.429978+00:00",
+  "decision": "PASS_ROE3_PORTFOLIO_RELEASE_KIT",
+  "source_manifest": "public_launch/roe2/ROE2_SHARED_ARTIFACT_MANIFEST.json",
+  "source_dashboard": "public_launch/roe2/ROE2_VERTICAL_STATUS_DASHBOARD.json",
+  "vertical_count": 3,
+  "verticals": [
+    {
+      "vertical_id": "qira",
+      "product_name": "QIRA-Code ReleaseGate",
+      "package": "QIRA-8",
+      "public_role": "local PR/release review artifact bundle",
+      "primary_decision": "PASS_QIRA8_REVIEWER_BUNDLE",
+      "status": "ALLOW_OR_PASS",
+      "artifact_count": 6,
+      "missing_artifact_count": 0,
+      "primary_result": "public_launch/qira8/QIRA8_BUNDLE_RESULT.json",
+      "claim_audit": "public_launch/qira8/QIRA_CLAIM_BOUNDARY_AUDIT.json",
+      "safe_flags": {
+        "local_only": true,
+        "network_used": false,
+        "external_actions_performed": false,
+        "token_printed": false,
+        "can_authorize_action": false,
+        "can_certify_security": false,
+        "can_certify_quality": false
+      },
+      "known_limits": [],
+      "must_not_claim": []
+    },
+    {
+      "vertical_id": "agentsec",
+      "product_name": "AgentSec Gate",
+      "package": "AgentSec-7",
+      "public_role": "local AgentSec reviewer report and PR comment draft artifact",
+      "primary_decision": "PASS_AGENTSEC7_REVIEWER_BUNDLE",
+      "status": "ALLOW_OR_PASS",
+      "artifact_count": 6,
+      "missing_artifact_count": 0,
+      "primary_result": "public_launch/agentsec7/AGENTSEC7_BUNDLE_RESULT.json",
+      "claim_audit": "public_launch/agentsec7/AGENTSEC_CLAIM_BOUNDARY_AUDIT.json",
+      "safe_flags": {
+        "local_only": true,
+        "network_used": false,
+        "external_actions_performed": false,
+        "token_printed": false,
+        "can_authorize_action": false,
+        "can_certify_security": false,
+        "can_certify_quality": false
+      },
+      "known_limits": [
+        "local manifest artifact bundle only",
+        "no live MCP call",
+        "no external tool execution",
+        "no URL fetch",
+        "no GitHub API call",
+        "not verification",
+        "not security certification",
+        "not quality guarantee",
+        "not product-readiness proof",
+        "not action authorization"
+      ],
+      "must_not_claim": [
+        "do not claim verified tool status",
+        "do not claim safety",
+        "do not claim security certification",
+        "do not claim quality guarantee",
+        "do not claim production readiness",
+        "do not claim live gateway protection",
+        "do not claim external action authorization",
+        "do not claim legal compliance"
+      ]
+    },
+    {
+      "vertical_id": "datacapsule",
+      "product_name": "DataCapsule / AIDREG Engine",
+      "package": "DataCapsule-6",
+      "public_role": "local repository corpus audit report and review comment draft artifact",
+      "primary_decision": "PASS_DATACAPSULE6_REPOSITORY_AUDIT_BUNDLE",
+      "status": "ALLOW_OR_PASS",
+      "artifact_count": 6,
+      "missing_artifact_count": 0,
+      "primary_result": "public_launch/datacapsule6/DATACAPSULE6_BUNDLE_RESULT.json",
+      "claim_audit": "public_launch/datacapsule6/DATACAPSULE_CLAIM_BOUNDARY_AUDIT.json",
+      "safe_flags": {
+        "local_only": true,
+        "network_used": false,
+        "external_actions_performed": false,
+        "token_printed": false,
+        "can_authorize_action": false,
+        "can_certify_security": false,
+        "can_certify_quality": false
+      },
+      "known_limits": [
+        "repository-owned local metadata artifact bundle only",
+        "public-safe fake data-use fixtures only",
+        "local negative controls only",
+        "no crawling",
+        "no live source verification",
+        "no private data inspection",
+        "not legal sufficiency",
+        "not privacy compliance",
+        "not data quality guarantee",
+        "not evaluation cleanliness proof",
+        "not action authorization"
+      ],
+      "must_not_claim": [
+        "do not claim legal sufficiency",
+        "do not claim privacy compliance",
+        "do not claim data quality guarantee",
+        "do not claim license clearance",
+        "do not claim evaluation cleanliness",
+        "do not claim action authorization",
+        "do not claim purchasing advice"
+      ]
+    }
+  ],
+  "status_counts": {
+    "allow_or_pass": 3,
+    "hold_review": 0,
+    "block_risk": 0
+  },
+  "decision_totals": {
+    "allow": 3,
+    "hold": 2,
+    "block": 2
+  },
+  "release_surfaces": [
+    "public_launch/roe3/ROE3_PORTFOLIO_RELEASE_NOTES.md",
+    "public_launch/roe3/ROE3_PUBLIC_VERTICAL_INDEX.md",
+    "public_launch/roe3/ROE3_OPERATOR_HANDOFF.md",
+    "public_launch/roe3/ROE3_ARTIFACT_MANIFEST.json"
+  ],
+  "known_limits": [
+    "portfolio release kit only",
+    "local artifact packaging only",
+    "no workflow enablement",
+    "no GitHub API call",
+    "no PR comment posting",
+    "no crawling",
+    "no live MCP call",
+    "no external tool execution",
+    "not verification",
+    "not security certification",
+    "not quality guarantee",
+    "not product-readiness proof",
+    "not legal, privacy, license, or evaluation-cleanliness proof",
+    "not action authorization"
+  ],
+  "must_not_claim": [
+    "do not claim verified capability",
+    "do not claim safety",
+    "do not claim security certification",
+    "do not claim quality guarantee",
+    "do not claim production readiness",
+    "do not claim legal sufficiency",
+    "do not claim privacy compliance",
+    "do not claim license clearance",
+    "do not claim evaluation cleanliness",
+    "do not claim external action authorization"
+  ],
+  "external_actions_performed": false,
+  "workflow_enabled": false,
+  "github_api_used": false,
+  "review_comment_posted": false,
+  "crawler_used": false,
+  "network_used": false,
+  "live_mcp_called": false,
+  "external_tool_executed": false,
+  "token_printed": false,
+  "private_kernel_exposed": false,
+  "can_certify_security": false,
+  "can_certify_quality": false,
+  "can_authorize_action": false
+}

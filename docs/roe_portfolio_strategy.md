@@ -28,3 +28,9 @@ Packet or manifest
 ```
 
 This keeps the public surface useful to AI agents and developers while reserving exact weights, thresholds, provider priors, anti-gaming rules, private negative controls, private probe seeds, and commercial routing policy as non-public kernel details.
+
+## ROE-2 Shared Artifact Manifest
+
+ROE-2 adds a local operations view over the implemented verticals. It indexes QIRA, AgentSec, and DataCapsule artifact outputs, normalizes primary decisions into coarse status buckets, and writes a Markdown dashboard for portfolio review.
+
+ROE-2 is still read-only local bookkeeping. It does not run probes, execute tools, enable workflows, call GitHub APIs, upload packages, submit registry metadata, certify security, guarantee quality, prove product readiness, or authorize actions.

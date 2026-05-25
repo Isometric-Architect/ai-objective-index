@@ -1,0 +1,252 @@
+{
+  "schema": "ResidualOps_SharedArtifactManifest/v0.1",
+  "generated_at": "2026-05-25T00:08:18.035398+00:00",
+  "decision": "PASS_ROE2_SHARED_MANIFEST_READY",
+  "vertical_count": 3,
+  "totals": {
+    "allow": 2,
+    "hold": 1,
+    "block": 2
+  },
+  "verticals": [
+    {
+      "vertical_id": "qira",
+      "product_name": "QIRA-Code ReleaseGate",
+      "package": "QIRA-8",
+      "public_role": "local PR/release review artifact bundle",
+      "primary_result": "public_launch/qira8/QIRA8_BUNDLE_RESULT.json",
+      "primary_decision": "PASS_QIRA8_REVIEWER_BUNDLE",
+      "decision_bucket": "allow",
+      "decision_counts": {
+        "allow": 1,
+        "hold": 0,
+        "block": 0
+      },
+      "claim_audit": "public_launch/qira8/QIRA_CLAIM_BOUNDARY_AUDIT.json",
+      "safe_flags": {
+        "local_only": true,
+        "network_used": false,
+        "external_actions_performed": false,
+        "token_printed": false,
+        "can_authorize_action": false,
+        "can_certify_security": false,
+        "can_certify_quality": false
+      },
+      "known_limits": [],
+      "must_not_claim": [],
+      "artifacts": [
+        {
+          "path": "public_launch/qira8/QIRA8_ARTIFACT_MANIFEST.json",
+          "exists": true,
+          "bytes": 2034,
+          "sha256": "938003a4b097b95d0bea208f94416b3a0c817b78fb14840dbd7a79c460eacec4"
+        },
+        {
+          "path": "public_launch/qira8/QIRA8_BUNDLE_RESULT.json",
+          "exists": true,
+          "bytes": 954,
+          "sha256": "c1f8a85f842c4e306dfa6f0edab1e67b2bf5ed4f60271ad3af7ef77447160391"
+        },
+        {
+          "path": "public_launch/qira8/QIRA8_REVIEWER_REPORT.md",
+          "exists": true,
+          "bytes": 1718,
+          "sha256": "c97e447ccdf0a4bcb53ff82a226c374e29c3ad80144b6d7be368ff3c7746c459"
+        },
+        {
+          "path": "public_launch/qira8/QIRA8_PR_COMMENT_DRAFT.md",
+          "exists": true,
+          "bytes": 520,
+          "sha256": "5e2d28258ff3b92d3adbceff1d39efa1e8ef9cb34017910816d4f2794f3ebf31"
+        },
+        {
+          "path": "public_launch/qira8/QIRA8_NEXT_STEPS.md",
+          "exists": true,
+          "bytes": 311,
+          "sha256": "fe965af307bca051216c22dfaae84af57cd66c493c87297d3bb2844e403d380b"
+        },
+        {
+          "path": "public_launch/qira8/QIRA_CLAIM_BOUNDARY_AUDIT.json",
+          "exists": true,
+          "bytes": 718,
+          "sha256": "c4f9d75901f35b70912b2a6c7f47b02f9fbb7d19f86e63340b15cd35fa97d43e"
+        }
+      ]
+    },
+    {
+      "vertical_id": "agentsec",
+      "product_name": "AgentSec Gate",
+      "package": "AgentSec-3",
+      "public_role": "local MCP/tool manifest policy-gate artifact",
+      "primary_result": "public_launch/agentsec3/AGENTSEC3_POLICY_GATE_RESULT.json",
+      "primary_decision": "BLOCK_AGENTSEC2_POLICY_RISK",
+      "decision_bucket": "block",
+      "decision_counts": {
+        "allow": 1,
+        "hold": 1,
+        "block": 1
+      },
+      "claim_audit": "public_launch/agentsec3/AGENTSEC_CLAIM_BOUNDARY_AUDIT.json",
+      "safe_flags": {
+        "local_only": true,
+        "network_used": false,
+        "external_actions_performed": false,
+        "token_printed": false,
+        "can_authorize_action": false,
+        "can_certify_security": false,
+        "can_certify_quality": false
+      },
+      "known_limits": [
+        "local metadata policy gate only",
+        "no live MCP call",
+        "no external tool execution",
+        "no URL fetch",
+        "not verification",
+        "not security certification",
+        "not action authorization"
+      ],
+      "must_not_claim": [
+        "do not claim verified tool status",
+        "do not claim safety",
+        "do not claim security certification",
+        "do not claim quality guarantee",
+        "do not claim production readiness",
+        "do not claim external action authorization",
+        "do not claim legal compliance"
+      ],
+      "artifacts": [
+        {
+          "path": "public_launch/agentsec3/AGENTSEC3_POLICY_GATE_RESULT.json",
+          "exists": true,
+          "bytes": 12159,
+          "sha256": "4fe0c0c5dd8c36907a55bb5f253cc0f490ae843b7a8210f72b0f9bb6a8fd468b"
+        },
+        {
+          "path": "public_launch/agentsec3/AGENTSEC3_BRIDGE_RESULT.json",
+          "exists": true,
+          "bytes": 1252,
+          "sha256": "0564df7db9385b44ffb21e59665df39e7c18fbbee4852b592056e8409a400c9e"
+        },
+        {
+          "path": "public_launch/agentsec3/AGENTSEC3_POLICY_GATE_REPORT.md",
+          "exists": true,
+          "bytes": 1245,
+          "sha256": "ce2df970cda4df4c8c1b882c8b1c6891f8552b4295a0effa44a45831b90e1889"
+        },
+        {
+          "path": "public_launch/agentsec3/AGENTSEC3_ACTION_MANIFEST_AUDIT.json",
+          "exists": true,
+          "bytes": 397,
+          "sha256": "6c78082b222f14a02a65143571405017c3bbd7b48923fc20485194091c41b7b1"
+        },
+        {
+          "path": "public_launch/agentsec3/AGENTSEC3_NEXT_STEPS.md",
+          "exists": true,
+          "bytes": 622,
+          "sha256": "5fd89da81ae72c640354de86ec661635c99d597194bfd092e9342308be3327fb"
+        },
+        {
+          "path": "public_launch/agentsec3/AGENTSEC_CLAIM_BOUNDARY_AUDIT.json",
+          "exists": true,
+          "bytes": 711,
+          "sha256": "f70748ba853bbdd2cbf52839dc77ef5df62814cb0fb472e03dd5fe42d7ce63d9"
+        }
+      ]
+    },
+    {
+      "vertical_id": "datacapsule",
+      "product_name": "DataCapsule / AIDREG Engine",
+      "package": "DataCapsule-4",
+      "public_role": "local data-use and corpus manifest boundary artifact",
+      "primary_result": "public_launch/datacapsule4/DATACAPSULE4_INTAKE_RESULT.json",
+      "primary_decision": "BLOCK_DATACAPSULE3_USE_RISK",
+      "decision_bucket": "block",
+      "decision_counts": {
+        "allow": 0,
+        "hold": 0,
+        "block": 1
+      },
+      "claim_audit": "public_launch/datacapsule4/DATACAPSULE4_CLAIM_BOUNDARY_AUDIT.json",
+      "safe_flags": {
+        "local_only": true,
+        "network_used": false,
+        "external_actions_performed": false,
+        "token_printed": false,
+        "can_authorize_action": false,
+        "can_certify_security": false,
+        "can_certify_quality": false
+      },
+      "known_limits": [
+        "local CSV/JSONL/JSON manifest metadata only",
+        "no directory crawling",
+        "no private file content inspection",
+        "no URL fetch",
+        "not legal sufficiency",
+        "not privacy compliance",
+        "not data quality guarantee",
+        "not evaluation cleanliness proof",
+        "not action authorization"
+      ],
+      "must_not_claim": [
+        "do not claim legal sufficiency",
+        "do not claim privacy compliance",
+        "do not claim data quality guarantee",
+        "do not claim license clearance",
+        "do not claim evaluation cleanliness",
+        "do not claim action authorization",
+        "do not claim purchasing advice"
+      ],
+      "artifacts": [
+        {
+          "path": "public_launch/datacapsule4/DATACAPSULE4_INTAKE_RESULT.json",
+          "exists": true,
+          "bytes": 10623,
+          "sha256": "1e920e2daf02de62d5cbc134d58d089f921fc00ffa34833884c9db8596e0501f"
+        },
+        {
+          "path": "public_launch/datacapsule4/DATACAPSULE4_BRIDGE_RESULT.json",
+          "exists": true,
+          "bytes": 1435,
+          "sha256": "d903ff04e19d904bb66286ae518af00b685752a13ed20cffeb1ceba8fc0b0dc2"
+        },
+        {
+          "path": "public_launch/datacapsule4/DATACAPSULE4_CORPUS_RESULT.json",
+          "exists": true,
+          "bytes": 8098,
+          "sha256": "def4c76e1aa4db2f64cefbe6f39b6e23844b9af11deb3a1cb766e4d82cd3abe5"
+        },
+        {
+          "path": "public_launch/datacapsule4/DATACAPSULE4_EVAL_LEAK_SEPARATION_REPORT.json",
+          "exists": true,
+          "bytes": 433,
+          "sha256": "1c7add4c7e40fae67be83a55ebb3b671cfc52f28acb2d1d262c566d338b29c0e"
+        },
+        {
+          "path": "public_launch/datacapsule4/DATACAPSULE4_NEXT_STEPS.md",
+          "exists": true,
+          "bytes": 685,
+          "sha256": "0b665c522efe594d86d382e664e19df2f696332feef6265505d0fa4ea021de67"
+        },
+        {
+          "path": "public_launch/datacapsule4/DATACAPSULE4_CLAIM_BOUNDARY_AUDIT.json",
+          "exists": true,
+          "bytes": 786,
+          "sha256": "06f7ceb470c8b8af5e4dceebb4e01a621a612affd2c9e19db7f13149ae0cc001"
+        }
+      ]
+    }
+  ],
+  "missing_artifacts": [],
+  "public_boundary": [
+    "local artifact manifest only",
+    "read-only dashboard input",
+    "not verification",
+    "not security certification",
+    "not quality guarantee",
+    "not action authorization"
+  ],
+  "external_actions_performed": false,
+  "workflow_enabled": false,
+  "network_used": false,
+  "token_printed": false
+}

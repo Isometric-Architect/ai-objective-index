@@ -1,5 +1,11 @@
 # Changelog
 
+## ROE-2
+
+- Added a shared ResidualOps artifact manifest over QIRA, AgentSec, and DataCapsule outputs.
+- Added a local vertical status dashboard, dashboard audit, docs, public ROE-2 outputs, and tests.
+- Preserved boundaries: no probe execution, no workflow enablement, no GitHub API calls, no URL fetch, no external tool execution, no upload, no registry submission, no token handling, no private kernel disclosure, no certification, no product-readiness claim, and no action authorization.
+
 ## ROE-1
 
 - Added ResidualOps vertical surface alignment for QIRA, AgentSec, and DataCapsule.

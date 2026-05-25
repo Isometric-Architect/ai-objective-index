@@ -22,6 +22,7 @@ SCAN_PATHS = [
     Path("docs") / "residualops_common_kernel.md",
     Path("docs"),
     Path("public_launch") / "roe1",
+    Path("public_launch") / "roe2",
 ]
 
 RISKY_PATTERNS = [

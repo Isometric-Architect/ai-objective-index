@@ -1,0 +1,81 @@
+{
+  "schema": "ResidualOps_VerticalStatusDashboard/v0.1",
+  "generated_at": "2026-05-25T00:08:18.045293+00:00",
+  "decision": "PASS_ROE2_DASHBOARD_READY",
+  "manifest_decision": "PASS_ROE2_SHARED_MANIFEST_READY",
+  "vertical_count": 3,
+  "status_counts": {
+    "allow_or_pass": 1,
+    "hold_review": 0,
+    "block_risk": 2
+  },
+  "decision_totals": {
+    "allow": 2,
+    "hold": 1,
+    "block": 2
+  },
+  "rows": [
+    {
+      "vertical_id": "qira",
+      "product_name": "QIRA-Code ReleaseGate",
+      "package": "QIRA-8",
+      "status": "ALLOW_OR_PASS",
+      "primary_decision": "PASS_QIRA8_REVIEWER_BUNDLE",
+      "artifact_count": 6,
+      "missing_artifact_count": 0,
+      "safe_flags": {
+        "local_only": true,
+        "network_used": false,
+        "external_actions_performed": false,
+        "token_printed": false,
+        "can_authorize_action": false,
+        "can_certify_security": false,
+        "can_certify_quality": false
+      },
+      "dashboard_note": "local artifact status only; not certification or action authorization"
+    },
+    {
+      "vertical_id": "agentsec",
+      "product_name": "AgentSec Gate",
+      "package": "AgentSec-3",
+      "status": "BLOCK_RISK",
+      "primary_decision": "BLOCK_AGENTSEC2_POLICY_RISK",
+      "artifact_count": 6,
+      "missing_artifact_count": 0,
+      "safe_flags": {
+        "local_only": true,
+        "network_used": false,
+        "external_actions_performed": false,
+        "token_printed": false,
+        "can_authorize_action": false,
+        "can_certify_security": false,
+        "can_certify_quality": false
+      },
+      "dashboard_note": "local artifact status only; not certification or action authorization"
+    },
+    {
+      "vertical_id": "datacapsule",
+      "product_name": "DataCapsule / AIDREG Engine",
+      "package": "DataCapsule-4",
+      "status": "BLOCK_RISK",
+      "primary_decision": "BLOCK_DATACAPSULE3_USE_RISK",
+      "artifact_count": 6,
+      "missing_artifact_count": 0,
+      "safe_flags": {
+        "local_only": true,
+        "network_used": false,
+        "external_actions_performed": false,
+        "token_printed": false,
+        "can_authorize_action": false,
+        "can_certify_security": false,
+        "can_certify_quality": false
+      },
+      "dashboard_note": "local artifact status only; not certification or action authorization"
+    }
+  ],
+  "portfolio_note": "QIRA currently passes its local bundle gate; AgentSec and DataCapsule intentionally retain conservative BLOCK signals in sample fixtures.",
+  "external_actions_performed": false,
+  "workflow_enabled": false,
+  "network_used": false,
+  "token_printed": false
+}

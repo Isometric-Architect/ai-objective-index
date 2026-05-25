@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-05-25T00:08:18.201645+00:00",
+  "decision": "PASS_ROE2_DASHBOARD_AUDIT",
+  "issues": [],
+  "manifest_decision": "PASS_ROE2_SHARED_MANIFEST_READY",
+  "dashboard_decision": "PASS_ROE2_DASHBOARD_READY",
+  "public_private_alignment_decision": "PASS_PUBLIC_PRIVATE_ALIGNMENT",
+  "risky_phrase_count": 0,
+  "external_actions_performed": false,
+  "workflow_enabled": false,
+  "network_used": false,
+  "token_printed": false
+}

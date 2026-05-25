@@ -53,6 +53,8 @@ DataCapsule-4 adds an opt-in CI artifact bridge for repository-supplied corpus m
 
 ROE-1 aligns QIRA, AgentSec, and DataCapsule under a common ResidualOps surface matrix: packet or manifest intake, local check/probe/review, receipt/result artifact, ALLOW/HOLD/BLOCK decision, opt-in artifact bridge, and claim boundary. Exact weights, thresholds, provider priors, anti-gaming rules, private negative controls, private probe seeds, and commercial routing policy remain non-public.
 
+ROE-2 adds a shared artifact manifest and local dashboard skeleton across QIRA, AgentSec, and DataCapsule. It indexes existing local result artifacts and status buckets without running probes, enabling workflows, calling GitHub APIs, uploading packages, submitting registry metadata, certifying security, guaranteeing quality, proving product readiness, or authorizing actions.
+
 ## Quick Example
 
 Example objective request:

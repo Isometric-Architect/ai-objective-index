@@ -1,0 +1,20 @@
+{
+  "schema": "DataCapsule7_ClaimBoundaryAudit/v0.1",
+  "generated_at": "2026-05-25T05:24:35.418243+00:00",
+  "decision": "PASS_DATACAPSULE7_CLAIM_BOUNDARY",
+  "risky_phrase_count": 0,
+  "findings": [],
+  "allowed_language": [
+    "opt-in workflow artifact",
+    "local corpus metadata review",
+    "source and rights review",
+    "ALLOW/HOLD/BLOCK",
+    "not legal sufficiency",
+    "not privacy compliance",
+    "not data quality guarantee"
+  ],
+  "external_actions_performed": false,
+  "workflow_enabled": false,
+  "token_printed": false,
+  "private_kernel_exposed": false
+}

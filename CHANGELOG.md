@@ -1,5 +1,11 @@
 # Changelog
 
+## DataCapsule-7
+
+- Added an opt-in workflow artifact template for generating DataCapsule local corpus review artifacts from repository-supplied manifests.
+- Added workflow safety audit, claim-boundary audit, artifact manifest, operator runbook, docs, public outputs, and tests.
+- Preserved boundaries: no active workflow, no automatic review comment, no GitHub API calls by DataCapsule, no crawling, no private file-content inspection, no URL fetch, no external service calls, no token handling, no private-kernel exposure, and no legal/privacy/license/eval-clean/data-quality/purchasing/action-authorization claim.
+
 ## QIRA-9
 
 - Added an opt-in workflow artifact template for generating QIRA local review artifacts from repository-owned CI evidence.

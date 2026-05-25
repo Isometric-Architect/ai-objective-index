@@ -1,0 +1,54 @@
+{
+  "schema": "DataCapsule7_ArtifactManifest/v0.1",
+  "generated_at": "2026-05-25T05:24:35.443919+00:00",
+  "decision": "PASS_DATACAPSULE7_ARTIFACT_MANIFEST",
+  "artifacts": [
+    {
+      "path": "examples/datacapsule7_repository_manifest_workflow.yml",
+      "role": "opt_in_example_workflow",
+      "exists": true,
+      "size_bytes": 1485,
+      "sha256": "24a9de537f32b042c48656785821e74f75eecc131275f0332ae1a5b9bf58e350"
+    },
+    {
+      "path": "public_launch/datacapsule7/DATACAPSULE7_OPTIONAL_WORKFLOW_RESULT.json",
+      "role": "datacapsule7_result",
+      "exists": true,
+      "size_bytes": 2305,
+      "sha256": "851c79154ac9767e9db6cbd4741baa5f93e47db2dc059e1aa71561ff7aec50ec"
+    },
+    {
+      "path": "public_launch/datacapsule7/DATACAPSULE7_WORKFLOW_AUDIT.json",
+      "role": "workflow_audit",
+      "exists": true,
+      "size_bytes": 979,
+      "sha256": "6f5135266ecc9d24787ff0c059d4949ebcac8318af55cac6b26f309054de14f3"
+    },
+    {
+      "path": "public_launch/datacapsule7/DATACAPSULE7_CLAIM_BOUNDARY_AUDIT.json",
+      "role": "claim_audit",
+      "exists": true,
+      "size_bytes": 598,
+      "sha256": "bc3c97dffc1bf1bec403964d988064bf5dd93f16b7e4226d12cff2ee8ac43b9b"
+    },
+    {
+      "path": "public_launch/datacapsule7/DATACAPSULE7_OPERATOR_RUNBOOK.md",
+      "role": "operator_runbook",
+      "exists": true,
+      "size_bytes": 1190,
+      "sha256": "60426c75ae727c81b9978fc6dee88a805e63dc553932bb60a66d5b0ca45c14d8"
+    },
+    {
+      "path": "public_launch/datacapsule7/DATACAPSULE7_NEXT_STEPS.md",
+      "role": "next_steps",
+      "exists": true,
+      "size_bytes": 516,
+      "sha256": "08db59d9ab60af21f5d7d86cb2a1c2b44788497278c99fd674dfcad911c0e6f2"
+    }
+  ],
+  "missing_artifacts": [],
+  "external_actions_performed": false,
+  "workflow_enabled": false,
+  "network_used": false,
+  "token_printed": false
+}

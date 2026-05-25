@@ -14,6 +14,7 @@ DATACAPSULE3_OUTPUT_PATH = Path("public_launch") / "datacapsule3" / "DATACAPSULE
 DATACAPSULE4_OUTPUT_PATH = Path("public_launch") / "datacapsule4" / "DATACAPSULE4_CLAIM_BOUNDARY_AUDIT.json"
 DATACAPSULE5_OUTPUT_PATH = Path("public_launch") / "datacapsule5" / "DATACAPSULE_CLAIM_BOUNDARY_AUDIT.json"
 DATACAPSULE6_OUTPUT_PATH = Path("public_launch") / "datacapsule6" / "DATACAPSULE_CLAIM_BOUNDARY_AUDIT.json"
+DATACAPSULE7_OUTPUT_PATH = Path("public_launch") / "datacapsule7" / "DATACAPSULE_CLAIM_BOUNDARY_AUDIT.json"
 SCAN_PATHS = [
     Path("docs") / "datacapsule_engine_plan.md",
     Path("docs") / "datacapsule1_local_capsule.md",
@@ -22,17 +23,22 @@ SCAN_PATHS = [
     Path("docs") / "datacapsule4_ci_artifact_bridge.md",
     Path("docs") / "datacapsule5_use_rights_fixture_corpus.md",
     Path("docs") / "datacapsule6_repository_corpus_audit_bundle.md",
+    Path("docs") / "datacapsule7_optional_workflow_artifact.md",
+    Path("docs") / "datacapsule_workflow_opt_in_runbook.md",
+    Path("docs") / "datacapsule_workflow_artifact_limitations.md",
     Path("docs") / "datacapsule_repository_audit_limitations.md",
     Path("docs") / "datacapsule_ci_bridge_limitations.md",
     Path("docs") / "datacapsule_eval_leak_separation.md",
     Path("docs") / "datacapsule_use_rights.md",
     Path("docs") / "datacapsule_limitations.md",
+    Path("examples") / "datacapsule7_repository_manifest_workflow.yml",
     Path("public_launch") / "datacapsule1",
     Path("public_launch") / "datacapsule2",
     Path("public_launch") / "datacapsule3",
     Path("public_launch") / "datacapsule4",
     Path("public_launch") / "datacapsule5",
     Path("public_launch") / "datacapsule6",
+    Path("public_launch") / "datacapsule7",
 ]
 
 RISKY_PATTERNS = [
@@ -71,13 +77,13 @@ def _iter_files() -> list[Path]:
         path = root / relative
         if not path.exists():
             continue
-        if path.is_file() and path.suffix.lower() in {".md", ".json", ".py", ".txt"}:
+        if path.is_file() and path.suffix.lower() in {".md", ".json", ".py", ".txt", ".yml", ".yaml"}:
             files.append(path)
         elif path.is_dir():
             files.extend(
                 child
                 for child in path.rglob("*")
-                if child.is_file() and child.suffix.lower() in {".md", ".json", ".txt"}
+                if child.is_file() and child.suffix.lower() in {".md", ".json", ".txt", ".yml", ".yaml"}
             )
     return sorted(set(files))
 
@@ -135,6 +141,8 @@ def run_datacapsule_claim_audit(write_result: bool = True) -> dict[str, Any]:
             _write_json(DATACAPSULE5_OUTPUT_PATH, result)
         if (_repo_root() / Path("public_launch") / "datacapsule6").exists():
             _write_json(DATACAPSULE6_OUTPUT_PATH, result)
+        if (_repo_root() / Path("public_launch") / "datacapsule7").exists():
+            _write_json(DATACAPSULE7_OUTPUT_PATH, result)
     return result
 
 

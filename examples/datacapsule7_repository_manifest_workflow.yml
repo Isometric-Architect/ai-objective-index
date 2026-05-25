@@ -1,0 +1,43 @@
+name: DataCapsule Optional Repository Manifest Artifact
+
+on:
+  workflow_dispatch:
+    inputs:
+      manifest:
+        description: Path to a committed CSV, JSONL, or JSON corpus manifest.
+        required: true
+        default: public_launch/datacapsule3/DATACAPSULE3_SAMPLE_MANIFEST.csv
+      corpus_id:
+        description: Stable local corpus identifier.
+        required: true
+        default: repository.local/corpus
+      name:
+        description: Human-readable corpus name.
+        required: true
+        default: Repository local corpus manifest
+
+jobs:
+  datacapsule-repository-manifest-artifact:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install AOI package locally
+        run: python -m pip install -e .
+      - name: Build DataCapsule local corpus artifacts
+        uses: ./.github/actions/datacapsule-corpus-manifest-artifact
+        with:
+          manifest: ${{ inputs.manifest }}
+          output-dir: public_launch/datacapsule7/artifacts
+          corpus-id: ${{ inputs.corpus_id }}
+          name: ${{ inputs.name }}
+      - name: Upload DataCapsule review artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: datacapsule-review-artifacts
+          path: public_launch/datacapsule7/artifacts
+          if-no-files-found: error

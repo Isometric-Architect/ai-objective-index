@@ -1,0 +1,41 @@
+{
+  "schema": "AgentSec6_PackageResult/v0.1",
+  "generated_at": "2026-05-25T01:59:51.672899+00:00",
+  "decision": "PASS_AGENTSEC6_LOCAL_MANIFEST_CORPUS_PACKAGE",
+  "corpus_intake_decision": "PASS_AGENTSEC6_LOCAL_CORPUS_INTAKE",
+  "policy_gate_decision": "BLOCK_AGENTSEC2_POLICY_RISK",
+  "manifest_count": 5,
+  "allow_count": 1,
+  "hold_count": 2,
+  "block_count": 2,
+  "known_limits": [
+    "repository-supplied manifest corpus only",
+    "local metadata policy gate only",
+    "no live MCP call",
+    "no external tool execution",
+    "no URL fetch",
+    "not verification",
+    "not security certification",
+    "not quality guarantee",
+    "not product-readiness proof",
+    "not action authorization"
+  ],
+  "must_not_claim": [
+    "do not claim verified tool status",
+    "do not claim safety",
+    "do not claim security certification",
+    "do not claim quality guarantee",
+    "do not claim production readiness",
+    "do not claim live gateway protection",
+    "do not claim external action authorization",
+    "do not claim legal compliance"
+  ],
+  "external_actions_performed": false,
+  "network_used": false,
+  "live_mcp_called": false,
+  "external_tool_executed": false,
+  "token_printed": false,
+  "can_certify_security": false,
+  "can_certify_quality": false,
+  "can_authorize_action": false
+}

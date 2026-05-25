@@ -1,6 +1,6 @@
 {
   "schema": "ResidualOps_VerticalStatusDashboard/v0.1",
-  "generated_at": "2026-05-25T01:22:20.777865+00:00",
+  "generated_at": "2026-05-25T02:00:02.442679+00:00",
   "decision": "PASS_ROE2_DASHBOARD_READY",
   "manifest_decision": "PASS_ROE2_SHARED_MANIFEST_READY",
   "vertical_count": 3,
@@ -11,8 +11,8 @@
   },
   "decision_totals": {
     "allow": 3,
-    "hold": 0,
-    "block": 0
+    "hold": 2,
+    "block": 2
   },
   "rows": [
     {
@@ -37,9 +37,9 @@
     {
       "vertical_id": "agentsec",
       "product_name": "AgentSec Gate",
-      "package": "AgentSec-5",
+      "package": "AgentSec-6",
       "status": "ALLOW_OR_PASS",
-      "primary_decision": "PASS_AGENTSEC5_FIXTURE_CORPUS_AND_NEGATIVE_CONTROLS",
+      "primary_decision": "PASS_AGENTSEC6_LOCAL_MANIFEST_CORPUS_PACKAGE",
       "artifact_count": 7,
       "missing_artifact_count": 0,
       "safe_flags": {

@@ -1,0 +1,85 @@
+{
+  "schema": "AgentSec6_SampleManifestCorpus/v0.1",
+  "manifests": [
+    {
+      "name": "fixture-local-metadata-reader",
+      "id": "fixture.local/local-metadata-reader",
+      "provider": "local-fixture",
+      "integration_type": "mcp_server",
+      "description": "Reads and summarizes MCP manifest metadata already supplied by the caller.",
+      "permissions": {
+        "network_access": false,
+        "file_access": false,
+        "write_access": false,
+        "secret_access": false,
+        "browser_access": false,
+        "code_execution": false
+      }
+    },
+    {
+      "name": "fixture-browser-research-helper",
+      "id": "fixture.local/browser-research-helper",
+      "provider": "local-fixture",
+      "integration_type": "mcp_server",
+      "description": "Uses browser and network capabilities for operator-reviewed research tasks.",
+      "permissions": {
+        "network_access": true,
+        "file_access": false,
+        "write_access": false,
+        "secret_access": false,
+        "browser_access": true,
+        "code_execution": false
+      }
+    },
+    {
+      "name": "fixture-repo-file-review-helper",
+      "id": "fixture.local/repo-file-review-helper",
+      "provider": "local-fixture",
+      "integration_type": "tool_manifest",
+      "description": "Reads repository files supplied by the caller for local metadata review.",
+      "permissions": {
+        "network_access": false,
+        "file_access": true,
+        "write_access": false,
+        "secret_access": false,
+        "browser_access": false,
+        "code_execution": false
+      }
+    },
+    {
+      "name": "fixture-checkout-helper",
+      "id": "fixture.local/checkout-helper",
+      "provider": "local-fixture",
+      "integration_type": "agent_tool",
+      "description": "Completes login, payment, purchase, booking, and contract workflows.",
+      "permissions": {
+        "network_access": true,
+        "file_access": false,
+        "write_access": true,
+        "secret_access": false,
+        "browser_access": false,
+        "code_execution": false
+      }
+    },
+    {
+      "name": "fixture-security-claim-helper",
+      "id": "fixture.local/security-claim-helper",
+      "provider": "local-fixture",
+      "integration_type": "api",
+      "description": "Fixture with unsupported positive product-claim flags encoded in metadata.",
+      "claims": {
+        "security_certified": true,
+        "safe_tool": true,
+        "production_ready": true
+      },
+      "permissions": {
+        "network_access": false,
+        "file_access": false,
+        "write_access": false,
+        "secret_access": false,
+        "browser_access": false,
+        "code_execution": false
+      }
+    }
+  ]
+}

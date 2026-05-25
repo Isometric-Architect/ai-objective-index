@@ -1,5 +1,10 @@
 # Changelog
 
+## AgentSec-6
+
+- Added local manifest corpus ingestion for repository-supplied MCP/tool metadata.
+- Added AgentSec-6 package outputs, docs, tests, claim-audit coverage, and ROE-2 dashboard alignment while preserving no-live-MCP/no-external-tool/no-fetch/no-token/no-certification/no-action-authorization boundaries.
+
 ## DataCapsule-5
 
 - Added a public-safe fake use-rights fixture corpus for DataCapsule local regression checks.

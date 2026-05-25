@@ -4,7 +4,7 @@ The current public ResidualOps portfolio has three local productization surfaces
 
 | Vertical | Current Package | Public Surface |
 | --- | --- | --- |
-| QIRA-Code ReleaseGate | QIRA-8 | local PR/release reviewer artifact bundle |
+| QIRA-Code ReleaseGate | QIRA-9 | opt-in workflow artifact template for local PR/release review |
 | AgentSec Gate | AgentSec-8 | opt-in workflow artifact template for local MCP/tool manifest review |
 | DataCapsule / AIDREG Engine | DataCapsule-6 | local data-use corpus audit artifact bundle |
 
@@ -15,7 +15,6 @@ Use the ROE-3 release kit to decide which vertical to advance next. It is meant 
 The likely next paths are:
 
 - ROE-4 public/private distribution split
-- QIRA-9 optional workflow artifact
 - DataCapsule-7 repository-owned manifest workflow artifact
 
 ## Private Material

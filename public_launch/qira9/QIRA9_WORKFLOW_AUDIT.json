@@ -1,0 +1,23 @@
+{
+  "schema": "QIRA9_WorkflowAudit/v0.1",
+  "generated_at": "2026-05-25T05:02:00.191224+00:00",
+  "decision": "PASS_QIRA9_OPTIONAL_WORKFLOW_SAFE",
+  "example_workflow_path": "examples/qira9_optional_pr_review_artifact_workflow.yml",
+  "example_workflow_exists": true,
+  "active_workflow_created": false,
+  "active_workflow_findings": [],
+  "workflow_auto_enabled": false,
+  "forbidden_command_findings": [],
+  "missing_required_markers": [],
+  "github_api_used_by_qira": false,
+  "pr_comment_posted": false,
+  "external_actions_performed_by_qira": false,
+  "commands_executed_by_qira": false,
+  "patch_applied": false,
+  "merge_performed": false,
+  "deploy_performed": false,
+  "token_printed": false,
+  "can_certify_security": false,
+  "can_certify_quality": false,
+  "can_authorize_action": false
+}

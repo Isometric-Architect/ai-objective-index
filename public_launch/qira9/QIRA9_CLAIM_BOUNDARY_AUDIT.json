@@ -1,0 +1,19 @@
+{
+  "schema": "QIRA9_ClaimBoundaryAudit/v0.1",
+  "generated_at": "2026-05-25T05:02:00.234850+00:00",
+  "decision": "PASS_QIRA9_CLAIM_BOUNDARY",
+  "risky_phrase_count": 0,
+  "findings": [],
+  "allowed_language": [
+    "opt-in workflow artifact",
+    "repository-owned CI evidence",
+    "local release-gate receipt",
+    "ALLOW/HOLD/BLOCK",
+    "not verified",
+    "not security certified"
+  ],
+  "external_actions_performed": false,
+  "workflow_enabled": false,
+  "token_printed": false,
+  "private_kernel_exposed": false
+}

@@ -1,5 +1,11 @@
 # Changelog
 
+## QIRA-9
+
+- Added an opt-in workflow artifact template for generating QIRA local review artifacts from repository-owned CI evidence.
+- Added workflow safety audit, claim-boundary audit, artifact manifest, operator runbook, docs, public outputs, and tests.
+- Preserved boundaries: no active workflow, no automatic PR comment, no GitHub API calls by QIRA, no command execution by QIRA, no patch application, no merge/deploy/upload/publish, no token handling, no private-kernel exposure, and no certification/readiness/action-authorization claim.
+
 ## AgentSec-8
 
 - Added an opt-in workflow artifact template for generating AgentSec local review artifacts from repository-owned CI.

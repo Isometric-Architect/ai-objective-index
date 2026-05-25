@@ -17,6 +17,7 @@ QIRA5_OUTPUT_PATH = Path("public_launch") / "qira5" / "QIRA_CLAIM_BOUNDARY_AUDIT
 QIRA6_OUTPUT_PATH = Path("public_launch") / "qira6" / "QIRA_CLAIM_BOUNDARY_AUDIT.json"
 QIRA7_OUTPUT_PATH = Path("public_launch") / "qira7" / "QIRA_CLAIM_BOUNDARY_AUDIT.json"
 QIRA8_OUTPUT_PATH = Path("public_launch") / "qira8" / "QIRA_CLAIM_BOUNDARY_AUDIT.json"
+QIRA9_OUTPUT_PATH = Path("public_launch") / "qira9" / "QIRA_CLAIM_BOUNDARY_AUDIT.json"
 SCAN_PATHS = [
     Path("docs") / "qira_code_releasegate_plan.md",
     Path("docs") / "qira_releasegate_mvp.md",
@@ -33,9 +34,13 @@ SCAN_PATHS = [
     Path("docs") / "qira7_github_ci_evidence_bridge.md",
     Path("docs") / "qira_github_ci_bridge_limitations.md",
     Path("docs") / "qira8_pr_artifact_bundle.md",
+    Path("docs") / "qira9_optional_workflow_artifact.md",
     Path("docs") / "qira_reviewer_report_limitations.md",
+    Path("docs") / "qira_workflow_opt_in_runbook.md",
+    Path("docs") / "qira_workflow_artifact_limitations.md",
     Path(".github") / "actions" / "qira-ci-evidence-bridge" / "action.yml",
     Path("examples") / "qira_ci_evidence_bridge_workflow.yml",
+    Path("examples") / "qira9_optional_pr_review_artifact_workflow.yml",
     Path("docs") / "qira_action_license.md",
     Path("docs") / "qira_claim_boundaries.md",
     Path("public_launch") / "qira1",
@@ -46,6 +51,7 @@ SCAN_PATHS = [
     Path("public_launch") / "qira6",
     Path("public_launch") / "qira7",
     Path("public_launch") / "qira8",
+    Path("public_launch") / "qira9",
 ]
 
 RISKY_PATTERNS = [
@@ -84,14 +90,14 @@ def _iter_files() -> list[Path]:
         path = root / relative
         if not path.exists():
             continue
-        if path.is_file() and path.suffix.lower() in {".md", ".json", ".py", ".txt"}:
+        if path.is_file() and path.suffix.lower() in {".md", ".json", ".py", ".txt", ".yml", ".yaml"}:
             if path != root / OUTPUT_PATH:
                 files.append(path)
         elif path.is_dir():
             files.extend(
                 child
                 for child in path.rglob("*")
-                if child.is_file() and child.suffix.lower() in {".md", ".json", ".txt"} and child != root / OUTPUT_PATH
+                if child.is_file() and child.suffix.lower() in {".md", ".json", ".txt", ".yml", ".yaml"} and child != root / OUTPUT_PATH
             )
     return sorted(set(files))
 
@@ -147,6 +153,8 @@ def run_qira_claim_audit(write_result: bool = True) -> dict[str, Any]:
         _write_json(QIRA6_OUTPUT_PATH, result)
         _write_json(QIRA7_OUTPUT_PATH, result)
         _write_json(QIRA8_OUTPUT_PATH, result)
+        if (_repo_root() / Path("public_launch") / "qira9").exists():
+            _write_json(QIRA9_OUTPUT_PATH, result)
     return result
 
 

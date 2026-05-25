@@ -1,0 +1,54 @@
+{
+  "schema": "QIRA9_ArtifactManifest/v0.1",
+  "generated_at": "2026-05-25T05:02:00.268356+00:00",
+  "decision": "PASS_QIRA9_ARTIFACT_MANIFEST",
+  "artifacts": [
+    {
+      "path": "examples/qira9_optional_pr_review_artifact_workflow.yml",
+      "role": "opt_in_example_workflow",
+      "exists": true,
+      "size_bytes": 1637,
+      "sha256": "d56c5fff436c75ae1e8f374154270b503e743984789fba4d462a5aff2dae90e0"
+    },
+    {
+      "path": "public_launch/qira9/QIRA9_OPTIONAL_WORKFLOW_RESULT.json",
+      "role": "qira9_result",
+      "exists": true,
+      "size_bytes": 2047,
+      "sha256": "d75e45ec026e6a5036cc483a0dabb93d475c4e3187a10f880f34bbca0d53447d"
+    },
+    {
+      "path": "public_launch/qira9/QIRA9_WORKFLOW_AUDIT.json",
+      "role": "workflow_audit",
+      "exists": true,
+      "size_bytes": 824,
+      "sha256": "2bbfc716fa39225d1401e4814e07d53a9b3929f43984c252925f5a3e21f2373f"
+    },
+    {
+      "path": "public_launch/qira9/QIRA9_CLAIM_BOUNDARY_AUDIT.json",
+      "role": "claim_audit",
+      "exists": true,
+      "size_bytes": 542,
+      "sha256": "1147e3900b5bb57d6bf0f94c1c616d8e077c44c2413f08601d7da155f65e99fa"
+    },
+    {
+      "path": "public_launch/qira9/QIRA9_OPERATOR_RUNBOOK.md",
+      "role": "operator_runbook",
+      "exists": true,
+      "size_bytes": 1115,
+      "sha256": "47e6a7ab16d34da239b30b1b0842cf3d387a673a6ba0c35cce1e61f3caf3b5e4"
+    },
+    {
+      "path": "public_launch/qira9/QIRA9_NEXT_STEPS.md",
+      "role": "next_steps",
+      "exists": true,
+      "size_bytes": 435,
+      "sha256": "469bee9db64cba9d8b58fa0e00c134f3cb566968c9e90574212b7e699c0904b6"
+    }
+  ],
+  "missing_artifacts": [],
+  "external_actions_performed": false,
+  "workflow_enabled": false,
+  "network_used": false,
+  "token_printed": false
+}

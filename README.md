@@ -37,6 +37,8 @@ QIRA-7 adds an opt-in GitHub CI evidence bridge. It provides a reusable composit
 
 QIRA-8 adds reviewer-facing PR artifacts: a Markdown reviewer report, PR comment draft, artifact manifest, and bundle result. It writes local artifacts only and does not post comments, call GitHub APIs, execute commands, merge, deploy, upload, publish, or handle tokens.
 
+QIRA-9 adds an opt-in workflow artifact template for repository owners who want QIRA local review artifacts from repository-owned CI evidence. The workflow remains in `examples/` and is not active by default. QIRA-9 does not post comments, call GitHub APIs on behalf of QIRA, apply patches, merge, deploy, upload packages, publish registry metadata, handle tokens, certify security, guarantee quality, prove product readiness, or authorize actions.
+
 AgentSec-1 starts the second ResidualOps vertical: a local/offline MCP/tool manifest risk packet scanner. It hashes repository-supplied metadata, records permission scope indicators, hidden-instruction signals, namespace review signals, forbidden action language, and unsupported claims. It does not call live MCP servers, execute tools, fetch URLs, handle tokens, act as a security gateway, certify security, guarantee quality, claim product readiness, or authorize external actions.
 
 AgentSec-2 adds local multi-manifest intake and public-safe policy profiles. It can summarize ALLOW metadata-only, HOLD review-required, and BLOCK policy-risk decisions across a supplied manifest set, while keeping exact private thresholds, provider priors, anti-gaming rules, private negative controls, and commercial routing policy non-public.

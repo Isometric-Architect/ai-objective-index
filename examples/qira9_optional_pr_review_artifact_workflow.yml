@@ -1,0 +1,42 @@
+name: QIRA Optional PR Review Artifact
+
+on:
+  workflow_dispatch:
+    inputs:
+      packet:
+        description: Path to a committed QIRA task packet JSON file.
+        required: true
+        default: public_launch/qira7/QIRA7_SAMPLE_TASK_PACKET.json
+
+jobs:
+  qira-pr-review-artifact:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install AOI package locally
+        run: python -m pip install -e .
+      - name: Run repository-owned QIRA checks
+        id: qira_checks
+        continue-on-error: true
+        run: python -m pytest tests/test_qira_ci_evidence.py tests/test_qira_ci_evidence_cli.py
+      - name: Bridge QIRA CI evidence
+        uses: ./.github/actions/qira-ci-evidence-bridge
+        with:
+          packet: ${{ inputs.packet }}
+          output-dir: public_launch/qira9/artifacts
+          check-name: qira targeted pytest
+          check-command: python -m pytest tests/test_qira_ci_evidence.py tests/test_qira_ci_evidence_cli.py
+          check-status: ${{ steps.qira_checks.outcome == 'success' && 'pass' || 'fail' }}
+          exit-code: ${{ steps.qira_checks.outcome == 'success' && '0' || '1' }}
+          evidence-summary: Repository-owned QIRA targeted tests completed before bridge intake.
+      - name: Upload QIRA review artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: qira-review-artifacts
+          path: public_launch/qira9/artifacts
+          if-no-files-found: error

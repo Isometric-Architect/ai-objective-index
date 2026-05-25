@@ -1,6 +1,6 @@
 {
   "schema": "ResidualOps_SharedArtifactManifest/v0.1",
-  "generated_at": "2026-05-25T02:15:23.757147+00:00",
+  "generated_at": "2026-05-25T02:38:16.202517+00:00",
   "decision": "PASS_ROE2_SHARED_MANIFEST_READY",
   "vertical_count": 3,
   "totals": {
@@ -160,17 +160,17 @@
     {
       "vertical_id": "datacapsule",
       "product_name": "DataCapsule / AIDREG Engine",
-      "package": "DataCapsule-5",
-      "public_role": "local fake data-use fixture corpus and negative-control artifact",
-      "primary_result": "public_launch/datacapsule5/DATACAPSULE5_PACKAGE_RESULT.json",
-      "primary_decision": "PASS_DATACAPSULE5_FIXTURE_CORPUS_AND_NEGATIVE_CONTROLS",
+      "package": "DataCapsule-6",
+      "public_role": "local repository corpus audit report and review comment draft artifact",
+      "primary_result": "public_launch/datacapsule6/DATACAPSULE6_BUNDLE_RESULT.json",
+      "primary_decision": "PASS_DATACAPSULE6_REPOSITORY_AUDIT_BUNDLE",
       "decision_bucket": "allow",
       "decision_counts": {
         "allow": 1,
         "hold": 0,
         "block": 0
       },
-      "claim_audit": "public_launch/datacapsule5/DATACAPSULE_CLAIM_BOUNDARY_AUDIT.json",
+      "claim_audit": "public_launch/datacapsule6/DATACAPSULE_CLAIM_BOUNDARY_AUDIT.json",
       "safe_flags": {
         "local_only": true,
         "network_used": false,
@@ -181,6 +181,7 @@
         "can_certify_quality": false
       },
       "known_limits": [
+        "repository-owned local metadata artifact bundle only",
         "public-safe fake data-use fixtures only",
         "local negative controls only",
         "no crawling",
@@ -203,46 +204,40 @@
       ],
       "artifacts": [
         {
-          "path": "public_launch/datacapsule5/DATACAPSULE5_PACKAGE_RESULT.json",
+          "path": "public_launch/datacapsule6/DATACAPSULE6_ARTIFACT_MANIFEST.json",
           "exists": true,
-          "bytes": 1487,
-          "sha256": "5e51f35d6af2487bff82be120f3ed2b5273f21a4db5a48cac19ba2623629da80"
+          "bytes": 2316,
+          "sha256": "abf1a10a12004e8da40d1072d4c3e09e2db235cc571d03dd12bbd731c1865c3f"
         },
         {
-          "path": "public_launch/datacapsule5/DATACAPSULE5_FIXTURE_CORPUS.json",
+          "path": "public_launch/datacapsule6/DATACAPSULE6_BUNDLE_RESULT.json",
           "exists": true,
-          "bytes": 7039,
-          "sha256": "a8112be2e241c80093256479b75bc98dbf187a18a450707688419486d9e7ce64"
+          "bytes": 2143,
+          "sha256": "313d17d43ae795c1102d6eeed727de8eb389c28dac380ea6e9dbb3ea4217d8e6"
         },
         {
-          "path": "public_launch/datacapsule5/DATACAPSULE5_FIXTURE_CORPUS_REPORT.md",
+          "path": "public_launch/datacapsule6/DATACAPSULE6_CORPUS_AUDIT_REPORT.md",
           "exists": true,
-          "bytes": 1458,
-          "sha256": "e50d079085c6fb35eea4f1ae18930250d5f6e1d51098dc4fc2c7a39d93da50e7"
+          "bytes": 3611,
+          "sha256": "e0808b19f2ceb9667659433bc20cd16641d85c0683c20785b38169c2342bcd64"
         },
         {
-          "path": "public_launch/datacapsule5/DATACAPSULE5_NEGATIVE_CONTROL_RESULT.json",
+          "path": "public_launch/datacapsule6/DATACAPSULE6_REVIEW_COMMENT_DRAFT.md",
           "exists": true,
-          "bytes": 5210,
-          "sha256": "49c9c376631f7b7649d39921ac1e03fbd74bd5b0da4cf371bf871bf074f2cad5"
+          "bytes": 1044,
+          "sha256": "c2273fc6be4142409f66347f1fee74c1f385cd724abfb20aaece3f7136cf1d82"
         },
         {
-          "path": "public_launch/datacapsule5/DATACAPSULE5_NEGATIVE_CONTROL_REPORT.md",
+          "path": "public_launch/datacapsule6/DATACAPSULE6_NEXT_STEPS.md",
           "exists": true,
-          "bytes": 1589,
-          "sha256": "fa8c88fb2a3b3ab334ba19e2982d29c5b42243195a8a8730f8ddf106223c98ab"
+          "bytes": 442,
+          "sha256": "4155c2e05e7fc4c66a56882e88d309865e00011630d7ce9ed9c16bace16297fb"
         },
         {
-          "path": "public_launch/datacapsule5/DATACAPSULE5_NEXT_STEPS.md",
-          "exists": true,
-          "bytes": 622,
-          "sha256": "ff1d8c8e4abe7adcb81906f4f7f9cc7b1959fb41873acf07f46fe60601000ce1"
-        },
-        {
-          "path": "public_launch/datacapsule5/DATACAPSULE_CLAIM_BOUNDARY_AUDIT.json",
+          "path": "public_launch/datacapsule6/DATACAPSULE_CLAIM_BOUNDARY_AUDIT.json",
           "exists": true,
           "bytes": 786,
-          "sha256": "ea7825d0a5e9ddfc392bd627e8ba429ec78b72062d59ddeaa924ddee7fa53bca"
+          "sha256": "d59e7882e53dd09591dcf107edef3486531581a11492e82077ddfea35527db09"
         }
       ]
     }

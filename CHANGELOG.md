@@ -1,5 +1,11 @@
 # Changelog
 
+## DataCapsule-6
+
+- Added reviewer-facing repository corpus audit bundle generation for DataCapsule local metadata review outputs.
+- Added corpus audit report, review comment draft, artifact manifest, bundle result, docs, public sample outputs, and tests.
+- Preserved boundaries: no crawling, no private file-content inspection, no URL fetch, no external service calls, no comment posting, no token handling, and no legal/privacy/quality/eval-clean/action-authorization claim.
+
 ## AgentSec-7
 
 - Added reviewer-facing PR artifact bundle generation for AgentSec local manifest review outputs.

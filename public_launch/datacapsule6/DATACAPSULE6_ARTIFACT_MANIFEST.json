@@ -1,0 +1,64 @@
+{
+  "schema": "DataCapsule_ArtifactManifest/v0.1",
+  "generated_at": "2026-05-25T02:37:29.096415+00:00",
+  "decision": "PASS_DATACAPSULE6_ARTIFACT_MANIFEST",
+  "artifacts": [
+    {
+      "path": "public_launch/datacapsule5/DATACAPSULE5_FIXTURE_CORPUS.json",
+      "role": "fixture_corpus",
+      "exists": true,
+      "size_bytes": 7039,
+      "sha256": "a8112be2e241c80093256479b75bc98dbf187a18a450707688419486d9e7ce64"
+    },
+    {
+      "path": "public_launch/datacapsule5/DATACAPSULE5_FIXTURE_CORPUS_REPORT.md",
+      "role": "fixture_corpus_report",
+      "exists": true,
+      "size_bytes": 1458,
+      "sha256": "e50d079085c6fb35eea4f1ae18930250d5f6e1d51098dc4fc2c7a39d93da50e7"
+    },
+    {
+      "path": "public_launch/datacapsule5/DATACAPSULE5_NEGATIVE_CONTROL_RESULT.json",
+      "role": "negative_control_result",
+      "exists": true,
+      "size_bytes": 5210,
+      "sha256": "49c9c376631f7b7649d39921ac1e03fbd74bd5b0da4cf371bf871bf074f2cad5"
+    },
+    {
+      "path": "public_launch/datacapsule5/DATACAPSULE5_NEGATIVE_CONTROL_REPORT.md",
+      "role": "negative_control_report",
+      "exists": true,
+      "size_bytes": 1589,
+      "sha256": "fa8c88fb2a3b3ab334ba19e2982d29c5b42243195a8a8730f8ddf106223c98ab"
+    },
+    {
+      "path": "public_launch/datacapsule5/DATACAPSULE5_PACKAGE_RESULT.json",
+      "role": "package_result",
+      "exists": true,
+      "size_bytes": 1487,
+      "sha256": "5e51f35d6af2487bff82be120f3ed2b5273f21a4db5a48cac19ba2623629da80"
+    },
+    {
+      "path": "public_launch/datacapsule6/DATACAPSULE6_CORPUS_AUDIT_REPORT.md",
+      "role": "datacapsule6_output",
+      "exists": true,
+      "size_bytes": 3611,
+      "sha256": "e0808b19f2ceb9667659433bc20cd16641d85c0683c20785b38169c2342bcd64"
+    },
+    {
+      "path": "public_launch/datacapsule6/DATACAPSULE6_REVIEW_COMMENT_DRAFT.md",
+      "role": "datacapsule6_output",
+      "exists": true,
+      "size_bytes": 1044,
+      "sha256": "c2273fc6be4142409f66347f1fee74c1f385cd724abfb20aaece3f7136cf1d82"
+    }
+  ],
+  "missing_artifacts": [],
+  "external_actions_performed": false,
+  "review_comment_posted": false,
+  "github_api_used": false,
+  "crawler_used": false,
+  "network_used": false,
+  "external_service_used": false,
+  "token_printed": false
+}

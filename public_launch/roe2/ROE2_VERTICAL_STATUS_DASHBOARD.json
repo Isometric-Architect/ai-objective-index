@@ -1,6 +1,6 @@
 {
   "schema": "ResidualOps_VerticalStatusDashboard/v0.1",
-  "generated_at": "2026-05-25T02:15:23.766417+00:00",
+  "generated_at": "2026-05-25T02:38:16.182061+00:00",
   "decision": "PASS_ROE2_DASHBOARD_READY",
   "manifest_decision": "PASS_ROE2_SHARED_MANIFEST_READY",
   "vertical_count": 3,
@@ -56,10 +56,10 @@
     {
       "vertical_id": "datacapsule",
       "product_name": "DataCapsule / AIDREG Engine",
-      "package": "DataCapsule-5",
+      "package": "DataCapsule-6",
       "status": "ALLOW_OR_PASS",
-      "primary_decision": "PASS_DATACAPSULE5_FIXTURE_CORPUS_AND_NEGATIVE_CONTROLS",
-      "artifact_count": 7,
+      "primary_decision": "PASS_DATACAPSULE6_REPOSITORY_AUDIT_BUNDLE",
+      "artifact_count": 6,
       "missing_artifact_count": 0,
       "safe_flags": {
         "local_only": true,

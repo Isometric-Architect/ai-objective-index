@@ -140,7 +140,7 @@ ROE-2 creates a shared artifact manifest and dashboard skeleton only. It is mean
 
 def next_steps_markdown(dashboard: dict[str, Any]) -> str:
     if dashboard["decision"] == "PASS_ROE2_DASHBOARD_READY":
-        next_step = "DataCapsule-6 repository-owned corpus audit bundle or AgentSec-8 optional workflow artifact."
+        next_step = "AgentSec-8 optional workflow artifact or ROE-3 unified portfolio release kit."
     else:
         next_step = "ROE-2 artifact remediation before adding more dashboard surfaces."
     return f"""# ROE-2 Next Steps

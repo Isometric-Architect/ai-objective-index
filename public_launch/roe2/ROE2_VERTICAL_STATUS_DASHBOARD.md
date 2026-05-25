@@ -8,7 +8,7 @@ ROE-2 is a local read-only dashboard over existing QIRA, AgentSec, and DataCapsu
 | --- | --- | --- | --- | --- |
 | QIRA-Code ReleaseGate | QIRA-8 | `ALLOW_OR_PASS` | `PASS_QIRA8_REVIEWER_BUNDLE` | 6 |
 | AgentSec Gate | AgentSec-7 | `ALLOW_OR_PASS` | `PASS_AGENTSEC7_REVIEWER_BUNDLE` | 6 |
-| DataCapsule / AIDREG Engine | DataCapsule-5 | `ALLOW_OR_PASS` | `PASS_DATACAPSULE5_FIXTURE_CORPUS_AND_NEGATIVE_CONTROLS` | 7 |
+| DataCapsule / AIDREG Engine | DataCapsule-6 | `ALLOW_OR_PASS` | `PASS_DATACAPSULE6_REPOSITORY_AUDIT_BUNDLE` | 6 |
 
 ## Portfolio Note
 

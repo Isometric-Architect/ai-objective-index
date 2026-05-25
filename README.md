@@ -79,6 +79,8 @@ ROE-4 aligns the public/private distribution split across QIRA-9, AgentSec-8, an
 
 ROE-5 adds a portfolio onboarding kit for the first external or separate-repository pilot. It creates a vertical selection matrix, owner consent gate, repository pilot checklist, and dry-run onboarding plan while keeping owner consent required before any workflow enablement. It does not enable workflows, call GitHub APIs, post comments, handle tokens, expose private kernels, certify security, guarantee quality, prove readiness, or authorize actions.
 
+ROE-6 adds local pilot receipt intake and feedback memory for future owner-consented repository pilots. It creates a public-safe pilot receipt template, intake gate, feedback memory summary, and claim audit without enabling workflows, calling GitHub APIs, posting comments, storing tokens, exposing private kernels, certifying security, guaranteeing quality, proving readiness, or authorizing actions.
+
 ## Quick Example
 
 Example objective request:

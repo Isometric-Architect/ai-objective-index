@@ -1,0 +1,38 @@
+{
+  "schema": "ResidualOps_PilotReceipt/v0.1",
+  "receipt_id": "roe6-template-receipt",
+  "vertical_id": "agentsec",
+  "package": "AgentSec-8",
+  "repository_alias": "owner-approved-repository-alias",
+  "workflow_artifact_name": "agentsec-local-review-artifact",
+  "owner_consent_confirmed": false,
+  "receipt_origin": "manual_operator_entry",
+  "outcome": "hold",
+  "hold_reasons": [
+    "owner consent must be recorded before workflow enablement"
+  ],
+  "block_reasons": [],
+  "missing_inputs": [
+    "owner consent record",
+    "repository-supplied manifest artifact"
+  ],
+  "feedback_notes": "Replace this placeholder with non-secret, non-private pilot notes.",
+  "recommended_follow_up": "prepare manual workflow_dispatch run after consent",
+  "claim_ceiling": "local pilot feedback only; not verification, certification, product readiness, legal/privacy/license/evaluation proof, purchasing advice, or action authorization",
+  "must_not_claim": [
+    "verified",
+    "safe",
+    "security certified",
+    "quality guaranteed",
+    "production ready",
+    "legal/privacy/license/evaluation proof",
+    "purchasing advice",
+    "action authorization"
+  ],
+  "external_actions_performed": false,
+  "workflow_enabled_by_aoi": false,
+  "github_api_used_by_aoi": false,
+  "token_printed": false,
+  "private_kernel_exposed": false,
+  "generated_at": "2026-05-25T07:58:53.511539+00:00"
+}

@@ -19,6 +19,8 @@ They must stay conservative.
 - public/private distribution matrix
 - owner consent gate
 - repository pilot checklist
+- pilot receipt intake
+- feedback memory summary
 
 ## Forbidden Public Framing
 
@@ -55,3 +57,7 @@ Private:
 - enterprise data strategy
 - private receipt weighting
 - partner-specific strategy
+
+## ROE-6 Pilot Feedback Memory
+
+Pilot receipt intake can record non-secret manual pilot outcomes and recurring HOLD/BLOCK patterns. Feedback memory can guide the next operator step, but it cannot verify a capability, certify security, guarantee quality, prove readiness, prove legal/privacy/license/evaluation status, provide purchasing advice, authorize actions, store partner secrets, or expose private kernel details.

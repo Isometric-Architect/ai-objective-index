@@ -14,8 +14,8 @@ Use the ROE-3 release kit to decide which vertical to advance next. It is meant 
 
 The likely next paths are:
 
-- first external repository pilot with exactly one manually enabled workflow
-- ROE-6 pilot receipt intake and feedback memory
+- first owner-consented external repository pilot with exactly one manually enabled workflow
+- ROE-7 pilot receipt readout and second-run decision gate
 
 ## Private Material
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## ROE-6
+
+- Added local pilot receipt intake and feedback memory for owner-consented ResidualOps repository pilots.
+- Added a pilot receipt template, intake gate, feedback memory summary, outcome summary, claim-boundary audit, artifact manifest, docs, public outputs, and tests.
+- Preserved boundaries: no workflow enablement, no GitHub API calls, no comment posting, no crawling, no live MCP calls, no external tool execution, no upload, no registry submission, no token handling, no private-kernel exposure, and no certification/readiness/legal/privacy/license/eval-clean/purchasing/action-authorization claim.
+
 ## ROE-5
 
 - Added a ResidualOps portfolio onboarding kit for first external or separate-repository pilots.

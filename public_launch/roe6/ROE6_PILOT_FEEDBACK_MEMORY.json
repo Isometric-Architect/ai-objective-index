@@ -1,0 +1,17 @@
+{
+  "schema": "ResidualOps_PilotFeedbackMemory/v0.1",
+  "generated_at": "2026-05-25T07:58:53.512071+00:00",
+  "decision": "HOLD_NO_PILOT_RECEIPTS_YET",
+  "receipt_count": 0,
+  "outcome_counts": {},
+  "vertical_counts": {},
+  "top_hold_reasons": [],
+  "top_block_reasons": [],
+  "top_missing_inputs": [],
+  "recommended_next_action": "collect one owner-consented manual pilot receipt before changing routing or workflow guidance",
+  "memory_status": "NO_RECEIPTS",
+  "can_upgrade_to_verified": false,
+  "can_certify_security": false,
+  "can_certify_quality": false,
+  "can_authorize_action": false
+}

@@ -18,6 +18,8 @@ ROE-9 pilot receipt artifacts may expose only public-safe local/offline QIRA tas
 
 ROE-10 pilot receipt artifacts may expose only public-safe local/offline DataCapsule corpus manifest, source/rights summary, privacy-risk summary, evaluation-boundary summary, use-boundary decisions, reviewer readout, redaction decision, feedback memory fields, and known limits.
 
+ROE-11 portfolio artifacts may expose only public-safe local/offline portfolio indices, vertical comparison rows, feedback memory summaries, reviewer readouts, redaction decisions, claim boundaries, and known limits across AgentSec, QIRA, and DataCapsule.
+
 Public surfaces must not include:
 
 - ranking-weight values;

@@ -1,5 +1,11 @@
 # Changelog
 
+## ROE-11
+
+- Added a unified pilot receipt portfolio readout over AgentSec, QIRA-Code ReleaseGate, and DataCapsule.
+- Added portfolio loader, vertical comparison matrix, feedback memory index, reviewer readout, claim-boundary sheet, redaction report, claim audit, gate result, schemas, docs, public outputs, and tests.
+- Preserved boundaries: no external APIs, no GitHub API calls, no live MCP/tool calls, no crawling/fetching, no raw private-data inspection, no uploads/training, no token handling, no private-kernel exposure, and no certification/proof/product-readiness/action-authorization claim.
+
 ## ROE-10
 
 - Added the first DataCapsule pilot receipt packager for local/offline corpus manifest review artifacts.

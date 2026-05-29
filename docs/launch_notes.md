@@ -1,5 +1,9 @@
 # Launch Notes
 
+## ROE-11 Unified Pilot Receipt Portfolio
+
+ROE-11 adds a unified local/offline portfolio readout across AgentSec, QIRA-Code ReleaseGate, and DataCapsule pilot receipt bundles. It does not call external APIs, call GitHub APIs, run live MCP/tool calls, crawl, fetch URLs, inspect raw private data, upload data, train models, request tokens, certify security, prove code correctness, prove legal/privacy/license/evaluation status, guarantee quality, claim product readiness, or authorize external actions.
+
 ## ROE-10 DataCapsule Pilot Receipt Packager
 
 ROE-10 adds a local/offline DataCapsule pilot receipt bundle for sample corpus manifest review. It does not crawl, fetch URLs, inspect raw private content, upload data, train models, call external APIs, request tokens, prove legal/privacy/license/evaluation-cleanliness status, certify data quality, or authorize training/actions.

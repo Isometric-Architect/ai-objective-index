@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aoi.local/schemas/portfolio/residualops_feedback_memory_index.schema.json",
+  "title": "ResidualOps Feedback Memory Index",
+  "type": "object",
+  "required": ["schema", "index_id", "generated_at", "entry_count", "entries", "portfolio_next_actions"],
+  "properties": {
+    "schema": { "const": "ResidualOps_FeedbackMemoryIndex/v0.1" },
+    "index_id": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "entry_count": { "type": "integer" },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["vertical", "pilot_id", "feedback_status", "follow_up_actions", "should_add_negative_control", "should_add_fixture", "should_update_policy_or_contract", "should_request_evidence", "claim_boundary_change_needed"],
+        "properties": {
+          "vertical": { "type": "string" },
+          "pilot_id": { "type": "string" },
+          "feedback_status": { "type": "string" },
+          "follow_up_actions": { "type": "array", "items": { "type": "string" } },
+          "should_add_negative_control": { "type": "boolean" },
+          "should_add_fixture": { "type": "boolean" },
+          "should_update_policy_or_contract": { "type": "boolean" },
+          "should_request_evidence": { "type": "boolean" },
+          "claim_boundary_change_needed": { "type": "boolean" }
+        }
+      }
+    },
+    "portfolio_next_actions": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

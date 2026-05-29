@@ -1,0 +1,127 @@
+{
+  "schema": "ResidualOps_UnifiedPilotPortfolio/v0.1",
+  "generated_at": "2026-05-29T11:47:49.035510+00:00",
+  "portfolio_id": "residualops-unified-pilot-portfolio-v0-1",
+  "verticals": [
+    "agentsec",
+    "qira",
+    "datacapsule"
+  ],
+  "portfolio_summary": {
+    "vertical_count": 3,
+    "total_allow_count": 3,
+    "total_hold_count": 3,
+    "total_block_count": 3,
+    "top_hold_reasons": [
+      "fixture.local/checkout-action-helper: policy holds network_access",
+      "fixture.local/repo-file-review-helper: policy holds file_access",
+      "CI evidence is partial or generated sample metadata; independent CI evidence is still needed.",
+      "Manifest metadata has rights, privacy, evaluation-boundary, or staleness gaps."
+    ],
+    "top_block_reasons": [
+      "fixture.local/checkout-action-helper: forbidden action language",
+      "Negative-control fixture includes release/deploy language that a local QIRA pilot cannot authorize.",
+      "Action use is blocked and declared disallowed uses cannot be upgraded by a manifest-only pilot."
+    ],
+    "common_claim_boundaries": [
+      "not security certification",
+      "not code correctness proof",
+      "not legal/privacy/license/evaluation proof",
+      "not quality guarantee",
+      "not product ready",
+      "no external action authorization"
+    ]
+  },
+  "shared_kernel": {
+    "packet": true,
+    "check_or_probe": true,
+    "receipt": true,
+    "allow_hold_block": true,
+    "feedback_memory": true
+  },
+  "vertical_summaries": [
+    {
+      "vertical_id": "agentsec",
+      "name": "AgentSec Gate",
+      "scope": "local/offline MCP or tool manifest review",
+      "receipt_path": "pilot_receipts/agentsec/AGENTSEC_PILOT_RECEIPT_SAMPLE.json",
+      "gate_result": "PASS_FIRST_AGENTSEC_PILOT_RECEIPT_READY",
+      "allow_count": 1,
+      "hold_count": 1,
+      "block_count": 1,
+      "primary_decision": "BLOCK_FORBIDDEN_ACTION",
+      "no_external_action": true,
+      "redaction_status": "PASS_REDACTED",
+      "feedback_memory_status": "pending",
+      "key_next_actions": [
+        "review HOLD/BLOCK findings with repository owner",
+        "add public-safe fixture only if the pattern is generic and non-secret",
+        "keep private policy calibration outside the public repository"
+      ]
+    },
+    {
+      "vertical_id": "qira",
+      "name": "QIRA-Code ReleaseGate",
+      "scope": "local/offline code-change release-gate review",
+      "receipt_path": "pilot_receipts/qira/QIRA_PILOT_RECEIPT_SAMPLE.json",
+      "gate_result": "PASS_FIRST_QIRA_PILOT_RECEIPT_READY",
+      "allow_count": 1,
+      "hold_count": 1,
+      "block_count": 1,
+      "primary_decision": "BLOCK_RELEASE_SIDE_EFFECT",
+      "no_external_action": true,
+      "redaction_status": "PASS_REDACTED",
+      "feedback_memory_status": "pending",
+      "key_next_actions": [
+        "review HOLD/BLOCK findings with repository owner",
+        "request copied or local CI evidence before any second-run readout",
+        "add public-safe fixture only if the pattern is generic and non-secret",
+        "keep private scoring calibration outside the public repository"
+      ]
+    },
+    {
+      "vertical_id": "datacapsule",
+      "name": "DataCapsule / AIDREG Engine",
+      "scope": "local/offline corpus manifest review",
+      "receipt_path": "pilot_receipts/datacapsule/DATACAPSULE_PILOT_RECEIPT_SAMPLE.json",
+      "gate_result": "PASS_FIRST_DATACAPSULE_PILOT_RECEIPT_READY",
+      "allow_count": 1,
+      "hold_count": 1,
+      "block_count": 1,
+      "primary_decision": "BLOCK_ACTION_USE",
+      "no_external_action": true,
+      "redaction_status": "PASS_REDACTED",
+      "feedback_memory_status": "pending",
+      "key_next_actions": [
+        "review HOLD/BLOCK findings with data owner or data steward",
+        "request license, terms, privacy, consent, and split-policy evidence",
+        "add public-safe fixture only if the pattern is generic and non-secret",
+        "keep private calibration outside the public repository"
+      ]
+    }
+  ],
+  "portfolio_claim_boundary": {
+    "not_security_certification": true,
+    "not_code_correctness_proof": true,
+    "not_legal_opinion": true,
+    "not_privacy_audit": true,
+    "not_license_clearance": true,
+    "not_eval_clean_proof": true,
+    "not_quality_guarantee": true,
+    "not_product_ready": true,
+    "no_external_action_authorization": true
+  },
+  "known_limits": [
+    "local/offline pilot receipt index only",
+    "no external APIs or GitHub APIs",
+    "no live MCP/tool calls",
+    "no crawling, URL fetching, raw private data inspection, upload, or model training",
+    "not certification, proof, legal opinion, privacy audit, license clearance, quality guarantee, product-readiness claim, or action authorization",
+    "private weights, thresholds, provider priors, anti-gaming logic, private negative controls, private probe seeds, and commercial routing policy remain non-public"
+  ],
+  "recommended_next_package": "ROE-12 Owner-Consented Pilot Intake Kit",
+  "external_action_used": false,
+  "live_execution_used": false,
+  "token_printed": false,
+  "private_kernel_exposed": false
+}

@@ -1,0 +1,68 @@
+{
+  "schema": "ResidualOps_FeedbackMemoryIndex/v0.1",
+  "index_id": "residualops-feedback-memory-index-v0-1",
+  "generated_at": "2026-05-29T11:47:49.037981+00:00",
+  "entry_count": 3,
+  "entries": [
+    {
+      "vertical": "AgentSec Gate",
+      "vertical_id": "agentsec",
+      "pilot_id": "agentsec-pilot-ea82f2f382ea",
+      "feedback_status": "pending",
+      "follow_up_actions": [
+        "review HOLD/BLOCK findings with repository owner",
+        "add public-safe fixture only if the pattern is generic and non-secret",
+        "keep private policy calibration outside the public repository"
+      ],
+      "should_add_negative_control": true,
+      "should_add_fixture": true,
+      "should_update_policy_or_contract": true,
+      "should_request_evidence": false,
+      "claim_boundary_change_needed": false
+    },
+    {
+      "vertical": "QIRA-Code ReleaseGate",
+      "vertical_id": "qira",
+      "pilot_id": "qira-pilot-29f3ca02b693",
+      "feedback_status": "pending",
+      "follow_up_actions": [
+        "review HOLD/BLOCK findings with repository owner",
+        "request copied or local CI evidence before any second-run readout",
+        "add public-safe fixture only if the pattern is generic and non-secret",
+        "keep private scoring calibration outside the public repository"
+      ],
+      "should_add_negative_control": true,
+      "should_add_fixture": true,
+      "should_update_policy_or_contract": true,
+      "should_request_evidence": true,
+      "claim_boundary_change_needed": false
+    },
+    {
+      "vertical": "DataCapsule / AIDREG Engine",
+      "vertical_id": "datacapsule",
+      "pilot_id": "datacapsule-pilot-1ca9bcf825f3",
+      "feedback_status": "pending",
+      "follow_up_actions": [
+        "review HOLD/BLOCK findings with data owner or data steward",
+        "request license, terms, privacy, consent, and split-policy evidence",
+        "add public-safe fixture only if the pattern is generic and non-secret",
+        "keep private calibration outside the public repository"
+      ],
+      "should_add_negative_control": true,
+      "should_add_fixture": true,
+      "should_update_policy_or_contract": true,
+      "should_request_evidence": true,
+      "claim_boundary_change_needed": false
+    }
+  ],
+  "portfolio_next_actions": [
+    "add owner-consented pilot intake",
+    "add second-run receipt",
+    "add unified dashboard",
+    "add pilot feedback form",
+    "keep private kernels private"
+  ],
+  "external_posting_performed": false,
+  "external_network_used": false,
+  "token_printed": false
+}

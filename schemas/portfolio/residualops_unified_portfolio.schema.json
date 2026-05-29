@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aoi.local/schemas/portfolio/residualops_unified_portfolio.schema.json",
+  "title": "ResidualOps Unified Pilot Portfolio",
+  "type": "object",
+  "required": ["schema", "generated_at", "portfolio_id", "verticals", "portfolio_summary", "vertical_summaries", "portfolio_claim_boundary", "known_limits"],
+  "properties": {
+    "schema": { "const": "ResidualOps_UnifiedPilotPortfolio/v0.1" },
+    "generated_at": { "type": "string" },
+    "portfolio_id": { "type": "string" },
+    "verticals": {
+      "type": "array",
+      "items": { "enum": ["agentsec", "qira", "datacapsule"] }
+    },
+    "portfolio_summary": {
+      "type": "object",
+      "required": ["vertical_count", "total_allow_count", "total_hold_count", "total_block_count", "top_hold_reasons", "top_block_reasons", "common_claim_boundaries"],
+      "properties": {
+        "vertical_count": { "type": "integer" },
+        "total_allow_count": { "type": "integer" },
+        "total_hold_count": { "type": "integer" },
+        "total_block_count": { "type": "integer" },
+        "top_hold_reasons": { "type": "array", "items": { "type": "string" } },
+        "top_block_reasons": { "type": "array", "items": { "type": "string" } },
+        "common_claim_boundaries": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "shared_kernel": { "type": "object" },
+    "vertical_summaries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["vertical_id", "name", "scope", "receipt_path", "gate_result", "allow_count", "hold_count", "block_count", "primary_decision", "no_external_action", "redaction_status", "feedback_memory_status", "key_next_actions"],
+        "properties": {
+          "vertical_id": { "type": "string" },
+          "name": { "type": "string" },
+          "scope": { "type": "string" },
+          "receipt_path": { "type": "string" },
+          "gate_result": { "type": "string" },
+          "allow_count": { "type": "integer" },
+          "hold_count": { "type": "integer" },
+          "block_count": { "type": "integer" },
+          "primary_decision": { "type": "string" },
+          "no_external_action": { "type": "boolean" },
+          "redaction_status": { "type": "string" },
+          "feedback_memory_status": { "type": "string" },
+          "key_next_actions": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "portfolio_claim_boundary": { "type": "object" },
+    "known_limits": { "type": "array", "items": { "type": "string" } },
+    "recommended_next_package": { "type": "string" }
+  },
+  "additionalProperties": true
+}

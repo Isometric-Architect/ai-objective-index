@@ -1,0 +1,57 @@
+{
+  "schema": "ResidualOps_VerticalComparisonMatrix/v0.1",
+  "generated_at": "2026-05-29T11:47:49.035559+00:00",
+  "row_count": 3,
+  "rows": [
+    {
+      "vertical": "AgentSec Gate",
+      "vertical_id": "agentsec",
+      "reviewed_object": "tool or MCP manifest metadata",
+      "input_type": "manifest fixture",
+      "check_type": "metadata permission and forbidden-action review",
+      "external_action_used": false,
+      "live_execution_used": false,
+      "allow_count": 1,
+      "hold_count": 1,
+      "block_count": 1,
+      "primary_block_or_hold_reason": "fixture.local/checkout-action-helper: forbidden action language",
+      "feedback_memory_status": "pending",
+      "claim_boundary": "not security certification; not compliance audit; no external action authorization",
+      "next_action": "review HOLD/BLOCK findings with repository owner"
+    },
+    {
+      "vertical": "QIRA-Code ReleaseGate",
+      "vertical_id": "qira",
+      "reviewed_object": "task packet and patch fixture",
+      "input_type": "sample patch fixture",
+      "check_type": "patch classification, behavior contract, and CI evidence intake",
+      "external_action_used": false,
+      "live_execution_used": false,
+      "allow_count": 1,
+      "hold_count": 1,
+      "block_count": 1,
+      "primary_block_or_hold_reason": "Negative-control fixture includes release/deploy language that a local QIRA pilot cannot authorize.",
+      "feedback_memory_status": "pending",
+      "claim_boundary": "not code correctness proof; not security certification; no merge/deploy authorization",
+      "next_action": "review HOLD/BLOCK findings with repository owner"
+    },
+    {
+      "vertical": "DataCapsule / AIDREG Engine",
+      "vertical_id": "datacapsule",
+      "reviewed_object": "corpus manifest metadata",
+      "input_type": "sample corpus manifest fixture",
+      "check_type": "source-rights, privacy-risk, evaluation-boundary, and use-boundary review",
+      "external_action_used": false,
+      "live_execution_used": false,
+      "allow_count": 1,
+      "hold_count": 1,
+      "block_count": 1,
+      "primary_block_or_hold_reason": "Action use is blocked and declared disallowed uses cannot be upgraded by a manifest-only pilot.",
+      "feedback_memory_status": "pending",
+      "claim_boundary": "not legal/privacy/license/evaluation proof; no training/action authorization",
+      "next_action": "review HOLD/BLOCK findings with data owner or data steward"
+    }
+  ],
+  "external_action_used": false,
+  "live_execution_used": false
+}

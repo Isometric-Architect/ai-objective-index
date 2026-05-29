@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aoi.local/schemas/portfolio/residualops_vertical_matrix.schema.json",
+  "title": "ResidualOps Vertical Comparison Matrix",
+  "type": "object",
+  "required": ["schema", "generated_at", "row_count", "rows"],
+  "properties": {
+    "schema": { "const": "ResidualOps_VerticalComparisonMatrix/v0.1" },
+    "generated_at": { "type": "string" },
+    "row_count": { "type": "integer" },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["vertical", "reviewed_object", "input_type", "check_type", "external_action_used", "live_execution_used", "allow_count", "hold_count", "block_count", "primary_block_or_hold_reason", "feedback_memory_status", "claim_boundary", "next_action"],
+        "properties": {
+          "vertical": { "type": "string" },
+          "reviewed_object": { "type": "string" },
+          "input_type": { "type": "string" },
+          "check_type": { "type": "string" },
+          "external_action_used": { "type": "boolean" },
+          "live_execution_used": { "type": "boolean" },
+          "allow_count": { "type": "integer" },
+          "hold_count": { "type": "integer" },
+          "block_count": { "type": "integer" },
+          "primary_block_or_hold_reason": { "type": "string" },
+          "feedback_memory_status": { "type": "string" },
+          "claim_boundary": { "type": "string" },
+          "next_action": { "type": "string" }
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

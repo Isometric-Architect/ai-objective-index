@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aoi.local/schemas/portfolio/residualops_portfolio_gate.schema.json",
+  "title": "ResidualOps Portfolio Gate",
+  "type": "object",
+  "required": ["schema", "generated_at", "decision", "vertical_count", "redaction_decision", "claim_audit_decision", "external_action_used"],
+  "properties": {
+    "schema": { "const": "ResidualOps_ROE11UnifiedPortfolioGate/v0.1" },
+    "generated_at": { "type": "string" },
+    "decision": {
+      "enum": [
+        "PASS_UNIFIED_PILOT_PORTFOLIO_READY",
+        "HOLD_MISSING_VERTICAL_RECEIPT",
+        "HOLD_MISSING_READOUT",
+        "HOLD_REDACTION_REVIEW",
+        "BLOCK_SECRET_FINDING",
+        "BLOCK_OVERCLAIM",
+        "BLOCK_EXTERNAL_ACTION",
+        "BLOCK_PRIVATE_KERNEL_EXPOSED"
+      ]
+    },
+    "vertical_count": { "type": "integer" },
+    "total_allow_count": { "type": "integer" },
+    "total_hold_count": { "type": "integer" },
+    "total_block_count": { "type": "integer" },
+    "redaction_decision": { "type": "string" },
+    "claim_audit_decision": { "type": "string" },
+    "external_action_used": { "type": "boolean" }
+  },
+  "additionalProperties": true
+}

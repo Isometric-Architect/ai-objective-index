@@ -1,0 +1,16 @@
+{
+  "schema": "ResidualOps_PortfolioClaimBoundaryAudit/v0.1",
+  "generated_at": "2026-05-29T11:47:49.081760+00:00",
+  "decision": "PASS_CLAIM_BOUNDARY_CLEAN",
+  "risky_phrase_count": 0,
+  "findings": [],
+  "allowed_language": [
+    "local/offline receipt",
+    "reviewer artifact",
+    "claim boundary",
+    "ALLOW/HOLD/BLOCK",
+    "known limits",
+    "no external action",
+    "not certification"
+  ]
+}

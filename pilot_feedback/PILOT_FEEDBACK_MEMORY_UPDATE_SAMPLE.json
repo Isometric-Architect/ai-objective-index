@@ -1,0 +1,69 @@
+{
+  "schema": "ResidualOps_PilotFeedbackMemoryUpdateSet/v0.1",
+  "update_count": 3,
+  "updates": [
+    {
+      "schema": "ResidualOps_PilotFeedbackMemoryUpdate/v0.1",
+      "update_id": "feedback-memory-update-pilot-feedback-sample-agentsec-v0-1",
+      "feedback_id": "pilot-feedback-sample-agentsec-v0-1",
+      "dry_run_id": "roe13-local-sample-dry-run-v0-1",
+      "generated_at": "2026-05-29T13:53:33.851886+00:00",
+      "vertical": "agentsec",
+      "update_type": "request_more_evidence",
+      "memory_status": "pending",
+      "before_summary": "ROE-13 feedback memory has a pending dry-run entry for the vertical.",
+      "after_summary": "ROE-14 records feedback as ACCEPT_AS_FIXTURE_CANDIDATE with update_type=request_more_evidence.",
+      "unresolved_questions": [],
+      "next_actions": [
+        "keep feedback local",
+        "preserve claim boundaries",
+        "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+        "convert accepted feedback into a fixture or evidence request",
+        "schedule a local second-run receipt only after required artifacts are present"
+      ],
+      "external_action_authorized": false
+    },
+    {
+      "schema": "ResidualOps_PilotFeedbackMemoryUpdate/v0.1",
+      "update_id": "feedback-memory-update-pilot-feedback-sample-qira-v0-1",
+      "feedback_id": "pilot-feedback-sample-qira-v0-1",
+      "dry_run_id": "roe13-local-sample-dry-run-v0-1",
+      "generated_at": "2026-05-29T13:53:33.852918+00:00",
+      "vertical": "qira",
+      "update_type": "request_more_evidence",
+      "memory_status": "pending",
+      "before_summary": "ROE-13 feedback memory has a pending dry-run entry for the vertical.",
+      "after_summary": "ROE-14 records feedback as ACCEPT_AS_FIXTURE_CANDIDATE with update_type=request_more_evidence.",
+      "unresolved_questions": [],
+      "next_actions": [
+        "keep feedback local",
+        "preserve claim boundaries",
+        "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+        "convert accepted feedback into a fixture or evidence request",
+        "schedule a local second-run receipt only after required artifacts are present"
+      ],
+      "external_action_authorized": false
+    },
+    {
+      "schema": "ResidualOps_PilotFeedbackMemoryUpdate/v0.1",
+      "update_id": "feedback-memory-update-pilot-feedback-sample-datacapsule-v0-1",
+      "feedback_id": "pilot-feedback-sample-datacapsule-v0-1",
+      "dry_run_id": "roe13-local-sample-dry-run-v0-1",
+      "generated_at": "2026-05-29T13:53:33.853816+00:00",
+      "vertical": "datacapsule",
+      "update_type": "add_fixture_candidate",
+      "memory_status": "pending",
+      "before_summary": "ROE-13 feedback memory has a pending dry-run entry for the vertical.",
+      "after_summary": "ROE-14 records feedback as ACCEPT_AS_FIXTURE_CANDIDATE with update_type=add_fixture_candidate.",
+      "unresolved_questions": [],
+      "next_actions": [
+        "keep feedback local",
+        "preserve claim boundaries",
+        "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+        "convert accepted feedback into a fixture or evidence request",
+        "schedule a local second-run receipt only after required artifacts are present"
+      ],
+      "external_action_authorized": false
+    }
+  ]
+}

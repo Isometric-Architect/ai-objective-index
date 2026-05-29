@@ -1,5 +1,11 @@
 # Changelog
 
+## ROE-14
+
+- Added a local/offline pilot feedback form and second-run planning gate for the ROE-13 dry-run.
+- Added feedback packets, deterministic classification, second-run plan, second-run gate, feedback memory update, reviewer readout, redaction report, schemas, docs, public outputs, and tests.
+- Preserved boundaries: no GitHub API calls, no issue/PR/comment creation, no clone/fetch/crawl, no live MCP/tool calls, no external repo mutation, no merge/deploy/publish action, no upload/training, no token handling, no private-kernel exposure, no second-run execution by default, and no certification/proof/product-readiness/action-authorization claim.
+
 ## ROE-13
 
 - Added the first owner-consented local/sample pilot dry-run across AgentSec, QIRA-Code ReleaseGate, and DataCapsule.

@@ -1,5 +1,9 @@
 # Launch Notes
 
+## ROE-14 Pilot Feedback and Second-Run Gate
+
+ROE-14 adds a local/offline feedback form and second-run planning gate for the ROE-13 dry-run. It converts reviewer feedback into packets, classifications, second-run plans, feedback memory updates, reviewer readout, redaction report, and gate result. It does not execute a second run by default, call GitHub APIs, create issues or comments, clone, fetch URLs, crawl, run live MCP/tool calls, mutate external repos, post, merge, deploy, publish, upload data, train models, handle tokens, expose private kernels, certify security, prove correctness, prove legal/privacy/license/evaluation status, guarantee quality, claim product readiness, or authorize external actions.
+
 ## ROE-13 First Owner-Consented Pilot Dry-Run
 
 ROE-13 runs the first local/sample flow from ROE-12 intake packets to vertical pilot receipts for AgentSec, QIRA, and DataCapsule. It does not perform an external pilot, call GitHub APIs, clone, fetch URLs, crawl, run live MCP/tool calls, mutate external repos, post comments, merge, deploy, publish, upload data, train models, handle tokens, inspect raw private data, certify security, prove correctness, prove legal/privacy/license/evaluation status, guarantee quality, claim product readiness, or authorize external actions.

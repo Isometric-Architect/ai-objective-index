@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResidualOps Pilot Feedback Memory Update",
+  "type": "object",
+  "required": ["schema", "update_id", "feedback_id", "dry_run_id", "vertical", "update_type", "memory_status"],
+  "properties": {
+    "schema": { "const": "ResidualOps_PilotFeedbackMemoryUpdate/v0.1" },
+    "update_id": { "type": "string" },
+    "feedback_id": { "type": "string" },
+    "dry_run_id": { "type": "string" },
+    "vertical": { "type": "string" },
+    "update_type": {
+      "enum": [
+        "add_fixture_candidate",
+        "add_negative_control_candidate",
+        "update_claim_boundary",
+        "request_more_evidence",
+        "update_finding_explanation",
+        "no_change"
+      ]
+    },
+    "memory_status": { "enum": ["pending", "accepted", "incorporated", "rejected", "closed"] },
+    "before_summary": { "type": "string" },
+    "after_summary": { "type": "string" },
+    "unresolved_questions": { "type": "array", "items": { "type": "string" } },
+    "next_actions": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

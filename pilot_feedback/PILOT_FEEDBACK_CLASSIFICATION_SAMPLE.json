@@ -1,0 +1,108 @@
+{
+  "schema": "ResidualOps_PilotFeedbackClassificationSet/v0.1",
+  "classification_count": 3,
+  "classifications": [
+    {
+      "schema": "ResidualOps_PilotFeedbackClassification/v0.1",
+      "classification_id": "classification-pilot-feedback-sample-agentsec-v0-1",
+      "feedback_id": "pilot-feedback-sample-agentsec-v0-1",
+      "generated_at": "2026-05-29T13:53:33.851796+00:00",
+      "classification": "ACCEPT_AS_FIXTURE_CANDIDATE",
+      "issue_categories": [
+        "request_second_run"
+      ],
+      "severity": "low",
+      "affected_verticals": [
+        "agentsec"
+      ],
+      "affected_receipts": [
+        "pilot_dry_runs/ROE13_PILOT_DRY_RUN_RESULT_AGENTSEC.json"
+      ],
+      "should_update_finding": false,
+      "should_update_claim_boundary": false,
+      "should_add_negative_control": false,
+      "should_add_fixture": false,
+      "should_request_evidence": true,
+      "should_run_second_pass": true,
+      "reason": "feedback is local, redacted, consent-bounded, and can inform a future local second pass",
+      "next_actions": [
+        "keep feedback local",
+        "preserve claim boundaries",
+        "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+        "convert accepted feedback into a fixture or evidence request",
+        "schedule a local second-run receipt only after required artifacts are present"
+      ],
+      "can_certify_security": false,
+      "can_prove_correctness": false,
+      "can_authorize_external_action": false
+    },
+    {
+      "schema": "ResidualOps_PilotFeedbackClassification/v0.1",
+      "classification_id": "classification-pilot-feedback-sample-qira-v0-1",
+      "feedback_id": "pilot-feedback-sample-qira-v0-1",
+      "generated_at": "2026-05-29T13:53:33.852840+00:00",
+      "classification": "ACCEPT_AS_FIXTURE_CANDIDATE",
+      "issue_categories": [
+        "missing_evidence"
+      ],
+      "severity": "low",
+      "affected_verticals": [
+        "qira"
+      ],
+      "affected_receipts": [
+        "pilot_dry_runs/ROE13_PILOT_DRY_RUN_RESULT_QIRA.json"
+      ],
+      "should_update_finding": false,
+      "should_update_claim_boundary": false,
+      "should_add_negative_control": false,
+      "should_add_fixture": false,
+      "should_request_evidence": true,
+      "should_run_second_pass": true,
+      "reason": "feedback is local, redacted, consent-bounded, and can inform a future local second pass",
+      "next_actions": [
+        "keep feedback local",
+        "preserve claim boundaries",
+        "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+        "convert accepted feedback into a fixture or evidence request",
+        "schedule a local second-run receipt only after required artifacts are present"
+      ],
+      "can_certify_security": false,
+      "can_prove_correctness": false,
+      "can_authorize_external_action": false
+    },
+    {
+      "schema": "ResidualOps_PilotFeedbackClassification/v0.1",
+      "classification_id": "classification-pilot-feedback-sample-datacapsule-v0-1",
+      "feedback_id": "pilot-feedback-sample-datacapsule-v0-1",
+      "generated_at": "2026-05-29T13:53:33.853762+00:00",
+      "classification": "ACCEPT_AS_FIXTURE_CANDIDATE",
+      "issue_categories": [
+        "add_fixture"
+      ],
+      "severity": "low",
+      "affected_verticals": [
+        "datacapsule"
+      ],
+      "affected_receipts": [
+        "pilot_dry_runs/ROE13_PILOT_DRY_RUN_RESULT_DATACAPSULE.json"
+      ],
+      "should_update_finding": false,
+      "should_update_claim_boundary": false,
+      "should_add_negative_control": false,
+      "should_add_fixture": true,
+      "should_request_evidence": false,
+      "should_run_second_pass": true,
+      "reason": "feedback is local, redacted, consent-bounded, and can inform a future local second pass",
+      "next_actions": [
+        "keep feedback local",
+        "preserve claim boundaries",
+        "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+        "convert accepted feedback into a fixture or evidence request",
+        "schedule a local second-run receipt only after required artifacts are present"
+      ],
+      "can_certify_security": false,
+      "can_prove_correctness": false,
+      "can_authorize_external_action": false
+    }
+  ]
+}

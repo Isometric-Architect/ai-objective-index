@@ -1,0 +1,15 @@
+{
+  "schema": "ResidualOps_PilotFeedbackRedactionReport/v0.1",
+  "generated_at": "2026-05-29T13:53:33.920920+00:00",
+  "decision": "PASS_REDACTED",
+  "label": "pilot_feedback_artifacts",
+  "artifact_count": 9,
+  "finding_count": 0,
+  "block_count": 0,
+  "hold_count": 0,
+  "findings": [],
+  "redaction_applied": false,
+  "token_printed": false,
+  "private_kernel_exposed": false,
+  "external_action_requested": false
+}

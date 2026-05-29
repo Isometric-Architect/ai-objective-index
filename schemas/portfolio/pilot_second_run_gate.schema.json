@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResidualOps Pilot Second-Run Gate",
+  "type": "object",
+  "required": ["schema", "gate_id", "feedback_id", "dry_run_id", "decision"],
+  "properties": {
+    "schema": { "const": "ResidualOps_PilotSecondRunGate/v0.1" },
+    "gate_id": { "type": "string" },
+    "feedback_id": { "type": "string" },
+    "dry_run_id": { "type": "string" },
+    "decision": {
+      "enum": [
+        "READY_FOR_LOCAL_SECOND_RUN",
+        "HOLD_SECOND_RUN_CONTEXT",
+        "HOLD_REDACTION_REVIEW",
+        "BLOCK_EXTERNAL_ACTION",
+        "BLOCK_SECRET_FINDING",
+        "BLOCK_OVERCLAIM"
+      ]
+    },
+    "plan_status": { "type": "string" },
+    "classification": { "type": "string" },
+    "execute_now": { "type": "boolean" },
+    "external_action_authorized": { "type": "boolean" },
+    "reasons": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

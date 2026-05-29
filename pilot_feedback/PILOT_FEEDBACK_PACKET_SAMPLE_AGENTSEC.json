@@ -1,0 +1,60 @@
+{
+  "schema": "ResidualOps_PilotFeedbackPacket/v0.1",
+  "feedback_id": "pilot-feedback-sample-agentsec-v0-1",
+  "generated_at": "2026-05-29T13:53:33.846578+00:00",
+  "dry_run_id": "roe13-local-sample-dry-run-v0-1",
+  "vertical": "agentsec",
+  "reviewer_type": "maintainer",
+  "feedback_source": "sample_fixture",
+  "consent_status": "sample_fixture",
+  "feedback_category": "request_second_run",
+  "feedback_text": "Please run a second local pass after adding a clearer permission-scope explanation for the manifest-only finding.",
+  "affected_artifact_refs": [
+    "pilot_dry_runs/ROE13_PILOT_DRY_RUN_RESULT_AGENTSEC.json"
+  ],
+  "requested_change": "clarify permission-scope explanation and regenerate the local receipt readout",
+  "proposed_evidence_refs": [
+    "pilot_receipts/agentsec/AGENTSEC_PILOT_RECEIPT_SAMPLE.json"
+  ],
+  "contains_private_data_declared": false,
+  "external_action_requested": false,
+  "claim_boundary": {
+    "not_security_certification": true,
+    "not_code_correctness_proof": true,
+    "not_legal_opinion": true,
+    "not_privacy_audit": true,
+    "not_license_clearance": true,
+    "not_eval_clean_proof": true,
+    "not_quality_guarantee": true,
+    "not_product_ready": true,
+    "no_external_action_authorization": true
+  },
+  "must_not_do": [
+    "call_github_api",
+    "create_issue",
+    "comment_on_pr",
+    "create_pr",
+    "merge",
+    "deploy",
+    "publish_package",
+    "clone_repo",
+    "fetch_url",
+    "crawl_or_scrape",
+    "live_mcp_call",
+    "external_tool_execution",
+    "upload_data",
+    "train_model",
+    "use_credentials"
+  ],
+  "must_not_claim": [
+    "security_certification",
+    "code_correctness_proof",
+    "legal_clearance",
+    "privacy_clearance",
+    "license_clearance",
+    "eval_clean_proof",
+    "quality_guarantee",
+    "product_readiness",
+    "external_action_authorization"
+  ]
+}

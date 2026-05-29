@@ -21,6 +21,8 @@ The intake kit should preserve the same boundaries:
 
 ROE-13 status: first owner-consented local/sample pilot dry-run added.
 
-Recommended next package: ROE-14 Pilot Feedback Form + Second-Run Receipt Gate.
+ROE-14 status: pilot feedback form and second-run planning gate added.
+
+Recommended next package: ROE-15 Local Owner-Consented Second-Run Receipt Packager.
 
 Secondary backlog: AOI 0.3.0a2 MCP Registry recovery if namespace/version recovery remains useful.

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResidualOps Pilot Feedback Classification",
+  "type": "object",
+  "required": ["schema", "classification_id", "feedback_id", "classification"],
+  "properties": {
+    "schema": { "const": "ResidualOps_PilotFeedbackClassification/v0.1" },
+    "classification_id": { "type": "string" },
+    "feedback_id": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "classification": {
+      "enum": [
+        "ACCEPT_AS_FIXTURE_CANDIDATE",
+        "HOLD_NEEDS_MORE_CONTEXT",
+        "HOLD_REDACTION_REVIEW",
+        "HOLD_OWNER_CONFIRMATION",
+        "HOLD_MANUAL_TRIAGE",
+        "BLOCK_EXTERNAL_ACTION_REQUEST",
+        "BLOCK_SECRET_OR_PRIVATE_DATA",
+        "BLOCK_CERTIFICATION_CLAIM"
+      ]
+    },
+    "issue_categories": { "type": "array", "items": { "type": "string" } },
+    "severity": { "enum": ["info", "low", "medium", "high", "critical", "unknown"] },
+    "affected_verticals": { "type": "array", "items": { "type": "string" } },
+    "affected_receipts": { "type": "array", "items": { "type": "string" } },
+    "should_run_second_pass": { "type": "boolean" },
+    "reason": { "type": "string" },
+    "next_actions": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

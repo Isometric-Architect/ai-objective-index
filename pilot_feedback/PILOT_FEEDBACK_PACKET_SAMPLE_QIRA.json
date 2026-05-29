@@ -1,0 +1,60 @@
+{
+  "schema": "ResidualOps_PilotFeedbackPacket/v0.1",
+  "feedback_id": "pilot-feedback-sample-qira-v0-1",
+  "generated_at": "2026-05-29T13:53:33.846631+00:00",
+  "dry_run_id": "roe13-local-sample-dry-run-v0-1",
+  "vertical": "qira",
+  "reviewer_type": "internal",
+  "feedback_source": "sample_fixture",
+  "consent_status": "sample_fixture",
+  "feedback_category": "missing_evidence",
+  "feedback_text": "The release-side-effect BLOCK is useful, but the next pass should ask for a redacted local CI summary before changing the finding.",
+  "affected_artifact_refs": [
+    "pilot_dry_runs/ROE13_PILOT_DRY_RUN_RESULT_QIRA.json"
+  ],
+  "requested_change": "request local CI evidence before a second receipt pass",
+  "proposed_evidence_refs": [
+    "pilot_receipts/qira/QIRA_CI_EVIDENCE_SUMMARY_SAMPLE.json"
+  ],
+  "contains_private_data_declared": false,
+  "external_action_requested": false,
+  "claim_boundary": {
+    "not_security_certification": true,
+    "not_code_correctness_proof": true,
+    "not_legal_opinion": true,
+    "not_privacy_audit": true,
+    "not_license_clearance": true,
+    "not_eval_clean_proof": true,
+    "not_quality_guarantee": true,
+    "not_product_ready": true,
+    "no_external_action_authorization": true
+  },
+  "must_not_do": [
+    "call_github_api",
+    "create_issue",
+    "comment_on_pr",
+    "create_pr",
+    "merge",
+    "deploy",
+    "publish_package",
+    "clone_repo",
+    "fetch_url",
+    "crawl_or_scrape",
+    "live_mcp_call",
+    "external_tool_execution",
+    "upload_data",
+    "train_model",
+    "use_credentials"
+  ],
+  "must_not_claim": [
+    "security_certification",
+    "code_correctness_proof",
+    "legal_clearance",
+    "privacy_clearance",
+    "license_clearance",
+    "eval_clean_proof",
+    "quality_guarantee",
+    "product_readiness",
+    "external_action_authorization"
+  ]
+}

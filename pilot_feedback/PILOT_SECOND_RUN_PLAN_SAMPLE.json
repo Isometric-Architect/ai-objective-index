@@ -1,0 +1,199 @@
+{
+  "schema": "ResidualOps_PilotSecondRunPlanSet/v0.1",
+  "plan_count": 3,
+  "plans": [
+    {
+      "schema": "ResidualOps_PilotSecondRunPlan/v0.1",
+      "plan_id": "second-run-plan-pilot-feedback-sample-agentsec-v0-1",
+      "feedback_id": "pilot-feedback-sample-agentsec-v0-1",
+      "dry_run_id": "roe13-local-sample-dry-run-v0-1",
+      "generated_at": "2026-05-29T13:53:33.851837+00:00",
+      "verticals_to_rerun": [
+        "agentsec"
+      ],
+      "artifacts_to_reuse": [
+        "pilot_dry_runs/ROE13_PILOT_DRY_RUN_RESULT_AGENTSEC.json"
+      ],
+      "artifacts_needed": [
+        "redacted local evidence summary"
+      ],
+      "allowed_operations": [
+        "local_receipt_regeneration",
+        "local_redaction_check",
+        "local_claim_boundary_check",
+        "local_feedback_memory_update"
+      ],
+      "forbidden_operations": [
+        "github_api",
+        "clone_repo",
+        "fetch_url",
+        "create_issue",
+        "comment_on_pr",
+        "merge",
+        "deploy",
+        "publish_package",
+        "live_mcp_call",
+        "external_tool_execution",
+        "upload_data",
+        "train_model"
+      ],
+      "expected_outputs": [
+        "updated_receipt",
+        "second_run_readout",
+        "feedback_memory_update",
+        "unresolved_questions"
+      ],
+      "run_status": "READY_FOR_LOCAL_SECOND_RUN",
+      "claim_ceiling": "local/offline second-run planning artifact only",
+      "next_actions": [
+        "keep the second-run plan local/offline",
+        "run redaction before any receipt regeneration",
+        "reuse only local receipt/readout artifacts",
+        "do not execute the second run by default",
+        "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs"
+      ],
+      "execute_now": false,
+      "external_action_authorized": false,
+      "must_not_claim": [
+        "security_certification",
+        "code_correctness_proof",
+        "legal_clearance",
+        "privacy_clearance",
+        "license_clearance",
+        "eval_clean_proof",
+        "quality_guarantee",
+        "product_readiness",
+        "external_action_authorization"
+      ]
+    },
+    {
+      "schema": "ResidualOps_PilotSecondRunPlan/v0.1",
+      "plan_id": "second-run-plan-pilot-feedback-sample-qira-v0-1",
+      "feedback_id": "pilot-feedback-sample-qira-v0-1",
+      "dry_run_id": "roe13-local-sample-dry-run-v0-1",
+      "generated_at": "2026-05-29T13:53:33.852874+00:00",
+      "verticals_to_rerun": [
+        "qira"
+      ],
+      "artifacts_to_reuse": [
+        "pilot_dry_runs/ROE13_PILOT_DRY_RUN_RESULT_QIRA.json"
+      ],
+      "artifacts_needed": [
+        "redacted local evidence summary"
+      ],
+      "allowed_operations": [
+        "local_receipt_regeneration",
+        "local_redaction_check",
+        "local_claim_boundary_check",
+        "local_feedback_memory_update"
+      ],
+      "forbidden_operations": [
+        "github_api",
+        "clone_repo",
+        "fetch_url",
+        "create_issue",
+        "comment_on_pr",
+        "merge",
+        "deploy",
+        "publish_package",
+        "live_mcp_call",
+        "external_tool_execution",
+        "upload_data",
+        "train_model"
+      ],
+      "expected_outputs": [
+        "updated_receipt",
+        "second_run_readout",
+        "feedback_memory_update",
+        "unresolved_questions"
+      ],
+      "run_status": "READY_FOR_LOCAL_SECOND_RUN",
+      "claim_ceiling": "local/offline second-run planning artifact only",
+      "next_actions": [
+        "keep the second-run plan local/offline",
+        "run redaction before any receipt regeneration",
+        "reuse only local receipt/readout artifacts",
+        "do not execute the second run by default",
+        "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs"
+      ],
+      "execute_now": false,
+      "external_action_authorized": false,
+      "must_not_claim": [
+        "security_certification",
+        "code_correctness_proof",
+        "legal_clearance",
+        "privacy_clearance",
+        "license_clearance",
+        "eval_clean_proof",
+        "quality_guarantee",
+        "product_readiness",
+        "external_action_authorization"
+      ]
+    },
+    {
+      "schema": "ResidualOps_PilotSecondRunPlan/v0.1",
+      "plan_id": "second-run-plan-pilot-feedback-sample-datacapsule-v0-1",
+      "feedback_id": "pilot-feedback-sample-datacapsule-v0-1",
+      "dry_run_id": "roe13-local-sample-dry-run-v0-1",
+      "generated_at": "2026-05-29T13:53:33.853784+00:00",
+      "verticals_to_rerun": [
+        "datacapsule"
+      ],
+      "artifacts_to_reuse": [
+        "pilot_dry_runs/ROE13_PILOT_DRY_RUN_RESULT_DATACAPSULE.json"
+      ],
+      "artifacts_needed": [
+        "redacted fixture candidate"
+      ],
+      "allowed_operations": [
+        "local_receipt_regeneration",
+        "local_redaction_check",
+        "local_claim_boundary_check",
+        "local_feedback_memory_update"
+      ],
+      "forbidden_operations": [
+        "github_api",
+        "clone_repo",
+        "fetch_url",
+        "create_issue",
+        "comment_on_pr",
+        "merge",
+        "deploy",
+        "publish_package",
+        "live_mcp_call",
+        "external_tool_execution",
+        "upload_data",
+        "train_model"
+      ],
+      "expected_outputs": [
+        "updated_receipt",
+        "second_run_readout",
+        "feedback_memory_update",
+        "unresolved_questions"
+      ],
+      "run_status": "READY_FOR_LOCAL_SECOND_RUN",
+      "claim_ceiling": "local/offline second-run planning artifact only",
+      "next_actions": [
+        "keep the second-run plan local/offline",
+        "run redaction before any receipt regeneration",
+        "reuse only local receipt/readout artifacts",
+        "do not execute the second run by default",
+        "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs"
+      ],
+      "execute_now": false,
+      "external_action_authorized": false,
+      "must_not_claim": [
+        "security_certification",
+        "code_correctness_proof",
+        "legal_clearance",
+        "privacy_clearance",
+        "license_clearance",
+        "eval_clean_proof",
+        "quality_guarantee",
+        "product_readiness",
+        "external_action_authorization"
+      ]
+    }
+  ],
+  "second_run_executed": false
+}

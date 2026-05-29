@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResidualOps Pilot Second-Run Plan",
+  "type": "object",
+  "required": ["schema", "plan_id", "feedback_id", "dry_run_id", "run_status"],
+  "properties": {
+    "schema": { "const": "ResidualOps_PilotSecondRunPlan/v0.1" },
+    "plan_id": { "type": "string" },
+    "feedback_id": { "type": "string" },
+    "dry_run_id": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "verticals_to_rerun": { "type": "array", "items": { "type": "string" } },
+    "artifacts_to_reuse": { "type": "array", "items": { "type": "string" } },
+    "artifacts_needed": { "type": "array", "items": { "type": "string" } },
+    "allowed_operations": { "type": "array", "items": { "type": "string" } },
+    "forbidden_operations": { "type": "array", "items": { "type": "string" } },
+    "expected_outputs": { "type": "array", "items": { "type": "string" } },
+    "run_status": {
+      "enum": [
+        "NOT_RUN",
+        "READY_FOR_LOCAL_SECOND_RUN",
+        "HOLD_MISSING_ARTIFACTS",
+        "HOLD_REDACTION",
+        "BLOCK_EXTERNAL_ACTION",
+        "BLOCK_SECRET_FINDING",
+        "BLOCK_OVERCLAIM"
+      ]
+    },
+    "execute_now": { "type": "boolean" },
+    "external_action_authorized": { "type": "boolean" }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResidualOps Pilot Feedback Packet",
+  "type": "object",
+  "required": ["schema", "feedback_id", "dry_run_id", "vertical", "feedback_category", "feedback_text"],
+  "properties": {
+    "schema": { "const": "ResidualOps_PilotFeedbackPacket/v0.1" },
+    "feedback_id": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "dry_run_id": { "type": "string" },
+    "vertical": { "enum": ["agentsec", "qira", "datacapsule", "portfolio", "unknown"] },
+    "reviewer_type": { "enum": ["owner", "maintainer", "internal", "external", "data_steward", "unknown"] },
+    "feedback_source": { "enum": ["local_form", "sample_fixture", "pasted_text", "manual_review", "unknown"] },
+    "consent_status": { "enum": ["self_owned", "owner_provided", "sample_fixture", "insufficient", "unknown"] },
+    "feedback_category": {
+      "enum": [
+        "wrong_finding",
+        "missing_evidence",
+        "unclear_explanation",
+        "wrong_vertical_route",
+        "wrong_allow_hold_block",
+        "missing_claim_boundary",
+        "overclaim_concern",
+        "redaction_concern",
+        "add_negative_control",
+        "add_fixture",
+        "request_second_run",
+        "other"
+      ]
+    },
+    "feedback_text": { "type": "string" },
+    "affected_artifact_refs": { "type": "array", "items": { "type": "string" } },
+    "requested_change": { "type": "string" },
+    "proposed_evidence_refs": { "type": "array", "items": { "type": "string" } },
+    "contains_private_data_declared": { "type": "boolean" },
+    "external_action_requested": { "type": "boolean" },
+    "claim_boundary": { "type": "object" },
+    "must_not_do": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,61 @@
+{
+  "schema": "ResidualOps_PilotConsentRecord/v0.1",
+  "consent_id": "pilot-consent-sample-v0-1",
+  "intake_id": "pilot-intake-sample-agentsec-5bd1b7f23ad6",
+  "generated_at": "2026-05-29T12:34:57.823203+00:00",
+  "consent_status": "sample_fixture",
+  "allowed_artifacts": [
+    "mcp_manifest",
+    "tool_manifest",
+    "pr_diff",
+    "patch_text",
+    "ci_summary",
+    "dataset_manifest",
+    "corpus_manifest",
+    "dataset_card"
+  ],
+  "disallowed_artifacts": [
+    "raw secrets",
+    "private keys",
+    ".env files",
+    "unredacted private datasets"
+  ],
+  "allowed_review_modes": [
+    "local_static_review",
+    "manifest_only",
+    "diff_only"
+  ],
+  "disallowed_actions": [
+    "clone_repo",
+    "fetch_url",
+    "call_github_api",
+    "create_pr",
+    "create_issue",
+    "comment_on_pr",
+    "merge",
+    "deploy",
+    "publish_package",
+    "upload_data",
+    "train_model",
+    "live_mcp_call",
+    "external_tool_execution",
+    "use_credentials"
+  ],
+  "retention_preference": "keep_redacted_receipt_only",
+  "share_preference": "private_only",
+  "consent_limitations": [
+    "owner consent does not authorize external mutation, posting, merge, deploy, upload, training, or certification claims"
+  ],
+  "must_not_claim": [
+    "security_certification",
+    "code_correctness_proof",
+    "legal_opinion",
+    "privacy_audit",
+    "license_clearance",
+    "evaluation_cleanliness_proof",
+    "quality_guarantee",
+    "product_readiness",
+    "external_action_authorization"
+  ],
+  "token_printed": false
+}

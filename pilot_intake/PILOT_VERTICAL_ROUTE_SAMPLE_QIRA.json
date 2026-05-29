@@ -1,0 +1,40 @@
+{
+  "schema": "ResidualOps_PilotVerticalRoute/v0.1",
+  "route_id": "route-pilot-intake-sample-qira-11c835df9caf",
+  "intake_id": "pilot-intake-sample-qira-11c835df9caf",
+  "generated_at": "2026-05-29T12:34:57.819984+00:00",
+  "selected_vertical": "qira",
+  "route_reason": "patch, diff, and CI summary artifacts route to QIRA-Code ReleaseGate",
+  "route_confidence": "high",
+  "required_next_artifacts": [],
+  "blockers": [],
+  "claim_ceiling": "local/offline owner-consented pilot intake route only",
+  "can_generate_pilot_receipt": true,
+  "must_not_do": [
+    "clone_repo",
+    "fetch_url",
+    "call_github_api",
+    "create_pr",
+    "create_issue",
+    "comment_on_pr",
+    "merge",
+    "deploy",
+    "publish_package",
+    "upload_data",
+    "train_model",
+    "live_mcp_call",
+    "external_tool_execution",
+    "use_credentials"
+  ],
+  "must_not_claim": [
+    "security_certification",
+    "code_correctness_proof",
+    "legal_opinion",
+    "privacy_audit",
+    "license_clearance",
+    "evaluation_cleanliness_proof",
+    "quality_guarantee",
+    "product_readiness",
+    "external_action_authorization"
+  ]
+}

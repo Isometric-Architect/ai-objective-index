@@ -1,8 +1,8 @@
 # ResidualOps Next Pilot Plan
 
-Recommended next package: ROE-12 Owner-Consented Pilot Intake Kit.
+ROE-12 status: owner-consented pilot intake kit added.
 
-ROE-12 should turn the first three pilot receipt shapes into an intake process for owner-consented local artifacts:
+The intake kit turns the first three pilot receipt shapes into an intake process for owner-consented local artifacts:
 
 - AgentSec manifest review
 - QIRA local patch or task packet review
@@ -18,5 +18,7 @@ The intake kit should preserve the same boundaries:
 - no upload or model training
 - no token handling
 - no certification, proof, quality guarantee, product-readiness claim, or action authorization
+
+Recommended next package: ROE-13 First Owner-Consented Pilot Dry-Run.
 
 Secondary backlog: AOI 0.3.0a2 MCP Registry recovery if namespace/version recovery remains useful.

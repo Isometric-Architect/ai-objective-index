@@ -1,5 +1,9 @@
 # Launch Notes
 
+## ROE-12 Owner-Consented Pilot Intake Kit
+
+ROE-12 adds a local/offline intake kit for future owner-consented AgentSec, QIRA, and DataCapsule pilots. It creates intake packets, consent records, vertical routes, redaction preflight, run plans, reviewer instructions, and feedback memory. It does not call GitHub APIs, clone, fetch URLs, crawl, run live MCP/tool calls, mutate external repos, post comments, deploy, release, publish, upload data, train models, handle tokens, certify security, prove correctness, prove legal/privacy/license/evaluation status, guarantee quality, claim product readiness, or authorize external actions.
+
 ## ROE-11 Unified Pilot Receipt Portfolio
 
 ROE-11 adds a unified local/offline portfolio readout across AgentSec, QIRA-Code ReleaseGate, and DataCapsule pilot receipt bundles. It does not call external APIs, call GitHub APIs, run live MCP/tool calls, crawl, fetch URLs, inspect raw private data, upload data, train models, request tokens, certify security, prove code correctness, prove legal/privacy/license/evaluation status, guarantee quality, claim product readiness, or authorize external actions.

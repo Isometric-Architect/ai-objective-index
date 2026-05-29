@@ -1,0 +1,22 @@
+{
+  "schema": "ResidualOps_PilotIntakeFeedbackMemory/v0.1",
+  "intake_id": "pilot-intake-sample-agentsec-5bd1b7f23ad6",
+  "route_id": "route-pilot-intake-sample-agentsec-5bd1b7f23ad6",
+  "generated_at": "2026-05-29T12:34:57.889738+00:00",
+  "feedback_status": "pending",
+  "issue_categories": [
+    "sample_intake_ready"
+  ],
+  "follow_up_actions": [
+    "request owner-confirmed local artifact when moving beyond sample intake",
+    "rerun redaction preflight before packaging a pilot receipt",
+    "keep output claim-bounded and local/offline"
+  ],
+  "should_request_more_consent": false,
+  "should_request_redacted_artifact": false,
+  "should_change_vertical_route": false,
+  "should_add_negative_control": false,
+  "should_add_fixture": true,
+  "should_update_claim_boundary": false,
+  "timestamp": "2026-05-29T12:34:57.889748+00:00"
+}

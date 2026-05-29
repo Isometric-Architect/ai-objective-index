@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-objective-index.local/schemas/portfolio/pilot_vertical_route.schema.json",
+  "title": "ResidualOps Pilot Vertical Route",
+  "type": "object",
+  "required": ["schema", "route_id", "intake_id", "selected_vertical", "route_reason", "can_generate_pilot_receipt"],
+  "properties": {
+    "schema": {"const": "ResidualOps_PilotVerticalRoute/v0.1"},
+    "route_id": {"type": "string"},
+    "intake_id": {"type": "string"},
+    "selected_vertical": {"enum": ["agentsec", "qira", "datacapsule", "hold_manual_triage", "block_insufficient_consent", "block_forbidden_artifact"]},
+    "route_reason": {"type": "string"},
+    "route_confidence": {"enum": ["low", "medium", "high"]},
+    "required_next_artifacts": {"type": "array", "items": {"type": "string"}},
+    "blockers": {"type": "array", "items": {"type": "string"}},
+    "can_generate_pilot_receipt": {"type": "boolean"},
+    "must_not_do": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

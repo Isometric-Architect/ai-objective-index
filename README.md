@@ -91,6 +91,8 @@ ROE-10 adds the first DataCapsule pilot receipt packager. It packages a local/of
 
 ROE-11 adds a unified pilot receipt portfolio readout across AgentSec, QIRA-Code ReleaseGate, and DataCapsule. It indexes the three local/offline receipt bundles into a portfolio JSON, vertical comparison matrix, feedback memory index, reviewer readout, claim-boundary sheet, redaction report, and gate result without external APIs, GitHub API calls, live MCP/tool calls, crawling, URL fetching, raw private data inspection, upload, model training, token handling, certification, proof, product-readiness claim, or action authorization.
 
+ROE-12 adds an owner-consented pilot intake kit across AgentSec, QIRA-Code ReleaseGate, and DataCapsule. It creates local intake packets, consent records, vertical routes, redaction preflight, pilot run plans, reviewer instructions, and feedback memory without GitHub API calls, cloning, URL fetching, crawling, live MCP/tool calls, external repo mutation, posting, deploy/release/publish action, upload, model training, token handling, certification, proof, product-readiness claim, or action authorization.
+
 ## Quick Example
 
 Example objective request:

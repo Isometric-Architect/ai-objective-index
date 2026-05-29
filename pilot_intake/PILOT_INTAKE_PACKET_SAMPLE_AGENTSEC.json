@@ -1,0 +1,73 @@
+{
+  "schema": "ResidualOps_PilotIntakePacket/v0.1",
+  "intake_id": "pilot-intake-sample-agentsec-5bd1b7f23ad6",
+  "generated_at": "2026-05-29T12:34:57.817155+00:00",
+  "pilot_label": "AgentSec sample MCP manifest intake",
+  "requested_vertical": "agentsec",
+  "owner_consent": {
+    "status": "sample_fixture",
+    "consent_text": "sample fixture only; no external owner file is represented",
+    "consent_scope": "local/static sample intake planning only",
+    "contact_redacted": true
+  },
+  "provided_artifact": {
+    "artifact_type": "mcp_manifest",
+    "local_path": "pilot_intake/samples/agentsec_mcp_manifest.json",
+    "pasted_text_id": "",
+    "hash": "5bd1b7f23ad6",
+    "raw_content_included": false,
+    "contains_private_data_declared": false
+  },
+  "allowed_review_scope": {
+    "local_static_review": true,
+    "manifest_only": true,
+    "diff_only": false,
+    "raw_data_inspection": false,
+    "external_network": false,
+    "github_api_call": false,
+    "live_tool_execution": false,
+    "external_repo_mutation": false,
+    "posting_or_commenting": false
+  },
+  "forbidden_actions": [
+    "clone_repo",
+    "fetch_url",
+    "call_github_api",
+    "create_pr",
+    "create_issue",
+    "comment_on_pr",
+    "merge",
+    "deploy",
+    "publish_package",
+    "upload_data",
+    "train_model",
+    "live_mcp_call",
+    "external_tool_execution",
+    "use_credentials"
+  ],
+  "claim_boundary": {
+    "not_security_certification": true,
+    "not_code_correctness_proof": true,
+    "not_legal_opinion": true,
+    "not_privacy_audit": true,
+    "not_license_clearance": true,
+    "not_eval_clean_proof": true,
+    "not_quality_guarantee": true,
+    "not_product_ready": true,
+    "no_external_action_authorization": true
+  },
+  "must_not_claim": [
+    "security_certification",
+    "code_correctness_proof",
+    "legal_opinion",
+    "privacy_audit",
+    "license_clearance",
+    "evaluation_cleanliness_proof",
+    "quality_guarantee",
+    "product_readiness",
+    "external_action_authorization"
+  ],
+  "external_action_requested": false,
+  "token_printed": false,
+  "private_kernel_exposed": false
+}

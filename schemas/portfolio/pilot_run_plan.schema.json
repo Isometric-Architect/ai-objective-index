@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-objective-index.local/schemas/portfolio/pilot_run_plan.schema.json",
+  "title": "ResidualOps Pilot Run Plan",
+  "type": "object",
+  "required": ["schema", "plan_id", "intake_id", "selected_vertical", "receipt_target", "run_status"],
+  "properties": {
+    "schema": {"const": "ResidualOps_PilotRunPlan/v0.1"},
+    "plan_id": {"type": "string"},
+    "intake_id": {"type": "string"},
+    "selected_vertical": {"type": "string"},
+    "allowed_operations": {"type": "array", "items": {"type": "string"}},
+    "forbidden_operations": {"type": "array", "items": {"type": "string"}},
+    "expected_outputs": {"type": "array", "items": {"type": "string"}},
+    "receipt_target": {"enum": ["agentsec_pilot_receipt", "qira_pilot_receipt", "datacapsule_pilot_receipt", "hold_manual_triage"]},
+    "preflight_checks": {"type": "array", "items": {"type": "string"}},
+    "run_status": {"enum": ["NOT_RUN", "READY_FOR_LOCAL_SAMPLE", "READY_FOR_OWNER_CONSENTED_LOCAL_REVIEW", "HOLD_CONSENT", "HOLD_REDACTION", "BLOCK_FORBIDDEN_ACTION"]},
+    "next_actions": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

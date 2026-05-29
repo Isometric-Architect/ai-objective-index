@@ -1,5 +1,11 @@
 # Changelog
 
+## ROE-12
+
+- Added an owner-consented pilot intake kit for AgentSec, QIRA-Code ReleaseGate, and DataCapsule.
+- Added intake packet, consent record, vertical route, redaction preflight, run plan, feedback memory, sample artifacts, schemas, docs, public gate outputs, and tests.
+- Preserved boundaries: no GitHub API calls, no clone/fetch/crawl, no live MCP/tool calls, no external repo mutation, no posting, no deploy/release/publish action, no upload/training, no token handling, no private-kernel exposure, and no certification/proof/product-readiness/action-authorization claim.
+
 ## ROE-11
 
 - Added a unified pilot receipt portfolio readout over AgentSec, QIRA-Code ReleaseGate, and DataCapsule.

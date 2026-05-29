@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-objective-index.local/schemas/portfolio/pilot_intake_feedback_memory.schema.json",
+  "title": "ResidualOps Pilot Intake Feedback Memory",
+  "type": "object",
+  "required": ["schema", "intake_id", "route_id", "feedback_status", "follow_up_actions"],
+  "properties": {
+    "schema": {"const": "ResidualOps_PilotIntakeFeedbackMemory/v0.1"},
+    "intake_id": {"type": "string"},
+    "route_id": {"type": "string"},
+    "feedback_status": {"enum": ["pending", "received", "incorporated", "closed"]},
+    "issue_categories": {"type": "array", "items": {"type": "string"}},
+    "follow_up_actions": {"type": "array", "items": {"type": "string"}},
+    "should_request_more_consent": {"type": "boolean"},
+    "should_request_redacted_artifact": {"type": "boolean"},
+    "should_change_vertical_route": {"type": "boolean"},
+    "should_add_negative_control": {"type": "boolean"},
+    "should_add_fixture": {"type": "boolean"},
+    "should_update_claim_boundary": {"type": "boolean"}
+  },
+  "additionalProperties": true
+}

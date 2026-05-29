@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-objective-index.local/schemas/portfolio/pilot_consent_record.schema.json",
+  "title": "ResidualOps Pilot Consent Record",
+  "type": "object",
+  "required": ["schema", "consent_id", "intake_id", "consent_status", "allowed_artifacts", "disallowed_actions"],
+  "properties": {
+    "schema": {"const": "ResidualOps_PilotConsentRecord/v0.1"},
+    "consent_id": {"type": "string"},
+    "intake_id": {"type": "string"},
+    "consent_status": {"enum": ["self_owned", "owner_provided", "sample_fixture", "insufficient", "unknown"]},
+    "allowed_artifacts": {"type": "array", "items": {"type": "string"}},
+    "disallowed_artifacts": {"type": "array", "items": {"type": "string"}},
+    "allowed_review_modes": {"type": "array", "items": {"type": "string"}},
+    "disallowed_actions": {"type": "array", "items": {"type": "string"}},
+    "retention_preference": {"enum": ["keep_local_artifact", "keep_redacted_receipt_only", "delete_after_review", "unknown"]},
+    "share_preference": {"enum": ["private_only", "redacted_summary_allowed", "public_anonymized_allowed", "unknown"]},
+    "must_not_claim": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

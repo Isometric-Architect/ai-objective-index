@@ -1,0 +1,51 @@
+{
+  "schema": "ResidualOps_PilotRunPlan/v0.1",
+  "plan_id": "run-plan-pilot-intake-sample-agentsec-5bd1b7f23ad6",
+  "intake_id": "pilot-intake-sample-agentsec-5bd1b7f23ad6",
+  "generated_at": "2026-05-29T12:34:57.889703+00:00",
+  "selected_vertical": "agentsec",
+  "allowed_operations": [
+    "local_static_review",
+    "redaction_preflight",
+    "vertical_route_check",
+    "receipt_packaging"
+  ],
+  "forbidden_operations": [
+    "clone_repo",
+    "fetch_url",
+    "call_github_api",
+    "create_pr",
+    "create_issue",
+    "comment_on_pr",
+    "merge",
+    "deploy",
+    "publish_package",
+    "upload_data",
+    "train_model",
+    "live_mcp_call",
+    "external_tool_execution",
+    "use_credentials"
+  ],
+  "expected_outputs": [
+    "AgentSec pilot receipt",
+    "reviewer readout",
+    "feedback memory entry"
+  ],
+  "receipt_target": "agentsec_pilot_receipt",
+  "preflight_checks": [
+    "consent_check",
+    "redaction_check",
+    "vertical_route_check",
+    "claim_boundary_check"
+  ],
+  "run_status": "READY_FOR_LOCAL_SAMPLE",
+  "next_actions": [
+    "confirm consent scope",
+    "keep artifact local",
+    "run redaction before pilot packaging",
+    "package a local/offline receipt only",
+    "do not post, merge, deploy, upload, train, fetch, clone, or call external APIs"
+  ],
+  "external_action_used": false,
+  "live_execution_used": false
+}

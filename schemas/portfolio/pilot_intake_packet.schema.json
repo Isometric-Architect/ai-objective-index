@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-objective-index.local/schemas/portfolio/pilot_intake_packet.schema.json",
+  "title": "ResidualOps Pilot Intake Packet",
+  "type": "object",
+  "required": ["schema", "intake_id", "pilot_label", "requested_vertical", "owner_consent", "provided_artifact", "allowed_review_scope", "forbidden_actions", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "ResidualOps_PilotIntakePacket/v0.1"},
+    "intake_id": {"type": "string"},
+    "generated_at": {"type": "string"},
+    "pilot_label": {"type": "string"},
+    "requested_vertical": {"enum": ["agentsec", "qira", "datacapsule", "auto_route", "unknown"]},
+    "owner_consent": {
+      "type": "object",
+      "required": ["status", "consent_text", "consent_scope", "contact_redacted"],
+      "properties": {
+        "status": {"enum": ["self_owned", "owner_provided", "sample_fixture", "unknown"]},
+        "consent_text": {"type": "string"},
+        "consent_scope": {"type": "string"},
+        "contact_redacted": {"type": "boolean"}
+      },
+      "additionalProperties": true
+    },
+    "provided_artifact": {
+      "type": "object",
+      "required": ["artifact_type", "raw_content_included"],
+      "properties": {
+        "artifact_type": {"enum": ["mcp_manifest", "tool_manifest", "pr_diff", "patch_text", "ci_summary", "dataset_manifest", "corpus_manifest", "dataset_card", "mixed", "unknown"]},
+        "local_path": {"type": "string"},
+        "pasted_text_id": {"type": "string"},
+        "hash": {"type": "string"},
+        "raw_content_included": {"type": "boolean"},
+        "contains_private_data_declared": {"type": ["boolean", "null"]}
+      },
+      "additionalProperties": true
+    },
+    "allowed_review_scope": {
+      "type": "object",
+      "properties": {
+        "local_static_review": {"type": "boolean"},
+        "manifest_only": {"type": "boolean"},
+        "diff_only": {"type": "boolean"},
+        "raw_data_inspection": {"const": false},
+        "external_network": {"const": false},
+        "github_api_call": {"const": false},
+        "live_tool_execution": {"const": false},
+        "external_repo_mutation": {"const": false},
+        "posting_or_commenting": {"const": false}
+      },
+      "additionalProperties": true
+    },
+    "forbidden_actions": {"type": "array", "items": {"type": "string"}},
+    "claim_boundary": {"type": "object"},
+    "must_not_claim": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

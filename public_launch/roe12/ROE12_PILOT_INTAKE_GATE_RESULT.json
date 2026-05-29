@@ -1,0 +1,37 @@
+{
+  "schema": "ResidualOps_ROE12PilotIntakeGate/v0.1",
+  "generated_at": "2026-05-29T12:34:57.954280+00:00",
+  "decision": "PASS_OWNER_CONSENTED_PILOT_INTAKE_READY",
+  "sample_packet_count": 3,
+  "route_ready_count": 3,
+  "routes": [
+    {
+      "intake_id": "pilot-intake-sample-agentsec-5bd1b7f23ad6",
+      "selected_vertical": "agentsec",
+      "can_generate_pilot_receipt": true
+    },
+    {
+      "intake_id": "pilot-intake-sample-qira-11c835df9caf",
+      "selected_vertical": "qira",
+      "can_generate_pilot_receipt": true
+    },
+    {
+      "intake_id": "pilot-intake-sample-datacapsule-c1f10f153a70",
+      "selected_vertical": "datacapsule",
+      "can_generate_pilot_receipt": true
+    }
+  ],
+  "missing_artifacts": [],
+  "redaction_decision": "PASS_REDACTED",
+  "redaction_findings": 0,
+  "claim_finding_count": 0,
+  "claim_findings": [],
+  "external_action_used": false,
+  "token_printed": false,
+  "private_kernel_exposed": false,
+  "can_certify_security": false,
+  "can_prove_code_correctness": false,
+  "can_provide_legal_privacy_license_eval_proof": false,
+  "can_claim_product_readiness": false,
+  "can_authorize_external_action": false
+}

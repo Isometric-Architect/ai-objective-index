@@ -190,11 +190,11 @@ def run_roe8_gate(write_result: bool = True, ensure_sample: bool = True) -> dict
         decision = "HOLD_MISSING_READOUT"
     elif redaction.get("decision") == "BLOCK_SENSITIVE_CONTENT":
         decision = "BLOCK_SECRET_FINDING"
-    elif redaction.get("decision") == "HOLD_REVIEW_RECOMMENDED":
-        decision = "HOLD_REDACTION_REVIEW"
     elif claim_findings:
         finding_types = {finding["finding_type"] for finding in claim_findings}
         decision = "BLOCK_PRIVATE_KERNEL_EXPOSED" if "private_kernel" in finding_types else "BLOCK_OVERCLAIM"
+    elif redaction.get("decision") == "HOLD_REVIEW_RECOMMENDED":
+        decision = "HOLD_REDACTION_REVIEW"
     else:
         decision = "PASS_FIRST_AGENTSEC_PILOT_RECEIPT_READY"
 

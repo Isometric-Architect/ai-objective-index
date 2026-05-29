@@ -1,0 +1,81 @@
+{
+  "schema": "ResidualOps_PilotStatusCards/v0.1",
+  "card_count": 3,
+  "cards": [
+    {
+      "vertical": "agentsec",
+      "display_name": "AgentSec Gate",
+      "reviewed_object": "MCP/tool manifest metadata",
+      "current_phase": "second_run",
+      "primary_decision": "BLOCK_FORBIDDEN_ACTION",
+      "allow_count": 1,
+      "hold_count": 1,
+      "block_count": 1,
+      "redaction_status": "PASS_REDACTED",
+      "feedback_status": "incorporated",
+      "second_run_status": "READY_FOR_LOCAL_SECOND_RUN",
+      "latest_gate_status": "PASS_FIRST_AGENTSEC_PILOT_RECEIPT_READY",
+      "top_hold_reason": "fixture.local/checkout-action-helper: policy holds network_access",
+      "top_block_reason": "fixture.local/checkout-action-helper: forbidden action language",
+      "next_action": "owner-consented real local artifact pilot",
+      "must_not_claim": [
+        "security_certification",
+        "code_correctness_proof",
+        "legal_or_privacy_or_license_or_eval_clean_proof",
+        "quality_guarantee",
+        "product_readiness",
+        "external_action_authorization"
+      ]
+    },
+    {
+      "vertical": "qira",
+      "display_name": "QIRA-Code ReleaseGate",
+      "reviewed_object": "local patch and CI evidence summary",
+      "current_phase": "second_run",
+      "primary_decision": "BLOCK_RELEASE_SIDE_EFFECT",
+      "allow_count": 1,
+      "hold_count": 1,
+      "block_count": 1,
+      "redaction_status": "PASS_REDACTED",
+      "feedback_status": "pending_with_followup",
+      "second_run_status": "READY_FOR_LOCAL_SECOND_RUN",
+      "latest_gate_status": "PASS_FIRST_QIRA_PILOT_RECEIPT_READY",
+      "top_hold_reason": "CI evidence is partial or generated sample metadata; independent CI evidence is still needed.",
+      "top_block_reason": "Negative-control fixture includes release/deploy language that a local QIRA pilot cannot authorize.",
+      "next_action": "request redacted local CI evidence before a real pilot",
+      "must_not_claim": [
+        "security_certification",
+        "code_correctness_proof",
+        "legal_or_privacy_or_license_or_eval_clean_proof",
+        "quality_guarantee",
+        "product_readiness",
+        "external_action_authorization"
+      ]
+    },
+    {
+      "vertical": "datacapsule",
+      "display_name": "DataCapsule / AIDREG Engine",
+      "reviewed_object": "corpus manifest metadata",
+      "current_phase": "second_run",
+      "primary_decision": "BLOCK_ACTION_USE",
+      "allow_count": 1,
+      "hold_count": 1,
+      "block_count": 1,
+      "redaction_status": "PASS_REDACTED",
+      "feedback_status": "incorporated",
+      "second_run_status": "READY_FOR_LOCAL_SECOND_RUN",
+      "latest_gate_status": "PASS_FIRST_DATACAPSULE_PILOT_RECEIPT_READY",
+      "top_hold_reason": "Manifest metadata has rights, privacy, evaluation-boundary, or staleness gaps.",
+      "top_block_reason": "Action use is blocked and declared disallowed uses cannot be upgraded by a manifest-only pilot.",
+      "next_action": "owner-consented real local artifact pilot",
+      "must_not_claim": [
+        "security_certification",
+        "code_correctness_proof",
+        "legal_or_privacy_or_license_or_eval_clean_proof",
+        "quality_guarantee",
+        "product_readiness",
+        "external_action_authorization"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/portfolio/pilot_dashboard.schema.json",
+  "title": "ResidualOps Pilot Dashboard",
+  "type": "object",
+  "required": ["schema", "dashboard_id", "mode", "aggregate_counts", "vertical_status_cards", "claim_boundary"],
+  "properties": {
+    "schema": { "const": "ResidualOps_PilotDashboard/v0.1" },
+    "dashboard_id": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "mode": { "const": "static_local_artifact" },
+    "lifecycle_summary": { "type": "object" },
+    "verticals": { "type": "array", "items": { "type": "string" } },
+    "aggregate_counts": { "type": "object" },
+    "vertical_status_cards": { "type": "array" },
+    "gate_status": { "type": "object" },
+    "feedback_memory_summary": { "type": "object" },
+    "timeline": { "type": "array" },
+    "artifacts": { "type": "array" },
+    "claim_boundary": { "$ref": "pilot_dashboard_claim_boundary.schema.json" },
+    "known_limits": { "type": "array", "items": { "type": "string" } },
+    "recommended_next_package": { "type": "string" }
+  },
+  "additionalProperties": true
+}

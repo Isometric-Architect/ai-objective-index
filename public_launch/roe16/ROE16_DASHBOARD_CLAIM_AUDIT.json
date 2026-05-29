@@ -1,0 +1,17 @@
+{
+  "schema": "ResidualOps_PilotDashboardClaimAudit/v0.1",
+  "generated_at": "2026-05-29T23:06:01.297893+00:00",
+  "decision": "PASS_CLAIM_BOUNDARY_CLEAN",
+  "risky_phrase_count": 0,
+  "findings": [],
+  "allowed_language": [
+    "static dashboard artifact",
+    "local dry-run",
+    "local receipt",
+    "claim boundary",
+    "ALLOW/HOLD/BLOCK",
+    "feedback memory",
+    "known limits",
+    "not certification"
+  ]
+}

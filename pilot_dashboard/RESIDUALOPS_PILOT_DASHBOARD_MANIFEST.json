@@ -1,0 +1,99 @@
+{
+  "schema": "ResidualOps_PilotDashboardManifest/v0.1",
+  "generated_at": "2026-05-29T23:06:01.319020+00:00",
+  "artifact_count": 10,
+  "artifacts": [
+    {
+      "path": "pilot_dashboard/RESIDUALOPS_PILOT_DASHBOARD.json",
+      "artifact_type": "dashboard",
+      "sha256": "c6c1cbde9bd4f65466a52e4226bdf7af20f0115caef03fc0d7d269400db2a3a3",
+      "bytes": 11632,
+      "generated_at": "2026-05-29T23:06:01.309092+00:00",
+      "safe_to_share_publicly": true,
+      "reason": "static local dashboard artifact with claim boundaries"
+    },
+    {
+      "path": "pilot_dashboard/RESIDUALOPS_PILOT_DASHBOARD.md",
+      "artifact_type": "dashboard",
+      "sha256": "7780326f6b37266f5c0bac09c1e55ff281ac32069db5e3306b351b2745bc588a",
+      "bytes": 3024,
+      "generated_at": "2026-05-29T23:06:01.310149+00:00",
+      "safe_to_share_publicly": true,
+      "reason": "static local dashboard artifact with claim boundaries"
+    },
+    {
+      "path": "pilot_dashboard/RESIDUALOPS_PILOT_DASHBOARD.html",
+      "artifact_type": "dashboard",
+      "sha256": "d5be4d19129189f4af9a6fc2735066946da27e108877c6088c2f397b779eea8a",
+      "bytes": 3886,
+      "generated_at": "2026-05-29T23:06:01.311225+00:00",
+      "safe_to_share_publicly": true,
+      "reason": "static local dashboard artifact with claim boundaries"
+    },
+    {
+      "path": "pilot_dashboard/RESIDUALOPS_PILOT_STATUS_CARDS.json",
+      "artifact_type": "status_cards",
+      "sha256": "40ac9048b0a6ce5e3573a63f44ee808e97687426d3d81e6974ef8ee1faf7e07b",
+      "bytes": 3387,
+      "generated_at": "2026-05-29T23:06:01.311546+00:00",
+      "safe_to_share_publicly": true,
+      "reason": "static local dashboard artifact with claim boundaries"
+    },
+    {
+      "path": "pilot_dashboard/RESIDUALOPS_PILOT_TIMELINE.json",
+      "artifact_type": "timeline",
+      "sha256": "79965d55f6c0769015d96e3f076c74a6aa0caef7e82393457cf7043afcc1ecc9",
+      "bytes": 1398,
+      "generated_at": "2026-05-29T23:06:01.311850+00:00",
+      "safe_to_share_publicly": true,
+      "reason": "static local dashboard artifact with claim boundaries"
+    },
+    {
+      "path": "pilot_dashboard/RESIDUALOPS_PILOT_CLAIM_BOUNDARY.md",
+      "artifact_type": "claim_boundary",
+      "sha256": "0e84467c4d484419abe8668578d681ecf8de5fd90227cf934f932103840acb34",
+      "bytes": 508,
+      "generated_at": "2026-05-29T23:06:01.312158+00:00",
+      "safe_to_share_publicly": true,
+      "reason": "static local dashboard artifact with claim boundaries"
+    },
+    {
+      "path": "pilot_dashboard/RESIDUALOPS_PILOT_DASHBOARD_KNOWN_LIMITS.md",
+      "artifact_type": "dashboard",
+      "sha256": "8111afa96011cbf7f90938d366615d0e2fe458261663522047a6cece91bd94f3",
+      "bytes": 601,
+      "generated_at": "2026-05-29T23:06:01.312504+00:00",
+      "safe_to_share_publicly": true,
+      "reason": "static local dashboard artifact with claim boundaries"
+    },
+    {
+      "path": "pilot_dashboard/RESIDUALOPS_PILOT_DASHBOARD_MANIFEST.json",
+      "artifact_type": "dashboard",
+      "sha256": "580cc5753155b91d79997605d3bb43df3c62712a336e0b5d6fe087ab4978840d",
+      "bytes": 3028,
+      "generated_at": "2026-05-29T23:06:01.312908+00:00",
+      "safe_to_share_publicly": true,
+      "reason": "static local dashboard artifact with claim boundaries"
+    },
+    {
+      "path": "pilot_dashboard/RESIDUALOPS_PILOT_DASHBOARD_CHECKSUMS.json",
+      "artifact_type": "dashboard",
+      "sha256": "c82196c2ec58c450a37a05b431c83b29861e12437cd14575a3a4feedd4feeee7",
+      "bytes": 1053,
+      "generated_at": "2026-05-29T23:06:01.313301+00:00",
+      "safe_to_share_publicly": true,
+      "reason": "static local dashboard artifact with claim boundaries"
+    },
+    {
+      "path": "pilot_dashboard/RESIDUALOPS_PILOT_DASHBOARD_REDACTION_REPORT.json",
+      "artifact_type": "dashboard",
+      "sha256": "933d459367d7ced6a6b578c834f4ef7c4baa7775ab35762261f6fd331ae07b71",
+      "bytes": 357,
+      "generated_at": "2026-05-29T23:06:01.319011+00:00",
+      "safe_to_share_publicly": true,
+      "reason": "static local dashboard artifact with claim boundaries"
+    }
+  ],
+  "external_actions_performed": false,
+  "token_printed": false
+}

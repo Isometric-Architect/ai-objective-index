@@ -1,5 +1,11 @@
 # Changelog
 
+## ROE-16
+
+- Added a static/local pilot dashboard artifact pack across AgentSec, QIRA-Code ReleaseGate, DataCapsule, unified portfolio, intake, dry-run, feedback, and second-run artifacts.
+- Added dashboard loader, model, builder, Markdown renderer, static HTML renderer, manifest/checksum generator, redaction report, claim audit, gate result, schemas, docs, public outputs, and tests.
+- Preserved boundaries: no live web app, no external API or GitHub API calls, no fetch/crawl, no live MCP/tool calls, no raw private-data inspection, no upload/training, no external repo mutation, no posting, no deploy/release/publish action, no token handling, no private-kernel exposure, and no certification/proof/product-readiness/action-authorization claim.
+
 ## ROE-15
 
 - Added the first local/sample owner-consented second-run receipt packager across AgentSec, QIRA-Code ReleaseGate, and DataCapsule.

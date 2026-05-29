@@ -99,6 +99,8 @@ ROE-14 adds a pilot feedback form and second-run planning gate. It converts loca
 
 ROE-15 adds the first local/sample second-run receipt packager. It reuses ROE-14 feedback and local AgentSec/QIRA/DataCapsule sample receipts to generate updated second-run results, before/after deltas, feedback memory updates, artifact index, reviewer readout, redaction report, and gate result without GitHub APIs, external repositories, posting, merge/deploy/publish action, upload, model training, token handling, unsafe decision upgrades, private-kernel exposure, certification, proof, product-readiness claim, or action authorization.
 
+ROE-16 adds a static/local pilot dashboard artifact pack. It summarizes AgentSec, QIRA, DataCapsule, unified portfolio, intake, dry-run, feedback, and second-run artifacts into JSON, Markdown, HTML, manifest, checksum, redaction, claim-boundary, and gate files without creating a live web app, calling external APIs, adding network dependencies, mutating external repositories, posting, deploy/release/publish action, upload, model training, token handling, private-kernel exposure, certification, proof, product-readiness claim, or action authorization.
+
 ## Quick Example
 
 Example objective request:

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/portfolio/pilot_dashboard_status_card.schema.json",
+  "title": "ResidualOps Pilot Dashboard Status Card",
+  "type": "object",
+  "required": ["vertical", "display_name", "primary_decision", "allow_count", "hold_count", "block_count", "latest_gate_status"],
+  "properties": {
+    "vertical": { "type": "string" },
+    "display_name": { "type": "string" },
+    "reviewed_object": { "type": "string" },
+    "current_phase": { "enum": ["pilot_receipt", "portfolio", "intake", "dry_run", "feedback", "second_run"] },
+    "primary_decision": { "type": "string" },
+    "allow_count": { "type": "integer" },
+    "hold_count": { "type": "integer" },
+    "block_count": { "type": "integer" },
+    "redaction_status": { "type": "string" },
+    "feedback_status": { "type": "string" },
+    "second_run_status": { "type": "string" },
+    "latest_gate_status": { "type": "string" },
+    "top_hold_reason": { "type": "string" },
+    "top_block_reason": { "type": "string" },
+    "next_action": { "type": "string" },
+    "must_not_claim": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

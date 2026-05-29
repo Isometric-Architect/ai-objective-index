@@ -1,0 +1,283 @@
+{
+  "schema": "ResidualOps_PilotDashboard/v0.1",
+  "dashboard_id": "residualops-pilot-dashboard-v0-1",
+  "generated_at": "2026-05-29T23:06:01.245041+00:00",
+  "mode": "static_local_artifact",
+  "lifecycle_summary": {
+    "intake_ready": true,
+    "dry_run_completed": true,
+    "feedback_gate_completed": true,
+    "second_run_completed": true,
+    "dashboard_generated": true
+  },
+  "verticals": [
+    "agentsec",
+    "qira",
+    "datacapsule"
+  ],
+  "aggregate_counts": {
+    "initial_allow": 3,
+    "initial_hold": 3,
+    "initial_block": 3,
+    "dry_run_allow": 3,
+    "dry_run_hold": 3,
+    "dry_run_block": 3,
+    "second_run_allow": 3,
+    "second_run_hold": 3,
+    "second_run_block": 3,
+    "finding_updates": 3,
+    "fixture_candidates": 1,
+    "negative_control_candidates": 0,
+    "external_action_count": 0
+  },
+  "vertical_status_cards": [
+    {
+      "vertical": "agentsec",
+      "display_name": "AgentSec Gate",
+      "reviewed_object": "MCP/tool manifest metadata",
+      "current_phase": "second_run",
+      "primary_decision": "BLOCK_FORBIDDEN_ACTION",
+      "allow_count": 1,
+      "hold_count": 1,
+      "block_count": 1,
+      "redaction_status": "PASS_REDACTED",
+      "feedback_status": "incorporated",
+      "second_run_status": "READY_FOR_LOCAL_SECOND_RUN",
+      "latest_gate_status": "PASS_FIRST_AGENTSEC_PILOT_RECEIPT_READY",
+      "top_hold_reason": "fixture.local/checkout-action-helper: policy holds network_access",
+      "top_block_reason": "fixture.local/checkout-action-helper: forbidden action language",
+      "next_action": "owner-consented real local artifact pilot",
+      "must_not_claim": [
+        "security_certification",
+        "code_correctness_proof",
+        "legal_or_privacy_or_license_or_eval_clean_proof",
+        "quality_guarantee",
+        "product_readiness",
+        "external_action_authorization"
+      ]
+    },
+    {
+      "vertical": "qira",
+      "display_name": "QIRA-Code ReleaseGate",
+      "reviewed_object": "local patch and CI evidence summary",
+      "current_phase": "second_run",
+      "primary_decision": "BLOCK_RELEASE_SIDE_EFFECT",
+      "allow_count": 1,
+      "hold_count": 1,
+      "block_count": 1,
+      "redaction_status": "PASS_REDACTED",
+      "feedback_status": "pending_with_followup",
+      "second_run_status": "READY_FOR_LOCAL_SECOND_RUN",
+      "latest_gate_status": "PASS_FIRST_QIRA_PILOT_RECEIPT_READY",
+      "top_hold_reason": "CI evidence is partial or generated sample metadata; independent CI evidence is still needed.",
+      "top_block_reason": "Negative-control fixture includes release/deploy language that a local QIRA pilot cannot authorize.",
+      "next_action": "request redacted local CI evidence before a real pilot",
+      "must_not_claim": [
+        "security_certification",
+        "code_correctness_proof",
+        "legal_or_privacy_or_license_or_eval_clean_proof",
+        "quality_guarantee",
+        "product_readiness",
+        "external_action_authorization"
+      ]
+    },
+    {
+      "vertical": "datacapsule",
+      "display_name": "DataCapsule / AIDREG Engine",
+      "reviewed_object": "corpus manifest metadata",
+      "current_phase": "second_run",
+      "primary_decision": "BLOCK_ACTION_USE",
+      "allow_count": 1,
+      "hold_count": 1,
+      "block_count": 1,
+      "redaction_status": "PASS_REDACTED",
+      "feedback_status": "incorporated",
+      "second_run_status": "READY_FOR_LOCAL_SECOND_RUN",
+      "latest_gate_status": "PASS_FIRST_DATACAPSULE_PILOT_RECEIPT_READY",
+      "top_hold_reason": "Manifest metadata has rights, privacy, evaluation-boundary, or staleness gaps.",
+      "top_block_reason": "Action use is blocked and declared disallowed uses cannot be upgraded by a manifest-only pilot.",
+      "next_action": "owner-consented real local artifact pilot",
+      "must_not_claim": [
+        "security_certification",
+        "code_correctness_proof",
+        "legal_or_privacy_or_license_or_eval_clean_proof",
+        "quality_guarantee",
+        "product_readiness",
+        "external_action_authorization"
+      ]
+    }
+  ],
+  "gate_status": {
+    "agentsec_gate": "PASS_FIRST_AGENTSEC_PILOT_RECEIPT_READY",
+    "qira_gate": "PASS_FIRST_QIRA_PILOT_RECEIPT_READY",
+    "datacapsule_gate": "PASS_FIRST_DATACAPSULE_PILOT_RECEIPT_READY",
+    "portfolio_gate": "PASS_UNIFIED_PILOT_PORTFOLIO_READY",
+    "intake_gate": "PASS_OWNER_CONSENTED_PILOT_INTAKE_READY",
+    "dry_run_gate": "PASS_FIRST_OWNER_CONSENTED_PILOT_DRY_RUN_READY",
+    "feedback_gate": "PASS_PILOT_FEEDBACK_SECOND_RUN_READY",
+    "second_run_gate": "PASS_LOCAL_SECOND_RUN_RECEIPT_READY",
+    "dashboard_gate": "PENDING_GATE"
+  },
+  "feedback_memory_summary": {
+    "entry_count": 3,
+    "incorporated_count": 2,
+    "pending_with_followup_count": 1,
+    "entries": [
+      {
+        "vertical": "agentsec",
+        "feedback_id": "pilot-feedback-sample-agentsec-v0-1",
+        "prior_status": "pending",
+        "new_status": "incorporated",
+        "follow_up_actions": "keep second-run artifact local/offline; preserve claim boundaries; do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs; request owner-maintained permission scope notes for any real local pilot"
+      },
+      {
+        "vertical": "qira",
+        "feedback_id": "pilot-feedback-sample-qira-v0-1",
+        "prior_status": "pending",
+        "new_status": "pending_with_followup",
+        "follow_up_actions": "keep second-run artifact local/offline; preserve claim boundaries; do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs; request redacted local CI evidence before rerunning QIRA on an owner artifact"
+      },
+      {
+        "vertical": "datacapsule",
+        "feedback_id": "pilot-feedback-sample-datacapsule-v0-1",
+        "prior_status": "pending",
+        "new_status": "incorporated",
+        "follow_up_actions": "keep second-run artifact local/offline; preserve claim boundaries; do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs; add action-use denial fixture to future DataCapsule local fixture corpus"
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "phase": "pilot_receipts",
+      "artifact": "ROE-8/9/10 vertical pilot receipts",
+      "decision": "PASS",
+      "external_action_count": 0
+    },
+    {
+      "phase": "portfolio",
+      "artifact": "ROE-11 unified portfolio readout",
+      "decision": "PASS_UNIFIED_PILOT_PORTFOLIO_READY",
+      "external_action_count": 0
+    },
+    {
+      "phase": "intake",
+      "artifact": "ROE-12 owner-consented intake kit",
+      "decision": "PASS_OWNER_CONSENTED_PILOT_INTAKE_READY",
+      "external_action_count": 0
+    },
+    {
+      "phase": "dry_run",
+      "artifact": "ROE-13 local dry-run receipt",
+      "decision": "PASS_FIRST_OWNER_CONSENTED_PILOT_DRY_RUN_READY",
+      "external_action_count": 0
+    },
+    {
+      "phase": "feedback",
+      "artifact": "ROE-14 feedback and second-run planning",
+      "decision": "PASS_PILOT_FEEDBACK_SECOND_RUN_READY",
+      "external_action_count": 0
+    },
+    {
+      "phase": "second_run",
+      "artifact": "ROE-15 local second-run receipt",
+      "decision": "PASS_LOCAL_SECOND_RUN_RECEIPT_READY",
+      "external_action_count": 0
+    },
+    {
+      "phase": "dashboard",
+      "artifact": "ROE-16 static dashboard artifact pack",
+      "decision": "GENERATED",
+      "external_action_count": 0
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "pilot_dashboard/RESIDUALOPS_PILOT_DASHBOARD.json",
+      "artifact_type": "dashboard",
+      "sha256": "487a2ef2555edc4af474c186ef746a271a22c33598d08765da4de1d1368fb040",
+      "bytes": 8831,
+      "generated_at": "2026-05-29T23:06:01.259498+00:00",
+      "safe_to_share_publicly": true,
+      "reason": "static local dashboard artifact with claim boundaries"
+    },
+    {
+      "path": "pilot_dashboard/RESIDUALOPS_PILOT_DASHBOARD.md",
+      "artifact_type": "dashboard",
+      "sha256": "8377dd55d018f120b022d75e19228dadd55a55a98eea686c28324b055598ed45",
+      "bytes": 2450,
+      "generated_at": "2026-05-29T23:06:01.260545+00:00",
+      "safe_to_share_publicly": true,
+      "reason": "static local dashboard artifact with claim boundaries"
+    },
+    {
+      "path": "pilot_dashboard/RESIDUALOPS_PILOT_DASHBOARD.html",
+      "artifact_type": "dashboard",
+      "sha256": "d5be4d19129189f4af9a6fc2735066946da27e108877c6088c2f397b779eea8a",
+      "bytes": 3886,
+      "generated_at": "2026-05-29T23:06:01.261424+00:00",
+      "safe_to_share_publicly": true,
+      "reason": "static local dashboard artifact with claim boundaries"
+    },
+    {
+      "path": "pilot_dashboard/RESIDUALOPS_PILOT_STATUS_CARDS.json",
+      "artifact_type": "status_cards",
+      "sha256": "40ac9048b0a6ce5e3573a63f44ee808e97687426d3d81e6974ef8ee1faf7e07b",
+      "bytes": 3387,
+      "generated_at": "2026-05-29T23:06:01.262284+00:00",
+      "safe_to_share_publicly": true,
+      "reason": "static local dashboard artifact with claim boundaries"
+    },
+    {
+      "path": "pilot_dashboard/RESIDUALOPS_PILOT_TIMELINE.json",
+      "artifact_type": "timeline",
+      "sha256": "79965d55f6c0769015d96e3f076c74a6aa0caef7e82393457cf7043afcc1ecc9",
+      "bytes": 1398,
+      "generated_at": "2026-05-29T23:06:01.263145+00:00",
+      "safe_to_share_publicly": true,
+      "reason": "static local dashboard artifact with claim boundaries"
+    },
+    {
+      "path": "pilot_dashboard/RESIDUALOPS_PILOT_CLAIM_BOUNDARY.md",
+      "artifact_type": "claim_boundary",
+      "sha256": "0e84467c4d484419abe8668578d681ecf8de5fd90227cf934f932103840acb34",
+      "bytes": 508,
+      "generated_at": "2026-05-29T23:06:01.264116+00:00",
+      "safe_to_share_publicly": true,
+      "reason": "static local dashboard artifact with claim boundaries"
+    },
+    {
+      "path": "pilot_dashboard/RESIDUALOPS_PILOT_DASHBOARD_KNOWN_LIMITS.md",
+      "artifact_type": "dashboard",
+      "sha256": "8111afa96011cbf7f90938d366615d0e2fe458261663522047a6cece91bd94f3",
+      "bytes": 601,
+      "generated_at": "2026-05-29T23:06:01.265195+00:00",
+      "safe_to_share_publicly": true,
+      "reason": "static local dashboard artifact with claim boundaries"
+    }
+  ],
+  "claim_boundary": {
+    "not_external_pilot": true,
+    "not_security_certification": true,
+    "not_code_correctness_proof": true,
+    "not_legal_opinion": true,
+    "not_privacy_audit": true,
+    "not_license_clearance": true,
+    "not_eval_clean_proof": true,
+    "not_quality_guarantee": true,
+    "not_product_ready": true,
+    "no_external_action_authorization": true,
+    "static_local_only": true
+  },
+  "known_limits": [
+    "static/local inspection artifact only",
+    "no external APIs or GitHub APIs",
+    "no URL fetch, crawling, scraping, live MCP/tool calls, upload, training, deploy, publish, posting, merge, or external repo mutation",
+    "no raw private-data inspection",
+    "not certification, proof, legal opinion, privacy audit, license clearance, quality guarantee, product-readiness claim, or action authorization",
+    "private weights, thresholds, provider priors, anti-gaming logic, private negative controls, private probe seeds, and commercial routing policy remain non-public"
+  ],
+  "recommended_next_package": "ROE-17 External-Safe Demo/Share Pack",
+  "external_action_count": 0,
+  "token_printed": false,
+  "private_kernel_exposed": false
+}

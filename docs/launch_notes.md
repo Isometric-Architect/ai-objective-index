@@ -1,5 +1,9 @@
 # Launch Notes
 
+## ROE-16 Pilot Dashboard Artifact Pack
+
+ROE-16 generates a static/local dashboard artifact pack across AgentSec, QIRA, DataCapsule, unified portfolio, owner-consented intake, dry-run, feedback, and second-run outputs. It writes dashboard JSON, Markdown, static HTML, status cards, timeline, manifest, checksums, claim-boundary sheet, redaction report, claim audit, and gate result. It does not create a live web app, call external APIs, call GitHub APIs, fetch URLs, crawl, run live MCP/tool calls, inspect raw private files, upload data, train models, mutate external repositories, post, merge, deploy, publish packages, handle tokens, expose private kernels, certify security, prove correctness, prove legal/privacy/license/evaluation status, guarantee quality, claim product readiness, or authorize external actions.
+
 ## ROE-15 Local Second-Run Receipt Packager
 
 ROE-15 executes a local/sample second-run from ROE-14 feedback and second-run plans. It updates explanations, evidence requests, fixture candidates, feedback memory, before/after deltas, reviewer readout, redaction report, artifact index, and gate result. It does not call GitHub APIs, create issues or comments, clone, fetch URLs, crawl, run live MCP/tool calls, mutate external repos, post, merge, deploy, publish, upload data, train models, handle tokens, expose private kernels, perform unsafe decision upgrades, certify security, prove correctness, prove legal/privacy/license/evaluation status, guarantee quality, claim product readiness, or authorize external actions.

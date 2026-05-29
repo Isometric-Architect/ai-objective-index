@@ -1,0 +1,63 @@
+{
+  "schema": "ResidualOps_SecondRunFeedbackMemory/v0.1",
+  "memory_update_id": "second-run-memory-roe15-local-sample-second-run-v0-1",
+  "second_run_id": "roe15-local-sample-second-run-v0-1",
+  "generated_at": "2026-05-29T14:52:57.794392+00:00",
+  "updated_entries": [
+    {
+      "feedback_id": "pilot-feedback-sample-agentsec-v0-1",
+      "vertical": "agentsec",
+      "prior_status": "pending",
+      "new_status": "incorporated",
+      "incorporation_summary": "Clarified the permission-scope explanation and kept the HOLD/BLOCK counts unchanged.",
+      "follow_up_actions": [
+        "keep second-run artifact local/offline",
+        "preserve claim boundaries",
+        "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+        "request owner-maintained permission scope notes for any real local pilot"
+      ],
+      "fixture_candidate_added": false,
+      "negative_control_candidate_added": false,
+      "claim_boundary_change_needed": false
+    },
+    {
+      "feedback_id": "pilot-feedback-sample-qira-v0-1",
+      "vertical": "qira",
+      "prior_status": "pending",
+      "new_status": "pending_with_followup",
+      "incorporation_summary": "Recorded the CI evidence request and kept release-side-effect BLOCK unchanged.",
+      "follow_up_actions": [
+        "keep second-run artifact local/offline",
+        "preserve claim boundaries",
+        "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+        "request redacted local CI evidence before rerunning QIRA on an owner artifact"
+      ],
+      "fixture_candidate_added": false,
+      "negative_control_candidate_added": false,
+      "claim_boundary_change_needed": false
+    },
+    {
+      "feedback_id": "pilot-feedback-sample-datacapsule-v0-1",
+      "vertical": "datacapsule",
+      "prior_status": "pending",
+      "new_status": "incorporated",
+      "incorporation_summary": "Added a fixture candidate for explicit action-use denial and kept action use blocked.",
+      "follow_up_actions": [
+        "keep second-run artifact local/offline",
+        "preserve claim boundaries",
+        "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+        "add action-use denial fixture to future DataCapsule local fixture corpus"
+      ],
+      "fixture_candidate_added": true,
+      "negative_control_candidate_added": false,
+      "claim_boundary_change_needed": false
+    }
+  ],
+  "portfolio_next_actions": [
+    "request owner artifact for a real local pilot",
+    "run real owner-consented local pilot only after redaction and consent checks",
+    "add second-run dashboard artifact pack",
+    "schedule third-run only if unresolved local evidence remains"
+  ],
+  "external_action_authorized": false
+}

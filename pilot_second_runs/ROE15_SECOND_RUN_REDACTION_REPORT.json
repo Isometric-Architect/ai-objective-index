@@ -1,0 +1,14 @@
+{
+  "schema": "ResidualOps_SecondRunRedactionReport/v0.1",
+  "generated_at": "2026-05-29T14:52:57.851004+00:00",
+  "decision": "PASS_REDACTED",
+  "label": "second_run_artifacts",
+  "artifact_count": 10,
+  "finding_count": 0,
+  "block_count": 0,
+  "hold_count": 0,
+  "findings": [],
+  "redaction_applied": false,
+  "token_printed": false,
+  "private_kernel_exposed": false
+}

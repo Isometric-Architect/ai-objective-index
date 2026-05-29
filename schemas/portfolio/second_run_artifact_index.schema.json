@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResidualOps Second-Run Artifact Index",
+  "type": "object",
+  "required": ["schema", "artifact_count", "artifacts"],
+  "properties": {
+    "schema": { "const": "ResidualOps_SecondRunArtifactIndex/v0.1" },
+    "generated_at": { "type": "string" },
+    "artifact_count": { "type": "integer" },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "artifact_type", "vertical", "sha256", "safe_to_share_publicly"],
+        "properties": {
+          "path": { "type": "string" },
+          "artifact_type": { "type": "string" },
+          "vertical": { "type": "string" },
+          "generated_at": { "type": "string" },
+          "sha256": { "type": "string" },
+          "safe_to_share_publicly": { "type": ["boolean", "string"] },
+          "reason": { "type": "string" }
+        }
+      }
+    },
+    "external_actions_performed": { "type": "boolean" },
+    "token_printed": { "type": "boolean" }
+  },
+  "additionalProperties": true
+}

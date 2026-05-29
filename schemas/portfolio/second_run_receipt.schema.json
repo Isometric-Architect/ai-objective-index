@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResidualOps Second-Run Receipt",
+  "type": "object",
+  "required": ["schema", "second_run_id", "source_dry_run_id", "mode", "aggregate_summary", "vertical_results", "deltas"],
+  "properties": {
+    "schema": { "const": "ResidualOps_SecondRunReceipt/v0.1" },
+    "second_run_id": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "source_dry_run_id": { "type": "string" },
+    "feedback_packet_ids": { "type": "array", "items": { "type": "string" } },
+    "verticals": { "type": "array", "items": { "type": "string" } },
+    "mode": { "const": "local_sample_second_run" },
+    "input_artifacts": { "type": "object" },
+    "aggregate_summary": { "type": "object" },
+    "vertical_results": { "type": "array", "items": { "type": "object" } },
+    "deltas": { "type": "array", "items": { "type": "object" } },
+    "feedback_memory_update": { "type": "object" },
+    "claim_boundary": { "type": "object" },
+    "external_actions_performed": { "type": "boolean" },
+    "github_api_used": { "type": "boolean" },
+    "live_mcp_call_used": { "type": "boolean" },
+    "merge_deploy_publish_performed": { "type": "boolean" }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,49 @@
+{
+  "schema": "ResidualOps_SecondRunDelta/v0.1",
+  "delta_id": "roe15-delta-qira",
+  "generated_at": "2026-05-29T14:52:57.790370+00:00",
+  "vertical": "qira",
+  "prior_receipt_ref": "pilot_receipts/qira/QIRA_PILOT_RECEIPT_SAMPLE.json",
+  "new_receipt_ref": "pilot_second_runs/ROE15_SECOND_RUN_RESULT_QIRA.json",
+  "feedback_ref": "pilot-feedback-sample-qira-v0-1",
+  "changed_findings": [
+    {
+      "finding_id": "qira-pilot-finding-2",
+      "prior_explanation": "CI evidence gap remained partial",
+      "updated_explanation": "Second-run feedback converted the CI evidence gap into an explicit request for a redacted local CI summary before any future receipt decision change.",
+      "decision_changed": false
+    }
+  ],
+  "unchanged_findings": [
+    "qira-pilot-finding-1",
+    "qira-pilot-finding-3"
+  ],
+  "added_fixtures": [],
+  "added_negative_control_candidates": [],
+  "updated_explanations": [
+    "Second-run feedback converted the CI evidence gap into an explicit request for a redacted local CI summary before any future receipt decision change."
+  ],
+  "updated_next_actions": [
+    "keep second-run artifact local/offline",
+    "preserve claim boundaries",
+    "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+    "request redacted local CI evidence before rerunning QIRA on an owner artifact"
+  ],
+  "claim_boundary_changes": [],
+  "decision_changes": {
+    "allow_to_hold_count": 0,
+    "hold_to_allow_count": 0,
+    "hold_to_block_count": 0,
+    "block_to_hold_count": 0,
+    "block_to_allow_count": 0
+  },
+  "safety_rules": {
+    "no_block_to_allow_without_explicit_evidence": true,
+    "no_hold_to_allow_without_evidence": true,
+    "no_certification_upgrade": true,
+    "no_external_action_authorization": true
+  },
+  "unsafe_decision_upgrade_detected": false,
+  "certification_upgrade_detected": false,
+  "external_action_authorized": false
+}

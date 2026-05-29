@@ -1,0 +1,108 @@
+{
+  "schema": "ResidualOps_SecondRunArtifactIndex/v0.1",
+  "generated_at": "2026-05-29T14:52:57.860412+00:00",
+  "artifact_count": 11,
+  "artifacts": [
+    {
+      "path": "pilot_second_runs/ROE15_SECOND_RUN_RESULT_AGENTSEC.json",
+      "artifact_type": "second_run_result",
+      "vertical": "agentsec",
+      "generated_at": "2026-05-29T14:52:57.852236+00:00",
+      "sha256": "e8e450b5e6ae7ab5028012cc06ca52874283b1d55c082628149c70153caf816f",
+      "safe_to_share_publicly": true,
+      "reason": "public-safe local/sample artifact"
+    },
+    {
+      "path": "pilot_second_runs/ROE15_SECOND_RUN_RESULT_QIRA.json",
+      "artifact_type": "second_run_result",
+      "vertical": "qira",
+      "generated_at": "2026-05-29T14:52:57.852549+00:00",
+      "sha256": "4540a48288cfed2fc8656111f8fccdaf0f9ad895cb74d7a6cb112cbc6cf31357",
+      "safe_to_share_publicly": true,
+      "reason": "public-safe local/sample artifact"
+    },
+    {
+      "path": "pilot_second_runs/ROE15_SECOND_RUN_RESULT_DATACAPSULE.json",
+      "artifact_type": "second_run_result",
+      "vertical": "datacapsule",
+      "generated_at": "2026-05-29T14:52:57.852818+00:00",
+      "sha256": "9b3b9bd5e7b80858dc5de614fffa9c26df7366904288e38870f1a5987278c602",
+      "safe_to_share_publicly": true,
+      "reason": "public-safe local/sample artifact"
+    },
+    {
+      "path": "pilot_second_runs/ROE15_SECOND_RUN_DELTA_AGENTSEC.json",
+      "artifact_type": "second_run_delta",
+      "vertical": "agentsec",
+      "generated_at": "2026-05-29T14:52:57.853078+00:00",
+      "sha256": "eda5d35d619d6ec98a7631c43f05259694bf95cf272397ef5fae710a3b5e1348",
+      "safe_to_share_publicly": true,
+      "reason": "public-safe local/sample artifact"
+    },
+    {
+      "path": "pilot_second_runs/ROE15_SECOND_RUN_DELTA_QIRA.json",
+      "artifact_type": "second_run_delta",
+      "vertical": "qira",
+      "generated_at": "2026-05-29T14:52:57.853329+00:00",
+      "sha256": "d56afb5b1851dbfbaddc385f84f1a824010fc5684309138ab7699a2d8b7be3d1",
+      "safe_to_share_publicly": true,
+      "reason": "public-safe local/sample artifact"
+    },
+    {
+      "path": "pilot_second_runs/ROE15_SECOND_RUN_DELTA_DATACAPSULE.json",
+      "artifact_type": "second_run_delta",
+      "vertical": "datacapsule",
+      "generated_at": "2026-05-29T14:52:57.853577+00:00",
+      "sha256": "d5870a1b6e5d6cdbc5b9dfc375e0236414f30f79337286cf903faa1a3e2c730a",
+      "safe_to_share_publicly": true,
+      "reason": "public-safe local/sample artifact"
+    },
+    {
+      "path": "pilot_second_runs/ROE15_SECOND_RUN_FEEDBACK_MEMORY.json",
+      "artifact_type": "feedback_memory",
+      "vertical": "portfolio",
+      "generated_at": "2026-05-29T14:52:57.853856+00:00",
+      "sha256": "9c14ceaac23ab9e1562eac9d12f3ae27f2dcf45e71e16cc8fa0b2f013cfa6f34",
+      "safe_to_share_publicly": true,
+      "reason": "public-safe local/sample artifact"
+    },
+    {
+      "path": "pilot_second_runs/ROE15_SECOND_RUN_RECEIPT.json",
+      "artifact_type": "second_run_receipt",
+      "vertical": "portfolio",
+      "generated_at": "2026-05-29T14:52:57.854107+00:00",
+      "sha256": "4197cb145b75e984157ec89c1b1defe2ae289cad6160a860218ff70cc7def1b8",
+      "safe_to_share_publicly": true,
+      "reason": "public-safe local/sample artifact"
+    },
+    {
+      "path": "pilot_second_runs/ROE15_SECOND_RUN_REVIEWER_READOUT.md",
+      "artifact_type": "reviewer_readout",
+      "vertical": "portfolio",
+      "generated_at": "2026-05-29T14:52:57.854378+00:00",
+      "sha256": "263e4acec4af96cfbdc9ffd7148ae03e38ae4834f797bd8e97d8cba9fa8bacf2",
+      "safe_to_share_publicly": true,
+      "reason": "public-safe local/sample artifact"
+    },
+    {
+      "path": "pilot_second_runs/ROE15_SECOND_RUN_KNOWN_LIMITS.md",
+      "artifact_type": "known_limits",
+      "vertical": "portfolio",
+      "generated_at": "2026-05-29T14:52:57.854628+00:00",
+      "sha256": "53f063bbac817d7dbded92ebe3af29d248b9952d2e40a345645e956c46c3d3df",
+      "safe_to_share_publicly": true,
+      "reason": "public-safe local/sample artifact"
+    },
+    {
+      "path": "pilot_second_runs/ROE15_SECOND_RUN_REDACTION_REPORT.json",
+      "artifact_type": "redaction_report",
+      "vertical": "portfolio",
+      "generated_at": "2026-05-29T14:52:57.854886+00:00",
+      "sha256": "517beb3acbd5e0397044e9211f8a677351247737bf1e680d5ff5cc60a1389f96",
+      "safe_to_share_publicly": true,
+      "reason": "public-safe local/sample artifact"
+    }
+  ],
+  "external_actions_performed": false,
+  "token_printed": false
+}

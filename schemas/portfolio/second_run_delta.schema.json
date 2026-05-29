@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResidualOps Second-Run Delta",
+  "type": "object",
+  "required": ["schema", "delta_id", "vertical", "prior_receipt_ref", "new_receipt_ref", "feedback_ref", "decision_changes", "safety_rules"],
+  "properties": {
+    "schema": { "const": "ResidualOps_SecondRunDelta/v0.1" },
+    "delta_id": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "vertical": { "type": "string" },
+    "prior_receipt_ref": { "type": "string" },
+    "new_receipt_ref": { "type": "string" },
+    "feedback_ref": { "type": "string" },
+    "changed_findings": { "type": "array", "items": { "type": "object" } },
+    "unchanged_findings": { "type": "array", "items": { "type": "string" } },
+    "added_fixtures": { "type": "array", "items": { "type": "object" } },
+    "added_negative_control_candidates": { "type": "array", "items": { "type": "object" } },
+    "updated_explanations": { "type": "array", "items": { "type": "string" } },
+    "updated_next_actions": { "type": "array", "items": { "type": "string" } },
+    "claim_boundary_changes": { "type": "array", "items": { "type": "string" } },
+    "decision_changes": { "type": "object" },
+    "safety_rules": { "type": "object" },
+    "unsafe_decision_upgrade_detected": { "type": "boolean" },
+    "certification_upgrade_detected": { "type": "boolean" },
+    "external_action_authorized": { "type": "boolean" }
+  },
+  "additionalProperties": true
+}

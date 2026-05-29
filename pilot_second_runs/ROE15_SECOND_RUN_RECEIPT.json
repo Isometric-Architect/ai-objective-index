@@ -1,0 +1,1178 @@
+{
+  "schema": "ResidualOps_SecondRunReceipt/v0.1",
+  "second_run_id": "roe15-local-sample-second-run-v0-1",
+  "generated_at": "2026-05-29T14:52:57.794451+00:00",
+  "source_dry_run_id": "roe13-local-sample-dry-run-v0-1",
+  "feedback_packet_ids": [
+    "pilot-feedback-sample-agentsec-v0-1",
+    "pilot-feedback-sample-qira-v0-1",
+    "pilot-feedback-sample-datacapsule-v0-1"
+  ],
+  "verticals": [
+    "agentsec",
+    "qira",
+    "datacapsule"
+  ],
+  "mode": "local_sample_second_run",
+  "input_artifacts": {
+    "feedback_packets": [
+      "pilot_feedback/PILOT_FEEDBACK_PACKET_SAMPLE_AGENTSEC.json",
+      "pilot_feedback/PILOT_FEEDBACK_PACKET_SAMPLE_QIRA.json",
+      "pilot_feedback/PILOT_FEEDBACK_PACKET_SAMPLE_DATACAPSULE.json"
+    ],
+    "second_run_plans": [
+      "pilot_feedback/PILOT_SECOND_RUN_PLAN_SAMPLE.json"
+    ],
+    "prior_receipts": [
+      "pilot_receipts/agentsec/AGENTSEC_PILOT_RECEIPT_SAMPLE.json",
+      "pilot_receipts/qira/QIRA_PILOT_RECEIPT_SAMPLE.json",
+      "pilot_receipts/datacapsule/DATACAPSULE_PILOT_RECEIPT_SAMPLE.json"
+    ]
+  },
+  "aggregate_summary": {
+    "vertical_count": 3,
+    "prior_allow_count": 3,
+    "prior_hold_count": 3,
+    "prior_block_count": 3,
+    "new_allow_count": 3,
+    "new_hold_count": 3,
+    "new_block_count": 3,
+    "finding_updates_count": 3,
+    "fixture_candidate_count": 1,
+    "negative_control_candidate_count": 0,
+    "claim_boundary_change_count": 0,
+    "external_action_count": 0
+  },
+  "vertical_results": [
+    {
+      "schema": "ResidualOps_SecondRunVerticalResult/v0.1",
+      "second_run_id": "roe15-local-sample-second-run-v0-1",
+      "vertical": "agentsec",
+      "feedback_id": "pilot-feedback-sample-agentsec-v0-1",
+      "classification": "ACCEPT_AS_FIXTURE_CANDIDATE",
+      "plan_status": "READY_FOR_LOCAL_SECOND_RUN",
+      "prior_receipt_ref": "pilot_receipts/agentsec/AGENTSEC_PILOT_RECEIPT_SAMPLE.json",
+      "new_receipt_ref": "pilot_second_runs/ROE15_SECOND_RUN_RESULT_AGENTSEC.json",
+      "prior_decision_summary": {
+        "allow_count": 1,
+        "hold_count": 1,
+        "block_count": 1
+      },
+      "new_decision_summary": {
+        "allow_count": 1,
+        "hold_count": 1,
+        "block_count": 1
+      },
+      "primary_decision": "BLOCK_FORBIDDEN_ACTION",
+      "finding_updates": [
+        {
+          "finding_id": "agentsec-pilot-finding-2",
+          "prior_explanation": "permission-scope finding needed a clearer manifest-only explanation",
+          "updated_explanation": "Second-run feedback clarified that permission-scope HOLD means metadata requires owner review before any use; it is not a security certification or live tool result.",
+          "decision_changed": false
+        }
+      ],
+      "unchanged_findings": [
+        "agentsec-pilot-finding-1",
+        "agentsec-pilot-finding-3"
+      ],
+      "fixture_candidates": [],
+      "negative_control_candidates": [],
+      "claim_boundary_changes": [],
+      "updated_next_actions": [
+        "keep second-run artifact local/offline",
+        "preserve claim boundaries",
+        "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+        "request owner-maintained permission scope notes for any real local pilot"
+      ],
+      "incorporation_summary": "Clarified the permission-scope explanation and kept the HOLD/BLOCK counts unchanged.",
+      "requires_followup": false,
+      "updated_receipt": {
+        "schema": "ResidualOps_AgentSecPilotReceipt/v0.1",
+        "pilot_id": "agentsec-pilot-f996a7a69524",
+        "generated_at": "2026-05-29T14:52:41.369130+00:00",
+        "project_label": "AgentSec sample pilot",
+        "repo_url": "",
+        "owner_consent": {
+          "status": "sample_fixture",
+          "evidence_note": "sample/local owner consent metadata only"
+        },
+        "input_manifest": {
+          "source_type": "fixture",
+          "path_or_id": "agentsec-public-safe-sample-fixture",
+          "hash": "dc04c66c644da2a1e7e82926c348c7292e34017d4b549408d12d404d04d9283f"
+        },
+        "review_scope": {
+          "manifest_only": true,
+          "live_tool_execution": false,
+          "live_mcp_call": false,
+          "github_api_call": false,
+          "external_network": false
+        },
+        "packet_summary": {
+          "manifest_count": 3,
+          "tool_count": 3,
+          "permission_count": 2,
+          "hidden_instruction_findings": 0,
+          "namespace_findings": 0,
+          "unsupported_claim_findings": 0,
+          "forbidden_action_findings": 1
+        },
+        "decision_summary": {
+          "allow_count": 1,
+          "hold_count": 1,
+          "block_count": 1,
+          "top_hold_reasons": [
+            "fixture.local/checkout-action-helper: policy holds network_access",
+            "fixture.local/repo-file-review-helper: policy holds file_access"
+          ],
+          "top_block_reasons": [
+            "fixture.local/checkout-action-helper: forbidden action language"
+          ]
+        },
+        "findings": [
+          {
+            "finding_id": "agentsec-pilot-finding-1",
+            "severity": "info",
+            "decision": "ALLOW",
+            "category": "unknown",
+            "evidence_ref": "agentsec-public-safe-sample-fixture#0",
+            "explanation": "metadata-only scan found no blocking indicators; this is still not verification",
+            "next_action": "keep as metadata-only candidate",
+            "must_not_claim": [
+              "verification status",
+              "tool safety guarantee",
+              "security certification",
+              "quality guarantee",
+              "production readiness",
+              "compliance audit",
+              "live security scan",
+              "external action authorization"
+            ]
+          },
+          {
+            "finding_id": "agentsec-pilot-finding-2",
+            "severity": "medium",
+            "decision": "HOLD",
+            "category": "permission_scope",
+            "evidence_ref": "agentsec-public-safe-sample-fixture#1",
+            "explanation": "fixture.local/repo-file-review-helper: policy holds file_access",
+            "next_action": "review metadata before use",
+            "must_not_claim": [
+              "verification status",
+              "tool safety guarantee",
+              "security certification",
+              "quality guarantee",
+              "production readiness",
+              "compliance audit",
+              "live security scan",
+              "external action authorization"
+            ]
+          },
+          {
+            "finding_id": "agentsec-pilot-finding-3",
+            "severity": "high",
+            "decision": "BLOCK",
+            "category": "forbidden_action",
+            "evidence_ref": "agentsec-public-safe-sample-fixture#2",
+            "explanation": "fixture.local/checkout-action-helper: forbidden action language",
+            "next_action": "remove or justify blocked manifest language",
+            "must_not_claim": [
+              "verification status",
+              "tool safety guarantee",
+              "security certification",
+              "quality guarantee",
+              "production readiness",
+              "compliance audit",
+              "live security scan",
+              "external action authorization"
+            ]
+          }
+        ],
+        "claim_boundary": {
+          "not_security_certification": true,
+          "not_quality_guarantee": true,
+          "not_compliance_audit": true,
+          "no_live_execution": true,
+          "no_external_action_authorization": true
+        },
+        "feedback_memory": {
+          "entry_id": "agentsec-feedback-f996a7a69524",
+          "suggested_next_review": "review HOLD/BLOCK findings before any second owner-consented pilot run",
+          "unresolved_questions": [
+            "fixture.local/checkout-action-helper: policy holds network_access",
+            "fixture.local/repo-file-review-helper: policy holds file_access",
+            "fixture.local/checkout-action-helper: forbidden action language"
+          ],
+          "known_limits": [
+            "local/offline manifest review only",
+            "no live MCP call",
+            "no external tool execution",
+            "not security certification",
+            "not quality guarantee",
+            "not compliance audit",
+            "not action authorization"
+          ]
+        },
+        "external_actions_performed": false,
+        "workflow_enabled": false,
+        "github_api_used": false,
+        "live_mcp_called": false,
+        "external_tool_executed": false,
+        "token_printed": false,
+        "private_kernel_exposed": false,
+        "second_run_update": {
+          "feedback_id": "pilot-feedback-sample-agentsec-v0-1",
+          "classification": "ACCEPT_AS_FIXTURE_CANDIDATE",
+          "plan_status": "READY_FOR_LOCAL_SECOND_RUN",
+          "finding_updates": [
+            {
+              "finding_id": "agentsec-pilot-finding-2",
+              "prior_explanation": "permission-scope finding needed a clearer manifest-only explanation",
+              "updated_explanation": "Second-run feedback clarified that permission-scope HOLD means metadata requires owner review before any use; it is not a security certification or live tool result.",
+              "decision_changed": false
+            }
+          ],
+          "fixture_candidates": [],
+          "negative_control_candidates": [],
+          "updated_next_actions": [
+            "keep second-run artifact local/offline",
+            "preserve claim boundaries",
+            "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+            "request owner-maintained permission scope notes for any real local pilot"
+          ],
+          "decision_upgrade_performed": false
+        }
+      },
+      "external_actions_performed": false,
+      "github_api_used": false,
+      "live_mcp_call_used": false,
+      "merge_deploy_publish_performed": false,
+      "upload_or_training_performed": false,
+      "external_action_authorized": false,
+      "certification_upgrade_detected": false,
+      "decision_upgrade_performed": false
+    },
+    {
+      "schema": "ResidualOps_SecondRunVerticalResult/v0.1",
+      "second_run_id": "roe15-local-sample-second-run-v0-1",
+      "vertical": "qira",
+      "feedback_id": "pilot-feedback-sample-qira-v0-1",
+      "classification": "ACCEPT_AS_FIXTURE_CANDIDATE",
+      "plan_status": "READY_FOR_LOCAL_SECOND_RUN",
+      "prior_receipt_ref": "pilot_receipts/qira/QIRA_PILOT_RECEIPT_SAMPLE.json",
+      "new_receipt_ref": "pilot_second_runs/ROE15_SECOND_RUN_RESULT_QIRA.json",
+      "prior_decision_summary": {
+        "allow_count": 1,
+        "hold_count": 1,
+        "block_count": 1
+      },
+      "new_decision_summary": {
+        "allow_count": 1,
+        "hold_count": 1,
+        "block_count": 1
+      },
+      "primary_decision": "BLOCK_RELEASE_SIDE_EFFECT",
+      "finding_updates": [
+        {
+          "finding_id": "qira-pilot-finding-2",
+          "prior_explanation": "CI evidence gap remained partial",
+          "updated_explanation": "Second-run feedback converted the CI evidence gap into an explicit request for a redacted local CI summary before any future receipt decision change.",
+          "decision_changed": false
+        }
+      ],
+      "unchanged_findings": [
+        "qira-pilot-finding-1",
+        "qira-pilot-finding-3"
+      ],
+      "fixture_candidates": [],
+      "negative_control_candidates": [],
+      "claim_boundary_changes": [],
+      "updated_next_actions": [
+        "keep second-run artifact local/offline",
+        "preserve claim boundaries",
+        "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+        "request redacted local CI evidence before rerunning QIRA on an owner artifact"
+      ],
+      "incorporation_summary": "Recorded the CI evidence request and kept release-side-effect BLOCK unchanged.",
+      "requires_followup": true,
+      "updated_receipt": {
+        "schema": "ResidualOps_QIRA_PilotReceipt/v0.1",
+        "pilot_id": "qira-pilot-7a68f523e9ed",
+        "generated_at": "2026-05-29T14:52:41.663545+00:00",
+        "task_packet": {
+          "schema": "ResidualOps_QIRA_TaskPacket/v0.1",
+          "task_id": "qira-task-82bd1c4a1ea4",
+          "generated_at": "2026-05-29T14:52:41.663335+00:00",
+          "task_title": "Package a local QIRA pilot release-gate review.",
+          "task_goal": "Review a local patch fixture through task packet, patch classification, behavior contract, CI evidence summary, reviewer readout, receipt, and feedback memory.",
+          "repo_label": "sample/local fixture repository",
+          "owner_consent": {
+            "status": "sample_fixture",
+            "evidence_note": "sample fixture only; no external repository owner contacted"
+          },
+          "input_source": "sample_patch",
+          "intended_change_type": "tests",
+          "allowed_review_scope": {
+            "local_static_review": true,
+            "local_test_summary_intake": true,
+            "github_api_call": false,
+            "external_repo_modification": false,
+            "merge_or_deploy": false
+          },
+          "forbidden_actions": [
+            "create_pr",
+            "merge",
+            "deploy",
+            "publish_package",
+            "comment_on_pr",
+            "mutate_external_repo",
+            "use_live_credentials"
+          ],
+          "claim_ceiling": "local/offline release-gate review artifact only"
+        },
+        "patch_classification": {
+          "schema": "ResidualOps_QIRA_PatchClassification/v0.1",
+          "patch_id": "qira-patch-00147500e87c",
+          "task_id": "qira-task-82bd1c4a1ea4",
+          "files_changed_count": 3,
+          "file_categories": [
+            "docs",
+            "security_sensitive",
+            "tests"
+          ],
+          "risk_flags": [
+            "release_config_change",
+            "subprocess_or_shell"
+          ],
+          "classification_decision": "BLOCK_FORBIDDEN_ACTION",
+          "evidence_refs": [
+            "local_patch#1",
+            "local_patch#2",
+            "local_patch#3"
+          ],
+          "explanation": "Patch includes release/deploy negative-control surface that cannot be authorized by a local QIRA pilot.",
+          "next_actions": [
+            "review HOLD/BLOCK findings before merge or deploy decisions",
+            "request independent CI evidence for any real owner-consented pilot"
+          ]
+        },
+        "behavior_contract": {
+          "schema": "ResidualOps_QIRA_BehaviorContract/v0.1",
+          "contract_id": "qira-contract-5a47acc21115",
+          "task_id": "qira-task-82bd1c4a1ea4",
+          "expected_behavior": [
+            "Classify the local patch scope.",
+            "Separate docs/test review signals from release/deploy actions.",
+            "Surface CI evidence gaps without treating CI summaries as proof.",
+            "Write a reviewer artifact and feedback memory entry only."
+          ],
+          "non_goals": [
+            "No GitHub API calls.",
+            "No external repository mutation.",
+            "No merge or deploy authorization.",
+            "No code-correctness or security certification."
+          ],
+          "forbidden_behavior": [
+            "create_pr",
+            "merge",
+            "deploy",
+            "publish_package",
+            "comment_on_pr",
+            "mutate_external_repo",
+            "use_live_credentials"
+          ],
+          "required_evidence": [
+            "tests_pass",
+            "docs_updated",
+            "no_secret_diff",
+            "no_unapproved_network",
+            "no_release_side_effect",
+            "reviewer_ack"
+          ],
+          "negative_controls": [
+            "secret_in_diff_must_block",
+            "deploy_script_change_must_hold",
+            "auth_scope_change_must_hold",
+            "missing_test_evidence_must_hold"
+          ],
+          "claim_boundary": {
+            "not_correctness_proof": true,
+            "not_security_certification": true,
+            "not_production_readiness": true,
+            "no_merge_authorization": true
+          }
+        },
+        "ci_evidence_summary": {
+          "schema": "ResidualOps_QIRA_CIEvidenceSummary/v0.1",
+          "ci_evidence_id": "qira-ci-summary-3f215092cac3",
+          "task_id": "qira-task-82bd1c4a1ea4",
+          "source_type": "generated_sample",
+          "tests_passed": true,
+          "tests_failed": 0,
+          "lint_passed": null,
+          "typecheck_passed": null,
+          "build_passed": null,
+          "coverage_reported": false,
+          "evidence_status": "PARTIAL_CI_EVIDENCE",
+          "missing_evidence": [
+            "build_result",
+            "independent_ci_run",
+            "lint_result",
+            "typecheck_result"
+          ],
+          "warnings": [
+            "Generated sample evidence is useful for packaging shape only."
+          ],
+          "must_not_claim": [
+            "correctness_proven",
+            "security_certified",
+            "quality_guaranteed",
+            "production_ready",
+            "merge_authorized",
+            "deploy_authorized",
+            "external_repo_mutation_allowed"
+          ]
+        },
+        "decision_summary": {
+          "allow_count": 1,
+          "hold_count": 1,
+          "block_count": 1,
+          "top_hold_reasons": [
+            "CI evidence is partial or generated sample metadata; independent CI evidence is still needed."
+          ],
+          "top_block_reasons": [
+            "Negative-control fixture includes release/deploy language that a local QIRA pilot cannot authorize."
+          ]
+        },
+        "findings": [
+          {
+            "finding_id": "qira-pilot-finding-1",
+            "severity": "info",
+            "decision": "ALLOW",
+            "category": "patch_scope",
+            "evidence_ref": "sample_patch#docs-tests",
+            "explanation": "Docs/test fixture review can be represented as a local reviewer artifact.",
+            "next_action": "keep as local review evidence only",
+            "must_not_claim": [
+              "correctness_proven",
+              "security_certified",
+              "quality_guaranteed",
+              "production_ready",
+              "merge_authorized",
+              "deploy_authorized",
+              "external_repo_mutation_allowed"
+            ]
+          },
+          {
+            "finding_id": "qira-pilot-finding-2",
+            "severity": "medium",
+            "decision": "HOLD",
+            "category": "ci_evidence_gap",
+            "evidence_ref": "qira-ci-summary-3f215092cac3",
+            "explanation": "CI evidence is partial or generated sample metadata; independent CI evidence is still needed.",
+            "next_action": "request owner-provided or copied CI summary before second-run readout",
+            "must_not_claim": [
+              "correctness_proven",
+              "security_certified",
+              "quality_guaranteed",
+              "production_ready",
+              "merge_authorized",
+              "deploy_authorized",
+              "external_repo_mutation_allowed"
+            ]
+          },
+          {
+            "finding_id": "qira-pilot-finding-3",
+            "severity": "high",
+            "decision": "BLOCK",
+            "category": "release_side_effect",
+            "evidence_ref": "sample_patch#negative-control-deploy",
+            "explanation": "Negative-control fixture includes release/deploy language that a local QIRA pilot cannot authorize.",
+            "next_action": "remove release/deploy side effect or route to a separate owner-approved release gate",
+            "must_not_claim": [
+              "correctness_proven",
+              "security_certified",
+              "quality_guaranteed",
+              "production_ready",
+              "merge_authorized",
+              "deploy_authorized",
+              "external_repo_mutation_allowed"
+            ]
+          }
+        ],
+        "release_gate_decision": "BLOCK_RELEASE_SIDE_EFFECT",
+        "claim_boundary": {
+          "not_code_correctness_proof": true,
+          "not_security_certification": true,
+          "not_quality_guarantee": true,
+          "no_merge_authorization": true,
+          "no_deploy_authorization": true,
+          "no_external_repo_mutation": true
+        },
+        "feedback_memory": {
+          "entry_id": "qira-feedback-7a68f523e9ed",
+          "suggested_next_review": "review HOLD/BLOCK findings before any second owner-consented QIRA pilot run",
+          "unresolved_questions": [
+            "CI evidence is partial or generated sample metadata; independent CI evidence is still needed.",
+            "Negative-control fixture includes release/deploy language that a local QIRA pilot cannot authorize."
+          ],
+          "known_limits": [
+            "local/offline patch review only",
+            "no GitHub API call",
+            "no external repository mutation",
+            "not code correctness proof",
+            "not security certification",
+            "not quality guarantee",
+            "no merge or deploy authorization"
+          ]
+        },
+        "github_api_used": false,
+        "external_repo_modified": false,
+        "external_actions_performed": false,
+        "merge_performed": false,
+        "deploy_performed": false,
+        "publish_performed": false,
+        "token_printed": false,
+        "private_kernel_exposed": false,
+        "can_prove_correctness": false,
+        "can_certify_security": false,
+        "can_guarantee_quality": false,
+        "can_authorize_merge": false,
+        "can_authorize_deploy": false,
+        "second_run_update": {
+          "feedback_id": "pilot-feedback-sample-qira-v0-1",
+          "classification": "ACCEPT_AS_FIXTURE_CANDIDATE",
+          "plan_status": "READY_FOR_LOCAL_SECOND_RUN",
+          "finding_updates": [
+            {
+              "finding_id": "qira-pilot-finding-2",
+              "prior_explanation": "CI evidence gap remained partial",
+              "updated_explanation": "Second-run feedback converted the CI evidence gap into an explicit request for a redacted local CI summary before any future receipt decision change.",
+              "decision_changed": false
+            }
+          ],
+          "fixture_candidates": [],
+          "negative_control_candidates": [],
+          "updated_next_actions": [
+            "keep second-run artifact local/offline",
+            "preserve claim boundaries",
+            "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+            "request redacted local CI evidence before rerunning QIRA on an owner artifact"
+          ],
+          "decision_upgrade_performed": false
+        }
+      },
+      "external_actions_performed": false,
+      "github_api_used": false,
+      "live_mcp_call_used": false,
+      "merge_deploy_publish_performed": false,
+      "upload_or_training_performed": false,
+      "external_action_authorized": false,
+      "certification_upgrade_detected": false,
+      "decision_upgrade_performed": false
+    },
+    {
+      "schema": "ResidualOps_SecondRunVerticalResult/v0.1",
+      "second_run_id": "roe15-local-sample-second-run-v0-1",
+      "vertical": "datacapsule",
+      "feedback_id": "pilot-feedback-sample-datacapsule-v0-1",
+      "classification": "ACCEPT_AS_FIXTURE_CANDIDATE",
+      "plan_status": "READY_FOR_LOCAL_SECOND_RUN",
+      "prior_receipt_ref": "pilot_receipts/datacapsule/DATACAPSULE_PILOT_RECEIPT_SAMPLE.json",
+      "new_receipt_ref": "pilot_second_runs/ROE15_SECOND_RUN_RESULT_DATACAPSULE.json",
+      "prior_decision_summary": {
+        "allow_count": 1,
+        "hold_count": 1,
+        "block_count": 1
+      },
+      "new_decision_summary": {
+        "allow_count": 1,
+        "hold_count": 1,
+        "block_count": 1
+      },
+      "primary_decision": "BLOCK_ACTION_USE",
+      "finding_updates": [
+        {
+          "finding_id": "datacapsule-pilot-finding-3",
+          "prior_explanation": "action-use BLOCK was already present",
+          "updated_explanation": "Second-run feedback added an explicit action-use denial fixture candidate while preserving the action-use BLOCK.",
+          "decision_changed": false
+        }
+      ],
+      "unchanged_findings": [
+        "datacapsule-pilot-finding-1",
+        "datacapsule-pilot-finding-2"
+      ],
+      "fixture_candidates": [
+        {
+          "fixture_id": "datacapsule-action-use-denial-candidate-v0-1",
+          "source_feedback_id": "pilot-feedback-sample-datacapsule-v0-1",
+          "purpose": "exercise explicit action-use denial while staying manifest-only",
+          "raw_data_included": false
+        }
+      ],
+      "negative_control_candidates": [],
+      "claim_boundary_changes": [],
+      "updated_next_actions": [
+        "keep second-run artifact local/offline",
+        "preserve claim boundaries",
+        "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+        "add action-use denial fixture to future DataCapsule local fixture corpus"
+      ],
+      "incorporation_summary": "Added a fixture candidate for explicit action-use denial and kept action use blocked.",
+      "requires_followup": false,
+      "updated_receipt": {
+        "schema": "ResidualOps_DataCapsulePilotReceipt/v0.1",
+        "pilot_id": "datacapsule-pilot-702e722b4278",
+        "generated_at": "2026-05-29T14:52:40.222763+00:00",
+        "corpus_manifest": {
+          "schema": "ResidualOps_DataCapsuleCorpusManifest/v0.1",
+          "manifest_id": "datacapsule-manifest-3b8b4b5d9e88",
+          "generated_at": "2026-05-29T14:52:40.222447+00:00",
+          "corpus_label": "DataCapsule local sample corpus",
+          "owner_consent": {
+            "status": "sample_fixture",
+            "evidence_note": "manifest metadata supplied locally; no external owner contacted"
+          },
+          "source_type": "sample_fixture",
+          "data_categories": [
+            "text",
+            "metadata"
+          ],
+          "declared_sources": [
+            "repository-local sample manifest"
+          ],
+          "declared_license": "unknown",
+          "declared_terms": "unknown",
+          "declared_collection_method": "unknown",
+          "declared_update_date": "unknown",
+          "declared_pii_status": "unknown",
+          "declared_eval_overlap_status": "unknown",
+          "declared_allowed_uses": [
+            "retrieve"
+          ],
+          "declared_disallowed_uses": [
+            "act"
+          ],
+          "declared_retention_policy": "unknown",
+          "declared_share_policy": "unknown",
+          "local_manifest_only": true,
+          "raw_content_inspected": false,
+          "external_network_used": false,
+          "claim_ceiling": "local/offline corpus manifest review artifact only"
+        },
+        "source_rights_summary": {
+          "schema": "ResidualOps_DataCapsuleSourceRightsSummary/v0.1",
+          "summary_id": "datacapsule-rights-2d6fdbdb37f3",
+          "manifest_id": "datacapsule-manifest-3b8b4b5d9e88",
+          "license_found": false,
+          "terms_found": false,
+          "source_attribution_found": true,
+          "collection_method_found": false,
+          "redistribution_allowed_declared": null,
+          "training_allowed_declared": null,
+          "retrieval_allowed_declared": true,
+          "evaluation_allowed_declared": null,
+          "commercial_use_declared": null,
+          "rights_status": "HOLD_LICENSE_MISSING",
+          "missing_fields": [
+            "declared_license",
+            "declared_terms",
+            "declared_collection_method"
+          ],
+          "warnings": [
+            "License field is missing or unknown."
+          ],
+          "must_not_claim": [
+            "legal_clearance",
+            "privacy_compliance",
+            "license_clearance",
+            "evaluation_cleanliness_proof",
+            "data_quality_guarantee",
+            "training_authorization",
+            "action_authorization"
+          ]
+        },
+        "privacy_risk_summary": {
+          "schema": "ResidualOps_DataCapsulePrivacyRiskSummary/v0.1",
+          "summary_id": "datacapsule-privacy-2d6fdbdb37f3",
+          "manifest_id": "datacapsule-manifest-3b8b4b5d9e88",
+          "pii_declared": "unknown",
+          "sensitive_data_declared": "unknown",
+          "deidentification_declared": "unknown",
+          "consent_declared": "unknown",
+          "privacy_status": "HOLD_PII_UNKNOWN",
+          "missing_fields": [
+            "declared_pii_status",
+            "declared_retention_policy"
+          ],
+          "warnings": [
+            "PII status is unknown from manifest metadata."
+          ],
+          "must_not_claim": [
+            "legal_clearance",
+            "privacy_compliance",
+            "license_clearance",
+            "evaluation_cleanliness_proof",
+            "data_quality_guarantee",
+            "training_authorization",
+            "action_authorization"
+          ]
+        },
+        "eval_leakage_summary": {
+          "schema": "ResidualOps_DataCapsuleEvalLeakageSummary/v0.1",
+          "summary_id": "datacapsule-eval-2d6fdbdb37f3",
+          "manifest_id": "datacapsule-manifest-3b8b4b5d9e88",
+          "eval_overlap_declared": "unknown",
+          "benchmark_contamination_declared": "unknown",
+          "split_policy_declared": "unknown",
+          "leakage_status": "HOLD_EVAL_OVERLAP_UNKNOWN",
+          "missing_fields": [
+            "declared_eval_overlap_status",
+            "split_policy"
+          ],
+          "warnings": [
+            "Evaluation overlap is unknown from manifest metadata."
+          ],
+          "must_not_claim": [
+            "legal_clearance",
+            "privacy_compliance",
+            "license_clearance",
+            "evaluation_cleanliness_proof",
+            "data_quality_guarantee",
+            "training_authorization",
+            "action_authorization"
+          ]
+        },
+        "use_boundary": {
+          "schema": "ResidualOps_DataCapsuleUseBoundary/v0.1",
+          "boundary_id": "datacapsule-boundary-11a080e0e30d",
+          "manifest_id": "datacapsule-manifest-3b8b4b5d9e88",
+          "train_use": "HOLD",
+          "retrieve_use": "ALLOW",
+          "evaluate_use": "HOLD",
+          "share_use": "HOLD",
+          "act_use": "BLOCK",
+          "commercial_use": "HOLD",
+          "reasons": [
+            "Manifest has rights, privacy, or evaluation-boundary uncertainty.",
+            "Action use defaults to BLOCK without separate action authorization."
+          ],
+          "blocked_uses": [
+            "act"
+          ],
+          "hold_uses": [
+            "train",
+            "evaluate",
+            "share",
+            "commercial"
+          ],
+          "next_actions": [
+            "request license and terms evidence",
+            "request privacy and consent evidence",
+            "request train/eval split or overlap evidence",
+            "keep action use blocked unless separately authorized"
+          ],
+          "claim_ceiling": "manifest-only use boundary; not legal/privacy/license/evaluation proof",
+          "must_not_claim": [
+            "legal_clearance",
+            "privacy_compliance",
+            "license_clearance",
+            "evaluation_cleanliness_proof",
+            "data_quality_guarantee",
+            "training_authorization",
+            "action_authorization"
+          ]
+        },
+        "decision_summary": {
+          "allow_count": 1,
+          "hold_count": 1,
+          "block_count": 1,
+          "top_hold_reasons": [
+            "Manifest metadata has rights, privacy, evaluation-boundary, or staleness gaps."
+          ],
+          "top_block_reasons": [
+            "Action use is blocked and declared disallowed uses cannot be upgraded by a manifest-only pilot."
+          ]
+        },
+        "findings": [
+          {
+            "finding_id": "datacapsule-pilot-finding-1",
+            "severity": "info",
+            "decision": "ALLOW",
+            "category": "retrieve_boundary",
+            "evidence_ref": "corpus_manifest#declared_allowed_uses",
+            "explanation": "Manifest review artifact can record declared retrieval use as a local metadata signal.",
+            "next_action": "keep as manifest-only review evidence",
+            "must_not_claim": [
+              "legal_clearance",
+              "privacy_compliance",
+              "license_clearance",
+              "evaluation_cleanliness_proof",
+              "data_quality_guarantee",
+              "training_authorization",
+              "action_authorization"
+            ]
+          },
+          {
+            "finding_id": "datacapsule-pilot-finding-2",
+            "severity": "medium",
+            "decision": "HOLD",
+            "category": "license_gap",
+            "evidence_ref": "corpus_manifest#missing_fields",
+            "explanation": "Manifest metadata has rights, privacy, evaluation-boundary, or staleness gaps.",
+            "next_action": "request license, terms, privacy, consent, split-policy, and update-date evidence",
+            "must_not_claim": [
+              "legal_clearance",
+              "privacy_compliance",
+              "license_clearance",
+              "evaluation_cleanliness_proof",
+              "data_quality_guarantee",
+              "training_authorization",
+              "action_authorization"
+            ]
+          },
+          {
+            "finding_id": "datacapsule-pilot-finding-3",
+            "severity": "high",
+            "decision": "BLOCK",
+            "category": "act_boundary",
+            "evidence_ref": "use_boundary#blocked_uses",
+            "explanation": "Action use is blocked and declared disallowed uses cannot be upgraded by a manifest-only pilot.",
+            "next_action": "keep action use blocked unless separately authorized by a future owner-approved process",
+            "must_not_claim": [
+              "legal_clearance",
+              "privacy_compliance",
+              "license_clearance",
+              "evaluation_cleanliness_proof",
+              "data_quality_guarantee",
+              "training_authorization",
+              "action_authorization"
+            ]
+          }
+        ],
+        "capsule_decision": "BLOCK_ACTION_USE",
+        "claim_boundary": {
+          "not_legal_opinion": true,
+          "not_privacy_audit": true,
+          "not_license_clearance": true,
+          "not_eval_clean_proof": true,
+          "not_data_quality_guarantee": true,
+          "no_training_authorization": true,
+          "no_action_authorization": true,
+          "raw_content_not_inspected": true
+        },
+        "feedback_memory": {
+          "entry_id": "datacapsule-feedback-702e722b4278",
+          "suggested_next_review": "review HOLD/BLOCK findings before any owner-consented second DataCapsule pilot run",
+          "unresolved_questions": [
+            "Manifest metadata has rights, privacy, evaluation-boundary, or staleness gaps.",
+            "Action use is blocked and declared disallowed uses cannot be upgraded by a manifest-only pilot."
+          ],
+          "known_limits": [
+            "local/offline manifest review only",
+            "raw content not inspected",
+            "no crawling or URL fetching",
+            "no upload or model training",
+            "not legal opinion",
+            "not privacy audit",
+            "not license clearance",
+            "not evaluation-cleanliness proof",
+            "no training or action authorization"
+          ]
+        },
+        "raw_content_inspected": false,
+        "external_network_used": false,
+        "crawler_used": false,
+        "data_uploaded": false,
+        "model_trained": false,
+        "external_api_used": false,
+        "github_api_used": false,
+        "token_printed": false,
+        "private_kernel_exposed": false,
+        "can_certify_rights": false,
+        "can_certify_privacy": false,
+        "can_certify_quality": false,
+        "can_prove_eval_cleanliness": false,
+        "can_authorize_training": false,
+        "can_authorize_action": false,
+        "second_run_update": {
+          "feedback_id": "pilot-feedback-sample-datacapsule-v0-1",
+          "classification": "ACCEPT_AS_FIXTURE_CANDIDATE",
+          "plan_status": "READY_FOR_LOCAL_SECOND_RUN",
+          "finding_updates": [
+            {
+              "finding_id": "datacapsule-pilot-finding-3",
+              "prior_explanation": "action-use BLOCK was already present",
+              "updated_explanation": "Second-run feedback added an explicit action-use denial fixture candidate while preserving the action-use BLOCK.",
+              "decision_changed": false
+            }
+          ],
+          "fixture_candidates": [
+            {
+              "fixture_id": "datacapsule-action-use-denial-candidate-v0-1",
+              "source_feedback_id": "pilot-feedback-sample-datacapsule-v0-1",
+              "purpose": "exercise explicit action-use denial while staying manifest-only",
+              "raw_data_included": false
+            }
+          ],
+          "negative_control_candidates": [],
+          "updated_next_actions": [
+            "keep second-run artifact local/offline",
+            "preserve claim boundaries",
+            "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+            "add action-use denial fixture to future DataCapsule local fixture corpus"
+          ],
+          "decision_upgrade_performed": false
+        }
+      },
+      "external_actions_performed": false,
+      "github_api_used": false,
+      "live_mcp_call_used": false,
+      "merge_deploy_publish_performed": false,
+      "upload_or_training_performed": false,
+      "external_action_authorized": false,
+      "certification_upgrade_detected": false,
+      "decision_upgrade_performed": false
+    }
+  ],
+  "deltas": [
+    {
+      "schema": "ResidualOps_SecondRunDelta/v0.1",
+      "delta_id": "roe15-delta-agentsec",
+      "generated_at": "2026-05-29T14:52:57.788047+00:00",
+      "vertical": "agentsec",
+      "prior_receipt_ref": "pilot_receipts/agentsec/AGENTSEC_PILOT_RECEIPT_SAMPLE.json",
+      "new_receipt_ref": "pilot_second_runs/ROE15_SECOND_RUN_RESULT_AGENTSEC.json",
+      "feedback_ref": "pilot-feedback-sample-agentsec-v0-1",
+      "changed_findings": [
+        {
+          "finding_id": "agentsec-pilot-finding-2",
+          "prior_explanation": "permission-scope finding needed a clearer manifest-only explanation",
+          "updated_explanation": "Second-run feedback clarified that permission-scope HOLD means metadata requires owner review before any use; it is not a security certification or live tool result.",
+          "decision_changed": false
+        }
+      ],
+      "unchanged_findings": [
+        "agentsec-pilot-finding-1",
+        "agentsec-pilot-finding-3"
+      ],
+      "added_fixtures": [],
+      "added_negative_control_candidates": [],
+      "updated_explanations": [
+        "Second-run feedback clarified that permission-scope HOLD means metadata requires owner review before any use; it is not a security certification or live tool result."
+      ],
+      "updated_next_actions": [
+        "keep second-run artifact local/offline",
+        "preserve claim boundaries",
+        "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+        "request owner-maintained permission scope notes for any real local pilot"
+      ],
+      "claim_boundary_changes": [],
+      "decision_changes": {
+        "allow_to_hold_count": 0,
+        "hold_to_allow_count": 0,
+        "hold_to_block_count": 0,
+        "block_to_hold_count": 0,
+        "block_to_allow_count": 0
+      },
+      "safety_rules": {
+        "no_block_to_allow_without_explicit_evidence": true,
+        "no_hold_to_allow_without_evidence": true,
+        "no_certification_upgrade": true,
+        "no_external_action_authorization": true
+      },
+      "unsafe_decision_upgrade_detected": false,
+      "certification_upgrade_detected": false,
+      "external_action_authorized": false
+    },
+    {
+      "schema": "ResidualOps_SecondRunDelta/v0.1",
+      "delta_id": "roe15-delta-qira",
+      "generated_at": "2026-05-29T14:52:57.790370+00:00",
+      "vertical": "qira",
+      "prior_receipt_ref": "pilot_receipts/qira/QIRA_PILOT_RECEIPT_SAMPLE.json",
+      "new_receipt_ref": "pilot_second_runs/ROE15_SECOND_RUN_RESULT_QIRA.json",
+      "feedback_ref": "pilot-feedback-sample-qira-v0-1",
+      "changed_findings": [
+        {
+          "finding_id": "qira-pilot-finding-2",
+          "prior_explanation": "CI evidence gap remained partial",
+          "updated_explanation": "Second-run feedback converted the CI evidence gap into an explicit request for a redacted local CI summary before any future receipt decision change.",
+          "decision_changed": false
+        }
+      ],
+      "unchanged_findings": [
+        "qira-pilot-finding-1",
+        "qira-pilot-finding-3"
+      ],
+      "added_fixtures": [],
+      "added_negative_control_candidates": [],
+      "updated_explanations": [
+        "Second-run feedback converted the CI evidence gap into an explicit request for a redacted local CI summary before any future receipt decision change."
+      ],
+      "updated_next_actions": [
+        "keep second-run artifact local/offline",
+        "preserve claim boundaries",
+        "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+        "request redacted local CI evidence before rerunning QIRA on an owner artifact"
+      ],
+      "claim_boundary_changes": [],
+      "decision_changes": {
+        "allow_to_hold_count": 0,
+        "hold_to_allow_count": 0,
+        "hold_to_block_count": 0,
+        "block_to_hold_count": 0,
+        "block_to_allow_count": 0
+      },
+      "safety_rules": {
+        "no_block_to_allow_without_explicit_evidence": true,
+        "no_hold_to_allow_without_evidence": true,
+        "no_certification_upgrade": true,
+        "no_external_action_authorization": true
+      },
+      "unsafe_decision_upgrade_detected": false,
+      "certification_upgrade_detected": false,
+      "external_action_authorized": false
+    },
+    {
+      "schema": "ResidualOps_SecondRunDelta/v0.1",
+      "delta_id": "roe15-delta-datacapsule",
+      "generated_at": "2026-05-29T14:52:57.792633+00:00",
+      "vertical": "datacapsule",
+      "prior_receipt_ref": "pilot_receipts/datacapsule/DATACAPSULE_PILOT_RECEIPT_SAMPLE.json",
+      "new_receipt_ref": "pilot_second_runs/ROE15_SECOND_RUN_RESULT_DATACAPSULE.json",
+      "feedback_ref": "pilot-feedback-sample-datacapsule-v0-1",
+      "changed_findings": [
+        {
+          "finding_id": "datacapsule-pilot-finding-3",
+          "prior_explanation": "action-use BLOCK was already present",
+          "updated_explanation": "Second-run feedback added an explicit action-use denial fixture candidate while preserving the action-use BLOCK.",
+          "decision_changed": false
+        }
+      ],
+      "unchanged_findings": [
+        "datacapsule-pilot-finding-1",
+        "datacapsule-pilot-finding-2"
+      ],
+      "added_fixtures": [
+        {
+          "fixture_id": "datacapsule-action-use-denial-candidate-v0-1",
+          "source_feedback_id": "pilot-feedback-sample-datacapsule-v0-1",
+          "purpose": "exercise explicit action-use denial while staying manifest-only",
+          "raw_data_included": false
+        }
+      ],
+      "added_negative_control_candidates": [],
+      "updated_explanations": [
+        "Second-run feedback added an explicit action-use denial fixture candidate while preserving the action-use BLOCK."
+      ],
+      "updated_next_actions": [
+        "keep second-run artifact local/offline",
+        "preserve claim boundaries",
+        "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+        "add action-use denial fixture to future DataCapsule local fixture corpus"
+      ],
+      "claim_boundary_changes": [],
+      "decision_changes": {
+        "allow_to_hold_count": 0,
+        "hold_to_allow_count": 0,
+        "hold_to_block_count": 0,
+        "block_to_hold_count": 0,
+        "block_to_allow_count": 0
+      },
+      "safety_rules": {
+        "no_block_to_allow_without_explicit_evidence": true,
+        "no_hold_to_allow_without_evidence": true,
+        "no_certification_upgrade": true,
+        "no_external_action_authorization": true
+      },
+      "unsafe_decision_upgrade_detected": false,
+      "certification_upgrade_detected": false,
+      "external_action_authorized": false
+    }
+  ],
+  "feedback_memory_update": {
+    "schema": "ResidualOps_SecondRunFeedbackMemory/v0.1",
+    "memory_update_id": "second-run-memory-roe15-local-sample-second-run-v0-1",
+    "second_run_id": "roe15-local-sample-second-run-v0-1",
+    "generated_at": "2026-05-29T14:52:57.794392+00:00",
+    "updated_entries": [
+      {
+        "feedback_id": "pilot-feedback-sample-agentsec-v0-1",
+        "vertical": "agentsec",
+        "prior_status": "pending",
+        "new_status": "incorporated",
+        "incorporation_summary": "Clarified the permission-scope explanation and kept the HOLD/BLOCK counts unchanged.",
+        "follow_up_actions": [
+          "keep second-run artifact local/offline",
+          "preserve claim boundaries",
+          "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+          "request owner-maintained permission scope notes for any real local pilot"
+        ],
+        "fixture_candidate_added": false,
+        "negative_control_candidate_added": false,
+        "claim_boundary_change_needed": false
+      },
+      {
+        "feedback_id": "pilot-feedback-sample-qira-v0-1",
+        "vertical": "qira",
+        "prior_status": "pending",
+        "new_status": "pending_with_followup",
+        "incorporation_summary": "Recorded the CI evidence request and kept release-side-effect BLOCK unchanged.",
+        "follow_up_actions": [
+          "keep second-run artifact local/offline",
+          "preserve claim boundaries",
+          "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+          "request redacted local CI evidence before rerunning QIRA on an owner artifact"
+        ],
+        "fixture_candidate_added": false,
+        "negative_control_candidate_added": false,
+        "claim_boundary_change_needed": false
+      },
+      {
+        "feedback_id": "pilot-feedback-sample-datacapsule-v0-1",
+        "vertical": "datacapsule",
+        "prior_status": "pending",
+        "new_status": "incorporated",
+        "incorporation_summary": "Added a fixture candidate for explicit action-use denial and kept action use blocked.",
+        "follow_up_actions": [
+          "keep second-run artifact local/offline",
+          "preserve claim boundaries",
+          "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+          "add action-use denial fixture to future DataCapsule local fixture corpus"
+        ],
+        "fixture_candidate_added": true,
+        "negative_control_candidate_added": false,
+        "claim_boundary_change_needed": false
+      }
+    ],
+    "portfolio_next_actions": [
+      "request owner artifact for a real local pilot",
+      "run real owner-consented local pilot only after redaction and consent checks",
+      "add second-run dashboard artifact pack",
+      "schedule third-run only if unresolved local evidence remains"
+    ],
+    "external_action_authorized": false
+  },
+  "claim_boundary": {
+    "not_external_pilot": true,
+    "not_security_certification": true,
+    "not_code_correctness_proof": true,
+    "not_legal_opinion": true,
+    "not_privacy_audit": true,
+    "not_license_clearance": true,
+    "not_eval_clean_proof": true,
+    "not_quality_guarantee": true,
+    "not_product_ready": true,
+    "no_external_action_authorization": true
+  },
+  "external_actions_performed": false,
+  "github_api_used": false,
+  "live_mcp_call_used": false,
+  "merge_deploy_publish_performed": false,
+  "upload_or_training_performed": false,
+  "token_printed": false,
+  "private_kernel_exposed": false
+}

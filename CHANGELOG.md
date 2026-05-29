@@ -1,5 +1,11 @@
 # Changelog
 
+## ROE-15
+
+- Added the first local/sample owner-consented second-run receipt packager across AgentSec, QIRA-Code ReleaseGate, and DataCapsule.
+- Added second-run receipt, vertical results, before/after deltas, feedback memory update, reviewer readout, redaction report, artifact index, schemas, docs, public outputs, and tests.
+- Preserved boundaries: no GitHub API calls, no issue/PR/comment creation, no clone/fetch/crawl, no live MCP/tool calls, no external repo mutation, no merge/deploy/publish action, no upload/training, no token handling, no unsafe BLOCK/HOLD-to-ALLOW upgrade, no private-kernel exposure, and no certification/proof/product-readiness/action-authorization claim.
+
 ## ROE-14
 
 - Added a local/offline pilot feedback form and second-run planning gate for the ROE-13 dry-run.

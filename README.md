@@ -97,6 +97,8 @@ ROE-13 adds the first owner-consented local/sample pilot dry-run. It routes ROE-
 
 ROE-14 adds a pilot feedback form and second-run planning gate. It converts local/offline reviewer feedback into feedback packets, deterministic classifications, second-run plans, feedback memory updates, reviewer readout, and gate results without executing second runs by default, calling GitHub APIs, creating issues or comments, cloning, fetching, crawling, running live MCP/tool calls, mutating repositories, posting, merge/deploy/publish action, upload, model training, token handling, private-kernel exposure, certification, proof, product-readiness claim, or action authorization.
 
+ROE-15 adds the first local/sample second-run receipt packager. It reuses ROE-14 feedback and local AgentSec/QIRA/DataCapsule sample receipts to generate updated second-run results, before/after deltas, feedback memory updates, artifact index, reviewer readout, redaction report, and gate result without GitHub APIs, external repositories, posting, merge/deploy/publish action, upload, model training, token handling, unsafe decision upgrades, private-kernel exposure, certification, proof, product-readiness claim, or action authorization.
+
 ## Quick Example
 
 Example objective request:

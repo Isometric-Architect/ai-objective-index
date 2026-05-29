@@ -1,0 +1,49 @@
+{
+  "schema": "ResidualOps_SecondRunDelta/v0.1",
+  "delta_id": "roe15-delta-agentsec",
+  "generated_at": "2026-05-29T14:52:57.788047+00:00",
+  "vertical": "agentsec",
+  "prior_receipt_ref": "pilot_receipts/agentsec/AGENTSEC_PILOT_RECEIPT_SAMPLE.json",
+  "new_receipt_ref": "pilot_second_runs/ROE15_SECOND_RUN_RESULT_AGENTSEC.json",
+  "feedback_ref": "pilot-feedback-sample-agentsec-v0-1",
+  "changed_findings": [
+    {
+      "finding_id": "agentsec-pilot-finding-2",
+      "prior_explanation": "permission-scope finding needed a clearer manifest-only explanation",
+      "updated_explanation": "Second-run feedback clarified that permission-scope HOLD means metadata requires owner review before any use; it is not a security certification or live tool result.",
+      "decision_changed": false
+    }
+  ],
+  "unchanged_findings": [
+    "agentsec-pilot-finding-1",
+    "agentsec-pilot-finding-3"
+  ],
+  "added_fixtures": [],
+  "added_negative_control_candidates": [],
+  "updated_explanations": [
+    "Second-run feedback clarified that permission-scope HOLD means metadata requires owner review before any use; it is not a security certification or live tool result."
+  ],
+  "updated_next_actions": [
+    "keep second-run artifact local/offline",
+    "preserve claim boundaries",
+    "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+    "request owner-maintained permission scope notes for any real local pilot"
+  ],
+  "claim_boundary_changes": [],
+  "decision_changes": {
+    "allow_to_hold_count": 0,
+    "hold_to_allow_count": 0,
+    "hold_to_block_count": 0,
+    "block_to_hold_count": 0,
+    "block_to_allow_count": 0
+  },
+  "safety_rules": {
+    "no_block_to_allow_without_explicit_evidence": true,
+    "no_hold_to_allow_without_evidence": true,
+    "no_certification_upgrade": true,
+    "no_external_action_authorization": true
+  },
+  "unsafe_decision_upgrade_detected": false,
+  "certification_upgrade_detected": false,
+  "external_action_authorized": false
+}

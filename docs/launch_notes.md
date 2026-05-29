@@ -1,5 +1,9 @@
 # Launch Notes
 
+## ROE-15 Local Second-Run Receipt Packager
+
+ROE-15 executes a local/sample second-run from ROE-14 feedback and second-run plans. It updates explanations, evidence requests, fixture candidates, feedback memory, before/after deltas, reviewer readout, redaction report, artifact index, and gate result. It does not call GitHub APIs, create issues or comments, clone, fetch URLs, crawl, run live MCP/tool calls, mutate external repos, post, merge, deploy, publish, upload data, train models, handle tokens, expose private kernels, perform unsafe decision upgrades, certify security, prove correctness, prove legal/privacy/license/evaluation status, guarantee quality, claim product readiness, or authorize external actions.
+
 ## ROE-14 Pilot Feedback and Second-Run Gate
 
 ROE-14 adds a local/offline feedback form and second-run planning gate for the ROE-13 dry-run. It converts reviewer feedback into packets, classifications, second-run plans, feedback memory updates, reviewer readout, redaction report, and gate result. It does not execute a second run by default, call GitHub APIs, create issues or comments, clone, fetch URLs, crawl, run live MCP/tool calls, mutate external repos, post, merge, deploy, publish, upload data, train models, handle tokens, expose private kernels, certify security, prove correctness, prove legal/privacy/license/evaluation status, guarantee quality, claim product readiness, or authorize external actions.

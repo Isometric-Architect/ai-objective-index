@@ -1,0 +1,209 @@
+{
+  "schema": "ResidualOps_SecondRunVerticalResult/v0.1",
+  "second_run_id": "roe15-local-sample-second-run-v0-1",
+  "vertical": "agentsec",
+  "feedback_id": "pilot-feedback-sample-agentsec-v0-1",
+  "classification": "ACCEPT_AS_FIXTURE_CANDIDATE",
+  "plan_status": "READY_FOR_LOCAL_SECOND_RUN",
+  "prior_receipt_ref": "pilot_receipts/agentsec/AGENTSEC_PILOT_RECEIPT_SAMPLE.json",
+  "new_receipt_ref": "pilot_second_runs/ROE15_SECOND_RUN_RESULT_AGENTSEC.json",
+  "prior_decision_summary": {
+    "allow_count": 1,
+    "hold_count": 1,
+    "block_count": 1
+  },
+  "new_decision_summary": {
+    "allow_count": 1,
+    "hold_count": 1,
+    "block_count": 1
+  },
+  "primary_decision": "BLOCK_FORBIDDEN_ACTION",
+  "finding_updates": [
+    {
+      "finding_id": "agentsec-pilot-finding-2",
+      "prior_explanation": "permission-scope finding needed a clearer manifest-only explanation",
+      "updated_explanation": "Second-run feedback clarified that permission-scope HOLD means metadata requires owner review before any use; it is not a security certification or live tool result.",
+      "decision_changed": false
+    }
+  ],
+  "unchanged_findings": [
+    "agentsec-pilot-finding-1",
+    "agentsec-pilot-finding-3"
+  ],
+  "fixture_candidates": [],
+  "negative_control_candidates": [],
+  "claim_boundary_changes": [],
+  "updated_next_actions": [
+    "keep second-run artifact local/offline",
+    "preserve claim boundaries",
+    "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+    "request owner-maintained permission scope notes for any real local pilot"
+  ],
+  "incorporation_summary": "Clarified the permission-scope explanation and kept the HOLD/BLOCK counts unchanged.",
+  "requires_followup": false,
+  "updated_receipt": {
+    "schema": "ResidualOps_AgentSecPilotReceipt/v0.1",
+    "pilot_id": "agentsec-pilot-f996a7a69524",
+    "generated_at": "2026-05-29T14:52:41.369130+00:00",
+    "project_label": "AgentSec sample pilot",
+    "repo_url": "",
+    "owner_consent": {
+      "status": "sample_fixture",
+      "evidence_note": "sample/local owner consent metadata only"
+    },
+    "input_manifest": {
+      "source_type": "fixture",
+      "path_or_id": "agentsec-public-safe-sample-fixture",
+      "hash": "dc04c66c644da2a1e7e82926c348c7292e34017d4b549408d12d404d04d9283f"
+    },
+    "review_scope": {
+      "manifest_only": true,
+      "live_tool_execution": false,
+      "live_mcp_call": false,
+      "github_api_call": false,
+      "external_network": false
+    },
+    "packet_summary": {
+      "manifest_count": 3,
+      "tool_count": 3,
+      "permission_count": 2,
+      "hidden_instruction_findings": 0,
+      "namespace_findings": 0,
+      "unsupported_claim_findings": 0,
+      "forbidden_action_findings": 1
+    },
+    "decision_summary": {
+      "allow_count": 1,
+      "hold_count": 1,
+      "block_count": 1,
+      "top_hold_reasons": [
+        "fixture.local/checkout-action-helper: policy holds network_access",
+        "fixture.local/repo-file-review-helper: policy holds file_access"
+      ],
+      "top_block_reasons": [
+        "fixture.local/checkout-action-helper: forbidden action language"
+      ]
+    },
+    "findings": [
+      {
+        "finding_id": "agentsec-pilot-finding-1",
+        "severity": "info",
+        "decision": "ALLOW",
+        "category": "unknown",
+        "evidence_ref": "agentsec-public-safe-sample-fixture#0",
+        "explanation": "metadata-only scan found no blocking indicators; this is still not verification",
+        "next_action": "keep as metadata-only candidate",
+        "must_not_claim": [
+          "verification status",
+          "tool safety guarantee",
+          "security certification",
+          "quality guarantee",
+          "production readiness",
+          "compliance audit",
+          "live security scan",
+          "external action authorization"
+        ]
+      },
+      {
+        "finding_id": "agentsec-pilot-finding-2",
+        "severity": "medium",
+        "decision": "HOLD",
+        "category": "permission_scope",
+        "evidence_ref": "agentsec-public-safe-sample-fixture#1",
+        "explanation": "fixture.local/repo-file-review-helper: policy holds file_access",
+        "next_action": "review metadata before use",
+        "must_not_claim": [
+          "verification status",
+          "tool safety guarantee",
+          "security certification",
+          "quality guarantee",
+          "production readiness",
+          "compliance audit",
+          "live security scan",
+          "external action authorization"
+        ]
+      },
+      {
+        "finding_id": "agentsec-pilot-finding-3",
+        "severity": "high",
+        "decision": "BLOCK",
+        "category": "forbidden_action",
+        "evidence_ref": "agentsec-public-safe-sample-fixture#2",
+        "explanation": "fixture.local/checkout-action-helper: forbidden action language",
+        "next_action": "remove or justify blocked manifest language",
+        "must_not_claim": [
+          "verification status",
+          "tool safety guarantee",
+          "security certification",
+          "quality guarantee",
+          "production readiness",
+          "compliance audit",
+          "live security scan",
+          "external action authorization"
+        ]
+      }
+    ],
+    "claim_boundary": {
+      "not_security_certification": true,
+      "not_quality_guarantee": true,
+      "not_compliance_audit": true,
+      "no_live_execution": true,
+      "no_external_action_authorization": true
+    },
+    "feedback_memory": {
+      "entry_id": "agentsec-feedback-f996a7a69524",
+      "suggested_next_review": "review HOLD/BLOCK findings before any second owner-consented pilot run",
+      "unresolved_questions": [
+        "fixture.local/checkout-action-helper: policy holds network_access",
+        "fixture.local/repo-file-review-helper: policy holds file_access",
+        "fixture.local/checkout-action-helper: forbidden action language"
+      ],
+      "known_limits": [
+        "local/offline manifest review only",
+        "no live MCP call",
+        "no external tool execution",
+        "not security certification",
+        "not quality guarantee",
+        "not compliance audit",
+        "not action authorization"
+      ]
+    },
+    "external_actions_performed": false,
+    "workflow_enabled": false,
+    "github_api_used": false,
+    "live_mcp_called": false,
+    "external_tool_executed": false,
+    "token_printed": false,
+    "private_kernel_exposed": false,
+    "second_run_update": {
+      "feedback_id": "pilot-feedback-sample-agentsec-v0-1",
+      "classification": "ACCEPT_AS_FIXTURE_CANDIDATE",
+      "plan_status": "READY_FOR_LOCAL_SECOND_RUN",
+      "finding_updates": [
+        {
+          "finding_id": "agentsec-pilot-finding-2",
+          "prior_explanation": "permission-scope finding needed a clearer manifest-only explanation",
+          "updated_explanation": "Second-run feedback clarified that permission-scope HOLD means metadata requires owner review before any use; it is not a security certification or live tool result.",
+          "decision_changed": false
+        }
+      ],
+      "fixture_candidates": [],
+      "negative_control_candidates": [],
+      "updated_next_actions": [
+        "keep second-run artifact local/offline",
+        "preserve claim boundaries",
+        "do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs",
+        "request owner-maintained permission scope notes for any real local pilot"
+      ],
+      "decision_upgrade_performed": false
+    }
+  },
+  "external_actions_performed": false,
+  "github_api_used": false,
+  "live_mcp_call_used": false,
+  "merge_deploy_publish_performed": false,
+  "upload_or_training_performed": false,
+  "external_action_authorized": false,
+  "certification_upgrade_detected": false,
+  "decision_upgrade_performed": false
+}

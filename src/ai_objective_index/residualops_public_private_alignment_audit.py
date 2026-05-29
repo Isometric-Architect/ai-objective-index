@@ -30,6 +30,7 @@ SCAN_PATHS = [
     Path("public_launch") / "roe7",
     Path("public_launch") / "roe8",
     Path("public_launch") / "roe9",
+    Path("public_launch") / "roe10",
 ]
 
 RISKY_PATTERNS = [

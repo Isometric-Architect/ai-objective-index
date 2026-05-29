@@ -1,0 +1,103 @@
+{
+  "schema": "ResidualOps_ROE10DataCapsulePilotGate/v0.1",
+  "generated_at": "2026-05-29T11:06:20.916840+00:00",
+  "decision": "PASS_FIRST_DATACAPSULE_PILOT_RECEIPT_READY",
+  "pilot_id": "datacapsule-pilot-f13cbbb5bb96",
+  "capsule_decision": "BLOCK_ACTION_USE",
+  "redaction_decision": "PASS_REDACTED",
+  "feedback_status": "pending",
+  "artifact_count": 10,
+  "missing_artifacts": [],
+  "artifacts": [
+    {
+      "path": "pilot_receipts/datacapsule/DATACAPSULE_CORPUS_MANIFEST_SAMPLE.json",
+      "role": "corpus_manifest",
+      "exists": true,
+      "size_bytes": 1134,
+      "sha256": "77a40a46f4484e6a43a0ed0a7aab136f501a09e1397a23c161a320007dc62097"
+    },
+    {
+      "path": "pilot_receipts/datacapsule/DATACAPSULE_SOURCE_RIGHTS_SUMMARY_SAMPLE.json",
+      "role": "source_rights_summary",
+      "exists": true,
+      "size_bytes": 954,
+      "sha256": "20471a9ad8f1288836dff5cc76b63a8662eb173ee1579c2e8aa7d047dfd9b975"
+    },
+    {
+      "path": "pilot_receipts/datacapsule/DATACAPSULE_PRIVACY_RISK_SUMMARY_SAMPLE.json",
+      "role": "privacy_risk_summary",
+      "exists": true,
+      "size_bytes": 764,
+      "sha256": "f9d1f9ae47d96ad93aeefdb72dc4d69851e935e042ec2b9b5d6ece9cf851f448"
+    },
+    {
+      "path": "pilot_receipts/datacapsule/DATACAPSULE_EVAL_LEAKAGE_SUMMARY_SAMPLE.json",
+      "role": "eval_leakage_summary",
+      "exists": true,
+      "size_bytes": 754,
+      "sha256": "395b8de098a9656642eacc7db7268e8bfa258cf220f1dad02d9bf33c72838bdb"
+    },
+    {
+      "path": "pilot_receipts/datacapsule/DATACAPSULE_USE_BOUNDARY_SAMPLE.json",
+      "role": "use_boundary",
+      "exists": true,
+      "size_bytes": 1177,
+      "sha256": "35729b46598e511fbe0ec489bdbfb967f3a6e81e89a363708e53de7225d24634"
+    },
+    {
+      "path": "pilot_receipts/datacapsule/DATACAPSULE_PILOT_RECEIPT_SAMPLE.json",
+      "role": "pilot_receipt",
+      "exists": true,
+      "size_bytes": 9478,
+      "sha256": "63a4bd8b2fc67164001b4403f3b380d205d02481fdef91c7e30006bd1263e2e0"
+    },
+    {
+      "path": "pilot_receipts/datacapsule/DATACAPSULE_REVIEWER_READOUT.md",
+      "role": "reviewer_readout",
+      "exists": true,
+      "size_bytes": 2194,
+      "sha256": "5fff1294611408b35d3bea77678ff6335d9328d03d73fc58e7f43a10252e145a"
+    },
+    {
+      "path": "pilot_receipts/datacapsule/DATACAPSULE_PILOT_REDACTION_REPORT.json",
+      "role": "redaction_report",
+      "exists": true,
+      "size_bytes": 375,
+      "sha256": "98f00686d694da399ea0022f55bd3a96d8f3c6ca718e457eba3772a4a1be32c6"
+    },
+    {
+      "path": "pilot_receipts/datacapsule/DATACAPSULE_PILOT_FEEDBACK_MEMORY_ENTRY.json",
+      "role": "feedback_memory_entry",
+      "exists": true,
+      "size_bytes": 1103,
+      "sha256": "1f71678e198f08c8f3cdf4d88cabee62ccea9c45224fa2a1709a88fe650ab73d"
+    },
+    {
+      "path": "pilot_receipts/datacapsule/DATACAPSULE_PILOT_KNOWN_LIMITS.md",
+      "role": "known_limits",
+      "exists": true,
+      "size_bytes": 436,
+      "sha256": "9b4f0365dd1a547ddced189b8d3e7e6ce844ba37995fdc326b54b82ca16437c6"
+    }
+  ],
+  "claim_finding_count": 0,
+  "claim_findings": [],
+  "raw_content_inspected": false,
+  "external_network_used": false,
+  "crawler_used": false,
+  "data_uploaded": false,
+  "model_trained": false,
+  "external_api_used": false,
+  "github_api_used": false,
+  "data_trained": false,
+  "review_comment_posted": false,
+  "community_post_performed": false,
+  "token_printed": false,
+  "private_kernel_exposed": false,
+  "can_certify_rights": false,
+  "can_certify_privacy": false,
+  "can_certify_quality": false,
+  "can_prove_eval_cleanliness": false,
+  "can_authorize_training": false,
+  "can_authorize_action": false
+}

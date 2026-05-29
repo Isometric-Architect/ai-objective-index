@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/portfolio/datacapsule_pilot_receipt.schema.json",
+  "title": "DataCapsule Pilot Receipt",
+  "type": "object",
+  "required": ["schema", "pilot_id", "corpus_manifest", "source_rights_summary", "privacy_risk_summary", "eval_leakage_summary", "use_boundary", "decision_summary", "findings", "capsule_decision", "claim_boundary"],
+  "properties": {
+    "schema": { "const": "ResidualOps_DataCapsulePilotReceipt/v0.1" },
+    "pilot_id": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "corpus_manifest": { "type": "object" },
+    "source_rights_summary": { "type": "object" },
+    "privacy_risk_summary": { "type": "object" },
+    "eval_leakage_summary": { "type": "object" },
+    "use_boundary": { "type": "object" },
+    "decision_summary": { "type": "object" },
+    "findings": { "type": "array", "items": { "type": "object" } },
+    "capsule_decision": { "type": "string" },
+    "claim_boundary": { "type": "object" },
+    "feedback_memory": { "type": "object" }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schema": "ResidualOps_DataCapsuleFeedbackMemory/v0.1",
+  "pilot_id": "datacapsule-pilot-f13cbbb5bb96",
+  "feedback_status": "pending",
+  "reviewer_type": "unknown",
+  "issue_categories": [
+    "act_boundary",
+    "license_gap",
+    "retrieve_boundary"
+  ],
+  "follow_up_actions": [
+    "review HOLD/BLOCK findings with data owner or data steward",
+    "request license, terms, privacy, consent, and split-policy evidence",
+    "add public-safe fixture only if the pattern is generic and non-secret",
+    "keep private calibration outside the public repository"
+  ],
+  "should_update_manifest_schema": true,
+  "should_add_negative_control": true,
+  "should_add_fixture": true,
+  "should_change_claim_boundary": false,
+  "should_request_license_evidence": true,
+  "should_request_privacy_evidence": true,
+  "should_request_eval_split_evidence": true,
+  "timestamp": "2026-05-29T11:06:13.312627+00:00",
+  "external_posting_performed": false,
+  "external_network_used": false,
+  "token_printed": false,
+  "can_authorize_training": false,
+  "can_authorize_action": false
+}

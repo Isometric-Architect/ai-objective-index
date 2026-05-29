@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/portfolio/datacapsule_privacy_risk_summary.schema.json",
+  "title": "DataCapsule Privacy Risk Summary",
+  "type": "object",
+  "required": ["schema", "summary_id", "manifest_id", "pii_declared", "privacy_status", "missing_fields", "warnings", "must_not_claim"],
+  "properties": {
+    "schema": { "const": "ResidualOps_DataCapsulePrivacyRiskSummary/v0.1" },
+    "summary_id": { "type": "string" },
+    "manifest_id": { "type": "string" },
+    "pii_declared": { "type": "string" },
+    "sensitive_data_declared": { "type": "string" },
+    "deidentification_declared": { "type": "string" },
+    "consent_declared": { "type": "string" },
+    "privacy_status": { "type": "string" },
+    "missing_fields": { "type": "array", "items": { "type": "string" } },
+    "warnings": { "type": "array", "items": { "type": "string" } },
+    "must_not_claim": { "type": "array", "items": { "type": "string" } }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/portfolio/datacapsule_eval_leakage_summary.schema.json",
+  "title": "DataCapsule Eval Leakage Summary",
+  "type": "object",
+  "required": ["schema", "summary_id", "manifest_id", "eval_overlap_declared", "leakage_status", "missing_fields", "warnings", "must_not_claim"],
+  "properties": {
+    "schema": { "const": "ResidualOps_DataCapsuleEvalLeakageSummary/v0.1" },
+    "summary_id": { "type": "string" },
+    "manifest_id": { "type": "string" },
+    "eval_overlap_declared": { "type": "string" },
+    "benchmark_contamination_declared": { "type": "string" },
+    "split_policy_declared": { "type": "string" },
+    "leakage_status": { "type": "string" },
+    "missing_fields": { "type": "array", "items": { "type": "string" } },
+    "warnings": { "type": "array", "items": { "type": "string" } },
+    "must_not_claim": { "type": "array", "items": { "type": "string" } }
+  }
+}

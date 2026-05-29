@@ -1,0 +1,40 @@
+{
+  "schema": "ResidualOps_DataCapsuleUseBoundary/v0.1",
+  "boundary_id": "datacapsule-boundary-11a080e0e30d",
+  "manifest_id": "datacapsule-manifest-3b8b4b5d9e88",
+  "train_use": "HOLD",
+  "retrieve_use": "ALLOW",
+  "evaluate_use": "HOLD",
+  "share_use": "HOLD",
+  "act_use": "BLOCK",
+  "commercial_use": "HOLD",
+  "reasons": [
+    "Manifest has rights, privacy, or evaluation-boundary uncertainty.",
+    "Action use defaults to BLOCK without separate action authorization."
+  ],
+  "blocked_uses": [
+    "act"
+  ],
+  "hold_uses": [
+    "train",
+    "evaluate",
+    "share",
+    "commercial"
+  ],
+  "next_actions": [
+    "request license and terms evidence",
+    "request privacy and consent evidence",
+    "request train/eval split or overlap evidence",
+    "keep action use blocked unless separately authorized"
+  ],
+  "claim_ceiling": "manifest-only use boundary; not legal/privacy/license/evaluation proof",
+  "must_not_claim": [
+    "legal_clearance",
+    "privacy_compliance",
+    "license_clearance",
+    "evaluation_cleanliness_proof",
+    "data_quality_guarantee",
+    "training_authorization",
+    "action_authorization"
+  ]
+}

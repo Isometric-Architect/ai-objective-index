@@ -1,0 +1,36 @@
+{
+  "schema": "ResidualOps_DataCapsuleCorpusManifest/v0.1",
+  "manifest_id": "datacapsule-manifest-3b8b4b5d9e88",
+  "generated_at": "2026-05-29T11:06:13.310402+00:00",
+  "corpus_label": "DataCapsule local sample corpus",
+  "owner_consent": {
+    "status": "sample_fixture",
+    "evidence_note": "manifest metadata supplied locally; no external owner contacted"
+  },
+  "source_type": "sample_fixture",
+  "data_categories": [
+    "text",
+    "metadata"
+  ],
+  "declared_sources": [
+    "repository-local sample manifest"
+  ],
+  "declared_license": "unknown",
+  "declared_terms": "unknown",
+  "declared_collection_method": "unknown",
+  "declared_update_date": "unknown",
+  "declared_pii_status": "unknown",
+  "declared_eval_overlap_status": "unknown",
+  "declared_allowed_uses": [
+    "retrieve"
+  ],
+  "declared_disallowed_uses": [
+    "act"
+  ],
+  "declared_retention_policy": "unknown",
+  "declared_share_policy": "unknown",
+  "local_manifest_only": true,
+  "raw_content_inspected": false,
+  "external_network_used": false,
+  "claim_ceiling": "local/offline corpus manifest review artifact only"
+}

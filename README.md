@@ -87,6 +87,8 @@ ROE-8 adds the first AgentSec pilot receipt packager. It packages a local/offlin
 
 ROE-9 adds the first QIRA-Code ReleaseGate pilot receipt packager. It packages a local/offline code-change review into task packet, patch classification, behavior contract, CI evidence summary, reviewer readout, receipt, feedback memory, and gate artifacts without GitHub API calls, external repository mutation, PR comments, merge, deploy, package publish, token handling, correctness proof, security certification, or quality guarantee.
 
+ROE-10 adds the first DataCapsule pilot receipt packager. It packages a local/offline corpus manifest review into source/rights, privacy-risk, evaluation-boundary, use-boundary, reviewer readout, receipt, feedback memory, and gate artifacts without crawling, fetching URLs, inspecting raw private content, uploading data, training models, calling external APIs, token handling, legal/privacy/license/evaluation-cleanliness proof, training authorization, or action authorization.
+
 ## Quick Example
 
 Example objective request:

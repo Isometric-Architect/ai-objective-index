@@ -1,0 +1,276 @@
+{
+  "schema": "ResidualOps_DataCapsulePilotReceipt/v0.1",
+  "pilot_id": "datacapsule-pilot-f13cbbb5bb96",
+  "generated_at": "2026-05-29T11:06:13.310781+00:00",
+  "corpus_manifest": {
+    "schema": "ResidualOps_DataCapsuleCorpusManifest/v0.1",
+    "manifest_id": "datacapsule-manifest-3b8b4b5d9e88",
+    "generated_at": "2026-05-29T11:06:13.310402+00:00",
+    "corpus_label": "DataCapsule local sample corpus",
+    "owner_consent": {
+      "status": "sample_fixture",
+      "evidence_note": "manifest metadata supplied locally; no external owner contacted"
+    },
+    "source_type": "sample_fixture",
+    "data_categories": [
+      "text",
+      "metadata"
+    ],
+    "declared_sources": [
+      "repository-local sample manifest"
+    ],
+    "declared_license": "unknown",
+    "declared_terms": "unknown",
+    "declared_collection_method": "unknown",
+    "declared_update_date": "unknown",
+    "declared_pii_status": "unknown",
+    "declared_eval_overlap_status": "unknown",
+    "declared_allowed_uses": [
+      "retrieve"
+    ],
+    "declared_disallowed_uses": [
+      "act"
+    ],
+    "declared_retention_policy": "unknown",
+    "declared_share_policy": "unknown",
+    "local_manifest_only": true,
+    "raw_content_inspected": false,
+    "external_network_used": false,
+    "claim_ceiling": "local/offline corpus manifest review artifact only"
+  },
+  "source_rights_summary": {
+    "schema": "ResidualOps_DataCapsuleSourceRightsSummary/v0.1",
+    "summary_id": "datacapsule-rights-2d6fdbdb37f3",
+    "manifest_id": "datacapsule-manifest-3b8b4b5d9e88",
+    "license_found": false,
+    "terms_found": false,
+    "source_attribution_found": true,
+    "collection_method_found": false,
+    "redistribution_allowed_declared": null,
+    "training_allowed_declared": null,
+    "retrieval_allowed_declared": true,
+    "evaluation_allowed_declared": null,
+    "commercial_use_declared": null,
+    "rights_status": "HOLD_LICENSE_MISSING",
+    "missing_fields": [
+      "declared_license",
+      "declared_terms",
+      "declared_collection_method"
+    ],
+    "warnings": [
+      "License field is missing or unknown."
+    ],
+    "must_not_claim": [
+      "legal_clearance",
+      "privacy_compliance",
+      "license_clearance",
+      "evaluation_cleanliness_proof",
+      "data_quality_guarantee",
+      "training_authorization",
+      "action_authorization"
+    ]
+  },
+  "privacy_risk_summary": {
+    "schema": "ResidualOps_DataCapsulePrivacyRiskSummary/v0.1",
+    "summary_id": "datacapsule-privacy-2d6fdbdb37f3",
+    "manifest_id": "datacapsule-manifest-3b8b4b5d9e88",
+    "pii_declared": "unknown",
+    "sensitive_data_declared": "unknown",
+    "deidentification_declared": "unknown",
+    "consent_declared": "unknown",
+    "privacy_status": "HOLD_PII_UNKNOWN",
+    "missing_fields": [
+      "declared_pii_status",
+      "declared_retention_policy"
+    ],
+    "warnings": [
+      "PII status is unknown from manifest metadata."
+    ],
+    "must_not_claim": [
+      "legal_clearance",
+      "privacy_compliance",
+      "license_clearance",
+      "evaluation_cleanliness_proof",
+      "data_quality_guarantee",
+      "training_authorization",
+      "action_authorization"
+    ]
+  },
+  "eval_leakage_summary": {
+    "schema": "ResidualOps_DataCapsuleEvalLeakageSummary/v0.1",
+    "summary_id": "datacapsule-eval-2d6fdbdb37f3",
+    "manifest_id": "datacapsule-manifest-3b8b4b5d9e88",
+    "eval_overlap_declared": "unknown",
+    "benchmark_contamination_declared": "unknown",
+    "split_policy_declared": "unknown",
+    "leakage_status": "HOLD_EVAL_OVERLAP_UNKNOWN",
+    "missing_fields": [
+      "declared_eval_overlap_status",
+      "split_policy"
+    ],
+    "warnings": [
+      "Evaluation overlap is unknown from manifest metadata."
+    ],
+    "must_not_claim": [
+      "legal_clearance",
+      "privacy_compliance",
+      "license_clearance",
+      "evaluation_cleanliness_proof",
+      "data_quality_guarantee",
+      "training_authorization",
+      "action_authorization"
+    ]
+  },
+  "use_boundary": {
+    "schema": "ResidualOps_DataCapsuleUseBoundary/v0.1",
+    "boundary_id": "datacapsule-boundary-11a080e0e30d",
+    "manifest_id": "datacapsule-manifest-3b8b4b5d9e88",
+    "train_use": "HOLD",
+    "retrieve_use": "ALLOW",
+    "evaluate_use": "HOLD",
+    "share_use": "HOLD",
+    "act_use": "BLOCK",
+    "commercial_use": "HOLD",
+    "reasons": [
+      "Manifest has rights, privacy, or evaluation-boundary uncertainty.",
+      "Action use defaults to BLOCK without separate action authorization."
+    ],
+    "blocked_uses": [
+      "act"
+    ],
+    "hold_uses": [
+      "train",
+      "evaluate",
+      "share",
+      "commercial"
+    ],
+    "next_actions": [
+      "request license and terms evidence",
+      "request privacy and consent evidence",
+      "request train/eval split or overlap evidence",
+      "keep action use blocked unless separately authorized"
+    ],
+    "claim_ceiling": "manifest-only use boundary; not legal/privacy/license/evaluation proof",
+    "must_not_claim": [
+      "legal_clearance",
+      "privacy_compliance",
+      "license_clearance",
+      "evaluation_cleanliness_proof",
+      "data_quality_guarantee",
+      "training_authorization",
+      "action_authorization"
+    ]
+  },
+  "decision_summary": {
+    "allow_count": 1,
+    "hold_count": 1,
+    "block_count": 1,
+    "top_hold_reasons": [
+      "Manifest metadata has rights, privacy, evaluation-boundary, or staleness gaps."
+    ],
+    "top_block_reasons": [
+      "Action use is blocked and declared disallowed uses cannot be upgraded by a manifest-only pilot."
+    ]
+  },
+  "findings": [
+    {
+      "finding_id": "datacapsule-pilot-finding-1",
+      "severity": "info",
+      "decision": "ALLOW",
+      "category": "retrieve_boundary",
+      "evidence_ref": "corpus_manifest#declared_allowed_uses",
+      "explanation": "Manifest review artifact can record declared retrieval use as a local metadata signal.",
+      "next_action": "keep as manifest-only review evidence",
+      "must_not_claim": [
+        "legal_clearance",
+        "privacy_compliance",
+        "license_clearance",
+        "evaluation_cleanliness_proof",
+        "data_quality_guarantee",
+        "training_authorization",
+        "action_authorization"
+      ]
+    },
+    {
+      "finding_id": "datacapsule-pilot-finding-2",
+      "severity": "medium",
+      "decision": "HOLD",
+      "category": "license_gap",
+      "evidence_ref": "corpus_manifest#missing_fields",
+      "explanation": "Manifest metadata has rights, privacy, evaluation-boundary, or staleness gaps.",
+      "next_action": "request license, terms, privacy, consent, split-policy, and update-date evidence",
+      "must_not_claim": [
+        "legal_clearance",
+        "privacy_compliance",
+        "license_clearance",
+        "evaluation_cleanliness_proof",
+        "data_quality_guarantee",
+        "training_authorization",
+        "action_authorization"
+      ]
+    },
+    {
+      "finding_id": "datacapsule-pilot-finding-3",
+      "severity": "high",
+      "decision": "BLOCK",
+      "category": "act_boundary",
+      "evidence_ref": "use_boundary#blocked_uses",
+      "explanation": "Action use is blocked and declared disallowed uses cannot be upgraded by a manifest-only pilot.",
+      "next_action": "keep action use blocked unless separately authorized by a future owner-approved process",
+      "must_not_claim": [
+        "legal_clearance",
+        "privacy_compliance",
+        "license_clearance",
+        "evaluation_cleanliness_proof",
+        "data_quality_guarantee",
+        "training_authorization",
+        "action_authorization"
+      ]
+    }
+  ],
+  "capsule_decision": "BLOCK_ACTION_USE",
+  "claim_boundary": {
+    "not_legal_opinion": true,
+    "not_privacy_audit": true,
+    "not_license_clearance": true,
+    "not_eval_clean_proof": true,
+    "not_data_quality_guarantee": true,
+    "no_training_authorization": true,
+    "no_action_authorization": true,
+    "raw_content_not_inspected": true
+  },
+  "feedback_memory": {
+    "entry_id": "datacapsule-feedback-f13cbbb5bb96",
+    "suggested_next_review": "review HOLD/BLOCK findings before any owner-consented second DataCapsule pilot run",
+    "unresolved_questions": [
+      "Manifest metadata has rights, privacy, evaluation-boundary, or staleness gaps.",
+      "Action use is blocked and declared disallowed uses cannot be upgraded by a manifest-only pilot."
+    ],
+    "known_limits": [
+      "local/offline manifest review only",
+      "raw content not inspected",
+      "no crawling or URL fetching",
+      "no upload or model training",
+      "not legal opinion",
+      "not privacy audit",
+      "not license clearance",
+      "not evaluation-cleanliness proof",
+      "no training or action authorization"
+    ]
+  },
+  "raw_content_inspected": false,
+  "external_network_used": false,
+  "crawler_used": false,
+  "data_uploaded": false,
+  "model_trained": false,
+  "external_api_used": false,
+  "github_api_used": false,
+  "token_printed": false,
+  "private_kernel_exposed": false,
+  "can_certify_rights": false,
+  "can_certify_privacy": false,
+  "can_certify_quality": false,
+  "can_prove_eval_cleanliness": false,
+  "can_authorize_training": false,
+  "can_authorize_action": false
+}

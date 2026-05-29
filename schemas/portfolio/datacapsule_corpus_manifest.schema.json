@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/portfolio/datacapsule_corpus_manifest.schema.json",
+  "title": "DataCapsule Corpus Manifest",
+  "type": "object",
+  "required": ["schema", "manifest_id", "corpus_label", "owner_consent", "source_type", "local_manifest_only", "raw_content_inspected", "external_network_used"],
+  "properties": {
+    "schema": { "const": "ResidualOps_DataCapsuleCorpusManifest/v0.1" },
+    "manifest_id": { "type": "string" },
+    "corpus_label": { "type": "string" },
+    "owner_consent": { "type": "object" },
+    "source_type": { "type": "string" },
+    "data_categories": { "type": "array", "items": { "type": "string" } },
+    "declared_sources": { "type": "array", "items": { "type": "string" } },
+    "declared_license": { "type": "string" },
+    "declared_terms": { "type": "string" },
+    "declared_pii_status": { "type": "string" },
+    "declared_eval_overlap_status": { "type": "string" },
+    "local_manifest_only": { "type": "boolean" },
+    "raw_content_inspected": { "type": "boolean" },
+    "external_network_used": { "type": "boolean" }
+  }
+}

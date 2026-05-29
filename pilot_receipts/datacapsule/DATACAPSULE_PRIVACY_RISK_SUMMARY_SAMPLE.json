@@ -1,0 +1,26 @@
+{
+  "schema": "ResidualOps_DataCapsulePrivacyRiskSummary/v0.1",
+  "summary_id": "datacapsule-privacy-2d6fdbdb37f3",
+  "manifest_id": "datacapsule-manifest-3b8b4b5d9e88",
+  "pii_declared": "unknown",
+  "sensitive_data_declared": "unknown",
+  "deidentification_declared": "unknown",
+  "consent_declared": "unknown",
+  "privacy_status": "HOLD_PII_UNKNOWN",
+  "missing_fields": [
+    "declared_pii_status",
+    "declared_retention_policy"
+  ],
+  "warnings": [
+    "PII status is unknown from manifest metadata."
+  ],
+  "must_not_claim": [
+    "legal_clearance",
+    "privacy_compliance",
+    "license_clearance",
+    "evaluation_cleanliness_proof",
+    "data_quality_guarantee",
+    "training_authorization",
+    "action_authorization"
+  ]
+}

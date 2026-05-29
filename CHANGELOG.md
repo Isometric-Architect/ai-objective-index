@@ -1,5 +1,11 @@
 # Changelog
 
+## ROE-10
+
+- Added the first DataCapsule pilot receipt packager for local/offline corpus manifest review artifacts.
+- Added corpus manifest, source/rights summary, privacy-risk summary, evaluation-boundary summary, use boundary, pilot receipt, reviewer readout, redaction report, feedback memory, schemas, docs, public outputs, and tests.
+- Preserved boundaries: no crawling/fetching, no raw private-content inspection, no data upload, no model training, no external API calls, no token handling, no private-kernel exposure, and no legal/privacy/license/evaluation-quality/training/action authorization claim.
+
 ## ROE-9
 
 - Added the first QIRA-Code ReleaseGate pilot receipt packager for local/offline code-change review artifacts.

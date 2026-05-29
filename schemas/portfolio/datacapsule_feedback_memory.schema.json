@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/portfolio/datacapsule_feedback_memory.schema.json",
+  "title": "DataCapsule Feedback Memory",
+  "type": "object",
+  "required": ["schema", "pilot_id", "feedback_status", "issue_categories", "follow_up_actions"],
+  "properties": {
+    "schema": { "const": "ResidualOps_DataCapsuleFeedbackMemory/v0.1" },
+    "pilot_id": { "type": "string" },
+    "feedback_status": { "type": "string" },
+    "reviewer_type": { "type": "string" },
+    "issue_categories": { "type": "array", "items": { "type": "string" } },
+    "follow_up_actions": { "type": "array", "items": { "type": "string" } },
+    "should_update_manifest_schema": { "type": "boolean" },
+    "should_add_negative_control": { "type": "boolean" },
+    "should_add_fixture": { "type": "boolean" },
+    "should_request_license_evidence": { "type": "boolean" },
+    "should_request_privacy_evidence": { "type": "boolean" },
+    "should_request_eval_split_evidence": { "type": "boolean" }
+  }
+}

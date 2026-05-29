@@ -1,0 +1,25 @@
+{
+  "schema": "ResidualOps_DataCapsuleEvalLeakageSummary/v0.1",
+  "summary_id": "datacapsule-eval-2d6fdbdb37f3",
+  "manifest_id": "datacapsule-manifest-3b8b4b5d9e88",
+  "eval_overlap_declared": "unknown",
+  "benchmark_contamination_declared": "unknown",
+  "split_policy_declared": "unknown",
+  "leakage_status": "HOLD_EVAL_OVERLAP_UNKNOWN",
+  "missing_fields": [
+    "declared_eval_overlap_status",
+    "split_policy"
+  ],
+  "warnings": [
+    "Evaluation overlap is unknown from manifest metadata."
+  ],
+  "must_not_claim": [
+    "legal_clearance",
+    "privacy_compliance",
+    "license_clearance",
+    "evaluation_cleanliness_proof",
+    "data_quality_guarantee",
+    "training_authorization",
+    "action_authorization"
+  ]
+}

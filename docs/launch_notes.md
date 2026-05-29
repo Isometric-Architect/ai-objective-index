@@ -1,5 +1,9 @@
 # Launch Notes
 
+## ROE-10 DataCapsule Pilot Receipt Packager
+
+ROE-10 adds a local/offline DataCapsule pilot receipt bundle for sample corpus manifest review. It does not crawl, fetch URLs, inspect raw private content, upload data, train models, call external APIs, request tokens, prove legal/privacy/license/evaluation-cleanliness status, certify data quality, or authorize training/actions.
+
 ## ROE-9 QIRA Pilot Receipt Packager
 
 ROE-9 adds a local/offline QIRA-Code ReleaseGate pilot receipt bundle for sample code-change review. It does not call GitHub APIs, post comments, mutate external repositories, merge, deploy, publish packages, request tokens, prove code correctness, certify security, guarantee quality, or authorize actions.

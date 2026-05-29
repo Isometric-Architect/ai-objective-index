@@ -16,6 +16,8 @@ ROE-8 pilot receipt artifacts may expose only public-safe local/offline AgentSec
 
 ROE-9 pilot receipt artifacts may expose only public-safe local/offline QIRA task packet, patch classification, behavior contract, CI evidence summary, reviewer readout, redaction decision, feedback memory fields, and known limits.
 
+ROE-10 pilot receipt artifacts may expose only public-safe local/offline DataCapsule corpus manifest, source/rights summary, privacy-risk summary, evaluation-boundary summary, use-boundary decisions, reviewer readout, redaction decision, feedback memory fields, and known limits.
+
 Public surfaces must not include:
 
 - ranking-weight values;

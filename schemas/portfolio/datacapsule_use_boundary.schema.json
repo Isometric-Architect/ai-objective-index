@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/portfolio/datacapsule_use_boundary.schema.json",
+  "title": "DataCapsule Use Boundary",
+  "type": "object",
+  "required": ["schema", "boundary_id", "manifest_id", "train_use", "retrieve_use", "evaluate_use", "share_use", "act_use", "commercial_use", "reasons", "blocked_uses", "hold_uses"],
+  "properties": {
+    "schema": { "const": "ResidualOps_DataCapsuleUseBoundary/v0.1" },
+    "boundary_id": { "type": "string" },
+    "manifest_id": { "type": "string" },
+    "train_use": { "type": "string" },
+    "retrieve_use": { "type": "string" },
+    "evaluate_use": { "type": "string" },
+    "share_use": { "type": "string" },
+    "act_use": { "type": "string" },
+    "commercial_use": { "type": "string" },
+    "reasons": { "type": "array", "items": { "type": "string" } },
+    "blocked_uses": { "type": "array", "items": { "type": "string" } },
+    "hold_uses": { "type": "array", "items": { "type": "string" } }
+  }
+}

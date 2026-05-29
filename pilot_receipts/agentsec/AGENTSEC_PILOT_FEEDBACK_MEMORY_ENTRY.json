@@ -1,0 +1,25 @@
+{
+  "schema": "ResidualOps_AgentSecPilotFeedbackMemory/v0.1",
+  "pilot_id": "agentsec-pilot-9211d03b8e0b",
+  "feedback_status": "pending",
+  "reviewer_type": "unknown",
+  "issue_categories": [
+    "forbidden_action",
+    "permission_scope",
+    "unknown"
+  ],
+  "follow_up_actions": [
+    "review HOLD/BLOCK findings with repository owner",
+    "add public-safe fixture only if the pattern is generic and non-secret",
+    "keep private policy calibration outside the public repository"
+  ],
+  "should_update_policy_profile": true,
+  "should_add_negative_control": true,
+  "should_add_fixture": true,
+  "should_change_claim_boundary": false,
+  "timestamp": "2026-05-29T10:07:14.166455+00:00",
+  "external_posting_performed": false,
+  "token_printed": false,
+  "can_certify_security": false,
+  "can_authorize_action": false
+}

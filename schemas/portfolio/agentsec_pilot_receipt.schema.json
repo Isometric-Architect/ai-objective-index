@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/residualops/agentsec_pilot_receipt.schema.json",
+  "title": "ResidualOps AgentSec Pilot Receipt",
+  "type": "object",
+  "required": ["schema", "pilot_id", "project_label", "owner_consent", "input_manifest", "review_scope", "decision_summary", "claim_boundary"],
+  "properties": {
+    "schema": { "const": "ResidualOps_AgentSecPilotReceipt/v0.1" },
+    "pilot_id": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "project_label": { "type": "string" },
+    "repo_url": { "type": "string" },
+    "owner_consent": {
+      "type": "object",
+      "properties": {
+        "status": { "enum": ["owner_provided", "self_owned", "sample_fixture", "unknown"] },
+        "evidence_note": { "type": "string" }
+      }
+    },
+    "input_manifest": {
+      "type": "object",
+      "properties": {
+        "source_type": { "enum": ["local_file", "fixture", "pasted_manifest", "generated_sample"] },
+        "path_or_id": { "type": "string" },
+        "hash": { "type": "string" }
+      }
+    },
+    "review_scope": {
+      "type": "object",
+      "properties": {
+        "manifest_only": { "type": "boolean" },
+        "live_tool_execution": { "type": "boolean" },
+        "live_mcp_call": { "type": "boolean" },
+        "github_api_call": { "type": "boolean" },
+        "external_network": { "type": "boolean" }
+      }
+    },
+    "decision_summary": {
+      "type": "object",
+      "properties": {
+        "allow_count": { "type": "integer" },
+        "hold_count": { "type": "integer" },
+        "block_count": { "type": "integer" }
+      }
+    },
+    "claim_boundary": { "type": "object" }
+  }
+}

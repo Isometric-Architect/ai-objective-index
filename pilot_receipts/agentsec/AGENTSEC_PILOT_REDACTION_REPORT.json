@@ -1,0 +1,13 @@
+{
+  "schema": "ResidualOps_AgentSecPilotRedactionReport/v0.1",
+  "generated_at": "2026-05-29T10:07:14.166439+00:00",
+  "decision": "PASS_REDACTED",
+  "label": "agentsec-pilot-receipt",
+  "finding_count": 0,
+  "block_count": 0,
+  "hold_count": 0,
+  "findings": [],
+  "redaction_applied": false,
+  "token_printed": false,
+  "private_kernel_exposed": false
+}

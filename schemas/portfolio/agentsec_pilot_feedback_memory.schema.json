@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/residualops/agentsec_pilot_feedback_memory.schema.json",
+  "title": "ResidualOps AgentSec Pilot Feedback Memory",
+  "type": "object",
+  "required": ["schema", "pilot_id", "feedback_status", "follow_up_actions"],
+  "properties": {
+    "schema": { "const": "ResidualOps_AgentSecPilotFeedbackMemory/v0.1" },
+    "pilot_id": { "type": "string" },
+    "feedback_status": { "enum": ["pending", "received", "incorporated", "closed"] },
+    "reviewer_type": { "enum": ["owner", "maintainer", "internal", "external", "unknown"] },
+    "issue_categories": { "type": "array", "items": { "type": "string" } },
+    "follow_up_actions": { "type": "array", "items": { "type": "string" } },
+    "should_update_policy_profile": { "type": "boolean" },
+    "should_add_negative_control": { "type": "boolean" },
+    "should_add_fixture": { "type": "boolean" },
+    "should_change_claim_boundary": { "type": "boolean" }
+  }
+}

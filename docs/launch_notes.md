@@ -1,5 +1,9 @@
 # Launch Notes
 
+## ROE-8 AgentSec Pilot Receipt Packager
+
+ROE-8 adds a local/offline AgentSec pilot receipt bundle for sample manifest review. It does not call live MCP servers, execute tools, call GitHub APIs, post comments, modify external repositories, request tokens, certify security, guarantee quality, prove compliance, or authorize actions.
+
 ## Package 0
 
 Package 0 establishes the AOI identity and contract surface:

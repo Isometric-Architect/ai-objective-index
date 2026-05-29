@@ -83,6 +83,8 @@ ROE-6 adds local pilot receipt intake and feedback memory for future owner-conse
 
 ROE-7 adds pilot receipt readout and a second-run decision gate. It keeps the gate on HOLD until at least one accepted non-secret pilot receipt exists, and it still does not enable workflows, call GitHub APIs, post comments, store tokens, expose private kernels, certify security, guarantee quality, prove readiness, or authorize actions.
 
+ROE-8 adds the first AgentSec pilot receipt packager. It packages a local/offline AgentSec manifest review into a redacted receipt bundle, reviewer readout, feedback memory entry, and gate result without calling live MCP servers, executing tools, modifying external repositories, posting comments, handling tokens, certifying security, guaranteeing quality, proving compliance, or authorizing actions.
+
 ## Quick Example
 
 Example objective request:

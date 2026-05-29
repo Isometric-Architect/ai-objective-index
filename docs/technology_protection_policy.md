@@ -12,6 +12,8 @@ Public surfaces may include:
 - known limitations and claim boundaries;
 - public sample and `public_beta_mcp` data.
 
+ROE-8 pilot receipt artifacts may expose only public-safe local/offline AgentSec receipt shapes, reviewer readouts, redaction decisions, feedback memory fields, and known limits.
+
 Public surfaces must not include:
 
 - ranking-weight values;
@@ -22,6 +24,7 @@ Public surfaces must not include:
 - private probe bank;
 - commercial routing policy;
 - private operational datasets;
+- partner-specific strategy;
 - token or credential values.
 
 The open-source surface helps adoption and review, but the defensible moat should come from source-trace quality, receipt/probe memory, issue feedback, vertical expertise, private calibration, and conservative trust gained over time.

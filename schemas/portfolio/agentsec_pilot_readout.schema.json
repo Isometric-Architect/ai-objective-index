@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/residualops/agentsec_pilot_readout.schema.json",
+  "title": "ResidualOps AgentSec Pilot Readout",
+  "type": "object",
+  "required": ["pilot_id", "scope", "summary", "findings", "known_limits"],
+  "properties": {
+    "pilot_id": { "type": "string" },
+    "scope": { "type": "object" },
+    "summary": { "type": "object" },
+    "findings": { "type": "array", "items": { "type": "object" } },
+    "known_limits": { "type": "array", "items": { "type": "string" } }
+  }
+}

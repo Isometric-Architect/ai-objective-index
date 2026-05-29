@@ -1,5 +1,11 @@
 # Changelog
 
+## ROE-8
+
+- Added the first AgentSec pilot receipt packager for local/offline manifest review outputs.
+- Added AgentSec pilot receipt models, redaction report, reviewer readout, feedback memory entry, known-limits artifact, ROE-8 gate result, schemas, docs, public outputs, and tests.
+- Preserved boundaries: no live MCP calls, no external tool execution, no GitHub API calls, no PR comments, no issue/PR creation, no external repository modification, no crawling/fetching, no token handling, no private-kernel exposure, and no certification/readiness/compliance/quality/action-authorization claim.
+
 ## ROE-7
 
 - Added pilot receipt readout and a conservative second-run decision gate for ResidualOps pilots.

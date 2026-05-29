@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-objective-index.local/schemas/portfolio/pilot_dry_run_trace.schema.json",
+  "title": "ResidualOps Pilot Dry-Run Trace",
+  "type": "object",
+  "required": ["schema", "dry_run_id", "intake_ids", "vertical_routes", "executed_verticals", "local_only", "steps"],
+  "properties": {
+    "schema": {"const": "ResidualOps_PilotDryRunTrace/v0.1"},
+    "dry_run_id": {"type": "string"},
+    "generated_at": {"type": "string"},
+    "intake_ids": {"type": "array", "items": {"type": "string"}},
+    "vertical_routes": {"type": "array", "items": {"type": "object"}},
+    "executed_verticals": {"type": "array", "items": {"type": "string"}},
+    "skipped_verticals": {"type": "array", "items": {"type": "string"}},
+    "local_only": {"const": true},
+    "external_network_used": {"const": false},
+    "github_api_used": {"const": false},
+    "live_mcp_call_used": {"const": false},
+    "external_repo_modified": {"const": false},
+    "posting_or_commenting_performed": {"const": false},
+    "merge_deploy_publish_performed": {"const": false},
+    "raw_private_data_inspected": {"const": false},
+    "steps": {"type": "array", "items": {"type": "object"}}
+  },
+  "additionalProperties": true
+}

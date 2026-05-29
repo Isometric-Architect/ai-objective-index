@@ -19,6 +19,8 @@ The intake kit should preserve the same boundaries:
 - no token handling
 - no certification, proof, quality guarantee, product-readiness claim, or action authorization
 
-Recommended next package: ROE-13 First Owner-Consented Pilot Dry-Run.
+ROE-13 status: first owner-consented local/sample pilot dry-run added.
+
+Recommended next package: ROE-14 Pilot Feedback Form + Second-Run Receipt Gate.
 
 Secondary backlog: AOI 0.3.0a2 MCP Registry recovery if namespace/version recovery remains useful.

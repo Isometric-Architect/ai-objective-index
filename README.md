@@ -93,6 +93,8 @@ ROE-11 adds a unified pilot receipt portfolio readout across AgentSec, QIRA-Code
 
 ROE-12 adds an owner-consented pilot intake kit across AgentSec, QIRA-Code ReleaseGate, and DataCapsule. It creates local intake packets, consent records, vertical routes, redaction preflight, pilot run plans, reviewer instructions, and feedback memory without GitHub API calls, cloning, URL fetching, crawling, live MCP/tool calls, external repo mutation, posting, deploy/release/publish action, upload, model training, token handling, certification, proof, product-readiness claim, or action authorization.
 
+ROE-13 adds the first owner-consented local/sample pilot dry-run. It routes ROE-12 sample intake packets to AgentSec, QIRA-Code ReleaseGate, and DataCapsule, calls only local/offline packager functions, and generates a dry-run trace, vertical results, aggregate receipt, reviewer readout, feedback memory, redaction report, and gate result without external pilots, GitHub API calls, cloning, URL fetching, crawling, live MCP/tool calls, external repo mutation, posting, merge/deploy/publish action, upload, model training, token handling, raw private-data inspection, certification, proof, product-readiness claim, or action authorization.
+
 ## Quick Example
 
 Example objective request:

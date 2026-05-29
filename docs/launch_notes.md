@@ -1,5 +1,9 @@
 # Launch Notes
 
+## ROE-13 First Owner-Consented Pilot Dry-Run
+
+ROE-13 runs the first local/sample flow from ROE-12 intake packets to vertical pilot receipts for AgentSec, QIRA, and DataCapsule. It does not perform an external pilot, call GitHub APIs, clone, fetch URLs, crawl, run live MCP/tool calls, mutate external repos, post comments, merge, deploy, publish, upload data, train models, handle tokens, inspect raw private data, certify security, prove correctness, prove legal/privacy/license/evaluation status, guarantee quality, claim product readiness, or authorize external actions.
+
 ## ROE-12 Owner-Consented Pilot Intake Kit
 
 ROE-12 adds a local/offline intake kit for future owner-consented AgentSec, QIRA, and DataCapsule pilots. It creates intake packets, consent records, vertical routes, redaction preflight, run plans, reviewer instructions, and feedback memory. It does not call GitHub APIs, clone, fetch URLs, crawl, run live MCP/tool calls, mutate external repos, post comments, deploy, release, publish, upload data, train models, handle tokens, certify security, prove correctness, prove legal/privacy/license/evaluation status, guarantee quality, claim product readiness, or authorize external actions.

@@ -1,0 +1,206 @@
+{
+  "schema": "ResidualOps_PilotDryRunReceipt/v0.1",
+  "dry_run_id": "roe13-local-sample-dry-run-v0-1",
+  "generated_at": "2026-05-29T13:06:30.459888+00:00",
+  "mode": "local_sample",
+  "results": [
+    {
+      "schema": "ResidualOps_PilotDryRunResult/v0.1",
+      "dry_run_id": "roe13-local-sample-dry-run-v0-1",
+      "vertical": "agentsec",
+      "intake_id": "pilot-intake-sample-agentsec-5bd1b7f23ad6",
+      "selected_packager": "package_agentsec_pilot",
+      "receipt_path": "pilot_receipts/agentsec/AGENTSEC_PILOT_RECEIPT_SAMPLE.json",
+      "gate_result": "PASS_FIRST_AGENTSEC_PILOT_RECEIPT_READY",
+      "allow_count": 1,
+      "hold_count": 1,
+      "block_count": 1,
+      "primary_decision": "BLOCK_FORBIDDEN_ACTION",
+      "redaction_status": "PASS_REDACTED",
+      "feedback_memory_status": "pending",
+      "known_limits": [
+        "local/offline manifest review only",
+        "no live MCP call",
+        "no external tool execution",
+        "not security certification",
+        "not quality guarantee",
+        "not compliance audit",
+        "not action authorization"
+      ],
+      "claim_boundary": {
+        "not_security_certification": true,
+        "not_quality_guarantee": true,
+        "not_compliance_audit": true,
+        "no_live_execution": true,
+        "no_external_action_authorization": true
+      },
+      "external_action_used": false,
+      "token_printed": false
+    },
+    {
+      "schema": "ResidualOps_PilotDryRunResult/v0.1",
+      "dry_run_id": "roe13-local-sample-dry-run-v0-1",
+      "vertical": "qira",
+      "intake_id": "pilot-intake-sample-qira-11c835df9caf",
+      "selected_packager": "package_qira_pilot",
+      "receipt_path": "pilot_receipts/qira/QIRA_PILOT_RECEIPT_SAMPLE.json",
+      "gate_result": "PASS_FIRST_QIRA_PILOT_RECEIPT_READY",
+      "allow_count": 1,
+      "hold_count": 1,
+      "block_count": 1,
+      "primary_decision": "BLOCK_RELEASE_SIDE_EFFECT",
+      "redaction_status": "PASS_REDACTED",
+      "feedback_memory_status": "pending",
+      "known_limits": [
+        "local/offline patch review only",
+        "no GitHub API call",
+        "no external repository mutation",
+        "not code correctness proof",
+        "not security certification",
+        "not quality guarantee",
+        "no merge or deploy authorization"
+      ],
+      "claim_boundary": {
+        "not_code_correctness_proof": true,
+        "not_security_certification": true,
+        "not_quality_guarantee": true,
+        "no_merge_authorization": true,
+        "no_deploy_authorization": true,
+        "no_external_repo_mutation": true
+      },
+      "external_action_used": false,
+      "token_printed": false
+    },
+    {
+      "schema": "ResidualOps_PilotDryRunResult/v0.1",
+      "dry_run_id": "roe13-local-sample-dry-run-v0-1",
+      "vertical": "datacapsule",
+      "intake_id": "pilot-intake-sample-datacapsule-c1f10f153a70",
+      "selected_packager": "package_datacapsule_pilot",
+      "receipt_path": "pilot_receipts/datacapsule/DATACAPSULE_PILOT_RECEIPT_SAMPLE.json",
+      "gate_result": "PASS_FIRST_DATACAPSULE_PILOT_RECEIPT_READY",
+      "allow_count": 1,
+      "hold_count": 1,
+      "block_count": 1,
+      "primary_decision": "BLOCK_ACTION_USE",
+      "redaction_status": "PASS_REDACTED",
+      "feedback_memory_status": "pending",
+      "known_limits": [
+        "local/offline manifest review only",
+        "raw content not inspected",
+        "no crawling or URL fetching",
+        "no upload or model training",
+        "not legal opinion",
+        "not privacy audit",
+        "not license clearance",
+        "not evaluation-cleanliness proof",
+        "no training or action authorization"
+      ],
+      "claim_boundary": {
+        "not_legal_opinion": true,
+        "not_privacy_audit": true,
+        "not_license_clearance": true,
+        "not_eval_clean_proof": true,
+        "not_data_quality_guarantee": true,
+        "no_training_authorization": true,
+        "no_action_authorization": true,
+        "raw_content_not_inspected": true
+      },
+      "external_action_used": false,
+      "token_printed": false
+    }
+  ],
+  "aggregate_summary": {
+    "vertical_count": 3,
+    "total_allow_count": 3,
+    "total_hold_count": 3,
+    "total_block_count": 3,
+    "all_redaction_passed": true,
+    "all_gates_passed": true,
+    "external_action_count": 0
+  },
+  "feedback_memory": {
+    "schema": "ResidualOps_PilotDryRunFeedbackMemory/v0.1",
+    "dry_run_id": "roe13-local-sample-dry-run-v0-1",
+    "generated_at": "2026-05-29T13:06:30.459856+00:00",
+    "feedback_status": "pending",
+    "vertical_entries": [
+      {
+        "vertical": "agentsec",
+        "intake_id": "pilot-intake-sample-agentsec-5bd1b7f23ad6",
+        "receipt_id": "pilot_receipts/agentsec/AGENTSEC_PILOT_RECEIPT_SAMPLE.json",
+        "feedback_status": "pending",
+        "follow_up_actions": [
+          "request an owner-provided local artifact before a real local pilot",
+          "rerun redaction before packaging another receipt",
+          "keep HOLD/BLOCK findings in the next reviewer readout"
+        ],
+        "should_request_owner_artifact": true,
+        "should_add_negative_control": true,
+        "should_add_fixture": true,
+        "should_update_claim_boundary": false
+      },
+      {
+        "vertical": "qira",
+        "intake_id": "pilot-intake-sample-qira-11c835df9caf",
+        "receipt_id": "pilot_receipts/qira/QIRA_PILOT_RECEIPT_SAMPLE.json",
+        "feedback_status": "pending",
+        "follow_up_actions": [
+          "request an owner-provided local artifact before a real local pilot",
+          "rerun redaction before packaging another receipt",
+          "keep HOLD/BLOCK findings in the next reviewer readout"
+        ],
+        "should_request_owner_artifact": true,
+        "should_add_negative_control": true,
+        "should_add_fixture": true,
+        "should_update_claim_boundary": false
+      },
+      {
+        "vertical": "datacapsule",
+        "intake_id": "pilot-intake-sample-datacapsule-c1f10f153a70",
+        "receipt_id": "pilot_receipts/datacapsule/DATACAPSULE_PILOT_RECEIPT_SAMPLE.json",
+        "feedback_status": "pending",
+        "follow_up_actions": [
+          "request an owner-provided local artifact before a real local pilot",
+          "rerun redaction before packaging another receipt",
+          "keep HOLD/BLOCK findings in the next reviewer readout"
+        ],
+        "should_request_owner_artifact": true,
+        "should_add_negative_control": true,
+        "should_add_fixture": true,
+        "should_update_claim_boundary": false
+      }
+    ],
+    "portfolio_next_actions": [
+      "owner-consented real local artifact pilot",
+      "second-run receipt",
+      "unified dashboard",
+      "pilot feedback form",
+      "AOI MCP Registry recovery backlog"
+    ]
+  },
+  "claim_boundary": {
+    "not_external_pilot": true,
+    "not_security_certification": true,
+    "not_code_correctness_proof": true,
+    "not_legal_opinion": true,
+    "not_privacy_audit": true,
+    "not_license_clearance": true,
+    "not_eval_clean_proof": true,
+    "not_quality_guarantee": true,
+    "not_product_ready": true,
+    "no_external_action_authorization": true
+  },
+  "must_not_claim": [
+    "external_pilot",
+    "security_certification",
+    "code_correctness_proof",
+    "legal_opinion",
+    "privacy_audit",
+    "license_clearance",
+    "evaluation_cleanliness_proof",
+    "quality_guarantee",
+    "product_readiness",
+    "external_action_authorization"
+  ]
+}

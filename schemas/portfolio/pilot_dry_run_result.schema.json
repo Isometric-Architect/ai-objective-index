@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-objective-index.local/schemas/portfolio/pilot_dry_run_result.schema.json",
+  "title": "ResidualOps Pilot Dry-Run Result",
+  "type": "object",
+  "required": ["schema", "dry_run_id", "vertical", "intake_id", "selected_packager", "receipt_path", "gate_result", "primary_decision"],
+  "properties": {
+    "schema": {"const": "ResidualOps_PilotDryRunResult/v0.1"},
+    "dry_run_id": {"type": "string"},
+    "vertical": {"enum": ["agentsec", "qira", "datacapsule"]},
+    "intake_id": {"type": "string"},
+    "selected_packager": {"type": "string"},
+    "receipt_path": {"type": "string"},
+    "gate_result": {"type": "string"},
+    "allow_count": {"type": "integer"},
+    "hold_count": {"type": "integer"},
+    "block_count": {"type": "integer"},
+    "primary_decision": {"type": "string"},
+    "redaction_status": {"type": "string"},
+    "feedback_memory_status": {"type": "string"},
+    "known_limits": {"type": "array", "items": {"type": "string"}},
+    "claim_boundary": {"type": "object"}
+  },
+  "additionalProperties": true
+}

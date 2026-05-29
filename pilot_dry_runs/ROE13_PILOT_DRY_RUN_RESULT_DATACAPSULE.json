@@ -1,0 +1,38 @@
+{
+  "schema": "ResidualOps_PilotDryRunResult/v0.1",
+  "dry_run_id": "roe13-local-sample-dry-run-v0-1",
+  "vertical": "datacapsule",
+  "intake_id": "pilot-intake-sample-datacapsule-c1f10f153a70",
+  "selected_packager": "package_datacapsule_pilot",
+  "receipt_path": "pilot_receipts/datacapsule/DATACAPSULE_PILOT_RECEIPT_SAMPLE.json",
+  "gate_result": "PASS_FIRST_DATACAPSULE_PILOT_RECEIPT_READY",
+  "allow_count": 1,
+  "hold_count": 1,
+  "block_count": 1,
+  "primary_decision": "BLOCK_ACTION_USE",
+  "redaction_status": "PASS_REDACTED",
+  "feedback_memory_status": "pending",
+  "known_limits": [
+    "local/offline manifest review only",
+    "raw content not inspected",
+    "no crawling or URL fetching",
+    "no upload or model training",
+    "not legal opinion",
+    "not privacy audit",
+    "not license clearance",
+    "not evaluation-cleanliness proof",
+    "no training or action authorization"
+  ],
+  "claim_boundary": {
+    "not_legal_opinion": true,
+    "not_privacy_audit": true,
+    "not_license_clearance": true,
+    "not_eval_clean_proof": true,
+    "not_data_quality_guarantee": true,
+    "no_training_authorization": true,
+    "no_action_authorization": true,
+    "raw_content_not_inspected": true
+  },
+  "external_action_used": false,
+  "token_printed": false
+}

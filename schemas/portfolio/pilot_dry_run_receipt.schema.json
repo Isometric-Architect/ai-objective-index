@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-objective-index.local/schemas/portfolio/pilot_dry_run_receipt.schema.json",
+  "title": "ResidualOps Pilot Dry-Run Receipt",
+  "type": "object",
+  "required": ["schema", "dry_run_id", "mode", "results", "aggregate_summary", "feedback_memory", "claim_boundary"],
+  "properties": {
+    "schema": {"const": "ResidualOps_PilotDryRunReceipt/v0.1"},
+    "dry_run_id": {"type": "string"},
+    "generated_at": {"type": "string"},
+    "mode": {"const": "local_sample"},
+    "results": {"type": "array", "items": {"type": "object"}},
+    "aggregate_summary": {
+      "type": "object",
+      "required": ["vertical_count", "total_allow_count", "total_hold_count", "total_block_count", "all_redaction_passed", "all_gates_passed", "external_action_count"]
+    },
+    "feedback_memory": {"type": "object"},
+    "claim_boundary": {"type": "object"},
+    "must_not_claim": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "ResidualOps_PilotDryRunFeedbackMemory/v0.1",
+  "dry_run_id": "roe13-local-sample-dry-run-v0-1",
+  "generated_at": "2026-05-29T13:06:30.459856+00:00",
+  "feedback_status": "pending",
+  "vertical_entries": [
+    {
+      "vertical": "agentsec",
+      "intake_id": "pilot-intake-sample-agentsec-5bd1b7f23ad6",
+      "receipt_id": "pilot_receipts/agentsec/AGENTSEC_PILOT_RECEIPT_SAMPLE.json",
+      "feedback_status": "pending",
+      "follow_up_actions": [
+        "request an owner-provided local artifact before a real local pilot",
+        "rerun redaction before packaging another receipt",
+        "keep HOLD/BLOCK findings in the next reviewer readout"
+      ],
+      "should_request_owner_artifact": true,
+      "should_add_negative_control": true,
+      "should_add_fixture": true,
+      "should_update_claim_boundary": false
+    },
+    {
+      "vertical": "qira",
+      "intake_id": "pilot-intake-sample-qira-11c835df9caf",
+      "receipt_id": "pilot_receipts/qira/QIRA_PILOT_RECEIPT_SAMPLE.json",
+      "feedback_status": "pending",
+      "follow_up_actions": [
+        "request an owner-provided local artifact before a real local pilot",
+        "rerun redaction before packaging another receipt",
+        "keep HOLD/BLOCK findings in the next reviewer readout"
+      ],
+      "should_request_owner_artifact": true,
+      "should_add_negative_control": true,
+      "should_add_fixture": true,
+      "should_update_claim_boundary": false
+    },
+    {
+      "vertical": "datacapsule",
+      "intake_id": "pilot-intake-sample-datacapsule-c1f10f153a70",
+      "receipt_id": "pilot_receipts/datacapsule/DATACAPSULE_PILOT_RECEIPT_SAMPLE.json",
+      "feedback_status": "pending",
+      "follow_up_actions": [
+        "request an owner-provided local artifact before a real local pilot",
+        "rerun redaction before packaging another receipt",
+        "keep HOLD/BLOCK findings in the next reviewer readout"
+      ],
+      "should_request_owner_artifact": true,
+      "should_add_negative_control": true,
+      "should_add_fixture": true,
+      "should_update_claim_boundary": false
+    }
+  ],
+  "portfolio_next_actions": [
+    "owner-consented real local artifact pilot",
+    "second-run receipt",
+    "unified dashboard",
+    "pilot feedback form",
+    "AOI MCP Registry recovery backlog"
+  ]
+}

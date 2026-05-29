@@ -1,5 +1,11 @@
 # Changelog
 
+## ROE-13
+
+- Added the first owner-consented local/sample pilot dry-run across AgentSec, QIRA-Code ReleaseGate, and DataCapsule.
+- Added dry-run routing, executor, trace, vertical results, aggregate receipt, reviewer readout, feedback memory, redaction report, gate result, schemas, docs, public outputs, and tests.
+- Preserved boundaries: no external pilot, no GitHub API calls, no clone/fetch/crawl, no live MCP/tool calls, no external repo mutation, no posting, no merge/deploy/publish action, no upload/training, no token handling, no raw private-data inspection, no private-kernel exposure, and no certification/proof/product-readiness/action-authorization claim.
+
 ## ROE-12
 
 - Added an owner-consented pilot intake kit for AgentSec, QIRA-Code ReleaseGate, and DataCapsule.

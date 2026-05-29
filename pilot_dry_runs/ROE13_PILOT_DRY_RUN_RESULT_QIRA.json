@@ -1,0 +1,34 @@
+{
+  "schema": "ResidualOps_PilotDryRunResult/v0.1",
+  "dry_run_id": "roe13-local-sample-dry-run-v0-1",
+  "vertical": "qira",
+  "intake_id": "pilot-intake-sample-qira-11c835df9caf",
+  "selected_packager": "package_qira_pilot",
+  "receipt_path": "pilot_receipts/qira/QIRA_PILOT_RECEIPT_SAMPLE.json",
+  "gate_result": "PASS_FIRST_QIRA_PILOT_RECEIPT_READY",
+  "allow_count": 1,
+  "hold_count": 1,
+  "block_count": 1,
+  "primary_decision": "BLOCK_RELEASE_SIDE_EFFECT",
+  "redaction_status": "PASS_REDACTED",
+  "feedback_memory_status": "pending",
+  "known_limits": [
+    "local/offline patch review only",
+    "no GitHub API call",
+    "no external repository mutation",
+    "not code correctness proof",
+    "not security certification",
+    "not quality guarantee",
+    "no merge or deploy authorization"
+  ],
+  "claim_boundary": {
+    "not_code_correctness_proof": true,
+    "not_security_certification": true,
+    "not_quality_guarantee": true,
+    "no_merge_authorization": true,
+    "no_deploy_authorization": true,
+    "no_external_repo_mutation": true
+  },
+  "external_action_used": false,
+  "token_printed": false
+}

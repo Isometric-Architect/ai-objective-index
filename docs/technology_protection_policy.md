@@ -22,6 +22,8 @@ ROE-11 portfolio artifacts may expose only public-safe local/offline portfolio i
 
 ROE-12 intake artifacts may expose only public-safe local/offline consent templates, intake packet shapes, vertical routing labels, redaction preflight summaries, run-plan samples, reviewer instructions, feedback memory seeds, claim boundaries, and known limits.
 
+ROE-13 dry-run artifacts may expose only public-safe local/sample traces, vertical receipt references, aggregate ALLOW/HOLD/BLOCK counts, redaction decisions, feedback memory summaries, reviewer readouts, claim boundaries, and known limits.
+
 Public surfaces must not include:
 
 - ranking-weight values;

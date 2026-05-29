@@ -1,0 +1,194 @@
+{
+  "schema": "ResidualOps_PilotDryRunTrace/v0.1",
+  "dry_run_id": "roe13-local-sample-dry-run-v0-1",
+  "generated_at": "2026-05-29T13:06:30.459813+00:00",
+  "intake_ids": [
+    "pilot-intake-sample-agentsec-5bd1b7f23ad6",
+    "pilot-intake-sample-qira-11c835df9caf",
+    "pilot-intake-sample-datacapsule-c1f10f153a70"
+  ],
+  "vertical_routes": [
+    {
+      "schema": "ResidualOps_PilotVerticalRoute/v0.1",
+      "route_id": "route-pilot-intake-sample-agentsec-5bd1b7f23ad6",
+      "intake_id": "pilot-intake-sample-agentsec-5bd1b7f23ad6",
+      "generated_at": "2026-05-29T13:06:30.282606+00:00",
+      "selected_vertical": "agentsec",
+      "route_reason": "MCP/tool manifest artifacts route to AgentSec Gate",
+      "route_confidence": "high",
+      "required_next_artifacts": [],
+      "blockers": [],
+      "claim_ceiling": "local/offline owner-consented pilot intake route only",
+      "can_generate_pilot_receipt": true,
+      "must_not_do": [
+        "clone_repo",
+        "fetch_url",
+        "call_github_api",
+        "create_pr",
+        "create_issue",
+        "comment_on_pr",
+        "merge",
+        "deploy",
+        "publish_package",
+        "upload_data",
+        "train_model",
+        "live_mcp_call",
+        "external_tool_execution",
+        "use_credentials"
+      ],
+      "must_not_claim": [
+        "security_certification",
+        "code_correctness_proof",
+        "legal_opinion",
+        "privacy_audit",
+        "license_clearance",
+        "evaluation_cleanliness_proof",
+        "quality_guarantee",
+        "product_readiness",
+        "external_action_authorization"
+      ],
+      "expected_vertical": "agentsec",
+      "route_matches_expected": true
+    },
+    {
+      "schema": "ResidualOps_PilotVerticalRoute/v0.1",
+      "route_id": "route-pilot-intake-sample-qira-11c835df9caf",
+      "intake_id": "pilot-intake-sample-qira-11c835df9caf",
+      "generated_at": "2026-05-29T13:06:30.282627+00:00",
+      "selected_vertical": "qira",
+      "route_reason": "patch, diff, and CI summary artifacts route to QIRA-Code ReleaseGate",
+      "route_confidence": "high",
+      "required_next_artifacts": [],
+      "blockers": [],
+      "claim_ceiling": "local/offline owner-consented pilot intake route only",
+      "can_generate_pilot_receipt": true,
+      "must_not_do": [
+        "clone_repo",
+        "fetch_url",
+        "call_github_api",
+        "create_pr",
+        "create_issue",
+        "comment_on_pr",
+        "merge",
+        "deploy",
+        "publish_package",
+        "upload_data",
+        "train_model",
+        "live_mcp_call",
+        "external_tool_execution",
+        "use_credentials"
+      ],
+      "must_not_claim": [
+        "security_certification",
+        "code_correctness_proof",
+        "legal_opinion",
+        "privacy_audit",
+        "license_clearance",
+        "evaluation_cleanliness_proof",
+        "quality_guarantee",
+        "product_readiness",
+        "external_action_authorization"
+      ],
+      "expected_vertical": "qira",
+      "route_matches_expected": true
+    },
+    {
+      "schema": "ResidualOps_PilotVerticalRoute/v0.1",
+      "route_id": "route-pilot-intake-sample-datacapsule-c1f10f153a70",
+      "intake_id": "pilot-intake-sample-datacapsule-c1f10f153a70",
+      "generated_at": "2026-05-29T13:06:30.282635+00:00",
+      "selected_vertical": "datacapsule",
+      "route_reason": "dataset, corpus, and dataset-card artifacts route to DataCapsule",
+      "route_confidence": "high",
+      "required_next_artifacts": [],
+      "blockers": [],
+      "claim_ceiling": "local/offline owner-consented pilot intake route only",
+      "can_generate_pilot_receipt": true,
+      "must_not_do": [
+        "clone_repo",
+        "fetch_url",
+        "call_github_api",
+        "create_pr",
+        "create_issue",
+        "comment_on_pr",
+        "merge",
+        "deploy",
+        "publish_package",
+        "upload_data",
+        "train_model",
+        "live_mcp_call",
+        "external_tool_execution",
+        "use_credentials"
+      ],
+      "must_not_claim": [
+        "security_certification",
+        "code_correctness_proof",
+        "legal_opinion",
+        "privacy_audit",
+        "license_clearance",
+        "evaluation_cleanliness_proof",
+        "quality_guarantee",
+        "product_readiness",
+        "external_action_authorization"
+      ],
+      "expected_vertical": "datacapsule",
+      "route_matches_expected": true
+    }
+  ],
+  "executed_verticals": [
+    "agentsec",
+    "qira",
+    "datacapsule"
+  ],
+  "skipped_verticals": [],
+  "local_only": true,
+  "external_network_used": false,
+  "github_api_used": false,
+  "live_mcp_call_used": false,
+  "external_repo_modified": false,
+  "posting_or_commenting_performed": false,
+  "merge_deploy_publish_performed": false,
+  "raw_private_data_inspected": false,
+  "steps": [
+    {
+      "step_id": "roe13-step-1",
+      "step_name": "load_roe12_sample_intake_packets",
+      "input_ref": "pilot_intake/PILOT_INTAKE_PACKET_SAMPLE_*.json",
+      "output_ref": "local intake packet objects",
+      "decision": "PASS",
+      "notes": [
+        "read local sample intake packets only"
+      ]
+    },
+    {
+      "step_id": "roe13-step-2",
+      "step_name": "route_intake_packets",
+      "input_ref": "ROE-12 intake packets",
+      "output_ref": "vertical routes",
+      "decision": "PASS",
+      "notes": [
+        "agentsec, qira, and datacapsule routes matched expected sample artifacts"
+      ]
+    },
+    {
+      "step_id": "roe13-step-3",
+      "step_name": "execute_local_vertical_packagers",
+      "input_ref": "vertical routes",
+      "output_ref": "pilot_receipts/{agentsec,qira,datacapsule}",
+      "decision": "PASS",
+      "notes": [
+        "direct Python function imports only; no subprocess, network, GitHub API, live MCP, upload, train, merge, deploy, or publish action"
+      ]
+    },
+    {
+      "step_id": "roe13-step-4",
+      "step_name": "aggregate_dry_run_receipt",
+      "input_ref": "vertical pilot receipts",
+      "output_ref": "pilot_dry_runs/ROE13_PILOT_DRY_RUN_RECEIPT.json",
+      "decision": "PASS",
+      "notes": [
+        "aggregated local receipt counts and claim boundaries"
+      ]
+    }
+  ]
+}

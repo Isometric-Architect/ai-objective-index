@@ -1,0 +1,33 @@
+{
+  "schema": "ResidualOps_PilotDryRunResult/v0.1",
+  "dry_run_id": "roe13-local-sample-dry-run-v0-1",
+  "vertical": "agentsec",
+  "intake_id": "pilot-intake-sample-agentsec-5bd1b7f23ad6",
+  "selected_packager": "package_agentsec_pilot",
+  "receipt_path": "pilot_receipts/agentsec/AGENTSEC_PILOT_RECEIPT_SAMPLE.json",
+  "gate_result": "PASS_FIRST_AGENTSEC_PILOT_RECEIPT_READY",
+  "allow_count": 1,
+  "hold_count": 1,
+  "block_count": 1,
+  "primary_decision": "BLOCK_FORBIDDEN_ACTION",
+  "redaction_status": "PASS_REDACTED",
+  "feedback_memory_status": "pending",
+  "known_limits": [
+    "local/offline manifest review only",
+    "no live MCP call",
+    "no external tool execution",
+    "not security certification",
+    "not quality guarantee",
+    "not compliance audit",
+    "not action authorization"
+  ],
+  "claim_boundary": {
+    "not_security_certification": true,
+    "not_quality_guarantee": true,
+    "not_compliance_audit": true,
+    "no_live_execution": true,
+    "no_external_action_authorization": true
+  },
+  "external_action_used": false,
+  "token_printed": false
+}

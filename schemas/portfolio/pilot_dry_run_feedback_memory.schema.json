@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-objective-index.local/schemas/portfolio/pilot_dry_run_feedback_memory.schema.json",
+  "title": "ResidualOps Pilot Dry-Run Feedback Memory",
+  "type": "object",
+  "required": ["schema", "dry_run_id", "feedback_status", "vertical_entries", "portfolio_next_actions"],
+  "properties": {
+    "schema": {"const": "ResidualOps_PilotDryRunFeedbackMemory/v0.1"},
+    "dry_run_id": {"type": "string"},
+    "feedback_status": {"type": "string"},
+    "vertical_entries": {"type": "array", "items": {"type": "object"}},
+    "portfolio_next_actions": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

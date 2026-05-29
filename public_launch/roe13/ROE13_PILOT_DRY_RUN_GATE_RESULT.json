@@ -1,0 +1,29 @@
+{
+  "schema": "ResidualOps_ROE13PilotDryRunGate/v0.1",
+  "generated_at": "2026-05-29T13:06:30.520488+00:00",
+  "decision": "PASS_FIRST_OWNER_CONSENTED_PILOT_DRY_RUN_READY",
+  "dry_run_id": "roe13-local-sample-dry-run-v0-1",
+  "vertical_count": 3,
+  "total_allow_count": 3,
+  "total_hold_count": 3,
+  "total_block_count": 3,
+  "missing_artifacts": [],
+  "executed_verticals": [
+    "agentsec",
+    "datacapsule",
+    "qira"
+  ],
+  "redaction_decision": "PASS_REDACTED",
+  "redaction_findings": 0,
+  "claim_finding_count": 0,
+  "claim_findings": [],
+  "external_action_used": false,
+  "raw_private_data_inspected": false,
+  "token_printed": false,
+  "private_kernel_exposed": false,
+  "can_certify_security": false,
+  "can_prove_code_correctness": false,
+  "can_provide_legal_privacy_license_eval_proof": false,
+  "can_claim_product_readiness": false,
+  "can_authorize_external_action": false
+}

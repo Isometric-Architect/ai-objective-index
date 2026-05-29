@@ -1,0 +1,13 @@
+{
+  "schema": "ResidualOps_PilotDryRunRedactionReport/v0.1",
+  "generated_at": "2026-05-29T13:06:30.500312+00:00",
+  "decision": "PASS_REDACTED",
+  "artifact_count": 8,
+  "finding_count": 0,
+  "block_count": 0,
+  "hold_count": 0,
+  "findings": [],
+  "redaction_applied": false,
+  "token_printed": false,
+  "private_kernel_exposed": false
+}

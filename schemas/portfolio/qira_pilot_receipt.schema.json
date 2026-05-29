@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/portfolio/qira_pilot_receipt.schema.json",
+  "title": "QIRA Pilot Receipt",
+  "type": "object",
+  "required": ["schema", "pilot_id", "task_packet", "patch_classification", "behavior_contract", "ci_evidence_summary", "decision_summary", "findings", "release_gate_decision", "claim_boundary"],
+  "properties": {
+    "schema": { "const": "ResidualOps_QIRA_PilotReceipt/v0.1" },
+    "pilot_id": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "task_packet": { "type": "object" },
+    "patch_classification": { "type": "object" },
+    "behavior_contract": { "type": "object" },
+    "ci_evidence_summary": { "type": "object" },
+    "decision_summary": { "type": "object" },
+    "findings": { "type": "array", "items": { "type": "object" } },
+    "release_gate_decision": { "type": "string" },
+    "claim_boundary": { "type": "object" },
+    "feedback_memory": { "type": "object" }
+  }
+}

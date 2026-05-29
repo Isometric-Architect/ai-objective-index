@@ -1,5 +1,11 @@
 # Changelog
 
+## ROE-9
+
+- Added the first QIRA-Code ReleaseGate pilot receipt packager for local/offline code-change review artifacts.
+- Added QIRA task packet, patch classification, behavior contract, CI evidence summary, release-gate receipt, reviewer readout, redaction report, feedback memory, schemas, docs, public outputs, and tests.
+- Preserved boundaries: no GitHub API calls, no external repository mutation, no PR comments, no merge/deploy/package publishing, no arbitrary external command execution, no token handling, no private-kernel exposure, and no correctness/security/quality/readiness/action-authorization claim.
+
 ## ROE-8
 
 - Added the first AgentSec pilot receipt packager for local/offline manifest review outputs.

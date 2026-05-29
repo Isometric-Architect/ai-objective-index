@@ -14,6 +14,8 @@ Public surfaces may include:
 
 ROE-8 pilot receipt artifacts may expose only public-safe local/offline AgentSec receipt shapes, reviewer readouts, redaction decisions, feedback memory fields, and known limits.
 
+ROE-9 pilot receipt artifacts may expose only public-safe local/offline QIRA task packet, patch classification, behavior contract, CI evidence summary, reviewer readout, redaction decision, feedback memory fields, and known limits.
+
 Public surfaces must not include:
 
 - ranking-weight values;

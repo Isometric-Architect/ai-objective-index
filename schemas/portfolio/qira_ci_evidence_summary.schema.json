@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/portfolio/qira_ci_evidence_summary.schema.json",
+  "title": "QIRA CI Evidence Summary",
+  "type": "object",
+  "required": ["schema", "ci_evidence_id", "task_id", "source_type", "evidence_status", "missing_evidence", "warnings", "must_not_claim"],
+  "properties": {
+    "schema": { "const": "ResidualOps_QIRA_CIEvidenceSummary/v0.1" },
+    "ci_evidence_id": { "type": "string" },
+    "task_id": { "type": "string" },
+    "source_type": { "type": "string" },
+    "tests_passed": { "type": ["boolean", "null"] },
+    "tests_failed": { "type": ["integer", "null"] },
+    "lint_passed": { "type": ["boolean", "null"] },
+    "typecheck_passed": { "type": ["boolean", "null"] },
+    "build_passed": { "type": ["boolean", "null"] },
+    "coverage_reported": { "type": ["boolean", "null"] },
+    "evidence_status": { "type": "string" },
+    "missing_evidence": { "type": "array", "items": { "type": "string" } },
+    "warnings": { "type": "array", "items": { "type": "string" } },
+    "must_not_claim": { "type": "array", "items": { "type": "string" } }
+  }
+}

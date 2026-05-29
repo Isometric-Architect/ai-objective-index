@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/portfolio/qira_patch_classification.schema.json",
+  "title": "QIRA Patch Classification",
+  "type": "object",
+  "required": ["schema", "patch_id", "task_id", "files_changed_count", "file_categories", "risk_flags", "classification_decision"],
+  "properties": {
+    "schema": { "const": "ResidualOps_QIRA_PatchClassification/v0.1" },
+    "patch_id": { "type": "string" },
+    "task_id": { "type": "string" },
+    "files_changed_count": { "type": "integer" },
+    "file_categories": { "type": "array", "items": { "type": "string" } },
+    "risk_flags": { "type": "array", "items": { "type": "string" } },
+    "classification_decision": { "type": "string" },
+    "evidence_refs": { "type": "array", "items": { "type": "string" } },
+    "explanation": { "type": "string" },
+    "next_actions": { "type": "array", "items": { "type": "string" } }
+  }
+}

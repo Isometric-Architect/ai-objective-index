@@ -1,5 +1,9 @@
 # Launch Notes
 
+## ROE-9 QIRA Pilot Receipt Packager
+
+ROE-9 adds a local/offline QIRA-Code ReleaseGate pilot receipt bundle for sample code-change review. It does not call GitHub APIs, post comments, mutate external repositories, merge, deploy, publish packages, request tokens, prove code correctness, certify security, guarantee quality, or authorize actions.
+
 ## ROE-8 AgentSec Pilot Receipt Packager
 
 ROE-8 adds a local/offline AgentSec pilot receipt bundle for sample manifest review. It does not call live MCP servers, execute tools, call GitHub APIs, post comments, modify external repositories, request tokens, certify security, guarantee quality, prove compliance, or authorize actions.

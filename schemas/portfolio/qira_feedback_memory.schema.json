@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/portfolio/qira_feedback_memory.schema.json",
+  "title": "QIRA Feedback Memory",
+  "type": "object",
+  "required": ["schema", "pilot_id", "feedback_status", "issue_categories", "follow_up_actions"],
+  "properties": {
+    "schema": { "const": "ResidualOps_QIRA_FeedbackMemory/v0.1" },
+    "pilot_id": { "type": "string" },
+    "feedback_status": { "type": "string" },
+    "reviewer_type": { "type": "string" },
+    "issue_categories": { "type": "array", "items": { "type": "string" } },
+    "follow_up_actions": { "type": "array", "items": { "type": "string" } },
+    "should_update_behavior_contract": { "type": "boolean" },
+    "should_add_negative_control": { "type": "boolean" },
+    "should_add_fixture": { "type": "boolean" },
+    "should_change_claim_boundary": { "type": "boolean" },
+    "should_request_ci_evidence": { "type": "boolean" }
+  }
+}

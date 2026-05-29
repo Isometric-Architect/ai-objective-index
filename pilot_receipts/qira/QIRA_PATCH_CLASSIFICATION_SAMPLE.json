@@ -1,0 +1,26 @@
+{
+  "schema": "ResidualOps_QIRA_PatchClassification/v0.1",
+  "patch_id": "qira-patch-00147500e87c",
+  "task_id": "qira-task-82bd1c4a1ea4",
+  "files_changed_count": 3,
+  "file_categories": [
+    "docs",
+    "security_sensitive",
+    "tests"
+  ],
+  "risk_flags": [
+    "release_config_change",
+    "subprocess_or_shell"
+  ],
+  "classification_decision": "BLOCK_FORBIDDEN_ACTION",
+  "evidence_refs": [
+    "local_patch#1",
+    "local_patch#2",
+    "local_patch#3"
+  ],
+  "explanation": "Patch includes release/deploy negative-control surface that cannot be authorized by a local QIRA pilot.",
+  "next_actions": [
+    "review HOLD/BLOCK findings before merge or deploy decisions",
+    "request independent CI evidence for any real owner-consented pilot"
+  ]
+}

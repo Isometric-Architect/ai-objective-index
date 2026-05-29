@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/portfolio/qira_task_packet.schema.json",
+  "title": "QIRA Task Packet",
+  "type": "object",
+  "required": ["schema", "task_id", "task_title", "task_goal", "owner_consent", "allowed_review_scope", "forbidden_actions", "claim_ceiling"],
+  "properties": {
+    "schema": { "const": "ResidualOps_QIRA_TaskPacket/v0.1" },
+    "task_id": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "task_title": { "type": "string" },
+    "task_goal": { "type": "string" },
+    "repo_label": { "type": "string" },
+    "owner_consent": { "type": "object" },
+    "input_source": { "type": "string" },
+    "intended_change_type": { "type": "string" },
+    "allowed_review_scope": { "type": "object" },
+    "forbidden_actions": { "type": "array", "items": { "type": "string" } },
+    "claim_ceiling": { "type": "string" }
+  }
+}

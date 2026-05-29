@@ -1,0 +1,94 @@
+{
+  "schema": "ResidualOps_ROE9QIRAPilotGate/v0.1",
+  "generated_at": "2026-05-29T10:42:08.161254+00:00",
+  "decision": "PASS_FIRST_QIRA_PILOT_RECEIPT_READY",
+  "pilot_id": "qira-pilot-43b0670d1428",
+  "release_gate_decision": "BLOCK_RELEASE_SIDE_EFFECT",
+  "redaction_decision": "PASS_REDACTED",
+  "feedback_status": "pending",
+  "artifact_count": 9,
+  "missing_artifacts": [],
+  "artifacts": [
+    {
+      "path": "pilot_receipts/qira/QIRA_TASK_PACKET_SAMPLE.json",
+      "role": "task_packet",
+      "exists": true,
+      "size_bytes": 1129,
+      "sha256": "d5b5d182b2f878454bd3c6299ae88605ef7ef6c742f63efe12d46f18f2868322"
+    },
+    {
+      "path": "pilot_receipts/qira/QIRA_PATCH_CLASSIFICATION_SAMPLE.json",
+      "role": "patch_classification",
+      "exists": true,
+      "size_bytes": 782,
+      "sha256": "edc666e0c3712a3ecdeaff6f3c2d06c14d4169af0b87eee2e702cc675371bacf"
+    },
+    {
+      "path": "pilot_receipts/qira/QIRA_BEHAVIOR_CONTRACT_SAMPLE.json",
+      "role": "behavior_contract",
+      "exists": true,
+      "size_bytes": 1339,
+      "sha256": "5216a55384d842266918b1a3f32b07a820707445f76e19621ddf4bd0d77509d2"
+    },
+    {
+      "path": "pilot_receipts/qira/QIRA_CI_EVIDENCE_SUMMARY_SAMPLE.json",
+      "role": "ci_evidence_summary",
+      "exists": true,
+      "size_bytes": 832,
+      "sha256": "2c1b103d09577343a9f2c4b08677c039558a49001bac16bce3d6b255d74a53f0"
+    },
+    {
+      "path": "pilot_receipts/qira/QIRA_PILOT_RECEIPT_SAMPLE.json",
+      "role": "pilot_receipt",
+      "exists": true,
+      "size_bytes": 8482,
+      "sha256": "77285ac440d66fb320b45281e10fa0f4a2dec657256e2c36317fcb505cc918e0"
+    },
+    {
+      "path": "pilot_receipts/qira/QIRA_REVIEWER_READOUT.md",
+      "role": "reviewer_readout",
+      "exists": true,
+      "size_bytes": 2113,
+      "sha256": "a932536c89e438266a69d1eeb942577e95ae7aeb6663b60bdc50a953b7a5887d"
+    },
+    {
+      "path": "pilot_receipts/qira/QIRA_PILOT_REDACTION_REPORT.json",
+      "role": "redaction_report",
+      "exists": true,
+      "size_bytes": 361,
+      "sha256": "cfae929c1ec05d153105e99816a96c3f95d2e5d7d5d23c2e22674a07e5375a59"
+    },
+    {
+      "path": "pilot_receipts/qira/QIRA_PILOT_FEEDBACK_MEMORY_ENTRY.json",
+      "role": "feedback_memory_entry",
+      "exists": true,
+      "size_bytes": 988,
+      "sha256": "cd961346a40292be308ffcd476cb1843f413a785453c35ee0c47daa93cf4d249"
+    },
+    {
+      "path": "pilot_receipts/qira/QIRA_PILOT_KNOWN_LIMITS.md",
+      "role": "known_limits",
+      "exists": true,
+      "size_bytes": 389,
+      "sha256": "ec1b50ba76e0c2a987f6a35f2fcfaac1fcb9353a8784d0622f8719df80ea79e3"
+    }
+  ],
+  "claim_finding_count": 0,
+  "claim_findings": [],
+  "github_api_used": false,
+  "external_repo_modified": false,
+  "external_actions_performed": false,
+  "merge_performed": false,
+  "deploy_performed": false,
+  "publish_performed": false,
+  "review_comment_posted": false,
+  "crawler_used": false,
+  "network_used": false,
+  "token_printed": false,
+  "private_kernel_exposed": false,
+  "can_prove_correctness": false,
+  "can_certify_security": false,
+  "can_guarantee_quality": false,
+  "can_authorize_merge": false,
+  "can_authorize_deploy": false
+}

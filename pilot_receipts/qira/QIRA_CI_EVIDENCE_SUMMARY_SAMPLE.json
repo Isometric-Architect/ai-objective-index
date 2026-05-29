@@ -1,0 +1,31 @@
+{
+  "schema": "ResidualOps_QIRA_CIEvidenceSummary/v0.1",
+  "ci_evidence_id": "qira-ci-summary-3f215092cac3",
+  "task_id": "qira-task-82bd1c4a1ea4",
+  "source_type": "generated_sample",
+  "tests_passed": true,
+  "tests_failed": 0,
+  "lint_passed": null,
+  "typecheck_passed": null,
+  "build_passed": null,
+  "coverage_reported": false,
+  "evidence_status": "PARTIAL_CI_EVIDENCE",
+  "missing_evidence": [
+    "build_result",
+    "independent_ci_run",
+    "lint_result",
+    "typecheck_result"
+  ],
+  "warnings": [
+    "Generated sample evidence is useful for packaging shape only."
+  ],
+  "must_not_claim": [
+    "correctness_proven",
+    "security_certified",
+    "quality_guaranteed",
+    "production_ready",
+    "merge_authorized",
+    "deploy_authorized",
+    "external_repo_mutation_allowed"
+  ]
+}

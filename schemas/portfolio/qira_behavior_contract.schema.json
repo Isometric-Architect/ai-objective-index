@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/portfolio/qira_behavior_contract.schema.json",
+  "title": "QIRA Behavior Contract",
+  "type": "object",
+  "required": ["schema", "contract_id", "task_id", "expected_behavior", "forbidden_behavior", "required_evidence", "negative_controls", "claim_boundary"],
+  "properties": {
+    "schema": { "const": "ResidualOps_QIRA_BehaviorContract/v0.1" },
+    "contract_id": { "type": "string" },
+    "task_id": { "type": "string" },
+    "expected_behavior": { "type": "array", "items": { "type": "string" } },
+    "non_goals": { "type": "array", "items": { "type": "string" } },
+    "forbidden_behavior": { "type": "array", "items": { "type": "string" } },
+    "required_evidence": { "type": "array", "items": { "type": "string" } },
+    "negative_controls": { "type": "array", "items": { "type": "string" } },
+    "claim_boundary": { "type": "object" }
+  }
+}

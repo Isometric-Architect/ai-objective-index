@@ -1,0 +1,28 @@
+{
+  "schema": "ResidualOps_QIRA_FeedbackMemory/v0.1",
+  "pilot_id": "qira-pilot-43b0670d1428",
+  "feedback_status": "pending",
+  "reviewer_type": "unknown",
+  "issue_categories": [
+    "ci_evidence_gap",
+    "patch_scope",
+    "release_side_effect"
+  ],
+  "follow_up_actions": [
+    "review HOLD/BLOCK findings with repository owner",
+    "request copied or local CI evidence before any second-run readout",
+    "add public-safe fixture only if the pattern is generic and non-secret",
+    "keep private scoring calibration outside the public repository"
+  ],
+  "should_update_behavior_contract": true,
+  "should_add_negative_control": true,
+  "should_add_fixture": true,
+  "should_change_claim_boundary": false,
+  "should_request_ci_evidence": true,
+  "timestamp": "2026-05-29T10:42:03.289114+00:00",
+  "external_posting_performed": false,
+  "github_api_used": false,
+  "token_printed": false,
+  "can_authorize_merge": false,
+  "can_authorize_deploy": false
+}

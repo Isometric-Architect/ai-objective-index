@@ -1,0 +1,245 @@
+{
+  "schema": "ResidualOps_QIRA_PilotReceipt/v0.1",
+  "pilot_id": "qira-pilot-43b0670d1428",
+  "generated_at": "2026-05-29T10:42:03.287870+00:00",
+  "task_packet": {
+    "schema": "ResidualOps_QIRA_TaskPacket/v0.1",
+    "task_id": "qira-task-82bd1c4a1ea4",
+    "generated_at": "2026-05-29T10:42:03.287542+00:00",
+    "task_title": "Package a local QIRA pilot release-gate review.",
+    "task_goal": "Review a local patch fixture through task packet, patch classification, behavior contract, CI evidence summary, reviewer readout, receipt, and feedback memory.",
+    "repo_label": "sample/local fixture repository",
+    "owner_consent": {
+      "status": "sample_fixture",
+      "evidence_note": "sample fixture only; no external repository owner contacted"
+    },
+    "input_source": "sample_patch",
+    "intended_change_type": "tests",
+    "allowed_review_scope": {
+      "local_static_review": true,
+      "local_test_summary_intake": true,
+      "github_api_call": false,
+      "external_repo_modification": false,
+      "merge_or_deploy": false
+    },
+    "forbidden_actions": [
+      "create_pr",
+      "merge",
+      "deploy",
+      "publish_package",
+      "comment_on_pr",
+      "mutate_external_repo",
+      "use_live_credentials"
+    ],
+    "claim_ceiling": "local/offline release-gate review artifact only"
+  },
+  "patch_classification": {
+    "schema": "ResidualOps_QIRA_PatchClassification/v0.1",
+    "patch_id": "qira-patch-00147500e87c",
+    "task_id": "qira-task-82bd1c4a1ea4",
+    "files_changed_count": 3,
+    "file_categories": [
+      "docs",
+      "security_sensitive",
+      "tests"
+    ],
+    "risk_flags": [
+      "release_config_change",
+      "subprocess_or_shell"
+    ],
+    "classification_decision": "BLOCK_FORBIDDEN_ACTION",
+    "evidence_refs": [
+      "local_patch#1",
+      "local_patch#2",
+      "local_patch#3"
+    ],
+    "explanation": "Patch includes release/deploy negative-control surface that cannot be authorized by a local QIRA pilot.",
+    "next_actions": [
+      "review HOLD/BLOCK findings before merge or deploy decisions",
+      "request independent CI evidence for any real owner-consented pilot"
+    ]
+  },
+  "behavior_contract": {
+    "schema": "ResidualOps_QIRA_BehaviorContract/v0.1",
+    "contract_id": "qira-contract-5a47acc21115",
+    "task_id": "qira-task-82bd1c4a1ea4",
+    "expected_behavior": [
+      "Classify the local patch scope.",
+      "Separate docs/test review signals from release/deploy actions.",
+      "Surface CI evidence gaps without treating CI summaries as proof.",
+      "Write a reviewer artifact and feedback memory entry only."
+    ],
+    "non_goals": [
+      "No GitHub API calls.",
+      "No external repository mutation.",
+      "No merge or deploy authorization.",
+      "No code-correctness or security certification."
+    ],
+    "forbidden_behavior": [
+      "create_pr",
+      "merge",
+      "deploy",
+      "publish_package",
+      "comment_on_pr",
+      "mutate_external_repo",
+      "use_live_credentials"
+    ],
+    "required_evidence": [
+      "tests_pass",
+      "docs_updated",
+      "no_secret_diff",
+      "no_unapproved_network",
+      "no_release_side_effect",
+      "reviewer_ack"
+    ],
+    "negative_controls": [
+      "secret_in_diff_must_block",
+      "deploy_script_change_must_hold",
+      "auth_scope_change_must_hold",
+      "missing_test_evidence_must_hold"
+    ],
+    "claim_boundary": {
+      "not_correctness_proof": true,
+      "not_security_certification": true,
+      "not_production_readiness": true,
+      "no_merge_authorization": true
+    }
+  },
+  "ci_evidence_summary": {
+    "schema": "ResidualOps_QIRA_CIEvidenceSummary/v0.1",
+    "ci_evidence_id": "qira-ci-summary-3f215092cac3",
+    "task_id": "qira-task-82bd1c4a1ea4",
+    "source_type": "generated_sample",
+    "tests_passed": true,
+    "tests_failed": 0,
+    "lint_passed": null,
+    "typecheck_passed": null,
+    "build_passed": null,
+    "coverage_reported": false,
+    "evidence_status": "PARTIAL_CI_EVIDENCE",
+    "missing_evidence": [
+      "build_result",
+      "independent_ci_run",
+      "lint_result",
+      "typecheck_result"
+    ],
+    "warnings": [
+      "Generated sample evidence is useful for packaging shape only."
+    ],
+    "must_not_claim": [
+      "correctness_proven",
+      "security_certified",
+      "quality_guaranteed",
+      "production_ready",
+      "merge_authorized",
+      "deploy_authorized",
+      "external_repo_mutation_allowed"
+    ]
+  },
+  "decision_summary": {
+    "allow_count": 1,
+    "hold_count": 1,
+    "block_count": 1,
+    "top_hold_reasons": [
+      "CI evidence is partial or generated sample metadata; independent CI evidence is still needed."
+    ],
+    "top_block_reasons": [
+      "Negative-control fixture includes release/deploy language that a local QIRA pilot cannot authorize."
+    ]
+  },
+  "findings": [
+    {
+      "finding_id": "qira-pilot-finding-1",
+      "severity": "info",
+      "decision": "ALLOW",
+      "category": "patch_scope",
+      "evidence_ref": "sample_patch#docs-tests",
+      "explanation": "Docs/test fixture review can be represented as a local reviewer artifact.",
+      "next_action": "keep as local review evidence only",
+      "must_not_claim": [
+        "correctness_proven",
+        "security_certified",
+        "quality_guaranteed",
+        "production_ready",
+        "merge_authorized",
+        "deploy_authorized",
+        "external_repo_mutation_allowed"
+      ]
+    },
+    {
+      "finding_id": "qira-pilot-finding-2",
+      "severity": "medium",
+      "decision": "HOLD",
+      "category": "ci_evidence_gap",
+      "evidence_ref": "qira-ci-summary-3f215092cac3",
+      "explanation": "CI evidence is partial or generated sample metadata; independent CI evidence is still needed.",
+      "next_action": "request owner-provided or copied CI summary before second-run readout",
+      "must_not_claim": [
+        "correctness_proven",
+        "security_certified",
+        "quality_guaranteed",
+        "production_ready",
+        "merge_authorized",
+        "deploy_authorized",
+        "external_repo_mutation_allowed"
+      ]
+    },
+    {
+      "finding_id": "qira-pilot-finding-3",
+      "severity": "high",
+      "decision": "BLOCK",
+      "category": "release_side_effect",
+      "evidence_ref": "sample_patch#negative-control-deploy",
+      "explanation": "Negative-control fixture includes release/deploy language that a local QIRA pilot cannot authorize.",
+      "next_action": "remove release/deploy side effect or route to a separate owner-approved release gate",
+      "must_not_claim": [
+        "correctness_proven",
+        "security_certified",
+        "quality_guaranteed",
+        "production_ready",
+        "merge_authorized",
+        "deploy_authorized",
+        "external_repo_mutation_allowed"
+      ]
+    }
+  ],
+  "release_gate_decision": "BLOCK_RELEASE_SIDE_EFFECT",
+  "claim_boundary": {
+    "not_code_correctness_proof": true,
+    "not_security_certification": true,
+    "not_quality_guarantee": true,
+    "no_merge_authorization": true,
+    "no_deploy_authorization": true,
+    "no_external_repo_mutation": true
+  },
+  "feedback_memory": {
+    "entry_id": "qira-feedback-43b0670d1428",
+    "suggested_next_review": "review HOLD/BLOCK findings before any second owner-consented QIRA pilot run",
+    "unresolved_questions": [
+      "CI evidence is partial or generated sample metadata; independent CI evidence is still needed.",
+      "Negative-control fixture includes release/deploy language that a local QIRA pilot cannot authorize."
+    ],
+    "known_limits": [
+      "local/offline patch review only",
+      "no GitHub API call",
+      "no external repository mutation",
+      "not code correctness proof",
+      "not security certification",
+      "not quality guarantee",
+      "no merge or deploy authorization"
+    ]
+  },
+  "github_api_used": false,
+  "external_repo_modified": false,
+  "external_actions_performed": false,
+  "merge_performed": false,
+  "deploy_performed": false,
+  "publish_performed": false,
+  "token_printed": false,
+  "private_kernel_exposed": false,
+  "can_prove_correctness": false,
+  "can_certify_security": false,
+  "can_guarantee_quality": false,
+  "can_authorize_merge": false,
+  "can_authorize_deploy": false
+}

@@ -85,6 +85,8 @@ ROE-7 adds pilot receipt readout and a second-run decision gate. It keeps the ga
 
 ROE-8 adds the first AgentSec pilot receipt packager. It packages a local/offline AgentSec manifest review into a redacted receipt bundle, reviewer readout, feedback memory entry, and gate result without calling live MCP servers, executing tools, modifying external repositories, posting comments, handling tokens, certifying security, guaranteeing quality, proving compliance, or authorizing actions.
 
+ROE-9 adds the first QIRA-Code ReleaseGate pilot receipt packager. It packages a local/offline code-change review into task packet, patch classification, behavior contract, CI evidence summary, reviewer readout, receipt, feedback memory, and gate artifacts without GitHub API calls, external repository mutation, PR comments, merge, deploy, package publish, token handling, correctness proof, security certification, or quality guarantee.
+
 ## Quick Example
 
 Example objective request:

@@ -1,0 +1,31 @@
+{
+  "schema": "ResidualOps_QIRA_TaskPacket/v0.1",
+  "task_id": "qira-task-82bd1c4a1ea4",
+  "generated_at": "2026-05-29T10:42:03.287542+00:00",
+  "task_title": "Package a local QIRA pilot release-gate review.",
+  "task_goal": "Review a local patch fixture through task packet, patch classification, behavior contract, CI evidence summary, reviewer readout, receipt, and feedback memory.",
+  "repo_label": "sample/local fixture repository",
+  "owner_consent": {
+    "status": "sample_fixture",
+    "evidence_note": "sample fixture only; no external repository owner contacted"
+  },
+  "input_source": "sample_patch",
+  "intended_change_type": "tests",
+  "allowed_review_scope": {
+    "local_static_review": true,
+    "local_test_summary_intake": true,
+    "github_api_call": false,
+    "external_repo_modification": false,
+    "merge_or_deploy": false
+  },
+  "forbidden_actions": [
+    "create_pr",
+    "merge",
+    "deploy",
+    "publish_package",
+    "comment_on_pr",
+    "mutate_external_repo",
+    "use_live_credentials"
+  ],
+  "claim_ceiling": "local/offline release-gate review artifact only"
+}

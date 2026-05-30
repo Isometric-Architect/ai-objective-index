@@ -1,0 +1,28 @@
+{
+  "schema": "AOI_PublicDiscoverySmokeResult/v0.1",
+  "generated_at": "2026-05-30T10:55:32.496055+00:00",
+  "decision": "PASS_PUBLIC_DISCOVERY_SMOKE",
+  "pypi_public_install_decision": "PASS_PYPI_PUBLIC_INSTALL_SMOKE",
+  "mcp_registry_public_smoke_decision": "PASS_MCP_REGISTRY_PUBLIC_SMOKE",
+  "pypi_package_data_ok": {
+    "agent_adoption_imported": true,
+    "agent_examples_packaged": true,
+    "agent_schema_packaged": true,
+    "api_examples_packaged": true,
+    "capability_card_packaged": true,
+    "capability_card_version": "0.3.0a2",
+    "version": "0.3.0a2"
+  },
+  "mcp_registry_matches": {
+    "server_name": true,
+    "package": true,
+    "version": true,
+    "registry_type_pypi": true,
+    "no_certification_claim": true
+  },
+  "token_printed": false,
+  "external_llm_api_called": false,
+  "publish_performed": false,
+  "errors": [],
+  "warnings": []
+}

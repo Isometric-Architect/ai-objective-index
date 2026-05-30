@@ -1,0 +1,22 @@
+{
+  "schema": "AOI_MCPRegistryPublicSmokeResult/v0.1",
+  "generated_at": "2026-05-30T10:55:32.494742+00:00",
+  "decision": "PASS_MCP_REGISTRY_PUBLIC_SMOKE",
+  "server_name": "io.github.Isometric-Architect/ai-objective-index",
+  "target_version": "0.3.0a2",
+  "package_name": "ai-objective-index",
+  "registry_search_url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Isometric-Architect/ai-objective-index",
+  "registry_checked": true,
+  "registry_status_code": 200,
+  "matches": {
+    "server_name": true,
+    "package": true,
+    "version": true,
+    "registry_type_pypi": true,
+    "no_certification_claim": true
+  },
+  "token_printed": false,
+  "publish_performed": false,
+  "errors": [],
+  "warnings": []
+}

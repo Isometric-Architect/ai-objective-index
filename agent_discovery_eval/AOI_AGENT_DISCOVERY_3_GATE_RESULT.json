@@ -1,0 +1,20 @@
+{
+  "schema": "AOI_AgentDiscovery3GateResult/v0.1",
+  "generated_at": "2026-05-30T10:55:40.929391+00:00",
+  "decision": "PASS_AGENT_PUBLIC_DISCOVERY_AND_PROMPT_EVAL_READY",
+  "public_discovery_smoke_decision": "PASS_PUBLIC_DISCOVERY_SMOKE",
+  "pypi_public_install_smoke_decision": "PASS_PYPI_PUBLIC_INSTALL_SMOKE",
+  "mcp_registry_public_smoke_decision": "PASS_MCP_REGISTRY_PUBLIC_SMOKE",
+  "case_count": 11,
+  "naive_result_count": 11,
+  "aoi_guided_result_count": 11,
+  "aoi_guided_total_score": 110,
+  "naive_total_score": 11,
+  "critical_fields_present": true,
+  "all_hold_cases_useful": true,
+  "token_printed": false,
+  "external_llm_api_called": false,
+  "posting_or_outreach_performed": false,
+  "errors": [],
+  "warnings": []
+}

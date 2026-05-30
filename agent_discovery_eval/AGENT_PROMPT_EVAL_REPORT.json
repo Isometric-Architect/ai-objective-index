@@ -1,0 +1,30 @@
+{
+  "schema": "AOI_AgentPromptEvalReport/v0.1",
+  "generated_at": "2026-05-30T10:49:26.359582+00:00",
+  "case_count": 11,
+  "method": "deterministic_offline_fixture_not_external_llm_eval",
+  "naive_total_score": 11,
+  "aoi_guided_total_score": 110,
+  "max_total_score": 110,
+  "aoi_guided_improvement": 99,
+  "reduced_failure_modes": [
+    "hallucinated candidate acceptance",
+    "overclaim",
+    "authorization confusion",
+    "missing HOLD",
+    "missing next_action",
+    "missing ResidualOps escalation"
+  ],
+  "limits": [
+    "Synthetic fixtures are not broad real-world agent adoption proof.",
+    "No external LLM API was called.",
+    "Scores should guide prompt and product iteration, not claim readiness."
+  ],
+  "claim_boundary": [
+    "not security certification",
+    "not code correctness proof",
+    "not legal, privacy, license, or compliance clearance",
+    "not product readiness",
+    "not action authorization"
+  ]
+}

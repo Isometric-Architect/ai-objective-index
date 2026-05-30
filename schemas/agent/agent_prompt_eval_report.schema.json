@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AOI Agent Prompt Eval Report",
+  "type": "object",
+  "required": [
+    "schema",
+    "generated_at",
+    "case_count",
+    "method",
+    "naive_total_score",
+    "aoi_guided_total_score",
+    "max_total_score",
+    "aoi_guided_improvement"
+  ],
+  "properties": {
+    "schema": { "const": "AOI_AgentPromptEvalReport/v0.1" },
+    "generated_at": { "type": "string" },
+    "case_count": { "type": "integer" },
+    "method": { "type": "string" },
+    "naive_total_score": { "type": "integer" },
+    "aoi_guided_total_score": { "type": "integer" },
+    "max_total_score": { "type": "integer" },
+    "aoi_guided_improvement": { "type": "integer" },
+    "reduced_failure_modes": { "type": "array", "items": { "type": "string" } },
+    "limits": { "type": "array", "items": { "type": "string" } }
+  }
+}

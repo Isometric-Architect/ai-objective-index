@@ -345,3 +345,9 @@ It does not publish unless all gates pass and `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=Y
 ROE-18 prepares manual-only discovery materials for bounded feedback on the ResidualOps external-safe demo/share pack. It writes reviewer personas, conservative copy-paste drafts, a static feedback form template, triage taxonomy, link pack, FAQ, claim boundary, operator checklist, do-not-send guard, redaction report, claim audit, and gate output.
 
 It does not send emails, DM anyone, post to communities, create GitHub issues, call GitHub or external APIs, scrape/fetch URLs, upload, deploy, create a live form service, print/store tokens, expose private kernels, or claim certification, proof, product readiness, quality guarantee, or action authorization.
+
+## AOI Agent Discovery 3 Public Discovery Smoke
+
+AOI Agent Discovery 3 verifies the public `0.3.0a2` path after PyPI and MCP Registry publication. It runs a public PyPI install smoke, an MCP Registry discovery smoke, and an offline ordinary-agent prompt evaluation comparing naive recommendation fixtures with AOI-guided discover/preflight fixtures.
+
+It does not upload a new PyPI version, publish a new MCP Registry version, call external LLM APIs, post outreach, create issues or comments, mutate external repositories, handle tokens, expose private kernels, or claim certification, proof, product readiness, quality guarantee, or action authorization.

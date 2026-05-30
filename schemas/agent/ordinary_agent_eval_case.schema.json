@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AOI Ordinary Agent Eval Case",
+  "type": "object",
+  "required": [
+    "schema",
+    "case_id",
+    "objective",
+    "naive_agent_expected_failure",
+    "AOI_expected_behavior",
+    "required_output_keys",
+    "must_not_claim",
+    "pass_criteria"
+  ],
+  "properties": {
+    "schema": { "const": "AOI_OrdinaryAgentEvalCase/v0.1" },
+    "case_id": { "type": "string" },
+    "objective": { "type": "string" },
+    "naive_agent_expected_failure": { "type": "string" },
+    "AOI_expected_behavior": { "type": "string" },
+    "required_output_keys": { "type": "array", "items": { "type": "string" } },
+    "must_not_claim": { "type": "array", "items": { "type": "string" } },
+    "pass_criteria": { "type": "array", "items": { "type": "string" } },
+    "expected_residualops_escalation": { "type": "string" }
+  }
+}

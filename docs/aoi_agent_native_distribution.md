@@ -10,6 +10,8 @@ The distribution includes:
 - Read-only REST endpoints for capability-card, discover, preflight, and adoption status.
 - Read-only MCP tools for capability-card, discover, preflight, explanation, and examples.
 - Agent discovery artifacts, schemas, prompt examples, and API examples in the local wheel.
+- Public discovery smoke and offline ordinary-agent prompt evaluation artifacts for checking whether naive agent behavior improves when AOI discover/preflight output is used.
 
 AOI finds candidates and records route boundaries. It does not execute tools, certify security, prove correctness, provide legal/privacy/license clearance, guarantee quality, claim product readiness, or authorize external actions.
 
+AOI Agent Discovery 3 is an evaluation pack, not a product-readiness proof. It compares deterministic naive-agent failure fixtures with AOI-guided outputs and records whether candidates, source traces, missing fields, route decisions, next actions, claim boundaries, freshness, and ResidualOps escalation are present.

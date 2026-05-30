@@ -2,6 +2,9 @@
 
 ## AOI 0.3.0a2
 
+- Added AOI-AGENT-DISCOVERY-3: public discovery smoke plus ordinary-agent prompt evaluation for the published `0.3.0a2` package.
+- Added public PyPI install smoke, MCP Registry public smoke, deterministic naive-vs-AOI-guided agent fixtures, prompt-eval rubric, manual ChatGPT/Claude/Gemini evaluation sheet, docs, schemas, public outputs, and tests.
+- Preserved boundaries: no new PyPI upload, no MCP Registry publish, no external LLM API calls, no outreach/posting, no issue/PR/comment creation, no tokens, no private-kernel disclosure, and no certification/proof/product-readiness/action-authorization claim.
 - Added final PyPI upload and MCP Registry publish gates for the agent-native `0.3.0a2` package candidate.
 - Added final preflight, final upload gate, interactive upload runner, real PyPI install verifier, MCP Registry gate, publish runner, reconcile helper, final publish report, token safety note, failure recovery note, docs, public outputs, and tests.
 - Preserved publish boundaries: PyPI upload requires `AOI_REAL_PYPI_UPLOAD_CONFIRM=YES` and local interactive `twine` token entry; MCP Registry publish requires real PyPI verification and `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES`; no tokens, `.pypirc`, dist files, or `mcp-publisher` binary are committed by default.

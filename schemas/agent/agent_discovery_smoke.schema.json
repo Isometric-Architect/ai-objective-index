@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AOI Agent Discovery Smoke",
+  "type": "object",
+  "required": ["schema", "generated_at", "decision"],
+  "properties": {
+    "schema": {
+      "enum": [
+        "AOI_PublicDiscoverySmokeResult/v0.1",
+        "AOI_PyPIPublicInstallSmokeResult/v0.1",
+        "AOI_MCPRegistryPublicSmokeResult/v0.1"
+      ]
+    },
+    "generated_at": { "type": "string" },
+    "decision": { "type": "string" },
+    "token_printed": { "type": "boolean" },
+    "errors": { "type": "array" },
+    "warnings": { "type": "array" }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "AOI_030A2FinalBuildResult/v0.1",
+  "generated_at": "2026-05-30T09:23:00.391059+00:00",
+  "decision": "PASS_FINAL_BUILD_READY",
+  "source_build_result": "public_launch/aoi_030a2_registry_recovery/AOI_030A2_BUILD_VERIFY_RESULT.json",
+  "source_build_decision": "PASS_BUILD_TWINE_MARKER_SYNCED",
+  "target_version": "0.3.0a2",
+  "wheel_path": "dist/ai_objective_index-0.3.0a2-py3-none-any.whl",
+  "sdist_path": "dist/ai_objective_index-0.3.0a2.tar.gz",
+  "wheel_exists": true,
+  "sdist_exists": true,
+  "twine_check_passed": true,
+  "local_install_smoke_passed": true,
+  "mcp_smoke_passed": false,
+  "mcp_publisher_validate_passed": false,
+  "pypi_upload_performed": false,
+  "mcp_registry_publish_performed": false,
+  "token_printed": false,
+  "errors": [],
+  "warnings": []
+}

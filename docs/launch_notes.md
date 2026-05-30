@@ -1,5 +1,11 @@
 # Launch Notes
 
+## AOI 0.3.0a2 Final PyPI Upload and MCP Registry Publish
+
+AOI 0.3.0a2 final publish tooling adds the guarded real distribution path for the agent-native package. It checks marker sync, local build/twine status, real package-data inclusion, REST/MCP agent surfaces, no-secrets status, claim guard, tech protection, and public/private alignment before PyPI upload. PyPI upload requires `AOI_REAL_PYPI_UPLOAD_CONFIRM=YES` and local interactive `twine` token entry. MCP Registry publish requires real PyPI install verification, local `mcp-publisher validate`, and `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES`.
+
+This package does not store tokens, create `.pypirc`, commit dist artifacts by default, commit `mcp-publisher`, overwrite or yank `0.3.0a1`, post to communities, claim security certification, prove correctness, prove legal/privacy/license/compliance status, guarantee quality, claim product readiness, authorize actions, or expose private kernels.
+
 ## AOI Agent-Native Discovery and Preflight Pack
 
 AOI-AGENT-ADOPTION-1 improves the unpublished `0.3.0a2` recovery package for ordinary AI agents before any PyPI upload or MCP Registry publish. It adds a machine-readable capability card, discover mode examples, preflight mode examples, agent prompt templates, claim-boundary artifacts, freshness/staleness guidance, and a ResidualOps extension map.

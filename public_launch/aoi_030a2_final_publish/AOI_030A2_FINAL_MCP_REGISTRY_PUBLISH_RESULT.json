@@ -1,0 +1,23 @@
+{
+  "schema": "AOI_030A2FinalMCPRegistryPublishResult/v0.1",
+  "generated_at": "2026-05-30T09:29:35.029481+00:00",
+  "decision": "HOLD_ENV_CONFIRM_REQUIRED",
+  "gate_decision": "HOLD_PYPI_VERIFY_REQUIRED",
+  "env_confirm_present": false,
+  "execute_requested": true,
+  "login_first": false,
+  "mcp_publisher_path": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\tools\\mcp-publisher\\mcp-publisher.exe",
+  "login_result": {
+    "skipped": true
+  },
+  "publish_result": {
+    "skipped": true
+  },
+  "submission_performed": false,
+  "token_printed": false,
+  "pypi_upload_performed": false,
+  "errors": [],
+  "warnings": [
+    "AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES is required before registry publish."
+  ]
+}

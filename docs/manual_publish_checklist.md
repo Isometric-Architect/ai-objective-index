@@ -1,5 +1,28 @@
 # Manual Publish Checklist
 
+## AOI 0.3.0a2 Final PyPI and MCP Registry Path
+
+For the agent-native `0.3.0a2` candidate, run this guarded path before any real distribution:
+
+1. Run `python -m pytest`.
+2. Run `python -m ai_objective_index.aoi_030a2_final_preflight`.
+3. Run `python -m ai_objective_index.aoi_030a2_build_verify`.
+4. Run `python -m ai_objective_index.agent_adoption.package_data_audit`.
+5. Run `python -m ai_objective_index.agent_adoption.agent_surface_audit`.
+6. Run `python -m ai_objective_index.aoi_030a2_final_pypi_upload_gate`.
+7. If the gate is ready, set `$env:AOI_REAL_PYPI_UPLOAD_CONFIRM="YES"`.
+8. Run `python -m ai_objective_index.aoi_030a2_final_pypi_upload_runner --execute`.
+9. Enter `__token__` and the PyPI API token only into the local `twine` prompt.
+10. Run `python -m ai_objective_index.aoi_030a2_final_pypi_verify`.
+11. Run `python -m ai_objective_index.aoi_030a2_final_mcp_registry_gate`.
+12. If the Registry gate is ready, authenticate locally with `mcp-publisher login github`.
+13. Set `$env:AOI_MCP_REGISTRY_SUBMIT_CONFIRM="YES"`.
+14. Run `python -m ai_objective_index.aoi_030a2_final_mcp_registry_publish --execute`.
+15. Run `python -m ai_objective_index.aoi_030a2_final_mcp_registry_reconcile`.
+16. Run `python -m ai_objective_index.aoi_030a2_final_publish_report`.
+
+Do not paste tokens into chat, pass tokens as command-line flags, create or commit `.pypirc`, commit dist files by default, commit `mcp-publisher`, overwrite or yank `0.3.0a1`, or describe the publication as security certification, product readiness, proof, legal/privacy/license clearance, quality guarantee, or action authorization.
+
 Package 7B does not publish automatically. Use this checklist if a human decides to publish a public beta.
 
 1. Review `README.md`.

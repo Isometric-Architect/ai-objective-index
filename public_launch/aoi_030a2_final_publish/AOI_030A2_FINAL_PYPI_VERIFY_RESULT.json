@@ -1,0 +1,17 @@
+{
+  "schema": "AOI_030A2FinalPyPIVerifyResult/v0.1",
+  "generated_at": "2026-05-30T09:24:20.202922+00:00",
+  "decision": "HOLD_PYPI_UPLOAD_NOT_CONFIRMED",
+  "target_version": "0.3.0a2",
+  "package_name": "ai-objective-index",
+  "upload_decision": "HOLD_ENV_CONFIRM_REQUIRED",
+  "verification_payload": {},
+  "commands": [],
+  "token_printed": false,
+  "pypirc_created": false,
+  "mcp_registry_publish_performed": false,
+  "errors": [],
+  "warnings": [
+    "PyPI upload result is HOLD_ENV_CONFIRM_REQUIRED."
+  ]
+}

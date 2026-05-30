@@ -22,6 +22,18 @@ Before `0.3.0a2` upload, AOI-AGENT-ADOPTION-1 adds discovery/preflight artifacts
 
 The agent-facing pack is documentation, schemas, examples, and local deterministic helpers only. It does not publish to MCP Registry, run live MCP/tool calls, call external APIs, use credentials, certify security, prove correctness, claim product readiness, or authorize external actions. Private ranking weights and thresholds remain private.
 
+## AOI 0.3.0a2 Final Publish Safety
+
+The final publish path separates local readiness from irreversible distribution:
+
+- `aoi_030a2_final_preflight` checks marker sync, agent surfaces, package data, no-secrets status, claim guard, tech protection, public/private alignment, and committed artifact boundaries.
+- `aoi_030a2_final_pypi_upload_gate` does not upload; it requires `AOI_REAL_PYPI_UPLOAD_CONFIRM=YES`.
+- `aoi_030a2_final_pypi_upload_runner --execute` uses interactive `twine` only and must not receive tokens through command-line flags.
+- `aoi_030a2_final_mcp_registry_gate` requires real PyPI install verification and local `mcp-publisher validate`.
+- `aoi_030a2_final_mcp_registry_publish --execute` requires `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES`.
+
+No final publish artifact may claim security certification, legal/privacy/license clearance, product readiness, quality guarantee, proof, or action authorization.
+
 ## Package 8S Protection Gate
 
 Before running a Registry submit package, run the technology protection gate:

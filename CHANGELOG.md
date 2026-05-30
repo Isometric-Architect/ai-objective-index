@@ -2,6 +2,9 @@
 
 ## AOI 0.3.0a2
 
+- Added final PyPI upload and MCP Registry publish gates for the agent-native `0.3.0a2` package candidate.
+- Added final preflight, final upload gate, interactive upload runner, real PyPI install verifier, MCP Registry gate, publish runner, reconcile helper, final publish report, token safety note, failure recovery note, docs, public outputs, and tests.
+- Preserved publish boundaries: PyPI upload requires `AOI_REAL_PYPI_UPLOAD_CONFIRM=YES` and local interactive `twine` token entry; MCP Registry publish requires real PyPI verification and `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES`; no tokens, `.pypirc`, dist files, or `mcp-publisher` binary are committed by default.
 - Added PyPI marker-sync and MCP Registry recovery tooling for `ai-objective-index==0.3.0a2`.
 - Synchronized `pyproject.toml`, package `__version__`, `.mcp/server.json`, and README `mcp-name` metadata around `io.github.Isometric-Architect/ai-objective-index`.
 - Added gated build/twine, PyPI upload/verify, MCP Registry validate/publish/reconcile helpers, recovery docs, public recovery outputs, and tests. Upload and registry publish remain explicit-confirmation actions and do not store or print tokens.

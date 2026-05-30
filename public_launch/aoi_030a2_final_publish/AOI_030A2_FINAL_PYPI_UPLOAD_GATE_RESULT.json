@@ -1,0 +1,31 @@
+{
+  "schema": "AOI_030A2FinalPyPIUploadGateResult/v0.1",
+  "generated_at": "2026-05-30T09:30:17.100900+00:00",
+  "decision": "HOLD_ENV_CONFIRM_REQUIRED",
+  "target_version": "0.3.0a2",
+  "package_name": "ai-objective-index",
+  "wheel_path": "dist/ai_objective_index-0.3.0a2-py3-none-any.whl",
+  "sdist_path": "dist/ai_objective_index-0.3.0a2.tar.gz",
+  "wheel_exists": true,
+  "sdist_exists": true,
+  "preflight_decision": "PASS_READY_FOR_FINAL_PYPI_UPLOAD",
+  "final_build_decision": "PASS_FINAL_BUILD_READY",
+  "pypi_status": {
+    "checked": true,
+    "status": "PASS_VERSION_AVAILABLE",
+    "versions": [
+      "0.3.0a1"
+    ]
+  },
+  "env_confirm_present": false,
+  "pypirc_exists": false,
+  "token_like_tracked_findings": [],
+  "token_file_candidates": [],
+  "upload_performed": false,
+  "token_printed": false,
+  "mcp_registry_publish_performed": false,
+  "errors": [],
+  "warnings": [
+    "AOI_REAL_PYPI_UPLOAD_CONFIRM=YES is required before interactive twine upload."
+  ]
+}

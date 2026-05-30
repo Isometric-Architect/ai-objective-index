@@ -79,6 +79,33 @@ Real PyPI upload requires `AOI_REAL_PYPI_UPLOAD_CONFIRM=YES` and an interactive 
 
 ## Agent Adoption Before Upload
 
+AOI-AGENT-ADOPTION-2 added the read-only agent REST/MCP surfaces and package-data inclusion audit for `0.3.0a2`. The final PyPI and MCP Registry path now uses:
+
+```powershell
+python -m ai_objective_index.aoi_030a2_final_preflight
+python -m ai_objective_index.aoi_030a2_build_verify
+python -m ai_objective_index.aoi_030a2_final_pypi_upload_gate
+```
+
+Real PyPI upload remains explicit:
+
+```powershell
+$env:AOI_REAL_PYPI_UPLOAD_CONFIRM="YES"
+python -m ai_objective_index.aoi_030a2_final_pypi_upload_runner --execute
+python -m ai_objective_index.aoi_030a2_final_pypi_verify
+```
+
+MCP Registry publication remains explicit and happens only after PyPI verification:
+
+```powershell
+python -m ai_objective_index.aoi_030a2_final_mcp_registry_gate
+$env:AOI_MCP_REGISTRY_SUBMIT_CONFIRM="YES"
+python -m ai_objective_index.aoi_030a2_final_mcp_registry_publish --execute
+python -m ai_objective_index.aoi_030a2_final_mcp_registry_reconcile
+```
+
+Do not overwrite or yank `0.3.0a1`, do not store tokens, do not commit `.pypirc`, dist artifacts, or `mcp-publisher`, and do not present Registry publication as security certification, product readiness, proof, quality guarantee, legal/privacy/license clearance, or action authorization.
+
 AOI-AGENT-ADOPTION-1 keeps version `0.3.0a2` because the recovery package has not been uploaded yet. It adds agent-native discovery and preflight artifacts before the final upload path:
 
 - capability card for ordinary AI agents;

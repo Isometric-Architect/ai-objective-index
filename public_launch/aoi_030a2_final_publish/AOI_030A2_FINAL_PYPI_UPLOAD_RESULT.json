@@ -1,0 +1,24 @@
+{
+  "schema": "AOI_030A2FinalPyPIUploadResult/v0.1",
+  "generated_at": "2026-05-30T09:24:11.673554+00:00",
+  "decision": "HOLD_ENV_CONFIRM_REQUIRED",
+  "target_version": "0.3.0a2",
+  "package_name": "ai-objective-index",
+  "gate_decision": "HOLD_ENV_CONFIRM_REQUIRED",
+  "env_confirm_present": false,
+  "execute_requested": true,
+  "command_redacted": "C:\\Users\\Isometric-Architect\\AppData\\Local\\Programs\\Python\\Python314\\python.exe -m twine upload dist\\ai_objective_index-0.3.0a2-py3-none-any.whl dist\\ai_objective_index-0.3.0a2.tar.gz",
+  "upload_result": {
+    "skipped": true,
+    "ok": false
+  },
+  "upload_performed": false,
+  "token_printed": false,
+  "token_stored": false,
+  "pypirc_created": false,
+  "mcp_registry_publish_performed": false,
+  "errors": [],
+  "warnings": [
+    "AOI_REAL_PYPI_UPLOAD_CONFIRM=YES is required before upload."
+  ]
+}

@@ -1,5 +1,11 @@
 # Changelog
 
+## ROE-21
+
+- Added a dashboard refresh from the ROE-20 feedback second-run bridge.
+- Added refresh delta, feedback second-run status cards, timeline update, feedback memory summary, reviewer readout, external share pack stale notice, redaction report, claim audit, gate result, schemas, docs, public outputs, and tests.
+- Preserved boundaries: no live web app, no deployment, no external API or GitHub API calls, no fetch/crawl, no live MCP/tool calls, no raw private-data inspection, no upload/training, no external repo mutation, no posting, no token handling, no private-kernel exposure, no skipped/HOLD-to-success conversion, and no certification/proof/product-readiness/action-authorization claim.
+
 ## ROE-20
 
 - Added a local feedback-to-second-run execution bridge for ROE-19 reply candidates.

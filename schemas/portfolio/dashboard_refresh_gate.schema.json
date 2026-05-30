@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/portfolio/dashboard_refresh_gate.schema.json",
+  "title": "ResidualOps Dashboard Refresh Gate",
+  "type": "object",
+  "required": [
+    "schema",
+    "generated_at",
+    "decision",
+    "refresh_id",
+    "status_card_count",
+    "feedback_bridge_selected_count",
+    "feedback_bridge_skipped_count",
+    "feedback_bridge_executed_count",
+    "external_action_count",
+    "redaction_decision",
+    "claim_audit_decision"
+  ],
+  "properties": {
+    "schema": {
+      "const": "ResidualOps_ROE21DashboardRefreshGate/v0.1"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "decision": {
+      "enum": [
+        "PASS_DASHBOARD_REFRESHED_FROM_FEEDBACK_SECOND_RUN",
+        "HOLD_MISSING_FEEDBACK_SECOND_RUN",
+        "HOLD_MISSING_STALE_NOTICE",
+        "HOLD_REDACTION_REVIEW",
+        "BLOCK_SECRET_FINDING",
+        "BLOCK_OVERCLAIM",
+        "BLOCK_EXTERNAL_ACTION",
+        "BLOCK_PRIVATE_KERNEL_DISCLOSURE",
+        "BLOCK_SKIPPED_CANDIDATE_FALSE_SUCCESS"
+      ]
+    },
+    "refresh_id": {
+      "type": "string"
+    },
+    "status_card_count": {
+      "type": "integer"
+    },
+    "feedback_bridge_selected_count": {
+      "type": "integer"
+    },
+    "feedback_bridge_skipped_count": {
+      "type": "integer"
+    },
+    "feedback_bridge_executed_count": {
+      "type": "integer"
+    },
+    "external_action_count": {
+      "type": "integer"
+    },
+    "redaction_decision": {
+      "type": "string"
+    },
+    "claim_audit_decision": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

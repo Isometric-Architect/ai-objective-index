@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/portfolio/dashboard_refresh_delta.schema.json",
+  "title": "ResidualOps Dashboard Refresh Delta",
+  "type": "object",
+  "required": [
+    "schema",
+    "refresh_id",
+    "generated_at",
+    "source_dashboard_ref",
+    "source_feedback_second_run_ref",
+    "previous_dashboard_phase",
+    "new_dashboard_phase",
+    "updates",
+    "aggregate_before",
+    "aggregate_after",
+    "claim_boundary_unchanged",
+    "no_external_action"
+  ],
+  "properties": {
+    "schema": {
+      "const": "ResidualOps_DashboardRefreshDelta/v0.1"
+    },
+    "refresh_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "source_dashboard_ref": {
+      "type": "string"
+    },
+    "source_feedback_second_run_ref": {
+      "type": "string"
+    },
+    "previous_dashboard_phase": {
+      "const": "roe16_dashboard"
+    },
+    "new_dashboard_phase": {
+      "const": "roe21_feedback_second_run_refreshed"
+    },
+    "updates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "aggregate_before": {
+      "type": "object"
+    },
+    "aggregate_after": {
+      "type": "object"
+    },
+    "claim_boundary_unchanged": {
+      "type": "boolean",
+      "const": true
+    },
+    "no_external_action": {
+      "type": "boolean",
+      "const": true
+    }
+  },
+  "additionalProperties": true
+}

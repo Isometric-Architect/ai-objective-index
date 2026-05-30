@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/portfolio/dashboard_refresh_feedback_summary.schema.json",
+  "title": "ResidualOps Dashboard Refresh Feedback Summary",
+  "type": "object",
+  "required": [
+    "schema",
+    "entry_count",
+    "incorporated_count",
+    "skipped_missing_artifact_count",
+    "pending_with_followup_count",
+    "entries",
+    "external_action_authorized"
+  ],
+  "properties": {
+    "schema": {
+      "const": "ResidualOps_DashboardRefreshFeedbackSummary/v0.1"
+    },
+    "entry_count": {
+      "type": "integer"
+    },
+    "incorporated_count": {
+      "type": "integer"
+    },
+    "skipped_missing_artifact_count": {
+      "type": "integer"
+    },
+    "pending_with_followup_count": {
+      "type": "integer"
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "external_action_authorized": {
+      "type": "boolean",
+      "const": false
+    }
+  },
+  "additionalProperties": true
+}

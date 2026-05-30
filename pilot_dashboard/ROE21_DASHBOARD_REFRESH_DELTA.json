@@ -1,0 +1,35 @@
+{
+  "schema": "ResidualOps_DashboardRefreshDelta/v0.1",
+  "refresh_id": "roe21-dashboard-refresh-v0-1",
+  "generated_at": "2026-05-30T02:54:51.981168+00:00",
+  "source_dashboard_ref": "pilot_dashboard/RESIDUALOPS_PILOT_DASHBOARD.json",
+  "source_feedback_second_run_ref": "feedback_second_runs/ROE20_FEEDBACK_SECOND_RUN_RECEIPT.json",
+  "previous_dashboard_phase": "roe16_dashboard",
+  "new_dashboard_phase": "roe21_feedback_second_run_refreshed",
+  "updates": [
+    "agentsec_feedback_second_run_status",
+    "qira_skipped_status",
+    "datacapsule_skipped_status",
+    "portfolio_skipped_status",
+    "feedback_memory_updates",
+    "timeline_updates",
+    "external_share_pack_stale_notice"
+  ],
+  "aggregate_before": {
+    "dashboard_vertical_count": 3,
+    "second_run_allow": 3,
+    "second_run_hold": 3,
+    "second_run_block": 3
+  },
+  "aggregate_after": {
+    "feedback_bridge_selected_count": 1,
+    "feedback_bridge_skipped_count": 3,
+    "feedback_bridge_executed_count": 1,
+    "feedback_bridge_allow": 1,
+    "feedback_bridge_hold": 1,
+    "feedback_bridge_block": 1,
+    "external_action_count": 0
+  },
+  "claim_boundary_unchanged": true,
+  "no_external_action": true
+}

@@ -35,6 +35,8 @@ ROE-19 status: feedback reply packet intake added.
 
 ROE-20 status: local feedback-to-second-run execution bridge added.
 
-Recommended next package: ROE-21 Dashboard Refresh from Feedback Second-Run.
+ROE-21 status: dashboard refresh from feedback second-run added.
+
+Recommended next package: ROE-22 External Share Pack Refresh from Updated Dashboard.
 
 Secondary backlog: AOI 0.3.0a2 MCP Registry recovery if namespace/version recovery remains useful.

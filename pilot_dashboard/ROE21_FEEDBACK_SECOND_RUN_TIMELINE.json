@@ -1,0 +1,63 @@
+{
+  "schema": "ResidualOps_DashboardRefreshTimeline/v0.1",
+  "event_count": 9,
+  "events": [
+    {
+      "phase": "pilot_receipts",
+      "artifact": "ROE-8/9/10 vertical pilot receipts",
+      "decision": "PASS",
+      "external_action_count": 0
+    },
+    {
+      "phase": "portfolio",
+      "artifact": "ROE-11 unified portfolio readout",
+      "decision": "PASS_UNIFIED_PILOT_PORTFOLIO_READY",
+      "external_action_count": 0
+    },
+    {
+      "phase": "intake",
+      "artifact": "ROE-12 owner-consented intake kit",
+      "decision": "PASS_OWNER_CONSENTED_PILOT_INTAKE_READY",
+      "external_action_count": 0
+    },
+    {
+      "phase": "dry_run",
+      "artifact": "ROE-13 local dry-run receipt",
+      "decision": "PASS_FIRST_OWNER_CONSENTED_PILOT_DRY_RUN_READY",
+      "external_action_count": 0
+    },
+    {
+      "phase": "feedback",
+      "artifact": "ROE-14 feedback and second-run planning",
+      "decision": "PASS_PILOT_FEEDBACK_SECOND_RUN_READY",
+      "external_action_count": 0
+    },
+    {
+      "phase": "second_run",
+      "artifact": "ROE-15 local second-run receipt",
+      "decision": "PASS_LOCAL_SECOND_RUN_RECEIPT_READY",
+      "external_action_count": 0
+    },
+    {
+      "phase": "dashboard",
+      "artifact": "ROE-16 static dashboard artifact pack",
+      "decision": "GENERATED",
+      "external_action_count": 0
+    },
+    {
+      "phase": "feedback_second_run_bridge",
+      "artifact": "ROE-20 local feedback-to-second-run bridge",
+      "decision": "PASS_FEEDBACK_TO_SECOND_RUN_BRIDGE_READY",
+      "selected_count": 1,
+      "skipped_count": 3,
+      "executed_count": 1,
+      "external_action_count": 0
+    },
+    {
+      "phase": "dashboard_refresh",
+      "artifact": "ROE-21 dashboard refresh artifacts",
+      "decision": "GENERATED",
+      "external_action_count": 0
+    }
+  ]
+}

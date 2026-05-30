@@ -109,6 +109,8 @@ ROE-19 adds local/offline feedback reply packet intake. It converts sample or lo
 
 ROE-20 adds a local feedback-to-second-run execution bridge. It selects only `READY_FOR_LOCAL_SECOND_RUN` feedback candidates, executes the ready AgentSec local sample path, and writes skipped reports for HOLD candidates without GitHub APIs, external APIs, issue/comment creation, fetching URLs, live MCP/tool calls, external repository mutation, posting, merge/deploy/publish action, upload, model training, token handling, unsafe decision upgrades, private-kernel exposure, certification, proof, product-readiness claim, or action authorization.
 
+ROE-21 adds a dashboard refresh from the ROE-20 feedback second-run bridge. It writes a refresh delta, four feedback second-run status cards, timeline update, feedback memory summary, reviewer readout, stale notice for the ROE-17 external share pack, redaction report, claim audit, and gate result while preserving QIRA/DataCapsule/Portfolio skipped status as HOLD-equivalent, without live web apps, deployment, external APIs, GitHub APIs, fetching URLs, live MCP/tool calls, raw private-data inspection, upload, model training, external repository mutation, posting, token handling, private-kernel exposure, certification, proof, product-readiness claim, or action authorization.
+
 ## Quick Example
 
 Example objective request:

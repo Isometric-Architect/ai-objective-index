@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/portfolio/dashboard_refresh_status_card.schema.json",
+  "title": "ResidualOps Dashboard Refresh Status Card",
+  "type": "object",
+  "required": [
+    "card_id",
+    "vertical",
+    "previous_status",
+    "feedback_reply_status",
+    "feedback_second_run_status",
+    "memory_status",
+    "latest_decision_summary",
+    "next_action",
+    "must_not_claim"
+  ],
+  "properties": {
+    "card_id": {
+      "type": "string"
+    },
+    "vertical": {
+      "enum": [
+        "agentsec",
+        "qira",
+        "datacapsule",
+        "portfolio"
+      ]
+    },
+    "previous_status": {
+      "type": "string"
+    },
+    "feedback_reply_status": {
+      "type": "string"
+    },
+    "feedback_second_run_status": {
+      "type": "string"
+    },
+    "memory_status": {
+      "type": "string"
+    },
+    "latest_decision_summary": {
+      "type": "object",
+      "required": [
+        "allow_count",
+        "hold_count",
+        "block_count"
+      ],
+      "properties": {
+        "allow_count": {
+          "type": "integer"
+        },
+        "hold_count": {
+          "type": "integer"
+        },
+        "block_count": {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": true
+    },
+    "next_action": {
+      "type": "string"
+    },
+    "must_not_claim": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "ResidualOps_DashboardRefreshRedactionReport/v0.1",
+  "generated_at": "2026-05-30T02:54:52.010578+00:00",
+  "decision": "PASS_REDACTED",
+  "artifact_count": 6,
+  "finding_count": 0,
+  "block_count": 0,
+  "hold_count": 0,
+  "findings": [],
+  "token_printed": false,
+  "private_kernel_exposed": false
+}

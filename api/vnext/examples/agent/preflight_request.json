@@ -1,0 +1,20 @@
+{
+  "schema": "AOI_AgentPreflightRequest/v0.1",
+  "candidate_id": "aoi-read-only-mcp-tools",
+  "intended_use": "Use the candidate for read-only comparison and produce a recommendation only after permission scope is clear.",
+  "available_metadata": {
+    "source_trace_refs": [
+      "README.md#mcp-usage",
+      "docs/mcp_usage.md#tool-set"
+    ],
+    "tool_available": true,
+    "permission_scope": "",
+    "privacy_policy": "",
+    "data_retention": "",
+    "last_checked_at": "2026-05-30T00:00:00Z"
+  },
+  "required_permissions": [
+    "read-only metadata review"
+  ],
+  "organization_policy_optional": {}
+}

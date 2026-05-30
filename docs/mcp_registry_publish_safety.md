@@ -16,6 +16,12 @@ Do not paste GitHub tokens into chat. Do not commit token files or `.pypirc`. If
 
 AOI remains read-only. Registry publication does not authorize payment, booking, login, email, purchase, contract signing, account connection, supplier verification, or profile modification.
 
+## Agent Adoption Safety Note
+
+Before `0.3.0a2` upload, AOI-AGENT-ADOPTION-1 adds discovery/preflight artifacts so ordinary AI agents can understand AOI without treating registry metadata as proof or tool availability as authorization.
+
+The agent-facing pack is documentation, schemas, examples, and local deterministic helpers only. It does not publish to MCP Registry, run live MCP/tool calls, call external APIs, use credentials, certify security, prove correctness, claim product readiness, or authorize external actions. Private ranking weights and thresholds remain private.
+
 ## Package 8S Protection Gate
 
 Before running a Registry submit package, run the technology protection gate:

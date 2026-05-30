@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AOI Agent Discover Request",
+  "type": "object",
+  "required": [
+    "schema",
+    "objective",
+    "query",
+    "data_scope",
+    "desired_capability_type",
+    "freshness_preference"
+  ],
+  "properties": {
+    "schema": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "objective": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "query": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "data_scope": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "desired_capability_type": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "freshness_preference": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

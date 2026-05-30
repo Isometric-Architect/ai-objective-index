@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AOI Agent Output Contract",
+  "type": "object",
+  "required": [
+    "objective",
+    "mode",
+    "candidates",
+    "route_decision",
+    "reason",
+    "missing_fields",
+    "next_action",
+    "must_not_claim",
+    "residualops_escalation",
+    "freshness"
+  ],
+  "properties": {
+    "objective": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "mode": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "candidates": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "route_decision": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "reason": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "missing_fields": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "next_action": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "must_not_claim": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "residualops_escalation": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "freshness": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

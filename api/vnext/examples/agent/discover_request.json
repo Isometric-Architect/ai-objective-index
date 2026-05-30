@@ -1,0 +1,8 @@
+{
+  "schema": "AOI_AgentDiscoverRequest/v0.1",
+  "objective": "Find source-traced MCP/tool/API candidates for selecting a read-only capability discovery helper.",
+  "query": "AI capability discovery MCP tool with source traces and pre-use trust routing",
+  "data_scope": "sample",
+  "desired_capability_type": "mcp_or_api",
+  "freshness_preference": "prefer_recent_source_traces_but_keep_hold_candidates_visible"
+}

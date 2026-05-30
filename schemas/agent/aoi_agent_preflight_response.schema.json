@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AOI Agent Preflight Response",
+  "type": "object",
+  "required": [
+    "schema",
+    "candidate_id",
+    "mode",
+    "route_decision",
+    "reason",
+    "missing_fields",
+    "next_action",
+    "must_not_claim"
+  ],
+  "properties": {
+    "schema": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "candidate_id": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "mode": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "route_decision": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "reason": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "missing_fields": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "next_action": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "must_not_claim": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AOI Capability Card",
+  "type": "object",
+  "required": [
+    "schema",
+    "name",
+    "package",
+    "version",
+    "mcp_name",
+    "type",
+    "modes",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "name": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "package": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "version": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "mcp_name": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "type": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "modes": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "claim_boundary": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

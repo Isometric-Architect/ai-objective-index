@@ -1,0 +1,365 @@
+{
+  "schema": "AOI_AgentOutputContractExamples/v0.1",
+  "required_output_keys": [
+    "objective",
+    "mode",
+    "candidates",
+    "route_decision",
+    "reason",
+    "missing_fields",
+    "next_action",
+    "must_not_claim",
+    "residualops_escalation",
+    "freshness"
+  ],
+  "discover_request": {
+    "schema": "AOI_AgentDiscoverRequest/v0.1",
+    "objective": "Find source-traced MCP/tool/API candidates for selecting a read-only capability discovery helper.",
+    "query": "AI capability discovery MCP tool with source traces and pre-use trust routing",
+    "data_scope": "sample",
+    "desired_capability_type": "mcp_or_api",
+    "freshness_preference": "prefer_recent_source_traces_but_keep_hold_candidates_visible"
+  },
+  "discover_response": {
+    "schema": "AOI_AgentDiscoverResponse/v0.1",
+    "generated_at": "2026-05-30T07:28:11.624588+00:00",
+    "objective": "Find source-traced MCP/tool/API candidates for selecting a read-only capability discovery helper.",
+    "mode": "discover",
+    "query": "AI capability discovery MCP tool with source traces and pre-use trust routing",
+    "data_scope": "sample",
+    "ranking_method": "transparent_public_demo_relevance_fields_only",
+    "private_kernel_exposed": false,
+    "candidates": [
+      {
+        "candidate_id": "aoi-read-only-mcp-tools",
+        "name": "AI Objective Index read-only MCP tools",
+        "capability_type": "mcp_server",
+        "why_relevant": "Matches objective-to-capability discovery and returns source traces, missing fields, and decision receipts.",
+        "source_trace_refs": [
+          "README.md#mcp-usage",
+          "docs/mcp_usage.md#tool-set"
+        ],
+        "missing_fields": [
+          "live_registry_listing_status",
+          "operator_permission_scope",
+          "recent_source_refresh"
+        ],
+        "preliminary_route_decision": "HOLD_MISSING_PERMISSION_SCOPE",
+        "next_action": "Run preflight before any recommendation or tool use; keep output read-only until permission scope is explicit.",
+        "must_not_claim": [
+          "candidate is verified",
+          "metadata proves correctness",
+          "tool availability authorizes tool use",
+          "source trace is security certification",
+          "route decision authorizes external action",
+          "AOI clears legal, privacy, license, or compliance status",
+          "AOI proves product readiness or quality"
+        ],
+        "residualops_escalation": "AgentSec"
+      },
+      {
+        "candidate_id": "agentsec-local-manifest-review",
+        "name": "AgentSec local manifest review",
+        "capability_type": "local_receipt_workflow",
+        "why_relevant": "Useful when the candidate is a tool or MCP manifest and an agent needs permission or hidden-instruction review.",
+        "source_trace_refs": [
+          "docs/agentsec_manifest_scanner.md",
+          "pilot_receipts/agentsec/"
+        ],
+        "missing_fields": [
+          "owner_supplied_manifest",
+          "redacted_permission_scope"
+        ],
+        "preliminary_route_decision": "HOLD_POLICY_CLARITY",
+        "next_action": "Request an owner-provided local manifest and run only local/offline review.",
+        "must_not_claim": [
+          "candidate is verified",
+          "metadata proves correctness",
+          "tool availability authorizes tool use",
+          "source trace is security certification",
+          "route decision authorizes external action",
+          "AOI clears legal, privacy, license, or compliance status",
+          "AOI proves product readiness or quality"
+        ],
+        "residualops_escalation": "AgentSec"
+      },
+      {
+        "candidate_id": "datacapsule-manifest-review",
+        "name": "DataCapsule local corpus manifest review",
+        "capability_type": "data_use_boundary_review",
+        "why_relevant": "Useful when the objective depends on dataset, corpus, privacy, rights, or eval-leakage boundaries.",
+        "source_trace_refs": [
+          "docs/datacapsule_use_rights.md",
+          "pilot_receipts/datacapsule/"
+        ],
+        "missing_fields": [
+          "source_rights_summary",
+          "privacy_declared_status",
+          "eval_overlap_status"
+        ],
+        "preliminary_route_decision": "HOLD_POLICY_CLARITY",
+        "next_action": "Ask for a local corpus manifest; do not inspect raw private data or authorize training/action use.",
+        "must_not_claim": [
+          "candidate is verified",
+          "metadata proves correctness",
+          "tool availability authorizes tool use",
+          "source trace is security certification",
+          "route decision authorizes external action",
+          "AOI clears legal, privacy, license, or compliance status",
+          "AOI proves product readiness or quality"
+        ],
+        "residualops_escalation": "DataCapsule"
+      }
+    ],
+    "top_candidates": [
+      {
+        "candidate_id": "aoi-read-only-mcp-tools",
+        "name": "AI Objective Index read-only MCP tools",
+        "capability_type": "mcp_server",
+        "why_relevant": "Matches objective-to-capability discovery and returns source traces, missing fields, and decision receipts.",
+        "source_trace_refs": [
+          "README.md#mcp-usage",
+          "docs/mcp_usage.md#tool-set"
+        ],
+        "missing_fields": [
+          "live_registry_listing_status",
+          "operator_permission_scope",
+          "recent_source_refresh"
+        ],
+        "preliminary_route_decision": "HOLD_MISSING_PERMISSION_SCOPE",
+        "next_action": "Run preflight before any recommendation or tool use; keep output read-only until permission scope is explicit.",
+        "must_not_claim": [
+          "candidate is verified",
+          "metadata proves correctness",
+          "tool availability authorizes tool use",
+          "source trace is security certification",
+          "route decision authorizes external action",
+          "AOI clears legal, privacy, license, or compliance status",
+          "AOI proves product readiness or quality"
+        ],
+        "residualops_escalation": "AgentSec"
+      },
+      {
+        "candidate_id": "agentsec-local-manifest-review",
+        "name": "AgentSec local manifest review",
+        "capability_type": "local_receipt_workflow",
+        "why_relevant": "Useful when the candidate is a tool or MCP manifest and an agent needs permission or hidden-instruction review.",
+        "source_trace_refs": [
+          "docs/agentsec_manifest_scanner.md",
+          "pilot_receipts/agentsec/"
+        ],
+        "missing_fields": [
+          "owner_supplied_manifest",
+          "redacted_permission_scope"
+        ],
+        "preliminary_route_decision": "HOLD_POLICY_CLARITY",
+        "next_action": "Request an owner-provided local manifest and run only local/offline review.",
+        "must_not_claim": [
+          "candidate is verified",
+          "metadata proves correctness",
+          "tool availability authorizes tool use",
+          "source trace is security certification",
+          "route decision authorizes external action",
+          "AOI clears legal, privacy, license, or compliance status",
+          "AOI proves product readiness or quality"
+        ],
+        "residualops_escalation": "AgentSec"
+      },
+      {
+        "candidate_id": "datacapsule-manifest-review",
+        "name": "DataCapsule local corpus manifest review",
+        "capability_type": "data_use_boundary_review",
+        "why_relevant": "Useful when the objective depends on dataset, corpus, privacy, rights, or eval-leakage boundaries.",
+        "source_trace_refs": [
+          "docs/datacapsule_use_rights.md",
+          "pilot_receipts/datacapsule/"
+        ],
+        "missing_fields": [
+          "source_rights_summary",
+          "privacy_declared_status",
+          "eval_overlap_status"
+        ],
+        "preliminary_route_decision": "HOLD_POLICY_CLARITY",
+        "next_action": "Ask for a local corpus manifest; do not inspect raw private data or authorize training/action use.",
+        "must_not_claim": [
+          "candidate is verified",
+          "metadata proves correctness",
+          "tool availability authorizes tool use",
+          "source trace is security certification",
+          "route decision authorizes external action",
+          "AOI clears legal, privacy, license, or compliance status",
+          "AOI proves product readiness or quality"
+        ],
+        "residualops_escalation": "DataCapsule"
+      }
+    ],
+    "best_current_candidate": {
+      "candidate_id": "aoi-read-only-mcp-tools",
+      "name": "AI Objective Index read-only MCP tools",
+      "capability_type": "mcp_server",
+      "why_relevant": "Matches objective-to-capability discovery and returns source traces, missing fields, and decision receipts.",
+      "source_trace_refs": [
+        "README.md#mcp-usage",
+        "docs/mcp_usage.md#tool-set"
+      ],
+      "missing_fields": [
+        "live_registry_listing_status",
+        "operator_permission_scope",
+        "recent_source_refresh"
+      ],
+      "preliminary_route_decision": "HOLD_MISSING_PERMISSION_SCOPE",
+      "next_action": "Run preflight before any recommendation or tool use; keep output read-only until permission scope is explicit.",
+      "must_not_claim": [
+        "candidate is verified",
+        "metadata proves correctness",
+        "tool availability authorizes tool use",
+        "source trace is security certification",
+        "route decision authorizes external action",
+        "AOI clears legal, privacy, license, or compliance status",
+        "AOI proves product readiness or quality"
+      ],
+      "residualops_escalation": "AgentSec"
+    },
+    "source_traces": [
+      "README.md#mcp-usage",
+      "docs/agentsec_manifest_scanner.md",
+      "docs/datacapsule_use_rights.md",
+      "docs/mcp_usage.md#tool-set",
+      "pilot_receipts/agentsec/",
+      "pilot_receipts/datacapsule/"
+    ],
+    "route_decision": "HOLD_WITH_ACTIONABLE_NEXT_STEPS",
+    "reason": "All current sample candidates are useful but remain HOLD until preflight resolves permissions, freshness, and policy clarity.",
+    "missing_fields": [
+      "eval_overlap_status",
+      "live_registry_listing_status",
+      "operator_permission_scope",
+      "owner_supplied_manifest",
+      "privacy_declared_status",
+      "recent_source_refresh",
+      "redacted_permission_scope",
+      "source_rights_summary"
+    ],
+    "next_action": "Choose the most relevant HOLD candidate, run preflight, and request missing fields instead of executing or over-recommending.",
+    "must_not_claim": [
+      "candidate is verified",
+      "metadata proves correctness",
+      "tool availability authorizes tool use",
+      "source trace is security certification",
+      "route decision authorizes external action",
+      "AOI clears legal, privacy, license, or compliance status",
+      "AOI proves product readiness or quality"
+    ],
+    "claim_boundary": [
+      "candidate != verified",
+      "metadata != proof",
+      "tool_available != tool_authorized",
+      "source_trace != security_certification",
+      "route_decision != action_authorization"
+    ],
+    "residualops_escalation": {
+      "tool_manifest_risk": "AgentSec",
+      "code_or_release_risk": "QIRA",
+      "data_or_use_boundary_risk": "DataCapsule",
+      "enterprise_receipt_tracking": "ResidualOps dashboard"
+    },
+    "freshness": {
+      "last_checked_at": "2026-05-30T00:00:00Z",
+      "source_trace_age": "sample_static_fixture",
+      "registry_payload_version": "local_sample_v0_1",
+      "stale_warning": "sample data is static and should be refreshed before external use",
+      "needs_refresh": true,
+      "refresh_next_action": "refresh source traces or keep candidate in HOLD_STALE_METADATA before recommending external use",
+      "live_check_performed": false
+    },
+    "external_action_performed": false,
+    "live_network_used": false
+  },
+  "preflight_request": {
+    "schema": "AOI_AgentPreflightRequest/v0.1",
+    "candidate_id": "aoi-read-only-mcp-tools",
+    "intended_use": "Use the candidate for read-only comparison and produce a recommendation only after permission scope is clear.",
+    "available_metadata": {
+      "source_trace_refs": [
+        "README.md#mcp-usage",
+        "docs/mcp_usage.md#tool-set"
+      ],
+      "tool_available": true,
+      "permission_scope": "",
+      "privacy_policy": "",
+      "data_retention": "",
+      "last_checked_at": "2026-05-30T00:00:00Z"
+    },
+    "required_permissions": [
+      "read-only metadata review"
+    ],
+    "organization_policy_optional": {}
+  },
+  "preflight_response": {
+    "schema": "AOI_AgentPreflightResponse/v0.1",
+    "generated_at": "2026-05-30T07:28:11.624660+00:00",
+    "objective": "Use the candidate for read-only comparison and produce a recommendation only after permission scope is clear.",
+    "mode": "preflight",
+    "candidate_id": "aoi-read-only-mcp-tools",
+    "route_decision": "HOLD_MISSING_PERMISSION_SCOPE",
+    "reason": "The candidate may be useful, but the permission scope is missing; availability alone does not authorize use.",
+    "missing_fields": [
+      "permission_scope",
+      "privacy_policy",
+      "data_retention"
+    ],
+    "next_action": "Ask for permission scope or manifest metadata, then rerun preflight.",
+    "allowed_next_steps": [
+      "read local metadata",
+      "compare candidates with missing fields visible",
+      "request missing permission or policy details",
+      "escalate to ResidualOps local receipt workflow"
+    ],
+    "forbidden_next_steps": [
+      "external tool execution",
+      "GitHub API call",
+      "issue or PR comment creation",
+      "merge, deploy, publish, upload, or train",
+      "credential use",
+      "certification or product-readiness claim"
+    ],
+    "must_not_claim": [
+      "candidate is verified",
+      "metadata proves correctness",
+      "tool availability authorizes tool use",
+      "source trace is security certification",
+      "route decision authorizes external action",
+      "AOI clears legal, privacy, license, or compliance status",
+      "AOI proves product readiness or quality"
+    ],
+    "claim_ceiling": [
+      "candidate != verified",
+      "metadata != proof",
+      "tool_available != tool_authorized",
+      "source_trace != security_certification",
+      "route_decision != action_authorization"
+    ],
+    "residualops_escalation": "AgentSec",
+    "freshness": {
+      "last_checked_at": "2026-05-30T00:00:00Z",
+      "source_trace_age": "sample_static_fixture",
+      "registry_payload_version": "local_sample_v0_1",
+      "stale_warning": "sample data is static and should be refreshed before external use",
+      "needs_refresh": true,
+      "refresh_next_action": "refresh source traces or keep candidate in HOLD_STALE_METADATA before recommending external use",
+      "live_check_performed": false
+    },
+    "tool_available_is_tool_authorized": false,
+    "external_action_performed": false,
+    "live_network_used": false
+  },
+  "ordinary_agent_bad_behavior_example": {
+    "behavior": "The agent picks the first registry-looking tool and recommends using it before checking permissions.",
+    "why_bad": "It confuses availability with authorization and treats metadata as proof."
+  },
+  "corrected_aoi_behavior_example": {
+    "behavior": "The agent returns useful HOLD candidates, exposes missing fields, then runs preflight before recommendation or use.",
+    "route_decision": "HOLD_MISSING_PERMISSION_SCOPE",
+    "next_action": "Ask for permission scope or manifest metadata, then rerun preflight."
+  }
+}

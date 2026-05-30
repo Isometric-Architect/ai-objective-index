@@ -1,0 +1,58 @@
+{
+  "schema": "AOI_AgentPreflightResponse/v0.1",
+  "generated_at": "2026-05-30T07:28:11.621750+00:00",
+  "objective": "Use the candidate for read-only comparison and produce a recommendation only after permission scope is clear.",
+  "mode": "preflight",
+  "candidate_id": "aoi-read-only-mcp-tools",
+  "route_decision": "HOLD_MISSING_PERMISSION_SCOPE",
+  "reason": "The candidate may be useful, but the permission scope is missing; availability alone does not authorize use.",
+  "missing_fields": [
+    "permission_scope",
+    "privacy_policy",
+    "data_retention"
+  ],
+  "next_action": "Ask for permission scope or manifest metadata, then rerun preflight.",
+  "allowed_next_steps": [
+    "read local metadata",
+    "compare candidates with missing fields visible",
+    "request missing permission or policy details",
+    "escalate to ResidualOps local receipt workflow"
+  ],
+  "forbidden_next_steps": [
+    "external tool execution",
+    "GitHub API call",
+    "issue or PR comment creation",
+    "merge, deploy, publish, upload, or train",
+    "credential use",
+    "certification or product-readiness claim"
+  ],
+  "must_not_claim": [
+    "candidate is verified",
+    "metadata proves correctness",
+    "tool availability authorizes tool use",
+    "source trace is security certification",
+    "route decision authorizes external action",
+    "AOI clears legal, privacy, license, or compliance status",
+    "AOI proves product readiness or quality"
+  ],
+  "claim_ceiling": [
+    "candidate != verified",
+    "metadata != proof",
+    "tool_available != tool_authorized",
+    "source_trace != security_certification",
+    "route_decision != action_authorization"
+  ],
+  "residualops_escalation": "AgentSec",
+  "freshness": {
+    "last_checked_at": "2026-05-30T00:00:00Z",
+    "source_trace_age": "sample_static_fixture",
+    "registry_payload_version": "local_sample_v0_1",
+    "stale_warning": "sample data is static and should be refreshed before external use",
+    "needs_refresh": true,
+    "refresh_next_action": "refresh source traces or keep candidate in HOLD_STALE_METADATA before recommending external use",
+    "live_check_performed": false
+  },
+  "tool_available_is_tool_authorized": false,
+  "external_action_performed": false,
+  "live_network_used": false
+}

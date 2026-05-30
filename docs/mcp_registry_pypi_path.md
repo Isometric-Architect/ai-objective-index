@@ -76,3 +76,15 @@ python -m ai_objective_index.aoi_mcp_registry_recovery_gate
 ```
 
 Real PyPI upload requires `AOI_REAL_PYPI_UPLOAD_CONFIRM=YES` and an interactive twine token prompt. MCP Registry publish requires `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES` after PyPI verification and local `mcp-publisher validate` pass.
+
+## Agent Adoption Before Upload
+
+AOI-AGENT-ADOPTION-1 keeps version `0.3.0a2` because the recovery package has not been uploaded yet. It adds agent-native discovery and preflight artifacts before the final upload path:
+
+- capability card for ordinary AI agents;
+- discover mode request/response examples;
+- preflight mode request/response examples;
+- claim-boundary and staleness policy artifacts;
+- ResidualOps escalation map.
+
+This does not change the canonical MCP name, package identifier, or package version. It also does not perform PyPI upload or MCP Registry publish.

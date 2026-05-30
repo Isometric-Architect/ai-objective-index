@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AOI Agent Preflight Request",
+  "type": "object",
+  "required": [
+    "schema",
+    "candidate_id",
+    "intended_use",
+    "available_metadata",
+    "required_permissions"
+  ],
+  "properties": {
+    "schema": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "candidate_id": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "intended_use": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "available_metadata": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "required_permissions": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "boolean",
+        "number",
+        "integer",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

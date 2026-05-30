@@ -22,6 +22,17 @@ This writes `api/openapi.json`.
 
 ## Endpoints
 
+## Agent Examples
+
+AOI-AGENT-ADOPTION-1 adds read-only request/response examples for future agent-native REST surfaces:
+
+- `GET /v1/agents/capability-card`
+- `POST /v1/agents/discover`
+- `POST /v1/agents/preflight`
+- `GET /v1/agents/adoption/status`
+
+Endpoint wiring is held for a later package. The examples under `api/vnext/examples/agent/` define the desired shapes without adding live callable behavior before AOI 0.3.0a2 publication.
+
 ### GET /status
 
 Returns service metadata, object count, source trace count, read-only status, and forbidden actions.

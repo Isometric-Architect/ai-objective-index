@@ -1,0 +1,29 @@
+{
+  "schema": "ResidualOps_ExtensionMap/v0.1",
+  "aoi_role": "agent_and_developer_facing_public_discovery_router",
+  "residualops_role": "enterprise_and_operator_facing_governance_layer",
+  "routes": {
+    "tool_manifest_risk": {
+      "vertical": "AgentSec",
+      "when_to_escalate": "tool, MCP, manifest, permissions, hidden instruction, namespace, or forbidden action risk"
+    },
+    "code_or_release_risk": {
+      "vertical": "QIRA",
+      "when_to_escalate": "patch, CI, diff, code review, release gate, merge, deploy, or package publish risk"
+    },
+    "data_or_use_boundary_risk": {
+      "vertical": "DataCapsule",
+      "when_to_escalate": "dataset, corpus, source rights, privacy, license, eval leakage, retention, or act-use risk"
+    },
+    "enterprise_receipt_tracking": {
+      "vertical": "ResidualOps dashboard",
+      "when_to_escalate": "portfolio-level receipt tracking, feedback memory, reviewer readout, or share-pack status"
+    }
+  },
+  "claim_boundary": [
+    "AOI is a public source-traced discovery and pre-use routing layer.",
+    "ResidualOps adds local/offline enterprise review artifacts and receipt memory.",
+    "ResidualOps results are not security certification, product readiness, legal clearance, privacy audit, license clearance, or action authorization without separate evidence."
+  ],
+  "private_kernel_not_disclosed": true
+}

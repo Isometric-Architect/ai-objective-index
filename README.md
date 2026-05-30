@@ -19,6 +19,8 @@ v0.1 is read-only. Package 1 adds the local core engine, Package 2 adds read-onl
 
 vNext adds conservative routing surfaces: Capability Trust, Objective Router, ExecutionReceipt memory, and local-only Probe-before-Use. These are source-traced route-decision aids, not verification, safety certification, quality guarantee, product readiness, live security scanning, external gateway execution, or action authorization.
 
+AOI-AGENT-ADOPTION-1 reframes AOI 0.3.0a2 for ordinary AI agents as agent-native capability discovery plus pre-use trust routing. Discover mode helps an agent find useful source-traced MCP/tool/API candidates even when every candidate remains HOLD. Preflight mode separates `tool_available` from `tool_authorized`, preserves missing fields and must-not-claim boundaries, and routes enterprise or higher-risk cases to ResidualOps without adding live tool calls, external actions, PyPI upload, MCP Registry publish, certification claims, product-readiness claims, or private-kernel disclosure.
+
 ROE-0 adds a parallel ResidualOps productization plan for QIRA-Code ReleaseGate, AgentSec Gate, and DataCapsule / AIDREG Engine. The public repository may expose high-level packet, residual, receipt, and ALLOW/HOLD/BLOCK language, while ranking calibration, threshold policy, anti-gaming rules, provider priors, private negative controls, private probe seeds, and commercial routing policy remain non-public.
 
 QIRA-1 adds the first ResidualOps vertical MVP: a local/offline QIRA-Code ReleaseGate that creates behavior contracts, patch candidates, validator packets, residual ledgers, patch receipts, and action licenses. It does not execute arbitrary external tools, deploy code, request tokens, certify security, guarantee quality, or approve production use.

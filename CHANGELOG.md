@@ -2,6 +2,9 @@
 
 ## AOI 0.3.0a2
 
+- Added AOI-AGENT-DISCOVERY-4: manual cross-model feedback intake, competitive synthesis, route-semantics roadmap, Capability Decision Packet draft, HOLD-to-Replan loop, freshness/rug-pull/negative-cache notes, and test residual reconciliation.
+- Classified the prior generated registry/datascope full-suite payload-state failures as a HOLD residual without staging unrelated generated leftovers or making a false full-suite green claim.
+- Preserved boundaries: no new PyPI upload, no MCP Registry publish, no external LLM API calls, no outreach/posting, no issue/PR/comment creation, no tokens, no private-kernel disclosure, and no certification/proof/product-readiness/action-authorization claim.
 - Added AOI-AGENT-DISCOVERY-3: public discovery smoke plus ordinary-agent prompt evaluation for the published `0.3.0a2` package.
 - Added public PyPI install smoke, MCP Registry public smoke, deterministic naive-vs-AOI-guided agent fixtures, prompt-eval rubric, manual ChatGPT/Claude/Gemini evaluation sheet, docs, schemas, public outputs, and tests.
 - Preserved boundaries: no new PyPI upload, no MCP Registry publish, no external LLM API calls, no outreach/posting, no issue/PR/comment creation, no tokens, no private-kernel disclosure, and no certification/proof/product-readiness/action-authorization claim.

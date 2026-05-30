@@ -1,0 +1,171 @@
+{
+  "schema": "AOI_CrossModelFeedbackSummary/v0.1",
+  "generated_at": "2026-05-30T11:52:45.567678+00:00",
+  "packet_count": 3,
+  "models": [
+    "Gemini",
+    "GPT-5.5 Thinking",
+    "Claude Opus 4.8 High"
+  ],
+  "categories_by_model": {
+    "Gemini": [
+      "ADAPTIVE_GOVERNANCE",
+      "CLAIM_BOUNDARY",
+      "CONTEXT_AWARE_POLICY",
+      "DATA_FRAGMENTATION",
+      "DISCOVERY_FAST_PATH",
+      "ENTERPRISE_ESCALATION",
+      "FRESHNESS_STALENESS",
+      "HOLD_TO_REPLAN_LOOP",
+      "LATENCY_BUDGET",
+      "PREFLIGHT_TRUST_ROUTER"
+    ],
+    "GPT-5.5 Thinking": [
+      "CAPABILITY_DECISION_PACKET",
+      "CLAIM_BOUNDARY",
+      "DISCOVERY_FAST_PATH",
+      "FRESHNESS_STALENESS",
+      "PREFLIGHT_TRUST_ROUTER",
+      "ROUTE_LABEL_GRANULARITY"
+    ],
+    "Claude Opus 4.8 High": [
+      "AGENT_OPERATOR_POSITIONING",
+      "CAPABILITY_DECISION_PACKET",
+      "CLAIM_BOUNDARY",
+      "DISCOVERY_FAST_PATH",
+      "ENTERPRISE_ESCALATION",
+      "FRESHNESS_STALENESS",
+      "INCUMBENT_COMPETITION",
+      "LATENCY_BUDGET",
+      "NEGATIVE_CACHE",
+      "NON_BYPASSABLE_MIDDLEWARE",
+      "PREFLIGHT_TRUST_ROUTER",
+      "RUGPULL_DIFF",
+      "TRUST_ROUTER_TRUST_REGRESSION"
+    ]
+  },
+  "category_counts": {
+    "ADAPTIVE_GOVERNANCE": 1,
+    "AGENT_OPERATOR_POSITIONING": 1,
+    "CAPABILITY_DECISION_PACKET": 2,
+    "CLAIM_BOUNDARY": 3,
+    "CONTEXT_AWARE_POLICY": 1,
+    "DATA_FRAGMENTATION": 1,
+    "DISCOVERY_FAST_PATH": 3,
+    "ENTERPRISE_ESCALATION": 2,
+    "FRESHNESS_STALENESS": 3,
+    "HOLD_TO_REPLAN_LOOP": 1,
+    "INCUMBENT_COMPETITION": 1,
+    "LATENCY_BUDGET": 2,
+    "NEGATIVE_CACHE": 1,
+    "NON_BYPASSABLE_MIDDLEWARE": 1,
+    "PREFLIGHT_TRUST_ROUTER": 3,
+    "ROUTE_LABEL_GRANULARITY": 1,
+    "RUGPULL_DIFF": 1,
+    "TRUST_ROUTER_TRUST_REGRESSION": 1
+  },
+  "models_by_category": {
+    "ADAPTIVE_GOVERNANCE": [
+      "Gemini"
+    ],
+    "AGENT_OPERATOR_POSITIONING": [
+      "Claude Opus 4.8 High"
+    ],
+    "CAPABILITY_DECISION_PACKET": [
+      "GPT-5.5 Thinking",
+      "Claude Opus 4.8 High"
+    ],
+    "CLAIM_BOUNDARY": [
+      "Gemini",
+      "GPT-5.5 Thinking",
+      "Claude Opus 4.8 High"
+    ],
+    "CONTEXT_AWARE_POLICY": [
+      "Gemini"
+    ],
+    "DATA_FRAGMENTATION": [
+      "Gemini"
+    ],
+    "DISCOVERY_FAST_PATH": [
+      "Gemini",
+      "GPT-5.5 Thinking",
+      "Claude Opus 4.8 High"
+    ],
+    "ENTERPRISE_ESCALATION": [
+      "Gemini",
+      "Claude Opus 4.8 High"
+    ],
+    "FRESHNESS_STALENESS": [
+      "Gemini",
+      "GPT-5.5 Thinking",
+      "Claude Opus 4.8 High"
+    ],
+    "HOLD_TO_REPLAN_LOOP": [
+      "Gemini"
+    ],
+    "INCUMBENT_COMPETITION": [
+      "Claude Opus 4.8 High"
+    ],
+    "LATENCY_BUDGET": [
+      "Gemini",
+      "Claude Opus 4.8 High"
+    ],
+    "NEGATIVE_CACHE": [
+      "Claude Opus 4.8 High"
+    ],
+    "NON_BYPASSABLE_MIDDLEWARE": [
+      "Claude Opus 4.8 High"
+    ],
+    "PREFLIGHT_TRUST_ROUTER": [
+      "Gemini",
+      "GPT-5.5 Thinking",
+      "Claude Opus 4.8 High"
+    ],
+    "ROUTE_LABEL_GRANULARITY": [
+      "GPT-5.5 Thinking"
+    ],
+    "RUGPULL_DIFF": [
+      "Claude Opus 4.8 High"
+    ],
+    "TRUST_ROUTER_TRUST_REGRESSION": [
+      "Claude Opus 4.8 High"
+    ]
+  },
+  "all_models_direction_useful": true,
+  "simple_registry_insufficient": true,
+  "route_preflight_governance_model_count": 3,
+  "adoption_friction_or_latency_model_count": 2,
+  "model_specific_findings": {
+    "Gemini": "Self-healing, context-aware trust, adaptive governance, and HOLD-to-Replan are the main product deltas.",
+    "GPT-5.5 Thinking": "Capability Decision Packet and discovered/trusted/authorized/executable split are the core semantic hardening.",
+    "Claude Opus 4.8 High": "Crowded-market, trust-regression, freshness/rug-pull, negative-cache, and dual-positioning risks are the sharpest market corrections."
+  },
+  "cross_model_consensus": [
+    "AOI is most competitive as discovery-first utility plus pre-use trust routing.",
+    "AOI should not become just another registry or static search index.",
+    "Ordinary agents need explicit separation between discovery, trust, authorization, and execution.",
+    "HOLD must include a productive next action.",
+    "Freshness and staleness need first-class route semantics."
+  ],
+  "disagreements_or_tensions": [
+    "Gemini emphasizes adaptive governance and self-healing; Claude emphasizes latency and market friction.",
+    "GPT emphasizes semantic precision; Claude pushes for lower-friction hot-path UX.",
+    "Enterprise control value and agent speed value must be balanced instead of forcing one product posture."
+  ],
+  "roadmap_deltas": [
+    "Capability Decision Packet",
+    "granular route semantics",
+    "HOLD-to-Replan Loop",
+    "adaptive/context-aware governance",
+    "freshness, staleness, rug-pull diff, and negative cache",
+    "agent-facing fast discovery plus operator-facing middleware positioning",
+    "latency budget with lazy preflight"
+  ],
+  "recommended_next_package": "AOI-AGENT-DISCOVERY-5 Capability Decision Packet + Route Semantics Hardening",
+  "claim_boundary": [
+    "not security certification",
+    "not product readiness",
+    "not action authorization",
+    "not legal, privacy, license, or compliance clearance"
+  ]
+}

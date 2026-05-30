@@ -1,0 +1,60 @@
+{
+  "schema": "AOI_ExternalModelFeedbackPacket/v0.1",
+  "packet_id": "aoi-discovery-4-gemini-feedback",
+  "generated_at": "2026-05-30T11:52:45.544171+00:00",
+  "model_name": "Gemini",
+  "prompt_set": "AOI-AGENT-DISCOVERY-3 manual external model feedback summary",
+  "overall_rating_if_present": "positive_direction_with_productization_blockers",
+  "key_positive_findings": [
+    "AOI is useful as AI-native capability discovery plus a pre-use trust router.",
+    "The discover-first framing is stronger than treating AOI as only an audit gate.",
+    "Machine-readable claim boundaries help ordinary agents avoid unsupported execution claims."
+  ],
+  "key_adoption_blockers": [
+    "data fragmentation",
+    "latency penalty",
+    "enterprise policy conflict",
+    "stale metadata"
+  ],
+  "recommended_killer_features": [
+    "self-healing or auto-correction when AOI identifies missing fields",
+    "context-aware trust",
+    "agent-native SDK/API",
+    "adaptive governance",
+    "recursive HOLD-to-Replan loop"
+  ],
+  "route_semantics_recommendations": [
+    "Make HOLD productive by returning a replan path rather than a dead end.",
+    "Adjust governance by context and action risk."
+  ],
+  "freshness_or_rugpull_recommendations": [
+    "Treat stale metadata as an explicit route reason.",
+    "Attach refresh next actions instead of claiming live freshness."
+  ],
+  "enterprise_or_operator_positioning": [
+    "Offer policy-aware behavior for enterprise contexts without hiding uncertainty."
+  ],
+  "claim_boundary_warnings": [
+    "Do not imply AOI verifies providers or grants permission to execute tools."
+  ],
+  "overclaim_risks": [
+    "Agent-native trust routing could be overread as safety validation if the claim ceiling is not visible."
+  ],
+  "direct_quotes_short_safe_only": [
+    "Self-Healing / Auto-Correction",
+    "Context-Aware Trust",
+    "Adaptive Governance"
+  ],
+  "redaction_status": "PASS_REDACTED",
+  "token_or_secret_detected": false,
+  "external_llm_api_called": false,
+  "raw_transcript_stored": false,
+  "private_kernel_exposed": false,
+  "claim_boundary": [
+    "feedback is not product readiness proof",
+    "feedback is not security certification",
+    "feedback is not action authorization",
+    "feedback is not legal, privacy, license, or compliance clearance"
+  ],
+  "validation_errors": []
+}

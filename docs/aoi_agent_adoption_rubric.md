@@ -16,3 +16,5 @@ Dimensions:
 - freshness or staleness awareness.
 
 Scores are synthetic fixture scores. They should guide product iteration, not claims of quality guarantees or readiness.
+
+Discovery 4 extends the rubric with roadmap criteria from external model feedback: fast discovery hot path, lazy preflight for committed candidates, timestamped route receipts, HOLD-to-Replan behavior, freshness/rug-pull checks, negative cache handling, and agent/operator dual positioning. These are product iteration criteria, not certification criteria.

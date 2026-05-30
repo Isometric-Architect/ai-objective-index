@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/aoi/schemas/agent/route_semantics_roadmap.schema.json",
+  "title": "AOI Route Semantics Roadmap",
+  "type": "object",
+  "required": [
+    "schema",
+    "generated_at",
+    "route_classes",
+    "capability_decision_packet_fields",
+    "separation_statements",
+    "hold_to_replan_guards",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema": { "const": "AOI_RouteSemanticsRoadmap/v0.1" },
+    "generated_at": { "type": "string" },
+    "route_classes": { "type": "array", "items": { "type": "string" } },
+    "capability_decision_packet_fields": { "type": "array", "items": { "type": "string" } },
+    "separation_statements": { "type": "array", "items": { "type": "string" } },
+    "hold_to_replan_guards": { "type": "array", "items": { "type": "string" } },
+    "claim_boundary": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

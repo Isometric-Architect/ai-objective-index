@@ -1,0 +1,48 @@
+{
+  "schema": "AOI_TestResidualReconciliation/v0.1",
+  "generated_at": "2026-05-30T11:52:45.582945+00:00",
+  "decision": "HOLD_FULL_SUITE_RESIDUAL_CLASSIFIED",
+  "classification": "unrelated_generated_payload_state",
+  "package_regression": false,
+  "stale_fixture": true,
+  "needs_reprocess": true,
+  "unsafe_to_fix_in_this_package": true,
+  "safe_to_stage_generated_leftovers": false,
+  "full_suite_green_claim_allowed": false,
+  "known_failure_clusters": [
+    "generated registry/datascope payload-state failures from the prior full-suite attempt",
+    "registry intake payload guard recursion or stale generated state",
+    "HF/generated bundle payload-state residuals outside the Discovery 4 package scope"
+  ],
+  "narrow_failure_slice": {
+    "command": "python -m pytest tests/test_api_mcp_registry_datascope.py tests/test_datascope_qa.py tests/test_mcp_registry_datascope.py tests/test_mcp_registry_eval.py tests/test_mcp_registry_export.py tests/test_mcp_registry_report_generator.py -q --tb=short",
+    "failed_count": 9,
+    "representative_failure": "src/ai_objective_index/registry_intake/real_payload_guard.py is_fixture_payload recursion while exporting fixture MCP registry payload state",
+    "affected_test_files": [
+      "tests/test_api_mcp_registry_datascope.py",
+      "tests/test_datascope_qa.py",
+      "tests/test_mcp_registry_datascope.py",
+      "tests/test_mcp_registry_eval.py",
+      "tests/test_mcp_registry_export.py",
+      "tests/test_mcp_registry_report_generator.py"
+    ]
+  },
+  "inspected_generated_state_paths": [
+    "data/registry",
+    "data/generated",
+    "hf_upload",
+    "aoi_test_tmp"
+  ],
+  "narrow_safe_reprocess_candidate": "dedicated registry/datascope residual reconciliation package",
+  "commands_not_run": [
+    "destructive cleanup of generated state",
+    "external registry fetch",
+    "external LLM evaluation"
+  ],
+  "next_action": "Do not claim global full-suite green until python -m pytest passes; handle generated registry/datascope payload-state in a separate reconciliation package.",
+  "claim_boundary": [
+    "targeted package tests may pass while full-suite status remains HOLD",
+    "classification is not proof that no regression exists",
+    "no unrelated generated leftovers should be staged"
+  ]
+}

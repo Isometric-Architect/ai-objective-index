@@ -1,0 +1,64 @@
+{
+  "schema": "AOI_ExternalModelFeedbackPacket/v0.1",
+  "packet_id": "aoi-discovery-4-claude-feedback",
+  "generated_at": "2026-05-30T11:52:45.544196+00:00",
+  "model_name": "Claude Opus 4.8 High",
+  "prompt_set": "AOI-AGENT-DISCOVERY-3 manual external model feedback summary",
+  "overall_rating_if_present": "valid_direction_with_market_and_friction_risks",
+  "key_positive_findings": [
+    "The direction is valid for ordinary agents if discovery stays fast.",
+    "AOI can have dual positioning as agent-facing discovery and operator-facing middleware.",
+    "Receipt-carrying route decisions can differentiate AOI from a plain registry."
+  ],
+  "key_adoption_blockers": [
+    "beneficiary and consumer mismatch",
+    "trust router trust regression",
+    "rug-pull and freshness weakness",
+    "incumbents in MCP gateway and security registry space",
+    "too much friction from HOLD/BLOCK"
+  ],
+  "recommended_killer_features": [
+    "fast discovery hot path",
+    "lazy deeper preflight for committed candidates",
+    "route decisions with receipts and timestamps",
+    "negative cache",
+    "rug-pull diff",
+    "operator-enforced non-bypassable middleware option"
+  ],
+  "route_semantics_recommendations": [
+    "Make HOLD the exception for low-risk read-only or idempotent cases.",
+    "Carry timestamped receipts with route decisions."
+  ],
+  "freshness_or_rugpull_recommendations": [
+    "Add negative cache for known bad, deprecated, or untrusted candidates.",
+    "Add rug-pull diff checks for suspicious version or metadata drift."
+  ],
+  "enterprise_or_operator_positioning": [
+    "Agent-facing fast discovery UX.",
+    "Operator-facing non-bypassable pre-use middleware."
+  ],
+  "claim_boundary_warnings": [
+    "Do not become another registry or another gateway without a differentiated decision packet."
+  ],
+  "overclaim_risks": [
+    "Trust router trust regression if AOI decisions are not themselves auditable and freshness-bound."
+  ],
+  "direct_quotes_short_safe_only": [
+    "another registry",
+    "another gateway",
+    "negative cache",
+    "rug-pull diff"
+  ],
+  "redaction_status": "PASS_REDACTED",
+  "token_or_secret_detected": false,
+  "external_llm_api_called": false,
+  "raw_transcript_stored": false,
+  "private_kernel_exposed": false,
+  "claim_boundary": [
+    "feedback is not product readiness proof",
+    "feedback is not security certification",
+    "feedback is not action authorization",
+    "feedback is not legal, privacy, license, or compliance clearance"
+  ],
+  "validation_errors": []
+}

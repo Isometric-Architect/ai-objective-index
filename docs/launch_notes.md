@@ -1,5 +1,11 @@
 # Launch Notes
 
+## AOI Agent Discovery 4 Cross-Model Feedback Intake
+
+AOI-AGENT-DISCOVERY-4 records manual, redacted external model feedback from Gemini, GPT-5.5 Thinking, and Claude Opus 4.8 High. It extracts product roadmap deltas around Capability Decision Packets, granular route semantics, HOLD-to-Replan loops, adaptive/context-aware governance, freshness/rug-pull/negative-cache handling, and agent/operator dual positioning.
+
+The package also classifies the prior generated registry/datascope full-suite payload-state failures as a HOLD residual. It does not claim full-suite green unless a full `python -m pytest` passes, and it does not upload to PyPI, publish to MCP Registry, call external LLM APIs, post outreach, handle tokens, expose private kernels, certify security, prove legal/privacy/license status, claim product readiness, or authorize external actions.
+
 ## AOI 0.3.0a2 Final PyPI Upload and MCP Registry Publish
 
 AOI 0.3.0a2 final publish tooling adds the guarded real distribution path for the agent-native package. It checks marker sync, local build/twine status, real package-data inclusion, REST/MCP agent surfaces, no-secrets status, claim guard, tech protection, and public/private alignment before PyPI upload. PyPI upload requires `AOI_REAL_PYPI_UPLOAD_CONFIRM=YES` and local interactive `twine` token entry. MCP Registry publish requires real PyPI install verification, local `mcp-publisher validate`, and `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES`.

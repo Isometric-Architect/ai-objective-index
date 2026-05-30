@@ -13,3 +13,5 @@ Expected improvements:
 - better ResidualOps escalation for tool, code, and data risk.
 
 This comparison is offline and deterministic. Manual cross-model evaluation is still needed before making broader adoption claims.
+
+Discovery 4 records that manual cross-model feedback as local redacted packets and identifies the main upgrade path: make AOI less like a static registry and more like a fast capability finder with pre-use route receipts. The residual generated registry/datascope full-suite failure remains classified as HOLD until a full suite passes.

@@ -11,3 +11,5 @@ AOI Agent Discovery 3 creates deterministic offline fixtures that compare a naiv
 5. route tool, code, and data risks to ResidualOps paths.
 
 The fixture is not a live LLM benchmark and does not prove universal agent behavior. It is a local evaluation pack for improving prompt design and product surface clarity.
+
+AOI Agent Discovery 4 adds manual cross-model feedback intake on top of this fixture. The next evaluation focus is whether a Capability Decision Packet and granular route semantics make ordinary agents less likely to confuse discovered, trusted, authorized, and executable states.

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/aoi/schemas/agent/test_residual_reconciliation.schema.json",
+  "title": "AOI Test Residual Reconciliation",
+  "type": "object",
+  "required": [
+    "schema",
+    "generated_at",
+    "decision",
+    "classification",
+    "package_regression",
+    "full_suite_green_claim_allowed",
+    "safe_to_stage_generated_leftovers",
+    "next_action"
+  ],
+  "properties": {
+    "schema": { "const": "AOI_TestResidualReconciliation/v0.1" },
+    "generated_at": { "type": "string" },
+    "decision": {
+      "enum": [
+        "PASS_FULL_SUITE_GREEN",
+        "HOLD_FULL_SUITE_RESIDUAL_CLASSIFIED",
+        "BLOCK_PACKAGE_REGRESSION"
+      ]
+    },
+    "classification": { "type": "string" },
+    "package_regression": { "type": "boolean" },
+    "stale_fixture": { "type": "boolean" },
+    "needs_reprocess": { "type": "boolean" },
+    "unsafe_to_fix_in_this_package": { "type": "boolean" },
+    "safe_to_stage_generated_leftovers": { "type": "boolean" },
+    "full_suite_green_claim_allowed": { "type": "boolean" },
+    "known_failure_clusters": { "type": "array", "items": { "type": "string" } },
+    "next_action": { "type": "string" }
+  },
+  "additionalProperties": true
+}

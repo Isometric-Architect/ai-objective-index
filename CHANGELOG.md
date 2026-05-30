@@ -1,5 +1,11 @@
 # Changelog
 
+## ROE-22
+
+- Added an external-safe V2 demo/share pack refreshed from the ROE-21 dashboard refresh.
+- Added V2 static HTML, Markdown, JSON dashboard, status cards, timeline, feedback memory summary, stale-to-refreshed delta, manifest, checksums, redaction report, claim audit, distribution boundary, operator/screenshot/video scripts, archive dry-run status, gate result, schemas, docs, public outputs, and tests.
+- Preserved boundaries: no live web app, no deployment, no posting, no external API or GitHub API calls, no fetch/crawl, no live MCP/tool calls, no raw private-data inspection, no upload/training, no external repo mutation, no token handling, no private-kernel exposure, no skipped/HOLD-to-success conversion, and no certification/proof/product-readiness/action-authorization claim.
+
 ## ROE-21
 
 - Added a dashboard refresh from the ROE-20 feedback second-run bridge.

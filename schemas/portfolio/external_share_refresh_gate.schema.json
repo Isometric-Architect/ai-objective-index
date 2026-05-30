@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/portfolio/external_share_refresh_gate.schema.json",
+  "title": "ResidualOps External Share Refresh Gate",
+  "type": "object",
+  "required": [
+    "schema",
+    "generated_at",
+    "decision",
+    "pack_id",
+    "artifact_count",
+    "redaction_decision",
+    "claim_audit_decision",
+    "distribution_decision",
+    "network_dependency",
+    "claim_ceiling_visible",
+    "agentsec_executed_incorporated_visible",
+    "skipped_candidates_visible",
+    "external_action_count"
+  ],
+  "properties": {
+    "schema": {
+      "const": "ResidualOps_ROE22ExternalShareRefreshGate/v0.1"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "decision": {
+      "enum": [
+        "PASS_EXTERNAL_SHARE_PACK_REFRESHED_FROM_UPDATED_DASHBOARD",
+        "HOLD_MISSING_REFRESHED_DASHBOARD",
+        "HOLD_MISSING_ARTIFACT",
+        "HOLD_ARCHIVE_NOT_BUILT",
+        "HOLD_REVIEW_REQUIRED",
+        "BLOCK_SECRET_FINDING",
+        "BLOCK_OVERCLAIM",
+        "BLOCK_NETWORK_DEPENDENCY",
+        "BLOCK_PRIVATE_KERNEL_DISCLOSURE",
+        "BLOCK_UNSAFE_DISTRIBUTION_MODE",
+        "BLOCK_SKIPPED_CANDIDATE_FALSE_SUCCESS",
+        "BLOCK_EXTERNAL_ACTION"
+      ]
+    },
+    "pack_id": {
+      "type": "string"
+    },
+    "artifact_count": {
+      "type": "integer"
+    },
+    "redaction_decision": {
+      "type": "string"
+    },
+    "claim_audit_decision": {
+      "type": "string"
+    },
+    "distribution_decision": {
+      "type": "string"
+    },
+    "network_dependency": {
+      "type": "boolean"
+    },
+    "claim_ceiling_visible": {
+      "type": "boolean"
+    },
+    "agentsec_executed_incorporated_visible": {
+      "type": "boolean"
+    },
+    "skipped_candidates_visible": {
+      "type": "boolean"
+    },
+    "external_action_count": {
+      "type": "integer"
+    }
+  },
+  "additionalProperties": true
+}

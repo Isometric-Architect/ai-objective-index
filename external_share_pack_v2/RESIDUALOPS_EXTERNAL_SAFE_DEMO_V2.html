@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ResidualOps External-Safe Demo V2</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; color: #182026; background: #f7f8f9; }
+    .banner { border: 2px solid #1f6feb; background: #eef6ff; padding: 12px; margin-bottom: 18px; }
+    table { border-collapse: collapse; width: 100%; background: white; }
+    th, td { border: 1px solid #c9d1d9; padding: 8px; text-align: left; vertical-align: top; }
+    th { background: #f0f3f6; }
+    code { background: #eef1f4; padding: 1px 4px; }
+  </style>
+</head>
+<body>
+  <div class="banner"><strong>Claim ceiling:</strong> static local demo only. Not certification, not proof, not product readiness, no external action authorization, no network dependency, and no private kernel exposure.</div>
+  <h1>ResidualOps External-Safe Demo V2</h1>
+  <p>Generated from the ROE-21 refreshed dashboard. This is a local/offline inspection artifact.</p>
+  <h2>Feedback Bridge Summary</h2>
+  <ul>
+    <li>Selected/skipped/executed: <code>1/3/1</code></li>
+    <li>ALLOW/HOLD/BLOCK: <code>1/1/1</code></li>
+    <li><code>external_action_count = 0</code></li>
+  </ul>
+  <h2>Status Cards</h2>
+  <table>
+    <thead><tr><th>Vertical</th><th>Feedback second-run status</th><th>Memory status</th><th>ALLOW/HOLD/BLOCK</th><th>Next action</th></tr></thead>
+    <tbody><tr><td>agentsec</td><td>executed</td><td>incorporated</td><td>1/1/1</td><td>keep local-only AgentSec feedback second-run in dashboard; request owner artifact before any real pilot</td></tr>
+<tr><td>qira</td><td>skipped_missing_artifact</td><td>skipped_missing_artifact</td><td>0/1/0</td><td>collect a redacted local artifact or context before rerunning; keep this candidate on HOLD</td></tr>
+<tr><td>datacapsule</td><td>skipped_missing_artifact</td><td>skipped_missing_artifact</td><td>0/1/0</td><td>collect a redacted local artifact or context before rerunning; keep this candidate on HOLD</td></tr>
+<tr><td>portfolio</td><td>skipped_missing_artifact</td><td>skipped_missing_artifact</td><td>0/1/0</td><td>collect a redacted local artifact or context before rerunning; keep this candidate on HOLD</td></tr></tbody>
+  </table>
+  <p><strong>Skipped candidates are HOLD, not failure and not success.</strong></p>
+  <h2>Known Limits</h2>
+  <p>No live connector, network call, GitHub API call, URL fetch, crawl, live MCP/tool call, raw private-data inspection, upload, training, deploy, publish, posting, merge, external repository mutation, token handling, certification, proof, product-readiness claim, or action authorization.</p>
+</body>
+</html>

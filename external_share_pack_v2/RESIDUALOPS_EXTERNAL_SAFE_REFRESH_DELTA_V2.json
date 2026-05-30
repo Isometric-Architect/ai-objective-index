@@ -1,0 +1,53 @@
+{
+  "schema": "ResidualOps_ExternalShareRefreshDelta/v0.1",
+  "refresh_id": "roe22-external-share-refresh-v0-1",
+  "generated_at": "2026-05-30T04:49:19.901487+00:00",
+  "source_previous_share_pack": "external_share_pack",
+  "source_dashboard_refresh": "pilot_dashboard/ROE21_DASHBOARD_REFRESH_DELTA.json",
+  "previous_share_pack_status": "stale",
+  "new_share_pack_status": "refreshed_from_roe21",
+  "updates": [
+    "agentsec_feedback_second_run_executed",
+    "qira_skipped_missing_artifact_visible",
+    "datacapsule_skipped_missing_artifact_visible",
+    "portfolio_skipped_missing_artifact_visible",
+    "external_action_count_zero",
+    "claim_ceiling_visible",
+    "stale_notice_replaced_by_v2"
+  ],
+  "removed_or_deprecated_artifacts": [
+    "external_share_pack/README_EXTERNAL_SAFE_DEMO.md",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_DEMO.html",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_DEMO.md",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_DASHBOARD.json",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_CLAIM_BOUNDARY.md",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_KNOWN_LIMITS.md",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_OPERATOR_SCRIPT.md",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_SCREENSHOT_SCRIPT.md",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_VIDEO_SCRIPT.md",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_SHARE_DECISION.md",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_MANIFEST.json",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_CHECKSUMS.json",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_REDACTION_REPORT.json",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_CLAIM_AUDIT.json",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_DISTRIBUTION_BOUNDARY.json"
+  ],
+  "newly_generated_artifacts": [
+    "external_share_pack_v2/README_EXTERNAL_SAFE_DEMO_V2.md",
+    "external_share_pack_v2/RESIDUALOPS_EXTERNAL_SAFE_DEMO_V2.html",
+    "external_share_pack_v2/RESIDUALOPS_EXTERNAL_SAFE_DEMO_V2.md",
+    "external_share_pack_v2/RESIDUALOPS_EXTERNAL_SAFE_DASHBOARD_V2.json",
+    "external_share_pack_v2/RESIDUALOPS_EXTERNAL_SAFE_STATUS_CARDS_V2.json",
+    "external_share_pack_v2/RESIDUALOPS_EXTERNAL_SAFE_TIMELINE_V2.json",
+    "external_share_pack_v2/RESIDUALOPS_EXTERNAL_SAFE_FEEDBACK_MEMORY_V2.json",
+    "external_share_pack_v2/RESIDUALOPS_EXTERNAL_SAFE_CLAIM_BOUNDARY_V2.md",
+    "external_share_pack_v2/RESIDUALOPS_EXTERNAL_SAFE_KNOWN_LIMITS_V2.md",
+    "external_share_pack_v2/RESIDUALOPS_EXTERNAL_SAFE_OPERATOR_SCRIPT_V2.md",
+    "external_share_pack_v2/RESIDUALOPS_EXTERNAL_SAFE_SCREENSHOT_SCRIPT_V2.md",
+    "external_share_pack_v2/RESIDUALOPS_EXTERNAL_SAFE_VIDEO_SCRIPT_V2.md",
+    "external_share_pack_v2/RESIDUALOPS_EXTERNAL_SAFE_REFRESH_DELTA_V2.json",
+    "external_share_pack_v2/RESIDUALOPS_EXTERNAL_SAFE_SHARE_DECISION_V2.md"
+  ],
+  "claim_boundary_unchanged": true,
+  "no_external_action": true
+}

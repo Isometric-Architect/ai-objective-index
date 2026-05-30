@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/portfolio/external_share_refresh_manifest.schema.json",
+  "title": "ResidualOps External Share Refresh Manifest",
+  "type": "object",
+  "required": [
+    "schema",
+    "generated_at",
+    "artifact_count",
+    "artifacts",
+    "external_actions_performed",
+    "network_used",
+    "token_printed"
+  ],
+  "properties": {
+    "schema": {
+      "const": "ResidualOps_ExternalShareRefreshManifest/v0.1"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "artifact_count": {
+      "type": "integer"
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "size",
+          "sha256",
+          "artifact_type",
+          "safe_to_share_publicly",
+          "reason"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "size": {
+            "type": "integer"
+          },
+          "sha256": {
+            "type": "string"
+          },
+          "source_path": {
+            "type": "string"
+          },
+          "artifact_type": {
+            "type": "string"
+          },
+          "safe_to_share_publicly": {
+            "type": "boolean"
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "external_actions_performed": {
+      "type": "boolean",
+      "const": false
+    },
+    "network_used": {
+      "type": "boolean",
+      "const": false
+    },
+    "token_printed": {
+      "type": "boolean",
+      "const": false
+    }
+  },
+  "additionalProperties": true
+}

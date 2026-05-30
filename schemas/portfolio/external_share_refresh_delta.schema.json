@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/portfolio/external_share_refresh_delta.schema.json",
+  "title": "ResidualOps External Share Refresh Delta",
+  "type": "object",
+  "required": [
+    "schema",
+    "refresh_id",
+    "generated_at",
+    "source_previous_share_pack",
+    "source_dashboard_refresh",
+    "previous_share_pack_status",
+    "new_share_pack_status",
+    "updates",
+    "claim_boundary_unchanged",
+    "no_external_action"
+  ],
+  "properties": {
+    "schema": {
+      "const": "ResidualOps_ExternalShareRefreshDelta/v0.1"
+    },
+    "refresh_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "source_previous_share_pack": {
+      "const": "external_share_pack"
+    },
+    "source_dashboard_refresh": {
+      "type": "string"
+    },
+    "previous_share_pack_status": {
+      "const": "stale"
+    },
+    "new_share_pack_status": {
+      "const": "refreshed_from_roe21"
+    },
+    "updates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "removed_or_deprecated_artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "newly_generated_artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "claim_boundary_unchanged": {
+      "type": "boolean",
+      "const": true
+    },
+    "no_external_action": {
+      "type": "boolean",
+      "const": true
+    }
+  },
+  "additionalProperties": true
+}

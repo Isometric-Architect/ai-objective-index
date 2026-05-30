@@ -1,0 +1,60 @@
+{
+  "schema": "ResidualOps_ExternalShareRefreshDistributionBoundary/v0.1",
+  "generated_at": "2026-05-30T04:49:20.218791+00:00",
+  "requested_distribution_mode": "local_static_demo_zip",
+  "decision": "PASS_ALLOWED_STATIC_SHARE",
+  "allowed": [
+    "artifact_manifest_share",
+    "bounded_screenshot_or_video_with_claim_ceiling_visible",
+    "controlled_customer_discovery_walkthrough_with_claim_ceiling",
+    "internal_review",
+    "investor_partner_architecture_walkthrough",
+    "local_static_demo_zip",
+    "operator_script_walkthrough",
+    "redacted_non_live_demo_recording"
+  ],
+  "review_required": [
+    "partner_security_architecture_review",
+    "pilot_customer_security_questionnaire",
+    "public_blog_or_website_teaser",
+    "recorded_demo_for_external_distribution",
+    "sandbox_connector_lab_plan"
+  ],
+  "blocked": [
+    "demo_without_claim_ceiling",
+    "external_action_demo",
+    "legal_compliance_claim",
+    "legal_signing_demo",
+    "live_connector_demo",
+    "live_credentials_use",
+    "medical_financial_action_demo",
+    "mutable_or_rehosted_claim_surface",
+    "network_dispatch",
+    "payment_execution_demo",
+    "privacy_certification_claim",
+    "product_ready_badge",
+    "production_deployment",
+    "public_auto_post_demo",
+    "public_certification_claim",
+    "qleos_compatible_public_badge",
+    "raw_pii_export",
+    "security_certification_claim",
+    "token_export"
+  ],
+  "hard_invariants": {
+    "claim_ceiling_banner_visible": true,
+    "no_network": true,
+    "no_live_credentials": true,
+    "no_live_connector_demo": true,
+    "no_external_action_authorization": true,
+    "no_product_security_legal_privacy_readiness_claim": true,
+    "no_raw_payload_or_credentials": true,
+    "no_private_kernel": true,
+    "skipped_candidates_visible": true
+  },
+  "redaction_decision": "PASS_REDACTED",
+  "claim_audit_decision": "PASS_CLAIM_BOUNDARY_CLEAN",
+  "manifest_artifact_count": 19,
+  "checksum_count": 19,
+  "network_dependency": false
+}

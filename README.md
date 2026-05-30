@@ -111,6 +111,8 @@ ROE-20 adds a local feedback-to-second-run execution bridge. It selects only `RE
 
 ROE-21 adds a dashboard refresh from the ROE-20 feedback second-run bridge. It writes a refresh delta, four feedback second-run status cards, timeline update, feedback memory summary, reviewer readout, stale notice for the ROE-17 external share pack, redaction report, claim audit, and gate result while preserving QIRA/DataCapsule/Portfolio skipped status as HOLD-equivalent, without live web apps, deployment, external APIs, GitHub APIs, fetching URLs, live MCP/tool calls, raw private-data inspection, upload, model training, external repository mutation, posting, token handling, private-kernel exposure, certification, proof, product-readiness claim, or action authorization.
 
+ROE-22 adds a refreshed external-safe V2 demo/share pack from the ROE-21 dashboard refresh. It writes V2 static HTML/Markdown/JSON, status cards, timeline, feedback memory summary, stale-to-refreshed delta, manifest, checksums, redaction report, claim audit, distribution boundary, operator/screenshot/video scripts, gate result, and archive dry-run status while keeping skipped candidates visible as HOLD-equivalent, without live web apps, deployment, external APIs, GitHub APIs, fetching URLs, live MCP/tool calls, raw private-data inspection, upload, model training, external repository mutation, posting, token handling, private-kernel exposure, certification, proof, product-readiness claim, or action authorization.
+
 ## Quick Example
 
 Example objective request:

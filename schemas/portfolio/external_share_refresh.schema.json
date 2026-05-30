@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/portfolio/external_share_refresh.schema.json",
+  "title": "ResidualOps External Share Refresh",
+  "type": "object",
+  "required": [
+    "schema",
+    "pack_id",
+    "generated_at",
+    "mode",
+    "source_dashboard_refresh",
+    "status_cards",
+    "aggregate_summary",
+    "claim_boundary",
+    "skipped_candidates_visible",
+    "skipped_candidates_marked_success",
+    "network_used",
+    "external_actions_performed"
+  ],
+  "properties": {
+    "schema": {
+      "const": "ResidualOps_ExternalShareRefresh/v0.1"
+    },
+    "pack_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "mode": {
+      "const": "static_local_redacted_demo_v2"
+    },
+    "source_dashboard_refresh": {
+      "type": "string"
+    },
+    "status_cards": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "aggregate_summary": {
+      "type": "object"
+    },
+    "claim_boundary": {
+      "type": "object"
+    },
+    "skipped_candidates_visible": {
+      "type": "boolean",
+      "const": true
+    },
+    "skipped_candidates_marked_success": {
+      "type": "boolean",
+      "const": false
+    },
+    "network_used": {
+      "type": "boolean",
+      "const": false
+    },
+    "external_actions_performed": {
+      "type": "boolean",
+      "const": false
+    }
+  },
+  "additionalProperties": true
+}

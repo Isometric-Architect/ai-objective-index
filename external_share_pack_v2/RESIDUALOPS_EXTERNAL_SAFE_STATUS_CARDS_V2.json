@@ -1,0 +1,99 @@
+{
+  "schema": "ResidualOps_DashboardRefreshStatusCards/v0.1",
+  "refresh_id": "roe21-dashboard-refresh-v0-1",
+  "card_count": 4,
+  "cards": [
+    {
+      "card_id": "roe21-status-card-agentsec",
+      "vertical": "agentsec",
+      "previous_status": "roe16_dashboard_present",
+      "feedback_reply_status": "routed",
+      "feedback_second_run_status": "executed",
+      "memory_status": "incorporated",
+      "latest_decision_summary": {
+        "allow_count": 1,
+        "hold_count": 1,
+        "block_count": 1
+      },
+      "next_action": "keep local-only AgentSec feedback second-run in dashboard; request owner artifact before any real pilot",
+      "must_not_claim": [
+        "security_certification",
+        "code_correctness_proof",
+        "legal_or_privacy_or_license_or_eval_clean_proof",
+        "quality_guarantee",
+        "product_readiness",
+        "external_action_authorization",
+        "skipped_candidate_success"
+      ]
+    },
+    {
+      "card_id": "roe21-status-card-qira",
+      "vertical": "qira",
+      "previous_status": "roe16_dashboard_present",
+      "feedback_reply_status": "routed",
+      "feedback_second_run_status": "skipped_missing_artifact",
+      "memory_status": "skipped_missing_artifact",
+      "latest_decision_summary": {
+        "allow_count": 0,
+        "hold_count": 1,
+        "block_count": 0
+      },
+      "next_action": "collect a redacted local artifact or context before rerunning; keep this candidate on HOLD",
+      "must_not_claim": [
+        "security_certification",
+        "code_correctness_proof",
+        "legal_or_privacy_or_license_or_eval_clean_proof",
+        "quality_guarantee",
+        "product_readiness",
+        "external_action_authorization",
+        "skipped_candidate_success"
+      ]
+    },
+    {
+      "card_id": "roe21-status-card-datacapsule",
+      "vertical": "datacapsule",
+      "previous_status": "roe16_dashboard_present",
+      "feedback_reply_status": "routed",
+      "feedback_second_run_status": "skipped_missing_artifact",
+      "memory_status": "skipped_missing_artifact",
+      "latest_decision_summary": {
+        "allow_count": 0,
+        "hold_count": 1,
+        "block_count": 0
+      },
+      "next_action": "collect a redacted local artifact or context before rerunning; keep this candidate on HOLD",
+      "must_not_claim": [
+        "security_certification",
+        "code_correctness_proof",
+        "legal_or_privacy_or_license_or_eval_clean_proof",
+        "quality_guarantee",
+        "product_readiness",
+        "external_action_authorization",
+        "skipped_candidate_success"
+      ]
+    },
+    {
+      "card_id": "roe21-status-card-portfolio",
+      "vertical": "portfolio",
+      "previous_status": "roe16_dashboard_present",
+      "feedback_reply_status": "routed",
+      "feedback_second_run_status": "skipped_missing_artifact",
+      "memory_status": "skipped_missing_artifact",
+      "latest_decision_summary": {
+        "allow_count": 0,
+        "hold_count": 1,
+        "block_count": 0
+      },
+      "next_action": "collect a redacted local artifact or context before rerunning; keep this candidate on HOLD",
+      "must_not_claim": [
+        "security_certification",
+        "code_correctness_proof",
+        "legal_or_privacy_or_license_or_eval_clean_proof",
+        "quality_guarantee",
+        "product_readiness",
+        "external_action_authorization",
+        "skipped_candidate_success"
+      ]
+    }
+  ]
+}

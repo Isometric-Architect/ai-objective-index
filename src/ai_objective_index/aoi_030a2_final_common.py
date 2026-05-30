@@ -121,6 +121,9 @@ def dist_paths_exist() -> dict[str, bool]:
 
 def write_final_build_result() -> dict[str, Any]:
     build = read_json(BUILD_VERIFY_OUTPUT_PATH)
+    local_smoke = build.get("local_install_smoke", {}) if isinstance(build.get("local_install_smoke"), dict) else {}
+    mcp_smoke = local_smoke.get("mcp_smoke_result", {}) if isinstance(local_smoke.get("mcp_smoke_result"), dict) else {}
+    mcp_validate = local_smoke.get("mcp_publisher_validate", {}) if isinstance(local_smoke.get("mcp_publisher_validate"), dict) else {}
     if build.get("decision") == "PASS_BUILD_TWINE_MARKER_SYNCED":
         decision = "PASS_FINAL_BUILD_READY"
     elif build:
@@ -138,9 +141,9 @@ def write_final_build_result() -> dict[str, Any]:
         "sdist_path": str(SDIST_PATH).replace("\\", "/"),
         **dist_paths_exist(),
         "twine_check_passed": build.get("twine_check", {}).get("ok") is True,
-        "local_install_smoke_passed": build.get("local_install_smoke", {}).get("ok") is True,
-        "mcp_smoke_passed": build.get("mcp_smoke", {}).get("ok") is True,
-        "mcp_publisher_validate_passed": build.get("mcp_publisher_validate", {}).get("ok") is True,
+        "local_install_smoke_passed": local_smoke.get("ok") is True,
+        "mcp_smoke_passed": mcp_smoke.get("ok") is True,
+        "mcp_publisher_validate_passed": mcp_validate.get("ok") is True,
         "pypi_upload_performed": False,
         "mcp_registry_publish_performed": False,
         "token_printed": False,

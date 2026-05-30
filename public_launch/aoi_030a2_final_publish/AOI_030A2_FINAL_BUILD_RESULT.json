@@ -1,6 +1,6 @@
 {
   "schema": "AOI_030A2FinalBuildResult/v0.1",
-  "generated_at": "2026-05-30T09:23:00.391059+00:00",
+  "generated_at": "2026-05-30T09:33:29.332624+00:00",
   "decision": "PASS_FINAL_BUILD_READY",
   "source_build_result": "public_launch/aoi_030a2_registry_recovery/AOI_030A2_BUILD_VERIFY_RESULT.json",
   "source_build_decision": "PASS_BUILD_TWINE_MARKER_SYNCED",
@@ -11,8 +11,8 @@
   "sdist_exists": true,
   "twine_check_passed": true,
   "local_install_smoke_passed": true,
-  "mcp_smoke_passed": false,
-  "mcp_publisher_validate_passed": false,
+  "mcp_smoke_passed": true,
+  "mcp_publisher_validate_passed": true,
   "pypi_upload_performed": false,
   "mcp_registry_publish_performed": false,
   "token_printed": false,

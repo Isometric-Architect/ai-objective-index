@@ -1,6 +1,6 @@
 {
   "schema": "AOI_030A2MarkerSyncResult/v0.1",
-  "generated_at": "2026-05-30T06:28:35.936398+00:00",
+  "generated_at": "2026-05-30T06:53:25.869058+00:00",
   "decision": "PASS_MARKER_SYNCED_030A2",
   "target_version": "0.3.0a2",
   "canonical_mcp_name": "io.github.Isometric-Architect/ai-objective-index",

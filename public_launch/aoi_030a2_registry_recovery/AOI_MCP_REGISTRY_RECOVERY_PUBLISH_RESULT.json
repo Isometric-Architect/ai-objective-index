@@ -1,6 +1,6 @@
 {
   "schema": "AOI_MCPRegistryRecoveryPublishResult/v0.1",
-  "generated_at": "2026-05-30T06:28:23.423907+00:00",
+  "generated_at": "2026-05-30T06:48:55.255583+00:00",
   "decision": "HOLD_GATE_NOT_PASS",
   "gate_decision": "HOLD_PYPI_VERIFY_REQUIRED",
   "env_confirm_present": false,

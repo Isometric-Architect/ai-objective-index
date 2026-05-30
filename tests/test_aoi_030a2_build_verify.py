@@ -13,13 +13,18 @@ def test_build_verify_passes_with_mocked_artifacts(monkeypatch, tmp_path):
     monkeypatch.setattr(build_verify, "_artifact_contains_marker", lambda path: True)
     monkeypatch.setattr(build_verify, "run_marker_sync", lambda write_result=True: {"decision": "PASS_MARKER_SYNCED_030A2"})
 
+    def fake_runner(command, timeout=600):
+        stdout = "0.3.0a2\n" if command[1:3] == ["-c", "import ai_objective_index; print(ai_objective_index.__version__)"] else ""
+        return {"ok": True, "returncode": 0, "stdout": stdout, "stderr": "", "command": command}
+
     result = build_verify.run_build_verify(
-        runner=lambda command, timeout=600: {"ok": True, "returncode": 0, "stdout": "", "stderr": "", "command": command},
+        runner=fake_runner,
         write_result=False,
     )
 
     assert result["decision"] == "PASS_BUILD_TWINE_MARKER_SYNCED"
     assert result["wheel_exists"] is True
+    assert result["local_install_smoke"]["version_matches"] is True
 
 
 def test_build_verify_blocks_missing_marker(monkeypatch, tmp_path):

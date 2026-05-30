@@ -1,6 +1,6 @@
 {
   "schema": "AOI_MCPRegistryRecoveryGateResult/v0.1",
-  "generated_at": "2026-05-30T06:28:13.990003+00:00",
+  "generated_at": "2026-05-30T06:49:00.932442+00:00",
   "decision": "HOLD_PYPI_VERIFY_REQUIRED",
   "server_name": "io.github.Isometric-Architect/ai-objective-index",
   "server_version": "0.3.0a2",

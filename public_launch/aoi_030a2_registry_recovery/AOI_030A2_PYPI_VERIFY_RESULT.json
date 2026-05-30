@@ -1,6 +1,6 @@
 {
   "schema": "AOI_030A2PyPIVerifyResult/v0.1",
-  "generated_at": "2026-05-30T05:58:53.677139+00:00",
+  "generated_at": "2026-05-30T06:48:39.536453+00:00",
   "decision": "HOLD_PYPI_UPLOAD_NOT_CONFIRMED",
   "target_version": "0.3.0a2",
   "package_name": "ai-objective-index",

@@ -1,0 +1,22 @@
+{
+  "schema": "ResidualOps_ExternalSafeSharePackChecksums/v0.1",
+  "generated_at": "2026-05-30T00:02:58.015851+00:00",
+  "checksum_count": 15,
+  "checksums": {
+    "external_share_pack/README_EXTERNAL_SAFE_DEMO.md": "41609889bd3823f3bef83b3e69c08b7b8f80908473f25124fc3690e3564575a2",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_DEMO.html": "d9bb1fa20dcf8ae983c5b8c50932e04af533f5382d7df1d511f6c2af5ac413c9",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_DEMO.md": "d4d453a5ee7ea7c0516e1d3bedc04bca313c91dbac587b4dc6b3969ed8544da9",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_DASHBOARD.json": "9ae7c5ba5fa7ca0d2aab2bca33b2e7182775a3f191fb7c95fafba5f60fd8e7c8",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_CLAIM_BOUNDARY.md": "3fec61433245787cc9b212abb0c90aefaf77e1a642777beca72dbba38b1c7edc",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_KNOWN_LIMITS.md": "b3ebfd725c16c7da57d28b2e1799a5cebc9821f50ec7352cc33627af7b24dd5d",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_OPERATOR_SCRIPT.md": "047671b02304ce6601850fcfb6a173c63cd04a7e58fa973d135e8d8bd5f3cbb4",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_SCREENSHOT_SCRIPT.md": "0c2edc39129aaf5a06ee7c7008272adc5e9e6500aefccd5af541227946a2c64e",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_VIDEO_SCRIPT.md": "a23c70c19dd797b3c1bc01f1938da2c23f72b286fa60ce831cda18409867289c",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_SHARE_DECISION.md": "6beec96d891b42fa1cd44f441d409d2051304d73e3d7e29258a742a9a517d4f8",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_MANIFEST.json": "8197010a0376fc7108a37c7661f4e797c9d61bf5266e18a08d70287e75e7d7b2",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_CHECKSUMS.json": "eb1e678837429416c472c9e9358f966f8fd07e85df5306c525101ac705772141",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_REDACTION_REPORT.json": "3a88e00edb7c9db847fe40f98291ae5d3581b6f12dfd56bb6e3fb692c625badd",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_CLAIM_AUDIT.json": "2b0f7ff76a06ab787b4cd377b44e0a2a832b95b33a14257fbcaa9f06732c91f0",
+    "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_DISTRIBUTION_BOUNDARY.json": "3333057fd7022376032ad6aff3786d6fb9067c930c3bbada4d79605e8bfcba24"
+  }
+}

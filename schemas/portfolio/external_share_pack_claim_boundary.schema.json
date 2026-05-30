@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/portfolio/external_share_pack_claim_boundary.schema.json",
+  "title": "ResidualOps External Share Claim Boundary",
+  "type": "object",
+  "required": [
+    "not_external_pilot",
+    "not_product_launch",
+    "not_security_certification",
+    "not_code_correctness_proof",
+    "not_legal_opinion",
+    "not_privacy_audit",
+    "not_license_clearance",
+    "not_eval_clean_proof",
+    "not_quality_guarantee",
+    "not_product_ready",
+    "no_external_action_authorization"
+  ],
+  "properties": {
+    "not_external_pilot": { "const": true },
+    "not_product_launch": { "const": true },
+    "not_security_certification": { "const": true },
+    "not_code_correctness_proof": { "const": true },
+    "not_legal_opinion": { "const": true },
+    "not_privacy_audit": { "const": true },
+    "not_license_clearance": { "const": true },
+    "not_eval_clean_proof": { "const": true },
+    "not_quality_guarantee": { "const": true },
+    "not_product_ready": { "const": true },
+    "no_external_action_authorization": { "const": true }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/portfolio/external_share_pack_manifest.schema.json",
+  "title": "ResidualOps External Safe Share Pack Manifest",
+  "type": "object",
+  "required": ["schema", "artifact_count", "artifacts"],
+  "properties": {
+    "schema": { "const": "ResidualOps_ExternalSafeSharePackManifest/v0.1" },
+    "generated_at": { "type": "string" },
+    "artifact_count": { "type": "integer", "minimum": 0 },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "size", "sha256", "artifact_type", "safe_to_share_publicly"],
+        "properties": {
+          "path": { "type": "string" },
+          "size": { "type": "integer", "minimum": 0 },
+          "sha256": { "type": "string" },
+          "source_path": { "type": "string" },
+          "artifact_type": { "type": "string" },
+          "safe_to_share_publicly": { "type": ["boolean", "string"] },
+          "reason": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

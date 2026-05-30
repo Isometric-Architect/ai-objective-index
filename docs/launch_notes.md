@@ -1,5 +1,9 @@
 # Launch Notes
 
+## ROE-17 External-Safe Demo Share Pack
+
+ROE-17 creates a bounded static local share pack from ROE-16 dashboard artifacts. It writes an external-safe README, static HTML, Markdown, JSON, claim boundary, known limits, operator walkthrough, screenshot/video scripts, manifest, checksums, redaction report, claim audit, distribution boundary, share decision, and gate result. It does not deploy, post, call external APIs, call GitHub APIs, fetch URLs, crawl, run live MCP/tool calls, inspect raw private files, upload data, train models, mutate external repositories, create issues or comments, merge, publish packages, handle tokens, expose private kernels, certify security, prove correctness, prove legal/privacy/license/evaluation status, guarantee quality, claim product readiness, or authorize external actions.
+
 ## ROE-16 Pilot Dashboard Artifact Pack
 
 ROE-16 generates a static/local dashboard artifact pack across AgentSec, QIRA, DataCapsule, unified portfolio, owner-consented intake, dry-run, feedback, and second-run outputs. It writes dashboard JSON, Markdown, static HTML, status cards, timeline, manifest, checksums, claim-boundary sheet, redaction report, claim audit, and gate result. It does not create a live web app, call external APIs, call GitHub APIs, fetch URLs, crawl, run live MCP/tool calls, inspect raw private files, upload data, train models, mutate external repositories, post, merge, deploy, publish packages, handle tokens, expose private kernels, certify security, prove correctness, prove legal/privacy/license/evaluation status, guarantee quality, claim product readiness, or authorize external actions.

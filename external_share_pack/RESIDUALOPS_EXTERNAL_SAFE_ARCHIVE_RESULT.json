@@ -1,0 +1,16 @@
+{
+  "schema": "ResidualOps_ExternalSafeShareArchiveResult/v0.1",
+  "generated_at": "2026-05-30T00:02:57.804429+00:00",
+  "dry_run": true,
+  "build_requested": false,
+  "archive_built": false,
+  "archive_path": "",
+  "archive_sha256": "",
+  "included_file_count": 16,
+  "redaction_decision": "PASS_REDACTED",
+  "result_token": "DRY_RUN_ONLY",
+  "errors": [],
+  "warnings": [
+    "archive is optional; share only when claim ceiling remains visible"
+  ]
+}

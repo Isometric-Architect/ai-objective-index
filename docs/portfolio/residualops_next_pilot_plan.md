@@ -27,6 +27,8 @@ ROE-15 status: local/sample owner-consented second-run receipt packager added.
 
 ROE-16 status: static/local pilot dashboard artifact pack added.
 
-Recommended next package: ROE-17 External-Safe Demo/Share Pack.
+ROE-17 status: external-safe static demo/share pack added.
+
+Recommended next package: ROE-18 Pilot Discovery / Feedback Intake Outreach Drafts.
 
 Secondary backlog: AOI 0.3.0a2 MCP Registry recovery if namespace/version recovery remains useful.

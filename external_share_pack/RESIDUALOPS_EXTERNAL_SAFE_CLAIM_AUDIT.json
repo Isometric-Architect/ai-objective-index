@@ -1,0 +1,17 @@
+{
+  "schema": "ResidualOps_ExternalSafeSharePackClaimAudit/v0.1",
+  "generated_at": "2026-05-30T00:02:58.052333+00:00",
+  "decision": "PASS_CLAIM_BOUNDARY_CLEAN",
+  "risky_phrase_count": 0,
+  "findings": [],
+  "allowed_language": [
+    "static local demo",
+    "local receipt",
+    "claim boundary",
+    "ALLOW/HOLD/BLOCK",
+    "feedback memory",
+    "known limits",
+    "not certification",
+    "no external action"
+  ]
+}

@@ -101,6 +101,8 @@ ROE-15 adds the first local/sample second-run receipt packager. It reuses ROE-14
 
 ROE-16 adds a static/local pilot dashboard artifact pack. It summarizes AgentSec, QIRA, DataCapsule, unified portfolio, intake, dry-run, feedback, and second-run artifacts into JSON, Markdown, HTML, manifest, checksum, redaction, claim-boundary, and gate files without creating a live web app, calling external APIs, adding network dependencies, mutating external repositories, posting, deploy/release/publish action, upload, model training, token handling, private-kernel exposure, certification, proof, product-readiness claim, or action authorization.
 
+ROE-17 adds an external-safe static demo/share pack from the ROE-16 dashboard. It creates a redacted local share folder with README, HTML, Markdown, JSON, claim-boundary, known-limits, operator scripts, manifest, checksums, redaction report, claim audit, distribution boundary, and gate result without deployment, posting, external APIs, network dependencies, live connectors, raw private data, token handling, private-kernel exposure, certification, proof, product-readiness claim, or action authorization.
+
 ## Quick Example
 
 Example objective request:

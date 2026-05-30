@@ -1,5 +1,11 @@
 # Changelog
 
+## ROE-17
+
+- Added an external-safe static demo/share pack generated from ROE-16 dashboard artifacts.
+- Added share-pack loader, builder, manifest/checksum generation, redaction, claim audit, distribution boundary gate, operator/screenshot/video scripts, optional archive dry-run/build helper, schemas, docs, public outputs, and tests.
+- Preserved boundaries: no live web app, no deployment, no posting, no external API or GitHub API calls, no fetch/crawl, no live MCP/tool calls, no raw private-data inspection, no upload/training, no external repo mutation, no token handling, no private-kernel exposure, and no certification/proof/product-readiness/action-authorization claim.
+
 ## ROE-16
 
 - Added a static/local pilot dashboard artifact pack across AgentSec, QIRA-Code ReleaseGate, DataCapsule, unified portfolio, intake, dry-run, feedback, and second-run artifacts.

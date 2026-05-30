@@ -1,0 +1,245 @@
+{
+  "schema": "ResidualOps_ExternalSafeSharePack/v0.1",
+  "pack_id": "residualops-external-safe-demo-pack-v0-1",
+  "generated_at": "2026-05-30T00:02:57.985230+00:00",
+  "mode": "static_local_redacted_demo",
+  "source_dashboard_ref": "pilot_dashboard/RESIDUALOPS_PILOT_DASHBOARD.json",
+  "included_artifacts": [
+    {
+      "path": "external_share_pack/README_EXTERNAL_SAFE_DEMO.md",
+      "size": 776,
+      "sha256": "41609889bd3823f3bef83b3e69c08b7b8f80908473f25124fc3690e3564575a2",
+      "source_path": "",
+      "artifact_type": "external_safe_readme",
+      "safe_to_share_publicly": true,
+      "reason": "redacted static local demo artifact with visible claim ceiling"
+    },
+    {
+      "path": "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_DEMO.html",
+      "size": 4094,
+      "sha256": "d9bb1fa20dcf8ae983c5b8c50932e04af533f5382d7df1d511f6c2af5ac413c9",
+      "source_path": "pilot_dashboard/RESIDUALOPS_PILOT_DASHBOARD.html",
+      "artifact_type": "static_html_demo",
+      "safe_to_share_publicly": true,
+      "reason": "redacted static local demo artifact with visible claim ceiling"
+    },
+    {
+      "path": "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_DEMO.md",
+      "size": 3060,
+      "sha256": "d4d453a5ee7ea7c0516e1d3bedc04bca313c91dbac587b4dc6b3969ed8544da9",
+      "source_path": "pilot_dashboard/RESIDUALOPS_PILOT_DASHBOARD.md",
+      "artifact_type": "external_safe_artifact",
+      "safe_to_share_publicly": true,
+      "reason": "redacted static local demo artifact with visible claim ceiling"
+    },
+    {
+      "path": "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_DASHBOARD.json",
+      "size": 11632,
+      "sha256": "feb22e88733a825223fc24e0ceab9c6e1af0efec2b474344a87c393a283dec23",
+      "source_path": "pilot_dashboard/RESIDUALOPS_PILOT_DASHBOARD.json",
+      "artifact_type": "redacted_dashboard",
+      "safe_to_share_publicly": true,
+      "reason": "redacted static local demo artifact with visible claim ceiling"
+    },
+    {
+      "path": "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_CLAIM_BOUNDARY.md",
+      "size": 400,
+      "sha256": "3fec61433245787cc9b212abb0c90aefaf77e1a642777beca72dbba38b1c7edc",
+      "source_path": "pilot_dashboard/RESIDUALOPS_PILOT_CLAIM_BOUNDARY.md",
+      "artifact_type": "claim_boundary",
+      "safe_to_share_publicly": true,
+      "reason": "redacted static local demo artifact with visible claim ceiling"
+    },
+    {
+      "path": "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_KNOWN_LIMITS.md",
+      "size": 676,
+      "sha256": "b3ebfd725c16c7da57d28b2e1799a5cebc9821f50ec7352cc33627af7b24dd5d",
+      "source_path": "",
+      "artifact_type": "external_safe_artifact",
+      "safe_to_share_publicly": true,
+      "reason": "redacted static local demo artifact with visible claim ceiling"
+    },
+    {
+      "path": "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_OPERATOR_SCRIPT.md",
+      "size": 688,
+      "sha256": "047671b02304ce6601850fcfb6a173c63cd04a7e58fa973d135e8d8bd5f3cbb4",
+      "source_path": "",
+      "artifact_type": "operator_script",
+      "safe_to_share_publicly": true,
+      "reason": "redacted static local demo artifact with visible claim ceiling"
+    },
+    {
+      "path": "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_SCREENSHOT_SCRIPT.md",
+      "size": 480,
+      "sha256": "0c2edc39129aaf5a06ee7c7008272adc5e9e6500aefccd5af541227946a2c64e",
+      "source_path": "",
+      "artifact_type": "operator_script",
+      "safe_to_share_publicly": true,
+      "reason": "redacted static local demo artifact with visible claim ceiling"
+    },
+    {
+      "path": "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_VIDEO_SCRIPT.md",
+      "size": 702,
+      "sha256": "a23c70c19dd797b3c1bc01f1938da2c23f72b286fa60ce831cda18409867289c",
+      "source_path": "",
+      "artifact_type": "operator_script",
+      "safe_to_share_publicly": true,
+      "reason": "redacted static local demo artifact with visible claim ceiling"
+    },
+    {
+      "path": "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_SHARE_DECISION.md",
+      "size": 747,
+      "sha256": "6beec96d891b42fa1cd44f441d409d2051304d73e3d7e29258a742a9a517d4f8",
+      "source_path": "",
+      "artifact_type": "external_safe_artifact",
+      "safe_to_share_publicly": true,
+      "reason": "redacted static local demo artifact with visible claim ceiling"
+    },
+    {
+      "path": "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_MANIFEST.json",
+      "size": 4374,
+      "sha256": "31a7dee857916386d7b907024d988452158b1af03e824b6b8f977b4f8d245478",
+      "source_path": "",
+      "artifact_type": "manifest",
+      "safe_to_share_publicly": true,
+      "reason": "redacted static local demo artifact with visible claim ceiling"
+    },
+    {
+      "path": "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_CHECKSUMS.json",
+      "size": 1672,
+      "sha256": "2884301fec29216bd56c199b3fc7e1583b6cce22bb74ea05c8e5c563006802c2",
+      "source_path": "",
+      "artifact_type": "checksums",
+      "safe_to_share_publicly": true,
+      "reason": "redacted static local demo artifact with visible claim ceiling"
+    },
+    {
+      "path": "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_REDACTION_REPORT.json",
+      "size": 364,
+      "sha256": "a5c290a67bab360371840282e62daf7412029cb5707d8ffcf0c11c4ed7cbf83f",
+      "source_path": "",
+      "artifact_type": "redaction_report",
+      "safe_to_share_publicly": true,
+      "reason": "redacted static local demo artifact with visible claim ceiling"
+    },
+    {
+      "path": "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_CLAIM_AUDIT.json",
+      "size": 440,
+      "sha256": "6bf5d7f1ddb540949b965e257e292ea964173e2a01ec9a5fcfddf0c0e3c9cc6d",
+      "source_path": "",
+      "artifact_type": "claim_boundary",
+      "safe_to_share_publicly": true,
+      "reason": "redacted static local demo artifact with visible claim ceiling"
+    },
+    {
+      "path": "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_DISTRIBUTION_BOUNDARY.json",
+      "size": 1959,
+      "sha256": "b9cb2e9c569cac98765228fff2be67e515c461c75838551e7919f16e447fcf1c",
+      "source_path": "",
+      "artifact_type": "distribution_boundary",
+      "safe_to_share_publicly": true,
+      "reason": "redacted static local demo artifact with visible claim ceiling"
+    }
+  ],
+  "dashboard_summary": {
+    "dashboard_id": "residualops-pilot-dashboard-v0-1",
+    "vertical_count": 3,
+    "second_run_allow": 3,
+    "second_run_hold": 3,
+    "second_run_block": 3,
+    "external_action_count": 0
+  },
+  "distribution_boundary": {
+    "schema": "ResidualOps_ExternalSafeDistributionBoundary/v0.1",
+    "generated_at": "2026-05-30T00:02:57.983895+00:00",
+    "requested_distribution_mode": "local_static_demo_zip",
+    "decision": "PASS_ALLOWED_STATIC_SHARE",
+    "allowed": [
+      "artifact_manifest_share",
+      "bounded_screenshot_or_video_with_claim_ceiling_visible",
+      "controlled_customer_discovery_walkthrough_with_claim_ceiling",
+      "internal_review",
+      "investor_partner_architecture_walkthrough",
+      "local_static_demo_zip",
+      "operator_script_walkthrough",
+      "redacted_non_live_demo_recording"
+    ],
+    "review_required": [
+      "partner_security_architecture_review",
+      "pilot_customer_security_questionnaire",
+      "public_blog_or_website_teaser",
+      "recorded_demo_for_external_distribution",
+      "sandbox_connector_lab_plan"
+    ],
+    "blocked": [
+      "demo_without_claim_ceiling",
+      "external_action_demo",
+      "legal_compliance_claim",
+      "legal_signing_demo",
+      "live_connector_demo",
+      "live_credentials_use",
+      "medical_financial_action_demo",
+      "mutable_or_rehosted_claim_surface",
+      "network_dispatch",
+      "payment_execution_demo",
+      "privacy_certification_claim",
+      "product_ready_badge",
+      "production_deployment",
+      "public_auto_post_demo",
+      "qleos_compatible_public_badge",
+      "raw_pii_export",
+      "security_certification_claim",
+      "token_export"
+    ],
+    "hard_invariants": {
+      "claim_ceiling_banner_visible": true,
+      "no_network": true,
+      "no_live_credentials": true,
+      "no_live_connector_demo": true,
+      "no_external_action_authorization": true,
+      "no_product_security_legal_privacy_readiness_claim": true,
+      "no_raw_payload_or_credentials": true,
+      "no_private_kernel": true
+    },
+    "redaction_decision": "PASS_REDACTED",
+    "claim_audit_decision": "PASS_CLAIM_BOUNDARY_CLEAN",
+    "manifest_artifact_count": 15,
+    "checksum_count": 15,
+    "network_dependency": false
+  },
+  "hard_invariants": {
+    "claim_ceiling_banner_visible": true,
+    "no_network": true,
+    "no_live_credentials": true,
+    "no_live_connector_demo": true,
+    "no_external_action_authorization": true,
+    "no_product_security_legal_privacy_readiness_claim": true,
+    "no_raw_payload_or_credentials": true,
+    "no_private_kernel": true
+  },
+  "claim_boundary": {
+    "not_external_pilot": true,
+    "not_product_launch": true,
+    "not_security_certification": true,
+    "not_code_correctness_proof": true,
+    "not_legal_opinion": true,
+    "not_privacy_audit": true,
+    "not_license_clearance": true,
+    "not_eval_clean_proof": true,
+    "not_quality_guarantee": true,
+    "not_product_ready": true,
+    "no_external_action_authorization": true
+  },
+  "known_limits": [
+    "- Static/local/offline demo artifacts only.",
+    "- No live connector, no network calls, no GitHub API calls, no URL fetching, no crawling, no live MCP/tool calls.",
+    "- No raw private-data inspection, no upload, no training, no deploy, no publish, no posting, no merge, no external repository mutation.",
+    "- No credentials, tokens, private keys, private kernels, exact weights, thresholds, provider priors, anti-gaming rules, private negative controls, private probe seeds, or commercial routing policy.",
+    "- Not certification, proof, legal/privacy/license/eval-clean clearance, quality guarantee, product readiness, or action authorization."
+  ],
+  "recommended_next_action": "ROE-18 Pilot Discovery / Feedback Intake Outreach Drafts",
+  "network_used": false,
+  "external_actions_performed": false,
+  "token_printed": false,
+  "private_kernel_exposed": false
+}

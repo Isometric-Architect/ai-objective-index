@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/portfolio/external_share_pack_distribution_boundary.schema.json",
+  "title": "ResidualOps External Share Distribution Boundary",
+  "type": "object",
+  "required": ["schema", "requested_distribution_mode", "decision", "allowed", "review_required", "blocked", "hard_invariants"],
+  "properties": {
+    "schema": { "const": "ResidualOps_ExternalSafeDistributionBoundary/v0.1" },
+    "requested_distribution_mode": { "type": "string" },
+    "decision": {
+      "enum": [
+        "PASS_ALLOWED_STATIC_SHARE",
+        "HOLD_REVIEW_REQUIRED",
+        "BLOCK_DISTRIBUTION_MODE",
+        "BLOCK_REDACTION_FAILED",
+        "BLOCK_CLAIM_AUDIT_FAILED",
+        "BLOCK_NETWORK_DEPENDENCY"
+      ]
+    },
+    "allowed": { "type": "array", "items": { "type": "string" } },
+    "review_required": { "type": "array", "items": { "type": "string" } },
+    "blocked": { "type": "array", "items": { "type": "string" } },
+    "hard_invariants": { "type": "object" }
+  },
+  "additionalProperties": true
+}

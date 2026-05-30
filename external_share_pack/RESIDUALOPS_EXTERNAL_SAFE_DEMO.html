@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ResidualOps External-Safe Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; color: #1f2933; background: #fafafa; }
+    .banner { border: 2px solid #334e68; background: #eef4f8; padding: 12px; margin-bottom: 16px; }
+    table { border-collapse: collapse; width: 100%; margin: 16px 0; background: white; }
+    th, td { border: 1px solid #ccd6dd; padding: 8px; text-align: left; vertical-align: top; }
+    th { background: #f0f4f8; }
+    code { background: #edf2f7; padding: 2px 4px; }
+  </style>
+</head>
+<body>
+  <div class="banner"><strong>External-safe static demo.</strong> No network, no live connector, no external action, no certification, no product-readiness claim, and no private kernel exposure.</div>
+  <div class="banner">
+    <strong>Local/static artifact only.</strong>
+    This dashboard summarizes local receipts and gates. It is not certification, proof, product readiness, or external action authorization.
+  </div>
+  <h1>ResidualOps External-Safe Demo</h1>
+  <p>Dashboard ID: <code>residualops-pilot-dashboard-v0-1</code></p>
+  <h2>Verticals</h2>
+  <table>
+    <thead><tr><th>Vertical</th><th>Decision</th><th>ALLOW</th><th>HOLD</th><th>BLOCK</th><th>Gate</th><th>Feedback</th></tr></thead>
+    <tbody><tr><td>AgentSec Gate</td><td>BLOCK_FORBIDDEN_ACTION</td><td>1</td><td>1</td><td>1</td><td>PASS_FIRST_AGENTSEC_PILOT_RECEIPT_READY</td><td>incorporated</td></tr>
+<tr><td>QIRA-Code ReleaseGate</td><td>BLOCK_RELEASE_SIDE_EFFECT</td><td>1</td><td>1</td><td>1</td><td>PASS_FIRST_QIRA_PILOT_RECEIPT_READY</td><td>pending_with_followup</td></tr>
+<tr><td>DataCapsule / AIDREG Engine</td><td>BLOCK_ACTION_USE</td><td>1</td><td>1</td><td>1</td><td>PASS_FIRST_DATACAPSULE_PILOT_RECEIPT_READY</td><td>incorporated</td></tr></tbody>
+  </table>
+  <h2>Gates</h2>
+  <table>
+    <thead><tr><th>Gate</th><th>Decision</th></tr></thead>
+    <tbody><tr><td>agentsec_gate</td><td>PASS_FIRST_AGENTSEC_PILOT_RECEIPT_READY</td></tr>
+<tr><td>qira_gate</td><td>PASS_FIRST_QIRA_PILOT_RECEIPT_READY</td></tr>
+<tr><td>datacapsule_gate</td><td>PASS_FIRST_DATACAPSULE_PILOT_RECEIPT_READY</td></tr>
+<tr><td>portfolio_gate</td><td>PASS_UNIFIED_PILOT_PORTFOLIO_READY</td></tr>
+<tr><td>intake_gate</td><td>PASS_OWNER_CONSENTED_PILOT_INTAKE_READY</td></tr>
+<tr><td>dry_run_gate</td><td>PASS_FIRST_OWNER_CONSENTED_PILOT_DRY_RUN_READY</td></tr>
+<tr><td>feedback_gate</td><td>PASS_PILOT_FEEDBACK_SECOND_RUN_READY</td></tr>
+<tr><td>second_run_gate</td><td>PASS_LOCAL_SECOND_RUN_RECEIPT_READY</td></tr>
+<tr><td>dashboard_gate</td><td>PENDING_GATE</td></tr></tbody>
+  </table>
+  <h2>Feedback Memory</h2>
+  <table>
+    <thead><tr><th>Vertical</th><th>Status</th><th>Follow-up</th></tr></thead>
+    <tbody><tr><td>agentsec</td><td>incorporated</td><td>keep second-run artifact local/offline; preserve claim boundaries; do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs; request owner-maintained permission scope notes for any real local pilot</td></tr>
+<tr><td>qira</td><td>pending_with_followup</td><td>keep second-run artifact local/offline; preserve claim boundaries; do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs; request redacted local CI evidence before rerunning QIRA on an owner artifact</td></tr>
+<tr><td>datacapsule</td><td>incorporated</td><td>keep second-run artifact local/offline; preserve claim boundaries; do not post, merge, deploy, publish, fetch, clone, upload, train, or call external APIs; add action-use denial fixture to future DataCapsule local fixture corpus</td></tr></tbody>
+  </table>
+  <h2>Claim Boundaries</h2>
+  <ul>
+    <li>Not an external pilot.</li>
+    <li>Not security certification.</li>
+    <li>Not code correctness proof.</li>
+    <li>Not legal, privacy, license, or eval-clean proof.</li>
+    <li>Not a quality guarantee.</li>
+    <li>Not product readiness.</li>
+    <li>No external action authorization.</li>
+  </ul>
+</body>
+</html>

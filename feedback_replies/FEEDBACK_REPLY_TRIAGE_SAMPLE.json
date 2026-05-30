@@ -1,0 +1,74 @@
+{
+  "schema": "ResidualOps_FeedbackReplyTriageSet/v0.1",
+  "triage_count": 4,
+  "triage": [
+    {
+      "schema": "ResidualOps_FeedbackReplyTriage/v0.1",
+      "triage_id": "triage-feedback-reply-sample-agentsec-v0-1",
+      "reply_id": "feedback-reply-sample-agentsec-v0-1",
+      "classification_id": "classification-feedback-reply-sample-agentsec-v0-1",
+      "route_id": "route-feedback-reply-sample-agentsec-v0-1",
+      "generated_at": "2026-05-30T01:30:20.029245+00:00",
+      "triage_label": "agentsec:ACCEPT_SECOND_RUN_CANDIDATE",
+      "severity": "low",
+      "owner_followup_needed": false,
+      "evidence_needed": [
+        "redacted local artifact summary"
+      ],
+      "second_run_candidate": true,
+      "memory_candidate": true,
+      "next_action": "create local triage and feedback memory candidate",
+      "status": "routed"
+    },
+    {
+      "schema": "ResidualOps_FeedbackReplyTriage/v0.1",
+      "triage_id": "triage-feedback-reply-sample-qira-v0-1",
+      "reply_id": "feedback-reply-sample-qira-v0-1",
+      "classification_id": "classification-feedback-reply-sample-qira-v0-1",
+      "route_id": "route-feedback-reply-sample-qira-v0-1",
+      "generated_at": "2026-05-30T01:30:20.029435+00:00",
+      "triage_label": "qira:ACCEPT_FEEDBACK_MEMORY_CANDIDATE",
+      "severity": "low",
+      "owner_followup_needed": false,
+      "evidence_needed": [
+        "redacted local artifact summary"
+      ],
+      "second_run_candidate": false,
+      "memory_candidate": true,
+      "next_action": "create local triage and feedback memory candidate",
+      "status": "routed"
+    },
+    {
+      "schema": "ResidualOps_FeedbackReplyTriage/v0.1",
+      "triage_id": "triage-feedback-reply-sample-datacapsule-v0-1",
+      "reply_id": "feedback-reply-sample-datacapsule-v0-1",
+      "classification_id": "classification-feedback-reply-sample-datacapsule-v0-1",
+      "route_id": "route-feedback-reply-sample-datacapsule-v0-1",
+      "generated_at": "2026-05-30T01:30:20.029573+00:00",
+      "triage_label": "datacapsule:ACCEPT_FEEDBACK_MEMORY_CANDIDATE",
+      "severity": "low",
+      "owner_followup_needed": false,
+      "evidence_needed": [],
+      "second_run_candidate": false,
+      "memory_candidate": true,
+      "next_action": "create local triage and feedback memory candidate",
+      "status": "routed"
+    },
+    {
+      "schema": "ResidualOps_FeedbackReplyTriage/v0.1",
+      "triage_id": "triage-feedback-reply-sample-portfolio-v0-1",
+      "reply_id": "feedback-reply-sample-portfolio-v0-1",
+      "classification_id": "classification-feedback-reply-sample-portfolio-v0-1",
+      "route_id": "route-feedback-reply-sample-portfolio-v0-1",
+      "generated_at": "2026-05-30T01:30:20.029697+00:00",
+      "triage_label": "portfolio:ACCEPT_FEEDBACK_MEMORY_CANDIDATE",
+      "severity": "low",
+      "owner_followup_needed": false,
+      "evidence_needed": [],
+      "second_run_candidate": false,
+      "memory_candidate": true,
+      "next_action": "create local triage and feedback memory candidate",
+      "status": "routed"
+    }
+  ]
+}

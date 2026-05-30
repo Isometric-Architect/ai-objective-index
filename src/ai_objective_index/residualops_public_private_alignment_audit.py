@@ -39,9 +39,11 @@ SCAN_PATHS = [
     Path("public_launch") / "roe16",
     Path("public_launch") / "roe17",
     Path("public_launch") / "roe18",
+    Path("public_launch") / "roe19",
     Path("pilot_dashboard"),
     Path("external_share_pack"),
     Path("pilot_outreach"),
+    Path("feedback_replies"),
 ]
 
 RISKY_PATTERNS = [
@@ -64,6 +66,7 @@ RISKY_PATTERNS = [
 
 SAFE_CONTEXT = [
     "not ",
+    "is not",
     "no ",
     "do not",
     "does not",

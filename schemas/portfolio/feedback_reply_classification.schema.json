@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResidualOps Feedback Reply Classification",
+  "type": "object",
+  "required": ["schema", "classification_id", "reply_id", "classification"],
+  "properties": {
+    "schema": { "const": "ResidualOps_FeedbackReplyClassification/v0.1" },
+    "classification_id": { "type": "string" },
+    "reply_id": { "type": "string" },
+    "classification": {
+      "enum": [
+        "ACCEPT_FEEDBACK_MEMORY_CANDIDATE",
+        "ACCEPT_SECOND_RUN_CANDIDATE",
+        "HOLD_NEEDS_MORE_CONTEXT",
+        "HOLD_CONSENT_UNCLEAR",
+        "HOLD_REDACTION_REVIEW",
+        "HOLD_MANUAL_TRIAGE",
+        "BLOCK_SECRET_OR_PRIVATE_DATA",
+        "BLOCK_EXTERNAL_ACTION_REQUEST",
+        "BLOCK_CERTIFICATION_OR_READINESS_CLAIM",
+        "BLOCK_PRIVATE_KERNEL_DISCLOSURE"
+      ]
+    },
+    "severity": { "type": "string" }
+  },
+  "additionalProperties": true
+}

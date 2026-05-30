@@ -1,0 +1,98 @@
+{
+  "schema": "ResidualOps_FeedbackReplyMemoryCandidateSet/v0.1",
+  "candidate_count": 4,
+  "candidates": [
+    {
+      "schema": "ResidualOps_FeedbackReplyMemoryCandidate/v0.1",
+      "memory_candidate_id": "memory-candidate-feedback-reply-sample-agentsec-v0-1",
+      "reply_id": "feedback-reply-sample-agentsec-v0-1",
+      "generated_at": "2026-05-30T01:30:20.029264+00:00",
+      "vertical": "agentsec",
+      "issue_categories": [
+        "request_second_run"
+      ],
+      "suggested_memory_update": "record reply as local feedback memory candidate",
+      "suggested_fixture_candidate": "add redacted fixture candidate",
+      "suggested_negative_control_candidate": "",
+      "suggested_claim_boundary_update": "",
+      "status": "pending_review",
+      "must_not_claim": [
+        "security_certification",
+        "code_correctness_proof",
+        "legal_privacy_license_eval_proof",
+        "product_readiness",
+        "quality_guarantee",
+        "external_action_authorization"
+      ]
+    },
+    {
+      "schema": "ResidualOps_FeedbackReplyMemoryCandidate/v0.1",
+      "memory_candidate_id": "memory-candidate-feedback-reply-sample-qira-v0-1",
+      "reply_id": "feedback-reply-sample-qira-v0-1",
+      "generated_at": "2026-05-30T01:30:20.029445+00:00",
+      "vertical": "qira",
+      "issue_categories": [
+        "add_evidence"
+      ],
+      "suggested_memory_update": "record reply as local feedback memory candidate",
+      "suggested_fixture_candidate": "add redacted fixture candidate",
+      "suggested_negative_control_candidate": "",
+      "suggested_claim_boundary_update": "",
+      "status": "pending_review",
+      "must_not_claim": [
+        "security_certification",
+        "code_correctness_proof",
+        "legal_privacy_license_eval_proof",
+        "product_readiness",
+        "quality_guarantee",
+        "external_action_authorization"
+      ]
+    },
+    {
+      "schema": "ResidualOps_FeedbackReplyMemoryCandidate/v0.1",
+      "memory_candidate_id": "memory-candidate-feedback-reply-sample-datacapsule-v0-1",
+      "reply_id": "feedback-reply-sample-datacapsule-v0-1",
+      "generated_at": "2026-05-30T01:30:20.029582+00:00",
+      "vertical": "datacapsule",
+      "issue_categories": [
+        "other"
+      ],
+      "suggested_memory_update": "record reply as local feedback memory candidate",
+      "suggested_fixture_candidate": "",
+      "suggested_negative_control_candidate": "",
+      "suggested_claim_boundary_update": "",
+      "status": "pending_review",
+      "must_not_claim": [
+        "security_certification",
+        "code_correctness_proof",
+        "legal_privacy_license_eval_proof",
+        "product_readiness",
+        "quality_guarantee",
+        "external_action_authorization"
+      ]
+    },
+    {
+      "schema": "ResidualOps_FeedbackReplyMemoryCandidate/v0.1",
+      "memory_candidate_id": "memory-candidate-feedback-reply-sample-portfolio-v0-1",
+      "reply_id": "feedback-reply-sample-portfolio-v0-1",
+      "generated_at": "2026-05-30T01:30:20.029705+00:00",
+      "vertical": "portfolio",
+      "issue_categories": [
+        "change_route"
+      ],
+      "suggested_memory_update": "record reply as local feedback memory candidate",
+      "suggested_fixture_candidate": "",
+      "suggested_negative_control_candidate": "",
+      "suggested_claim_boundary_update": "",
+      "status": "pending_review",
+      "must_not_claim": [
+        "security_certification",
+        "code_correctness_proof",
+        "legal_privacy_license_eval_proof",
+        "product_readiness",
+        "quality_guarantee",
+        "external_action_authorization"
+      ]
+    }
+  ]
+}

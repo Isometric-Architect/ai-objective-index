@@ -1,0 +1,50 @@
+{
+  "schema": "ResidualOps_FeedbackReplyPacket/v0.1",
+  "reply_id": "feedback-reply-sample-agentsec-v0-1",
+  "generated_at": "2026-05-30T01:30:20.018099+00:00",
+  "source": "sample_fixture",
+  "source_ref": "feedback_replies/FEEDBACK_REPLY_SAMPLE_AGENTSEC.md",
+  "reviewer_type": "security_reviewer",
+  "related_vertical": "agentsec",
+  "related_artifact_refs": [
+    "pilot_outreach/agentsec"
+  ],
+  "reply_text_redacted": "I reviewed the AgentSec sample. The permission HOLD is useful, but the readout should explain which manifest field caused the concern. I consent to local/offline review of this redacted sample note and would like a second local pass.",
+  "contains_private_data_declared": false,
+  "consent_signal": "sample_fixture",
+  "requested_action": "request_second_run",
+  "external_action_requested": false,
+  "certification_or_readiness_claim_requested": false,
+  "token_or_secret_detected": false,
+  "private_kernel_detected": false,
+  "claim_boundary": {
+    "not_reply_sending": true,
+    "not_github_issue_creation": true,
+    "not_security_certification": true,
+    "not_code_correctness_proof": true,
+    "not_legal_opinion": true,
+    "not_privacy_audit": true,
+    "not_license_clearance": true,
+    "not_eval_clean_proof": true,
+    "not_quality_guarantee": true,
+    "not_product_ready": true,
+    "no_external_action_authorization": true
+  },
+  "must_not_do": [
+    "send_email",
+    "send_dm",
+    "post_to_community",
+    "call_github_api",
+    "create_github_issue",
+    "comment_on_pr",
+    "create_pr",
+    "merge",
+    "deploy",
+    "publish_package",
+    "fetch_url",
+    "crawl_or_scrape",
+    "upload_data",
+    "train_model",
+    "use_credentials"
+  ]
+}

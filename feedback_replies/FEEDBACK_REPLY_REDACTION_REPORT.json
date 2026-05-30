@@ -1,0 +1,15 @@
+{
+  "schema": "ResidualOps_FeedbackReplyRedactionReport/v0.1",
+  "generated_at": "2026-05-30T01:30:20.125571+00:00",
+  "decision": "PASS_REDACTED",
+  "artifact_count": 14,
+  "finding_count": 0,
+  "block_count": 0,
+  "hold_count": 0,
+  "findings": [],
+  "token_printed": false,
+  "private_kernel_exposed": false,
+  "auto_send_performed": false,
+  "external_api_used": false,
+  "external_action_performed": false
+}

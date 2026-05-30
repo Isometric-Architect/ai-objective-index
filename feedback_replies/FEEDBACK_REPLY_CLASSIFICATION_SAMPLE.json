@@ -1,0 +1,134 @@
+{
+  "schema": "ResidualOps_FeedbackReplyClassificationSet/v0.1",
+  "classification_count": 4,
+  "classifications": [
+    {
+      "schema": "ResidualOps_FeedbackReplyClassification/v0.1",
+      "classification_id": "classification-feedback-reply-sample-agentsec-v0-1",
+      "reply_id": "feedback-reply-sample-agentsec-v0-1",
+      "generated_at": "2026-05-30T01:30:20.029170+00:00",
+      "classification": "ACCEPT_SECOND_RUN_CANDIDATE",
+      "severity": "low",
+      "issue_categories": [
+        "request_second_run"
+      ],
+      "affected_verticals": [
+        "agentsec"
+      ],
+      "affected_artifacts": [
+        "pilot_outreach/agentsec"
+      ],
+      "should_update_finding": false,
+      "should_update_claim_boundary": false,
+      "should_add_negative_control": false,
+      "should_add_fixture": true,
+      "should_request_evidence": true,
+      "should_run_second_pass": true,
+      "reason": "reply is local/offline, claim-bounded, and usable as a memory or second-run candidate",
+      "next_actions": [
+        "keep reply processing local/offline",
+        "do not send, post, create GitHub issues, call APIs, fetch URLs, upload, train, merge, deploy, or publish",
+        "preserve claim boundaries",
+        "create local triage and feedback memory candidate"
+      ],
+      "external_action_authorized": false,
+      "certification_authorized": false
+    },
+    {
+      "schema": "ResidualOps_FeedbackReplyClassification/v0.1",
+      "classification_id": "classification-feedback-reply-sample-qira-v0-1",
+      "reply_id": "feedback-reply-sample-qira-v0-1",
+      "generated_at": "2026-05-30T01:30:20.029403+00:00",
+      "classification": "ACCEPT_FEEDBACK_MEMORY_CANDIDATE",
+      "severity": "low",
+      "issue_categories": [
+        "add_evidence"
+      ],
+      "affected_verticals": [
+        "qira"
+      ],
+      "affected_artifacts": [
+        "pilot_outreach/qira"
+      ],
+      "should_update_finding": true,
+      "should_update_claim_boundary": false,
+      "should_add_negative_control": false,
+      "should_add_fixture": true,
+      "should_request_evidence": true,
+      "should_run_second_pass": false,
+      "reason": "reply is local/offline, claim-bounded, and usable as a memory or second-run candidate",
+      "next_actions": [
+        "keep reply processing local/offline",
+        "do not send, post, create GitHub issues, call APIs, fetch URLs, upload, train, merge, deploy, or publish",
+        "preserve claim boundaries",
+        "create local triage and feedback memory candidate"
+      ],
+      "external_action_authorized": false,
+      "certification_authorized": false
+    },
+    {
+      "schema": "ResidualOps_FeedbackReplyClassification/v0.1",
+      "classification_id": "classification-feedback-reply-sample-datacapsule-v0-1",
+      "reply_id": "feedback-reply-sample-datacapsule-v0-1",
+      "generated_at": "2026-05-30T01:30:20.029548+00:00",
+      "classification": "ACCEPT_FEEDBACK_MEMORY_CANDIDATE",
+      "severity": "low",
+      "issue_categories": [
+        "other"
+      ],
+      "affected_verticals": [
+        "datacapsule"
+      ],
+      "affected_artifacts": [
+        "pilot_outreach/datacapsule"
+      ],
+      "should_update_finding": false,
+      "should_update_claim_boundary": false,
+      "should_add_negative_control": false,
+      "should_add_fixture": false,
+      "should_request_evidence": false,
+      "should_run_second_pass": false,
+      "reason": "reply is local/offline, claim-bounded, and usable as a memory or second-run candidate",
+      "next_actions": [
+        "keep reply processing local/offline",
+        "do not send, post, create GitHub issues, call APIs, fetch URLs, upload, train, merge, deploy, or publish",
+        "preserve claim boundaries",
+        "create local triage and feedback memory candidate"
+      ],
+      "external_action_authorized": false,
+      "certification_authorized": false
+    },
+    {
+      "schema": "ResidualOps_FeedbackReplyClassification/v0.1",
+      "classification_id": "classification-feedback-reply-sample-portfolio-v0-1",
+      "reply_id": "feedback-reply-sample-portfolio-v0-1",
+      "generated_at": "2026-05-30T01:30:20.029674+00:00",
+      "classification": "ACCEPT_FEEDBACK_MEMORY_CANDIDATE",
+      "severity": "low",
+      "issue_categories": [
+        "change_route"
+      ],
+      "affected_verticals": [
+        "portfolio"
+      ],
+      "affected_artifacts": [
+        "pilot_outreach/portfolio"
+      ],
+      "should_update_finding": false,
+      "should_update_claim_boundary": false,
+      "should_add_negative_control": false,
+      "should_add_fixture": false,
+      "should_request_evidence": false,
+      "should_run_second_pass": false,
+      "reason": "reply is local/offline, claim-bounded, and usable as a memory or second-run candidate",
+      "next_actions": [
+        "keep reply processing local/offline",
+        "do not send, post, create GitHub issues, call APIs, fetch URLs, upload, train, merge, deploy, or publish",
+        "preserve claim boundaries",
+        "create local triage and feedback memory candidate"
+      ],
+      "external_action_authorized": false,
+      "certification_authorized": false
+    }
+  ]
+}

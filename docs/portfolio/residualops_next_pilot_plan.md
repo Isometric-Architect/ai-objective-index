@@ -31,6 +31,8 @@ ROE-17 status: external-safe static demo/share pack added.
 
 ROE-18 status: manual-only pilot discovery and feedback intake outreach drafts added.
 
-Recommended next package: ROE-19 Feedback Reply Packet Intake.
+ROE-19 status: feedback reply packet intake added.
+
+Recommended next package: ROE-20 Local Feedback-to-Second-Run Execution Bridge.
 
 Secondary backlog: AOI 0.3.0a2 MCP Registry recovery if namespace/version recovery remains useful.

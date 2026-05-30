@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResidualOps Feedback Reply Memory Candidate",
+  "type": "object",
+  "required": ["schema", "memory_candidate_id", "reply_id", "vertical", "status"],
+  "properties": {
+    "schema": { "const": "ResidualOps_FeedbackReplyMemoryCandidate/v0.1" },
+    "memory_candidate_id": { "type": "string" },
+    "reply_id": { "type": "string" },
+    "vertical": { "type": "string" },
+    "suggested_memory_update": { "type": "string" },
+    "status": { "enum": ["pending_review", "accepted", "rejected"] }
+  },
+  "additionalProperties": true
+}

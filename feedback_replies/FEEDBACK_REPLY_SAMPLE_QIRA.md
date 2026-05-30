@@ -1,0 +1,1 @@
+For the QIRA sample, the release-side-effect BLOCK is understandable. Please add a local CI evidence request before any finding change. This is feedback only and local offline review is allowed for the sample.

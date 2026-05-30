@@ -1,0 +1,130 @@
+{
+  "schema": "ResidualOps_FeedbackReplyRouteSet/v0.1",
+  "route_count": 4,
+  "routes": [
+    {
+      "schema": "ResidualOps_FeedbackReplyRoute/v0.1",
+      "route_id": "route-feedback-reply-sample-agentsec-v0-1",
+      "reply_id": "feedback-reply-sample-agentsec-v0-1",
+      "generated_at": "2026-05-30T01:30:20.029212+00:00",
+      "selected_vertical": "agentsec",
+      "route_reason": "reply supplied an explicit related vertical",
+      "route_confidence": "high",
+      "required_next_artifacts": [
+        "redacted local artifact summary"
+      ],
+      "blockers": [],
+      "can_create_memory_candidate": true,
+      "can_create_second_run_candidate": true,
+      "must_not_do": [
+        "send_email",
+        "send_dm",
+        "post_to_community",
+        "call_github_api",
+        "create_github_issue",
+        "comment_on_pr",
+        "create_pr",
+        "merge",
+        "deploy",
+        "publish_package",
+        "fetch_url",
+        "crawl_or_scrape",
+        "upload_data",
+        "train_model",
+        "use_credentials"
+      ]
+    },
+    {
+      "schema": "ResidualOps_FeedbackReplyRoute/v0.1",
+      "route_id": "route-feedback-reply-sample-qira-v0-1",
+      "reply_id": "feedback-reply-sample-qira-v0-1",
+      "generated_at": "2026-05-30T01:30:20.029420+00:00",
+      "selected_vertical": "qira",
+      "route_reason": "reply supplied an explicit related vertical",
+      "route_confidence": "high",
+      "required_next_artifacts": [
+        "redacted local artifact summary"
+      ],
+      "blockers": [],
+      "can_create_memory_candidate": true,
+      "can_create_second_run_candidate": false,
+      "must_not_do": [
+        "send_email",
+        "send_dm",
+        "post_to_community",
+        "call_github_api",
+        "create_github_issue",
+        "comment_on_pr",
+        "create_pr",
+        "merge",
+        "deploy",
+        "publish_package",
+        "fetch_url",
+        "crawl_or_scrape",
+        "upload_data",
+        "train_model",
+        "use_credentials"
+      ]
+    },
+    {
+      "schema": "ResidualOps_FeedbackReplyRoute/v0.1",
+      "route_id": "route-feedback-reply-sample-datacapsule-v0-1",
+      "reply_id": "feedback-reply-sample-datacapsule-v0-1",
+      "generated_at": "2026-05-30T01:30:20.029562+00:00",
+      "selected_vertical": "datacapsule",
+      "route_reason": "reply supplied an explicit related vertical",
+      "route_confidence": "high",
+      "required_next_artifacts": [],
+      "blockers": [],
+      "can_create_memory_candidate": true,
+      "can_create_second_run_candidate": false,
+      "must_not_do": [
+        "send_email",
+        "send_dm",
+        "post_to_community",
+        "call_github_api",
+        "create_github_issue",
+        "comment_on_pr",
+        "create_pr",
+        "merge",
+        "deploy",
+        "publish_package",
+        "fetch_url",
+        "crawl_or_scrape",
+        "upload_data",
+        "train_model",
+        "use_credentials"
+      ]
+    },
+    {
+      "schema": "ResidualOps_FeedbackReplyRoute/v0.1",
+      "route_id": "route-feedback-reply-sample-portfolio-v0-1",
+      "reply_id": "feedback-reply-sample-portfolio-v0-1",
+      "generated_at": "2026-05-30T01:30:20.029686+00:00",
+      "selected_vertical": "portfolio",
+      "route_reason": "reply supplied an explicit related vertical",
+      "route_confidence": "high",
+      "required_next_artifacts": [],
+      "blockers": [],
+      "can_create_memory_candidate": true,
+      "can_create_second_run_candidate": false,
+      "must_not_do": [
+        "send_email",
+        "send_dm",
+        "post_to_community",
+        "call_github_api",
+        "create_github_issue",
+        "comment_on_pr",
+        "create_pr",
+        "merge",
+        "deploy",
+        "publish_package",
+        "fetch_url",
+        "crawl_or_scrape",
+        "upload_data",
+        "train_model",
+        "use_credentials"
+      ]
+    }
+  ]
+}

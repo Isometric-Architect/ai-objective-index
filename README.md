@@ -105,6 +105,8 @@ ROE-17 adds an external-safe static demo/share pack from the ROE-16 dashboard. I
 
 ROE-18 adds manual-only pilot discovery and feedback intake outreach drafts. It creates reviewer personas, conservative feedback request drafts, a static feedback form template, triage taxonomy, link pack, FAQ, claim boundary, operator checklist, do-not-send guard, redaction report, claim audit, and gate result without sending email, posting, creating issues, calling GitHub or external APIs, scraping, uploading, deploying, token handling, private-kernel exposure, certification, proof, product-readiness claim, or action authorization.
 
+ROE-19 adds local/offline feedback reply packet intake. It converts sample or local reply text into redacted reply packets, classifications, vertical routes, triage entries, feedback memory candidates, second-run candidates, reviewer readout, and gate artifacts without sending replies, creating GitHub issues, posting comments, calling APIs, fetching URLs, mutating repositories, uploading data, training models, token handling, private-kernel exposure, certification, proof, product-readiness claim, or action authorization.
+
 ## Quick Example
 
 Example objective request:

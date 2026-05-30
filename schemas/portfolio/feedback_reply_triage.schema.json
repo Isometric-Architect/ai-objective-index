@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResidualOps Feedback Reply Triage",
+  "type": "object",
+  "required": ["schema", "triage_id", "reply_id", "status"],
+  "properties": {
+    "schema": { "const": "ResidualOps_FeedbackReplyTriage/v0.1" },
+    "triage_id": { "type": "string" },
+    "reply_id": { "type": "string" },
+    "triage_label": { "type": "string" },
+    "severity": { "type": "string" },
+    "second_run_candidate": { "type": "boolean" },
+    "memory_candidate": { "type": "boolean" },
+    "status": { "enum": ["pending", "routed", "blocked", "hold"] }
+  },
+  "additionalProperties": true
+}

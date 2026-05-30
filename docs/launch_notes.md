@@ -1,5 +1,13 @@
 # Launch Notes
 
+## ROE-19 Feedback Reply Packet Intake
+
+ROE-19 creates a local/offline feedback reply intake pipeline. It turns sample replies or a local reply file into redacted reply packets, deterministic classifications, vertical routes, triage entries, feedback memory candidates, second-run candidates, reviewer readout, redaction report, and gate result. It does not send replies, create GitHub issues, post comments, call GitHub or external APIs, fetch URLs, crawl, mutate repositories, upload data, train models, deploy, publish, handle tokens, expose private kernels, certify security, prove correctness, prove legal/privacy/license/evaluation status, guarantee quality, claim product readiness, or authorize external actions.
+
+## ROE-18 Pilot Discovery and Feedback Intake Outreach Drafts
+
+ROE-18 creates manual-only discovery artifacts for conservative feedback requests. It writes reviewer personas, copy-paste drafts, static feedback form template, triage taxonomy, link pack, FAQ, claim boundary, operator checklist, do-not-send guard, redaction report, claim audit, and gate result. It does not send email, DM, post, create GitHub issues, call APIs, scrape, fetch, upload, deploy, handle tokens, expose private kernels, certify security, prove correctness, prove legal/privacy/license/evaluation status, guarantee quality, claim product readiness, or authorize external actions.
+
 ## ROE-17 External-Safe Demo Share Pack
 
 ROE-17 creates a bounded static local share pack from ROE-16 dashboard artifacts. It writes an external-safe README, static HTML, Markdown, JSON, claim boundary, known limits, operator walkthrough, screenshot/video scripts, manifest, checksums, redaction report, claim audit, distribution boundary, share decision, and gate result. It does not deploy, post, call external APIs, call GitHub APIs, fetch URLs, crawl, run live MCP/tool calls, inspect raw private files, upload data, train models, mutate external repositories, create issues or comments, merge, publish packages, handle tokens, expose private kernels, certify security, prove correctness, prove legal/privacy/license/evaluation status, guarantee quality, claim product readiness, or authorize external actions.

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResidualOps Feedback Reply Second-Run Candidate",
+  "type": "object",
+  "required": ["schema", "second_run_candidate_id", "reply_id", "vertical", "readiness"],
+  "properties": {
+    "schema": { "const": "ResidualOps_FeedbackReplySecondRunCandidate/v0.1" },
+    "second_run_candidate_id": { "type": "string" },
+    "reply_id": { "type": "string" },
+    "vertical": { "type": "string" },
+    "allowed_operations": { "type": "array", "items": { "type": "string" } },
+    "forbidden_operations": { "type": "array", "items": { "type": "string" } },
+    "readiness": {
+      "enum": [
+        "READY_FOR_LOCAL_SECOND_RUN",
+        "HOLD_NEEDS_ARTIFACT",
+        "HOLD_CONSENT_UNCLEAR",
+        "BLOCK_EXTERNAL_ACTION",
+        "BLOCK_SECRET",
+        "BLOCK_OVERCLAIM"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

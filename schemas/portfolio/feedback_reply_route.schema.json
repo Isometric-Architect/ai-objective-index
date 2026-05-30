@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResidualOps Feedback Reply Route",
+  "type": "object",
+  "required": ["schema", "route_id", "reply_id", "selected_vertical"],
+  "properties": {
+    "schema": { "const": "ResidualOps_FeedbackReplyRoute/v0.1" },
+    "route_id": { "type": "string" },
+    "reply_id": { "type": "string" },
+    "selected_vertical": { "enum": ["agentsec", "qira", "datacapsule", "portfolio", "hold_manual_triage", "block"] },
+    "route_confidence": { "enum": ["low", "medium", "high"] },
+    "can_create_memory_candidate": { "type": "boolean" },
+    "can_create_second_run_candidate": { "type": "boolean" }
+  },
+  "additionalProperties": true
+}

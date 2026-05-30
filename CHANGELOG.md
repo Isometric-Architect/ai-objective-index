@@ -1,5 +1,11 @@
 # Changelog
 
+## ROE-19
+
+- Added local/offline feedback reply packet intake for ResidualOps.
+- Added feedback reply packet, redaction, deterministic classification, vertical routing, triage, memory candidate, second-run candidate, reviewer readout, gate result, schemas, docs, public outputs, and tests.
+- Preserved boundaries: no reply sending, no community posting, no GitHub issue/comment creation, no GitHub API or external API calls, no scraping/fetching, no upload/deployment, no live form service, no token handling, no private-kernel exposure, and no certification/proof/product-readiness/action-authorization claim.
+
 ## ROE-18
 
 - Added manual-only pilot discovery and feedback intake outreach drafts for ResidualOps.

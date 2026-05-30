@@ -1,0 +1,33 @@
+{
+  "schema": "AOI_MCPRegistryRecoveryGateResult/v0.1",
+  "generated_at": "2026-05-30T06:28:13.990003+00:00",
+  "decision": "HOLD_PYPI_VERIFY_REQUIRED",
+  "server_name": "io.github.Isometric-Architect/ai-objective-index",
+  "server_version": "0.3.0a2",
+  "registry_type": "pypi",
+  "identifier": "ai-objective-index",
+  "package_version": "0.3.0a2",
+  "readme_marker_matches": true,
+  "pypi_verify_decision": "HOLD_PYPI_UPLOAD_NOT_CONFIRMED",
+  "mcp_publisher_path": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\tools\\mcp-publisher\\mcp-publisher.exe",
+  "mcp_publisher_validate": {
+    "command": [
+      "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\tools\\mcp-publisher\\mcp-publisher.exe",
+      "validate",
+      ".mcp\\server.json"
+    ],
+    "ok": true,
+    "returncode": 0,
+    "stdout": "Validating against https://registry.modelcontextprotocol.io...\n✅ server.json is valid\n",
+    "stderr": ""
+  },
+  "token_like_tracked_findings": [],
+  "token_printed": false,
+  "upload_performed": false,
+  "mcp_registry_submission_performed": false,
+  "can_claim_certification": false,
+  "errors": [],
+  "warnings": [
+    "PyPI 0.3.0a2 install verification has not passed."
+  ]
+}

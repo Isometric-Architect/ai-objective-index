@@ -184,6 +184,19 @@ For v0.2 real-data public beta, also do not claim verified MCP servers, safe MCP
 146. Do not submit MCP Registry metadata in Package 8Q-C-alt.
 147. Do not paste tokens into chat, create `.pypirc`, post to communities, or claim verification, safety, security certification, quality guarantee, production readiness, or purchasing advice.
 
+## AOI 0.3.0a2 PyPI Marker Sync and MCP Registry Recovery
+
+147a. Confirm README contains `mcp-name: io.github.Isometric-Architect/ai-objective-index`.
+147b. Confirm `pyproject.toml`, `src/ai_objective_index/__init__.py`, and `.mcp/server.json` all use `0.3.0a2`.
+147c. Run `python -m ai_objective_index.aoi_030a2_marker_sync`.
+147d. Run `python -m ai_objective_index.aoi_030a2_build_verify`.
+147e. Run `python -m ai_objective_index.aoi_030a2_pypi_upload_gate`.
+147f. Only if the upload gate is otherwise ready, set `$env:AOI_REAL_PYPI_UPLOAD_CONFIRM="YES"` and run the upload through the interactive twine prompt. Do not pass tokens in command-line flags or files.
+147g. Run `python -m ai_objective_index.aoi_030a2_pypi_verify`.
+147h. Run `python -m ai_objective_index.aoi_mcp_registry_recovery_gate`.
+147i. Only if the recovery gate is PASS, set `$env:AOI_MCP_REGISTRY_SUBMIT_CONFIRM="YES"` and run the guarded registry publish helper locally.
+147j. Do not overwrite or yank 0.3.0a1, commit `.pypirc`, commit `mcp-publisher`, post to communities, claim certification, claim correctness proof, claim product readiness, or authorize external actions.
+
 ## Package 8R MCP Registry Publish Gate
 
 148. Run `python -m ai_objective_index.mcp_publisher_setup --check`.

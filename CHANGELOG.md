@@ -1,5 +1,11 @@
 # Changelog
 
+## AOI 0.3.0a2
+
+- Added PyPI marker-sync and MCP Registry recovery tooling for `ai-objective-index==0.3.0a2`.
+- Synchronized `pyproject.toml`, package `__version__`, `.mcp/server.json`, and README `mcp-name` metadata around `io.github.Isometric-Architect/ai-objective-index`.
+- Added gated build/twine, PyPI upload/verify, MCP Registry validate/publish/reconcile helpers, recovery docs, public recovery outputs, and tests. Upload and registry publish remain explicit-confirmation actions and do not store or print tokens.
+
 ## ROE-22
 
 - Added an external-safe V2 demo/share pack refreshed from the ROE-21 dashboard refresh.

@@ -7,7 +7,7 @@ Package 8P prepares:
 - README marker: `<!-- mcp-name: io.github.Isometric-Architect/ai-objective-index -->`
 - `.mcp/server.json`
 - package identifier: `ai-objective-index`
-- version: `0.3.0a1`
+- current recovery version: `0.3.0a2`
 - transport: `stdio`
 
 Submission is not automatic. The package must first be uploaded and verified on PyPI. Then run:
@@ -55,3 +55,24 @@ python -m ai_objective_index.mcp_registry_publish_runner --dry-run
 ```
 
 Do not publish unless `mcp-publisher` is available, GitHub auth is complete, the manifest audit passes, and `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES` is set.
+
+## AOI 0.3.0a2 Marker-Sync Recovery
+
+The 0.3.0a1 artifact remains published and should not be overwritten or yanked. AOI 0.3.0a2 is the recovery package for synchronizing the PyPI README marker with `.mcp/server.json`:
+
+- server name: `io.github.Isometric-Architect/ai-objective-index`
+- package: `ai-objective-index`
+- package version: `0.3.0a2`
+- registry type: `pypi`
+
+Run the recovery helpers:
+
+```powershell
+python -m ai_objective_index.aoi_030a2_marker_sync
+python -m ai_objective_index.aoi_030a2_build_verify
+python -m ai_objective_index.aoi_030a2_pypi_upload_gate
+python -m ai_objective_index.aoi_030a2_pypi_verify
+python -m ai_objective_index.aoi_mcp_registry_recovery_gate
+```
+
+Real PyPI upload requires `AOI_REAL_PYPI_UPLOAD_CONFIRM=YES` and an interactive twine token prompt. MCP Registry publish requires `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES` after PyPI verification and local `mcp-publisher validate` pass.

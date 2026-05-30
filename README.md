@@ -886,6 +886,20 @@ python -m ai_objective_index.mcp_registry_submit_execute --dry-run
 
 Actual Registry publish remains blocked unless `mcp-publisher` is available, GitHub auth is complete, preflight is `PASS_READY_TO_SUBMIT`, and `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES` is set. The Registry listing is not verification, security certification, a quality guarantee, product-readiness evidence, purchasing advice, or action authorization.
 
+### AOI 0.3.0a2 MCP Registry Recovery
+
+AOI 0.3.0a2 is the marker-sync recovery path after `ai-objective-index==0.3.0a1` published and installed successfully but MCP Registry submission still failed. The recovery synchronizes the README `mcp-name` marker, `.mcp/server.json`, `pyproject.toml`, and package `__version__` around `io.github.Isometric-Architect/ai-objective-index` and `0.3.0a2`.
+
+```powershell
+python -m ai_objective_index.aoi_030a2_marker_sync
+python -m ai_objective_index.aoi_030a2_build_verify
+python -m ai_objective_index.aoi_030a2_pypi_upload_gate
+python -m ai_objective_index.aoi_030a2_pypi_verify
+python -m ai_objective_index.aoi_mcp_registry_recovery_gate
+```
+
+Real PyPI upload remains an explicit local action requiring `AOI_REAL_PYPI_UPLOAD_CONFIRM=YES` and twine's interactive token prompt. MCP Registry publish remains an explicit local action requiring `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES` after PyPI verification and local `mcp-publisher validate` pass. This recovery does not overwrite or yank 0.3.0a1, commit `.pypirc`, commit `mcp-publisher`, post to communities, claim certification, prove correctness, guarantee quality, claim product readiness, or authorize external actions.
+
 ## Package 9A AOI vNext Alignment
 
 Package 9A pauses the PyPI/MCP Registry publishing path long enough to align AOI vNext around the positioning:

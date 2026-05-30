@@ -12,7 +12,7 @@ def test_package_metadata_audit_detects_marker_and_version():
 
     assert result["checks"]["readme_mcp_marker"] is True
     assert result["checks"]["version_pep440"] is True
-    assert result["version"] in {"0.2.0", "0.3.0a1"}
+    assert result["version"] in {"0.2.0", "0.3.0a1", "0.3.0a2"}
 
 
 def test_package_metadata_helpers_detect_missing_marker_and_tokens():

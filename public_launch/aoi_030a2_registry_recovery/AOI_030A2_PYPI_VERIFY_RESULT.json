@@ -1,0 +1,19 @@
+{
+  "schema": "AOI_030A2PyPIVerifyResult/v0.1",
+  "generated_at": "2026-05-30T05:58:53.677139+00:00",
+  "decision": "HOLD_PYPI_UPLOAD_NOT_CONFIRMED",
+  "target_version": "0.3.0a2",
+  "package_name": "ai-objective-index",
+  "upload_decision": "HOLD_ENV_CONFIRM_REQUIRED",
+  "steps": {},
+  "temp_venv_path": "data\\generated\\aoi_030a2_verify_tmp\\venv",
+  "temp_venv_cleaned": false,
+  "token_printed": false,
+  "external_api_keys_required": false,
+  "live_mcp_calls_performed": false,
+  "mcp_registry_submission_performed": false,
+  "errors": [],
+  "warnings": [
+    "PyPI upload/version availability has not been confirmed for 0.3.0a2."
+  ]
+}

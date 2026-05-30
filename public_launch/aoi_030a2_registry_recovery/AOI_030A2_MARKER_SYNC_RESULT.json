@@ -1,0 +1,51 @@
+{
+  "schema": "AOI_030A2MarkerSyncResult/v0.1",
+  "generated_at": "2026-05-30T06:28:35.936398+00:00",
+  "decision": "PASS_MARKER_SYNCED_030A2",
+  "target_version": "0.3.0a2",
+  "canonical_mcp_name": "io.github.Isometric-Architect/ai-objective-index",
+  "package": {
+    "registryType": "pypi",
+    "identifier": "ai-objective-index",
+    "version": "0.3.0a2"
+  },
+  "before": {
+    "pyproject_version": "0.3.0a2",
+    "init_version": "0.3.0a2",
+    "server_name": "io.github.Isometric-Architect/ai-objective-index",
+    "server_version": "0.3.0a2",
+    "server_package_registry_type": "pypi",
+    "server_package_identifier": "ai-objective-index",
+    "server_package_version": "0.3.0a2",
+    "readme_mcp_name": "io.github.Isometric-Architect/ai-objective-index",
+    "readme_marker_present": true,
+    "previous_pypi_030a1_marker": {
+      "source": "src\\ai_objective_index.egg-info\\PKG-INFO",
+      "inspectable": true,
+      "marker": "io.github.Isometric-Architect/ai-objective-index",
+      "matches": true
+    }
+  },
+  "after": {
+    "pyproject_version": "0.3.0a2",
+    "init_version": "0.3.0a2",
+    "server_name": "io.github.Isometric-Architect/ai-objective-index",
+    "server_version": "0.3.0a2",
+    "server_package_registry_type": "pypi",
+    "server_package_identifier": "ai-objective-index",
+    "server_package_version": "0.3.0a2",
+    "readme_mcp_name": "io.github.Isometric-Architect/ai-objective-index",
+    "readme_marker_present": true,
+    "previous_pypi_030a1_marker": {
+      "source": "src\\ai_objective_index.egg-info\\PKG-INFO",
+      "inspectable": true,
+      "marker": "io.github.Isometric-Architect/ai-objective-index",
+      "matches": true
+    }
+  },
+  "changed_files": [],
+  "missing_or_mismatched": [],
+  "token_printed": false,
+  "upload_performed": false,
+  "mcp_registry_submission_performed": false
+}

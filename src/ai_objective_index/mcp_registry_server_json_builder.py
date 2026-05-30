@@ -12,7 +12,7 @@ SERVER_JSON_PATH = MCP_DIR / "server.json"
 WAVE1_DIR = Path("public_launch") / "wave1"
 DRAFT_PATH = WAVE1_DIR / "MCP_REGISTRY_SERVER_JSON_DRAFT.json"
 SERVER_NAME = "io.github.Isometric-Architect/ai-objective-index"
-VERSION = "0.3.0a1"
+VERSION = "0.3.0a2"
 SERVER_SCHEMA_URL = "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json"
 
 
@@ -127,7 +127,7 @@ def build_server_json() -> dict[str, Any]:
         "draft_not_submittable": draft_not_submittable,
         "draft_reason": "No package artifact or remote MCP endpoint was found."
         if draft_not_submittable
-        else "Real PyPI package 0.3.0a1 is published and install-verified; MCP Registry submission remains gated by mcp-publisher, GitHub auth, and explicit confirmation.",
+        else "AOI 0.3.0a2 is the PyPI marker-sync recovery candidate; MCP Registry submission remains gated by mcp-publisher, GitHub auth, PyPI verification, and explicit confirmation.",
         "generated_at": datetime.now(UTC).isoformat(),
     }
     return payload

@@ -38,6 +38,16 @@ Package 8Q-A resumed chooses `0.3.0a1` for the local build candidate and refresh
 
 Package 8Q-C-alt may upload and verify the `0.3.0a1` package on real PyPI because TestPyPI signup is blocked. MCP Registry submission still remains HOLD until `mcp_registry_after_pypi_gate` passes, `mcp-publisher` and registry auth are available, and a later package sets explicit `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES`.
 
+AOI 0.3.0a2 is the marker-sync recovery path after 0.3.0a1 published successfully but MCP Registry submission still failed with `SERVER_JSON_INVALID`. The recovery gate requires:
+
+- README `mcp-name` marker exactly `io.github.Isometric-Architect/ai-objective-index`;
+- `.mcp/server.json` name and package metadata synchronized to `0.3.0a2`;
+- real PyPI 0.3.0a2 install verification;
+- local `mcp-publisher validate .mcp/server.json` pass;
+- no token, overclaim, or private-kernel finding.
+
+Publishing still requires `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES` and must not imply security certification, code correctness proof, legal/privacy/license/evaluation proof, product readiness, quality guarantee, or external action authorization.
+
 ## Package 8R
 
 Package 8R adds the concrete publisher gate:

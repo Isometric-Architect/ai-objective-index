@@ -1,0 +1,22 @@
+{
+  "schema": "AOI_MCPRegistryRecoveryReconcileResult/v0.1",
+  "generated_at": "2026-05-30T06:28:23.417747+00:00",
+  "decision": "HOLD_PUBLISH_NOT_CONFIRMED",
+  "publish_decision": "HOLD_GATE_NOT_PASS",
+  "submission_performed": false,
+  "registry_checked": false,
+  "registry_status_code": null,
+  "registry_search_url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Isometric-Architect/ai-objective-index",
+  "matches": {
+    "server_name": false,
+    "version": false,
+    "package": false,
+    "no_certification_claim": true
+  },
+  "token_printed": false,
+  "can_claim_certification": false,
+  "errors": [],
+  "warnings": [
+    "Registry publish has not been confirmed."
+  ]
+}

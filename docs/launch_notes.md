@@ -1,5 +1,9 @@
 # Launch Notes
 
+## AOI 0.3.0a2 PyPI Marker Sync and MCP Registry Recovery
+
+AOI 0.3.0a2 is the marker-sync recovery path for MCP Registry submission after the 0.3.0a1 package was published and install-verified but still failed Registry submission. The recovery updates package and server metadata to `0.3.0a2`, preserves the canonical `mcp-name: io.github.Isometric-Architect/ai-objective-index` marker, rebuilds local wheel/sdist artifacts, runs `twine check`, and gates real PyPI upload and MCP Registry publish behind explicit local confirmation variables. It does not overwrite or yank 0.3.0a1, store tokens, commit `.pypirc`, commit `mcp-publisher`, post to communities, claim security certification, prove correctness, guarantee quality, claim product readiness, or authorize external actions.
+
 ## ROE-22 External Share Pack Refresh From Updated Dashboard
 
 ROE-22 regenerates a V2 static local external-safe demo/share pack from the ROE-21 refreshed dashboard. It writes V2 HTML, Markdown, JSON dashboard, status cards, timeline, feedback memory summary, stale-to-refreshed delta, manifest, checksums, redaction report, claim audit, distribution boundary, share decision, operator scripts, archive dry-run status, and gate result. It shows AgentSec feedback second-run executed/incorporated, preserves QIRA, DataCapsule, and Portfolio as skipped/HOLD until local redacted artifacts or clearer context arrive, and records external action count as zero. It does not create a live web app, deploy, post, call external APIs, call GitHub APIs, fetch URLs, crawl, run live MCP/tool calls, inspect raw private files, upload data, train models, mutate repositories, create issues or comments, merge, publish packages, handle tokens, expose private kernels, convert skipped candidates into success, certify security, prove correctness, prove legal/privacy/license/evaluation status, guarantee quality, claim product readiness, or authorize external actions.

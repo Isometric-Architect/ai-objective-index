@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ai-objective-index"
-version = "0.3.0a1"
+version = "0.3.0a2"
 description = "Read-only objective-fit ranking contracts and core engine for AI tools, APIs, SaaS products, and MCP servers."
 readme = "README.md"
 requires-python = ">=3.11"

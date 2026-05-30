@@ -1,9 +1,9 @@
 {
   "schema": "AOI_030A2FinalMCPRegistryPublishResult/v0.1",
-  "generated_at": "2026-05-30T09:29:35.029481+00:00",
-  "decision": "HOLD_ENV_CONFIRM_REQUIRED",
-  "gate_decision": "HOLD_PYPI_VERIFY_REQUIRED",
-  "env_confirm_present": false,
+  "generated_at": "2026-05-30T10:06:57.667358+00:00",
+  "decision": "PASS_MCP_REGISTRY_PUBLISH_CONFIRMED",
+  "gate_decision": "PASS_READY_FOR_MCP_REGISTRY_PUBLISH",
+  "env_confirm_present": true,
   "execute_requested": true,
   "login_first": false,
   "mcp_publisher_path": "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\tools\\mcp-publisher\\mcp-publisher.exe",
@@ -11,13 +11,19 @@
     "skipped": true
   },
   "publish_result": {
-    "skipped": true
+    "command": [
+      "C:\\Users\\Isometric-Architect\\Desktop\\ai_objective_index\\tools\\mcp-publisher\\mcp-publisher.exe",
+      "publish",
+      ".mcp\\server.json"
+    ],
+    "ok": true,
+    "returncode": 0,
+    "stdout": "Publishing to https://registry.modelcontextprotocol.io...\n✓ Successfully published\n✓ Server io.github.Isometric-Architect/ai-objective-index version 0.3.0a2\n",
+    "stderr": ""
   },
-  "submission_performed": false,
+  "submission_performed": true,
   "token_printed": false,
   "pypi_upload_performed": false,
   "errors": [],
-  "warnings": [
-    "AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES is required before registry publish."
-  ]
+  "warnings": []
 }

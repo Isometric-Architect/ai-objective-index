@@ -6,12 +6,12 @@ This report summarizes the guarded final distribution path for `ai-objective-ind
 | --- | --- |
 | Final preflight | `PASS_READY_FOR_FINAL_PYPI_UPLOAD` |
 | Final build/twine | `PASS_FINAL_BUILD_READY` |
-| PyPI upload gate | `HOLD_ENV_CONFIRM_REQUIRED` |
-| PyPI upload | `HOLD_ENV_CONFIRM_REQUIRED` |
-| PyPI verify | `HOLD_PYPI_UPLOAD_NOT_CONFIRMED` |
-| MCP Registry gate | `HOLD_PYPI_VERIFY_REQUIRED` |
-| MCP Registry publish | `HOLD_ENV_CONFIRM_REQUIRED` |
-| MCP Registry reconcile | `HOLD_REGISTRY_PUBLISH_NOT_CONFIRMED` |
+| PyPI upload gate | `PASS_READY_FOR_INTERACTIVE_TWINE_UPLOAD` |
+| PyPI upload | `UPLOAD_SUCCESS_DIRECT_TWINE_VERIFIED` |
+| PyPI verify | `PASS_REAL_PYPI_INSTALL_030A2` |
+| MCP Registry gate | `PASS_READY_FOR_MCP_REGISTRY_PUBLISH` |
+| MCP Registry publish | `PASS_MCP_REGISTRY_PUBLISH_CONFIRMED` |
+| MCP Registry reconcile | `PASS_MCP_REGISTRY_ENTRY_VERIFIED` |
 
 ## Included Agent Surfaces
 

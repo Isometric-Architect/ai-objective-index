@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/aoi/schemas/agent/agent_middleware_contract.schema.json",
+  "title": "AOI Agent Middleware Contract",
+  "type": "object",
+  "required": [
+    "schema",
+    "modes",
+    "agent_facing_value",
+    "operator_facing_value",
+    "external_action_authorization"
+  ],
+  "properties": {
+    "schema": { "const": "AOI_AgentMiddlewareContract/v0.1" },
+    "modes": { "type": "object" },
+    "agent_facing_value": { "type": "array", "items": { "type": "string" } },
+    "operator_facing_value": { "type": "array", "items": { "type": "string" } },
+    "external_action_authorization": { "const": false },
+    "security_certification": { "const": false },
+    "legal_privacy_license_clearance": { "const": false },
+    "product_readiness_claim": { "const": false }
+  },
+  "additionalProperties": true
+}

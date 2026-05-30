@@ -1,5 +1,13 @@
 # Launch Notes
 
+## AOI Agent Discovery 5 Capability Decision Packet
+
+AOI-AGENT-DISCOVERY-5 hardens the agent-native surface around a canonical Capability Decision Packet. Discover and preflight responses now keep their previous fields while adding an optional `capability_decision_packet` object that separates discovered, trusted, authorized, and executable states.
+
+D5 also adds granular route semantics, route reason codes, HOLD-to-Replan, final argument preflight, freshness/rug-pull/negative-cache fields, and agent middleware contracts. It narrowly repairs the generated registry payload-state recursion residual in `real_payload_guard.py` without staging generated payload leftovers.
+
+This package does not upload to PyPI, publish to MCP Registry, call external LLM APIs, post outreach, handle tokens, expose private kernels, certify security, prove correctness globally, prove legal/privacy/license status, claim product readiness, guarantee quality, or authorize actions.
+
 ## AOI Agent Discovery 4 Cross-Model Feedback Intake
 
 AOI-AGENT-DISCOVERY-4 records manual, redacted external model feedback from Gemini, GPT-5.5 Thinking, and Claude Opus 4.8 High. It extracts product roadmap deltas around Capability Decision Packets, granular route semantics, HOLD-to-Replan loops, adaptive/context-aware governance, freshness/rug-pull/negative-cache handling, and agent/operator dual positioning.

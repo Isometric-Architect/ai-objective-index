@@ -28,38 +28,63 @@ def _load_json(path: Path) -> Any:
 def _as_text(value: Any) -> str:
     try:
         return json.dumps(value, ensure_ascii=False).lower()
-    except TypeError:
+    except (RecursionError, TypeError):
         return str(value).lower()
+
+
+def _payload_layers(raw: Any, max_depth: int = 2048) -> list[Any]:
+    layers: list[Any] = []
+    current = raw
+    seen: set[int] = set()
+    for _ in range(max_depth):
+        layers.append(current)
+        if not isinstance(current, dict):
+            break
+        payload = current.get("payload")
+        if payload is None:
+            break
+        marker = id(payload)
+        if marker in seen or payload is current:
+            break
+        seen.add(marker)
+        current = payload
+    return layers
+
+
+def _terminal_payload(raw: Any) -> Any:
+    layers = _payload_layers(raw)
+    return layers[-1] if layers else raw
+
+
+def _metadata_without_payload(raw: Any) -> Any:
+    if not isinstance(raw, dict):
+        return raw
+    return {key: value for key, value in raw.items() if key != "payload"}
 
 
 def is_fixture_payload(raw: Any) -> bool:
     if not raw:
         return False
-    text = _as_text(raw)
-    if any(
-        marker in text
-        for marker in (
-            '"fixture_mode": true',
-            '"fixture_only": true',
-            "fixture/sample records",
-            "local_fixture_resembling_official_mcp_registry_payload",
-            "io.github.example/",
-            "github.com/example/",
-            "@example/",
-        )
-    ):
-        return True
-    if isinstance(raw, dict):
-        payload = raw.get("payload")
-        if payload is not None and payload is not raw:
-            return is_fixture_payload(payload)
+    markers = (
+        '"fixture_mode": true',
+        '"fixture_only": true',
+        "fixture/sample records",
+        "local_fixture_resembling_official_mcp_registry_payload",
+        "io.github.example/",
+        "github.com/example/",
+        "@example/",
+    )
+    for layer in _payload_layers(raw):
+        text = _as_text(_metadata_without_payload(layer))
+        if any(marker in text for marker in markers):
+            return True
     return False
 
 
 def is_real_registry_payload(raw: Any) -> bool:
     if not raw or is_fixture_payload(raw):
         return False
-    records = normalize_registry_records(raw, max_servers=1000)
+    records = normalize_registry_records(_terminal_payload(raw), max_servers=1000)
     if not records:
         return False
     for record in records:
@@ -119,8 +144,9 @@ def assert_no_fixture_overwrite(
 
 
 def summarize_payload(raw: Any) -> dict[str, Any]:
-    records = normalize_registry_records(raw, max_servers=1000)
-    shape = detect_registry_payload_shape(raw)
+    terminal = _terminal_payload(raw)
+    records = normalize_registry_records(terminal, max_servers=1000)
+    shape = detect_registry_payload_shape(terminal)
     mode: PayloadMode
     if is_fixture_payload(raw):
         mode = "fixture"

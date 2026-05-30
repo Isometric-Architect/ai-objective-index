@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/aoi/schemas/agent/hold_to_replan_loop.schema.json",
+  "title": "AOI HOLD-to-Replan Loop",
+  "type": "object",
+  "required": [
+    "schema",
+    "replan_id",
+    "hold_reason",
+    "allowed_repair_actions",
+    "forbidden_repair_actions",
+    "max_iterations",
+    "stop_conditions",
+    "no_auto_approval",
+    "no_external_action"
+  ],
+  "properties": {
+    "schema": { "const": "AOI_HOLDToReplanLoop/v0.1" },
+    "replan_id": { "type": "string" },
+    "hold_reason": { "type": "string" },
+    "allowed_repair_actions": { "type": "array", "items": { "type": "string" } },
+    "forbidden_repair_actions": { "type": "array", "items": { "type": "string" } },
+    "max_iterations": { "type": "integer", "minimum": 1 },
+    "no_auto_approval": { "const": true },
+    "no_external_action": { "const": true }
+  },
+  "additionalProperties": true
+}

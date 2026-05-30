@@ -1,0 +1,32 @@
+{
+  "schema": "AOI_HOLDToReplanLoop/v0.1",
+  "replan_id": "replan-aoi-read-only-mcp-tools",
+  "generated_at": "2026-05-30T12:43:49.446558+00:00",
+  "source_packet_id": "cdp-aoi-read-only-mcp-tools",
+  "hold_reason": "HOLD_MISSING_FIELDS",
+  "allowed_repair_actions": [
+    "ask for missing fields",
+    "choose lower-risk read-only action"
+  ],
+  "forbidden_repair_actions": [
+    "external action during replan",
+    "auto-approval",
+    "repeat same candidate without new evidence",
+    "token or private data request",
+    "certification or product-readiness claim"
+  ],
+  "alternative_candidate_query": "Find candidates with complete permission and source-trace metadata.",
+  "lower_risk_action": "ALLOW_DISCOVERY_ONLY",
+  "escalation_path": "",
+  "max_iterations": 3,
+  "stop_conditions": [
+    "max_iterations reached",
+    "blocked route encountered",
+    "no new evidence available",
+    "human or operator approval required"
+  ],
+  "no_auto_approval": true,
+  "no_external_action": true,
+  "no_repeated_candidate_without_new_evidence": true,
+  "candidate_set_hold_next_action": "Return candidate-set HOLD with missing fields and request evidence if max iterations are reached."
+}

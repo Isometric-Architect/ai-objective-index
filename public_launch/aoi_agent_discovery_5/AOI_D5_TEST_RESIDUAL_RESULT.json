@@ -1,0 +1,10 @@
+{
+  "schema": "AOI_D5TestResidualResult/v0.1",
+  "decision": "PASS_NARROW_REGISTRY_PAYLOAD_RESIDUAL_REPAIRED",
+  "classification": "narrow_code_bug_repaired_without_staging_generated_payloads",
+  "narrow_patch": "registry_intake/real_payload_guard.py iterative payload unwrap with depth guard",
+  "targeted_slice": "registry/datascope residual slice passed after patch",
+  "full_suite_result": "PASS_FULL_PYTEST_1188_PASSED_1_WARNING",
+  "full_suite_green_claim_allowed": true,
+  "next_action": "Keep future full-suite claims tied to a current python -m pytest run."
+}

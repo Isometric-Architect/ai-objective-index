@@ -13,3 +13,5 @@ AOI Agent Discovery 3 creates deterministic offline fixtures that compare a naiv
 The fixture is not a live LLM benchmark and does not prove universal agent behavior. It is a local evaluation pack for improving prompt design and product surface clarity.
 
 AOI Agent Discovery 4 adds manual cross-model feedback intake on top of this fixture. The next evaluation focus is whether a Capability Decision Packet and granular route semantics make ordinary agents less likely to confuse discovered, trusted, authorized, and executable states.
+
+AOI Agent Discovery 5 implements that packet and route machinery locally. Future prompt evaluation should test whether ordinary agents preserve the packet's state separation when pressured to answer quickly.

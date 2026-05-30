@@ -1,0 +1,81 @@
+{
+  "schema": "AOI_FinalArgumentPreflightPacket/v0.1",
+  "generated_at": "2026-05-30T12:43:49.447764+00:00",
+  "tool_name": "email.send",
+  "route_decision": "ESCALATE_HUMAN_APPROVAL",
+  "reason_code": "EXTERNAL_SEND",
+  "capability_decision_packet": {
+    "schema_version": "AOI_CapabilityDecisionPacket/v0.1",
+    "packet_id": "cdp-email-send",
+    "objective": "Preflight arguments for email.send",
+    "capability_id": "email-send",
+    "capability_name": "email.send",
+    "candidate_source": "local_agent_discovery_sample",
+    "capability_type": "mcp_or_api",
+    "objective_fit_score": 0.72,
+    "source_trace_status": "source_traced",
+    "source_trace_refs": [
+      "README.md",
+      "docs/aoi_agent_native_discovery.md"
+    ],
+    "metadata_completeness": "partial",
+    "action_level": "read_or_draft_only",
+    "data_boundary": "metadata_only",
+    "auth_scope_required": "explicit_permission_scope_required",
+    "current_auth_context_known": false,
+    "discovered_state": "discovered",
+    "trusted_state": "not_verified",
+    "authorized_state": "not_authorized",
+    "executable_state": "not_executable",
+    "route_decision": "ESCALATE_HUMAN_APPROVAL",
+    "route_reason_codes": [
+      "EXTERNAL_SEND"
+    ],
+    "missing_fields": [
+      "argument_risk_review"
+    ],
+    "safe_next_action": "Repair or escalate arguments before use.",
+    "blocked_next_actions": [
+      "external tool execution",
+      "write/send/delete action",
+      "certification or product-readiness claim",
+      "action authorization claim"
+    ],
+    "escalation_path": "HumanApproval",
+    "must_not_claim": [
+      "candidate is verified",
+      "metadata proves correctness",
+      "tool availability authorizes tool use",
+      "source trace is security certification",
+      "route decision authorizes external action",
+      "AOI clears legal, privacy, license, or compliance status",
+      "AOI proves product readiness or quality"
+    ],
+    "receipt_id": "receipt-email-send-escalate_human_approval",
+    "decision_timestamp": "2026-05-30T12:43:49.447756+00:00",
+    "claim_ceiling": [
+      "candidate != verified",
+      "metadata != proof",
+      "tool_available != tool_authorized",
+      "source_trace != security_certification",
+      "route_decision != action_authorization",
+      "objective_fit_score does not imply safety",
+      "metadata_completeness does not imply authorization",
+      "route_decision does not imply security certification",
+      "route_decision does not imply product readiness",
+      "route_decision does not imply action authorization"
+    ],
+    "external_action_authorization": false,
+    "security_certification": false,
+    "product_readiness_claim": false,
+    "private_kernel_exposed": false,
+    "freshness_status": "fresh_enough_for_discovery",
+    "version_pin": "0.3.0a2",
+    "last_checked_at": "2026-05-30T00:00:00Z",
+    "stale_warning": "",
+    "rugpull_diff_status": "not_checked",
+    "known_negative_cache_hit": false,
+    "recheck_policy": "Recheck on version change, stale trace warning, negative cache hit, or before execution."
+  },
+  "external_action_authorization": false
+}

@@ -7,6 +7,7 @@ from typing import Any
 from . import timestamp, write_json
 from .agent_claim_boundary import CLAIM_BOUNDARY, MUST_NOT_CLAIM
 from .agent_staleness_policy import freshness_for_sample
+from .cdp_rest_adapters import attach_discover_cdp
 
 
 DISCOVER_REQUEST_PATH = Path("api") / "vnext" / "examples" / "agent" / "discover_request.json"
@@ -70,7 +71,7 @@ def discover_capabilities(request: dict[str, Any] | None = None) -> dict[str, An
     candidates = _sample_candidates()
     allow_candidates = [item for item in candidates if str(item["preliminary_route_decision"]).startswith("ALLOW")]
     best_current = allow_candidates[0] if allow_candidates else candidates[0]
-    return {
+    response = {
         "schema": "AOI_AgentDiscoverResponse/v0.1",
         "generated_at": timestamp(),
         "objective": request.get("objective", ""),
@@ -99,6 +100,7 @@ def discover_capabilities(request: dict[str, Any] | None = None) -> dict[str, An
         "external_action_performed": False,
         "live_network_used": False,
     }
+    return attach_discover_cdp(response)
 
 
 def write_sample_discover_examples() -> dict[str, Any]:
@@ -119,4 +121,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

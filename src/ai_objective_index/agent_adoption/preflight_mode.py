@@ -8,6 +8,7 @@ from typing import Any
 from . import timestamp, write_json
 from .agent_claim_boundary import CLAIM_BOUNDARY, MUST_NOT_CLAIM
 from .agent_staleness_policy import freshness_for_sample
+from .cdp_rest_adapters import attach_preflight_cdp
 
 
 PREFLIGHT_REQUEST_PATH = Path("api") / "vnext" / "examples" / "agent" / "preflight_request.json"
@@ -110,7 +111,7 @@ def preflight_capability(request: dict[str, Any] | None = None) -> dict[str, Any
         reason = "The request is limited to read-only review and does not ask for external action or unsupported claims."
         residualops = "ResidualOps dashboard"
 
-    return {
+    response = {
         "schema": "AOI_AgentPreflightResponse/v0.1",
         "generated_at": timestamp(),
         "objective": request.get("intended_use", ""),
@@ -142,6 +143,7 @@ def preflight_capability(request: dict[str, Any] | None = None) -> dict[str, Any
         "external_action_performed": False,
         "live_network_used": False,
     }
+    return attach_preflight_cdp(response)
 
 
 def _next_action_for_decision(decision: str) -> str:
@@ -174,4 +176,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

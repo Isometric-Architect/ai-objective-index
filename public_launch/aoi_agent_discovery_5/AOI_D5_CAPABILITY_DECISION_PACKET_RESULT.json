@@ -1,0 +1,77 @@
+{
+  "packet": {
+    "schema_version": "AOI_CapabilityDecisionPacket/v0.1",
+    "packet_id": "cdp-aoi-read-only-mcp-tools",
+    "objective": "Find a source-traced read-only MCP/API capability candidate.",
+    "capability_id": "aoi-read-only-mcp-tools",
+    "capability_name": "AI Objective Index read-only MCP tools",
+    "candidate_source": "local_agent_discovery_sample",
+    "capability_type": "mcp_or_api",
+    "objective_fit_score": 0.72,
+    "source_trace_status": "source_traced",
+    "source_trace_refs": [
+      "README.md",
+      "docs/aoi_agent_native_discovery.md"
+    ],
+    "metadata_completeness": "partial",
+    "action_level": "read_or_draft_only",
+    "data_boundary": "metadata_only",
+    "auth_scope_required": "explicit_permission_scope_required",
+    "current_auth_context_known": false,
+    "discovered_state": "discovered",
+    "trusted_state": "not_verified",
+    "authorized_state": "not_authorized",
+    "executable_state": "not_executable",
+    "route_decision": "HOLD_MISSING_FIELDS",
+    "route_reason_codes": [
+      "METADATA_INCOMPLETE"
+    ],
+    "missing_fields": [
+      "permission_scope",
+      "freshness_recheck"
+    ],
+    "safe_next_action": "Request missing evidence, downgrade to read/draft, or use HOLD-to-Replan before any execution.",
+    "blocked_next_actions": [
+      "external tool execution",
+      "write/send/delete action",
+      "certification or product-readiness claim",
+      "action authorization claim"
+    ],
+    "escalation_path": "",
+    "must_not_claim": [
+      "candidate is verified",
+      "metadata proves correctness",
+      "tool availability authorizes tool use",
+      "source trace is security certification",
+      "route decision authorizes external action",
+      "AOI clears legal, privacy, license, or compliance status",
+      "AOI proves product readiness or quality"
+    ],
+    "receipt_id": "receipt-aoi-read-only-mcp-tools-hold_missing_fields",
+    "decision_timestamp": "2026-05-30T12:43:49.446529+00:00",
+    "claim_ceiling": [
+      "candidate != verified",
+      "metadata != proof",
+      "tool_available != tool_authorized",
+      "source_trace != security_certification",
+      "route_decision != action_authorization",
+      "objective_fit_score does not imply safety",
+      "metadata_completeness does not imply authorization",
+      "route_decision does not imply security certification",
+      "route_decision does not imply product readiness",
+      "route_decision does not imply action authorization"
+    ],
+    "external_action_authorization": false,
+    "security_certification": false,
+    "product_readiness_claim": false,
+    "private_kernel_exposed": false,
+    "freshness_status": "stale_review_required",
+    "version_pin": "0.3.0a2",
+    "last_checked_at": "2026-05-30T00:00:00Z",
+    "stale_warning": "Source traces should be refreshed before execution or external-facing recommendation.",
+    "rugpull_diff_status": "not_checked",
+    "known_negative_cache_hit": false,
+    "recheck_policy": "Recheck on version change, stale trace warning, negative cache hit, or before execution."
+  },
+  "validation_errors": []
+}

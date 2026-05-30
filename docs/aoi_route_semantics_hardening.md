@@ -13,3 +13,5 @@ Required separation:
 - route decision != action authorization
 
 This hardening keeps AOI useful first while preventing ordinary agents from treating search results or metadata as permission to act.
+
+D5 adds route constants, route families, reason codes, transition validation, and tests for the core separations.

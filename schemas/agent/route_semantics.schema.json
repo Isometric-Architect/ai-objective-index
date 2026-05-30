@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/aoi/schemas/agent/route_semantics.schema.json",
+  "title": "AOI Route Semantics",
+  "type": "object",
+  "required": ["route_classes", "explicit_separations"],
+  "properties": {
+    "route_classes": { "type": "array", "items": { "type": "string" } },
+    "explicit_separations": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

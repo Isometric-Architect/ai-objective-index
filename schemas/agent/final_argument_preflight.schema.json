@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/aoi/schemas/agent/final_argument_preflight.schema.json",
+  "title": "AOI Final Argument Preflight",
+  "type": "object",
+  "required": [
+    "schema",
+    "tool_name",
+    "route_decision",
+    "reason_code",
+    "capability_decision_packet",
+    "external_action_authorization"
+  ],
+  "properties": {
+    "schema": { "const": "AOI_FinalArgumentPreflightPacket/v0.1" },
+    "tool_name": { "type": "string" },
+    "route_decision": { "type": "string" },
+    "reason_code": { "type": "string" },
+    "capability_decision_packet": { "type": "object" },
+    "external_action_authorization": { "const": false }
+  },
+  "additionalProperties": true
+}

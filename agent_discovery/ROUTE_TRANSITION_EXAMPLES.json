@@ -1,0 +1,29 @@
+{
+  "schema": "AOI_RouteTransitionExamples/v0.1",
+  "separations": [
+    "FOUND != TRUSTED",
+    "TRUSTED != AUTHORIZED",
+    "AUTHORIZED != EXECUTABLE",
+    "SCHEMA_READABLE != ACTION_ALLOWED",
+    "REGISTRY_LISTED != APPROVED",
+    "SOURCE_TRACED != SECURITY_CERTIFIED",
+    "METADATA_COMPLETE != SAFE_TO_EXECUTE",
+    "ALLOW_DISCOVERY_ONLY != ALLOW_EXECUTION",
+    "ALLOW_READ_ONLY != ALLOW_WRITE",
+    "ALLOW_DRAFT_ONLY != ALLOW_SEND"
+  ],
+  "examples": [
+    {
+      "from": "FOUND_ONLY",
+      "to": "ALLOW_READ_ONLY",
+      "new_evidence_required": true,
+      "action_authorization": false
+    },
+    {
+      "from": "HOLD_AUTHORIZATION",
+      "to": "ALLOW_LOW_RISK_CALL",
+      "new_evidence_required": true,
+      "action_authorization": false
+    }
+  ]
+}

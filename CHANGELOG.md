@@ -2,6 +2,10 @@
 
 ## AOI 0.3.0a2
 
+- Added AOI-AGENT-DISCOVERY-5: executable Capability Decision Packet, granular route semantics, route reason codes, HOLD-to-Replan loop, final argument preflight, freshness/rug-pull/negative-cache contract, and agent middleware contract.
+- Added backward-compatible `capability_decision_packet` fields to agent discover/preflight surfaces and MCP adapters.
+- Narrowly repaired the generated registry payload-state recursion residual in `registry_intake/real_payload_guard.py` and added a regression test without staging generated registry payload leftovers.
+- Preserved boundaries: no new PyPI upload, no MCP Registry publish, no external LLM/API calls, no outreach/posting, no token handling, no private-kernel disclosure, and no certification/proof/product-readiness/action-authorization claim.
 - Added AOI-AGENT-DISCOVERY-4: manual cross-model feedback intake, competitive synthesis, route-semantics roadmap, Capability Decision Packet draft, HOLD-to-Replan loop, freshness/rug-pull/negative-cache notes, and test residual reconciliation.
 - Classified the prior generated registry/datascope full-suite payload-state failures as a HOLD residual without staging unrelated generated leftovers or making a false full-suite green claim.
 - Preserved boundaries: no new PyPI upload, no MCP Registry publish, no external LLM API calls, no outreach/posting, no issue/PR/comment creation, no tokens, no private-kernel disclosure, and no certification/proof/product-readiness/action-authorization claim.

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/aoi/schemas/agent/freshness_negative_cache.schema.json",
+  "title": "AOI Freshness and Negative Cache Contract",
+  "type": "object",
+  "required": [
+    "freshness_status",
+    "version_pin",
+    "last_checked_at",
+    "stale_warning",
+    "rugpull_diff_status",
+    "known_negative_cache_hit",
+    "recheck_policy"
+  ],
+  "properties": {
+    "freshness_status": { "type": "string" },
+    "version_pin": { "type": "string" },
+    "last_checked_at": { "type": "string" },
+    "stale_warning": { "type": "string" },
+    "rugpull_diff_status": { "type": "string" },
+    "known_negative_cache_hit": { "type": "boolean" },
+    "recheck_policy": { "type": "string" }
+  },
+  "additionalProperties": true
+}

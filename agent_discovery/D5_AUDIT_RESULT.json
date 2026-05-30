@@ -1,0 +1,14 @@
+{
+  "schema": "AOI_D5AuditResult/v0.1",
+  "generated_at": "2026-05-30T12:43:49.476723+00:00",
+  "decision": "PASS_CAPABILITY_DECISION_PACKET_READY",
+  "capability_decision_packet_valid": true,
+  "route_semantics_count": 30,
+  "reason_code_count": 26,
+  "hold_to_replan_present": true,
+  "middleware_contract_present": true,
+  "freshness_negative_cache_present": true,
+  "test_residual_decision": "PASS_NARROW_REGISTRY_PAYLOAD_RESIDUAL_REPAIRED",
+  "no_false_full_suite_green_claim": true,
+  "errors": []
+}

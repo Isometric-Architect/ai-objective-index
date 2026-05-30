@@ -14,3 +14,5 @@ The packet exists because ordinary agents can confuse these states:
 AOI should keep those states separate. A found candidate is not automatically trusted. A trusted candidate is not automatically authorized. An authorized read-only path is not automatically executable for external action.
 
 The packet must not expose private ranking weights, thresholds, provider priors, anti-gaming details, private negative controls, private probe seeds, commercial routing policy, real feedback memory, or customer data.
+
+D5 implements this packet as an executable local object used by discover/preflight examples. Existing discover/preflight fields remain available; `capability_decision_packet` is added as a backward-compatible response field.

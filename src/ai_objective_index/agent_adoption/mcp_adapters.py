@@ -5,6 +5,7 @@ from typing import Any
 
 from . import read_text
 from .capability_card import build_capability_card
+from .cdp_mcp_adapters import add_cdp_to_mcp_discover_response, add_cdp_to_mcp_preflight_response
 from .discover_mode import discover_capabilities
 from .preflight_mode import preflight_capability
 
@@ -37,6 +38,7 @@ def discover_capabilities_for_objective(
             "freshness_preference": freshness_preference,
         }
     )
+    response = add_cdp_to_mcp_discover_response(response)
     response.update(
         {
             "read_only": True,
@@ -65,6 +67,7 @@ def preflight_capability_for_use(
             "organization_policy_optional": organization_policy_optional or {},
         }
     )
+    response = add_cdp_to_mcp_preflight_response(response)
     response.update(
         {
             "read_only": True,

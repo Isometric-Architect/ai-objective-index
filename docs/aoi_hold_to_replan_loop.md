@@ -20,3 +20,9 @@ Loop guards:
 - do not auto-approve
 
 The loop helps the discover-first path stay useful without granting action authorization.
+
+D5 implements a sample CLI:
+
+```bash
+python -m ai_objective_index.agent_adoption.hold_to_replan_loop --sample
+```

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResidualOps Feedback Second-Run Memory Update",
+  "type": "object",
+  "required": ["schema", "memory_update_id", "bridge_id", "updated_entries", "portfolio_next_actions"],
+  "properties": {
+    "schema": { "const": "ResidualOps_FeedbackSecondRunMemoryUpdate/v0.1" },
+    "memory_update_id": { "type": "string" },
+    "bridge_id": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "updated_entries": { "type": "array", "items": { "type": "object" } },
+    "portfolio_next_actions": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

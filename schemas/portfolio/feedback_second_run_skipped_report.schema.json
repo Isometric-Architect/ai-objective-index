@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResidualOps Feedback Second-Run Skipped Candidate Report",
+  "type": "object",
+  "required": ["schema", "candidate_id", "reply_id", "vertical", "reason", "next_actions"],
+  "properties": {
+    "schema": { "const": "ResidualOps_FeedbackSecondRunSkippedReport/v0.1" },
+    "candidate_id": { "type": "string" },
+    "reply_id": { "type": "string" },
+    "vertical": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "reason": { "type": "string" },
+    "required_artifacts": { "type": "array", "items": { "type": "string" } },
+    "unresolved_questions": { "type": "array", "items": { "type": "string" } },
+    "next_actions": { "type": "array", "items": { "type": "string" } },
+    "can_retry_after_artifact": { "type": "boolean" }
+  },
+  "additionalProperties": true
+}

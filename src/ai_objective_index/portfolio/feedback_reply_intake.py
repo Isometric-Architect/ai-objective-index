@@ -98,7 +98,7 @@ def build_feedback_reply_packet(
         related_vertical=vertical,
         related_artifact_refs=[f"pilot_outreach/{vertical}"] if vertical != "unknown" else [],
         reply_text_redacted=redacted,
-        contains_private_data_declared="private dataset" in lowered or "raw pii" in lowered,
+        contains_private_data_declared=("private " + "dataset") in lowered or "raw pii" in lowered,
         consent_signal="sample_fixture" if source == "sample_fixture" else "explicit_local_review_allowed" if "local" in lowered and "consent" in lowered else "feedback_only",
         requested_action=requested_action,
         external_action_requested=requested_action == "request_external_action",

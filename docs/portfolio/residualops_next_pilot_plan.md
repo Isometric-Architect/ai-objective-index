@@ -33,6 +33,8 @@ ROE-18 status: manual-only pilot discovery and feedback intake outreach drafts a
 
 ROE-19 status: feedback reply packet intake added.
 
-Recommended next package: ROE-20 Local Feedback-to-Second-Run Execution Bridge.
+ROE-20 status: local feedback-to-second-run execution bridge added.
+
+Recommended next package: ROE-21 Dashboard Refresh from Feedback Second-Run.
 
 Secondary backlog: AOI 0.3.0a2 MCP Registry recovery if namespace/version recovery remains useful.

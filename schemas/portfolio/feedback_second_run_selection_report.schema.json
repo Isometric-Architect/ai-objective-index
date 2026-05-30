@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResidualOps Feedback Second-Run Selection Report",
+  "type": "object",
+  "required": ["schema", "selection_id", "selected_candidates", "skipped_candidates", "ready_count", "hold_count", "block_count"],
+  "properties": {
+    "schema": { "const": "ResidualOps_FeedbackSecondRunSelectionReport/v0.1" },
+    "selection_id": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "source_reply_candidates": { "type": "array", "items": { "type": "object" } },
+    "selected_candidates": { "type": "array", "items": { "type": "object" } },
+    "skipped_candidates": { "type": "array", "items": { "type": "object" } },
+    "ready_count": { "type": "integer" },
+    "hold_count": { "type": "integer" },
+    "block_count": { "type": "integer" },
+    "selection_rules": { "type": "array", "items": { "type": "string" } },
+    "selected_verticals": { "type": "array", "items": { "type": "string" } },
+    "skipped_verticals": { "type": "array", "items": { "type": "string" } },
+    "next_actions": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

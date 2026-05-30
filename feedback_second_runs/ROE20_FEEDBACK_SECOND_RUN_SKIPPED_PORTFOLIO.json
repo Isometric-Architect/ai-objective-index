@@ -1,0 +1,22 @@
+{
+  "schema": "ResidualOps_FeedbackSecondRunSkippedReport/v0.1",
+  "candidate_id": "second-run-candidate-feedback-reply-sample-portfolio-v0-1",
+  "reply_id": "feedback-reply-sample-portfolio-v0-1",
+  "vertical": "portfolio",
+  "generated_at": "2026-05-30T02:05:47.437039+00:00",
+  "reason": "HOLD_NEEDS_ARTIFACT",
+  "required_artifacts": [
+    "redacted local feedback note"
+  ],
+  "unresolved_questions": [
+    "candidate is not marked READY_FOR_LOCAL_SECOND_RUN",
+    "local redacted artifact or consent may be missing"
+  ],
+  "next_actions": [
+    "collect redacted local artifact summary",
+    "rerun feedback reply intake after artifact or consent is available",
+    "do not execute, post, merge, deploy, publish, upload, train, fetch, or call APIs"
+  ],
+  "can_retry_after_artifact": true,
+  "external_action_authorized": false
+}

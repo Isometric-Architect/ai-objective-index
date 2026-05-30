@@ -1,5 +1,9 @@
 # Launch Notes
 
+## ROE-20 Feedback-To-Second-Run Execution Bridge
+
+ROE-20 bridges local/offline ROE-19 feedback reply second-run candidates into a conservative second-run path. It selects only `READY_FOR_LOCAL_SECOND_RUN` candidates, executes the ready AgentSec sample candidate locally, records skipped reports for HOLD candidates, and emits a bridge trace, receipt, memory update, reviewer readout, redaction report, and gate result. It does not call GitHub APIs, create issues or comments, call external APIs, fetch URLs, crawl, run live MCP/tool calls, mutate repositories, post externally, merge, deploy, publish, upload data, train models, handle tokens, expose private kernels, perform unsafe decision upgrades, certify security, prove correctness, prove legal/privacy/license/evaluation status, guarantee quality, claim product readiness, or authorize external actions.
+
 ## ROE-19 Feedback Reply Packet Intake
 
 ROE-19 creates a local/offline feedback reply intake pipeline. It turns sample replies or a local reply file into redacted reply packets, deterministic classifications, vertical routes, triage entries, feedback memory candidates, second-run candidates, reviewer readout, redaction report, and gate result. It does not send replies, create GitHub issues, post comments, call GitHub or external APIs, fetch URLs, crawl, mutate repositories, upload data, train models, deploy, publish, handle tokens, expose private kernels, certify security, prove correctness, prove legal/privacy/license/evaluation status, guarantee quality, claim product readiness, or authorize external actions.

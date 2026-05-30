@@ -1,0 +1,60 @@
+{
+  "schema": "ResidualOps_FeedbackSecondRunBridgeTrace/v0.1",
+  "bridge_id": "roe20-feedback-second-run-bridge-v0-1",
+  "generated_at": "2026-05-30T02:05:47.437096+00:00",
+  "source_feedback_reply_pack": "feedback_replies/FEEDBACK_REPLY_SECOND_RUN_CANDIDATE_SAMPLE.json",
+  "selection_report_ref": "feedback_second_runs/ROE20_FEEDBACK_SECOND_RUN_SELECTION_REPORT.json",
+  "selected_count": 1,
+  "skipped_count": 3,
+  "executed_count": 1,
+  "local_only": true,
+  "external_network_used": false,
+  "github_api_used": false,
+  "live_mcp_call_used": false,
+  "external_repo_modified": false,
+  "posting_or_commenting_performed": false,
+  "merge_deploy_publish_performed": false,
+  "token_used": false,
+  "steps": [
+    {
+      "step_id": "select-ready-candidates",
+      "step_name": "Select READY local candidates",
+      "input_ref": "feedback_replies/FEEDBACK_REPLY_SECOND_RUN_CANDIDATE_SAMPLE.json",
+      "output_ref": "feedback_second_runs/ROE20_FEEDBACK_SECOND_RUN_SELECTION_REPORT.json",
+      "decision": "selected=1 skipped=3",
+      "notes": "READY candidates only; HOLD/BLOCK candidates skipped"
+    },
+    {
+      "step_id": "execute-agentsec",
+      "step_name": "Execute local feedback second-run bridge",
+      "input_ref": "",
+      "output_ref": "",
+      "decision": "BLOCK_FORBIDDEN_ACTION",
+      "notes": "local/offline result only; no decision upgrade"
+    },
+    {
+      "step_id": "skip-qira",
+      "step_name": "Skip non-ready candidate",
+      "input_ref": "second-run-candidate-feedback-reply-sample-qira-v0-1",
+      "output_ref": "feedback_second_runs/ROE20_FEEDBACK_SECOND_RUN_SKIPPED_QIRA.json",
+      "decision": "HOLD_NEEDS_ARTIFACT",
+      "notes": "candidate remains HOLD/BLOCK until local artifact or consent is available"
+    },
+    {
+      "step_id": "skip-datacapsule",
+      "step_name": "Skip non-ready candidate",
+      "input_ref": "second-run-candidate-feedback-reply-sample-datacapsule-v0-1",
+      "output_ref": "feedback_second_runs/ROE20_FEEDBACK_SECOND_RUN_SKIPPED_DATACAPSULE.json",
+      "decision": "HOLD_NEEDS_ARTIFACT",
+      "notes": "candidate remains HOLD/BLOCK until local artifact or consent is available"
+    },
+    {
+      "step_id": "skip-portfolio",
+      "step_name": "Skip non-ready candidate",
+      "input_ref": "second-run-candidate-feedback-reply-sample-portfolio-v0-1",
+      "output_ref": "feedback_second_runs/ROE20_FEEDBACK_SECOND_RUN_SKIPPED_PORTFOLIO.json",
+      "decision": "HOLD_NEEDS_ARTIFACT",
+      "notes": "candidate remains HOLD/BLOCK until local artifact or consent is available"
+    }
+  ]
+}

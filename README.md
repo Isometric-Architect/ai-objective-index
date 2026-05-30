@@ -107,6 +107,8 @@ ROE-18 adds manual-only pilot discovery and feedback intake outreach drafts. It 
 
 ROE-19 adds local/offline feedback reply packet intake. It converts sample or local reply text into redacted reply packets, classifications, vertical routes, triage entries, feedback memory candidates, second-run candidates, reviewer readout, and gate artifacts without sending replies, creating GitHub issues, posting comments, calling APIs, fetching URLs, mutating repositories, uploading data, training models, token handling, private-kernel exposure, certification, proof, product-readiness claim, or action authorization.
 
+ROE-20 adds a local feedback-to-second-run execution bridge. It selects only `READY_FOR_LOCAL_SECOND_RUN` feedback candidates, executes the ready AgentSec local sample path, and writes skipped reports for HOLD candidates without GitHub APIs, external APIs, issue/comment creation, fetching URLs, live MCP/tool calls, external repository mutation, posting, merge/deploy/publish action, upload, model training, token handling, unsafe decision upgrades, private-kernel exposure, certification, proof, product-readiness claim, or action authorization.
+
 ## Quick Example
 
 Example objective request:

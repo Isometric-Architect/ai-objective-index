@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResidualOps Feedback Second-Run Bridge Trace",
+  "type": "object",
+  "required": ["schema", "bridge_id", "selected_count", "skipped_count", "executed_count", "local_only", "steps"],
+  "properties": {
+    "schema": { "const": "ResidualOps_FeedbackSecondRunBridgeTrace/v0.1" },
+    "bridge_id": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "source_feedback_reply_pack": { "type": "string" },
+    "selection_report_ref": { "type": "string" },
+    "selected_count": { "type": "integer" },
+    "skipped_count": { "type": "integer" },
+    "executed_count": { "type": "integer" },
+    "local_only": { "const": true },
+    "external_network_used": { "const": false },
+    "github_api_used": { "const": false },
+    "live_mcp_call_used": { "const": false },
+    "external_repo_modified": { "const": false },
+    "posting_or_commenting_performed": { "const": false },
+    "merge_deploy_publish_performed": { "const": false },
+    "token_used": { "const": false },
+    "steps": { "type": "array", "items": { "type": "object" } }
+  },
+  "additionalProperties": true
+}

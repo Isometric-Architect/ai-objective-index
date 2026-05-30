@@ -1,0 +1,299 @@
+{
+  "schema": "ResidualOps_FeedbackSecondRunSelectionReport/v0.1",
+  "selection_id": "roe20-feedback-second-run-selection-v0-1",
+  "generated_at": "2026-05-30T02:05:47.435277+00:00",
+  "source_reply_candidates": [
+    {
+      "schema": "ResidualOps_FeedbackReplySecondRunCandidate/v0.1",
+      "second_run_candidate_id": "second-run-candidate-feedback-reply-sample-agentsec-v0-1",
+      "reply_id": "feedback-reply-sample-agentsec-v0-1",
+      "generated_at": "2026-05-30T02:05:47.364141+00:00",
+      "vertical": "agentsec",
+      "required_artifacts": [
+        "redacted local artifact summary"
+      ],
+      "allowed_operations": [
+        "local_redacted_review",
+        "local_receipt_regeneration",
+        "local_feedback_memory_update"
+      ],
+      "forbidden_operations": [
+        "github_api",
+        "external_posting",
+        "external_repo_mutation",
+        "merge",
+        "deploy",
+        "publish",
+        "live_mcp_call",
+        "upload_data",
+        "train_model"
+      ],
+      "readiness": "READY_FOR_LOCAL_SECOND_RUN",
+      "next_actions": [
+        "run only local redaction and receipt regeneration",
+        "do not send replies, create issues, post comments, call APIs, merge, deploy, publish, upload, or train"
+      ],
+      "execute_now": false,
+      "external_action_authorized": false
+    },
+    {
+      "schema": "ResidualOps_FeedbackReplySecondRunCandidate/v0.1",
+      "second_run_candidate_id": "second-run-candidate-feedback-reply-sample-qira-v0-1",
+      "reply_id": "feedback-reply-sample-qira-v0-1",
+      "generated_at": "2026-05-30T02:05:47.364268+00:00",
+      "vertical": "qira",
+      "required_artifacts": [
+        "redacted local artifact summary"
+      ],
+      "allowed_operations": [
+        "local_redacted_review",
+        "local_receipt_regeneration",
+        "local_feedback_memory_update"
+      ],
+      "forbidden_operations": [
+        "github_api",
+        "external_posting",
+        "external_repo_mutation",
+        "merge",
+        "deploy",
+        "publish",
+        "live_mcp_call",
+        "upload_data",
+        "train_model"
+      ],
+      "readiness": "HOLD_NEEDS_ARTIFACT",
+      "next_actions": [
+        "run only local redaction and receipt regeneration",
+        "do not send replies, create issues, post comments, call APIs, merge, deploy, publish, upload, or train"
+      ],
+      "execute_now": false,
+      "external_action_authorized": false
+    },
+    {
+      "schema": "ResidualOps_FeedbackReplySecondRunCandidate/v0.1",
+      "second_run_candidate_id": "second-run-candidate-feedback-reply-sample-datacapsule-v0-1",
+      "reply_id": "feedback-reply-sample-datacapsule-v0-1",
+      "generated_at": "2026-05-30T02:05:47.364362+00:00",
+      "vertical": "datacapsule",
+      "required_artifacts": [
+        "redacted local feedback note"
+      ],
+      "allowed_operations": [
+        "local_redacted_review",
+        "local_receipt_regeneration",
+        "local_feedback_memory_update"
+      ],
+      "forbidden_operations": [
+        "github_api",
+        "external_posting",
+        "external_repo_mutation",
+        "merge",
+        "deploy",
+        "publish",
+        "live_mcp_call",
+        "upload_data",
+        "train_model"
+      ],
+      "readiness": "HOLD_NEEDS_ARTIFACT",
+      "next_actions": [
+        "run only local redaction and receipt regeneration",
+        "do not send replies, create issues, post comments, call APIs, merge, deploy, publish, upload, or train"
+      ],
+      "execute_now": false,
+      "external_action_authorized": false
+    },
+    {
+      "schema": "ResidualOps_FeedbackReplySecondRunCandidate/v0.1",
+      "second_run_candidate_id": "second-run-candidate-feedback-reply-sample-portfolio-v0-1",
+      "reply_id": "feedback-reply-sample-portfolio-v0-1",
+      "generated_at": "2026-05-30T02:05:47.364450+00:00",
+      "vertical": "portfolio",
+      "required_artifacts": [
+        "redacted local feedback note"
+      ],
+      "allowed_operations": [
+        "local_redacted_review",
+        "local_receipt_regeneration",
+        "local_feedback_memory_update"
+      ],
+      "forbidden_operations": [
+        "github_api",
+        "external_posting",
+        "external_repo_mutation",
+        "merge",
+        "deploy",
+        "publish",
+        "live_mcp_call",
+        "upload_data",
+        "train_model"
+      ],
+      "readiness": "HOLD_NEEDS_ARTIFACT",
+      "next_actions": [
+        "run only local redaction and receipt regeneration",
+        "do not send replies, create issues, post comments, call APIs, merge, deploy, publish, upload, or train"
+      ],
+      "execute_now": false,
+      "external_action_authorized": false
+    }
+  ],
+  "selected_candidates": [
+    {
+      "schema": "ResidualOps_FeedbackReplySecondRunCandidate/v0.1",
+      "second_run_candidate_id": "second-run-candidate-feedback-reply-sample-agentsec-v0-1",
+      "reply_id": "feedback-reply-sample-agentsec-v0-1",
+      "generated_at": "2026-05-30T02:05:47.364141+00:00",
+      "vertical": "agentsec",
+      "required_artifacts": [
+        "redacted local artifact summary"
+      ],
+      "allowed_operations": [
+        "local_redacted_review",
+        "local_receipt_regeneration",
+        "local_feedback_memory_update"
+      ],
+      "forbidden_operations": [
+        "github_api",
+        "external_posting",
+        "external_repo_mutation",
+        "merge",
+        "deploy",
+        "publish",
+        "live_mcp_call",
+        "upload_data",
+        "train_model"
+      ],
+      "readiness": "READY_FOR_LOCAL_SECOND_RUN",
+      "next_actions": [
+        "run only local redaction and receipt regeneration",
+        "do not send replies, create issues, post comments, call APIs, merge, deploy, publish, upload, or train"
+      ],
+      "execute_now": false,
+      "external_action_authorized": false
+    }
+  ],
+  "skipped_candidates": [
+    {
+      "schema": "ResidualOps_FeedbackReplySecondRunCandidate/v0.1",
+      "second_run_candidate_id": "second-run-candidate-feedback-reply-sample-qira-v0-1",
+      "reply_id": "feedback-reply-sample-qira-v0-1",
+      "generated_at": "2026-05-30T02:05:47.364268+00:00",
+      "vertical": "qira",
+      "required_artifacts": [
+        "redacted local artifact summary"
+      ],
+      "allowed_operations": [
+        "local_redacted_review",
+        "local_receipt_regeneration",
+        "local_feedback_memory_update"
+      ],
+      "forbidden_operations": [
+        "github_api",
+        "external_posting",
+        "external_repo_mutation",
+        "merge",
+        "deploy",
+        "publish",
+        "live_mcp_call",
+        "upload_data",
+        "train_model"
+      ],
+      "readiness": "HOLD_NEEDS_ARTIFACT",
+      "next_actions": [
+        "run only local redaction and receipt regeneration",
+        "do not send replies, create issues, post comments, call APIs, merge, deploy, publish, upload, or train"
+      ],
+      "execute_now": false,
+      "external_action_authorized": false
+    },
+    {
+      "schema": "ResidualOps_FeedbackReplySecondRunCandidate/v0.1",
+      "second_run_candidate_id": "second-run-candidate-feedback-reply-sample-datacapsule-v0-1",
+      "reply_id": "feedback-reply-sample-datacapsule-v0-1",
+      "generated_at": "2026-05-30T02:05:47.364362+00:00",
+      "vertical": "datacapsule",
+      "required_artifacts": [
+        "redacted local feedback note"
+      ],
+      "allowed_operations": [
+        "local_redacted_review",
+        "local_receipt_regeneration",
+        "local_feedback_memory_update"
+      ],
+      "forbidden_operations": [
+        "github_api",
+        "external_posting",
+        "external_repo_mutation",
+        "merge",
+        "deploy",
+        "publish",
+        "live_mcp_call",
+        "upload_data",
+        "train_model"
+      ],
+      "readiness": "HOLD_NEEDS_ARTIFACT",
+      "next_actions": [
+        "run only local redaction and receipt regeneration",
+        "do not send replies, create issues, post comments, call APIs, merge, deploy, publish, upload, or train"
+      ],
+      "execute_now": false,
+      "external_action_authorized": false
+    },
+    {
+      "schema": "ResidualOps_FeedbackReplySecondRunCandidate/v0.1",
+      "second_run_candidate_id": "second-run-candidate-feedback-reply-sample-portfolio-v0-1",
+      "reply_id": "feedback-reply-sample-portfolio-v0-1",
+      "generated_at": "2026-05-30T02:05:47.364450+00:00",
+      "vertical": "portfolio",
+      "required_artifacts": [
+        "redacted local feedback note"
+      ],
+      "allowed_operations": [
+        "local_redacted_review",
+        "local_receipt_regeneration",
+        "local_feedback_memory_update"
+      ],
+      "forbidden_operations": [
+        "github_api",
+        "external_posting",
+        "external_repo_mutation",
+        "merge",
+        "deploy",
+        "publish",
+        "live_mcp_call",
+        "upload_data",
+        "train_model"
+      ],
+      "readiness": "HOLD_NEEDS_ARTIFACT",
+      "next_actions": [
+        "run only local redaction and receipt regeneration",
+        "do not send replies, create issues, post comments, call APIs, merge, deploy, publish, upload, or train"
+      ],
+      "execute_now": false,
+      "external_action_authorized": false
+    }
+  ],
+  "ready_count": 1,
+  "hold_count": 3,
+  "block_count": 0,
+  "selection_rules": [
+    "ready_only",
+    "local_redacted_only",
+    "consent_required",
+    "no_external_action",
+    "no_certification_upgrade"
+  ],
+  "selected_verticals": [
+    "agentsec"
+  ],
+  "skipped_verticals": [
+    "qira",
+    "datacapsule",
+    "portfolio"
+  ],
+  "next_actions": [
+    "execute only READY_FOR_LOCAL_SECOND_RUN candidates",
+    "write skipped reports for HOLD/BLOCK candidates",
+    "request missing local redacted artifacts before retrying HOLD candidates",
+    "do not perform external actions"
+  ]
+}

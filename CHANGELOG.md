@@ -1,5 +1,11 @@
 # Changelog
 
+## ROE-20
+
+- Added a local feedback-to-second-run execution bridge for ROE-19 reply candidates.
+- Added READY-only candidate selection, local AgentSec bridge execution, skipped-candidate reports for HOLD items, bridge trace, receipt, memory update, reviewer readout, redaction report, gate result, schemas, docs, public outputs, and tests.
+- Preserved boundaries: no GitHub API calls, no issue/PR/comment creation, no clone/fetch/crawl, no live MCP/tool calls, no external repo mutation, no posting, no merge/deploy/publish action, no upload/training, no token handling, no unsafe HOLD/BLOCK-to-ALLOW upgrade, no private-kernel exposure, and no certification/proof/product-readiness/action-authorization claim.
+
 ## ROE-19
 
 - Added local/offline feedback reply packet intake for ResidualOps.

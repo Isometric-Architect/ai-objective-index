@@ -1,0 +1,71 @@
+{
+  "schema": "ResidualOps_FeedbackSecondRunMemoryUpdate/v0.1",
+  "memory_update_id": "memory-update-roe20-feedback-second-run-bridge-v0-1",
+  "bridge_id": "roe20-feedback-second-run-bridge-v0-1",
+  "generated_at": "2026-05-30T02:05:47.437058+00:00",
+  "updated_entries": [
+    {
+      "reply_id": "feedback-reply-sample-agentsec-v0-1",
+      "vertical": "agentsec",
+      "prior_status": "second_run_candidate",
+      "new_status": "incorporated",
+      "incorporation_summary": "AgentSec feedback candidate was incorporated as a local-only clarification with no decision upgrade.",
+      "follow_up_actions": [],
+      "fixture_candidate_added": true,
+      "negative_control_candidate_added": false,
+      "claim_boundary_change_needed": false
+    },
+    {
+      "reply_id": "feedback-reply-sample-qira-v0-1",
+      "vertical": "qira",
+      "prior_status": "second_run_candidate",
+      "new_status": "skipped_missing_artifact",
+      "incorporation_summary": "candidate skipped because it is not ready for local second-run execution",
+      "follow_up_actions": [
+        "collect redacted local artifact summary",
+        "rerun feedback reply intake after artifact or consent is available",
+        "do not execute, post, merge, deploy, publish, upload, train, fetch, or call APIs"
+      ],
+      "fixture_candidate_added": false,
+      "negative_control_candidate_added": false,
+      "claim_boundary_change_needed": false
+    },
+    {
+      "reply_id": "feedback-reply-sample-datacapsule-v0-1",
+      "vertical": "datacapsule",
+      "prior_status": "second_run_candidate",
+      "new_status": "skipped_missing_artifact",
+      "incorporation_summary": "candidate skipped because it is not ready for local second-run execution",
+      "follow_up_actions": [
+        "collect redacted local artifact summary",
+        "rerun feedback reply intake after artifact or consent is available",
+        "do not execute, post, merge, deploy, publish, upload, train, fetch, or call APIs"
+      ],
+      "fixture_candidate_added": false,
+      "negative_control_candidate_added": false,
+      "claim_boundary_change_needed": false
+    },
+    {
+      "reply_id": "feedback-reply-sample-portfolio-v0-1",
+      "vertical": "portfolio",
+      "prior_status": "second_run_candidate",
+      "new_status": "skipped_missing_artifact",
+      "incorporation_summary": "candidate skipped because it is not ready for local second-run execution",
+      "follow_up_actions": [
+        "collect redacted local artifact summary",
+        "rerun feedback reply intake after artifact or consent is available",
+        "do not execute, post, merge, deploy, publish, upload, train, fetch, or call APIs"
+      ],
+      "fixture_candidate_added": false,
+      "negative_control_candidate_added": false,
+      "claim_boundary_change_needed": false
+    }
+  ],
+  "portfolio_next_actions": [
+    "request artifacts for HOLD candidates",
+    "run second pass when local redacted artifacts arrive",
+    "keep claim boundaries unchanged",
+    "update dashboard in the next package"
+  ],
+  "external_action_authorized": false
+}

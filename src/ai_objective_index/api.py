@@ -7,6 +7,10 @@ from fastapi.responses import JSONResponse
 
 from .action_boundary import forbidden_actions_v0_1
 from . import mcp_tools
+from .agent_adoption.api_models import AgentDiscoverRequest, AgentPreflightRequest
+from .agent_adoption.capability_card import build_capability_card
+from .agent_adoption.discover_mode import discover_capabilities
+from .agent_adoption.preflight_mode import preflight_capability
 from .api_models import (
     CompareRequest,
     DecisionReceiptRequest,
@@ -151,6 +155,41 @@ def status() -> dict[str, Any]:
             ],
             "blocked_actions": forbidden_actions_v0_1(),
         },
+    }
+
+
+@app.get("/v1/agents/capability-card", response_model=None)
+def get_agent_capability_card() -> dict[str, Any]:
+    return build_capability_card()
+
+
+@app.post("/v1/agents/discover", response_model=None)
+def agent_discover(request: AgentDiscoverRequest) -> dict[str, Any]:
+    return discover_capabilities(request.model_dump(mode="json", by_alias=True))
+
+
+@app.post("/v1/agents/preflight", response_model=None)
+def agent_preflight(request: AgentPreflightRequest) -> dict[str, Any]:
+    payload = request.model_dump(mode="json", by_alias=True)
+    response = preflight_capability(payload)
+    response["intended_use"] = request.intended_use
+    return response
+
+
+@app.get("/v1/agents/adoption/status", response_model=None)
+def agent_adoption_status() -> dict[str, Any]:
+    return {
+        "capability_card_present": True,
+        "discover_mode_available": True,
+        "preflight_mode_available": True,
+        "examples_present": True,
+        "private_kernel_exposed": False,
+        "external_action_authorization": False,
+        "pyPI_upload_performed": False,
+        "mcp_registry_publish_performed": False,
+        "read_only": True,
+        "external_api_used": False,
+        "live_mcp_call_used": False,
     }
 
 

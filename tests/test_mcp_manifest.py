@@ -35,6 +35,11 @@ def test_manifest_lists_all_read_only_tools():
         "get_probe_receipt",
         "get_capability_probe_memory",
         "route_objective_with_probes",
+        "get_aoi_capability_card",
+        "discover_capabilities_for_objective",
+        "preflight_capability_for_use",
+        "explain_aoi_agent_use",
+        "list_aoi_agent_examples",
     }
     assert all(tool["read_only"] is True for tool in manifest["tools"])
 

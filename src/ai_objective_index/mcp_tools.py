@@ -8,6 +8,13 @@ from typing import Any
 from pydantic import BaseModel
 
 from .action_boundary import check_action_boundary, forbidden_actions_v0_1
+from .agent_adoption.mcp_adapters import (
+    discover_capabilities_for_objective as agent_discover_capabilities_for_objective,
+    explain_aoi_agent_use as agent_explain_aoi_agent_use,
+    get_aoi_capability_card as agent_get_aoi_capability_card,
+    list_aoi_agent_examples as agent_list_aoi_agent_examples,
+    preflight_capability_for_use as agent_preflight_capability_for_use,
+)
 from .compare import compare_objects
 from .decision_receipt import generate_decision_receipt as core_generate_decision_receipt
 from .integrated_store import get_store_for_scope
@@ -657,3 +664,51 @@ def route_objective_with_probes(
             run_local_probes=run_local_probes,
         )
     )
+
+
+def get_aoi_capability_card() -> dict[str, Any]:
+    return _assert_jsonable(agent_get_aoi_capability_card())
+
+
+def discover_capabilities_for_objective(
+    objective: str,
+    query: str,
+    data_scope: str = "sample",
+    desired_capability_type: str = "mcp_or_api",
+    freshness_preference: str = "prefer_recent_source_traces_but_keep_hold_candidates_visible",
+) -> dict[str, Any]:
+    return _assert_jsonable(
+        agent_discover_capabilities_for_objective(
+            objective=objective,
+            query=query,
+            data_scope=data_scope,
+            desired_capability_type=desired_capability_type,
+            freshness_preference=freshness_preference,
+        )
+    )
+
+
+def preflight_capability_for_use(
+    candidate_id: str,
+    intended_use: str,
+    available_metadata: dict[str, Any] | None = None,
+    required_permissions: list[str] | None = None,
+    organization_policy_optional: dict[str, Any] | None = None,
+) -> dict[str, Any]:
+    return _assert_jsonable(
+        agent_preflight_capability_for_use(
+            candidate_id=candidate_id,
+            intended_use=intended_use,
+            available_metadata=available_metadata,
+            required_permissions=required_permissions,
+            organization_policy_optional=organization_policy_optional,
+        )
+    )
+
+
+def explain_aoi_agent_use() -> dict[str, Any]:
+    return _assert_jsonable(agent_explain_aoi_agent_use())
+
+
+def list_aoi_agent_examples() -> dict[str, Any]:
+    return _assert_jsonable(agent_list_aoi_agent_examples())

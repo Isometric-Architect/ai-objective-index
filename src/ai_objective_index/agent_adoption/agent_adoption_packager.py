@@ -17,6 +17,8 @@ from .residualops_extension_map import build_residualops_extension_map, extensio
 PACK_RESULT_PATH = Path("public_launch") / "aoi_agent_adoption" / "AOI_AGENT_DISCOVERY_PACK_RESULT.json"
 SUMMARY_PATH = Path("public_launch") / "aoi_agent_adoption" / "AOI_AGENT_ADOPTION_SUMMARY.md"
 NEXT_ACTIONS_PATH = Path("public_launch") / "aoi_agent_adoption" / "AOI_AGENT_ADOPTION_NEXT_ACTIONS.md"
+CAPABILITY_CARD_RESPONSE_PATH = Path("api") / "vnext" / "examples" / "agent" / "capability_card_response.json"
+ADOPTION_STATUS_RESPONSE_PATH = Path("api") / "vnext" / "examples" / "agent" / "adoption_status_response.json"
 
 
 def _schema(title: str, required: list[str], properties: dict[str, Any] | None = None) -> dict[str, Any]:
@@ -112,12 +114,47 @@ Before upload or registry publish, keep the 0.3.0a2 marker sync intact, rerun lo
     )
 
 
+def adoption_status_response() -> dict[str, Any]:
+    return {
+        "capability_card_present": True,
+        "discover_mode_available": True,
+        "preflight_mode_available": True,
+        "examples_present": True,
+        "private_kernel_exposed": False,
+        "external_action_authorization": False,
+        "pyPI_upload_performed": False,
+        "mcp_registry_publish_performed": False,
+        "read_only": True,
+        "external_api_used": False,
+        "live_mcp_call_used": False,
+    }
+
+
+def write_agent_surface_examples(card: dict[str, Any]) -> dict[str, Any]:
+    capability_response = {
+        "endpoint": "GET /v1/agents/capability-card",
+        "read_only": True,
+        "external_api_used": False,
+        "live_mcp_call_used": False,
+        "action_authorization": False,
+        "capability_card": card,
+    }
+    status_response = adoption_status_response()
+    write_json(CAPABILITY_CARD_RESPONSE_PATH, capability_response)
+    write_json(ADOPTION_STATUS_RESPONSE_PATH, status_response)
+    return {
+        "capability_card_response": str(CAPABILITY_CARD_RESPONSE_PATH).replace("\\", "/"),
+        "adoption_status_response": str(ADOPTION_STATUS_RESPONSE_PATH).replace("\\", "/"),
+    }
+
+
 def package_agent_adoption(write_result: bool = True) -> dict[str, Any]:
     card = write_capability_card()
     discover = write_sample_discover_examples()
     preflight = write_sample_preflight_examples()
     contract = write_output_contract_examples()
     example_counts = write_example_artifacts()
+    surface_examples = write_agent_surface_examples(card)
     extension_map = write_extension_map_artifacts()
     schemas = write_schemas()
     write_json(Path("agent_discovery") / "AGENT_OUTPUT_SCHEMA_EXAMPLES.json", contract)
@@ -147,8 +184,9 @@ Claim boundary remains visible throughout: candidate is not verified, metadata i
         "output_contract_required_keys": contract["required_output_keys"],
         "residualops_routes": list(extension_map["routes"].keys()),
         "schema_files": schemas,
+        "surface_example_files": surface_examples,
         "markdown_artifacts_written": example_counts["markdown_count"],
-        "json_artifacts_written": example_counts["json_count"],
+        "json_artifacts_written": example_counts["json_count"] + len(surface_examples),
         "audit_decision": audit["decision"],
         "private_kernel_exposed": False,
         "external_api_used": False,
@@ -172,4 +210,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

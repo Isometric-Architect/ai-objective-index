@@ -1,0 +1,16 @@
+{
+  "schema": "AOI_AgentRestSurfaceResult/v0.1",
+  "generated_at": "2026-05-30T08:04:58.934547+00:00",
+  "decision": "PASS_REST_AGENT_SURFACE_READY",
+  "paths": [
+    "/v1/agents/capability-card",
+    "/v1/agents/discover",
+    "/v1/agents/preflight",
+    "/v1/agents/adoption/status"
+  ],
+  "missing_paths": [],
+  "read_only": true,
+  "external_api_used": false,
+  "live_mcp_call_used": false,
+  "action_authorization": false
+}

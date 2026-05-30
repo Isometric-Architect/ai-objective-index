@@ -6,6 +6,12 @@ AOI-AGENT-ADOPTION-1 improves the unpublished `0.3.0a2` recovery package for ord
 
 The pack positions AOI as AI-native capability discovery plus pre-use trust routing: discover useful source-traced candidates first, preflight permission and claim boundaries second, and keep claim boundaries always visible. It does not upload to PyPI, publish to MCP Registry, call external APIs, call GitHub APIs, run live MCP/tool calls, handle tokens, expose private kernels, certify security, prove correctness, prove legal/privacy/license/compliance status, guarantee quality, claim product readiness, or authorize external actions.
 
+## AOI Agent REST/MCP Surface Wiring
+
+AOI-AGENT-ADOPTION-2 wires the unpublished `0.3.0a2` agent-native pack into local read-only REST and MCP surfaces. REST adds capability-card, discover, preflight, and adoption-status endpoints. MCP adds capability-card, discover, preflight, explanation, and example-list tools. It also audits package-data inclusion so the local wheel carries agent discovery artifacts, agent schemas, prompt examples, and API examples.
+
+This package regenerates local OpenAPI/MCP manifests and rebuilds locally only. It does not upload to PyPI, publish to MCP Registry, call external APIs, call GitHub APIs, run live MCP/tool calls, handle tokens, expose private kernels, certify security, prove correctness, prove legal/privacy/license/compliance status, guarantee quality, claim product readiness, or authorize external actions.
+
 ## AOI 0.3.0a2 PyPI Marker Sync and MCP Registry Recovery
 
 AOI 0.3.0a2 is the marker-sync recovery path for MCP Registry submission after the 0.3.0a1 package was published and install-verified but still failed Registry submission. The recovery updates package and server metadata to `0.3.0a2`, preserves the canonical `mcp-name: io.github.Isometric-Architect/ai-objective-index` marker, rebuilds local wheel/sdist artifacts, runs `twine check`, and gates real PyPI upload and MCP Registry publish behind explicit local confirmation variables. It does not overwrite or yank 0.3.0a1, store tokens, commit `.pypirc`, commit `mcp-publisher`, post to communities, claim security certification, prove correctness, guarantee quality, claim product readiness, or authorize external actions.

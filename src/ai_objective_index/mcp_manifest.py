@@ -495,6 +495,111 @@ def get_mcp_tool_manifest() -> dict[str, Any]:
                 }
             ),
         },
+        {
+            "name": "get_aoi_capability_card",
+            "description": "Return the AOI agent capability card. Read-only, local, and not a certification or action authorization.",
+            "read_only": True,
+            "input_schema": _schema({}),
+            "output_schema": _schema(
+                {
+                    "capability_card": {"type": "object"},
+                    "read_only": {"const": True},
+                    "external_api_used": {"const": False},
+                    "live_mcp_call_used": {"const": False},
+                    "action_authorization": {"const": False},
+                }
+            ),
+        },
+        {
+            "name": "discover_capabilities_for_objective",
+            "description": "Discover source-traced MCP/tool/API candidates for an objective, including HOLD candidates with missing fields and next actions.",
+            "read_only": True,
+            "input_schema": _schema(
+                {
+                    "objective": text,
+                    "query": text,
+                    "data_scope": data_scope,
+                    "desired_capability_type": {"type": "string", "default": "mcp_or_api"},
+                    "freshness_preference": {
+                        "type": "string",
+                        "default": "prefer_recent_source_traces_but_keep_hold_candidates_visible",
+                    },
+                },
+                ["objective", "query"],
+            ),
+            "output_schema": _schema(
+                {
+                    "top_candidates": {"type": "array"},
+                    "best_current_candidate": {"type": "object"},
+                    "missing_fields": {"type": "array"},
+                    "next_action": text,
+                    "must_not_claim": {"type": "array"},
+                    "residualops_escalation": {"type": "object"},
+                    "read_only": {"const": True},
+                    "external_api_used": {"const": False},
+                    "action_authorization": {"const": False},
+                }
+            ),
+        },
+        {
+            "name": "preflight_capability_for_use",
+            "description": "Preflight a candidate before recommendation or use. Blocks external action and overclaim requests.",
+            "read_only": True,
+            "input_schema": _schema(
+                {
+                    "candidate_id": text,
+                    "intended_use": text,
+                    "available_metadata": {"type": "object", "additionalProperties": True},
+                    "required_permissions": {"type": "array", "items": text},
+                    "organization_policy_optional": {"type": "object", "additionalProperties": True},
+                },
+                ["candidate_id", "intended_use"],
+            ),
+            "output_schema": _schema(
+                {
+                    "route_decision": text,
+                    "reason": text,
+                    "missing_fields": {"type": "array"},
+                    "allowed_next_steps": {"type": "array"},
+                    "forbidden_next_steps": {"type": "array"},
+                    "must_not_claim": {"type": "array"},
+                    "claim_ceiling": {"type": "array"},
+                    "read_only": {"const": True},
+                    "external_api_used": {"const": False},
+                    "action_authorization": {"const": False},
+                }
+            ),
+        },
+        {
+            "name": "explain_aoi_agent_use",
+            "description": "Explain AOI's ordinary-agent use pattern, when-to-use, when-not-to-use, and claim ceiling.",
+            "read_only": True,
+            "input_schema": _schema({}),
+            "output_schema": _schema(
+                {
+                    "when_to_use": text,
+                    "when_not_to_use": text,
+                    "core_workflow": text,
+                    "must_not_claim": {"type": "array"},
+                    "read_only": {"const": True},
+                    "external_action_authorization": {"const": False},
+                }
+            ),
+        },
+        {
+            "name": "list_aoi_agent_examples",
+            "description": "List local AOI agent discovery/preflight examples and prompt artifacts.",
+            "read_only": True,
+            "input_schema": _schema({}),
+            "output_schema": _schema(
+                {
+                    "examples": {"type": "array"},
+                    "read_only": {"const": True},
+                    "external_api_used": {"const": False},
+                    "action_authorization": {"const": False},
+                }
+            ),
+        },
     ]
 
     return {

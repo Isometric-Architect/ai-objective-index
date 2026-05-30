@@ -1,0 +1,13 @@
+{
+  "capability_card_present": true,
+  "discover_mode_available": true,
+  "preflight_mode_available": true,
+  "examples_present": true,
+  "private_kernel_exposed": false,
+  "external_action_authorization": false,
+  "pyPI_upload_performed": false,
+  "mcp_registry_publish_performed": false,
+  "read_only": true,
+  "external_api_used": false,
+  "live_mcp_call_used": false
+}

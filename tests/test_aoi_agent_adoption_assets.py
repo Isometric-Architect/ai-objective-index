@@ -47,6 +47,7 @@ def test_agent_openapi_examples_are_examples_only():
     package_agent_adoption()
     text = (repo_root() / "agent_discovery" / "OPENAPI_AGENT_EXAMPLES.md").read_text(encoding="utf-8")
 
-    assert "Endpoint wiring is intentionally held" in text
+    assert "AOI-AGENT-ADOPTION-2 wires the read-only local REST shapes" in text
     assert (repo_root() / Path("api/vnext/examples/agent/preflight_response.json")).exists()
-
+    assert (repo_root() / Path("api/vnext/examples/agent/capability_card_response.json")).exists()
+    assert (repo_root() / Path("api/vnext/examples/agent/adoption_status_response.json")).exists()

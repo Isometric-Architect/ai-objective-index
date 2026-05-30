@@ -17,4 +17,7 @@ def test_export_openapi_writes_api_openapi_json():
     assert "/objects/{object_id}" in paths
     assert "/compare" in paths
     assert "/decision-receipt" in paths
-
+    assert "/v1/agents/capability-card" in paths
+    assert "/v1/agents/discover" in paths
+    assert "/v1/agents/preflight" in paths
+    assert "/v1/agents/adoption/status" in paths

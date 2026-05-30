@@ -51,7 +51,7 @@ Use AOI preflight before recommending or using this candidate. Treat tool availa
 
 This package provides request and response examples under `api/vnext/examples/agent/`.
 
-Endpoint wiring is intentionally held for a later package. The examples define the desired read-only REST shapes without adding live callable behavior before AOI 0.3.0a2 publication.
+AOI-AGENT-ADOPTION-2 wires the read-only local REST shapes for capability-card, discover, preflight, and adoption status. These endpoints reuse deterministic local helpers and do not add live network calls, external action execution, PyPI upload, MCP Registry publish, certification claims, product-readiness claims, or action authorization.
 """,
         Path("agent_discovery") / "AGENT_CLAIM_BOUNDARY.md": """# AOI Agent Claim Boundary
 
@@ -152,4 +152,3 @@ def write_example_artifacts() -> dict[str, Any]:
     for path, payload in json_artifacts().items():
         write_json(path, payload)
     return {"markdown_count": len(markdown_artifacts()), "json_count": len(json_artifacts())}
-

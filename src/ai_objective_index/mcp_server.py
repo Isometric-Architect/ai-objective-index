@@ -175,6 +175,55 @@ def _build_fastmcp_server() -> Any:
             constraints=constraints,
         )
 
+    @server.tool()
+    def get_aoi_capability_card() -> dict[str, Any]:
+        """Return the AOI agent capability card; read-only and local."""
+        return mcp_tools.get_aoi_capability_card()
+
+    @server.tool()
+    def discover_capabilities_for_objective(
+        objective: str,
+        query: str,
+        data_scope: str = "sample",
+        desired_capability_type: str = "mcp_or_api",
+        freshness_preference: str = "prefer_recent_source_traces_but_keep_hold_candidates_visible",
+    ) -> dict[str, Any]:
+        """Discover source-traced candidates with missing fields and next actions."""
+        return mcp_tools.discover_capabilities_for_objective(
+            objective=objective,
+            query=query,
+            data_scope=data_scope,
+            desired_capability_type=desired_capability_type,
+            freshness_preference=freshness_preference,
+        )
+
+    @server.tool()
+    def preflight_capability_for_use(
+        candidate_id: str,
+        intended_use: str,
+        available_metadata: dict[str, Any] | None = None,
+        required_permissions: list[str] | None = None,
+        organization_policy_optional: dict[str, Any] | None = None,
+    ) -> dict[str, Any]:
+        """Preflight one candidate before recommendation or use."""
+        return mcp_tools.preflight_capability_for_use(
+            candidate_id=candidate_id,
+            intended_use=intended_use,
+            available_metadata=available_metadata,
+            required_permissions=required_permissions,
+            organization_policy_optional=organization_policy_optional,
+        )
+
+    @server.tool()
+    def explain_aoi_agent_use() -> dict[str, Any]:
+        """Explain when ordinary agents should and should not use AOI."""
+        return mcp_tools.explain_aoi_agent_use()
+
+    @server.tool()
+    def list_aoi_agent_examples() -> dict[str, Any]:
+        """List local AOI agent examples and prompts."""
+        return mcp_tools.list_aoi_agent_examples()
+
     return server
 
 

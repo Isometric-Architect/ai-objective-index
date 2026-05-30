@@ -1,0 +1,97 @@
+{
+  "endpoint": "GET /v1/agents/capability-card",
+  "read_only": true,
+  "external_api_used": false,
+  "live_mcp_call_used": false,
+  "action_authorization": false,
+  "capability_card": {
+    "schema": "AOI_CapabilityCard/v0.1",
+    "name": "AI Objective Index",
+    "package": "ai-objective-index",
+    "version": "0.3.0a2",
+    "mcp_name": "io.github.Isometric-Architect/ai-objective-index",
+    "type": "objective_to_capability_discovery_and_preuse_trust_router",
+    "primary_users": [
+      "ordinary_ai_agent",
+      "ai_app_builder",
+      "mcp_client",
+      "developer",
+      "enterprise_governance_operator"
+    ],
+    "best_for": [
+      "finding source-traced MCP/tool/API candidates for a specific objective",
+      "returning useful top candidates with missing fields",
+      "adding conservative pre-use route decisions",
+      "explaining HOLD/BLOCK reasons",
+      "producing must-not-claim boundaries",
+      "escalating to ResidualOps gates when enterprise use is needed"
+    ],
+    "not_for": [
+      "security certification",
+      "provider verification",
+      "automatic tool execution",
+      "purchase recommendation",
+      "legal/compliance/privacy/license clearance",
+      "production readiness proof",
+      "external action authorization"
+    ],
+    "modes": [
+      "discover",
+      "preflight"
+    ],
+    "discover_inputs": [
+      "objective",
+      "query",
+      "data_scope",
+      "desired_capability_type",
+      "freshness_preference"
+    ],
+    "discover_outputs": [
+      "top_candidates",
+      "best_current_candidate",
+      "source_traces",
+      "missing_fields",
+      "preliminary_route_decision",
+      "next_action"
+    ],
+    "preflight_inputs": [
+      "candidate_id",
+      "intended_use",
+      "available_metadata",
+      "required_permissions",
+      "organization_policy_optional"
+    ],
+    "preflight_outputs": [
+      "route_decision",
+      "reason",
+      "missing_fields",
+      "must_not_claim",
+      "residualops_escalation",
+      "next_action"
+    ],
+    "residualops_escalation": {
+      "tool_manifest_risk": "AgentSec",
+      "code_or_release_risk": "QIRA",
+      "data_or_use_boundary_risk": "DataCapsule",
+      "enterprise_receipt_tracking": "ResidualOps dashboard"
+    },
+    "claim_boundary": [
+      "candidate != verified",
+      "metadata != proof",
+      "tool_available != tool_authorized",
+      "source_trace != security_certification",
+      "route_decision != action_authorization"
+    ],
+    "private_kernel_not_disclosed": [
+      "ranking weights",
+      "thresholds",
+      "anti-gaming rules",
+      "provider priors",
+      "private negative controls",
+      "private probe seeds",
+      "commercial routing policy",
+      "real feedback memory",
+      "customer-specific data"
+    ]
+  }
+}

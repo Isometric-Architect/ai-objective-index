@@ -22,16 +22,18 @@ This writes `api/openapi.json`.
 
 ## Endpoints
 
-## Agent Examples
+## Agent REST Surface
 
-AOI-AGENT-ADOPTION-1 adds read-only request/response examples for future agent-native REST surfaces:
+AOI-AGENT-ADOPTION-2 adds local read-only REST endpoints for ordinary agent discovery and preflight:
 
 - `GET /v1/agents/capability-card`
 - `POST /v1/agents/discover`
 - `POST /v1/agents/preflight`
 - `GET /v1/agents/adoption/status`
 
-Endpoint wiring is held for a later package. The examples under `api/vnext/examples/agent/` define the desired shapes without adding live callable behavior before AOI 0.3.0a2 publication.
+These endpoints reuse deterministic local helpers and examples under `api/vnext/examples/agent/`. Discover returns useful source-traced candidates, including HOLD candidates with next actions. Preflight separates tool availability from tool authorization and blocks external action, certification, and product-readiness requests.
+
+The agent REST surface does not call external APIs, run live MCP/tool calls, fetch URLs, mutate repositories, upload data, train models, handle tokens, certify security, prove correctness, guarantee quality, claim product readiness, or authorize external action.
 
 ### GET /status
 

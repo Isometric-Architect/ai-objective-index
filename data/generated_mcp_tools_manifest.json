@@ -1259,6 +1259,254 @@
           }
         }
       }
+    },
+    {
+      "name": "get_aoi_capability_card",
+      "description": "Return the AOI agent capability card. Read-only, local, and not a certification or action authorization.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {}
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "capability_card": {
+            "type": "object"
+          },
+          "read_only": {
+            "const": true
+          },
+          "external_api_used": {
+            "const": false
+          },
+          "live_mcp_call_used": {
+            "const": false
+          },
+          "action_authorization": {
+            "const": false
+          }
+        }
+      }
+    },
+    {
+      "name": "discover_capabilities_for_objective",
+      "description": "Discover source-traced MCP/tool/API candidates for an objective, including HOLD candidates with missing fields and next actions.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "objective",
+          "query"
+        ],
+        "properties": {
+          "objective": {
+            "type": "string"
+          },
+          "query": {
+            "type": "string"
+          },
+          "data_scope": {
+            "type": "string",
+            "enum": [
+              "sample",
+              "generated",
+              "integrated",
+              "curated",
+              "public_beta",
+              "mcp_registry",
+              "public_beta_mcp"
+            ],
+            "default": "sample",
+            "description": "Local AOI data scope. Default remains sample."
+          },
+          "desired_capability_type": {
+            "type": "string",
+            "default": "mcp_or_api"
+          },
+          "freshness_preference": {
+            "type": "string",
+            "default": "prefer_recent_source_traces_but_keep_hold_candidates_visible"
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "top_candidates": {
+            "type": "array"
+          },
+          "best_current_candidate": {
+            "type": "object"
+          },
+          "missing_fields": {
+            "type": "array"
+          },
+          "next_action": {
+            "type": "string"
+          },
+          "must_not_claim": {
+            "type": "array"
+          },
+          "residualops_escalation": {
+            "type": "object"
+          },
+          "read_only": {
+            "const": true
+          },
+          "external_api_used": {
+            "const": false
+          },
+          "action_authorization": {
+            "const": false
+          }
+        }
+      }
+    },
+    {
+      "name": "preflight_capability_for_use",
+      "description": "Preflight a candidate before recommendation or use. Blocks external action and overclaim requests.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "candidate_id",
+          "intended_use"
+        ],
+        "properties": {
+          "candidate_id": {
+            "type": "string"
+          },
+          "intended_use": {
+            "type": "string"
+          },
+          "available_metadata": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "required_permissions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "organization_policy_optional": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "route_decision": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "missing_fields": {
+            "type": "array"
+          },
+          "allowed_next_steps": {
+            "type": "array"
+          },
+          "forbidden_next_steps": {
+            "type": "array"
+          },
+          "must_not_claim": {
+            "type": "array"
+          },
+          "claim_ceiling": {
+            "type": "array"
+          },
+          "read_only": {
+            "const": true
+          },
+          "external_api_used": {
+            "const": false
+          },
+          "action_authorization": {
+            "const": false
+          }
+        }
+      }
+    },
+    {
+      "name": "explain_aoi_agent_use",
+      "description": "Explain AOI's ordinary-agent use pattern, when-to-use, when-not-to-use, and claim ceiling.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {}
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "when_to_use": {
+            "type": "string"
+          },
+          "when_not_to_use": {
+            "type": "string"
+          },
+          "core_workflow": {
+            "type": "string"
+          },
+          "must_not_claim": {
+            "type": "array"
+          },
+          "read_only": {
+            "const": true
+          },
+          "external_action_authorization": {
+            "const": false
+          }
+        }
+      }
+    },
+    {
+      "name": "list_aoi_agent_examples",
+      "description": "List local AOI agent discovery/preflight examples and prompt artifacts.",
+      "read_only": true,
+      "input_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {}
+      },
+      "output_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [],
+        "properties": {
+          "examples": {
+            "type": "array"
+          },
+          "read_only": {
+            "const": true
+          },
+          "external_api_used": {
+            "const": false
+          },
+          "action_authorization": {
+            "const": false
+          }
+        }
+      }
     }
   ],
   "forbidden_actions": [

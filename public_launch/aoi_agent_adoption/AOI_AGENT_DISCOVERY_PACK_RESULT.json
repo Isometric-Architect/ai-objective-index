@@ -1,6 +1,6 @@
 {
   "schema": "AOI_AgentDiscoveryPackResult/v0.1",
-  "generated_at": "2026-05-30T07:28:11.800801+00:00",
+  "generated_at": "2026-05-30T08:03:43.015170+00:00",
   "decision": "PASS_AGENT_DISCOVERY_PACK_GENERATED",
   "version": "0.3.0a2",
   "capability_card": {
@@ -41,8 +41,12 @@
     "schemas/agent/aoi_agent_output_contract.schema.json",
     "schemas/agent/residualops_extension_map.schema.json"
   ],
+  "surface_example_files": {
+    "capability_card_response": "api/vnext/examples/agent/capability_card_response.json",
+    "adoption_status_response": "api/vnext/examples/agent/adoption_status_response.json"
+  },
   "markdown_artifacts_written": 21,
-  "json_artifacts_written": 1,
+  "json_artifacts_written": 3,
   "audit_decision": "PASS_AGENT_NATIVE_DISCOVERY_READY",
   "private_kernel_exposed": false,
   "external_api_used": false,

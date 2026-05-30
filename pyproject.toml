@@ -29,6 +29,12 @@ ai-objective-index-mcp-smoke = "ai_objective_index.mcp_smoke:main"
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[tool.setuptools.data-files]
+"share/ai-objective-index/agent_discovery" = ["agent_discovery/*"]
+"share/ai-objective-index/schemas/agent" = ["schemas/agent/*.json"]
+"share/ai-objective-index/examples/agent_prompts" = ["examples/agent_prompts/*.md"]
+"share/ai-objective-index/api/vnext/examples/agent" = ["api/vnext/examples/agent/*.json"]
+
 [tool.pytest.ini_options]
 pythonpath = ["src"]
 testpaths = ["tests"]

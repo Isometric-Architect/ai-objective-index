@@ -1,0 +1,18 @@
+{
+  "schema": "AOI_AgentMcpSurfaceResult/v0.1",
+  "generated_at": "2026-05-30T08:04:58.934547+00:00",
+  "decision": "PASS_MCP_AGENT_SURFACE_READY",
+  "tools": [
+    "get_aoi_capability_card",
+    "discover_capabilities_for_objective",
+    "preflight_capability_for_use",
+    "explain_aoi_agent_use",
+    "list_aoi_agent_examples"
+  ],
+  "missing_tools": [],
+  "non_read_only_tools": [],
+  "read_only": true,
+  "external_api_used": false,
+  "live_mcp_call_used": false,
+  "action_authorization": false
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "AOI_AgentSurfaceAudit/v0.1",
+  "generated_at": "2026-05-30T08:04:58.934547+00:00",
+  "decision": "PASS_AGENT_SURFACES_READY_FOR_030A2_UPLOAD",
+  "rest_paths_expected": [
+    "/v1/agents/capability-card",
+    "/v1/agents/discover",
+    "/v1/agents/preflight",
+    "/v1/agents/adoption/status"
+  ],
+  "missing_rest_paths": [],
+  "mcp_tools_expected": [
+    "get_aoi_capability_card",
+    "discover_capabilities_for_objective",
+    "preflight_capability_for_use",
+    "explain_aoi_agent_use",
+    "list_aoi_agent_examples"
+  ],
+  "missing_mcp_tools": [],
+  "non_read_only_mcp_tools": [],
+  "openapi_regenerated": true,
+  "mcp_manifest_regenerated": true,
+  "capability_card_valid": true,
+  "claim_boundary_visible": true,
+  "overclaim_findings": [],
+  "private_kernel_findings": [],
+  "external_action_authorization": false,
+  "external_api_used": false,
+  "live_mcp_call_used": false,
+  "pypi_upload_performed": false,
+  "mcp_registry_publish_performed": false
+}

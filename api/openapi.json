@@ -782,6 +782,110 @@
         }
       }
     },
+    "/v1/agents/capability-card": {
+      "get": {
+        "summary": "Get Agent Capability Card",
+        "operationId": "get_agent_capability_card_v1_agents_capability_card_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/agents/discover": {
+      "post": {
+        "summary": "Agent Discover",
+        "operationId": "agent_discover_v1_agents_discover_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AgentDiscoverRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/agents/preflight": {
+      "post": {
+        "summary": "Agent Preflight",
+        "operationId": "agent_preflight_v1_agents_preflight_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AgentPreflightRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/agents/adoption/status": {
+      "get": {
+        "summary": "Agent Adoption Status",
+        "operationId": "agent_adoption_status_v1_agents_adoption_status_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
     "/search": {
       "get": {
         "summary": "Search",
@@ -1203,6 +1307,84 @@
   },
   "components": {
     "schemas": {
+      "AgentDiscoverRequest": {
+        "properties": {
+          "schema": {
+            "type": "string",
+            "title": "Schema",
+            "default": "AOI_AgentDiscoverRequest/v0.1"
+          },
+          "objective": {
+            "type": "string",
+            "title": "Objective"
+          },
+          "query": {
+            "type": "string",
+            "title": "Query"
+          },
+          "data_scope": {
+            "type": "string",
+            "title": "Data Scope",
+            "default": "sample"
+          },
+          "desired_capability_type": {
+            "type": "string",
+            "title": "Desired Capability Type",
+            "default": "mcp_or_api"
+          },
+          "freshness_preference": {
+            "type": "string",
+            "title": "Freshness Preference",
+            "default": "prefer_recent_source_traces_but_keep_hold_candidates_visible"
+          }
+        },
+        "type": "object",
+        "required": [
+          "objective",
+          "query"
+        ],
+        "title": "AgentDiscoverRequest"
+      },
+      "AgentPreflightRequest": {
+        "properties": {
+          "schema": {
+            "type": "string",
+            "title": "Schema",
+            "default": "AOI_AgentPreflightRequest/v0.1"
+          },
+          "candidate_id": {
+            "type": "string",
+            "title": "Candidate Id"
+          },
+          "intended_use": {
+            "type": "string",
+            "title": "Intended Use"
+          },
+          "available_metadata": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Available Metadata"
+          },
+          "required_permissions": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Required Permissions"
+          },
+          "organization_policy_optional": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Organization Policy Optional"
+          }
+        },
+        "type": "object",
+        "required": [
+          "candidate_id",
+          "intended_use"
+        ],
+        "title": "AgentPreflightRequest"
+      },
       "CompareRequest": {
         "properties": {
           "object_ids": {

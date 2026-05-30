@@ -7,6 +7,8 @@
 - Added gated build/twine, PyPI upload/verify, MCP Registry validate/publish/reconcile helpers, recovery docs, public recovery outputs, and tests. Upload and registry publish remain explicit-confirmation actions and do not store or print tokens.
 - Added AOI-AGENT-ADOPTION-1: an agent-native discovery and preflight pack for ordinary AI agents.
 - Added machine-readable capability card, discover/preflight schemas and examples, agent prompt examples, ordinary-agent failure modes, freshness/staleness policy, ResidualOps extension map, claim-boundary docs, private-kernel non-disclosure docs, adoption audit, public outputs, and tests.
+- Added AOI-AGENT-ADOPTION-2: local read-only REST and MCP surfaces for capability-card, discover, preflight, explanation, and agent example access.
+- Regenerated OpenAPI and MCP manifest surfaces, added REST/MCP/package-data/surface audits, package-data inclusion for agent artifacts in the local wheel, surface docs, examples, public outputs, and tests.
 - Preserved boundaries: no PyPI upload, no MCP Registry publish, no live MCP/tool calls, no external APIs, no GitHub APIs, no token handling, no dist or publisher binary commit, no private-kernel disclosure, and no certification/proof/product-readiness/action-authorization claim.
 
 ## ROE-22

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/residualops/pilot_discovery_persona.schema.json",
+  "title": "ResidualOps Pilot Discovery Persona",
+  "type": "object",
+  "required": ["schema", "persona_id", "label", "likely_interest", "suggested_vertical", "manual_only"],
+  "properties": {
+    "schema": { "const": "ResidualOps_PilotDiscoveryPersona/v0.1" },
+    "persona_id": { "type": "string" },
+    "label": { "type": "string" },
+    "likely_interest": {
+      "enum": ["agent_security", "ai_code_review", "data_governance", "founder_operator", "researcher", "developer_tools", "ai_safety_governance", "unknown"]
+    },
+    "suggested_vertical": { "enum": ["agentsec", "qira", "datacapsule", "portfolio"] },
+    "what_to_show": { "type": "string" },
+    "what_to_ask": { "type": "string" },
+    "must_not_claim": { "type": "array", "items": { "type": "string" } },
+    "manual_only": { "const": true }
+  },
+  "additionalProperties": true
+}

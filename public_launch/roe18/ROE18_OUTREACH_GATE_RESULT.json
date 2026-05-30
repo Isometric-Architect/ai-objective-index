@@ -1,0 +1,23 @@
+{
+  "schema": "ResidualOps_ROE18OutreachGate/v0.1",
+  "generated_at": "2026-05-30T00:53:28.398067+00:00",
+  "decision": "PASS_MANUAL_OUTREACH_DRAFTS_READY",
+  "persona_count": 7,
+  "draft_count": 6,
+  "triage_category_count": 14,
+  "missing_artifacts": [],
+  "redaction_decision": "PASS_REDACTED",
+  "redaction_findings": 0,
+  "claim_audit_decision": "PASS_OUTREACH_CLAIM_BOUNDARY_CLEAN",
+  "claim_audit_findings": 0,
+  "auto_send_performed": false,
+  "external_api_used": false,
+  "external_actions_performed": false,
+  "token_printed": false,
+  "private_kernel_exposed": false,
+  "can_certify_security": false,
+  "can_prove_code_correctness": false,
+  "can_provide_legal_privacy_license_eval_proof": false,
+  "can_claim_product_readiness": false,
+  "can_authorize_external_action": false
+}

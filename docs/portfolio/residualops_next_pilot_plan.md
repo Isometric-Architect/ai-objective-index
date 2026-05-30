@@ -29,6 +29,8 @@ ROE-16 status: static/local pilot dashboard artifact pack added.
 
 ROE-17 status: external-safe static demo/share pack added.
 
-Recommended next package: ROE-18 Pilot Discovery / Feedback Intake Outreach Drafts.
+ROE-18 status: manual-only pilot discovery and feedback intake outreach drafts added.
+
+Recommended next package: ROE-19 Feedback Reply Packet Intake.
 
 Secondary backlog: AOI 0.3.0a2 MCP Registry recovery if namespace/version recovery remains useful.

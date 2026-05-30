@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/residualops/pilot_outreach_draft.schema.json",
+  "title": "ResidualOps Pilot Outreach Draft",
+  "type": "object",
+  "required": ["schema", "draft_id", "target_persona", "channel", "title", "body", "manual_post_required", "auto_send_performed", "external_api_used"],
+  "properties": {
+    "schema": { "const": "ResidualOps_PilotOutreachDraft/v0.1" },
+    "draft_id": { "type": "string" },
+    "target_persona": { "type": "string" },
+    "channel": {
+      "enum": ["manual_email", "manual_dm", "manual_github_issue", "manual_discussion", "manual_community_post", "internal_note", "unknown"]
+    },
+    "title": { "type": "string" },
+    "body": { "type": "string" },
+    "links_to_include": { "type": "array", "items": { "type": "string" } },
+    "ask": { "type": "string" },
+    "claim_boundary": { "type": "object" },
+    "must_not_claim": { "type": "array", "items": { "type": "string" } },
+    "manual_post_required": { "const": true },
+    "auto_send_performed": { "const": false },
+    "external_api_used": { "const": false }
+  },
+  "additionalProperties": true
+}

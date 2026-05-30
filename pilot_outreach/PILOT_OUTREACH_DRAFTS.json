@@ -1,0 +1,250 @@
+{
+  "schema": "ResidualOps_PilotOutreachDraftIndex/v0.1",
+  "generated_at": "2026-05-30T00:53:28.332555+00:00",
+  "draft_count": 6,
+  "drafts": [
+    {
+      "schema": "ResidualOps_PilotOutreachDraft/v0.1",
+      "draft_id": "general",
+      "target_persona": "portfolio",
+      "channel": "manual_email",
+      "title": "Feedback request: ResidualOps portfolio review",
+      "body": "Hi,\n\nI'm looking for feedback on a static local demo/share pack for ResidualOps, especially the portfolio part.\n\nWhat it shows:\n- three ResidualOps verticals and the external-safe dashboard\n- local/offline receipt artifacts;\n- ALLOW/HOLD/BLOCK findings;\n- known limits and claim boundaries.\n\nWhat it is not:\n- not a product-ready system;\n- not security certification;\n- not code correctness proof;\n- not legal, privacy, license, or eval-clean proof;\n- not a quality guarantee;\n- no external action automation.\n\nWhat I would value:\n- tell me whether the workflow is understandable and where the claims feel too strong\n- unclear claims;\n- bad UX in the dashboard or operator script;\n- missing evidence;\n- wrong HOLD/BLOCK wording.\n\nPlease do not send tokens, credentials, raw PII, private datasets, private keys, or private kernel details. If you want to provide an artifact for a future pilot, the next step should be a separate owner-consented local/offline intake.\n",
+      "links_to_include": [
+        "pilot_outreach/PILOT_LINK_PACK.md",
+        "external_share_pack/README_EXTERNAL_SAFE_DEMO.md",
+        "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_DEMO.html"
+      ],
+      "ask": "tell me whether the workflow is understandable and where the claims feel too strong",
+      "claim_boundary": {
+        "not_security_certification": true,
+        "not_code_correctness_proof": true,
+        "not_legal_opinion": true,
+        "not_privacy_audit": true,
+        "not_license_clearance": true,
+        "not_eval_clean_proof": true,
+        "not_quality_guarantee": true,
+        "not_product_ready": true,
+        "no_external_action_authorization": true,
+        "manual_only": true
+      },
+      "must_not_claim": [
+        "revolutionary",
+        "guaranteed",
+        "certified",
+        "production-ready",
+        "secure",
+        "safe",
+        "proven",
+        "official standard",
+        "everyone should use it"
+      ],
+      "manual_post_required": true,
+      "auto_send_performed": false,
+      "external_api_used": false
+    },
+    {
+      "schema": "ResidualOps_PilotOutreachDraft/v0.1",
+      "draft_id": "agentsec",
+      "target_persona": "agentsec",
+      "channel": "manual_dm",
+      "title": "Feedback request: ResidualOps agentsec review",
+      "body": "Hi,\n\nI'm looking for feedback on a static local demo/share pack for ResidualOps, especially the agentsec part.\n\nWhat it shows:\n- AgentSec manifest review receipts and tool/MCP permission-scope boundaries\n- local/offline receipt artifacts;\n- ALLOW/HOLD/BLOCK findings;\n- known limits and claim boundaries.\n\nWhat it is not:\n- not a product-ready system;\n- not security certification;\n- not code correctness proof;\n- not legal, privacy, license, or eval-clean proof;\n- not a quality guarantee;\n- no external action automation.\n\nWhat I would value:\n- point out missing manifest checks or unclear HOLD/BLOCK reasons\n- unclear claims;\n- bad UX in the dashboard or operator script;\n- missing evidence;\n- wrong HOLD/BLOCK wording.\n\nPlease do not send tokens, credentials, raw PII, private datasets, private keys, or private kernel details. If you want to provide an artifact for a future pilot, the next step should be a separate owner-consented local/offline intake.\n",
+      "links_to_include": [
+        "pilot_outreach/PILOT_LINK_PACK.md",
+        "external_share_pack/README_EXTERNAL_SAFE_DEMO.md",
+        "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_DEMO.html"
+      ],
+      "ask": "point out missing manifest checks or unclear HOLD/BLOCK reasons",
+      "claim_boundary": {
+        "not_security_certification": true,
+        "not_code_correctness_proof": true,
+        "not_legal_opinion": true,
+        "not_privacy_audit": true,
+        "not_license_clearance": true,
+        "not_eval_clean_proof": true,
+        "not_quality_guarantee": true,
+        "not_product_ready": true,
+        "no_external_action_authorization": true,
+        "manual_only": true
+      },
+      "must_not_claim": [
+        "revolutionary",
+        "guaranteed",
+        "certified",
+        "production-ready",
+        "secure",
+        "safe",
+        "proven",
+        "official standard",
+        "everyone should use it"
+      ],
+      "manual_post_required": true,
+      "auto_send_performed": false,
+      "external_api_used": false
+    },
+    {
+      "schema": "ResidualOps_PilotOutreachDraft/v0.1",
+      "draft_id": "qira",
+      "target_persona": "qira",
+      "channel": "manual_github_issue",
+      "title": "Feedback request: ResidualOps qira review",
+      "body": "Hi,\n\nI'm looking for feedback on a static local demo/share pack for ResidualOps, especially the qira part.\n\nWhat it shows:\n- QIRA task packet, behavior contract, and release-gate receipt shape\n- local/offline receipt artifacts;\n- ALLOW/HOLD/BLOCK findings;\n- known limits and claim boundaries.\n\nWhat it is not:\n- not a product-ready system;\n- not security certification;\n- not code correctness proof;\n- not legal, privacy, license, or eval-clean proof;\n- not a quality guarantee;\n- no external action automation.\n\nWhat I would value:\n- tell me what CI or reviewer evidence should remain required\n- unclear claims;\n- bad UX in the dashboard or operator script;\n- missing evidence;\n- wrong HOLD/BLOCK wording.\n\nPlease do not send tokens, credentials, raw PII, private datasets, private keys, or private kernel details. If you want to provide an artifact for a future pilot, the next step should be a separate owner-consented local/offline intake.\n",
+      "links_to_include": [
+        "pilot_outreach/PILOT_LINK_PACK.md",
+        "external_share_pack/README_EXTERNAL_SAFE_DEMO.md",
+        "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_DEMO.html"
+      ],
+      "ask": "tell me what CI or reviewer evidence should remain required",
+      "claim_boundary": {
+        "not_security_certification": true,
+        "not_code_correctness_proof": true,
+        "not_legal_opinion": true,
+        "not_privacy_audit": true,
+        "not_license_clearance": true,
+        "not_eval_clean_proof": true,
+        "not_quality_guarantee": true,
+        "not_product_ready": true,
+        "no_external_action_authorization": true,
+        "manual_only": true
+      },
+      "must_not_claim": [
+        "revolutionary",
+        "guaranteed",
+        "certified",
+        "production-ready",
+        "secure",
+        "safe",
+        "proven",
+        "official standard",
+        "everyone should use it"
+      ],
+      "manual_post_required": true,
+      "auto_send_performed": false,
+      "external_api_used": false
+    },
+    {
+      "schema": "ResidualOps_PilotOutreachDraft/v0.1",
+      "draft_id": "datacapsule",
+      "target_persona": "datacapsule",
+      "channel": "manual_discussion",
+      "title": "Feedback request: ResidualOps datacapsule review",
+      "body": "Hi,\n\nI'm looking for feedback on a static local demo/share pack for ResidualOps, especially the datacapsule part.\n\nWhat it shows:\n- DataCapsule corpus-manifest review and use-boundary output\n- local/offline receipt artifacts;\n- ALLOW/HOLD/BLOCK findings;\n- known limits and claim boundaries.\n\nWhat it is not:\n- not a product-ready system;\n- not security certification;\n- not code correctness proof;\n- not legal, privacy, license, or eval-clean proof;\n- not a quality guarantee;\n- no external action automation.\n\nWhat I would value:\n- flag missing source, rights, privacy, or eval-overlap fields\n- unclear claims;\n- bad UX in the dashboard or operator script;\n- missing evidence;\n- wrong HOLD/BLOCK wording.\n\nPlease do not send tokens, credentials, raw PII, private datasets, private keys, or private kernel details. If you want to provide an artifact for a future pilot, the next step should be a separate owner-consented local/offline intake.\n",
+      "links_to_include": [
+        "pilot_outreach/PILOT_LINK_PACK.md",
+        "external_share_pack/README_EXTERNAL_SAFE_DEMO.md",
+        "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_DEMO.html"
+      ],
+      "ask": "flag missing source, rights, privacy, or eval-overlap fields",
+      "claim_boundary": {
+        "not_security_certification": true,
+        "not_code_correctness_proof": true,
+        "not_legal_opinion": true,
+        "not_privacy_audit": true,
+        "not_license_clearance": true,
+        "not_eval_clean_proof": true,
+        "not_quality_guarantee": true,
+        "not_product_ready": true,
+        "no_external_action_authorization": true,
+        "manual_only": true
+      },
+      "must_not_claim": [
+        "revolutionary",
+        "guaranteed",
+        "certified",
+        "production-ready",
+        "secure",
+        "safe",
+        "proven",
+        "official standard",
+        "everyone should use it"
+      ],
+      "manual_post_required": true,
+      "auto_send_performed": false,
+      "external_api_used": false
+    },
+    {
+      "schema": "ResidualOps_PilotOutreachDraft/v0.1",
+      "draft_id": "technical_reviewer",
+      "target_persona": "technical_reviewer",
+      "channel": "manual_email",
+      "title": "Feedback request: ResidualOps technical reviewer review",
+      "body": "Hi,\n\nI'm looking for feedback on a static local demo/share pack for ResidualOps, especially the technical_reviewer part.\n\nWhat it shows:\n- packet -> check/probe -> receipt -> feedback memory architecture\n- local/offline receipt artifacts;\n- ALLOW/HOLD/BLOCK findings;\n- known limits and claim boundaries.\n\nWhat it is not:\n- not a product-ready system;\n- not security certification;\n- not code correctness proof;\n- not legal, privacy, license, or eval-clean proof;\n- not a quality guarantee;\n- no external action automation.\n\nWhat I would value:\n- stress-test the architecture and find unclear boundaries\n- unclear claims;\n- bad UX in the dashboard or operator script;\n- missing evidence;\n- wrong HOLD/BLOCK wording.\n\nPlease do not send tokens, credentials, raw PII, private datasets, private keys, or private kernel details. If you want to provide an artifact for a future pilot, the next step should be a separate owner-consented local/offline intake.\n",
+      "links_to_include": [
+        "pilot_outreach/PILOT_LINK_PACK.md",
+        "external_share_pack/README_EXTERNAL_SAFE_DEMO.md",
+        "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_DEMO.html"
+      ],
+      "ask": "stress-test the architecture and find unclear boundaries",
+      "claim_boundary": {
+        "not_security_certification": true,
+        "not_code_correctness_proof": true,
+        "not_legal_opinion": true,
+        "not_privacy_audit": true,
+        "not_license_clearance": true,
+        "not_eval_clean_proof": true,
+        "not_quality_guarantee": true,
+        "not_product_ready": true,
+        "no_external_action_authorization": true,
+        "manual_only": true
+      },
+      "must_not_claim": [
+        "revolutionary",
+        "guaranteed",
+        "certified",
+        "production-ready",
+        "secure",
+        "safe",
+        "proven",
+        "official standard",
+        "everyone should use it"
+      ],
+      "manual_post_required": true,
+      "auto_send_performed": false,
+      "external_api_used": false
+    },
+    {
+      "schema": "ResidualOps_PilotOutreachDraft/v0.1",
+      "draft_id": "founder_or_operator",
+      "target_persona": "founder_or_operator",
+      "channel": "internal_note",
+      "title": "Feedback request: ResidualOps founder or operator review",
+      "body": "Hi,\n\nI'm looking for feedback on a static local demo/share pack for ResidualOps, especially the founder_or_operator part.\n\nWhat it shows:\n- bounded customer-discovery walkthrough and operator script\n- local/offline receipt artifacts;\n- ALLOW/HOLD/BLOCK findings;\n- known limits and claim boundaries.\n\nWhat it is not:\n- not a product-ready system;\n- not security certification;\n- not code correctness proof;\n- not legal, privacy, license, or eval-clean proof;\n- not a quality guarantee;\n- no external action automation.\n\nWhat I would value:\n- tell me what would help a founder/operator understand the value without overclaiming\n- unclear claims;\n- bad UX in the dashboard or operator script;\n- missing evidence;\n- wrong HOLD/BLOCK wording.\n\nPlease do not send tokens, credentials, raw PII, private datasets, private keys, or private kernel details. If you want to provide an artifact for a future pilot, the next step should be a separate owner-consented local/offline intake.\n",
+      "links_to_include": [
+        "pilot_outreach/PILOT_LINK_PACK.md",
+        "external_share_pack/README_EXTERNAL_SAFE_DEMO.md",
+        "external_share_pack/RESIDUALOPS_EXTERNAL_SAFE_DEMO.html"
+      ],
+      "ask": "tell me what would help a founder/operator understand the value without overclaiming",
+      "claim_boundary": {
+        "not_security_certification": true,
+        "not_code_correctness_proof": true,
+        "not_legal_opinion": true,
+        "not_privacy_audit": true,
+        "not_license_clearance": true,
+        "not_eval_clean_proof": true,
+        "not_quality_guarantee": true,
+        "not_product_ready": true,
+        "no_external_action_authorization": true,
+        "manual_only": true
+      },
+      "must_not_claim": [
+        "revolutionary",
+        "guaranteed",
+        "certified",
+        "production-ready",
+        "secure",
+        "safe",
+        "proven",
+        "official standard",
+        "everyone should use it"
+      ],
+      "manual_post_required": true,
+      "auto_send_performed": false,
+      "external_api_used": false
+    }
+  ],
+  "manual_only": true,
+  "auto_send_performed": false,
+  "external_api_used": false
+}

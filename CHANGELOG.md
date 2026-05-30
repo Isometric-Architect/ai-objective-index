@@ -1,5 +1,11 @@
 # Changelog
 
+## ROE-18
+
+- Added manual-only pilot discovery and feedback intake outreach drafts for ResidualOps.
+- Added reviewer personas, conservative feedback request drafts, static feedback intake form, feedback triage taxonomy, link pack, FAQ, claim boundary, operator checklist, do-not-send guard, redaction report, claim audit, gate result, schemas, docs, public outputs, and tests.
+- Preserved boundaries: no email sending, no community posting, no GitHub issue creation, no GitHub API or external API calls, no scraping/fetching, no upload/deployment, no live form service, no token handling, no private-kernel exposure, and no certification/proof/product-readiness/action-authorization claim.
+
 ## ROE-17
 
 - Added an external-safe static demo/share pack generated from ROE-16 dashboard artifacts.

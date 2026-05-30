@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/residualops/pilot_feedback_triage.schema.json",
+  "title": "ResidualOps Pilot Feedback Triage",
+  "type": "object",
+  "required": ["schema", "category_count", "categories"],
+  "properties": {
+    "schema": { "const": "ResidualOps_PilotFeedbackTriage/v0.1" },
+    "generated_at": { "type": "string" },
+    "category_count": { "type": "integer" },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["category", "severity_default", "recommended_next_action", "route_to"],
+        "properties": {
+          "category": { "type": "string" },
+          "severity_default": { "enum": ["info", "low", "medium", "high", "critical", "unknown"] },
+          "recommended_next_action": { "type": "string" },
+          "route_to": { "enum": ["agentsec", "qira", "datacapsule", "portfolio"] },
+          "second_run_needed": { "type": "boolean" },
+          "owner_consent_needed": { "type": "boolean" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "auto_issue_creation_performed": { "const": false },
+    "external_api_used": { "const": false }
+  },
+  "additionalProperties": true
+}

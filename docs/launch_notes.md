@@ -297,3 +297,9 @@ It does not submit MCP Registry metadata, install or execute `mcp-publisher`, up
 Package 8R-B adds the guarded publisher setup, GitHub auth, preflight, dry-run, execute, reconcile, and discovery-report path for MCP Registry publication.
 
 It does not publish unless all gates pass and `AOI_MCP_REGISTRY_SUBMIT_CONFIRM=YES` is set. It does not modify PyPI, post to communities, print/store tokens, expose private kernel details, or claim Registry publication is verification, security certification, quality guarantee, product readiness, purchasing advice, or action authorization.
+
+## ROE-18 Pilot Discovery / Feedback Intake Outreach Drafts
+
+ROE-18 prepares manual-only discovery materials for bounded feedback on the ResidualOps external-safe demo/share pack. It writes reviewer personas, conservative copy-paste drafts, a static feedback form template, triage taxonomy, link pack, FAQ, claim boundary, operator checklist, do-not-send guard, redaction report, claim audit, and gate output.
+
+It does not send emails, DM anyone, post to communities, create GitHub issues, call GitHub or external APIs, scrape/fetch URLs, upload, deploy, create a live form service, print/store tokens, expose private kernels, or claim certification, proof, product readiness, quality guarantee, or action authorization.

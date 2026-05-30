@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/residualops/pilot_link_pack.schema.json",
+  "title": "ResidualOps Pilot Link Pack",
+  "type": "object",
+  "required": ["schema", "links", "uses_todo_for_unknown", "auto_post_performed", "external_api_used"],
+  "properties": {
+    "schema": { "const": "ResidualOps_PilotLinkPack/v0.1" },
+    "generated_at": { "type": "string" },
+    "links": { "type": "object", "additionalProperties": { "type": "string" } },
+    "uses_todo_for_unknown": { "const": true },
+    "auto_post_performed": { "const": false },
+    "external_api_used": { "const": false }
+  },
+  "additionalProperties": true
+}

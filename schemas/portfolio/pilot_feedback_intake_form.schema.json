@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/residualops/pilot_feedback_intake_form.schema.json",
+  "title": "ResidualOps Pilot Feedback Intake Form",
+  "type": "object",
+  "required": ["schema", "artifact_reviewed", "vertical", "feedback_text", "consent_status"],
+  "properties": {
+    "schema": { "const": "ResidualOps_PilotFeedbackIntakeForm/v0.1" },
+    "artifact_reviewed": { "type": "string" },
+    "vertical": { "enum": ["agentsec", "qira", "datacapsule", "portfolio", "unknown"] },
+    "feedback_text": { "type": "string" },
+    "consent_status": { "enum": ["self_owned", "owner_provided", "sample_fixture", "insufficient", "unknown"] },
+    "contains_private_data_declared": { "type": ["boolean", "null"] },
+    "external_action_requested": { "type": "boolean" },
+    "must_not_include": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "ResidualOps_PilotOutreachRedactionReport/v0.1",
+  "generated_at": "2026-05-30T00:53:28.381454+00:00",
+  "decision": "PASS_REDACTED",
+  "finding_count": 0,
+  "findings": [],
+  "token_printed": false,
+  "private_kernel_exposed": false,
+  "auto_send_performed": false,
+  "external_api_used": false
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "ResidualOps_PilotOutreachClaimAudit/v0.1",
+  "generated_at": "2026-05-30T00:53:28.392657+00:00",
+  "decision": "PASS_OUTREACH_CLAIM_BOUNDARY_CLEAN",
+  "risky_phrase_count": 0,
+  "findings": [],
+  "allowed_language": [
+    "static demo",
+    "local artifact",
+    "feedback request",
+    "claim boundary",
+    "ALLOW/HOLD/BLOCK",
+    "not certification",
+    "no external action"
+  ]
+}

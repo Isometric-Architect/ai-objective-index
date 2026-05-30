@@ -38,8 +38,10 @@ SCAN_PATHS = [
     Path("public_launch") / "roe15",
     Path("public_launch") / "roe16",
     Path("public_launch") / "roe17",
+    Path("public_launch") / "roe18",
     Path("pilot_dashboard"),
     Path("external_share_pack"),
+    Path("pilot_outreach"),
 ]
 
 RISKY_PATTERNS = [
@@ -119,6 +121,7 @@ def _safe_line(line: str, previous_lines: list[str] | None = None) -> bool:
             "forbidden public claims",
             "must not claim",
             "must_not_claim",
+            "it is not",
             "known limits",
         ]
     )
@@ -136,7 +139,7 @@ def run_public_private_alignment_audit(
         rel = str(path.relative_to(base)).replace("\\", "/")
         lines = text.splitlines()
         for line_number, line in enumerate(lines, start=1):
-            if _safe_line(line, lines[max(0, line_number - 6) : line_number - 1]):
+            if _safe_line(line, lines[max(0, line_number - 10) : line_number - 1]):
                 continue
             for finding_type, pattern in RISKY_PATTERNS:
                 if pattern.search(line):

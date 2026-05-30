@@ -103,6 +103,8 @@ ROE-16 adds a static/local pilot dashboard artifact pack. It summarizes AgentSec
 
 ROE-17 adds an external-safe static demo/share pack from the ROE-16 dashboard. It creates a redacted local share folder with README, HTML, Markdown, JSON, claim-boundary, known-limits, operator scripts, manifest, checksums, redaction report, claim audit, distribution boundary, and gate result without deployment, posting, external APIs, network dependencies, live connectors, raw private data, token handling, private-kernel exposure, certification, proof, product-readiness claim, or action authorization.
 
+ROE-18 adds manual-only pilot discovery and feedback intake outreach drafts. It creates reviewer personas, conservative feedback request drafts, a static feedback form template, triage taxonomy, link pack, FAQ, claim boundary, operator checklist, do-not-send guard, redaction report, claim audit, and gate result without sending email, posting, creating issues, calling GitHub or external APIs, scraping, uploading, deploying, token handling, private-kernel exposure, certification, proof, product-readiness claim, or action authorization.
+
 ## Quick Example
 
 Example objective request:
